@@ -22,9 +22,9 @@ class MultipleThemesViewModel extends BaseViewModel {
   String _getTitleForIndex(int index) {
     switch (index) {
       case 0:
-        return ' Blue';
+        return '  Blue';
       case 1:
-        return ' Red';
+        return '  Red';
       case 2:
         return 'Brown';
       case 3:
