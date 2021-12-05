@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testing/theme_setup.dart';
 import 'drawer.dart';
 import 'multiple_themes_viewmodel.dart';
 import 'package:stacked_themes/stacked_themes.dart';
@@ -58,9 +59,9 @@ class MultipleThemesView extends StatelessWidget {
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
-                                        color: Colors.yellow,
+                                        color: getThemes()[themeData.index].splashColor,
                                         border: Border.all(
-                                          color: Colors.yellow,
+                                          color: getThemes()[themeData.index].backgroundColor,
                                         ),
                                         borderRadius: BorderRadius.all(Radius.circular(50))),
                                     width: 95,
@@ -74,11 +75,11 @@ class MultipleThemesView extends StatelessWidget {
                                           height: 80,
                                           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                                           decoration: BoxDecoration(
-                                            color: Colors.yellow,
                                             borderRadius: BorderRadius.only(
                                               topLeft: Radius.circular(100),
                                               bottomLeft: Radius.circular(100),
                                             ),
+                                            color: getThemes()[themeData.index].accentColor,
                                           ),
                                         ),
                                         Container(
@@ -90,7 +91,7 @@ class MultipleThemesView extends StatelessWidget {
                                               topRight: Radius.circular(100),
                                               bottomRight: Radius.circular(100),
                                             ),
-                                            color: Colors.white,
+                                            color: getThemes()[themeData.index].splashColor,
                                           ),
                                         ),
                                       ],
@@ -101,7 +102,7 @@ class MultipleThemesView extends StatelessWidget {
                                     child: Text(
                                       'text',
                                       style: TextStyle(
-                                        color: Colors.red,
+                                        color: getThemes()[themeData.index].primaryColor,
                                         fontSize: 20,
                                       ),
                                     ),
