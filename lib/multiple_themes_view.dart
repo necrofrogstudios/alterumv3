@@ -100,18 +100,11 @@ class MultipleThemesView extends StatelessWidget {
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(30, 32, 20, 0),
                                     child: Text(
-                                      'text',
-                                      style: TextStyle(
-                                        color: getThemes()[themeData.index].primaryColor,
-                                        fontSize: 20,
-                                      ),
+                                      themeData.title,
+                                      style: TextStyle(color: getThemes()[themeData.index].primaryColor, fontSize: 20),
                                     ),
                                   ),
                                 ],
-                              ),
-                              Text(
-                                themeData.title,
-                                style: TextStyle(color: theme.primaryColor),
                               ),
                             ],
                           ),
