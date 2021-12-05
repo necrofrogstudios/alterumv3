@@ -68,9 +68,8 @@ packages:
     dependency: "direct main"
     description: flutter
     source: sdk
-    version: "0.0.0"
-    
-    flutter_statusbarcolor_ns:
+    version: "0.0.0" 
+  flutter_statusbarcolor_ns:
     dependency: transitive
     description:
       name: flutter_statusbarcolor_ns
