@@ -74,7 +74,7 @@ class MultipleThemesView extends StatelessWidget {
                                           height: 80,
                                           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                                           decoration: BoxDecoration(
-                                            color: Colors.yellow,
+                                            //color: Colors.yellow,
                                             borderRadius: BorderRadius.only(
                                               topLeft: Radius.circular(100),
                                               bottomLeft: Radius.circular(100),
@@ -90,7 +90,7 @@ class MultipleThemesView extends StatelessWidget {
                                               topRight: Radius.circular(100),
                                               bottomRight: Radius.circular(100),
                                             ),
-                                            color: Colors.white,
+                                            //color: Colors.white,
                                           ),
                                         ),
                                       ],
