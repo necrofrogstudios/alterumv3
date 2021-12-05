@@ -62,7 +62,8 @@ class MultipleThemesView extends StatelessWidget {
                                         border: Border.all(
                                           color: Colors.yellow,
                                         ),
-                                        borderRadius: BorderRadius.all(Radius.circular(50))),*/
+                                        borderRadius: BorderRadius.all(Radius.circular(50))*/
+                                        ),
                                     width: 95,
                                     height: 95,
                                     child: Row(
