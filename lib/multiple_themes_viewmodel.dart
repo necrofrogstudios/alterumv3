@@ -24,7 +24,7 @@ class MultipleThemesViewModel extends BaseViewModel {
       case 0:
         return ' Blue';
       case 1:
-        return '  Red';
+        return ' Red';
       case 2:
         return 'Brown';
       case 3:
