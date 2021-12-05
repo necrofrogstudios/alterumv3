@@ -52,18 +52,22 @@ class MultipleThemesView extends StatelessWidget {
                           onTap: () {
                             getThemeManager(context).selectThemeAtIndex(themeData.index);
                           },
-                          child: Column(
+                          child: Container(
+                            width: 80,
+                            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: Colors.grey[100]),
+                            child: Text(themeData.title),
+                          ), /*Column(
                             children: [
                               Stack(
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
-                                        /*color: Colors.yellow,
+                                        color: Colors.yellow,
                                         border: Border.all(
                                           color: Colors.yellow,
                                         ),
-                                        borderRadius: BorderRadius.all(Radius.circular(50))*/
-                                        ),
+                                        borderRadius: BorderRadius.all(Radius.circular(50))),
                                     width: 95,
                                     height: 95,
                                     child: Row(
@@ -114,7 +118,7 @@ class MultipleThemesView extends StatelessWidget {
                                 style: TextStyle(color: theme.primaryColor),
                               ),
                             ],
-                          ),
+                          )*/
                         ),
                       )
                       .toList(),
