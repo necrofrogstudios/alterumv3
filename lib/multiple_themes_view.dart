@@ -52,12 +52,7 @@ class MultipleThemesView extends StatelessWidget {
                           onTap: () {
                             getThemeManager(context).selectThemeAtIndex(themeData.index);
                           },
-                          child: Container(
-                            width: 80,
-                            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
-                            decoration: BoxDecoration(borderRadius: BorderRadius.circular(5), color: Colors.grey[100]),
-                            child: Text(themeData.title),
-                          ), /*Column(
+                          child: Column(
                             children: [
                               Stack(
                                 children: [
@@ -118,7 +113,7 @@ class MultipleThemesView extends StatelessWidget {
                                 style: TextStyle(color: theme.primaryColor),
                               ),
                             ],
-                          )*/
+                          ),
                         ),
                       )
                       .toList(),
