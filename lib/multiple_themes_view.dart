@@ -61,7 +61,7 @@ class MultipleThemesView extends StatelessWidget {
                                     decoration: BoxDecoration(
                                         color: getThemes()[themeData.index].splashColor,
                                         border: Border.all(
-                                          color: getThemes()[themeData.index].backgroundColor,
+                                          color: getThemes()[themeData.index].splashColor,
                                         ),
                                         borderRadius: BorderRadius.all(Radius.circular(50))),
                                     width: 95,
@@ -91,7 +91,7 @@ class MultipleThemesView extends StatelessWidget {
                                               topRight: Radius.circular(100),
                                               bottomRight: Radius.circular(100),
                                             ),
-                                            color: getThemes()[themeData.index].splashColor,
+                                            color: getThemes()[themeData.index].backgroundColor,
                                           ),
                                         ),
                                       ],
