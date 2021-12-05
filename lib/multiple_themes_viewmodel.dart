@@ -30,7 +30,7 @@ class MultipleThemesViewModel extends BaseViewModel {
       case 3:
         return 'Cream';
       case 4:
-        return 'Berry';
+        return ' Berry';
     }
 
     return 'No theme for index';
