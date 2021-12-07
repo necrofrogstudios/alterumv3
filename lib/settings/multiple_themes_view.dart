@@ -29,7 +29,7 @@ class MultipleThemesView extends StatelessWidget {
           ),
         ),
         drawer: drawer(currentScreen),
-        body: const Container(
+        body:  Container(
           width: double.infinity,
           height: double.infinity,
           child: SingleChildScrollView(
@@ -118,7 +118,7 @@ class MultipleThemesView extends StatelessWidget {
           ),
         ),
       ),
-      viewModelBuilder: () => MultipleThemesViewModel(),
+      viewModelBuilder: ()  MultipleThemesViewModel(),
     );
   }
 }
