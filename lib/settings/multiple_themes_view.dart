@@ -130,6 +130,7 @@ class themes extends StatelessWidget {
           title: const Text('AlertDialog Title'),
           content: const Text('AlertDialog description'),
           actions: <Widget>[
+            Container:(width:200, height:200,),
             OutlinedButton(
               onPressed: () => Navigator.pop(context, 'Cancel'),
               child: const Text('Cancel'),
