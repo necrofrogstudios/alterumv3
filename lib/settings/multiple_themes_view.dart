@@ -47,6 +47,7 @@ class settings extends StatelessWidget {
 }
 
 class themes extends StatelessWidget {
+  var theme = Theme.of(context);
   const themes();
 
   @override
@@ -55,8 +56,9 @@ class themes extends StatelessWidget {
       onPressed: () => showDialog<String>(
         context: context,
         builder: (BuildContext context) => AlertDialog(
-          title: const Text('Themes'),
-          content: const Text('Pick a Theme'),
+          backgroundColor: Colors.green,
+          title: const Text('Themes', style:TextStyle(color:theme.primaryColor),),
+          content: const Text('Pick a Theme'le:TextStyle(color:theme.primaryColor),),
           actions: <Widget>[
             SingleChildScrollView(
               physics: ScrollPhysics(),
