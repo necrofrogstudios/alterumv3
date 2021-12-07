@@ -46,6 +46,13 @@ List<ThemeData> getThemes() {
     ),
     ThemeData(
       //pink, pink, brown//
+      backgroundColor: Color(0xFFef6125),
+      accentColor: Color(0xFF590a30),
+      splashColor: Color(0xFF90aa3c),
+      primaryColor: Colors.white,
+    ),
+    ThemeData(
+      //pink, pink, brown//
       backgroundColor: Color(0xFFbe1558),
       accentColor: Color(0xFFe75874),
       splashColor: Color(0xFF322514),
