@@ -13,10 +13,11 @@ class settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    var background = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
-      backgroundColor: theme.backgroundColor,
+      backgroundColor: background.backgroundColor,
       appBar: AppBar(
         iconTheme: IconThemeData(color: theme.primaryColor),
         backgroundColor: theme.accentColor,
