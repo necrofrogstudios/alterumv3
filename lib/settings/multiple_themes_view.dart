@@ -109,7 +109,7 @@ class MultipleThemesView extends StatelessWidget {
               Align(
                 alignment: Alignment.center,
                 child: Wrap(
-                  spacing: 10,
+                  spacing: 12,
                   runSpacing: 10,
                   alignment: WrapAlignment.center,
                   direction: Axis.horizontal,
