@@ -160,7 +160,6 @@ class themes extends StatelessWidget {
             var height = MediaQuery.of(context).size.height;
             var width = MediaQuery.of(context).size.width;
           }),
-          content: const Text('AlertDialog description'),
           actions: <Widget>[
             MultipleThemesView(),
             OutlinedButton(
