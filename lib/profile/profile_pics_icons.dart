@@ -25,7 +25,7 @@ class profile_pics_icons extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             border: Border.all(
-              width: 2,
+              width: 4,
             ),
           ),
           child: Center(
