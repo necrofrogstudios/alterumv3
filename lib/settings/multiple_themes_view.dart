@@ -156,16 +156,12 @@ class themes extends StatelessWidget {
         builder: (BuildContext context) => AlertDialog(
           
            content: Builder(
-      builder: (context) {const Text('AlertDialog Title'),
+      builder: (context) {const Text('AlertDialog Title');
         // Get available height and width of the build area of this widget. Make a choice depending on the size.                              
         var height = MediaQuery.of(context).size.height;
         var width = MediaQuery.of(context).size.width;
 
-        return Container(
-          height: height - 400,
-          width: width - 400,
-        ),
-      },
+        
     ),
           content: const Text('AlertDialog description'),
           actions: <Widget>[
