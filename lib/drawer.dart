@@ -135,7 +135,7 @@ class drawer extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => MultipleThemesView()),
+                MaterialPageRoute(builder: (context) => MultipleThemesViews()),
               );
             },
             child: Row(
