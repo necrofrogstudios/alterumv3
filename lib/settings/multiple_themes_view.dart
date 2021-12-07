@@ -104,7 +104,7 @@ class MultipleThemesView extends StatelessWidget {
         body: SingleChildScrollView(
           physics: ScrollPhysics(),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.spaceEvenly,
             children: <Widget>[
               Wrap(
                 spacing: 5,
