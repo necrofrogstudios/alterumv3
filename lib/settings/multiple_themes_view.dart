@@ -38,7 +38,6 @@ class MultipleThemesViews extends StatelessWidget {
               children: <Widget>[
                 Container(color: theme.splashColor, height: 4),
                 themes(),
-               
               ],
             ),
           ),
@@ -160,7 +159,7 @@ class themes extends StatelessWidget {
           title: const Text('AlertDialog Title'),
           content: const Text('AlertDialog description'),
           actions: <Widget>[
-            MultipleThemesView()
+            MultipleThemesView(),
             OutlinedButton(
               onPressed: () => Navigator.pop(context, 'Cancel'),
               child: const Text('Cancel'),
