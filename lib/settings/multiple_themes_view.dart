@@ -6,9 +6,9 @@ import 'package:testing/settings/multiple_themes_viewmodel.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
 
-class MultipleThemesViews extends StatelessWidget {
-  MultipleThemesViews({Key key}) : super(key: key);
-  final currentScreen = MultipleThemesViews;
+class settings extends StatelessWidget {
+  settings({Key key}) : super(key: key);
+  final currentScreen = settings;
 
   @override
   Widget build(BuildContext context) {
@@ -42,6 +42,47 @@ class MultipleThemesViews extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class themes extends StatelessWidget {
+  const themes();
+
+  @override
+  Widget build(BuildContext context) {
+    return OutlinedButton(
+      onPressed: () => showDialog<String>(
+        context: context,
+        builder: (BuildContext context) => AlertDialog(
+          title: const Text('AlertDialog Title'),
+          content: const Text('AlertDialog description'),
+          actions: <Widget>[
+            SingleChildScrollView(
+              physics: ScrollPhysics(),
+              child: Container(
+                width: 200,
+                height: 400,
+                child: MultipleThemesView(),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                OutlinedButton(
+                  onPressed: () => Navigator.pop(context, 'Cancel'),
+                  child: const Text('Cancel'),
+                ),
+                TextButton(
+                  onPressed: () => Navigator.pop(context, 'OK'),
+                  child: const Text('OK'),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+      child: const Text('Themes'),
     );
   }
 }
@@ -136,47 +177,6 @@ class MultipleThemesView extends StatelessWidget {
         ),
       ),
       viewModelBuilder: () => MultipleThemesViewModel(),
-    );
-  }
-}
-
-class themes extends StatelessWidget {
-  const themes();
-
-  @override
-  Widget build(BuildContext context) {
-    return OutlinedButton(
-      onPressed: () => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          title: const Text('AlertDialog Title'),
-          content: const Text('AlertDialog description'),
-          actions: <Widget>[
-            SingleChildScrollView(
-              physics: ScrollPhysics(),
-              child: Container(
-                width: 200,
-                height: 400,
-                child: MultipleThemesView(),
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                OutlinedButton(
-                  onPressed: () => Navigator.pop(context, 'Cancel'),
-                  child: const Text('Cancel'),
-                ),
-                TextButton(
-                  onPressed: () => Navigator.pop(context, 'OK'),
-                  child: const Text('OK'),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
-      child: const Text('Themes'),
     );
   }
 }
