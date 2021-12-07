@@ -109,70 +109,72 @@ class MultipleThemesView extends StatelessWidget {
                 mainAxisSpacing: 5,
                 crossAxisCount: 4,
                 children: <Widget>[
-                  model.themes
-                      .map(
-                        (themeData) => GestureDetector(
-                          onTap: () {
-                            getThemeManager(context).selectThemeAtIndex(themeData.index);
-                          },
-                          child: Column(
-                            children: [
-                              Stack(
-                                children: [
-                                  Container(
-                                    decoration: BoxDecoration(
-                                        color: getThemes()[themeData.index].splashColor,
-                                        border: Border.all(
+                  Center(
+                    children: model.themes
+                        .map(
+                          (themeData) => GestureDetector(
+                            onTap: () {
+                              getThemeManager(context).selectThemeAtIndex(themeData.index);
+                            },
+                            child: Column(
+                              children: [
+                                Stack(
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
                                           color: getThemes()[themeData.index].splashColor,
-                                        ),
-                                        borderRadius: BorderRadius.all(Radius.circular(50))),
-                                    width: 50,
-                                    height: 50,
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          width: 20,
-                                          height: 40,
-                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(100),
-                                              bottomLeft: Radius.circular(100),
-                                            ),
-                                            color: getThemes()[themeData.index].accentColor,
+                                          border: Border.all(
+                                            color: getThemes()[themeData.index].splashColor,
                                           ),
-                                        ),
-                                        Container(
-                                          width: 20,
-                                          height: 40,
-                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.only(
-                                              topRight: Radius.circular(100),
-                                              bottomRight: Radius.circular(100),
+                                          borderRadius: BorderRadius.all(Radius.circular(50))),
+                                      width: 50,
+                                      height: 50,
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Container(
+                                            width: 20,
+                                            height: 40,
+                                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                                            decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.only(
+                                                topLeft: Radius.circular(100),
+                                                bottomLeft: Radius.circular(100),
+                                              ),
+                                              color: getThemes()[themeData.index].accentColor,
                                             ),
-                                            color: getThemes()[themeData.index].backgroundColor,
                                           ),
-                                        ),
-                                      ],
+                                          Container(
+                                            width: 20,
+                                            height: 40,
+                                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                                            decoration: BoxDecoration(
+                                              borderRadius: BorderRadius.only(
+                                                topRight: Radius.circular(100),
+                                                bottomRight: Radius.circular(100),
+                                              ),
+                                              color: getThemes()[themeData.index].backgroundColor,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.fromLTRB(17, 4, 0, 0),
-                                    child: Text(
-                                      'T',
-                                      style: TextStyle(color: getThemes()[themeData.index].primaryColor, fontSize: 30),
+                                    Padding(
+                                      padding: EdgeInsets.fromLTRB(17, 4, 0, 0),
+                                      child: Text(
+                                        'T',
+                                        style: TextStyle(color: getThemes()[themeData.index].primaryColor, fontSize: 30),
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                            ],
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                      )
-                      .toList(),
+                        )
+                        .toList(),
+                  ),
                 ],
               ),
             ],
