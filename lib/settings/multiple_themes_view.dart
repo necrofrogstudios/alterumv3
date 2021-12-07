@@ -59,7 +59,6 @@ class MultipleThemesView extends StatelessWidget {
         body: Column(
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
-            themes(),
             Wrap(
               spacing: 30,
               runSpacing: 20,
