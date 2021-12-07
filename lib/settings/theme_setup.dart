@@ -18,7 +18,7 @@ List<ThemeData> getThemes() {
     ),
     ThemeData(
       //tan, dark brown, blue//
-      backgroundColor: Colors.brown,
+      backgroundColor: Color(0xFF65532F),
       accentColor: Color(0xFF312509),
       splashColor: Color(0xFF357266),
       primaryColor: Colors.white,
