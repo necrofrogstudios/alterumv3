@@ -47,12 +47,12 @@ class profile extends StatelessWidget {
           physics: ScrollPhysics(),
           child: Column(
             children: <Widget>[
-              Container(color: theme.splashColor, height: 3),
+              Container(color: theme.splashColor, height: 4),
               profile_top_buttons(),
               profile_pics_icons(),
               Container(color: theme.splashColor, height: 4),
               profile_tabbar(),
-              Container(color: theme.splashColor, height: 3),
+              Container(color: theme.splashColor, height: 4),
               Container(
                 color: Colors.black,
                 child: Row(
