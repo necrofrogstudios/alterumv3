@@ -37,13 +37,6 @@ class MultipleThemesView extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Container(color: theme.splashColor, height: 4),
-                Text(
-                  'look here maybe idk',
-                  style: TextStyle(
-                    color: theme.primaryColor,
-                    fontSize: 30,
-                  ),
-                ),
                 themes(),
                 Wrap(
                   spacing: 30,
