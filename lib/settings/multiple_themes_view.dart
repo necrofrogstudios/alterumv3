@@ -47,7 +47,7 @@ class settings extends StatelessWidget {
 }
 
 class themes extends StatelessWidget {
-  themes();
+  const themes();
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class themes extends StatelessWidget {
         context: context,
         builder: (BuildContext context) => AlertDialog(
           backgroundColor: Colors.green,
-          title: const Text(
+          title: Text(
             'Themes',
             style: TextStyle(color: theme.primaryColor),
           ),
