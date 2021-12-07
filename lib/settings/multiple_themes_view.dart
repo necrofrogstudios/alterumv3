@@ -57,7 +57,7 @@ class MultipleThemesView extends StatelessWidget {
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
     return ViewModelBuilder<MultipleThemesViewModel>.reactive(
-      builder: (context, model, child) => Center(
+      Center(
         Container(
           width: double.infinity,
           height: double.infinity,
