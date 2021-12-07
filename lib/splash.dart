@@ -1,6 +1,6 @@
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
-import 'profile.dart';
+import 'package:testing/settings/multiple_themes_view.dart';
 
 class Splash extends StatefulWidget {
   @override
