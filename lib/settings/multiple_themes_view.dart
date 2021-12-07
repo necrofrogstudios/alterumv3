@@ -48,12 +48,12 @@ class settings extends StatelessWidget {
 }
 
 class themes extends StatelessWidget {
-  themes();
+  const themes();
 
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return OutlinedButton(
+    OutlinedButton(
       onPressed: () => showDialog<String>(
         context: context,
         builder: (BuildContext context) => AlertDialog(
