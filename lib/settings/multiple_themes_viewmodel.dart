@@ -17,7 +17,7 @@ class MultipleThemesViewModel extends BaseViewModel {
       );
 }
 
-class MultipleThemesViewModel extends BaseViewModel {
+class backgrounds extends BaseViewModel {
   List<ThemeModel> get background => List<ThemeModel>.generate(
         1,
         (index) => ThemeModel(
