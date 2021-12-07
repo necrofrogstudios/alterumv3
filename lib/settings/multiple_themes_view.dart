@@ -56,7 +56,7 @@ class themes extends StatelessWidget {
       onPressed: () => showDialog<String>(
         context: context,
         builder: (BuildContext context) => AlertDialog(
-          backgroundColor: Colors.green,
+          backgroundColor: theme.backgroundColor,
           title: Text(
             'Themes',
             style: TextStyle(color: theme.primaryColor),
