@@ -88,12 +88,3 @@ List<ThemeData> getThemes() {
     ),
   ];
 }
-
-List<ThemeData> getBackground() {
-  return [
-    ThemeData(
-      //blue, black, yellow, white//
-      backgroundColor: Colors.yellow,
-    ),
-  ];
-}
