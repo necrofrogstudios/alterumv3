@@ -103,7 +103,7 @@ class MultipleThemesView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Wrap(
-                spacing: 20,
+                spacing: 30,
                 runSpacing: 20,
                 alignment: WrapAlignment.start,
                 direction: Axis.horizontal,
