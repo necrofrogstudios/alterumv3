@@ -29,7 +29,7 @@ class MultipleThemesView extends StatelessWidget {
           ),
         ),
         drawer: drawer(currentScreen),
-        body:  Container(
+        body: Container(
           width: double.infinity,
           height: double.infinity,
           child: SingleChildScrollView(
@@ -42,7 +42,8 @@ class MultipleThemesView extends StatelessWidget {
                     color: theme.primaryColor,
                     fontSize: 30,
                   ),
-                ),themes(),
+                ),
+                themes(),
                 Wrap(
                   spacing: 30,
                   runSpacing: 20,
@@ -118,10 +119,11 @@ class MultipleThemesView extends StatelessWidget {
           ),
         ),
       ),
-      viewModelBuilder: ()  MultipleThemesViewModel(),
+      viewModelBuilder: () => MultipleThemesViewModel(),
     );
   }
 }
+
 class themes extends StatelessWidget {
   const themes();
 
@@ -130,26 +132,26 @@ class themes extends StatelessWidget {
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
     return ViewModelBuilder<MultipleThemesViewModel>.reactive(
-      builder: (context, model, child) => 
-    return OutlinedButton(
-      onPressed: () => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          title: const Text('AlertDialog Title'),
-          content: const Text('AlertDialog description'),
-          actions: <Widget>[
-            OutlinedButton(
-              onPressed: () => Navigator.pop(context, 'Cancel'),
-              child: const Text('Cancel'),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(context, 'OK'),
-              child: const Text('OK'),
-            ),
-          ],
+      builder: (context, model, child) => OutlinedButton(
+        onPressed: () => showDialog<String>(
+          context: context,
+          builder: (BuildContext context) => AlertDialog(
+            title: const Text('AlertDialog Title'),
+            content: const Text('AlertDialog description'),
+            actions: <Widget>[
+              OutlinedButton(
+                onPressed: () => Navigator.pop(context, 'Cancel'),
+                child: const Text('Cancel'),
+              ),
+              TextButton(
+                onPressed: () => Navigator.pop(context, 'OK'),
+                child: const Text('OK'),
+              ),
+            ],
+          ),
         ),
+        child: const Text('Themes'),
       ),
-      child: const Text('Themes'),
-    ),);
+    );
   }
 }
