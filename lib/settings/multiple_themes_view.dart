@@ -100,7 +100,7 @@ class themes extends StatelessWidget {
 }
 
 class MultipleThemesView extends StatelessWidget {
-  MultipleThemesView({Key key}) : super(key: key);
+  MultipleThemesView();
   final currentScreen = MultipleThemesView;
 
   @override
