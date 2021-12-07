@@ -10,15 +10,15 @@ List<ThemeData> getThemes() {
       primaryColor: Colors.white,
     ),
     ThemeData(
-      //red, red, blue, white//
+      //plum, purple, baby blue//
       backgroundColor: Color(0xFF2E0219),
       accentColor: Color(0xFF6A0F49),
       splashColor: Color(0xFF97EFE9),
       primaryColor: Colors.white,
     ),
     ThemeData(
-      //blue, black, yellow, white//
-      backgroundColor: Color(0xFF65532F),
+      //tan, dark brown, blue//
+      backgroundColor: Colors.brown,
       accentColor: Color(0xFF312509),
       splashColor: Color(0xFF357266),
       primaryColor: Colors.white,
