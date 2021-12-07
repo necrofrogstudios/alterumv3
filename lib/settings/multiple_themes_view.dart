@@ -66,8 +66,8 @@ class MultipleThemesView extends StatelessWidget {
                                           color: getThemes()[themeData.index].splashColor,
                                         ),
                                         borderRadius: BorderRadius.all(Radius.circular(50))),
-                                    width: 70,
-                                    height: 70,
+                                    width: 50,
+                                    height: 50,
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.center,
