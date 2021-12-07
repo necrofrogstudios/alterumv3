@@ -79,5 +79,12 @@ List<ThemeData> getThemes() {
       splashColor: Color(0xFF1b6535),
       primaryColor: Colors.black,
     ),
+    ThemeData(
+      //green, yellow, dark green//
+      backgroundColor: Colors.white,
+      accentColor: Colors.grey,
+      splashColor: Colors.black,
+      primaryColor: Colors.black,
+    ),
   ];
 }
