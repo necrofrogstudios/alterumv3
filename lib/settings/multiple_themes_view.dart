@@ -6,9 +6,9 @@ import 'package:testing/settings/multiple_themes_viewmodel.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
 
-class MultipleThemesView extends StatelessWidget {
-  MultipleThemesView({Key key}) : super(key: key);
-  final currentScreen = MultipleThemesView;
+class MultipleThemesViews extends StatelessWidget {
+  MultipleThemesViews({Key key}) : super(key: key);
+  final currentScreen = MultipleThemesViews;
 
   @override
   Widget build(BuildContext context) {
@@ -155,6 +155,7 @@ class themes extends StatelessWidget {
               child: Container(
                 width: 200,
                 height: 400,
+                child: MultipleThemesView(),
               ),
             ),
             Row(
