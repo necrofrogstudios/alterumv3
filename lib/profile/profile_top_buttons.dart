@@ -37,7 +37,7 @@ class profile_top_buttons extends StatelessWidget {
               ),
               child: Text(
                 items[index],
-                style: TextStyle(fontSize: 12, color: Colors.white),
+                style: TextStyle(fontSize: 12, color: them.primaryColor),
               ),
               onPressed: () {},
             ),
