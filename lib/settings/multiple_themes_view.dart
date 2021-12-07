@@ -65,7 +65,6 @@ class themes extends StatelessWidget {
                 child: Container(
                   width: 300,
                   height: 400,
-                  color: Colors.purple,
                   child: MultipleThemesView(),
                 ),
               ),
