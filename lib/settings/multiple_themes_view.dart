@@ -134,7 +134,7 @@ class themes extends StatelessWidget {
               physics: ScrollPhysics(),
               child: Container(
                 width: 200,
-                height: 200,
+                height: 400,
               ),
             ),
             OutlinedButton(
