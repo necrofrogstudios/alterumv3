@@ -13,7 +13,6 @@ class MultipleThemesViewModel extends BaseViewModel {
         5,
         (index) => ThemeModel(
           index: index,
-          title: _getTitleForIndex(index),
         ),
       );
 }
