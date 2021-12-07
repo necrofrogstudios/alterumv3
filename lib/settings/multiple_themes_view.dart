@@ -129,8 +129,8 @@ class MultipleThemesView extends StatelessWidget {
                     ),
                   )
                   .toList(),
-            ),),
-          ],
+            ),
+          ],),
         ),
       ),
       viewModelBuilder: () => MultipleThemesViewModel(),
