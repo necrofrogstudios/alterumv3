@@ -59,7 +59,7 @@ class themes extends StatelessWidget {
           backgroundColor: Colors.green,
           title: const Text(
             'Themes',
-            style: TextStyle(color: Colors.yellow),
+            style: TextStyle(color: theme.primaryColor),
           ),
           content: const Text(
             'Pick a Theme',
