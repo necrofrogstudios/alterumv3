@@ -102,7 +102,6 @@ class MultipleThemesView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
               Wrap(
                 spacing: 30,
                 runSpacing: 20,
