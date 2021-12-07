@@ -60,11 +60,14 @@ class themes extends StatelessWidget {
           actions: <Widget>[
             SingleChildScrollView(
               physics: ScrollPhysics(),
-              child: Container(
-                width: 200,
-                height: 400,
-                color: Colors.purple,
-                child: MultipleThemesView(),
+              child: Align(
+                alignment: Alignment.topRight,
+                child: Container(
+                  width: 200,
+                  height: 400,
+                  color: Colors.purple,
+                  child: MultipleThemesView(),
+                ),
               ),
             ),
             Row(
