@@ -13,7 +13,7 @@ class settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-
+    
     Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
@@ -83,11 +83,11 @@ class themes extends StatelessWidget {
               children: [
                 OutlinedButton(
                   onPressed: () => Navigator.pop(context, 'Cancel'),
-                  child: Text('Cancel'),
+                  child: const Text('Cancel'),
                 ),
                 TextButton(
                   onPressed: () => Navigator.pop(context, 'OK'),
-                  child: Text('OK'),
+                  child: const Text('OK'),
                 ),
               ],
             ),
@@ -101,7 +101,7 @@ class themes extends StatelessWidget {
 
 class MultipleThemesView extends StatelessWidget {
   MultipleThemesView({Key key}) : super(key: key);
-  final currentScreen = MultipleThemesView;
+  currentScreen = MultipleThemesView;
 
   @override
   Widget build(BuildContext context) {
