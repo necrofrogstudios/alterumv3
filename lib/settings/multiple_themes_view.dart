@@ -66,15 +66,15 @@ class MultipleThemesView extends StatelessWidget {
                                           color: getThemes()[themeData.index].splashColor,
                                         ),
                                         borderRadius: BorderRadius.all(Radius.circular(50))),
-                                    width: 95,
-                                    height: 95,
+                                    width: 75,
+                                    height: 75,
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Container(
-                                          width: 40,
-                                          height: 80,
+                                          width: 20,
+                                          height: 60,
                                           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.only(
@@ -85,8 +85,8 @@ class MultipleThemesView extends StatelessWidget {
                                           ),
                                         ),
                                         Container(
-                                          width: 40,
-                                          height: 80,
+                                          width: 20,
+                                          height: 60,
                                           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.only(
