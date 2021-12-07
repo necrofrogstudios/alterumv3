@@ -109,7 +109,7 @@ class MultipleThemesView extends StatelessWidget {
                 mainAxisSpacing: 5,
                 crossAxisCount: 4,
                 children: <Widget>[
-                  Wrap(
+                  Column(
                     children: model.themes
                         .map(
                           (themeData) => GestureDetector(
