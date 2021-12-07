@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'settings/multiple_themes_view.dart';
-
 class profile_pics_icons extends StatelessWidget {
-  var theme = Theme.of(context);
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Stack(
@@ -25,21 +22,12 @@ class profile_pics_icons extends StatelessWidget {
             Container(height: 210, color: theme.backgroundColor),
           ],
         ),
-        Container(
-          decoration: BoxDecoration(
-              color: themes.splashColor,
-              border: Border.all(
-                width: 4,
-                color: themes.splashColor,
-              ),
-              borderRadius: BorderRadius.all(Radius.circular(50))),
-          child: Center(
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
-              child: CircleAvatar(
-                radius: 120,
-                backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
-              ),
+        Center(
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
+            child: CircleAvatar(
+              radius: 120,
+              backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
             ),
           ),
         ),
