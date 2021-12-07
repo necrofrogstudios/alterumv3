@@ -34,7 +34,7 @@ class profile_pics_icons extends StatelessWidget {
         Center(
             child: Padding(
           padding: EdgeInsets.fromLTRB(0, 285, 0, 0),
-          child: Text('Guarded', style: TextStyle(fontSize: 35, color: Colors.white)),
+          child: Text('Guarded', style: TextStyle(fontSize: 35, color: theme.primaryColor)),
         )),
         Padding(
           padding: EdgeInsets.fromLTRB(0, 340, 0, 0),
