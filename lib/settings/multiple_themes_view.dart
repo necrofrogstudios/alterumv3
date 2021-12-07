@@ -13,7 +13,7 @@ class settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    
+
     Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
@@ -101,7 +101,7 @@ class themes extends StatelessWidget {
 
 class MultipleThemesView extends StatelessWidget {
   MultipleThemesView({Key key}) : super(key: key);
-  currentScreen = MultipleThemesView;
+  var currentScreen = MultipleThemesView;
 
   @override
   Widget build(BuildContext context) {
