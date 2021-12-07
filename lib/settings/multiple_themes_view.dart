@@ -107,8 +107,8 @@ class MultipleThemesView extends StatelessWidget {
                 shrinkWrap: true,
                 primary: false,
                 padding: const EdgeInsets.all(0),
-                crossAxisSpacing: 5,
-                mainAxisSpacing: 5,
+                crossAxisSpacing: 0,
+                mainAxisSpacing: 0,
                 crossAxisCount: 4,
                 children: <Widget>[
                   Column(
