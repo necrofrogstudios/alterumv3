@@ -83,7 +83,7 @@ class themes extends StatelessWidget {
             ),
           ],
         ),
-      ),),
+      ),
       child: const Text('Themes'),
     );
   }
