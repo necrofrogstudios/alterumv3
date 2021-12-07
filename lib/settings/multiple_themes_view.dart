@@ -44,7 +44,7 @@ class MultipleThemesView extends StatelessWidget {
                     fontSize: 30,
                   ),
                 ),
-                themes(),
+                //themes(),//
                 Wrap(
                   spacing: 30,
                   runSpacing: 20,
@@ -125,7 +125,7 @@ class MultipleThemesView extends StatelessWidget {
   }
 }
 
-class themes extends StatelessWidget {
+/*class themes extends StatelessWidget {
   const themes();
 
   @override
@@ -152,3 +152,4 @@ class themes extends StatelessWidget {
     );
   }
 }
+*/
