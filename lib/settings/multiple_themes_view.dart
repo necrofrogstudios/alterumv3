@@ -67,7 +67,7 @@ class themes extends StatelessWidget {
               ),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 OutlinedButton(
                   onPressed: () => Navigator.pop(context, 'Cancel'),
