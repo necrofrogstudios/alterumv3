@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testing/theme_setup.dart';
 import 'drawer.dart';
-import 'multiple_themes_viewmodel.dart';
+import 'settings/multiple_themes_viewmodel.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
 
