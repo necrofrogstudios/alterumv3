@@ -61,7 +61,7 @@ class themes extends StatelessWidget {
             SingleChildScrollView(
               physics: ScrollPhysics(),
               child: Align(
-                alignment: Alignment.topRight,
+                alignment: Alignment.center,
                 child: Container(
                   width: 200,
                   height: 400,
