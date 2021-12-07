@@ -7,7 +7,7 @@ class profile_pics_icons extends StatelessWidget {
       children: <Widget>[
         Column(
           children: [
-            Container(height: 3, color: theme.splashColor),
+            Container(height: 4, color: theme.splashColor),
             Container(
               width: MediaQuery.of(context).size.width,
               height: 180,
