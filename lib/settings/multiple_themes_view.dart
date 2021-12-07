@@ -103,8 +103,10 @@ class MultipleThemesView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               GridView.count(
+                scrollDirection: Axis.vertical,
+                shrinkWrap: true,
                 primary: false,
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(0),
                 crossAxisSpacing: 5,
                 mainAxisSpacing: 5,
                 crossAxisCount: 4,
