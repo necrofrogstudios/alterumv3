@@ -21,7 +21,7 @@ class settings extends StatelessWidget {
         iconTheme: IconThemeData(color: theme.primaryColor),
         backgroundColor: theme.accentColor,
         title: Text(
-          'Next page',
+          'Settings',
           style: TextStyle(
             color: theme.primaryColor,
             fontSize: 30,
@@ -29,9 +29,7 @@ class settings extends StatelessWidget {
         ),
       ),
       drawer: drawer(currentScreen),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
+      body: Center(
         child: SingleChildScrollView(
           physics: ScrollPhysics(),
           child: Column(
