@@ -23,22 +23,21 @@ class profile_pics_icons extends StatelessWidget {
           ],
         ),
         Container(
-  decoration: BoxDecoration(
-	border: Border.all(
-	  width: 2,
-	),
-  ),
-  child: Center(
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
-            child: CircleAvatar(
-              radius: 120,
-              backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+          decoration: BoxDecoration(
+            border: Border.all(
+              width: 2,
             ),
           ),
-        ),),
-),
-        
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
+              child: CircleAvatar(
+                radius: 120,
+                backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+              ),
+            ),
+          ),
+        ),
         Center(
             child: Padding(
           padding: EdgeInsets.fromLTRB(0, 285, 0, 0),
