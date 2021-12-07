@@ -118,6 +118,7 @@ class MultipleThemesView extends StatelessWidget {
                           getThemeManager(context).selectThemeAtIndex(themeData.index);
                         },
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Stack(
                               children: [
