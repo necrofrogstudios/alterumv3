@@ -61,9 +61,9 @@ class themes extends StatelessWidget {
             'Themes',
             style: TextStyle(color: theme.primaryColor),
           ),
-          content: const Text(
+          content: Text(
             'Pick a Theme',
-            style: TextStyle(color: Colors.pink),
+            style: TextStyle(color: theme.primaryColor),
           ),
           actions: <Widget>[
             SingleChildScrollView(
