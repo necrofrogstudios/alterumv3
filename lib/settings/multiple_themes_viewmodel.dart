@@ -11,10 +11,6 @@ class ThemeModel {
 }
 
 class MultipleThemesViewModel extends BaseViewModel {
-  List<Color> background = [
-    'Colors.pink',
-    'Colors.green',
-  ];
   List<ThemeModel> get themes => List<ThemeModel>.generate(
         12,
         (index) => ThemeModel(

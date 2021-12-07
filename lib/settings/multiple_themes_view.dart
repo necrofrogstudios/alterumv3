@@ -48,7 +48,7 @@ class settings extends StatelessWidget {
 }
 
 class themes extends StatelessWidget {
-  const themes();
+  themes();
 
   @override
   Widget build(BuildContext context) {
