@@ -6,9 +6,9 @@ import 'package:testing/settings/multiple_themes_viewmodel.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
 
-class MultipleThemesViews extends StatelessWidget {
-  MultipleThemesViews({Key key}) : super(key: key);
-  final currentScreen = MultipleThemesViews;
+class MultipleThemesView extends StatelessWidget {
+  MultipleThemesView({Key key}) : super(key: key);
+  final currentScreen = MultipleThemesView;
 
   @override
   Widget build(BuildContext context) {
@@ -32,33 +32,6 @@ class MultipleThemesViews extends StatelessWidget {
         body: Container(
           width: double.infinity,
           height: double.infinity,
-          child: SingleChildScrollView(
-            physics: ScrollPhysics(),
-            child: Column(
-              children: <Widget>[
-                Container(color: theme.splashColor, height: 4),
-                themes(),
-              ],
-            ),
-          ),
-        ),
-      ),
-      viewModelBuilder: () => MultipleThemesViewModel(),
-    );
-  }
-}
-
-class MultipleThemesView extends StatelessWidget {
-  MultipleThemesView({Key key}) : super(key: key);
-  final currentScreen = MultipleThemesView;
-
-  @override
-  Widget build(BuildContext context) {
-    var theme = Theme.of(context);
-    Color myColor = Theme.of(context).accentColor;
-    return ViewModelBuilder<MultipleThemesViewModel>.reactive(
-      builder: (context, model, child) => Scaffold(
-        body: Container(
           child: SingleChildScrollView(
             physics: ScrollPhysics(),
             child: Column(
@@ -154,14 +127,9 @@ class themes extends StatelessWidget {
       onPressed: () => showDialog<String>(
         context: context,
         builder: (BuildContext context) => AlertDialog(
-          content: Builder(builder: (context) {
-            const Text('AlertDialog Title');
-            // Get available height and width of the build area of this widget. Make a choice depending on the size.
-            var height = MediaQuery.of(context).size.height;
-            var width = MediaQuery.of(context).size.width;
-          }),
+          title: const Text('AlertDialog Title'),
+          content: const Text('AlertDialog description'),
           actions: <Widget>[
-            MultipleThemesView(),
             OutlinedButton(
               onPressed: () => Navigator.pop(context, 'Cancel'),
               child: const Text('Cancel'),
