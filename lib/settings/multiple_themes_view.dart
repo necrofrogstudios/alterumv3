@@ -29,7 +29,7 @@ class MultipleThemesView extends StatelessWidget {
           ),
         ),
         drawer: drawer(currentScreen),
-        body: Container(
+        body: const Container(
           width: double.infinity,
           height: double.infinity,
           child: SingleChildScrollView(
