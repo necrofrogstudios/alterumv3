@@ -59,8 +59,6 @@ class MultipleThemesView extends StatelessWidget {
     return ViewModelBuilder<MultipleThemesViewModel>.reactive(
       builder: (context, model, child) => Scaffold(
         body: Container(
-          width: double.infinity,
-          height: double.infinity,
           child: SingleChildScrollView(
             physics: ScrollPhysics(),
             child: Column(
