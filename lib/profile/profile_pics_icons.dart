@@ -42,17 +42,17 @@ class profile_pics_icons extends StatelessWidget {
             Icon(
               Icons.person_add,
               size: 30,
-              color: Colors.white,
+              color: theme.primaryColor,
             ),
             Icon(
               Icons.email,
               size: 30,
-              color: Colors.white,
+              color: theme.primaryColor,
             ),
             Icon(
               Icons.group_add,
               size: 37,
-              color: Colors.white,
+              color: theme.primaryColor,
             )
           ]),
         )
