@@ -16,3 +16,12 @@ class MultipleThemesViewModel extends BaseViewModel {
         ),
       );
 }
+
+class MultipleThemesViewModel extends BaseViewModel {
+  List<ThemeModel> get background => List<ThemeModel>.generate(
+        1,
+        (index) => ThemeModel(
+          index: index,
+        ),
+      );
+}
