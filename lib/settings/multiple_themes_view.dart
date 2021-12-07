@@ -101,7 +101,7 @@ class themes extends StatelessWidget {
 
 class MultipleThemesView extends StatelessWidget {
   MultipleThemesView({Key key}) : super(key: key);
-  var currentScreen = MultipleThemesView;
+  final currentScreen = MultipleThemesView;
 
   @override
   Widget build(BuildContext context) {
@@ -160,7 +160,7 @@ class MultipleThemesView extends StatelessWidget {
                                         Container(
                                           width: 20,
                                           height: 40,
-                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                                          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.only(
                                               topRight: Radius.circular(100),
