@@ -29,7 +29,9 @@ class settings extends StatelessWidget {
         ),
       ),
       drawer: drawer(currentScreen),
-      body: Center(
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
         child: SingleChildScrollView(
           physics: ScrollPhysics(),
           child: Column(
