@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'settings/locator.dart';
 
 import 'package:stacked_themes/stacked_themes.dart';
-import 'theme_setup.dart';
+import 'settings/theme_setup.dart';
 import 'splash.dart';
 
 Future main() async {
