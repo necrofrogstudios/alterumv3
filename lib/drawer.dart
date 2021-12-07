@@ -40,6 +40,7 @@ class drawer extends StatelessWidget {
               ],
             ),
           ),
+          Container(color: theme.splashColor, height: 4),
           Container(
             height: 250,
             color: theme.backgroundColor,
@@ -51,6 +52,7 @@ class drawer extends StatelessWidget {
               ),
             ),
           ),
+          Container(color: theme.splashColor, height: 4),
           Align(
             alignment: Alignment.center,
             child: Padding(

@@ -36,6 +36,7 @@ class MultipleThemesView extends StatelessWidget {
             physics: ScrollPhysics(),
             child: Column(
               children: <Widget>[
+                Container(color: theme.splashColor, height: 4),
                 Text(
                   'look here maybe idk',
                   style: TextStyle(
