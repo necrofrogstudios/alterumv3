@@ -38,6 +38,7 @@ class MultipleThemesViews extends StatelessWidget {
               children: <Widget>[
                 Container(color: theme.splashColor, height: 4),
                 themes(),
+               
               ],
             ),
           ),
@@ -57,8 +58,8 @@ class MultipleThemesView extends StatelessWidget {
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
     return ViewModelBuilder<MultipleThemesViewModel>.reactive(
-      Center(
-        Container(
+      builder: (context, model, child) => Scaffold(
+        body:Container(
           width: double.infinity,
           height: double.infinity,
           child: SingleChildScrollView(
@@ -159,7 +160,7 @@ class themes extends StatelessWidget {
           title: const Text('AlertDialog Title'),
           content: const Text('AlertDialog description'),
           actions: <Widget>[
-            MultipleThemesView(),
+            MultipleThemesView()
             OutlinedButton(
               onPressed: () => Navigator.pop(context, 'Cancel'),
               child: const Text('Cancel'),
