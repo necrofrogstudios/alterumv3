@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class profile_pics_icons extends StatelessWidget {
+  var theme = Theme.of(context);
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Stack(
