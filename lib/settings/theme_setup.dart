@@ -38,10 +38,17 @@ List<ThemeData> getThemes() {
       primaryColor: Colors.white,
     ),
     ThemeData(
-      //blue, black, yellow, white//
+      //purple, blue, pink//
       backgroundColor: Color(0xFF5c3c92),
       accentColor: Color(0xFF077b8a),
       splashColor: Color(0xFFd72637),
+      primaryColor: Colors.white,
+    ),
+    ThemeData(
+      //pink, pink, brown//
+      backgroundColor: Color(0xFFbe1558),
+      accentColor: Color(0xFFe75874),
+      splashColor: Color(0xFF322514),
       primaryColor: Colors.white,
     ),
   ];
