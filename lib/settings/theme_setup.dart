@@ -49,7 +49,7 @@ List<ThemeData> getThemes() {
       backgroundColor: Color(0xFFbe1558),
       accentColor: Color(0xFFe75874),
       splashColor: Color(0xFF322514),
-      primaryColor: Colors.white,
+      primaryColor: Color(0xFF322514),
     ),
   ];
 }
