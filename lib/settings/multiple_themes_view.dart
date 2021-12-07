@@ -47,7 +47,7 @@ class settings extends StatelessWidget {
 }
 
 class themes extends StatelessWidget {
-  var theme = Theme.of(context);
+  const theme = Theme.of(context);
   const themes();
 
   @override
