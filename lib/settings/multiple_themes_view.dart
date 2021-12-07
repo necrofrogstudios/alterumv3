@@ -56,7 +56,8 @@ class MultipleThemesView extends StatelessWidget {
     Color myColor = Theme.of(context).accentColor;
     return ViewModelBuilder<MultipleThemesViewModel>.reactive(
       builder: (context, model, child) => Scaffold(
-        body: Column(
+        body: child: SingleChildScrollView(
+          physics: ScrollPhysics(),child:Column(
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             Wrap(
@@ -128,7 +129,7 @@ class MultipleThemesView extends StatelessWidget {
                     ),
                   )
                   .toList(),
-            ),
+            ),),
           ],
         ),
       ),
