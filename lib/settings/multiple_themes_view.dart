@@ -102,12 +102,13 @@ class MultipleThemesView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Wrap(
-                spacing: 1,
-                runSpacing: 10,
-                alignment: WrapAlignment.start,
-                direction: Axis.horizontal,
-                children: model.themes
+              GridView.count(
+  primary: false,
+  padding: const EdgeInsets.all(20),
+  crossAxisSpacing: 5,
+  mainAxisSpacing: 5,
+  crossAxisCount: 4,
+  children: <Widget>[children: model.themes
                     .map(
                       (themeData) => GestureDetector(
                         onTap: () {
@@ -171,7 +172,10 @@ class MultipleThemesView extends StatelessWidget {
                       ),
                     )
                     .toList(),
-              ),
+              ],),
+
+
+             
             ],
           ),
         ),
