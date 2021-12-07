@@ -63,7 +63,7 @@ class themes extends StatelessWidget {
               child: Align(
                 alignment: Alignment.center,
                 child: Container(
-                  width: 200,
+                  width: 300,
                   height: 400,
                   color: Colors.purple,
                   child: MultipleThemesView(),
