@@ -60,8 +60,7 @@ class themes extends StatelessWidget {
           actions: <Widget>[
             SingleChildScrollView(
               physics: ScrollPhysics(),
-              child: Align(
-                  alignment: Alignment.topRight, child:Container(
+              child: Container(
                 width: 200,
                 height: 400,
                 color: Colors.purple,
@@ -80,7 +79,7 @@ class themes extends StatelessWidget {
                   child: const Text('OK'),
                 ),
               ],
-            
+            ),
           ],
         ),
       ),
