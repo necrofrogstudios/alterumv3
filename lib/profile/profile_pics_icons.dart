@@ -18,7 +18,7 @@ class profile_pics_icons extends StatelessWidget {
                 ),
               ),
             ),
-            Container(height: 3, color: theme.splashColor),
+            Container(height: 4, color: theme.splashColor),
             Container(height: 210, color: theme.backgroundColor),
           ],
         ),
