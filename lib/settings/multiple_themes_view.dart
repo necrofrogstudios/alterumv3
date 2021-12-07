@@ -47,7 +47,7 @@ class settings extends StatelessWidget {
 }
 
 class themes extends StatelessWidget {
-  var theme = Theme.of(context);
+  var themes = Theme.of(context);
   const themes();
 
   @override
@@ -59,11 +59,11 @@ class themes extends StatelessWidget {
           backgroundColor: Colors.green,
           title: const Text(
             'Themes',
-            style: TextStyle(color: theme.primaryColor),
+            style: TextStyle(color: themes.primaryColor),
           ),
           content: const Text(
             'Pick a Theme',
-            style: TextStyle(color: theme.primaryColor),
+            style: TextStyle(color: themes.primaryColor),
           ),
           actions: <Widget>[
             SingleChildScrollView(
