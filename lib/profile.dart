@@ -15,6 +15,7 @@ class profile extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: theme.primaryColor),
         centerTitle: true,
         title: FlatButton(
           child: Text(
