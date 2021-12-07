@@ -24,10 +24,10 @@ class profile_pics_icons extends StatelessWidget {
         ),
         Container(
           decoration: BoxDecoration(
-              color: getThemes()[themeData.index].splashColor,
+              color: themes.splashColor,
               border: Border.all(
                 width: 4,
-                color: getThemes()[themeData.index].splashColor,
+                color: themes.splashColor,
               ),
               borderRadius: BorderRadius.all(Radius.circular(50))),
           child: Center(
