@@ -57,8 +57,14 @@ class themes extends StatelessWidget {
         context: context,
         builder: (BuildContext context) => AlertDialog(
           backgroundColor: Colors.green,
-          title: const Text('Themes', style:TextStyle(color:Colors.yellow),),
-          content: const Text('Pick a Theme'le:TextStyle(color:Colors.pink),),
+          title: const Text(
+            'Themes',
+            style: TextStyle(color: Colors.yellow),
+          ),
+          content: const Text(
+            'Pick a Theme',
+            style: TextStyle(color: Colors.pink),
+          ),
           actions: <Widget>[
             SingleChildScrollView(
               physics: ScrollPhysics(),
