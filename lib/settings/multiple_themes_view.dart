@@ -102,16 +102,9 @@ class MultipleThemesView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              GridView.count(
-  primary: false,
-  padding: const EdgeInsets.all(20),
-  crossAxisSpacing: 10,
-  mainAxisSpacing: 10,
-  crossAxisCount: 2,
-  children: <Widget>[
               Wrap(
-                spacing: 1,
-                runSpacing: 10,
+                spacing: 0,
+                runSpacing: 0,
                 alignment: WrapAlignment.start,
                 direction: Axis.horizontal,
                 children: model.themes
