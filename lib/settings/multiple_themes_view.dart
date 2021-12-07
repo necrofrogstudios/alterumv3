@@ -18,7 +18,7 @@ class MultipleThemesView extends StatelessWidget {
       builder: (context, model, child) => Scaffold(
         backgroundColor: theme.backgroundColor,
         appBar: AppBar(
-          iconTheme: IconThemeData(color: theme.primaryColor),
+          iconTheme: IconThemeData(color: Colors.green),
           backgroundColor: theme.accentColor,
           title: Text(
             'Next page',
