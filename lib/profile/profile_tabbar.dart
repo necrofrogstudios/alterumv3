@@ -132,7 +132,7 @@ class _wall_tabState extends State<wall_tab> {
   }
 
   int commentListIndexChecker(List<comments> list, int i) {
-    if (list.length = 0) {
+    if (list.length == 0) {
       return 0;
     } else {
       return ((list.length - i) - 1);
