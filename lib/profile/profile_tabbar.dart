@@ -119,7 +119,7 @@ class _wall_tabState extends State<wall_tab> {
             ListView.builder(
               itemCount: commentList.length,
               itemBuilder: (context, index) {
-                return comments(commentList[commentListIndexChecker()]);
+                return comments(commentList[commentListIndexChecker(commentList, index)]);
               },
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
@@ -131,11 +131,11 @@ class _wall_tabState extends State<wall_tab> {
     );
   }
 
-  int commentListIndexChecker(List<comments> commentList) {
-    if (commentList.length = 0) {
+  int commentListIndexChecker(List<comments> list, int i) {
+    if (list.length = 0) {
       return 0;
     } else {
-      return ((commentList.length - index) - 1);
+      return ((list.length - i) - 1);
     }
   }
 
