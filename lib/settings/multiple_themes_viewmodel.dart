@@ -12,7 +12,7 @@ class ThemeModel {
 
 class MultipleThemesViewModel extends BaseViewModel {
   List<ThemeModel> get themes => List<ThemeModel>.generate(
-        12,
+        13,
         (index) => ThemeModel(
           index: index,
           title: _getTitleForIndex(index),

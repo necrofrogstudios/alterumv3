@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:testing/settings/theme_setup.dart';
 import 'package:testing/drawer.dart';
-
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:testing/settings/multiple_themes_viewmodel.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
 
-class settings extends StatelessWidget {
+class settings extends StatefulWidget {
   settings({Key key}) : super(key: key);
+
+  @override
+  State<settings> createState() => _settingsState();
+}
+
+class _settingsState extends State<settings> {
   final currentScreen = settings;
 
   @override
@@ -47,12 +53,25 @@ class settings extends StatelessWidget {
   }
 }
 
-class themes extends StatelessWidget {
+class themes extends StatefulWidget {
   const themes();
+  @override
+  State<themes> createState() => _themesState();
+}
 
+class _themesState extends State<themes> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+
+    void changeColor(Color color) {
+      setState(() {
+        getThemes[12] = getThemes[12].copyWith(backgroundColor: color);
+        theme = getThemes[12];
+        getThemeManager(context).selectThemeAtIndex(12);
+      });
+    }
+
     return OutlinedButton(
       onPressed: () => showDialog<String>(
         context: context,
@@ -69,13 +88,31 @@ class themes extends StatelessWidget {
           actions: <Widget>[
             SingleChildScrollView(
               physics: ScrollPhysics(),
-              child: Align(
-                alignment: Alignment.center,
-                child: Container(
-                  width: 300,
-                  height: 400,
-                  child: MultipleThemesView(),
-                ),
+              child: Column(
+                children: [
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      width: 300,
+                      height: 400,
+                      child: MultipleThemesView(),
+                    ),
+                  ),
+                  OutlinedButton(
+                      onPressed: () => showDialog<String>(
+                            context: context,
+                            builder: (BuildContext context) => AlertDialog(
+                              title: const Text('Pick a color'),
+                              content: SingleChildScrollView(
+                                child: ColorPicker(
+                                  onColorChanged: changeColor,
+                                  pickerColor: theme.backgroundColor,
+                                ),
+                              ),
+                            ),
+                          ),
+                      child: Text('Custom theme'))
+                ],
               ),
             ),
             Row(
@@ -94,13 +131,25 @@ class themes extends StatelessWidget {
           ],
         ),
       ),
-      child: const Text('Themes'),
+      child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: const Text(
+          'Themes',
+          style: TextStyle(fontSize: 40),
+        ),
+      ),
     );
   }
 }
 
-class MultipleThemesView extends StatelessWidget {
+class MultipleThemesView extends StatefulWidget {
   MultipleThemesView({Key key}) : super(key: key);
+
+  @override
+  State<MultipleThemesView> createState() => _MultipleThemesViewState();
+}
+
+class _MultipleThemesViewState extends State<MultipleThemesView> {
   final currentScreen = MultipleThemesView;
 
   @override
@@ -134,9 +183,9 @@ class MultipleThemesView extends StatelessWidget {
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
-                                        color: getThemes()[themeData.index].splashColor,
+                                        color: getThemes[themeData.index].splashColor,
                                         border: Border.all(
-                                          color: getThemes()[themeData.index].splashColor,
+                                          color: getThemes[themeData.index].splashColor,
                                         ),
                                         borderRadius: BorderRadius.all(Radius.circular(50))),
                                     width: 50,
@@ -154,7 +203,7 @@ class MultipleThemesView extends StatelessWidget {
                                               topLeft: Radius.circular(100),
                                               bottomLeft: Radius.circular(100),
                                             ),
-                                            color: getThemes()[themeData.index].accentColor,
+                                            color: getThemes[themeData.index].accentColor,
                                           ),
                                         ),
                                         Container(
@@ -166,7 +215,7 @@ class MultipleThemesView extends StatelessWidget {
                                               topRight: Radius.circular(100),
                                               bottomRight: Radius.circular(100),
                                             ),
-                                            color: getThemes()[themeData.index].backgroundColor,
+                                            color: getThemes[themeData.index].backgroundColor,
                                           ),
                                         ),
                                       ],
@@ -176,7 +225,7 @@ class MultipleThemesView extends StatelessWidget {
                                     padding: EdgeInsets.fromLTRB(17, 4, 0, 0),
                                     child: Text(
                                       'T',
-                                      style: TextStyle(color: getThemes()[themeData.index].primaryColor, fontSize: 30),
+                                      style: TextStyle(color: getThemes[themeData.index].primaryColor, fontSize: 30),
                                     ),
                                   ),
                                 ],
