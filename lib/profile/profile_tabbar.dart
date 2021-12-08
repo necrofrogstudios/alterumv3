@@ -119,7 +119,7 @@ class _wall_tabState extends State<wall_tab> {
             ListView.builder(
               itemCount: commentList.length,
               itemBuilder: (context, index) {
-                return comments(commentList[commentList.length - index]);
+                return comments(commentList[(commentList.length - index) - 1]);
               },
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
