@@ -23,15 +23,9 @@ class profile_tabbar extends StatelessWidget {
                 labelColor: theme.primaryColor,
                 unselectedLabelColor: Colors.white,
                 tabs: [
-                  Text('Wall',
-                      style:
-                          TextStyle(fontSize: 16, color: theme.primaryColor)),
-                  Text('Profile',
-                      style:
-                          TextStyle(fontSize: 16, color: theme.primaryColor)),
-                  Text('Roleplays',
-                      style:
-                          TextStyle(fontSize: 16, color: theme.primaryColor)),
+                  Text('Wall', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
+                  Text('Profile', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
+                  Text('Roleplays', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
                 ],
               ),
             ),
@@ -81,20 +75,17 @@ class _wall_tabState extends State<wall_tab> {
                 decoration: InputDecoration(
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(25.0)),
-                    borderSide:
-                        BorderSide(color: theme.accentColor, width: 3.0),
+                    borderSide: BorderSide(color: theme.accentColor, width: 3.0),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(25.0)),
-                    borderSide:
-                        BorderSide(color: theme.accentColor, width: 3.0),
+                    borderSide: BorderSide(color: theme.accentColor, width: 3.0),
                   ),
                   hintText: 'Type a Message Here',
                   hintStyle: TextStyle(
                     color: Colors.grey,
                   ),
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+                  contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
                 ),
               ),
             ),
@@ -108,8 +99,7 @@ class _wall_tabState extends State<wall_tab> {
                     style: OutlinedButton.styleFrom(
                       side: BorderSide(width: 3.0, color: theme.accentColor),
                       elevation: 6,
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+                      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
                       backgroundColor: theme.backgroundColor,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
@@ -129,7 +119,7 @@ class _wall_tabState extends State<wall_tab> {
             ListView.builder(
               itemCount: commentList.length,
               itemBuilder: (context, index) {
-                return comments(commentList[index]);
+                return comments(commentList[commentList.length - index]);
               },
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
@@ -142,12 +132,7 @@ class _wall_tabState extends State<wall_tab> {
   }
 
   void addComment(String postText) {
-    final newComment = WallComment(
-        id: '1',
-        profilePhoto:
-            'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg',
-        bodyText: postText,
-        date: DateTime.now());
+    final newComment = WallComment(id: '1', profilePhoto: 'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg', bodyText: postText, date: DateTime.now());
     setState(() {
       commentList.add(newComment);
     });
@@ -263,8 +248,7 @@ class comments extends StatelessWidget {
 final List<WallComment> commentList = [
   WallComment(
     id: '1',
-    profilePhoto:
-        'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg',
+    profilePhoto: 'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg',
     bodyText: 'oh look! its new sample text wow omg much wow who does this '
         'why bother with your own text for it to be destroyed later '
         'well ya know- gotta put in the admin work and make it work '
