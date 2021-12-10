@@ -16,6 +16,8 @@ class drawer extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           FlatButton(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
             color: myColor,
             height: 60.0,
             onPressed: () {
@@ -69,6 +71,8 @@ class drawer extends StatelessWidget {
             ),
           ),
           FlatButton(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
             height: 60.0,
             onPressed: () {},
             child: Row(
@@ -88,6 +92,8 @@ class drawer extends StatelessWidget {
             ),
           ),
           FlatButton(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
             height: 60.0,
             onPressed: () {
               Navigator.push(
@@ -112,6 +118,8 @@ class drawer extends StatelessWidget {
             ),
           ),
           FlatButton(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
             height: 60.0,
             onPressed: () {},
             child: Row(
@@ -131,6 +139,8 @@ class drawer extends StatelessWidget {
             ),
           ),
           FlatButton(
+            splashColor: Colors.transparent,
+            highlightColor: Colors.transparent,
             height: 60.0,
             onPressed: () {
               Navigator.push(
