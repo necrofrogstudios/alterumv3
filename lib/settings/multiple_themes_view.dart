@@ -103,7 +103,7 @@ class _themesState extends State<themes> {
                               content: SingleChildScrollView(
                                 child: ColorPicker(
                                   onColorChanged: changeColor,
-                                  pickerColor: theme.backgroundColor,
+                                  final pickerColor: theme.backgroundColor,
                                 ),
                               ),
                             ),
