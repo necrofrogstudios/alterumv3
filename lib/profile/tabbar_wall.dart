@@ -18,7 +18,6 @@ class _wall_tabState extends State<wall_tab> {
         physics: ScrollPhysics(),
         child: Column(
           children: [
-            Text('test'),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
               child: TextFormField(
@@ -44,7 +43,7 @@ class _wall_tabState extends State<wall_tab> {
                 ),
               ),
             ),
-            Text('test'),
+
             Container(
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 15, 30, 0),
