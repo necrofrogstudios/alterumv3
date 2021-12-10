@@ -171,7 +171,7 @@ class comments extends StatelessWidget {
                     child: IconButton(
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
+                      hoverColor:
                       iconSize: 15,
                       icon: Icon(Icons.close, color: theme.primaryColor),
                       onPressed: () {},

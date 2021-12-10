@@ -100,7 +100,7 @@ class profile_tab extends StatelessWidget {
                   ),
                 ),
               ),
-            ],
+            ],),
           ),
         ],
       ),
