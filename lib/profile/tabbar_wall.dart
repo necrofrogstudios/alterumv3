@@ -29,11 +29,11 @@ class _wall_tabState extends State<wall_tab> {
                 decoration: InputDecoration(
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                    borderSide: BorderSide(color: theme.accentColor, width: 3.0),
+                    borderSide: BorderSide(color: theme.accentColor, width: 4.0),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                    borderSide: BorderSide(color: theme.accentColor, width: 3.0),
+                    borderSide: BorderSide(color: theme.accentColor, width: 4.0),
                   ),
                   hintText: 'Type a Message Here',
                   hintStyle: TextStyle(
@@ -51,7 +51,7 @@ class _wall_tabState extends State<wall_tab> {
                   alignment: Alignment.centerRight,
                   child: OutlinedButton(
                     style: OutlinedButton.styleFrom(
-                      side: BorderSide(width: 3.0, color: theme.accentColor),
+                      side: BorderSide(width: 4.0, color: theme.accentColor),
                       elevation: 6,
                       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
                       backgroundColor: theme.backgroundColor,
