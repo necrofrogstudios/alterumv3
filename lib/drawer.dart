@@ -13,6 +13,7 @@ class drawer extends StatelessWidget {
     Color myColor = Theme.of(context).accentColor;
     //backgroundColor: theme.backgroundColor;//
     return Drawer(
+      color: theme.accentColor,
       child: ListView(
         children: <Widget>[
           FlatButton(
