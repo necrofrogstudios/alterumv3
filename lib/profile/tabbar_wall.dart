@@ -180,7 +180,7 @@ class comments extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(20, 0, 10, 20),
               child: SelectableText(
                 comment.bodyText,
-                style: TextStyle(color: theme.primaryColor),
+                style: TextStyle(color: theme.primaryColor, fontSize: 15),
               ),
             )
           ],
