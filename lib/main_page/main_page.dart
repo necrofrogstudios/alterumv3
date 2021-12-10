@@ -18,9 +18,9 @@ class main_page extends StatelessWidget {
 
     return Scaffold(
       appBar: PreferredSize(
-    preferredSize: const Size.fromHeight(100),
-    child: Container(color: Colors.red),
-  ),appbar_custom(),
+        preferredSize: const Size.fromHeight(100),
+        child: appbar_custom(),
+      ),
       drawer: drawer(currentScreen),
       body: Container(
         width: double.infinity,
