@@ -41,7 +41,7 @@ Widget _buildComplexMarquee(ThemeData theme) {
 }
 
 // Styling the Marquee
-Widget _wrapWithStuff(Widget child, ThemeData theme) {
+Widget _wrapWithStuff(ThemeData theme;Widget child) {
   return Padding(
     padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
     child: Container(height: 20.0, color: theme.accentColor, child: child),
