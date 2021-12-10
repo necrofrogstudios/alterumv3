@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:stacked_themes/stacked_themes.dart';
-import 'package:testing/settings/locator.dart';
+
 import 'package:testing/settings/theme_setup.dart';
 import 'package:testing/popular_widgets/splash.dart';
 
