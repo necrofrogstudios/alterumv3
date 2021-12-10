@@ -141,6 +141,10 @@ class comments extends StatelessWidget {
                   ),
                 ),
                 Text(
+                  'Guarded',
+                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                ),
+                Text(
                   DateFormat('MM/dd/yyyy - hh:mm a').format(comment.date),
                   style: TextStyle(color: theme.primaryColor),
                 ),
