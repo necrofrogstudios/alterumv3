@@ -167,7 +167,7 @@ class comments extends StatelessWidget {
                     ],
                   ),
                   Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
                     child: IconButton(
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
