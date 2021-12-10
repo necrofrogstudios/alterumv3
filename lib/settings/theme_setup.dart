@@ -4,8 +4,8 @@ List<ThemeData> getThemes = [
   ThemeData(
     //blue, black, yellow, white//
     backgroundColor: Colors.black,
-    accentColor: Color(0xFF0C2C63),
-    splashColor: Colors.yellow,
+    splashColor: Color(0xFF0C2C63),
+    accentColor: Colors.yellow,
     primaryColor: Colors.white,
   ),
   ThemeData(
