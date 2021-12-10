@@ -18,7 +18,7 @@ class main_page extends StatelessWidget {
 
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(50),
+        preferredSize: const Size.fromHeight(60),
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
