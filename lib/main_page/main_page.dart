@@ -62,7 +62,7 @@ class main_page extends StatelessWidget {
                     Text(
                       '\u00a9 2022 Alterum',
                       style: TextStyle(
-                        color: theme.primaryColors,
+                        color: theme.primaryColor,
                         fontSize: 15,
                       ),
                     ),
