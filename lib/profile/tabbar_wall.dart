@@ -169,7 +169,7 @@ class comments extends StatelessWidget {
                   width: 75,
                   color: theme.backgroundColor,
                   child: IconButton(
-                    icon: Icon(Icons.close),
+                    icon: Icon(Icons.close, color: theme.primaryColor),
                     onPressed: () {},
                   ),
                 ),
