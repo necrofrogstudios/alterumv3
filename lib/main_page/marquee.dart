@@ -44,6 +44,6 @@ Widget _buildComplexMarquee(ThemeData theme) {
 Widget _wrapWithStuff(Widget child) {
   return Padding(
     padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
-    child: Container(height: 20.0, color: Colors.white, child: child),
+    child: Container(height: 20.0, color: accentColor, child: child),
   );
 }
