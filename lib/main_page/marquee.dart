@@ -8,14 +8,15 @@ class marquee extends StatelessWidget {
       scrollDirection: Axis.vertical,
       shrinkWrap: true,
       children: [
-        _buildComplexMarquee(),
+        _buildComplexMarquee(theme),
       ].map(_wrapWithStuff).toList(),
     );
   }
 }
 
 Widget _buildComplexMarquee() {
-  var theme = Theme.of(context);
+  var theme;
+  _buildComplexMarquee(this.theme);
   return Container(
     color: theme.accentColor,
     child: Marquee(
