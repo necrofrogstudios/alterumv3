@@ -153,20 +153,4 @@ class comments extends StatelessWidget {
   }
 }
 
-final List<WallComment> commentList = [
-  WallComment(
-    id: '1',
-    profilePhoto: 'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg',
-    bodyText: 'oh look! its new sample text wow omg much wow who does this '
-        'why bother with your own text for it to be destroyed later '
-        'well ya know- gotta put in the admin work and make it work '
-        'apps dont grow on trees and we are above using basic bitch '
-        'filler text yeah that looks good enough good job me yay go '
-        'oh look! its new sample text wow omg much wow who does this '
-        'why bother with your own text for it to be destroyed later '
-        'well ya know- gotta put in the admin work and make it work '
-        'apps dont grow on trees and we are above using basic bitch '
-        'filler text yeah that looks good enough good job me yay go ',
-    date: DateTime.now(),
-  )
-];
+final List<WallComment> commentList = [];
