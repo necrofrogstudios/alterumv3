@@ -50,7 +50,7 @@ class profile_tabbar extends StatelessWidget {
 class profile_tab extends StatelessWidget {
   Widget build(BuildContext context) {
     bool typing = false;
-final controller = TextEditingController();
+    final controller = TextEditingController();
     var theme = Theme.of(context);
     return SingleChildScrollView(
       physics: ScrollPhysics(),
@@ -84,7 +84,8 @@ final controller = TextEditingController();
                 style: TextStyle(fontSize: 15, color: theme.primaryColor),
               ),
             ),
-          ),Stack(
+          ),
+          Stack(
             children: <Widget>[
               InkWell(
                 onTap: startTyping,
@@ -96,10 +97,12 @@ final controller = TextEditingController();
                     visible: !typing,
                     child: Container(
                       margin: const EdgeInsets.all(20),
-                      child: Text(controller.text.isEmpty ? 'Type a question' : controller.text, 
-                      style: TextStyle(color: Colors.white),
+                      child: Text(
+                        controller.text.isEmpty ? 'Type a question' : controller.text,
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
-                  
+                  ),
                 ),
               ),
             ],
