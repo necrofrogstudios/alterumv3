@@ -60,7 +60,6 @@ class main_page extends StatelessWidget {
               ListView(
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
-                padding: EdgeInsets.only(top: 10.0),
                 children: [
                   _buildComplexMarquee(),
                 ].map(_wrapWithStuff).toList(),
