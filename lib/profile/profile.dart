@@ -31,8 +31,8 @@ class profile extends StatelessWidget {
             child: SimpleAccountMenu(
               icons: [
                 Icon(Icons.person),
-                Icon(Icons.settings),
-                Icon(Icons.credit_card),
+                Icon(Icons.email),
+                Icon(Icons.group),
               ],
               iconColor: theme.primaryColor,
               onChange: (index) {
