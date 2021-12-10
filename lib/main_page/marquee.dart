@@ -23,7 +23,7 @@ Widget _buildComplexMarquee() {
     scrollAxis: Axis.horizontal,
     crossAxisAlignment: CrossAxisAlignment.start,
     blankSpace: 170.0,
-    velocity: 100.0,
+    velocity: 60.0,
     pauseAfterRound: Duration(seconds: 5),
     showFadingOnlyWhenScrolling: true,
     fadingEdgeStartFraction: 0.1,
