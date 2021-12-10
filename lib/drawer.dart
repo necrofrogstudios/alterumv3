@@ -57,10 +57,6 @@ class drawer extends StatelessWidget {
           ),
           Container(
             color: theme.backgroundColor,
-            child: Text('Guarded', style: TextStyle(color: theme.primaryColor)),
-          ),
-          Container(
-            color: theme.backgroundColor,
             child: Align(
               alignment: Alignment.center,
               child: Padding(
