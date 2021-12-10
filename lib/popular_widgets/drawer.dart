@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'settings/settings.dart';
-import 'profile/profile.dart';
+import 'package:testing/settings/settings.dart';
+import 'package:testing/profile/profile.dart';
 
 class drawer extends StatelessWidget {
   final back;
