@@ -26,16 +26,19 @@ class profile extends StatelessWidget {
         ),
         backgroundColor: myColor,
         actions: <Widget>[
-          SimpleAccountMenu(
-            icons: [
-              Icon(Icons.person),
-              Icon(Icons.settings),
-              Icon(Icons.credit_card),
-            ],
-            iconColor: theme.primaryColor,
-            onChange: (index) {
-              print(index);
-            },
+          Padding(
+            padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+            child: SimpleAccountMenu(
+              icons: [
+                Icon(Icons.person),
+                Icon(Icons.settings),
+                Icon(Icons.credit_card),
+              ],
+              iconColor: theme.primaryColor,
+              onChange: (index) {
+                print(index);
+              },
+            ),
           ),
         ],
       ),
