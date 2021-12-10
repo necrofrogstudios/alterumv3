@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testing/settings/settings.dart';
 import 'package:testing/profile/profile.dart';
+import 'package:testing/main_page/main_page';
 
 class drawer extends StatelessWidget {
   final back;
@@ -84,7 +85,12 @@ class drawer extends StatelessWidget {
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent,
               height: 60.0,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => main_page()),
+                );
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
