@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marquee/marquee.dart';
 
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
@@ -56,6 +57,20 @@ class main_page extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               profile_top_buttons(),
               Container(color: theme.splashColor, height: 4),
+              Marquee(
+                text: 'Some sample text that takes some space.',
+                style: TextStyle(fontWeight: FontWeight.bold),
+                scrollAxis: Axis.horizontal,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                blankSpace: 20.0,
+                velocity: 100.0,
+                pauseAfterRound: Duration(seconds: 1),
+                startPadding: 10.0,
+                accelerationDuration: Duration(seconds: 1),
+                accelerationCurve: Curves.linear,
+                decelerationDuration: Duration(milliseconds: 500),
+                decelerationCurve: Curves.easeOut,
+              ),
               Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.accentColor,
