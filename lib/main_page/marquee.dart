@@ -28,7 +28,6 @@ Widget _buildComplexMarquee() {
     showFadingOnlyWhenScrolling: true,
     fadingEdgeStartFraction: 0.1,
     fadingEdgeEndFraction: 0.1,
-    numberOfRounds: ,
     startPadding: 10.0,
     accelerationDuration: Duration(seconds: 1),
     accelerationCurve: Curves.linear,
