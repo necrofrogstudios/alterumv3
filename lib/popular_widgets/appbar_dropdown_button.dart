@@ -28,9 +28,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
   OverlayEntry _overlayEntry;
   BorderRadius _borderRadius;
   AnimationController _animationController;
-  final bool isSelected;
-  final Function onPressed;
-  _SimpleAccountMenuState({this.isSelected, this.onPressed});
+
   @override
   void initState() {
     _animationController = AnimationController(
@@ -81,9 +79,12 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         hoverColor: Colors.transparent,
-        icon: Padding(padding: EdgeInsets.zero, child: isSelected == true ? Icon(Icons.notifications) : Icon(Icons.close)),
+        icon: Padding(child: pressed == true ? Icon(Icons.start) : Icon(Icons.stop)),
         color: theme.primaryColor,
         onPressed: () {
+          setState(() {
+            pressed = !pressed;
+          });
           if (isMenuOpen) {
             closeMenu();
           } else {
