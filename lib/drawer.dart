@@ -35,8 +35,9 @@ class drawer extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Icon(color:theme.primaryColor,
+                  child: Icon(
                     Icons.arrow_back,
+                    color: theme.primaryColor,
                   ),
                 ),
               ],
