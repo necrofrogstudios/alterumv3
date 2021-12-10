@@ -6,6 +6,7 @@ import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
+import 'package:testing/main_page/marquee.dart';
 
 class main_page extends StatelessWidget {
   final currentScreen = main_page;
@@ -57,13 +58,7 @@ class main_page extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               profile_top_buttons(),
               Container(color: theme.splashColor, height: 4),
-              ListView(
-                scrollDirection: Axis.vertical,
-                shrinkWrap: true,
-                children: [
-                  _buildComplexMarquee(),
-                ].map(_wrapWithStuff).toList(),
-              ),
+              marquee(),
               Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.accentColor,
@@ -93,33 +88,4 @@ class main_page extends StatelessWidget {
       ),
     );
   }
-}
-
-Widget _buildComplexMarquee() {
-  return Marquee(
-    text: 'GeeksforGeeks is a one-stop destination for programmers.',
-    style: TextStyle(fontWeight: FontWeight.bold),
-    scrollAxis: Axis.horizontal,
-    crossAxisAlignment: CrossAxisAlignment.start,
-    blankSpace: 20.0,
-    velocity: 100.0,
-    pauseAfterRound: Duration(seconds: 1),
-    showFadingOnlyWhenScrolling: true,
-    fadingEdgeStartFraction: 0.1,
-    fadingEdgeEndFraction: 0.1,
-    numberOfRounds: 3,
-    startPadding: 10.0,
-    accelerationDuration: Duration(seconds: 1),
-    accelerationCurve: Curves.linear,
-    decelerationDuration: Duration(milliseconds: 500),
-    decelerationCurve: Curves.easeOut,
-  );
-}
-
-// Styling the Marquee
-Widget _wrapWithStuff(Widget child) {
-  return Padding(
-    padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
-    child: Container(height: 15.0, color: Colors.white, child: child),
-  );
 }
