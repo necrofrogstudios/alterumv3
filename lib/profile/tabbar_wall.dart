@@ -117,7 +117,7 @@ class comments extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 3),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
       child: Container(
         child: Card(
           shape: RoundedRectangleBorder(
