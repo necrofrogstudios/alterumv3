@@ -16,7 +16,9 @@ class marquee extends StatelessWidget {
 
 Widget _buildComplexMarquee() {
   return Marquee(
-    text: 'GeeksforGeeks is a one-stop destination for programmers.',
+    text: 'Oh kevin so stinky that stinky bitch ass bitch who loves the kevin song song '
+        'lets gather around the kevin, and sing the kevin song song'
+        'the k-e-v-i-n s-o-n-g song song song song song',
     style: TextStyle(fontWeight: FontWeight.bold),
     scrollAxis: Axis.horizontal,
     crossAxisAlignment: CrossAxisAlignment.start,
