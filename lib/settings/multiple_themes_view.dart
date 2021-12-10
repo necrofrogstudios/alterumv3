@@ -101,9 +101,9 @@ class _themesState extends State<themes> {
                             builder: (BuildContext context) => AlertDialog(
                               title: const Text('Pick a color'),
                               content: SingleChildScrollView(
-                                child: ColorPicker(
+                                child: final ColorPicker(
                                   onColorChanged: changeColor,
-                                  final pickerColor: theme.backgroundColor,
+                                  pickerColor: theme.backgroundColor,
                                 ),
                               ),
                             ),
