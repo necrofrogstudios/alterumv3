@@ -102,6 +102,51 @@ class _themesState extends State<themes> {
                     ),
                     child: Text('Custom theme'),
                   ),
+                  OutlinedButton(
+                    onPressed: () => showDialog<String>(
+                      context: context,
+                      builder: (BuildContext context) => AlertDialog(
+                        title: const Text('Pick a color'),
+                        content: SingleChildScrollView(
+                          child: ColorPicker(
+                            onColorChanged: changeColor,
+                            pickerColor: theme.accentColor,
+                          ),
+                        ),
+                      ),
+                    ),
+                    child: Text('Custom theme'),
+                  ),
+                  OutlinedButton(
+                    onPressed: () => showDialog<String>(
+                      context: context,
+                      builder: (BuildContext context) => AlertDialog(
+                        title: const Text('Pick a color'),
+                        content: SingleChildScrollView(
+                          child: ColorPicker(
+                            onColorChanged: changeColor,
+                            pickerColor: theme.splashColor,
+                          ),
+                        ),
+                      ),
+                    ),
+                    child: Text('Custom theme'),
+                  ),
+                  OutlinedButton(
+                    onPressed: () => showDialog<String>(
+                      context: context,
+                      builder: (BuildContext context) => AlertDialog(
+                        title: const Text('Pick a color'),
+                        content: SingleChildScrollView(
+                          child: ColorPicker(
+                            onColorChanged: changeColor,
+                            pickerColor: theme.primaryColor,
+                          ),
+                        ),
+                      ),
+                    ),
+                    child: Text('Custom theme'),
+                  ),
                 ],
               ),
             ),
