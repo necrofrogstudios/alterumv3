@@ -119,6 +119,9 @@ class comments extends StatelessWidget {
     var theme = Theme.of(context);
     return Container(
       child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.0),
+        ),
         color: Colors.grey[850],
         child: Column(
           children: [
