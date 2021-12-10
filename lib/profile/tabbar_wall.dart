@@ -46,7 +46,7 @@ class _wall_tabState extends State<wall_tab> {
 
             Container(
               child: Padding(
-                padding: EdgeInsets.fromLTRB(0, 15, 30, 0),
+                padding: EdgeInsets.fromLTRB(0, 15, 30, 10),
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: OutlinedButton(
