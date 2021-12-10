@@ -60,7 +60,11 @@ class drawer extends StatelessWidget {
             child: Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: EdgeInsets.only(top: 0, left: 10),
+                padding: EdgeInsets.only(
+                  top: 0,
+                  left: 10,
+                  bottom: 10,
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
