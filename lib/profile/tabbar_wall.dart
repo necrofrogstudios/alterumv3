@@ -120,7 +120,13 @@ class comments extends StatelessWidget {
     return Container(
       child: Card(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30.0),
+          borderRadius: BorderRadius.circular(
+            30.0,
+            side: BorderSide(
+              color: Colors.black,
+              width: 2.0,
+            ),
+          ),
         ),
         color: Colors.grey[850],
         child: Column(
