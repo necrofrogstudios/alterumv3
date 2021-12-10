@@ -54,8 +54,11 @@ class drawer extends StatelessWidget {
                 backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
               ),
             ),
-          ),Container(color:theme.backgroundColor, child
-          Text('Guarded', style: TextStyle(color: theme.primaryColor)),),
+          ),
+          Container(
+            color: theme.backgroundColor,
+            child: Text('Guarded', style: TextStyle(color: theme.primaryColor)),
+          ),
           Container(
             color: theme.backgroundColor,
             child: Align(
