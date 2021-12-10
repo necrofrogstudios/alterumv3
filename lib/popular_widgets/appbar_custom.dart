@@ -9,14 +9,10 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/main_page/marquee.dart';
 
-import 'package:flutter/material.dart';
-import 'package:marquee/marquee.dart';
-
 class marquee extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    Color myColor = Theme.of(context).accentColor;
-    var theme = Theme.of(context);
+
     return AppBar(
       iconTheme: IconThemeData(color: theme.primaryColor),
       centerTitle: true,
