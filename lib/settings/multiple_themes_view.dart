@@ -60,6 +60,13 @@ class _themesState extends State<themes> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    void changeColor(Color color) {
+      setState(() {
+        getThemes[12] = getThemes[12].copyWith(accentColor: color);
+        theme = getThemes[12];
+        getThemeManager(context).selectThemeAtIndex(12);
+      });
+    }
 
     void changeColor(Color color) {
       setState(() {
