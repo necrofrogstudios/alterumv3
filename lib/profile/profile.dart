@@ -57,7 +57,7 @@ class profile extends StatelessWidget {
               profile_tabbar(),
               Container(color: theme.splashColor, height: 4),
               Container(
-                color: Colors.black,
+                color: theme.accentColor,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
