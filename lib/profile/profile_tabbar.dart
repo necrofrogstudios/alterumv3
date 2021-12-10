@@ -16,7 +16,7 @@ class profile_tabbar extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 50,
-              color: theme.backgroundColor,
+              color: theme.accentColor,
               child: TabBar(
                 indicator: UnderlineTabIndicator(
                   borderSide: BorderSide(width: 3.0, color: theme.splashColor),
