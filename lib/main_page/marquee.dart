@@ -5,14 +5,16 @@ class marquee extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return ListView(
-                scrollDirection: Axis.vertical,
-                shrinkWrap: true,
-                children: [
-                  _buildComplexMarquee(),
-                ].map(_wrapWithStuff).toList(),
-              ),
-  }}
-  Widget _buildComplexMarquee() {
+      scrollDirection: Axis.vertical,
+      shrinkWrap: true,
+      children: [
+        _buildComplexMarquee(),
+      ].map(_wrapWithStuff).toList(),
+    );
+  }
+}
+
+Widget _buildComplexMarquee() {
   return Marquee(
     text: 'GeeksforGeeks is a one-stop destination for programmers.',
     style: TextStyle(fontWeight: FontWeight.bold),
