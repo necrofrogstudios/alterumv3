@@ -64,7 +64,7 @@ class profile extends StatelessWidget {
                     Text(
                       '\u00a9 2022 Alterum',
                       style: TextStyle(
-                        color: Colors.grey,
+                        color: theme.primaryColor.withOpacity(0.45),
                         fontSize: 15,
                       ),
                     ),

@@ -37,7 +37,7 @@ class _wall_tabState extends State<wall_tab> {
                   ),
                   hintText: 'Type a Message Here',
                   hintStyle: TextStyle(
-                    color: theme.primaryColor..withOpacity(0.45),
+                    color: theme.primaryColor.withOpacity(0.45),
                   ),
                   contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
                 ),
