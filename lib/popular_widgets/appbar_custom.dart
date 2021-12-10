@@ -9,7 +9,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/main_page/marquee.dart';
 
-class marquee extends StatelessWidget {
+class appbar_custom extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
 
