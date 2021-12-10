@@ -147,7 +147,7 @@ class comments extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                          padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                           child: Text(
                             'Guarded',
                             style: TextStyle(color: theme.primaryColor, fontSize: 15),
