@@ -14,6 +14,8 @@ import 'package:marquee/marquee.dart';
 
 class marquee extends StatelessWidget {
   Widget build(BuildContext context) {
+     var theme = Theme.of(context);
+    Color myColor = Theme.of(context).accentColor;
     var theme = Theme.of(context);
 Return AppBar(
         iconTheme: IconThemeData(color: theme.primaryColor),
