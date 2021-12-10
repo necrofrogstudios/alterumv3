@@ -77,6 +77,8 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
       ),
       child: IconButton(
         icon: AnimatedIcon(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
           icon: AnimatedIcons.menu_close,
           progress: _animationController,
         ),
