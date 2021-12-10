@@ -164,9 +164,13 @@ class comments extends StatelessWidget {
                     ),
                   ],
                 ),
-                IconButton(
-                  icon: Icon(Icons.close),
-                  onPressed: () {},
+                Container(
+                  height: 75,
+                  width: 75,
+                  child: IconButton(
+                    icon: Icon(Icons.close),
+                    onPressed: () {},
+                  ),
                 ),
               ],
             ),
