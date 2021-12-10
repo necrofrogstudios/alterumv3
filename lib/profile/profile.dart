@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'drawer.dart';
+import 'package:testing/drawer.dart';
 import 'package:testing/profile/profile_dropdown_button.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
