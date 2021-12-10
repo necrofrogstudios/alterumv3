@@ -61,6 +61,8 @@ class main_page extends StatelessWidget {
                 padding: EdgeInsets.all(5),
                 child: Marquee(
                   text: 'Some sample text that takes some space.',
+                  scrollAxis: Axis.horizontal,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   style: TextStyle(fontWeight: FontWeight.bold),
                   scrollAxis: Axis.horizontal,
                   crossAxisAlignment: CrossAxisAlignment.start,
