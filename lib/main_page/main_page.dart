@@ -121,6 +121,6 @@ Widget _buildComplexMarquee() {
 Widget _wrapWithStuff(Widget child) {
   return Padding(
     padding: EdgeInsets.all(16.0),
-    child: Container(height: 50.0, color: Colors.white, child: child),
+    child: Container(height: 10.0, color: Colors.white, child: child),
   );
 }
