@@ -31,7 +31,7 @@ class drawer extends StatelessWidget {
               children: [
                 Text(
                   'Back',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 20, color: theme.primaryColor),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
