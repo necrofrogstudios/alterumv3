@@ -28,11 +28,11 @@ class _wall_tabState extends State<wall_tab> {
                 maxLines: null,
                 decoration: InputDecoration(
                   focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(25.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(50.0)),
                     borderSide: BorderSide(color: theme.accentColor, width: 3.0),
                   ),
                   enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(25.0)),
+                    borderRadius: BorderRadius.all(Radius.circular(50.0)),
                     borderSide: BorderSide(color: theme.accentColor, width: 3.0),
                   ),
                   hintText: 'Type a Message Here',
@@ -56,7 +56,7 @@ class _wall_tabState extends State<wall_tab> {
                       padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
                       backgroundColor: theme.backgroundColor,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(50),
                       ),
                     ),
                     child: Text(
