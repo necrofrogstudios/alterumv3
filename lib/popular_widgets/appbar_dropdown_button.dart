@@ -66,6 +66,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
     isMenuOpen = !isMenuOpen;
   }
 
+  bool pressed = false;
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
