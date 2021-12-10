@@ -195,3 +195,54 @@ class comments extends StatelessWidget {
 }
 
 final List<WallComment> commentList = [];
+
+class WallComment {
+  String id;
+  String profilePhoto;
+  String bodyText;
+  DateTime date;
+
+  WallComment({this.id, this.profilePhoto, this.bodyText, this.date});
+}
+
+class comments extends StatelessWidget {
+  WallComment comment;
+  comments(this.comment);
+
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Container(
+      child: Card(
+        color: Colors.grey[850],
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircleAvatar(
+                    radius: 20,
+                    backgroundImage: NetworkImage(comment.profilePhoto),
+                  ),
+                ),
+                Text(
+                  DateFormat('MM/dd/yyyy - hh:mm a').format(comment.date),
+                  style: TextStyle(color: theme.primaryColor),
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                comment.bodyText,
+                style: TextStyle(color: theme.primaryColor),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+final List<WallComment> commentList = [];
