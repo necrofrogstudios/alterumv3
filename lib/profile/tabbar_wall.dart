@@ -167,6 +167,7 @@ class comments extends StatelessWidget {
                 Container(
                   height: 75,
                   width: 75,
+                  color: theme.backgroundColor,
                   child: IconButton(
                     icon: Icon(Icons.close),
                     onPressed: () {},
