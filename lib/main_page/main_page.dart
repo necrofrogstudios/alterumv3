@@ -58,6 +58,8 @@ class main_page extends StatelessWidget {
               profile_top_buttons(),
               Container(color: theme.splashColor, height: 4),
               ListView(
+                scrollDirection: Axis.vertical,
+                shrinkWrap: true,
                 padding: EdgeInsets.only(top: 50.0),
                 children: [
                   _buildComplexMarquee(),
