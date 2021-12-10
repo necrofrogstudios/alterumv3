@@ -60,17 +60,13 @@ class main_page extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(5),
                 child: Marquee(
-                  text: 'Some sample text that takes some space.',
-                  scrollAxis: Axis.horizontal,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                  scrollAxis: Axis.horizontal,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  blankSpace: 20.0,
-                  velocity: 100.0,
-                  pauseAfterRound: Duration(seconds: 1),
-                  startPadding: 10.0,
-                ),
+    text: 'GeeksforGeeks.org was created'
+        ' with a goal in mind to provide well written,'
+        ' well thought and well explained solutions for'
+        ' selected questions. The core team of five super geeks constituting'
+        ' of technology lovers and computer science enthusiasts'
+        ' have been constantly working in this direction ',
+  );
               ),
               Container(color: theme.splashColor, height: 4),
               Container(
