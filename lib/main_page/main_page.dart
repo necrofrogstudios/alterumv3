@@ -34,6 +34,8 @@ class main_page extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               marquee(),
               Container(color: theme.splashColor, height: 4),
+              Container(color: theme.backgroundColor, height: 200),
+              Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.accentColor,
                 child: Row(
