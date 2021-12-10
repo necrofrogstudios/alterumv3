@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'settings/multiple_themes_view.dart';
+import 'settings/settings.dart';
 import 'profile.dart';
 
 class drawer extends StatelessWidget {
