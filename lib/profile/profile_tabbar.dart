@@ -83,28 +83,6 @@ class profile_tab extends StatelessWidget {
               ),
             ),
           ),
-          Stack(
-            children: <Widget>[
-              InkWell(
-                onTap: startTyping,
-                child: Container(
-                  alignment: Alignment.center,
-                  padding: const EdgeInsets.all(24),
-                  color: Colors.red,
-                  child: Visibility(
-                    visible: !typing,
-                    child: Container(
-                      margin: const EdgeInsets.all(20),
-                      child: Text(
-                        controller.text.isEmpty ? 'Type a question' : controller.text,
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
         ],
       ),
     );
@@ -125,3 +103,54 @@ class roleplays_tab extends StatelessWidget {
     );
   }
 }
+
+class WallComment {
+  String id;
+  String profilePhoto;
+  String bodyText;
+  DateTime date;
+
+  WallComment({this.id, this.profilePhoto, this.bodyText, this.date});
+}
+
+class comments extends StatelessWidget {
+  WallComment comment;
+  comments(this.comment);
+
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Container(
+      child: Card(
+        color: Colors.grey[850],
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: CircleAvatar(
+                    radius: 20,
+                    backgroundImage: NetworkImage(comment.profilePhoto),
+                  ),
+                ),
+                Text(
+                  DateFormat('MM/dd/yyyy - hh:mm a').format(comment.date),
+                  style: TextStyle(color: theme.primaryColor),
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                comment.bodyText,
+                style: TextStyle(color: theme.primaryColor),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+final List<WallComment> commentList = [];
