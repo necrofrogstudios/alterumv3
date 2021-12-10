@@ -99,7 +99,7 @@ final controller = TextEditingController();
                       child: Text(controller.text.isEmpty ? 'Type a question' : controller.text, 
                       style: TextStyle(color: Colors.white),
                     ),
-                  ),
+                  
                 ),
               ),
             ],
