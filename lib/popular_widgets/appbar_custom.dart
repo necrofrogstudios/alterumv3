@@ -26,7 +26,7 @@ class marquee extends StatelessWidget {
         ),
         onPressed: () {},
       ),
-      backgroundColor: myColor,
+      backgroundColor: theme.accentColor,
       actions: <Widget>[
         Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
