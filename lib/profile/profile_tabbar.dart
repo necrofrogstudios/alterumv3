@@ -82,7 +82,8 @@ class profile_tab extends StatelessWidget {
                 style: TextStyle(fontSize: 15, color: theme.primaryColor),
               ),
             ),
-          ),Stack(
+          ),
+          Stack(
             children: <Widget>[
               InkWell(
                 onTap: startTyping,
@@ -94,13 +95,15 @@ class profile_tab extends StatelessWidget {
                     visible: !typing,
                     child: Container(
                       margin: const EdgeInsets.all(20),
-                      child: Text(controller.text.isEmpty ? 'Type a question' : controller.text, 
-                      style: TextStyle(color: Colors.white),
+                      child: Text(
+                        controller.text.isEmpty ? 'Type a question' : controller.text,
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ),
                 ),
               ),
-            ],),
+            ],
           ),
         ],
       ),
@@ -122,4 +125,3 @@ class roleplays_tab extends StatelessWidget {
     );
   }
 }
-
