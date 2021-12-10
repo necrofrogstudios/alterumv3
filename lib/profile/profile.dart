@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'drawer.dart';
-import 'profile/profile_dropdown_button.dart';
-import 'profile/profile_pics_icons.dart';
-import 'profile/profile_tabbar.dart';
-import 'profile/profile_top_buttons.dart';
+import 'package:testing/profile/profile_dropdown_button.dart';
+import 'package:testing/profile/profile_pics_icons.dart';
+import 'package:testing/profile/profile_tabbar.dart';
+import 'package:testing/profile/profile_top_buttons.dart';
 
 class profile extends StatelessWidget {
   final currentScreen = profile;
