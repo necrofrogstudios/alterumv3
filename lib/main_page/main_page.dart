@@ -17,7 +17,10 @@ class main_page extends StatelessWidget {
     Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
-      appBar: appbar_custom(),
+      appBar: PreferredSize(
+    preferredSize: const Size.fromHeight(100),
+    child: Container(color: Colors.red),
+  ),appbar_custom(),
       drawer: drawer(currentScreen),
       body: Container(
         width: double.infinity,
@@ -59,7 +62,4 @@ class main_page extends StatelessWidget {
       ),
     );
   }
-
-  @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
 }
