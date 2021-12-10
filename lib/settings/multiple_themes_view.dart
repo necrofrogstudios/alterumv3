@@ -96,19 +96,20 @@ class _themesState extends State<themes> {
                     ),
                   ),
                   OutlinedButton(
-                      onPressed: () => showDialog<String>(
-                            context: context,
-                            builder: (BuildContext context) => AlertDialog(
-                              title: const Text('Pick a color'),
-                              content: SingleChildScrollView(
-                                child: ColorPicker(
-                                  onColorChanged: changeColor,
-                                  pickerColor: theme.backgroundColor,
-                                ),
-                              ),
-                            ),
+                    onPressed: () => showDialog<String>(
+                      context: context,
+                      builder: (BuildContext context) => AlertDialog(
+                        title: const Text('Pick a color'),
+                        content: SingleChildScrollView(
+                          child: ColorPicker(
+                            onColorChanged: changeColor,
+                            pickerColor: theme.backgroundColor,
                           ),
-                      child: Text('Custom theme'))
+                        ),
+                      ),
+                    ),
+                    child: Text('Custom theme'),
+                  ),
                 ],
               ),
             ),
@@ -169,8 +170,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                       .map(
                         (themeData) => GestureDetector(
                           onTap: () {
-                            getThemeManager(context)
-                                .selectThemeAtIndex(themeData.index);
+                            getThemeManager(context).selectThemeAtIndex(themeData.index);
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -179,48 +179,39 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
-                                        color: getThemes[themeData.index]
-                                            .splashColor,
+                                        color: getThemes[themeData.index].splashColor,
                                         border: Border.all(
-                                          color: getThemes[themeData.index]
-                                              .splashColor,
+                                          color: getThemes[themeData.index].splashColor,
                                         ),
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(50))),
+                                        borderRadius: BorderRadius.all(Radius.circular(50))),
                                     width: 50,
                                     height: 50,
                                     child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Container(
                                           width: 20,
                                           height: 40,
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 10, vertical: 10),
+                                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.only(
                                               topLeft: Radius.circular(100),
                                               bottomLeft: Radius.circular(100),
                                             ),
-                                            color: getThemes[themeData.index]
-                                                .accentColor,
+                                            color: getThemes[themeData.index].accentColor,
                                           ),
                                         ),
                                         Container(
                                           width: 20,
                                           height: 40,
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: 10, vertical: 10),
+                                          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.only(
                                               topRight: Radius.circular(100),
                                               bottomRight: Radius.circular(100),
                                             ),
-                                            color: getThemes[themeData.index]
-                                                .backgroundColor,
+                                            color: getThemes[themeData.index].backgroundColor,
                                           ),
                                         ),
                                       ],
@@ -230,10 +221,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                                     padding: EdgeInsets.fromLTRB(17, 4, 0, 0),
                                     child: Text(
                                       'T',
-                                      style: TextStyle(
-                                          color: getThemes[themeData.index]
-                                              .primaryColor,
-                                          fontSize: 30),
+                                      style: TextStyle(color: getThemes[themeData.index].primaryColor, fontSize: 30),
                                     ),
                                   ),
                                 ],
