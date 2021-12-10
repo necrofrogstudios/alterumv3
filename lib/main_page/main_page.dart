@@ -120,7 +120,7 @@ Widget _buildComplexMarquee() {
 // Styling the Marquee
 Widget _wrapWithStuff(Widget child) {
   return Padding(
-    padding: EdgeInsets.all(16.0),
-    child: Container(height: 10.0, color: Colors.white, child: child),
+    padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+    child: Container(height: 15.0, color: Colors.white, child: child),
   );
 }
