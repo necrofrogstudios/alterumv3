@@ -67,7 +67,10 @@ class main_page extends StatelessWidget {
                       ),
                     ),
                     FlatButton(
-                      child: Text('Contact Support'),
+                      child: Text(
+                        'Contact Support',
+                        style: TextStyle(color: theme.primaryColor),
+                      ),
                       onPressed: () {},
                     )
                   ],
