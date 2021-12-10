@@ -132,31 +132,39 @@ class comments extends StatelessWidget {
           children: [
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                  child: CircleAvatar(
-                    radius: 20,
-                    backgroundImage: NetworkImage(comment.profilePhoto),
-                  ),
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                Row(
                   children: [
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
-                      child: Text(
-                        'Guarded',
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      padding: const EdgeInsets.fromLTRB(20, 10, 0, 0),
+                      child: CircleAvatar(
+                        radius: 20,
+                        backgroundImage: NetworkImage(comment.profilePhoto),
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                      child: Text(
-                        DateFormat('MM/dd/yyyy - hh:mm a').format(comment.date),
-                        style: TextStyle(color: theme.primaryColor.withOpacity(0.45)),
-                      ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+                          child: Text(
+                            'Guarded',
+                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                          child: Text(
+                            DateFormat('MM/dd/yyyy - hh:mm a').format(comment.date),
+                            style: TextStyle(color: theme.primaryColor.withOpacity(0.45)),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
+                ),
+                IconButton(
+                  icon: Icon(Icons.close),
+                  onPressed: () {},
                 ),
               ],
             ),
