@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:testing/settings/locator.dart';
 import 'package:testing/settings/theme_setup.dart';
@@ -26,3 +27,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+final GetIt locator = GetIt.instance;
+
+void setupLocator() {}
