@@ -121,7 +121,7 @@ class comments extends StatelessWidget {
         shape: RoundedRectangleBorder(
           side: BorderSide(
             color: theme.splashColor,
-            width: 2.0,
+            width: 4.0,
           ),
           borderRadius: BorderRadius.circular(
             30.0,
