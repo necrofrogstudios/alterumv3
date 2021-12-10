@@ -134,7 +134,7 @@ class comments extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 10, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(20, 10, 0, 0),
                   child: CircleAvatar(
                     radius: 20,
                     backgroundImage: NetworkImage(comment.profilePhoto),
@@ -143,9 +143,12 @@ class comments extends StatelessWidget {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Guarded',
-                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
+                      child: Text(
+                        'Guarded',
+                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      ),
                     ),
                     Text(
                       DateFormat('MM/dd/yyyy - hh:mm a').format(comment.date),
