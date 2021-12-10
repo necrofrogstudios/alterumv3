@@ -27,7 +27,7 @@ class profile extends StatelessWidget {
         backgroundColor: myColor,
         actions: <Widget>[
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+            padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
             child: SimpleAccountMenu(
               icons: [
                 Icon(Icons.person),
