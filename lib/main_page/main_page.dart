@@ -55,7 +55,7 @@ class main_page extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               Container(color: theme.splashColor, height: 4),
               Container(
-                color: theme.accentColors,
+                color: theme.accentColor,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
