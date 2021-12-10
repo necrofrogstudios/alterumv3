@@ -18,7 +18,7 @@ Widget _buildComplexMarquee() {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
-      color: theme.accentColor,
+      color: theme.backgroundColor,
       child: Marquee(
         text: 'Oh kevin loves the kevin song song '
             'lets gather around the kevin, and sing the kevin song song '
