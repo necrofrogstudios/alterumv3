@@ -81,7 +81,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         hoverColor: Colors.transparent,
-        icon: Padding(padding: EdgeInsets.zero, child: isSelected == true ? Icon(FontAwesome.sort_name_up) : Icon(FontAwesome.sort_name_down)),
+        icon: Padding(padding: EdgeInsets.zero, child: isSelected == true ? Icon(Icons.notifications) : Icon(Icons.close)),
         color: theme.primaryColor,
         onPressed: () {
           if (isMenuOpen) {
