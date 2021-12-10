@@ -149,14 +149,14 @@ class comments extends StatelessWidget {
                     ),
                     Text(
                       DateFormat('MM/dd/yyyy - hh:mm a').format(comment.date),
-                      style: TextStyle(color: theme.primaryColor),
+                      style: TextStyle(color: theme.primaryColor.withOpacity(0.45)),
                     ),
                   ],
                 ),
               ],
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
               child: Text(
                 comment.bodyText,
                 style: TextStyle(color: theme.primaryColor),
