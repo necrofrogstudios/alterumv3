@@ -58,12 +58,11 @@ class main_page extends StatelessWidget {
               profile_top_buttons(),
               Container(color: theme.splashColor, height: 4),
               ListView(
-		padding: EdgeInsets.only(top: 50.0),
-		children: [
-			
-			_buildComplexMarquee(),
-		].map(_wrapWithStuff).toList(),
-		),
+                padding: EdgeInsets.only(top: 50.0),
+                children: [
+                  _buildComplexMarquee(),
+                ].map(_wrapWithStuff).toList(),
+              ),
               Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.accentColor,
@@ -96,31 +95,30 @@ class main_page extends StatelessWidget {
 }
 
 Widget _buildComplexMarquee() {
-	return Marquee(
-	text: 'GeeksforGeeks is a one-stop destination for programmers.',
-	style: TextStyle(fontWeight: FontWeight.bold),
-	scrollAxis: Axis.horizontal,
-	crossAxisAlignment: CrossAxisAlignment.start,
-	blankSpace: 20.0,
-	velocity: 100.0,
-	pauseAfterRound: Duration(seconds: 1),
-	showFadingOnlyWhenScrolling: true,
-	fadingEdgeStartFraction: 0.1,
-	fadingEdgeEndFraction: 0.1,
-	numberOfRounds: 3,
-	startPadding: 10.0,
-	accelerationDuration: Duration(seconds: 1),
-	accelerationCurve: Curves.linear,
-	decelerationDuration: Duration(milliseconds: 500),
-	decelerationCurve: Curves.easeOut,
-	);
+  return Marquee(
+    text: 'GeeksforGeeks is a one-stop destination for programmers.',
+    style: TextStyle(fontWeight: FontWeight.bold),
+    scrollAxis: Axis.horizontal,
+    crossAxisAlignment: CrossAxisAlignment.start,
+    blankSpace: 20.0,
+    velocity: 100.0,
+    pauseAfterRound: Duration(seconds: 1),
+    showFadingOnlyWhenScrolling: true,
+    fadingEdgeStartFraction: 0.1,
+    fadingEdgeEndFraction: 0.1,
+    numberOfRounds: 3,
+    startPadding: 10.0,
+    accelerationDuration: Duration(seconds: 1),
+    accelerationCurve: Curves.linear,
+    decelerationDuration: Duration(milliseconds: 500),
+    decelerationCurve: Curves.easeOut,
+  );
 }
-	
+
 // Styling the Marquee
 Widget _wrapWithStuff(Widget child) {
-	return Padding(
-	padding: EdgeInsets.all(16.0),
-	child: Container(height: 50.0, color: Colors.white, child: child),
-	);
-}
+  return Padding(
+    padding: EdgeInsets.all(16.0),
+    child: Container(height: 50.0, color: Colors.white, child: child),
+  );
 }
