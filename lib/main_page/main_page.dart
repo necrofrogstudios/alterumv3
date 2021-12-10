@@ -7,7 +7,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 
 class main_page extends StatelessWidget {
-  final currentScreen = profile;
+  final currentScreen = main_page;
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
