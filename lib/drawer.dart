@@ -72,6 +72,7 @@ class drawer extends StatelessWidget {
             ),
           ),
           FlatButton(
+            color: theme.accentColor,
             splashColor: Colors.transparent,
             highlightColor: Colors.transparent,
             height: 60.0,
@@ -81,18 +82,23 @@ class drawer extends StatelessWidget {
               children: [
                 Text(
                   'Home',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: theme.primaryColor,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Icon(
                     Icons.arrow_forward,
+                    color: theme.primaryColor,
                   ),
                 ),
               ],
             ),
           ),
           FlatButton(
+            color: theme.accentColor,
             splashColor: Colors.transparent,
             highlightColor: Colors.transparent,
             height: 60.0,
@@ -107,12 +113,16 @@ class drawer extends StatelessWidget {
               children: [
                 Text(
                   'Profile',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: theme.primaryColor,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Icon(
                     Icons.arrow_forward,
+                    color: theme.primaryColor,
                   ),
                 ),
               ],
