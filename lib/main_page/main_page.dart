@@ -60,13 +60,13 @@ class main_page extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(5),
                 child: Marquee(
-    text: 'GeeksforGeeks.org was created'
-        ' with a goal in mind to provide well written,'
-        ' well thought and well explained solutions for'
-        ' selected questions. The core team of five super geeks constituting'
-        ' of technology lovers and computer science enthusiasts'
-        ' have been constantly working in this direction ',
-  );
+                  text: 'GeeksforGeeks.org was created'
+                      ' with a goal in mind to provide well written,'
+                      ' well thought and well explained solutions for'
+                      ' selected questions. The core team of five super geeks constituting'
+                      ' of technology lovers and computer science enthusiasts'
+                      ' have been constantly working in this direction ',
+                ),
               ),
               Container(color: theme.splashColor, height: 4),
               Container(
