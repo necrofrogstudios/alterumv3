@@ -60,7 +60,7 @@ class _themesState extends State<themes> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    void changeColor(Color color) {
+    void changesColor(Color color) {
       setState(() {
         getThemes[12] = getThemes[12].copyWith(accentColor: color);
         theme = getThemes[12];
@@ -116,7 +116,7 @@ class _themesState extends State<themes> {
                         title: const Text('Pick a color'),
                         content: SingleChildScrollView(
                           child: ColorPicker(
-                            onColorChanged: changeColor,
+                            onColorChanged: changesColor,
                             pickerColor: theme.accentColor,
                           ),
                         ),
