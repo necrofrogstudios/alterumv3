@@ -156,7 +156,7 @@ class comments extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 0, 20),
+              padding: const EdgeInsets.fromLTRB(20, 0, 10, 20),
               child: Text(
                 comment.bodyText,
                 style: TextStyle(color: theme.primaryColor),
