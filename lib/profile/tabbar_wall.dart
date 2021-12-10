@@ -139,7 +139,7 @@ class comments extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 10, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
                         child: CircleAvatar(
                           radius: 20,
                           backgroundImage: NetworkImage(comment.profilePhoto),
