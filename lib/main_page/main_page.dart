@@ -18,6 +18,9 @@ class main_page extends StatelessWidget {
         iconTheme: IconThemeData(color: theme.primaryColor),
         centerTitle: true,
         title: FlatButton(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          hoverColor: Colors.transparent,
           child: Text(
             'Alterum',
             style: TextStyle(color: theme.primaryColor, fontSize: 20, fontWeight: FontWeight.bold),
