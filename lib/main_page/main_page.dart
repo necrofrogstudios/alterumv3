@@ -32,7 +32,10 @@ class main_page extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               profile_top_buttons(),
               Container(color: theme.splashColor, height: 4),
-              marquee(),
+              Container(
+                color: theme.accentColor,
+                child: marquee(),
+              ),
               Container(color: theme.splashColor, height: 4),
               Container(color: theme.backgroundColor, height: 200),
               Container(color: theme.splashColor, height: 4),

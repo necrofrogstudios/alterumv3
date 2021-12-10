@@ -15,7 +15,6 @@ class marquee extends StatelessWidget {
 }
 
 Widget _buildComplexMarquee(ThemeData theme) {
-  ;
   return Container(
     color: theme.accentColor,
     child: Marquee(
