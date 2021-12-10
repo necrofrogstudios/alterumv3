@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:testing/settings/locator.dart';
 import 'package:testing/settings/theme_setup.dart';
-import 'splash.dart';
+import 'package:testing/popular_widgets/splash.dart';
 
 Future main() async {
   await ThemeManager.initialise();
