@@ -127,7 +127,7 @@ class comments extends StatelessWidget {
             30.0,
           ),
         ),
-        color: theme.backgroundColor,
+        color: theme.accentColor,
         child: Column(
           children: [
             Row(
@@ -167,7 +167,7 @@ class comments extends StatelessWidget {
                 Container(
                   height: 75,
                   width: 75,
-                  color: theme.backgroundColor,
+                  color: theme.accentColor,
                   child: IconButton(
                     icon: Icon(Icons.close, color: theme.primaryColor),
                     onPressed: () {},
