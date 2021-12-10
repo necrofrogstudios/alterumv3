@@ -127,7 +127,7 @@ class comments extends StatelessWidget {
             30.0,
           ),
         ),
-        color: Colors.grey[850],
+        color: theme.backgroundColor,
         child: Column(
           children: [
             Row(
