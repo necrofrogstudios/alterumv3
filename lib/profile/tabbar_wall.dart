@@ -121,7 +121,7 @@ class comments extends StatelessWidget {
       child: Card(
         shape: RoundedRectangleBorder(
           side: BorderSide(
-            color: Colors.black,
+            color: theme.splashColor,
             width: 2.0,
           ),
           borderRadius: BorderRadius.circular(
