@@ -30,7 +30,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
   AnimationController _animationController;
   final bool isSelected;
   final Function onPressed;
-  IconToggleButton({this.isSelected, this.onPressed});
+  _SimpleAccountMenuState({this.isSelected, this.onPressed});
   @override
   void initState() {
     _animationController = AnimationController(
