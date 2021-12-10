@@ -167,6 +167,11 @@ class comments extends StatelessWidget {
                 Container(
                   height: 75,
                   width: 75,
+                  decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.red[500],
+                      ),
+                      borderRadius: BorderRadius.all(Radius.circular(20))),
                   color: theme.accentColor,
                   child: IconButton(
                     icon: Icon(Icons.close, color: theme.primaryColor),
