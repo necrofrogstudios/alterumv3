@@ -32,7 +32,7 @@ class roleplay_list_layout extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                   child: Text(
-                    'Creators: Guarded, basketcase101, PeterPan, MrRabbit',
+                    'Tags: action, adventure, first pov, active',
                     textAlign: TextAlign.center,
                     style: TextStyle(color: theme.primaryColor, fontSize: 12),
                   ),
