@@ -43,7 +43,13 @@ class main_page extends StatelessWidget {
                 color: theme.backgroundColor,
                 child: Row(
                   children: [
-                    Text('Popular'),
+                    Text(
+                      'Popular',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
                   ],
                 ),
               ),
