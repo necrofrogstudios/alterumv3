@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:marquee/marquee.dart';
 
-class marquee extends StatelessWidget {
+class footer extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
