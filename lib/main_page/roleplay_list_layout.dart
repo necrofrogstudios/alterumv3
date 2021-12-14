@@ -37,6 +37,22 @@ class roleplay_list_layout extends StatelessWidget {
                     style: TextStyle(color: theme.primaryColor, fontSize: 12),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                  child: Text(
+                    'Creators: Guarded, basketcase101, MrCarrot, DeadPan',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                  child: Text(
+                    'Active 2 seconds ago',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                  ),
+                ),
               ],
             ),
           ),
