@@ -32,7 +32,7 @@ class roleplay_list_layout extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                   child: Text(
                     'Admins: Guarded, basketcase101, PeterPan, MrRabbit',
-                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    style: TextStyle(color: theme.primaryColor, fontSize: 12),
                   ),
                 ),
               ],
