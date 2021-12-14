@@ -31,7 +31,7 @@ class roleplay_list_layout extends StatelessWidget {
                     ),
                     image: DecorationImage(
                       fit: BoxFit.fill,
-                      image: NetworkImage("https://th.bing.com/th/id/OIP.uAmIBsgbDBbwl0ATbe3D9AHaEK?pid=ImgDet&rs=1"),
+                      image: NetworkImage("https://timelinecovers.pro/facebook-cover/download/outer-space-planets-facebook-cover.jpg"),
                     ),
                   ),
                 ),
