@@ -23,6 +23,7 @@ class roleplay_list_layout extends StatelessWidget {
               children: <Widget>[
                 Stack(
                   children: [
+                    Image.network('https://desktopwallpapershd.com/wp-content/uploads/2020/10/Cool-Laptop-Background.jpg'),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
                       child: Text(
