@@ -45,6 +45,7 @@ class main_page extends StatelessWidget {
                   children: [
                     Text(
                       'Popular',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25,
                         color: theme.primaryColor,
