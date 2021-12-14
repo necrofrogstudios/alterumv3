@@ -20,7 +20,7 @@ class roleplay_list_layout extends StatelessWidget {
                 Radius.circular(30),
               ),
             ),
-            child: const Center(child: Text('Entry A')),
+            child: const Column(children:<Widget>(Text('test')))),
           ),
         ),
         Container(
