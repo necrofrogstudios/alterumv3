@@ -21,31 +21,27 @@ class roleplay_list_layout extends StatelessWidget {
             ), //name, creator, tags, intro
             child: Column(
               children: <Widget>[
-                Stack(
-                  children: [
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(30),
-                          topRight: Radius.circular(30),
-                        ),
-                        image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: NetworkImage("https://cdn.wallpapersafari.com/50/24/VcCKUu.jpg"),
-                        ),
-                      ),
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30),
                     ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
-                      child: Text(
-                        '【僕の戦争】─ My War ─│FREEVERSE ANIME RP | HAPPY ONE YEAR !!!!',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                      ),
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: NetworkImage("https://cdn.wallpapersafari.com/50/24/VcCKUu.jpg"),
                     ),
-                  ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
+                  child: Text(
+                    '【僕の戦争】─ My War ─│FREEVERSE ANIME RP | HAPPY ONE YEAR !!!!',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                  ),
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
