@@ -41,7 +41,7 @@ class main_page extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.backgroundColor,
-                child: Column(
+                child: Center(
                   children: [
                     Text(
                       'Popular',
