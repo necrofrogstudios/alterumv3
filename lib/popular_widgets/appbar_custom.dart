@@ -32,6 +32,7 @@ class appbar_custom extends StatelessWidget {
               Icon(Icons.person),
               Icon(Icons.email),
               Icon(Icons.group),
+              Icon(Icons.email),
             ],
             iconColor: theme.primaryColor,
             onChange: (index) {
