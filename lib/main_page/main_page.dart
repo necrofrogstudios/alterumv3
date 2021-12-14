@@ -9,6 +9,7 @@ import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/main_page/marquee.dart';
+import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class main_page extends StatelessWidget {
   final currentScreen = main_page;
@@ -38,7 +39,7 @@ class main_page extends StatelessWidget {
                 child: marquee(),
               ),
               Container(color: theme.splashColor, height: 4),
-              Container(color: theme.backgroundColor, height: 200),
+              Container(color: theme.backgroundColor, height: 200, child: roleplay_list_layout()),
               Container(color: theme.splashColor, height: 4),
               footer(),
             ],
