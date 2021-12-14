@@ -20,9 +20,11 @@ class roleplay_list_layout extends StatelessWidget {
                 Radius.circular(30),
               ),
             ),
-            child: Column(children: <Widget>[
-              Text('test')
-            ]),
+            child: Column(
+              children: <Widget>[
+                Text('test')
+              ],
+            ),
           ),
         ),
         Container(
