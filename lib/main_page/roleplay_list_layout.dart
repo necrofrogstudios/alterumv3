@@ -24,7 +24,7 @@ class roleplay_list_layout extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'Knightmare Island',
-                  style: TextStyle(color: theme.primaryColor),
+                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
                 ),
               ],
             ),
