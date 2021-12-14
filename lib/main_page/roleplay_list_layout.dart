@@ -19,10 +19,13 @@ class roleplay_list_layout extends StatelessWidget {
               borderRadius: BorderRadius.all(
                 Radius.circular(30),
               ),
-            ),
+            ), //name, creator, tags, intro
             child: Column(
               children: <Widget>[
-                Text('test')
+                Text(
+                  'Knightmare Island',
+                  style: TextStyle(color: theme.primaryColor),
+                ),
               ],
             ),
           ),
