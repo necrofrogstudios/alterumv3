@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
@@ -29,10 +30,10 @@ class appbar_custom extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
           child: SimpleAccountMenu(
             icons: [
-              Icon(Icons.person),
-              Icon(Icons.email),
+              Icon(MaterialIcons.menu_book),
               Icon(Icons.group),
               Icon(Icons.email),
+              Icon(Icons.person_add),
             ],
             iconColor: theme.primaryColor,
             onChange: (index) {
