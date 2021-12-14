@@ -41,7 +41,8 @@ class main_page extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.backgroundColor,
-                child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Popular',
