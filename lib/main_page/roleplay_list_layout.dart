@@ -8,7 +8,7 @@ class roleplay_list_layout extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 80),
           child: Container(
             height: 50,
             color: Colors.amber[600],
