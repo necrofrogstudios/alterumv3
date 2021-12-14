@@ -23,7 +23,7 @@ class roleplay_list_layout extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Text(
-                  'Knightmare Island',
+                  '【僕の戦争】─ My War ─│FREEVERSE ANIME RP | HAPPY ONE YEAR !!!!',
                   style: TextStyle(color: theme.primaryColor, fontSize: 15),
                 ),
               ],
