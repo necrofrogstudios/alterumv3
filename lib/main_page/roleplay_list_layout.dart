@@ -23,7 +23,16 @@ class roleplay_list_layout extends StatelessWidget {
               children: <Widget>[
                 Stack(
                   children: [
-                    Image.network('https://th.bing.com/th/id/R.2d13e2fa22f64af810e32eac96cc6f6b?rik=eOg1FQ9TgI3hcg&pid=ImgRaw&r=0'),
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: NetworkImage("https://64.media.tumblr.com/f86ecff1d27a1dac6dddd7b508e2c3b4/f0a5ab12d64fb419-55/s640x960/acc14da759877dbe17b8bbb425251aade41b37a1.jpg"),
+                        ),
+                      ),
+                    ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
                       child: Text(
