@@ -5,6 +5,8 @@ class roleplay_list_layout extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return ListView(
+      scrollDirection: Axis.vertical,
+      shrinkWrap: true,
       padding: const EdgeInsets.all(8),
       children: <Widget>[
         Padding(
