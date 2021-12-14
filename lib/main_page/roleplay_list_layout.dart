@@ -22,7 +22,7 @@ class roleplay_list_layout extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                  padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
                   child: Text(
                     '【僕の戦争】─ My War ─│FREEVERSE ANIME RP | HAPPY ONE YEAR !!!!',
                     style: TextStyle(color: theme.primaryColor, fontSize: 15),
