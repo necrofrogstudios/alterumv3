@@ -219,11 +219,6 @@ class roleplay_list_layout extends StatelessWidget {
             ),
           ),
         ),
-        Container(
-          height: 50,
-          color: Colors.amber[100],
-          child: const Center(child: Text('Entry C')),
-        ),
       ],
     );
   }
