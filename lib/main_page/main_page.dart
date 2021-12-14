@@ -48,3 +48,9 @@ class main_page extends StatelessWidget {
     );
   }
 }
+/*class profile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+  }
+  }*/
