@@ -13,7 +13,7 @@ class roleplay_list_layout extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
           child: Container(
             height: 50,
-            color: Colors.amber[600],
+            color: theme.accentColor,
             child: const Center(child: Text('Entry A')),
           ),
         ),
