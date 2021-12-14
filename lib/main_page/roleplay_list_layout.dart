@@ -27,7 +27,7 @@ class roleplay_list_layout extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       height: 100,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.top(
+                        borderRadius: BorderRadius.topLeft(
                           Radius.circular(30),
                         ),
                         image: DecorationImage(
