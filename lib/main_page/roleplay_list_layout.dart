@@ -17,7 +17,7 @@ class roleplay_list_layout extends StatelessWidget {
               color: theme.accentColor,
               border: Border.all(color: theme.splashColor, width: 3.0),
               borderRadius: BorderRadius.all(
-                Radius.circular(20),
+                Radius.circular(30),
               ),
             ),
             child: const Center(child: Text('Entry A')),
