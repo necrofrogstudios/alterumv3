@@ -30,7 +30,7 @@ class roleplay_list_layout extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
                     'Tags: action, adventure, first pov, active',
                     textAlign: TextAlign.center,
