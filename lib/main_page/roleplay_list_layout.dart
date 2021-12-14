@@ -21,7 +21,7 @@ class roleplay_list_layout extends StatelessWidget {
             ), //name, creator, tags, intro
             child: Column(
               children: <Widget>[
-                Stacked(
+                Stack(
                   children: [
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
