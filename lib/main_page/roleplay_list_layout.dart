@@ -28,8 +28,8 @@ class roleplay_list_layout extends StatelessWidget {
                       height: 100,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(100),
-                          bottomLeft: Radius.circular(100),
+                          topLeft: Radius.circular(30),
+                          topRight: Radius.circular(30),
                         ),
                         image: DecorationImage(
                           fit: BoxFit.fill,
