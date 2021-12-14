@@ -20,7 +20,6 @@ class roleplay_list_layout extends StatelessWidget {
               ),
             ), //name, creator, tags, intro
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
