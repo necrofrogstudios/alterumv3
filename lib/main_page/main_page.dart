@@ -39,7 +39,10 @@ class main_page extends StatelessWidget {
                 child: marquee(),
               ),
               Container(color: theme.splashColor, height: 4),
-              Text('test'),
+              Container(
+                color: theme.backgroundColor,
+                child: Text('Popular'),
+              ),
               Container(color: theme.backgroundColor, child: roleplay_list_layout()),
               Container(color: theme.splashColor, height: 4),
               footer(),
