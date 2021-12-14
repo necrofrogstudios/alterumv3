@@ -31,7 +31,7 @@ class roleplay_list_layout extends StatelessWidget {
                     ),
                     image: DecorationImage(
                       fit: BoxFit.fill,
-                      image: NetworkImage("https://similarworlds.com/facebookcovers/facebook-cover-photos-timeline/fb/creative/Four-Elements-Facebook-Cover.jpg"),
+                      image: NetworkImage("https://timelinecovers.pro/facebook-cover/download/outer-space-planets-facebook-cover.jpg"),
                     ),
                   ),
                 ),
@@ -40,7 +40,7 @@ class roleplay_list_layout extends StatelessWidget {
                   child: Text(
                     '【僕の戦争】─ My War ─│FREEVERSE ANIME RP | HAPPY ONE YEAR !!!!',
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
                   ),
                 ),
                 Padding(
