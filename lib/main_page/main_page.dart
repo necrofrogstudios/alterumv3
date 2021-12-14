@@ -42,7 +42,9 @@ class main_page extends StatelessWidget {
               Container(
                 color: theme.backgroundColor,
                 child: Row(
-                  child: Text('Popular'),
+                  children: [
+                    Text('Popular'),
+                  ],
                 ),
               ),
               Container(color: theme.backgroundColor, child: roleplay_list_layout()),
