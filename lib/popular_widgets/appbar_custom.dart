@@ -31,8 +31,8 @@ class appbar_custom extends StatelessWidget {
           child: SimpleAccountMenu(
             icons: [
               Icon(Icons.menu_book),
-              Icon(Icons.group),
               Icon(Icons.email),
+              Icon(Icons.group),
               Icon(Icons.person_add),
             ],
             iconColor: theme.primaryColor,
