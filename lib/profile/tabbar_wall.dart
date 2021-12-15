@@ -9,6 +9,15 @@ class wall_tab extends StatefulWidget {
 }
 
 class _wall_tabState extends State<wall_tab> {
+  comments commentWidget;
+  Widget currentPage;
+
+  void removeComment(int index) {
+    setState(() {
+      commentList.removeAt(index);
+    });
+  }
+
   Widget build(BuildContext context) {
     final textController = TextEditingController();
     String a = textController.text;
@@ -78,7 +87,8 @@ class _wall_tabState extends State<wall_tab> {
               itemCount: commentList.length,
               itemBuilder: (context, index) {
                 return comments(
-                    commentList[commentListIndexChecker(commentList, index)]);
+                    commentList[commentListIndexChecker(commentList, index)],
+                    removeComment);
               },
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
@@ -125,7 +135,8 @@ class WallComment {
 
 class comments extends StatelessWidget {
   WallComment comment;
-  comments(this.comment);
+  Function removeComment;
+  comments(this.comment, this.removeComment);
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -190,7 +201,8 @@ class comments extends StatelessWidget {
                       hoverColor: Colors.transparent,
                       iconSize: 15,
                       icon: Icon(Icons.close, color: theme.primaryColor),
-                      onPressed: () {},
+                      onPressed: () =>
+                          removeComment(commentList.indexOf(comment)),
                     ),
                   ),
                 ],
