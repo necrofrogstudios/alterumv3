@@ -44,11 +44,12 @@ void restoreData(SharedPreferences prefs) {
     //set numberOfComments equal to whats stored in shared preferences
     numberOfComments = prefs.getInt('commentCount');
   }
-  if (prefs.getBool('commentDeleted' + i.toString()) == null) {
-    prefs.setBool('commentDeleted' + i.toString(), false);
-  }
+
   List<String> commentData;
   for (int i = 0; i < numberOfComments; i++) {
+    if (prefs.getBool('commentDeleted' + i.toString()) == null) {
+      prefs.setBool('commentDeleted' + i.toString(), false);
+    }
     commentData = prefs.getStringList('commentId' + i.toString());
     if (!prefs.getBool('commentDeleted' + i.toString())) {
       //if comment does not have deleted status, add comment to the commentList
