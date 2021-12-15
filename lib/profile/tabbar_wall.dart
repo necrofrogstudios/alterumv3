@@ -12,7 +12,8 @@ class _wall_tabState extends State<wall_tab> {
   comments commentWidget;
   Widget currentPage;
 
-  void removeComment(int index) {
+  void removeComment(int index, WallComment comment) {
+    deleteComment(comment);
     setState(() {
       commentList.removeAt(index);
     });
@@ -109,7 +110,7 @@ class _wall_tabState extends State<wall_tab> {
 
   void addComment(String postText) async {
     final newComment = WallComment(
-        id: commentList.length
+        id: numberOfComments
             .toString(), //ID begins at zero and goes up by one every new comment
         profilePhoto:
             'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg', //filler photo for now
@@ -118,6 +119,7 @@ class _wall_tabState extends State<wall_tab> {
           DateTime.now(), //takes the date and formats it to something readable
         ));
     saveComment(newComment);
+    numberOfComments++;
     setState(() {
       commentList.add(newComment);
     });
@@ -130,7 +132,12 @@ class WallComment {
   String bodyText;
   String date;
 
-  WallComment({this.id, this.profilePhoto, this.bodyText, this.date});
+  WallComment({
+    this.id,
+    this.profilePhoto,
+    this.bodyText,
+    this.date,
+  });
 }
 
 class comments extends StatelessWidget {
@@ -202,7 +209,7 @@ class comments extends StatelessWidget {
                       iconSize: 15,
                       icon: Icon(Icons.close, color: theme.primaryColor),
                       onPressed: () =>
-                          removeComment(commentList.indexOf(comment)),
+                          removeComment(commentList.indexOf(comment), comment),
                     ),
                   ),
                 ],
