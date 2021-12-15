@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:stacked_themes/stacked_themes.dart';
-
+import 'profile/commentSharedPrefs.dart';
 import 'package:testing/settings/theme_setup.dart';
 import 'package:testing/popular_widgets/splash.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 Future main() async {
   await ThemeManager.initialise();
+  SharedPreferences prefs = await initializeSharedPrefs();
+  restoreData(prefs);
   setupLocator();
   runApp(MyApp());
 }

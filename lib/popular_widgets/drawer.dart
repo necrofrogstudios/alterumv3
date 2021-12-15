@@ -54,7 +54,8 @@ class drawer extends StatelessWidget {
                 padding: EdgeInsets.only(top: 5),
                 child: CircleAvatar(
                   radius: 120,
-                  backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+                  backgroundImage: NetworkImage(
+                      'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
                 ),
               ),
             ),
@@ -72,7 +73,8 @@ class drawer extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'Guarded',
-                        style: TextStyle(fontSize: 25, color: theme.primaryColor),
+                        style:
+                            TextStyle(fontSize: 25, color: theme.primaryColor),
                       ),
                     ],
                   ),
