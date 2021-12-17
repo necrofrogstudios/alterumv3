@@ -54,8 +54,7 @@ class drawer extends StatelessWidget {
                 padding: EdgeInsets.only(top: 5),
                 child: CircleAvatar(
                   radius: 120,
-                  backgroundImage: NetworkImage(
-                      'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+                  backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
                 ),
               ),
             ),
@@ -73,8 +72,7 @@ class drawer extends StatelessWidget {
                     children: <Widget>[
                       Text(
                         'Guarded',
-                        style:
-                            TextStyle(fontSize: 25, color: theme.primaryColor),
+                        style: TextStyle(fontSize: 25, color: theme.primaryColor),
                       ),
                     ],
                   ),
@@ -129,6 +127,32 @@ class drawer extends StatelessWidget {
                 children: [
                   Text(
                     'Profile',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            FlatButton(
+              color: theme.accentColor,
+              splashColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              height: 60.0,
+              onPressed: () {},
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'My Characters',
                     style: TextStyle(
                       fontSize: 20,
                       color: theme.primaryColor,
