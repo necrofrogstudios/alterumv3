@@ -40,7 +40,7 @@ class roleplay_requestState extends State<roleplay_request> {
                     setState(() {
                       for (int indexBtn = 0; indexBtn < isSelected.length; indexBtn++) {
                         if (indexBtn == index) {
-                          isSelected[indexBtn] = true;
+                          isSelected[indexBtn] = !isSelected[indexBtn];
                         } else {
                           isSelected[indexBtn] = false;
                         }
