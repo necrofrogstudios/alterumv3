@@ -40,14 +40,14 @@ class roleplay_list_layout extends StatelessWidget {
                         ),
                         image: DecorationImage(
                           fit: BoxFit.fill,
-                          image: NetworkImage("https://timelinecovers.pro/facebook-cover/download/outer-space-planets-facebook-cover.jpg"),
+                          image: NetworkImage("https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png"),
                         ),
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
                       child: Text(
-                        '【僕の戦争】─ My War ─│FREEVERSE RP | HAPPY ONE YEAR !!!!',
+                        ' The Haunted Hotel of Jefferson',
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),

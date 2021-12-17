@@ -45,7 +45,7 @@ class roleplay_main extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'RP NAME',
+                      'The Haunted Hotel of Jefferson',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25,
