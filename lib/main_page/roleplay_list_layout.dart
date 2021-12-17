@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/flip_card.dart';
 import 'package:testing/roleplays/roleplay_main.dart';
 import 'package:testing/roleplays/tag_buttons.dart';
 
@@ -89,6 +90,16 @@ class roleplay_list_layout extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+          ),
+          FlipCard(
+            fill: Fill.fillBack, // Fill the back side of the card to make in the same size as the front.
+            direction: FlipDirection.HORIZONTAL, // default
+            front: Container(
+              child: Text('Front'),
+            ),
+            back: Container(
+              child: Text('Back'),
             ),
           ),
           Padding(
