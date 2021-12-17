@@ -17,6 +17,13 @@ class footer extends StatelessWidget {
           ),
           FlatButton(
             child: Text(
+              'Rules',
+              style: TextStyle(color: theme.primaryColor),
+            ),
+            onPressed: () {},
+          )
+          FlatButton(
+            child: Text(
               'Contact Support',
               style: TextStyle(color: theme.primaryColor),
             ),
