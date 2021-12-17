@@ -28,7 +28,7 @@ class main_page extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         child: SingleChildScrollView(
-          physics: ScrollPhysics(),
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: <Widget>[
               Container(color: theme.splashColor, height: 4),
