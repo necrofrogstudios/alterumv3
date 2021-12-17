@@ -7,10 +7,6 @@ class tag_buttons extends StatelessWidget {
     'first pov',
     'rated m',
     'all orientations',
-    'test',
-    'test',
-    'test',
-    'test1111111111111111',
   ];
   List<Widget> tags = [];
 
