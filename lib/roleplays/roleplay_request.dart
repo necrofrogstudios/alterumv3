@@ -19,6 +19,26 @@ class roleplay_requestState extends State<roleplay_request> {
     FocusNode focusNodeButton2 = FocusNode();
     FocusNode focusNodeButton3 = FocusNode();
     List<FocusNode> focusToggle;
+    @override
+    void initState() {
+      // TODO: implement initState
+      super.initState();
+      focusToggle = [
+        focusNodeButton1,
+        focusNodeButton2,
+        focusNodeButton3
+      ];
+    }
+
+    @override
+    void dispose() {
+      // Clean up the focus node when the Form is disposed.
+      focusNodeButton1.dispose();
+      focusNodeButton2.dispose();
+      focusNodeButton3.dispose();
+      super.dispose();
+    }
+
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.only(top: 10, bottom: 0),
