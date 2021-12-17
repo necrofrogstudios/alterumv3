@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/roleplays/roleplay_main.dart';
+import 'package:testing/roleplays/tag_buttons.dart';
 
 class roleplay_list_layout extends StatelessWidget {
   @override
@@ -53,6 +54,7 @@ class roleplay_list_layout extends StatelessWidget {
                         style: TextStyle(color: theme.primaryColor, fontSize: 20),
                       ),
                     ),
+                    tag_buttons(),
                     Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
