@@ -41,7 +41,7 @@ class roleplay_main extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.backgroundColor,
-                child: Row(
+                child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
