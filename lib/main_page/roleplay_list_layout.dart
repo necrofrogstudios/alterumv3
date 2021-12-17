@@ -93,8 +93,8 @@ class roleplay_list_layout extends StatelessWidget {
             ),
           ),
           FlipCard(
-            fill: Fill.fillBack, // Fill the back side of the card to make in the same size as the front.
-            direction: FlipDirection.HORIZONTAL, // default
+            fill: Fill.fillBack,
+            direction: FlipDirection.HORIZONTAL,
             front: Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
               child: Container(
@@ -152,7 +152,7 @@ class roleplay_list_layout extends StatelessWidget {
                   ],
                 ),
               ),
-            ),
+            ), //back of card  V V V V //
             back: Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
               child: Container(
@@ -196,12 +196,23 @@ class roleplay_list_layout extends StatelessWidget {
                       child: tag_buttons(),
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
-                      child: Text(
-                        'Join',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    FlatButton(
+                      color: theme.accentColor,
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      height: 60.0,
+                      onPressed: () {},
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Join',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
