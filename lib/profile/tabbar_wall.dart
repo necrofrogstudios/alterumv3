@@ -25,7 +25,10 @@ class _wall_tabState extends State<wall_tab> {
     var theme = Theme.of(context);
     return Container(
       width: double.infinity,
-      child: Column(
+      child: ListView(
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
+        padding: const EdgeInsets.all(0),
         children: <Widget>[
           Padding(
             padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
