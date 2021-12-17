@@ -52,7 +52,7 @@ class drawer extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(top: 5),
                 child: CircleAvatar(
-                  radius: 30,
+                  radius: 100,
                   backgroundImage: NetworkImage(
                     'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg',
                   ),
