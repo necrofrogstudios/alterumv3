@@ -27,7 +27,7 @@ class roleplay_request extends StatelessWidget {
                     child: Container(
                       width: 300,
                       height: 400,
-                      child: Text('hih'),
+                      child: Text('hih', style: TextStyle(fontSize: 40)),
                     ),
                   ),
                 ],
