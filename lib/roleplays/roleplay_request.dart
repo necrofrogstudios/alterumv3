@@ -4,10 +4,10 @@ class roleplay_request extends StatefulWidget {
   const roleplay_request();
 
   @override
-  State<roleplay_request> createState() => _roleplay_requestState();
+  State<roleplay_request> createState() => roleplay_requestState();
 }
 
-class _roleplay_requestState extends State<roleplay_request> {
+class roleplay_requestState extends State<roleplay_request> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
