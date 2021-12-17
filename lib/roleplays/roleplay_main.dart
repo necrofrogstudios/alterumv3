@@ -52,6 +52,7 @@ class roleplay_main extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
+                    Image.network('https://www.facebook.com/1768195266632020/photos/a.1769933656458181/3221950687923130/?type=3&eid=ARB9YVaTzR_hmTNC_hMoB6H-dtgRWXNM4cP5lhgVq3KYA9suw-TCtkKlINBldu0AxhDWR7hA10Y-mrNI&__xts__%5B0%5D=68.ARDLd9LwLEixxRGe-cSAdeAAFUYPW37DcYqXB3Vt0wPlTX4J8YQOpSjI3stXs80d1r72Z03ic5aQoLo4pzqlKzr3bH44OimMRKzek4fpkkSGhehcDLd9_4bAubgC7eebCdm3-cNja8O1cioLcKjODwQ8Lpq9zSiftVKL0KhgP0o77Fx7EiHdw--k0R8cBxVdCTdPJqpkmRUdpAHn0d3vJssbl-0mZEnJf3JCDLFL4axjQB8VcG3SxpU0lpS0ug_tJZJ9zyRuwsbWpYO-k6ULHIiC8fiTO3tvAlXu1uHEI4Qi1CJglOkZEOM&__tn__=EEHH-R'),
                     Text(
                       'admins, favorites,current amount of rpers, latest active, tags',
                       textAlign: TextAlign.center,
