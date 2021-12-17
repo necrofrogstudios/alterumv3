@@ -73,7 +73,10 @@ class roleplay_main extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'A hotel where your your nightmares come to life',
+                      'A hotel where your nightmares come to life '
+                      ' enter a world where the dead walk and the life before your eyes is '
+                      'not quite what you\'ve ever seen. Walk carefully down the halls, '
+                      'Speak respectfully to the supernatural less you become one yourself',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 15,
