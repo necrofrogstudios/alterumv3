@@ -11,10 +11,15 @@ class tag_buttons extends StatelessWidget {
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Row(
-      children: [
-        Container(
-          child: Padding(
+    return Container(
+      color: theme.accentColor,
+      height: 40,
+      child: ListView.builder(
+        shrinkWrap: true,
+        scrollDirection: Axis.horizontal,
+        itemCount: items.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Padding(
             padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
@@ -26,14 +31,14 @@ class tag_buttons extends StatelessWidget {
                 ),
               ),
               child: Text(
-                items[context],
+                items[index],
                 style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
               onPressed: () {},
             ),
-          ),
-        ),
-      ],
+          );
+        },
+      ),
     );
   }
 }
