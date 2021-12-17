@@ -15,7 +15,11 @@ class roleplay_request extends StatelessWidget {
           context: context,
           builder: (BuildContext context) => AlertDialog(
             title: const Text('Application'),
-            content: const Text('Please fill out and submit'),
+            content: Column(
+              children: <Widget>[
+                Text('doing my best'),
+              ],
+            ),
             actions: <Widget>[
               TextButton(
                 onPressed: () => Navigator.pop(context, 'Cancel'),
