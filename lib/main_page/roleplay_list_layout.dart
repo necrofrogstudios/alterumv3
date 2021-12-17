@@ -47,7 +47,7 @@ class roleplay_list_layout extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                       child: Text(
                         ' The Haunted Hotel of Jefferson',
                         textAlign: TextAlign.center,
@@ -74,6 +74,14 @@ class roleplay_list_layout extends StatelessWidget {
                       ),
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      child: Text(
+                        'Active 2 seconds ago',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      ),
+                    ),
                     /*Padding(
                       padding: EdgeInsets.only(top: 10, bottom: 10),
                       child: tag_buttons(),
