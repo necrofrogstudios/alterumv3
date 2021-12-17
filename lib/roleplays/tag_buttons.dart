@@ -20,7 +20,7 @@ class tag_buttons extends StatelessWidget {
       tags.add(
         Container(
           child: Padding(
-            padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+            padding: EdgeInsets.fromLTRB(3, 5, 5, 3),
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
                 side: BorderSide(width: 3.0, color: theme.backgroundColor),
