@@ -9,7 +9,7 @@ class tag_buttons extends StatelessWidget {
     'all orientations'
   ];
   List<Widget> tags = [
-    Text(items[i] /*, style: TextStyle(fontSize: 12, color: theme.primaryColor)*/)
+    Text(items[0] /*, style: TextStyle(fontSize: 12, color: theme.primaryColor)*/)
   ];
 
   Widget build(BuildContext context) {
