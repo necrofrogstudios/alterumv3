@@ -196,6 +196,8 @@ class roleplay_list_layout extends StatelessWidget {
                       child: tag_buttons(),
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
+                    Padding(
+                      padding: EdgeInsets.only(top: 10, bottom: 10),
                     FlatButton(
                       color: theme.accentColor,
                       splashColor: Colors.transparent,
@@ -214,7 +216,7 @@ class roleplay_list_layout extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ),
+                    ),),
                   ],
                 ),
               ),
