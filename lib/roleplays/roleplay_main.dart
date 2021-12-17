@@ -19,49 +19,7 @@ class roleplay_main extends StatelessWidget {
     Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(55),
-        child: appbar_custom(),
-      ),
-      drawer: drawer(currentScreen),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        child: SingleChildScrollView(
-          physics: ScrollPhysics(),
-          child: Column(
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.accentColor,
-                child: marquee(),
-              ),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.backgroundColor,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Test',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(color: theme.backgroundColor, height: 40),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
-          ),
-        ),
-      ),
+      body: Text('testd'),
     );
   }
 }
