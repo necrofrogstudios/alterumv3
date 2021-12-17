@@ -8,14 +8,13 @@ class roleplay_request extends StatefulWidget {
 }
 
 class roleplay_requestState extends State<roleplay_request> {
+  List<bool> isSelected = [
+    false,
+    true,
+    false
+  ];
   @override
   Widget build(BuildContext context) {
-    List<bool> isSelected = [
-      false,
-      true,
-      false
-    ];
-
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.only(top: 10, bottom: 0),
