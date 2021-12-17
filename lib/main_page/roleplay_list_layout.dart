@@ -47,7 +47,7 @@ class roleplay_list_layout extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
                       child: Text(
                         ' The Haunted Hotel of Jefferson',
                         textAlign: TextAlign.center,
