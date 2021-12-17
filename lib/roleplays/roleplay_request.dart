@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class roleplay_request extends StatefulWidget {
   const roleplay_request();
-
+  final List<bool> isSelected;
   @override
   State<roleplay_request> createState() => roleplay_requestState();
 }
@@ -31,15 +31,14 @@ class roleplay_requestState extends State<roleplay_request> {
                     Icon(Icons.cake),
                   ],
                   onPressed: (int index) {
-                    int count = 0;
-                    isSelected.forEach((bool val) {
-                      if (val) count++;
-                    });
-
-                    if (isSelected[index] && count < 2) return;
-
                     setState(() {
-                      isSelected[index] = !isSelected[index];
+                      for (int buttonIndex = 0; buttonIndex < isSelected.length; buttonIndex++) {
+                        if (buttonIndex == index) {
+                          isSelected[buttonIndex] = true;
+                        } else {
+                          isSelected[buttonIndex] = false;
+                        }
+                      }
                     });
                   },
                   isSelected: isSelected,
