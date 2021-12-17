@@ -31,7 +31,19 @@ class roleplay_requestState extends State<roleplay_request> {
             content: Column(
               children: <Widget>[
                 ToggleButtons(
+                  color: Colors.greenAccent,
+                  selectedColor: Colors.amberAccent,
                   fillColor: Colors.purple,
+                  splashColor: Colors.lightBlue,
+                  highlightColor: Colors.lightBlue,
+                  borderColor: Colors.white,
+                  borderWidth: 5,
+                  selectedBorderColor: Colors.greenAccent,
+                  renderBorder: true,
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(25), bottomRight: Radius.circular(25)),
+                  disabledColor: Colors.blueGrey,
+                  disabledBorderColor: Colors.blueGrey,
+                  focusColor: Colors.red,
                   children: <Widget>[
                     Icon(Icons.format_bold),
                     Icon(Icons.format_italic),
