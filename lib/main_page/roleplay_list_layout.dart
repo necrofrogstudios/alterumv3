@@ -10,7 +10,7 @@ class roleplay_list_layout extends StatelessWidget {
         shrinkWrap: true,
         padding: const EdgeInsets.all(8),
         children: <Widget>[
-          InkWell(
+          GestureDetector(
             onTap: () {
               print("Container clicked");
             },
