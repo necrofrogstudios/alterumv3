@@ -6,6 +6,7 @@ class profile_tabbar extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
+      color: theme.backgroundColor,
       width: double.infinity,
       child: ListView(
         scrollDirection: Axis.vertical,
