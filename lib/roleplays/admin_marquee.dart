@@ -17,7 +17,7 @@ class admin_marquee extends StatelessWidget {
 Widget _buildComplexMarquee(ThemeData theme) {
   return Marquee(
     text: 'hi guys! welcome to The Haunted Hotel! '
-        'and admin will be here to assist you shortly '
+        'an admin will be here to assist you shortly '
         'thank you for waiting',
     style: TextStyle(
       fontWeight: FontWeight.bold,
@@ -26,8 +26,8 @@ Widget _buildComplexMarquee(ThemeData theme) {
     ),
     scrollAxis: Axis.horizontal,
     crossAxisAlignment: CrossAxisAlignment.start,
-    blankSpace: 170.0,
-    velocity: 60.0,
+    blankSpace: 370.0,
+    velocity: 1.0,
     pauseAfterRound: Duration(seconds: 5),
     showFadingOnlyWhenScrolling: true,
     fadingEdgeStartFraction: 0.1,
