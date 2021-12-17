@@ -17,6 +17,12 @@ class roleplay_rules extends StatelessWidget {
   final currentScreen = roleplay_rules;
   @override
   Widget build(BuildContext context) {
+    List<bool> isSelected = [
+      false,
+      true,
+      false
+    ];
+
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
@@ -78,6 +84,20 @@ class roleplay_rules extends StatelessWidget {
                       ),
                     ),
                     roleplay_request(),
+                    ToggleButtons(
+                      fillColor: Colors.purple,
+                      children: <Widget>[
+                        Icon(Icons.format_bold),
+                        Icon(Icons.format_italic),
+                        Icon(Icons.link),
+                      ],
+                      isSelected: isSelected,
+                      onPressed: (int index) {
+                        setState(() {
+                          isSelected[index] = !isSelected[index];
+                        });
+                      },
+                    ),
                   ],
                 ),
               ),
