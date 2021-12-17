@@ -42,7 +42,7 @@ class tag_buttons extends StatelessWidget {
                 ),
               ),
               child: Row(
-                children: <Widget>[],
+                children: tags,
               ),
               onPressed: () {},
             ),
