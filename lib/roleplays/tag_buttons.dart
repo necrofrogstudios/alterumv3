@@ -21,7 +21,7 @@ class tag_buttons extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return Row(
             children: [
-              Expanded(
+              Flexible(
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
                   child: OutlinedButton(
