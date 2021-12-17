@@ -198,25 +198,26 @@ class roleplay_list_layout extends StatelessWidget {
                     Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
                       padding: EdgeInsets.only(top: 10, bottom: 10),
-                    FlatButton(
-                      color: theme.accentColor,
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      height: 60.0,
-                      onPressed: () {},
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Join',
-                            style: TextStyle(
-                              fontSize: 30,
-                              color: theme.primaryColor,
+                      child: FlatButton(
+                        color: theme.accentColor,
+                        splashColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        height: 60.0,
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Join',
+                              style: TextStyle(
+                                fontSize: 30,
+                                color: theme.primaryColor,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),),
+                    ),
                   ],
                 ),
               ),
