@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class tag_buttons extends StatelessWidget {
-  List<Widget> tags;
+  final List<Widget> tags;
   final List<String> items = [
     'action',
     'adventure',
