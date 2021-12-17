@@ -8,7 +8,7 @@ class tag_buttons extends StatelessWidget {
     'rated m',
     'all orientations'
   ];
-  final List<Widget> tags;
+  List<Widget> tags;
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
