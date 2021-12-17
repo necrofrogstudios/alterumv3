@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class tag_buttons extends StatelessWidget {
+  List<Widget> tags;
   final List<String> items = [
     'action',
     'adventure',
@@ -10,6 +11,15 @@ class tag_buttons extends StatelessWidget {
   ];
 
   Widget build(BuildContext context) {
+    for (int i; i < items.length; i++) {
+      tags.add(
+        Text(
+          items[index],
+          style: TextStyle(fontSize: 12, color: theme.primaryColor),
+        ),
+      );
+    }
+
     var theme = Theme.of(context);
     return Container(
       color: theme.accentColor,
@@ -32,15 +42,7 @@ class tag_buttons extends StatelessWidget {
                 ),
               ),
               child: Row(
-                children: <Widget>[
-                  for (int i; i < items.length; i++)
-                    {
-                      Text(
-                        items[index],
-                        style: TextStyle(fontSize: 12, color: theme.primaryColor),
-                      ),
-                    },
-                ],
+                children: <Widget>[],
               ),
               onPressed: () {},
             ),
