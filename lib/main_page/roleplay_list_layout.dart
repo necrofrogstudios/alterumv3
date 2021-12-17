@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/flip_card.dart';
+import 'package:flip_card/flip_card.dart';
 import 'package:testing/roleplays/roleplay_main.dart';
 import 'package:testing/roleplays/tag_buttons.dart';
 
