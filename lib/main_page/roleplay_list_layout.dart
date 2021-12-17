@@ -50,7 +50,7 @@ class roleplay_list_layout extends StatelessWidget {
                       child: Text(
                         ' The Haunted Hotel of Jefferson',
                         textAlign: TextAlign.center,
-                        style: TextStyle(color: theme.primaryColor, fontSize: 25),
+                        style: TextStyle(color: theme.primaryColor, fontSize: 20),
                       ),
                     ),
                     Padding(
