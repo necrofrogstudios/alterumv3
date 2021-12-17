@@ -64,7 +64,7 @@ class roleplay_list_layout extends StatelessWidget {
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text(
                         'Welcome to the Haunted hotel! Where our residence are the only '
                         'ones that will give you a good scare before showing you around '
