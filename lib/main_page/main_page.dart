@@ -26,7 +26,7 @@ class main_page extends StatelessWidget {
       drawer: drawer(currentScreen),
       body: Container(
         width: double.infinity,
-        height: double.infinity,
+        
         child: SingleChildScrollView(
           physics: AlwaysScrollableScrollPhysics(),
           child: ListView(
