@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testing/roleplay/roleplay_main.dart';
 
 class roleplay_list_layout extends StatelessWidget {
   @override
@@ -12,7 +13,10 @@ class roleplay_list_layout extends StatelessWidget {
         children: <Widget>[
           GestureDetector(
             onTap: () {
-              print("Container clicked");
+              Navigator.pop(
+                context,
+                MaterialPageRoute(builder: (context) => roleplay_main()),
+              );
             },
             child: Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
