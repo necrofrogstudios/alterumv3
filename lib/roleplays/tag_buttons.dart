@@ -17,13 +17,7 @@ class tag_buttons extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     for (int i = 0; i < items.length; i++) {
-      tags.add(Text(
-        items[i],
-        style: TextStyle(fontSize: 12, color: theme.primaryColor),
-      ));
-    }
-    return Row(
-      children: [
+      tags.add(
         Container(
           child: Padding(
             padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
@@ -36,15 +30,19 @@ class tag_buttons extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
-              child: Wrap(
-                children: <Widget>[
-                  ...tags
-                ],
+              child: Text(
+                items[i],
+                style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
               onPressed: () {},
             ),
           ),
         ),
+      );
+    }
+    return Wrap(
+      children: [
+        ...tags
       ],
     );
   }
