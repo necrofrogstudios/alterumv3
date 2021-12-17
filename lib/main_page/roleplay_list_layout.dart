@@ -165,10 +165,56 @@ class roleplay_list_layout extends StatelessWidget {
                 ),
               ),
             ),
-            back: Container(
-              child: Text(
-                'Back',
-                style: TextStyle(color: theme.primaryColor),
+            back: Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: theme.accentColor,
+                  border: Border.all(color: theme.splashColor, width: 3.0),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ), //name, creator, tags, intro
+                child: Column(
+                  children: <Widget>[
+                    Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(30),
+                          topRight: Radius.circular(30),
+                        ),
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: NetworkImage("https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png"),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      child: Text(
+                        ' The Haunted Hotel of Jefferson',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                      ),
+                    ),
+                    Container(color: theme.splashColor, height: 4, width: 100),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      child: Text(
+                        '164 favorites, 37 active roleplayers',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: theme.primaryColor, fontSize: 12),
+                      ),
+                    ),
+                    Container(color: theme.splashColor, height: 4, width: 100),
+                    Padding(
+                      padding: EdgeInsets.only(top: 10, bottom: 10),
+                      child: tag_buttons(),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
