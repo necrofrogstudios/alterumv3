@@ -53,7 +53,7 @@ class roleplay_main extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'admins, favorites, likes, comments, current amount of rpers, latest active, tags',
+                      'admins, favorites,current amount of rpers, latest active, tags',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 15,
