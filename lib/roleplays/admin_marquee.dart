@@ -27,7 +27,7 @@ Widget _buildComplexMarquee(ThemeData theme) {
     scrollAxis: Axis.horizontal,
     crossAxisAlignment: CrossAxisAlignment.start,
     blankSpace: 370.0,
-    velocity: 60.0,
+    velocity: 30.0,
     pauseAfterRound: Duration(seconds: 5),
     showFadingOnlyWhenScrolling: true,
     fadingEdgeStartFraction: 0.1,
