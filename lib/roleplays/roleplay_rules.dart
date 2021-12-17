@@ -45,14 +45,6 @@ class roleplay_rules extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      'The Haunted Hotel of Jefferson',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
-                      ),
-                    ),
                     Image.network('https://centerforparentingeducation.org/wp-content/uploads/2014/04/rules.png'),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
