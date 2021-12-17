@@ -15,6 +15,7 @@ class tag_buttons extends StatelessWidget {
       color: theme.accentColor,
       height: 40,
       child: ListView.builder(
+        shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemCount: items.length,
@@ -30,9 +31,16 @@ class tag_buttons extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
-              child: Text(
-                items[index],
-                style: TextStyle(fontSize: 12, color: theme.primaryColor),
+              child: Row(
+                children: <Widget>{
+                  for (int i; i < items.length; i++)
+                    {
+                      Text(
+                        items[index],
+                        style: TextStyle(fontSize: 12, color: theme.primaryColor),
+                      ),
+                    },
+                },
               ),
               onPressed: () {},
             ),
