@@ -11,15 +11,7 @@ class tag_buttons extends StatelessWidget {
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Container(
-      color: theme.accentColor,
-      height: 90,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        shrinkWrap: true,
-        itemCount: items.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Row(
+    return return Row(
             children: [
               Container(
                 child: Padding(
@@ -43,8 +35,5 @@ class tag_buttons extends StatelessWidget {
               ),
             ],
           );
-        },
-      ),
-    );
   }
 }
