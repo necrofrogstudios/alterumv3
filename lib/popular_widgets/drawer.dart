@@ -50,7 +50,7 @@ class drawer extends StatelessWidget {
             Container(
               color: theme.backgroundColor,
               child: Padding(
-                padding: EdgeInsets.only(top: 5),
+                padding: EdgeInsets.only(top: 10),
                 child: CircleAvatar(
                   radius: 100,
                   backgroundImage: NetworkImage(
