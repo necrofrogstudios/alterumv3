@@ -208,7 +208,7 @@ class roleplay_list_layout extends StatelessWidget {
                           Text(
                             'Join',
                             style: TextStyle(
-                              fontSize: 40,
+                              fontSize: 30,
                               color: theme.primaryColor,
                             ),
                           ),
