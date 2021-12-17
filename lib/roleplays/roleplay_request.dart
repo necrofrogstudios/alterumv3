@@ -15,6 +15,10 @@ class roleplay_requestState extends State<roleplay_request> {
       false,
       false
     ];
+    FocusNode focusNodeButton1 = FocusNode();
+    FocusNode focusNodeButton2 = FocusNode();
+    FocusNode focusNodeButton3 = FocusNode();
+    List<FocusNode> focusToggle;
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.only(top: 10, bottom: 0),
