@@ -71,6 +71,13 @@ class roleplay_main extends StatelessWidget {
                         fontSize: 25,
                         color: theme.primaryColor,
                       ),
+                      Text(
+                      'A hotel where your your nightmares come to life',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
                     ),
                     Text(
                       'button to rules? ',
