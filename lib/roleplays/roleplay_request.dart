@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class roleplay_request extends StatefulWidget {
   const roleplay_request();
-  final List<bool> isSelected;
+
   @override
   State<roleplay_request> createState() => roleplay_requestState();
 }
@@ -10,6 +10,7 @@ class roleplay_request extends StatefulWidget {
 class roleplay_requestState extends State<roleplay_request> {
   @override
   Widget build(BuildContext context) {
+    final List<bool> isSelected;
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.only(top: 10, bottom: 0),
