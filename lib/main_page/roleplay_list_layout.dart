@@ -117,50 +117,50 @@ class roleplay_list_layout extends StatelessWidget {
                         ),
                         image: DecorationImage(
                           fit: BoxFit.fill,
-                          image: NetworkImage("https://149369349.v2.pressablecdn.com/wp-content/uploads/2013/01/Mar-cover-photo-3769.jpg"),
+                          image: NetworkImage("https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png"),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
-                      child: Text(
-                        'cherry bolossom studios~ love for everyone~',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text(
-                        'Creators: Guarded, basketcase101, frog',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                      ),
-                    ),
-                    Padding(
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                       child: Text(
-                        'Tags: action, adventure, first pov, active',
+                        ' The Haunted Hotel of Jefferson',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                      ),
+                    ),
+                    /*Padding(
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      child: Text(
+                        '164 favorites, 37 active roleplayers',
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 12),
                       ),
-                    ),
+                    ),*/
+                    Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text(
-                        'With 791808 posts, 67 votes, 164 favorites, 26840 views, 411 comments',
+                        'Welcome to the Haunted hotel! Where our residence are the only '
+                        'ones that will give you a good scare before showing you around '
+                        ' and telling you about all the historical blah blah blahs',
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
                     ),
+                    Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text(
-                        'Active 56 seconds ago',
+                        'Active 2 seconds ago',
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
                     ),
+                    /*Padding(
+                      padding: EdgeInsets.only(top: 10, bottom: 10),
+                      child: tag_buttons(),
+                    ),*/
                   ],
                 ),
               ),
