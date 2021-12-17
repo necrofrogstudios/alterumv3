@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class roleplay_request extends StatelessWidget {
+class roleplay_request extends StatefulWidget {
+  const roleplay_request({Key? key}) : super(key: key);
+
+  @override
+  State<roleplay_request> createState() => _roleplay_requestState();
+}
+
+class _roleplay_requestState extends State<roleplay_request> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
