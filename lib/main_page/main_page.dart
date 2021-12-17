@@ -26,42 +26,39 @@ class main_page extends StatelessWidget {
       drawer: drawer(currentScreen),
       body: Container(
         width: double.infinity,
-        child: SingleChildScrollView(
-          physics: AlwaysScrollableScrollPhysics(),
-          child: ListView(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(0),
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.accentColor,
-                child: marquee(),
-              ),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.backgroundColor,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Popular',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
-                      ),
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
+            Container(color: theme.splashColor, height: 4),
+            profile_top_buttons(),
+            Container(color: theme.splashColor, height: 4),
+            Container(
+              color: theme.accentColor,
+              child: marquee(),
+            ),
+            Container(color: theme.splashColor, height: 4),
+            Container(
+              color: theme.backgroundColor,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Popular',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: theme.primaryColor,
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
-          ),
+            ),
+            Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+            Container(color: theme.splashColor, height: 4),
+            footer(),
+          ],
         ),
       ),
     );
