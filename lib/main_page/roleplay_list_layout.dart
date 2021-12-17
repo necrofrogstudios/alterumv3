@@ -15,7 +15,7 @@ class roleplay_list_layout extends StatelessWidget {
             onTap: () {
               Navigator.pop(
                 context,
-                MaterialPageRoute(builder: (context) => roleplay_main(roleplays)),
+                MaterialPageRoute(builder: (context) => roleplay_main()),
               );
             },
             child: Padding(
