@@ -56,14 +56,6 @@ class roleplay_list_layout extends StatelessWidget {
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text(
-                        'Tags: action, adventure, first pov, active',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: theme.primaryColor, fontSize: 12),
-                      ),
-                    ),
-                    Padding(
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                       child: Text(
                         'With  164 favorites, 37 active roleplayers',
