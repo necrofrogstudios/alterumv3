@@ -8,9 +8,16 @@ class tag_buttons extends StatelessWidget {
     'rated m',
     'all orientations'
   ];
+  final List<Widget> tags;
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    for (int i = 0; i < items.length; i++) {
+      tags.add(Text(
+        items[i],
+        style: TextStyle(fontSize: 12, color: theme.primaryColor),
+      ));
+    }
     return Row(
       children: [
         Container(
@@ -25,9 +32,10 @@ class tag_buttons extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
-              child: Text(
-                items[0],
-                style: TextStyle(fontSize: 12, color: theme.primaryColor),
+              child: Wrap(
+                children: <Widget>[
+                  ...tags
+                ],
               ),
               onPressed: () {},
             ),
