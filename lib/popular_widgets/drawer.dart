@@ -56,8 +56,7 @@ class drawer extends StatelessWidget {
                   radius: 80,
                   backgroundImage: NetworkImage(
                     'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg',
-                    height: 100,
-                    width: 100,
+                    radius: 20,
                   ),
                 ),
               ),
