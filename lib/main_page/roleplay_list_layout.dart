@@ -195,11 +195,20 @@ class roleplay_list_layout extends StatelessWidget {
                       padding: EdgeInsets.only(top: 10, bottom: 0),
                       child: tag_buttons(),
                     ),
+                    Container(color: theme.splashColor, height: 4, width: 100),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      child: Text(
+                        'Join',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
-          ),
+          ), //cherry blossoms vvv//
           Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Container(
