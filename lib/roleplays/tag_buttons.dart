@@ -19,8 +19,7 @@ class tag_buttons extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
-          return Expandable(
-              child: Padding(
+          return Padding(
             padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
@@ -37,7 +36,7 @@ class tag_buttons extends StatelessWidget {
               ),
               onPressed: () {},
             ),
-          ));
+          );
         },
       ),
     );
