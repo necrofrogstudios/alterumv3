@@ -11,9 +11,9 @@ class roleplay_requestState extends State<roleplay_request> {
   @override
   Widget build(BuildContext context) {
     List<bool> isSelected = [
-      null,
-      null,
-      null
+      false,
+      false,
+      false
     ];
     var theme = Theme.of(context);
     return Padding(
