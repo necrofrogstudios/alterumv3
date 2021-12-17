@@ -10,17 +10,18 @@ class tag_buttons extends StatelessWidget {
     'all orientations'
   ];
 
+  var theme = Theme.of(context);
+
   Widget build(BuildContext context) {
     for (int i; i < items.length; i++) {
       tags.add(
         Text(
-          items[index],
+          items[i],
           style: TextStyle(fontSize: 12, color: theme.primaryColor),
         ),
       );
     }
 
-    var theme = Theme.of(context);
     return Container(
       color: theme.accentColor,
       height: 40,
