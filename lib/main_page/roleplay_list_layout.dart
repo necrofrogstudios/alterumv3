@@ -68,6 +68,7 @@ class roleplay_list_layout extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
+                      Container(color: theme.splashColor, height: 4),
                     ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
