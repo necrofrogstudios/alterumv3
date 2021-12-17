@@ -56,7 +56,7 @@ class roleplay_main extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                       child: Text(
-                        'admins, favorites,current amount of rpers, latest active, tags',
+                        'admins, favorites,current amount of rpers, latest active',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 15,
