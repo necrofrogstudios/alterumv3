@@ -55,7 +55,7 @@ class roleplay_list_layout extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(top: 10, bottom: 10),
+                      padding: EdgeInsets.only(top: 5, bottom: 10),
                       child: tag_buttons(),
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
