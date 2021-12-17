@@ -38,8 +38,11 @@ class roleplay_requestState extends State<roleplay_request> {
                     Icon(Icons.link),
                   ],
                   isSelected: isSelected,
-                                  onPressed: (int index) {
-
+                  onPressed: (int index) {
+                    setState(() {
+                      isSelected[index] = !isSelected[index];
+                    });
+                  },
                 ),
               ],
             ),
