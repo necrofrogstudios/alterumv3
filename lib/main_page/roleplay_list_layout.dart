@@ -102,7 +102,10 @@ class roleplay_list_layout extends StatelessWidget {
               ),
             ),
             back: Container(
-              child: Text('Back'),
+              child: Text(
+                'Back',
+                style: TextStyle(color: theme.primaryColor),
+              ),
             ),
           ),
           Padding(
