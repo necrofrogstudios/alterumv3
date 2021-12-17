@@ -9,7 +9,7 @@ import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/tag_buttons.dart';
-import 'package:testing/main_page/marquee.dart';
+import 'package:testing/roleplays/admin_marquee.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class roleplay_main extends StatelessWidget {
@@ -37,7 +37,7 @@ class roleplay_main extends StatelessWidget {
               Container(color: theme.splashColor, height: 4),
               Container(
                 color: theme.accentColor,
-                child: marquee(),
+                child: admin_marquee(),
               ),
               Container(color: theme.splashColor, height: 4),
               Container(
