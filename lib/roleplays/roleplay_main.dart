@@ -52,7 +52,7 @@ class roleplay_main extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    Image.network('https://64.media.tumblr.com/ca1991687135006152a1dc5e01676211/9455c0401e14b342-9d/s540x810/f0ff7280db9153fa334f45d2fc4876a96ef8a95c.jpg'),
+                    Image.network('https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png'),
                     Text(
                       'admins, favorites,current amount of rpers, latest active, tags',
                       textAlign: TextAlign.center,
