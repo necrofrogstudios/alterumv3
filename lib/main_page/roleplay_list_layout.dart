@@ -203,7 +203,12 @@ class roleplay_list_layout extends StatelessWidget {
                         splashColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         height: 60.0,
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => roleplay_main()),
+                          );
+                        },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
