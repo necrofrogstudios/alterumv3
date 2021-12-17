@@ -26,10 +26,11 @@ class _wall_tabState extends State<wall_tab> {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      child: SingleChildScrollView(
-        physics: NeverScrollableScrollPhysics(),
-        child: Column(
-          children: [
+      child: ListView(
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      padding: const EdgeInsets.all(0),
+      children: <Widget>[
             Padding(
               padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
               child: TextFormField(
