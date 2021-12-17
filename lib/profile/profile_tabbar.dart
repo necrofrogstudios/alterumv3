@@ -6,41 +6,48 @@ class profile_tabbar extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
-      color: theme.backgroundColor,
-      child: DefaultTabController(
-        length: 3, // length of tabs
-        initialIndex: 0,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Container(
-              height: 50,
-              color: theme.backgroundColor,
-              child: TabBar(
-                indicator: UnderlineTabIndicator(
-                  borderSide: BorderSide(width: 3.0, color: theme.splashColor),
+      width: double.infinity,
+      child: ListView(
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
+        padding: const EdgeInsets.all(0),
+        children: <Widget>[
+          DefaultTabController(
+            length: 3, // length of tabs
+            initialIndex: 0,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Container(
+                  height: 50,
+                  color: theme.backgroundColor,
+                  child: TabBar(
+                    indicator: UnderlineTabIndicator(
+                      borderSide: BorderSide(width: 3.0, color: theme.splashColor),
+                    ),
+                    labelColor: theme.primaryColor,
+                    unselectedLabelColor: Colors.white,
+                    tabs: [
+                      Text('Wall', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
+                      Text('Profile', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
+                      Text('Roleplays', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
+                    ],
+                  ),
                 ),
-                labelColor: theme.primaryColor,
-                unselectedLabelColor: Colors.white,
-                tabs: [
-                  Text('Wall', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
-                  Text('Profile', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
-                  Text('Roleplays', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
-                ],
-              ),
+                Container(
+                  height: 550, //height of TabBarView
+                  child: TabBarView(
+                    children: <Widget>[
+                      wall_tab(),
+                      profile_tab(),
+                      roleplays_tab(),
+                    ],
+                  ),
+                ),
+              ],
             ),
-            Container(
-              height: 550, //height of TabBarView
-              child: TabBarView(
-                children: <Widget>[
-                  wall_tab(),
-                  profile_tab(),
-                  roleplays_tab(),
-                ],
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
