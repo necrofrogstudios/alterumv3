@@ -13,7 +13,7 @@ class roleplay_list_layout extends StatelessWidget {
         children: <Widget>[
           GestureDetector(
             onTap: () {
-              Navigator.pop(
+              Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => roleplay_main()),
               );
