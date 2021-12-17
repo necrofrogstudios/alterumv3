@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
 
@@ -56,7 +55,7 @@ class roleplay_main extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+              Container(color: theme.backgroundColor, size: 40),
               Container(color: theme.splashColor, height: 4),
               footer(),
             ],
