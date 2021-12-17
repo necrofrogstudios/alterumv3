@@ -18,23 +18,29 @@ class tag_buttons extends StatelessWidget {
         shrinkWrap: true,
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
-          return Padding(
-            padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
-            child: OutlinedButton(
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(width: 3.0, color: theme.backgroundColor),
-                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                backgroundColor: theme.accentColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
+          return Row(
+            children: [
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+                  child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(width: 3.0, color: theme.backgroundColor),
+                      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                      backgroundColor: theme.accentColor,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                    ),
+                    child: Text(
+                      items[index],
+                      style: TextStyle(fontSize: 12, color: theme.primaryColor),
+                    ),
+                    onPressed: () {},
+                  ),
                 ),
               ),
-              child: Text(
-                items[index],
-                style: TextStyle(fontSize: 12, color: theme.primaryColor),
-              ),
-              onPressed: () {},
-            ),
+            ],
           );
         },
       ),
