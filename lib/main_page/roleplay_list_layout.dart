@@ -121,7 +121,7 @@ class roleplay_list_layout extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 10, bottom: 0),
                       child: FlatButton(
-                        color: theme.accentColor,
+                        color: theme.backgroundColor,
                         splashColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         height: 60.0,
