@@ -53,11 +53,11 @@ class roleplay_main extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    Image.network('https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png'),
+                    Image.network('https://centerforparentingeducation.org/wp-content/uploads/2014/04/rules.png'),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                       child: Text(
-                        'admins, favorites,current amount of rpers, latest active',
+                        'follow these rules',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 15,
@@ -66,7 +66,7 @@ class roleplay_main extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'About',
+                      'Rules',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25,
@@ -74,10 +74,10 @@ class roleplay_main extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'A hotel where your nightmares come to life '
-                      ' enter a world where the dead walk and the life before your eyes is '
-                      'not quite what you\'ve ever seen. Walk carefully down the halls, '
-                      'Speak respectfully to the supernatural less you become one yourself',
+                      'Favorite the rp '
+                      ' \n be kind '
+                      ' \n please rewind '
+                      ' \n inactivity set to 7 days',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 15,
@@ -101,7 +101,7 @@ class roleplay_main extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Rules',
+                              'Request Form',
                               style: TextStyle(
                                 fontSize: 30,
                                 color: theme.primaryColor,

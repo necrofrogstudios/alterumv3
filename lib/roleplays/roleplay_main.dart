@@ -10,6 +10,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/tag_buttons.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
+import 'package:testing/roleplays/roleplay_rules.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class roleplay_main extends StatelessWidget {
@@ -94,7 +95,7 @@ class roleplay_main extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => roleplay_main()),
+                            MaterialPageRoute(builder: (context) => roleplay_rules()),
                           );
                         },
                         child: Row(
