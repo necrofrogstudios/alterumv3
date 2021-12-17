@@ -84,12 +84,31 @@ class roleplay_main extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    Text(
-                      'button to rules? ',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
+                    Padding(
+                      padding: EdgeInsets.only(top: 10, bottom: 0),
+                      child: FlatButton(
+                        color: theme.accentColor,
+                        splashColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        height: 60.0,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => roleplay_main()),
+                          );
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Rules',
+                              style: TextStyle(
+                                fontSize: 30,
+                                color: theme.primaryColor,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
