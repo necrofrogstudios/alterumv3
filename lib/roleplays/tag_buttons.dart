@@ -32,7 +32,7 @@ class tag_buttons extends StatelessWidget {
                 ),
               ),
               child: Row(
-                children: {
+                children: <Widget>[
                   for (int i; i < items.length; i++)
                     {
                       Text(
@@ -40,7 +40,7 @@ class tag_buttons extends StatelessWidget {
                         style: TextStyle(fontSize: 12, color: theme.primaryColor),
                       ),
                     },
-                },
+                ],
               ),
               onPressed: () {},
             ),
