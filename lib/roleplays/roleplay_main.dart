@@ -12,7 +12,7 @@ import 'package:testing/main_page/marquee.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class roleplay_main extends StatelessWidget {
-  final currentScreen = main_page;
+  final currentScreen = roleplay_main;
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
