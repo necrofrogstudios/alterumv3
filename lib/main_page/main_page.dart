@@ -29,7 +29,10 @@ class main_page extends StatelessWidget {
         height: double.infinity,
         child: SingleChildScrollView(
           physics: AlwaysScrollableScrollPhysics(),
-          child: Column(
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            padding: const EdgeInsets.all(8),
             children: <Widget>[
               Container(color: theme.splashColor, height: 4),
               profile_top_buttons(),
