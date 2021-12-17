@@ -11,7 +11,7 @@ class tag_buttons extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
-      color: theme.backgroundColor,
+      color: theme.accentColor,
       height: 30,
       child: ListView.builder(
         shrinkWrap: true,
@@ -22,10 +22,10 @@ class tag_buttons extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
-                side: BorderSide(width: 3.0, color: theme.accentColor),
+                side: BorderSide(width: 3.0, color: theme.backgroundColor),
                 elevation: 6,
                 padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-                backgroundColor: theme.backgroundColor,
+                backgroundColor: theme.accentColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
