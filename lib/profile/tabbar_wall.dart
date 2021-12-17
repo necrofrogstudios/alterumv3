@@ -27,7 +27,7 @@ class _wall_tabState extends State<wall_tab> {
       width: double.infinity,
       height: double.infinity,
       child: SingleChildScrollView(
-        physics: ScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(),
         child: Column(
           children: [
             Padding(
@@ -40,20 +40,17 @@ class _wall_tabState extends State<wall_tab> {
                 decoration: InputDecoration(
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                    borderSide:
-                        BorderSide(color: theme.accentColor, width: 4.0),
+                    borderSide: BorderSide(color: theme.accentColor, width: 4.0),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                    borderSide:
-                        BorderSide(color: theme.accentColor, width: 4.0),
+                    borderSide: BorderSide(color: theme.accentColor, width: 4.0),
                   ),
                   hintText: 'Type a Message Here',
                   hintStyle: TextStyle(
                     color: theme.primaryColor.withOpacity(0.45),
                   ),
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+                  contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
                 ),
               ),
             ),
@@ -66,8 +63,7 @@ class _wall_tabState extends State<wall_tab> {
                     style: OutlinedButton.styleFrom(
                       side: BorderSide(width: 4.0, color: theme.accentColor),
                       elevation: 6,
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+                      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
                       backgroundColor: theme.backgroundColor,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50),
@@ -87,9 +83,7 @@ class _wall_tabState extends State<wall_tab> {
             ListView.builder(
               itemCount: commentList.length,
               itemBuilder: (context, index) {
-                return comments(
-                    commentList[commentListIndexChecker(commentList, index)],
-                    removeComment);
+                return comments(commentList[commentListIndexChecker(commentList, index)], removeComment);
               },
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
@@ -110,10 +104,8 @@ class _wall_tabState extends State<wall_tab> {
 
   void addComment(String postText) async {
     final newComment = WallComment(
-        id: numberOfComments
-            .toString(), //ID begins at zero and goes up by one every new comment
-        profilePhoto:
-            'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg', //filler photo for now
+        id: numberOfComments.toString(), //ID begins at zero and goes up by one every new comment
+        profilePhoto: 'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg', //filler photo for now
         bodyText: postText,
         date: DateFormat('MM/dd/yyyy - hh:mm a').format(
           DateTime.now(), //takes the date and formats it to something readable
@@ -183,17 +175,14 @@ class comments extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
                             child: Text(
                               'Guarded',
-                              style: TextStyle(
-                                  color: theme.primaryColor, fontSize: 15),
+                              style: TextStyle(color: theme.primaryColor, fontSize: 15),
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                             child: Text(
                               comment.date,
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  color: theme.primaryColor.withOpacity(0.45)),
+                              style: TextStyle(fontSize: 15, color: theme.primaryColor.withOpacity(0.45)),
                             ),
                           ),
                         ],
@@ -208,8 +197,7 @@ class comments extends StatelessWidget {
                       hoverColor: Colors.transparent,
                       iconSize: 15,
                       icon: Icon(Icons.close, color: theme.primaryColor),
-                      onPressed: () =>
-                          removeComment(commentList.indexOf(comment), comment),
+                      onPressed: () => removeComment(commentList.indexOf(comment), comment),
                     ),
                   ),
                 ],
