@@ -48,12 +48,12 @@ class drawer extends StatelessWidget {
             ),
             Container(color: theme.splashColor, height: 4),
             Container(
-              height: 150,
+              height: 180,
               color: theme.backgroundColor,
               child: Padding(
                 padding: EdgeInsets.only(top: 5),
                 child: CircleAvatar(
-                  radius: 220,
+                  radius: 80,
                   backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
                 ),
               ),
