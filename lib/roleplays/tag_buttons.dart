@@ -32,7 +32,7 @@ class tag_buttons extends StatelessWidget {
                 ),
               ),
               child: Row(
-                children: <Widget>{
+                children: {
                   for (int i; i < items.length; i++)
                     {
                       Text(
