@@ -8,7 +8,7 @@ class roleplay_list_layout extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return SingleChildScrollView(
-      physics: AlwaysScrollableScrollPhysics(),
+      physics: NeverScrollableScrollPhysics(),
       child: ListView(
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
