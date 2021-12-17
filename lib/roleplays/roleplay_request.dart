@@ -17,7 +17,19 @@ class roleplay_request extends StatelessWidget {
             title: const Text('Application'),
             content: Column(
               children: <Widget>[
-                Text('doing my best'),
+                ToggleButtons(
+                  children: <Widget>[
+                    Text('Ghost'),
+                    Text('Guest'),
+                    Text('Staff'),
+                  ],
+                  onPressed: (int index) {
+                    setState(() {
+                      isSelected[index] = !isSelected[index];
+                    });
+                  },
+                  isSelected: isSelected,
+                ),
               ],
             ),
             actions: <Widget>[
