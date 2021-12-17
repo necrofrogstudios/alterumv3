@@ -66,7 +66,9 @@ class roleplay_list_layout extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text(
-                        'With  164 favorites, 37 active roleplayers',
+                        'Welcome to the Haunted hotel! Where our residence are the only '
+                        'ones that will give you a good scare before showing you around '
+                        ' and telling you about all the historical blah blah blahs',
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
