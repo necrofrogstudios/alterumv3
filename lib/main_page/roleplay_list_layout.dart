@@ -203,7 +203,7 @@ class roleplay_list_layout extends StatelessWidget {
                       height: 60.0,
                       onPressed: () {},
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
                             'Join',
