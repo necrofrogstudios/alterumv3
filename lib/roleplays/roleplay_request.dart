@@ -52,7 +52,7 @@ class roleplay_request extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: const Text(
-          'Themes',
+          'Themez',
           style: TextStyle(fontSize: 40),
         ),
       ),
