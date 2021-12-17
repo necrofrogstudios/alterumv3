@@ -13,9 +13,8 @@ class tag_buttons extends StatelessWidget {
     var theme = Theme.of(context);
     return Container(
       color: theme.accentColor,
-      height: 90,
+      height: 40,
       child: ListView.builder(
-        shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemCount: items.length,
