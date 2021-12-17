@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class roleplay_request extends StatefulWidget {
-  const roleplay_request({Key? key}) : super(key: key);
+  const roleplay_request();
 
   @override
   State<roleplay_request> createState() => _roleplay_requestState();
