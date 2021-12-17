@@ -23,7 +23,7 @@ class tag_buttons extends StatelessWidget {
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
                 side: BorderSide(width: 3.0, color: theme.backgroundColor),
-                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 backgroundColor: theme.accentColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
