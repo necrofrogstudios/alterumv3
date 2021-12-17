@@ -47,7 +47,7 @@ class roleplay_list_layout extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
+                      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child: Text(
                         ' The Haunted Hotel of Jefferson',
                         textAlign: TextAlign.center,
@@ -57,7 +57,7 @@ class roleplay_list_layout extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                       child: Text(
-                        'With  164 favorites, 37 active roleplayers',
+                        '164 favorites, 37 active roleplayers',
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 12),
                       ),
