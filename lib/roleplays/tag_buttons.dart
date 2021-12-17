@@ -12,14 +12,14 @@ class tag_buttons extends StatelessWidget {
     var theme = Theme.of(context);
     return Container(
       color: theme.backgroundColor,
-      height: 60,
+      height: 30,
       child: ListView.builder(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
           return Padding(
-            padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
+            padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
                 side: BorderSide(width: 3.0, color: theme.accentColor),
