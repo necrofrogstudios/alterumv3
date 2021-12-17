@@ -12,8 +12,8 @@ import 'package:testing/roleplays/tag_buttons.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
-class roleplay_main extends StatelessWidget {
-  final currentScreen = roleplay_main;
+class roleplay_rules extends StatelessWidget {
+  final currentScreen = roleplay_rules;
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
