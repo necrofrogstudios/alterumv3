@@ -9,7 +9,7 @@ class tag_buttons extends StatelessWidget {
     'all orientations'
   ];
 
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, int index) {
     var theme = Theme.of(context);
     return Row(
       children: [
