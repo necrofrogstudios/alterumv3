@@ -4,58 +4,29 @@ class roleplay_request extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return OutlinedButton(
-      onPressed: () => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          backgroundColor: theme.backgroundColor,
-          title: Text(
-            'Themesss',
-            style: TextStyle(color: theme.primaryColor),
-          ),
-          content: Text(
-            'Pick a Theme',
-            style: TextStyle(color: theme.primaryColor),
-          ),
-          actions: <Widget>[
-            SingleChildScrollView(
-              physics: ScrollPhysics(),
-              child: Column(
-                children: [
-                  Align(
-                    alignment: Alignment.center,
-                    child: Container(
-                      width: 300,
-                      height: 400,
-                      child: Text('hih', style: TextStyle(fontSize: 40)),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                OutlinedButton(
-                  onPressed: () => Navigator.pop(context, 'Cancel'),
-                  child: const Text('Cancel'),
-                ),
-                TextButton(
-                  onPressed: () => Navigator.pop(context, 'OK'),
-                  child: const Text('OK'),
-                ),
-              ],
-            ),
-          ],
-        ),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: const Text(
-          'Themez',
-          style: TextStyle(fontSize: 40),
-        ),
-      ),
-    );
+    return Padding(
+                      padding: EdgeInsets.only(top: 10, bottom: 0),
+                      child: FlatButton(
+                        color: theme.accentColor,
+                        splashColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        height: 60.0,
+                        onPressed: () {
+                          
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Request Form',
+                              style: TextStyle(
+                                fontSize: 30,
+                                color: theme.primaryColor,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),;
   }
 }

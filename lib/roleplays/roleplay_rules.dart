@@ -77,33 +77,7 @@ class roleplay_rules extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 10, bottom: 0),
-                      child: FlatButton(
-                        color: theme.accentColor,
-                        splashColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        height: 60.0,
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => roleplay_request()),
-                          );
-                        },
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Request Form',
-                              style: TextStyle(
-                                fontSize: 30,
-                                color: theme.primaryColor,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                    roleplay_request(),
                   ],
                 ),
               ),
