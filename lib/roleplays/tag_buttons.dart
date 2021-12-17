@@ -37,9 +37,7 @@ class tag_buttons extends StatelessWidget {
       );
     }
     return Wrap(
-      children: [
-        ...tags
-      ],
+      children: tags,
     );
   }
 }
