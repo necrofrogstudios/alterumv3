@@ -87,7 +87,7 @@ class roleplay_rules extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => roleplay_rules()),
+                            MaterialPageRoute(builder: (context) => roleplay_request()),
                           );
                         },
                         child: Row(
