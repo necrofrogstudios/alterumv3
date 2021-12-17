@@ -34,7 +34,7 @@ class tag_buttons extends StatelessWidget {
               ),
               child: Wrap(
                 children: <Widget>[
-                  tags
+                  ...tags
                 ],
               ),
               onPressed: () {},
