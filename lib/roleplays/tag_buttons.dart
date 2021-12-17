@@ -17,7 +17,7 @@ class tag_buttons extends StatelessWidget {
       child: ListView.builder(
         itemCount: items.length,
         itemBuilder: (BuildContext context, int index) {
-          return Row(
+          return Column(
             children: [
               Container(
                 child: Padding(
