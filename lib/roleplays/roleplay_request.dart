@@ -10,7 +10,11 @@ class roleplay_request extends StatefulWidget {
 class roleplay_requestState extends State<roleplay_request> {
   @override
   Widget build(BuildContext context) {
-    final List<bool> isSelected;
+    List<bool> isSelected = [
+      false,
+      false,
+      false
+    ];
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.only(top: 10, bottom: 0),
@@ -27,22 +31,16 @@ class roleplay_requestState extends State<roleplay_request> {
               children: <Widget>[
                 ToggleButtons(
                   children: <Widget>[
-                    Icon(Icons.ac_unit),
-                    Icon(Icons.call),
-                    Icon(Icons.cake),
+                    Icon(Icons.format_bold),
+                    Icon(Icons.format_italic),
+                    Icon(Icons.link),
                   ],
+                  isSelected: isSelected,
                   onPressed: (int index) {
                     setState(() {
-                      for (int buttonIndex = 0; buttonIndex < isSelected.length; buttonIndex++) {
-                        if (buttonIndex == index) {
-                          isSelected[buttonIndex] = true;
-                        } else {
-                          isSelected[buttonIndex] = false;
-                        }
-                      }
+                      isSelected[index] = !isSelected[index];
                     });
                   },
-                  isSelected: isSelected,
                 ),
               ],
             ),
