@@ -96,7 +96,10 @@ class roleplay_list_layout extends StatelessWidget {
             fill: Fill.fillBack, // Fill the back side of the card to make in the same size as the front.
             direction: FlipDirection.HORIZONTAL, // default
             front: Container(
-              child: Text('Front'),
+              child: Text(
+                'Front',
+                style: TextStyle(color: theme.primaryColor),
+              ),
             ),
             back: Container(
               child: Text('Back'),
