@@ -54,10 +54,6 @@ class roleplay_list_layout extends StatelessWidget {
                         style: TextStyle(color: theme.primaryColor, fontSize: 20),
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(top: 5, bottom: 10),
-                      child: tag_buttons(),
-                    ),
                     Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
@@ -74,6 +70,10 @@ class roleplay_list_layout extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 5, bottom: 10),
+                      child: tag_buttons(),
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
