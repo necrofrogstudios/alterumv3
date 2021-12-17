@@ -55,7 +55,7 @@ class roleplay_list_layout extends StatelessWidget {
                     ),
                     Container(color: theme.splashColor, height: 4, width: 100),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                       child: Text(
                         'Tags: action, adventure, first pov, active',
                         textAlign: TextAlign.center,
