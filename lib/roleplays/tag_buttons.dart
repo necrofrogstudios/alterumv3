@@ -8,28 +8,13 @@ class tag_buttons extends StatelessWidget {
     'rated m',
     'all orientations'
   ];
-  List<Widget> tags = [
-    Text('items[0]' /*, style: TextStyle(fontSize: 12, color: theme.primaryColor)*/)
-  ];
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    for (int i; i < items.length; i++) {
-      tags.add(
-        Text(items[i] /*, style: TextStyle(fontSize: 12, color: theme.primaryColor)*/),
-      );
-    }
-
-    return Container(
-      color: theme.accentColor,
-      height: 40,
-      child: ListView.builder(
-        shrinkWrap: true,
-        physics: NeverScrollableScrollPhysics(),
-        scrollDirection: Axis.horizontal,
-        itemCount: items.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Padding(
+    return Row(
+      children: [
+        Container(
+          child: Padding(
             padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
@@ -40,14 +25,15 @@ class tag_buttons extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
-              child: Row(
-                children: tags,
+              child: Text(
+                items[index],
+                style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
               onPressed: () {},
             ),
-          );
-        },
-      ),
+          ),
+        ),
+      ],
     );
   }
 }
