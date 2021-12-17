@@ -177,20 +177,6 @@ class roleplay_list_layout extends StatelessWidget {
                 ), //name, creator, tags, intro
                 child: Column(
                   children: <Widget>[
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(30),
-                          topRight: Radius.circular(30),
-                        ),
-                        image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: NetworkImage("https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png"),
-                        ),
-                      ),
-                    ),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                       child: Text(
