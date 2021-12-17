@@ -6,6 +6,7 @@ class tag_buttons extends StatelessWidget {
     'adventure',
     'first pov',
     'rated m',
+    'all orientations'
   ];
 
   Widget build(BuildContext context) {
