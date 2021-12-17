@@ -26,7 +26,7 @@ class tag_buttons extends StatelessWidget {
                 ),
               ),
               child: Text(
-                items[index],
+                items[0],
                 style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
               onPressed: () {},
