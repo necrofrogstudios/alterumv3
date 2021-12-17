@@ -1,4 +1,6 @@
-class profile extends StatelessWidget {
+import 'package:flutter/material.dart';
+
+class roleplay_request extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OutlinedButton(
