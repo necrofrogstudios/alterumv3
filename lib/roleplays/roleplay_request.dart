@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class roleplay_request extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return OutlinedButton(
       onPressed: () => showDialog<String>(
         context: context,
