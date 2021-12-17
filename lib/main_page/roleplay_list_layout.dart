@@ -60,6 +60,14 @@ class roleplay_list_layout extends StatelessWidget {
                       child: Text(
                         'With  164 favorites, 37 active roleplayers',
                         textAlign: TextAlign.center,
+                        style: TextStyle(color: theme.primaryColor, fontSize: 12),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      child: Text(
+                        'With  164 favorites, 37 active roleplayers',
+                        textAlign: TextAlign.center,
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
                     ),
