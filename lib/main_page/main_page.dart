@@ -55,7 +55,7 @@ class main_page extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+              Container(color: theme.backgroundColor, height: 400, child: roleplay_list_layout()),
               Container(color: theme.splashColor, height: 4),
               footer(),
             ],
