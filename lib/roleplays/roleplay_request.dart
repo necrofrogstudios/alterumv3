@@ -12,7 +12,7 @@ class roleplay_requestState extends State<roleplay_request> {
   Widget build(BuildContext context) {
     List<bool> isSelected = [
       false,
-      false,
+      true,
       false
     ];
 
