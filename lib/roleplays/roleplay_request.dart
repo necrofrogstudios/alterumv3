@@ -54,6 +54,7 @@ class roleplay_requestState extends State<roleplay_request> {
             content: Column(
               children: <Widget>[
                 ToggleButtons(
+                  fillColor: Colors.purple,
                   children: <Widget>[
                     Icon(Icons.format_bold),
                     Icon(Icons.format_italic),
