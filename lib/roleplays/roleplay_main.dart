@@ -45,7 +45,31 @@ class roleplay_main extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Popular',
+                      'RP NAME',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                    Text(
+                      'admins, favorites, likes, comments,',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                    Text(
+                      'About',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                    Text(
+                      'button to rules? ',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 25,
