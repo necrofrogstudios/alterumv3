@@ -24,10 +24,11 @@ class profile extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: SingleChildScrollView(
-          physics: ScrollPhysics(),
-          child: Column(
-            children: <Widget>[
+        child:  ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
               Container(color: theme.splashColor, height: 4),
               profile_top_buttons(),
               profile_pics_icons(),
