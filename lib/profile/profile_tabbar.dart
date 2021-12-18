@@ -45,7 +45,7 @@ class profile_tabbar extends StatelessWidget {
               ),
             
           ],
-        ),),
+        ),
       
     );
   }
