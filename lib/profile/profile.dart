@@ -22,7 +22,6 @@ class profile extends StatelessWidget {
       ),
       drawer: drawer(currentScreen),
       body: Container(
-        width: double.infinity,
         child: ListView(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
