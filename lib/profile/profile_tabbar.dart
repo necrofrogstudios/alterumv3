@@ -30,16 +30,18 @@ class profile_tabbar extends StatelessWidget {
               ),
             ),
             TabBarView(
-                  children: <Widget>[
-                    Container(
-                      color: Colors.grey,
-                    ),
-                    Container(
-                      color: Colors.green,
-                    ),
-                    Container(
-                      color: Colors.purple,
-                    ),),
+              children: <Widget>[
+                Container(
+                  color: Colors.grey,
+                ),
+                Container(
+                  color: Colors.green,
+                ),
+                Container(
+                  color: Colors.purple,
+                ),
+              ],
+            ),
           ],
         ),
       ),
