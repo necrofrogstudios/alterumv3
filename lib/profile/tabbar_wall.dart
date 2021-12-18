@@ -138,8 +138,12 @@ class comments extends StatelessWidget {
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
-      child: Container(
-        child: Card(
+      child: width: double.infinity,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[ Card(
           shape: RoundedRectangleBorder(
             side: BorderSide(
               color: theme.splashColor,
@@ -208,7 +212,7 @@ class comments extends StatelessWidget {
               )
             ],
           ),
-        ),
+        ],
       ),
     );
   }
