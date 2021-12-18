@@ -25,7 +25,7 @@ class _wall_tabState extends State<wall_tab> {
     var theme = Theme.of(context);
     return Container(
       width: double.infinity,
-      height: double.infinity,
+      height:double.infinity, 
       child: Column(
         children: <Widget>[
           Padding(
@@ -84,6 +84,7 @@ class _wall_tabState extends State<wall_tab> {
               return comments(commentList[commentListIndexChecker(commentList, index)], removeComment);
             },
             shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
           ),
         ],
       ),
