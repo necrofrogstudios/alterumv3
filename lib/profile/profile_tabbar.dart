@@ -31,7 +31,7 @@ class profile_tabbar extends StatelessWidget {
             ),
             Container(
               height: 600,
-             width: double.infinity,
+              width: 300,
               child: ListView(
                 physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
