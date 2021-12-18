@@ -29,7 +29,7 @@ class profile_tabbar extends StatelessWidget {
                 ],
               ),
             ),
-            Expanded(
+            Flexible(
               child: TabBarView(
                 children: <Widget>[
                   wall_tab(),
