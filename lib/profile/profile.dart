@@ -21,19 +21,21 @@ class profile extends StatelessWidget {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: Container(
-        child: ListView(
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(0),
-          children: <Widget>[
-            Container(color: theme.splashColor, height: 4),
-            profile_top_buttons(),
-            profile_pics_icons(),
-            Container(color: theme.splashColor, height: 4),
-            profile_tabbar(),
-            Container(color: theme.splashColor, height: 4),
-            footer(),
-          ],
+      body: SingleChildScrollView(
+        Container(
+          child: ListView(
+            shrinkWrap: true,
+            padding: const EdgeInsets.all(0),
+            children: <Widget>[
+              Container(color: theme.splashColor, height: 4),
+              profile_top_buttons(),
+              profile_pics_icons(),
+              Container(color: theme.splashColor, height: 4),
+              profile_tabbar(),
+              Container(color: theme.splashColor, height: 4),
+              footer(),
+            ],
+          ),
         ),
       ),
     );

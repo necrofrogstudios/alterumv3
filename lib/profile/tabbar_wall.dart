@@ -86,7 +86,7 @@ class _wall_tabState extends State<wall_tab> {
               return comments(commentList[commentListIndexChecker(commentList, index)], removeComment);
             },
             shrinkWrap: true,
-            physics: ClampingScrollPhysics(),
+            physics: NeverScrollableScrollPhysics(),
           ),
         ],
       ),
