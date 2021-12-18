@@ -31,7 +31,7 @@ class profile_tabbar extends StatelessWidget {
               ),
             ),
             Listview(
-              shrinkWrap:true;
+              shrinkWrap: true;
               child: TabBarView(
                 children: <Widget>[
                   wall_tab(),
