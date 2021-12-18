@@ -31,19 +31,11 @@ class profile_tabbar extends StatelessWidget {
             ),
             Container(
               height: 600,
-              width: 300,
-              child: ListView(
-                physics: NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                padding: const EdgeInsets.all(0),
+              child: TabBarView(
                 children: <Widget>[
-                  TabBarView(
-                    children: <Widget>[
-                      wall_tab(),
-                      profile_tab(),
-                      roleplays_tab(),
-                    ],
-                  ),
+                  wall_tab(),
+                  profile_tab(),
+                  roleplays_tab(),
                 ],
               ),
             ),
