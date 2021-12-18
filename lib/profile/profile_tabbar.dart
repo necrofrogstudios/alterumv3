@@ -7,7 +7,7 @@ class profile_tabbar extends StatelessWidget {
     var theme = Theme.of(context);
     return Container(
       color: theme.backgroundColor,
-      child: DefaultTabController(
+      child: TabController(
         length: 3, // length of tabs
         initialIndex: 0,
         child: Column(
