@@ -30,7 +30,7 @@ class profile_tabbar extends StatelessWidget {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height,
+              height: 900,
               child: TabBarView(
                 children: <Widget>[
                   wall_tab(),

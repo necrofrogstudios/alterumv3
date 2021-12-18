@@ -10,6 +10,7 @@ import 'package:testing/popular_widgets/appbar_custom.dart';
 
 class profile extends StatelessWidget {
   final currentScreen = profile;
+  ScrollController controller = ScrollController();
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -21,21 +22,36 @@ class profile extends StatelessWidget {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: SingleChildScrollView(
-        child: Container(
-          child: ListView(
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(0),
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              profile_pics_icons(),
-              Container(color: theme.splashColor, height: 4),
-              profile_tabbar(),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
-          ),
+      body: Container(
+        child: ListView(
+          controller: controller,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
+            Container(color: theme.splashColor, height: 4),
+            profile_top_buttons(),
+            profile_pics_icons(),
+            Container(color: theme.splashColor, height: 4),
+            NotificationListener<OverscrollNotification>(
+              onNotification: (OverscrollNotification value) {
+                if (value.overscroll < 0 && controller.offset + value.overscroll <= 0) {
+                  if (controller.offset != 0) controller.jumpTo(0);
+                  return true;
+                }
+                if (controller.offset + value.overscroll >= controller.position.maxScrollExtent) {
+                  if (controller.offset != controller.position.maxScrollExtent) {
+                    controller.jumpTo(controller.position.maxScrollExtent);
+                  }
+                  return true;
+                }
+                controller.jumpTo(controller.offset + value.overscroll);
+                return true;
+              },
+              child: profile_tabbar(),
+            ),
+            Container(color: theme.splashColor, height: 4),
+            footer(),
+          ],
         ),
       ),
     );
