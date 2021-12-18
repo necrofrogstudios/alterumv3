@@ -18,7 +18,6 @@ class profile_tabbar extends StatelessWidget {
               height: 50,
               color: theme.backgroundColor,
               child: TabBar(
-                isScrollable: true,
                 indicator: UnderlineTabIndicator(
                   borderSide: BorderSide(width: 3.0, color: theme.splashColor),
                 ),
