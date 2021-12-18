@@ -52,7 +52,7 @@ class profile_tab extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: ListView(
-        scrollDirection: Axis.vertical,
+        physics: NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         padding: const EdgeInsets.all(0),
         children: <Widget>[
