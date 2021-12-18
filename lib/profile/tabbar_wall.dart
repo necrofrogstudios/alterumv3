@@ -138,7 +138,7 @@ class comments extends StatelessWidget {
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
-      child: width: double.infinity,
+      width: double.infinity,
         child: ListView(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
