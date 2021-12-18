@@ -39,7 +39,7 @@ class profile_tabbar extends StatelessWidget {
                     ),
                     Container(
                       color: Colors.purple,
-                    ),
+                    ),),
           ],
         ),
       ),
