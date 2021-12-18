@@ -31,15 +31,12 @@ class profile_tabbar extends StatelessWidget {
               ),
             ),
             Container(
-              child: 
-                  TabBarView(
-                    children: <Widget>[
-                      wall_tab(),
-                      profile_tab(),
-                      roleplays_tab(),
-                    ],
-                  ),
-                
+              child: TabBarView(
+                children: <Widget>[
+                  wall_tab(),
+                  profile_tab(),
+                  roleplays_tab(),
+                ],
               ),
             ),
           ],
