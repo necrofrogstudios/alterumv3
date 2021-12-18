@@ -90,21 +90,6 @@ class profile_tab extends StatelessWidget {
                 'why bother with your own text for it to be destroyed later '
                 'well ya know- gotta put in the admin work and make it work '
                 'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
                 'filler text yeah that looks good enough good job me yay go ',
                 style: TextStyle(fontSize: 15, color: theme.primaryColor),
               ),
