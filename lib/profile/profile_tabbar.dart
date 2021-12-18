@@ -14,7 +14,7 @@ class profile_tabbar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Container(
-              height: 50,
+              height: 100,
               color: theme.backgroundColor,
               child: TabBar(
                 indicator: UnderlineTabIndicator(
