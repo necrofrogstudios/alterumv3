@@ -32,8 +32,8 @@ class profile_tabbar extends StatelessWidget {
             ),
             Listview(
               scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(0),
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(0),
               child: TabBarView(
                 children: <Widget>[
                   wall_tab(),
