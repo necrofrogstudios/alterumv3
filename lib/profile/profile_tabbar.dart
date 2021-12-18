@@ -30,7 +30,6 @@ class profile_tabbar extends StatelessWidget {
               ),
             ),
             Container(
-              height: 900,
               child: TabBarView(
                 children: <Widget>[
                   wall_tab(),
@@ -49,115 +48,108 @@ class profile_tabbar extends StatelessWidget {
 class profile_tab extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Container(
-      height: 300,
-      width: double.infinity,
-      child: ListView(
-        physics: NeverScrollableScrollPhysics(),
-        shrinkWrap: true,
-        padding: const EdgeInsets.all(0),
-        children: <Widget>[
-          Align(
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(15, 10, 10, 5),
-              child: Text(
-                'About Me',
-                style: TextStyle(fontSize: 20, color: theme.primaryColor),
-              ),
+    return Column(
+      children: <Widget>[
+        Align(
+          alignment: Alignment.topLeft,
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(15, 10, 10, 5),
+            child: Text(
+              'About Me',
+              style: TextStyle(fontSize: 20, color: theme.primaryColor),
             ),
           ),
-          Align(
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
-              child: Text(
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go '
-                'oh look! its new sample text wow omg much wow who does this '
-                'why bother with your own text for it to be destroyed later '
-                'well ya know- gotta put in the admin work and make it work '
-                'apps dont grow on trees and we are above using basic bitch '
-                'filler text yeah that looks good enough good job me yay go ',
-                style: TextStyle(fontSize: 15, color: theme.primaryColor),
-              ),
+        ),
+        Align(
+          alignment: Alignment.topLeft,
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+            child: Text(
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go '
+              'oh look! its new sample text wow omg much wow who does this '
+              'why bother with your own text for it to be destroyed later '
+              'well ya know- gotta put in the admin work and make it work '
+              'apps dont grow on trees and we are above using basic bitch '
+              'filler text yeah that looks good enough good job me yay go ',
+              style: TextStyle(fontSize: 15, color: theme.primaryColor),
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
