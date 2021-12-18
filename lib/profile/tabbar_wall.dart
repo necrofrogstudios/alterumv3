@@ -23,67 +23,73 @@ class _wall_tabState extends State<wall_tab> {
     final textController = TextEditingController();
     String a = textController.text;
     var theme = Theme.of(context);
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
-          child: TextFormField(
-            controller: textController,
-            style: TextStyle(color: theme.primaryColor),
-            keyboardType: TextInputType.multiline,
-            maxLines: null,
-            decoration: InputDecoration(
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+    return Container(
+      width: double.infinity,
+      child: ListView(
+        scrollDirection: Axis.vertical,
+        shrinkWrap: true,
+        padding: const EdgeInsets.all(0),
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
+            child: TextFormField(
+              controller: textController,
+              style: TextStyle(color: theme.primaryColor),
+              keyboardType: TextInputType.multiline,
+              maxLines: null,
+              decoration: InputDecoration(
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                  borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                  borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+                ),
+                hintText: 'Type a Message Here',
+                hintStyle: TextStyle(
+                  color: theme.primaryColor.withOpacity(0.45),
+                ),
+                contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
               ),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                borderSide: BorderSide(color: theme.accentColor, width: 4.0),
-              ),
-              hintText: 'Type a Message Here',
-              hintStyle: TextStyle(
-                color: theme.primaryColor.withOpacity(0.45),
-              ),
-              contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
             ),
           ),
-        ),
-        Container(
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(0, 15, 20, 10),
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: OutlinedButton(
-                style: OutlinedButton.styleFrom(
-                  side: BorderSide(width: 4.0, color: theme.accentColor),
-                  elevation: 6,
-                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
-                  backgroundColor: theme.backgroundColor,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(50),
+          Container(
+            child: Padding(
+              padding: EdgeInsets.fromLTRB(0, 15, 20, 10),
+              child: Align(
+                alignment: Alignment.centerRight,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(width: 4.0, color: theme.accentColor),
+                    elevation: 6,
+                    padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+                    backgroundColor: theme.backgroundColor,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
                   ),
+                  child: Text(
+                    'Post',
+                    style: TextStyle(fontSize: 15, color: theme.primaryColor),
+                  ),
+                  onPressed: () {
+                    addComment(textController.text);
+                  },
                 ),
-                child: Text(
-                  'Post',
-                  style: TextStyle(fontSize: 15, color: theme.primaryColor),
-                ),
-                onPressed: () {
-                  addComment(textController.text);
-                },
               ),
             ),
           ),
-        ),
-        ListView.builder(
-          itemCount: commentList.length,
-          itemBuilder: (context, index) {
-            return comments(commentList[commentListIndexChecker(commentList, index)], removeComment);
-          },
-          shrinkWrap: true,
-          physics: ClampingScrollPhysics(),
-        ),
-      ],
+          ListView.builder(
+            itemCount: commentList.length,
+            itemBuilder: (context, index) {
+              return comments(commentList[commentListIndexChecker(commentList, index)], removeComment);
+            },
+            shrinkWrap: true,
+            physics: ClampingScrollPhysics(),
+          ),
+        ],
+      ),
     );
   }
 
