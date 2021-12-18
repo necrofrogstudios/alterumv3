@@ -30,8 +30,8 @@ class profile_tabbar extends StatelessWidget {
                 ],
               ),
             ),
-             Container(
-              height: 550, //height of TabBarView
+            Container(
+               //height of TabBarView
               child: TabBarView(
                 children: <Widget>[
                   wall_tab(),
