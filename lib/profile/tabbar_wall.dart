@@ -141,6 +141,7 @@ class comments extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
       child: Container(
+        height: 400,
         child: Card(
           shape: RoundedRectangleBorder(
             side: BorderSide(
