@@ -50,9 +50,10 @@ class profile_tab extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
+      height: 300,
       width: double.infinity,
       child: ListView(
-        physics: NeverScrollableScrollPhysics(),
+        physics: ScrollPhysics(),
         shrinkWrap: true,
         padding: const EdgeInsets.all(0),
         children: <Widget>[
