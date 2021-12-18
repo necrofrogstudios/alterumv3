@@ -24,10 +24,12 @@ class _wall_tabState extends State<wall_tab> {
     String a = textController.text;
     var theme = Theme.of(context);
     return Container(
-      width: double.infinity,
-      height: double.infinity,
-      child: Column(
-        children: <Widget>[
+        width: double.infinity,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
           Padding(
             padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
             child: TextFormField(
