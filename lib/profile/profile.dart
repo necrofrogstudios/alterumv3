@@ -23,21 +23,20 @@ class profile extends StatelessWidget {
       drawer: drawer(currentScreen),
       body: Container(
         width: double.infinity,
-          child: ListView(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(0),
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              profile_pics_icons(),
-              Container(color: theme.splashColor, height: 4),
-              profile_tabbar(),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
-          ),
-        
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
+            Container(color: theme.splashColor, height: 4),
+            profile_top_buttons(),
+            profile_pics_icons(),
+            Container(color: theme.splashColor, height: 4),
+            profile_tabbar(),
+            Container(color: theme.splashColor, height: 4),
+            footer(),
+          ],
+        ),
       ),
     );
   }
