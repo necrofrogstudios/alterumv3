@@ -50,8 +50,13 @@ class profile_tabbar extends StatelessWidget {
 class profile_tab extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Column(
-      children: [
+    return Container(
+        width: double.infinity,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
         Align(
           alignment: Alignment.topLeft,
           child: Padding(
@@ -151,7 +156,7 @@ class profile_tab extends StatelessWidget {
             ),
           ),
         ),
-      ],
+      ],),
     );
   }
 }
