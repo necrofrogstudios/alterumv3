@@ -29,16 +29,17 @@ class profile_tabbar extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              height: 500,
-              child: TabBarView(
-                children: <Widget>[
-                  wall_tab(),
-                  profile_tab(),
-                  roleplays_tab(),
-                ],
-              ),
-            ),
+            TabBarView(
+                  children: <Widget>[
+                    Container(
+                      color: Colors.grey,
+                    ),
+                    Container(
+                      color: Colors.green,
+                    ),
+                    Container(
+                      color: Colors.purple,
+                    ),
           ],
         ),
       ),
