@@ -28,7 +28,7 @@ class _wall_tabState extends State<wall_tab> {
       child: ListView(
         physics: NeverScrollableScrollPhysics(),
         scrollDirection: Axis.vertical,
-        shrinkWrap: true,
+        shrinkWrap: false,
         padding: const EdgeInsets.all(0),
         children: <Widget>[
           Padding(
