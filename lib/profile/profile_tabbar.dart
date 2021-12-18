@@ -36,7 +36,7 @@ class profile_tabbar extends StatelessWidget {
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
-              child: TabBarView(
+              TabBarView(
                 children: <Widget>[
                   wall_tab(),
                   profile_tab(),
