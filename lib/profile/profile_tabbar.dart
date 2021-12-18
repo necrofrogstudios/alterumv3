@@ -8,7 +8,6 @@ class profile_tabbar extends StatelessWidget {
     return Container(
       color: theme.backgroundColor,
       width: double.infinity,
-      height: double.infinity,
       child: DefaultTabController(
         length: 3, // length of tabs
         initialIndex: 0,
