@@ -29,19 +29,17 @@ class profile_tabbar extends StatelessWidget {
                   Text('Roleplays', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
                 ],
               ),
-            ),
-            Container(
-              child: Listview(
-                scrollDirection: Axis.vertical,
-                shrinkWrap: true,
-                padding: const EdgeInsets.all(0),
-                child: TabBarView(
-                  children: <Widget>[
-                    wall_tab(),
-                    profile_tab(),
-                    roleplays_tab(),
-                  ],
-                ),
+            ),Container(child:
+            Listview(
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(0),
+              child: TabBarView(
+                children: <Widget>[
+                  wall_tab(),
+                  profile_tab(),
+                  roleplays_tab(),
+                ],
               ),
             ),
           ],
