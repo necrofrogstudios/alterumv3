@@ -23,7 +23,6 @@ class profile extends StatelessWidget {
       drawer: drawer(currentScreen),
       body: Container(
         width: double.infinity,
-        child: SingleChildScrollView(
           child: ListView(
             scrollDirection: Axis.vertical,
             shrinkWrap: true,
@@ -38,7 +37,7 @@ class profile extends StatelessWidget {
               footer(),
             ],
           ),
-        ),
+        
       ),
     );
   }
