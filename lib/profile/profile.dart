@@ -22,7 +22,7 @@ class profile extends StatelessWidget {
       ),
       drawer: drawer(currentScreen),
       body: SingleChildScrollView(
-        Container(
+        child: Container(
           child: ListView(
             shrinkWrap: true,
             padding: const EdgeInsets.all(0),
