@@ -26,6 +26,7 @@ class _wall_tabState extends State<wall_tab> {
     return Container(
       width: double.infinity,
       child: ListView(
+        physics: NeverScrollableScrollPhysics(),
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
         padding: const EdgeInsets.all(0),
@@ -86,7 +87,7 @@ class _wall_tabState extends State<wall_tab> {
               return comments(commentList[commentListIndexChecker(commentList, index)], removeComment);
             },
             shrinkWrap: true,
-            physics: ScrollPhysics(),
+            physics: NeverScrollableScrollPhysics(),
           ),
         ],
       ),
