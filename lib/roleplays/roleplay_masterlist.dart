@@ -52,7 +52,7 @@ class roleplay_masterlist extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Padding(
-                            padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
+                            padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                             child: Card(
                               color: theme.backgroundColor,
                               child: Column(
