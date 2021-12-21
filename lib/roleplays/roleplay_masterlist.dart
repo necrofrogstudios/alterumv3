@@ -103,14 +103,14 @@ class roleplay_masterlist extends StatelessWidget {
                                       ),
                                       image: DecorationImage(
                                         fit: BoxFit.fill,
-                                        image: NetworkImage("https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1"),
+                                        image: NetworkImage("https://th.bing.com/th/id/R.d15c046ebdaabab3c0bb7174dfe04b9e?rik=SQ4oPC0qaAWNow&pid=ImgRaw&r=0"),
                                       ),
                                     ),
                                   ),
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                     child: Text(
-                                      'Park Jimin',
+                                      'Kim Jaejoong',
                                       style: TextStyle(
                                         color: theme.primaryColor,
                                         fontSize: 15,
