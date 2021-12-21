@@ -13,7 +13,7 @@ import 'package:testing/roleplays/admin_marquee.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class roleplay_masterlist extends StatelessWidget {
-  final currentScreen = roleplay_rules;
+  final currentScreen = roleplay_masterlist;
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
