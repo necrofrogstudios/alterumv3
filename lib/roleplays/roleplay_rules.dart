@@ -77,7 +77,10 @@ class roleplay_rules extends StatelessWidget {
                       ),
                     ),
                     FlatButton(
-                      textColor: Colors.red, // foreground
+                      color: theme.accentColor,
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      height: 60.0, // foreground
                       onPressed: () {
                         Navigator.push(
                           context,
