@@ -44,7 +44,7 @@ class roleplay_masterlist extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      width: MediaQuery.of(context).size.width,
+                      width: 100,
                       height: 100,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
