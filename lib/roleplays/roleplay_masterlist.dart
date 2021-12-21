@@ -67,7 +67,10 @@ class roleplay_masterlist extends StatelessWidget {
                         ),
                         Padding(
                           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                          child: Text('Park Jimin'),
+                          child: Text(
+                            'Park Jimin',
+                            style: TextStyle(color: theme.primaryColor),
+                          ),
                         ),
                       ],
                     ),
