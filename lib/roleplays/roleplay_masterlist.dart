@@ -248,14 +248,14 @@ class roleplay_masterlist extends StatelessWidget {
                                       ),
                                       image: DecorationImage(
                                         fit: BoxFit.fill,
-                                        image: NetworkImage("https://th.bing.com/th/id/OIP.Fpxai0ib6grULdkAVVkD-QHaHa?pid=ImgDet&rs=1"),
+                                        image: NetworkImage("https://th.bing.com/th/id/R.1daa4f1db1545cc864e8733273834ed3?rik=4RIbD%2bf0MyHAdg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-LqRvElpvWqM%2fUCH-NbQtGFI%2fAAAAAAAAGBI%2f-UpYJoCU6L0%2fs1600%2flee-taemin-lee-taemin-23578754-888-789.jpg&ehk=A%2brUdHBOGXIHbHyaCMLTzXjWiwpRBFykrSGYx8WLHAc%3d&risl=&pid=ImgRaw&r=0"),
                                       ),
                                     ),
                                   ),
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                     child: Text(
-                                      'John Cena',
+                                      'Lee Taemin',
                                       style: TextStyle(
                                         color: theme.primaryColor,
                                         fontSize: 15,
