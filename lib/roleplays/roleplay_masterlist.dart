@@ -49,7 +49,7 @@ class roleplay_masterlist extends StatelessWidget {
                   Column(
                     children: [
                       Padding(
-                        padding: EdgetInset.fromLTRB(10, 10, 10, 10),
+                        padding: EdgetInsets.fromLTRB(10, 10, 10, 10),
                         child: Card(
                           color: theme.backgroundColor,
                           child: Column(
