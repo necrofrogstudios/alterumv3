@@ -10,8 +10,6 @@ class Splash extends StatefulWidget {
 class _Splash extends State<Splash> {
   @override
   Widget build(BuildContext context) {
-    double logicWidth = 1000;
-    double logicHeight = 1000;
     return SizedBox.expand(
       child: Container(
         color: Colors.black,
