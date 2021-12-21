@@ -87,7 +87,18 @@ class roleplay_rules extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => roleplay_masterlist()),
                         );
                       },
-                      child: Text('FlatButton with custom foreground/background'),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Masterlist',
+                            style: TextStyle(
+                              fontSize: 30,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
