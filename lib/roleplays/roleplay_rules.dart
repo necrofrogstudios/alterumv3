@@ -76,6 +76,11 @@ class roleplay_rules extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
+                    FlatButton(
+  textColor: Colors.red, // foreground
+  onPressed: () { },
+  child: Text('FlatButton with custom foreground/background'),
+)
                     roleplay_masterlist(),
                   ],
                 ),
