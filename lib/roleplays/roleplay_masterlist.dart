@@ -40,30 +40,32 @@ class roleplay_masterlist extends StatelessWidget {
                 child: admin_marquee(),
               ),
               Container(color: theme.splashColor, height: 4),
-              Card(
+              Container(
                 color: theme.backgroundColor,
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      width: 100,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: theme.backgroundColor,
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(30),
-                          topRight: Radius.circular(30),
-                        ),
-                        image: DecorationImage(
-                          fit: BoxFit.fill,
-                          image: NetworkImage("https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1"),
+                child: Card(
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        width: 100,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: theme.backgroundColor,
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(30),
+                            topRight: Radius.circular(30),
+                          ),
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: NetworkImage("https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1"),
+                          ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                      child: Text('Park Jimin'),
-                    ),
-                  ],
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        child: Text('Park Jimin'),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Container(
