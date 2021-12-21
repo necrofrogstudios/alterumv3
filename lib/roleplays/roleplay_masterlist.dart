@@ -44,7 +44,7 @@ class roleplay_masterlist extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      Text('test'),
+                      child: Text('test'),
                     ),
                   ],
                 ),
