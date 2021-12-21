@@ -10,6 +10,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/roleplay_request.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
+import 'package:testing/roleplays/roleplay_request.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class roleplay_masterlist extends StatelessWidget {
@@ -268,6 +269,7 @@ class roleplay_masterlist extends StatelessWidget {
                           ),
                         ],
                       ),
+                      roleplay_request(),
                     ],
                   ),
                 ],
