@@ -86,7 +86,7 @@ class roleplay_masterlist extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                            padding: EdgeInsets.fromLTRB(0, 10, 10, 10),
                             child: Card(
                               color: theme.backgroundColor,
                               child: Column(
@@ -121,7 +121,7 @@ class roleplay_masterlist extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                            padding: EdgeInsets.fromLTRB(0, 10, 10, 10),
                             child: Card(
                               color: theme.backgroundColor,
                               child: Column(
