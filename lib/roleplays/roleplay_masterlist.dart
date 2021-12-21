@@ -138,7 +138,7 @@ class roleplay_masterlist extends StatelessWidget {
                                       ),
                                       image: DecorationImage(
                                         fit: BoxFit.fill,
-                                        image: NetworkImage("https://th.bing.com/th/id/R.8f97aaba27376b3fe852f01db6d57927?rik=SL5P0891YYUu3g&pid=ImgRaw&r=0"),
+                                        image: NetworkImage("https://th.bing.com/th/id/OIP.Fpxai0ib6grULdkAVVkD-QHaHa?pid=ImgDet&rs=1"),
                                       ),
                                     ),
                                   ),
