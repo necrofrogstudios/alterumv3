@@ -45,6 +45,7 @@ class character_parkjimin extends StatelessWidget {
 class character_kimjaejoong extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
@@ -86,6 +87,7 @@ class character_kimjaejoong extends StatelessWidget {
 class character_johncena extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
@@ -127,6 +129,7 @@ class character_johncena extends StatelessWidget {
 class character_tylerblackburn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
@@ -168,6 +171,7 @@ class character_tylerblackburn extends StatelessWidget {
 class character_calliopemori extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
@@ -209,6 +213,7 @@ class character_calliopemori extends StatelessWidget {
 class character_leetaemin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
@@ -250,6 +255,7 @@ class character_leetaemin extends StatelessWidget {
 class character_bangyongguk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
@@ -291,6 +297,7 @@ class character_bangyongguk extends StatelessWidget {
 class character_chengjunya extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
@@ -332,6 +339,7 @@ class character_chengjunya extends StatelessWidget {
 class character_parkchanyeol extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
