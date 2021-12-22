@@ -51,8 +51,8 @@ class character_kimjaejoong extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              width: 80,
-              height: 80,
+              width: 90,
+              height: 90,
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
                 borderRadius: BorderRadius.only(
@@ -93,8 +93,8 @@ class character_johncena extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              width: 80,
-              height: 80,
+              width: 90,
+              height: 90,
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
                 borderRadius: BorderRadius.only(
