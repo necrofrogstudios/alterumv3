@@ -4,8 +4,8 @@ class character_parkjimin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Container(
-      height: 120,
+    return Padding(
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
       child: Card(
         color: theme.backgroundColor,
         child: Column(
