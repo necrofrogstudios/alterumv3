@@ -96,16 +96,13 @@ class character_johncena extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-            child: Text(
+           Text(
               'John Cena',
               style: TextStyle(
                 color: theme.primaryColor,
                 fontSize: 15,
               ),
-            ),
-          ),
+            
         ],
       ),
     );
