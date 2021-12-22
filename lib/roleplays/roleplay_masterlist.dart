@@ -49,7 +49,7 @@ class roleplay_masterlist extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
-                  crossAxisCount: 2,
+                  crossAxisCount: 3,
                   children: <Widget>[
                     character_parkjimin(),
                     character_kimjaejoong(),
