@@ -70,7 +70,7 @@ class roleplay_masterlist extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
                 child: roleplay_request(),
               ),
               Container(
