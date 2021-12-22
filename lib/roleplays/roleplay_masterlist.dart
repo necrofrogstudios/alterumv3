@@ -69,6 +69,7 @@ class roleplay_masterlist extends StatelessWidget {
                   ],
                 ),
               ),
+              roleplay_request(),
               Container(
                 color: theme.backgroundColor,
               ),
