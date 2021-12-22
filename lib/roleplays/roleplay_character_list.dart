@@ -13,7 +13,7 @@ class character_parkjimin extends StatelessWidget {
           children: <Widget>[
             Container(
               width: 100,
-              height: 100,
+              height: 90,
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
                 borderRadius: BorderRadius.only(
