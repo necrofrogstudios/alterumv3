@@ -10,6 +10,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/roleplay_request.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
+import 'package:testing/roleplays/roleplay_character.dart';
 import 'package:testing/roleplays/roleplay_request.dart';
 import 'package:testing/roleplays/roleplay_character_list.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
@@ -67,7 +68,7 @@ class roleplay_masterlist extends StatelessWidget {
                               onTap: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => main_page()),
+                                  MaterialPageRoute(builder: (context) => roleplay_character()),
                                 );
                               },
                               child: character_parkjimin(),
