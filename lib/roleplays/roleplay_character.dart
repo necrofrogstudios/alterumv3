@@ -32,10 +32,10 @@ class roleplay_character extends StatelessWidget {
             profile_top_buttons(),
             Text(
               'Park Jimin',
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 25,
                 color: theme.primaryColor,
-                textAlign: TextAlign.center,
               ),
             ),
             Container(height: 400, color: theme.backgroundColor),
