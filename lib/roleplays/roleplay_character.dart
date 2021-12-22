@@ -44,7 +44,7 @@ class roleplay_character extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
               child: FittedBox(
-                Container(
+                child: Container(
                   decoration: BoxDecoration(
                     color: theme.backgroundColor,
                     borderRadius: BorderRadius.only(
