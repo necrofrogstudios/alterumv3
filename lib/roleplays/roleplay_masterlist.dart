@@ -50,14 +50,7 @@ class roleplay_masterlist extends StatelessWidget {
                   // horizontal, this produces 2 rows.
                   crossAxisCount: 2,
                   // Generate 100 widgets that display their index in the List.
-                  children: List.generate(100, (index) {
-                    return Center(
-                      child: Text(
-                        'Item $index',
-                        style: Theme.of(context).textTheme.headline5,
-                      ),
-                    );
-                  }),
+                  children: Container(height:100, width:100, color:theme.splashColor),),
                 ),
               ),
               Container(
