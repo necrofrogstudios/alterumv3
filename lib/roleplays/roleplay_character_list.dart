@@ -7,7 +7,7 @@ class character_parkjimin extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Container(
-        height: 150,
+        height: 200,
         child: Card(
           color: theme.backgroundColor,
           child: Column(
