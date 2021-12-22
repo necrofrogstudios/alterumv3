@@ -48,8 +48,8 @@ class roleplay_masterlist extends StatelessWidget {
                   shrinkWrap: true,
                   primary: false,
                   padding: const EdgeInsets.all(0),
-                  crossAxisSpacing: 10,
-                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 5,
+                  mainAxisSpacing: 5,
                   crossAxisCount: 3,
                   children: <Widget>[
                     Container(
