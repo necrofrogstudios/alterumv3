@@ -45,6 +45,7 @@ class roleplay_masterlist extends StatelessWidget {
               Container(
                 color: theme.backgroundColor,
                 child: GridView.count(
+                  shrinkWrap: true,
                   crossAxisCount: 3,
                   children: <Widget>[
                     Container(
