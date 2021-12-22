@@ -45,11 +45,8 @@ class roleplay_character extends StatelessWidget {
                   topLeft: Radius.circular(30),
                   topRight: Radius.circular(30),
                 ),
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: NetworkImage("https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1"),
-                ),
               ),
+              child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
             ),
             Container(height: 400, color: theme.backgroundColor),
             Container(color: theme.splashColor, height: 4),
