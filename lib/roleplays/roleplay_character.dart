@@ -47,6 +47,8 @@ class roleplay_character extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
                   ),
                   image: DecorationImage(
                     fit: BoxFit.fill,
