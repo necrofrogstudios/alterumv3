@@ -48,8 +48,18 @@ class roleplay_masterlist extends StatelessWidget {
                   shrinkWrap: true,
                   crossAxisCount: 3,
                   children: <Widget>[
-                    character_parkjimin(),
-                    character_kimjaejoong(),
+                    Container(
+                      height: 200,
+                      child: character_parkjimin(),
+                    ),
+                    Container(
+                      height: 200,
+                      child: character_kimjaejoong(),
+                    ),
+                    Container(
+                      height: 200,
+                      child: character_johncena(),
+                    ),
                     character_johncena(),
                     character_tylerblackburn(),
                     character_calliopemori(),
