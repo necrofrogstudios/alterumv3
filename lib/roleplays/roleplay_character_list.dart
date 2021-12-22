@@ -7,13 +7,15 @@ class character_parkjimin extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
+        semanticContainer: true,
+        clipBehavior: Clip.antiAliasWithSaveLayer,
         color: theme.backgroundColor,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Container(
               width: 100,
-              height: 90,
+              height: 100,
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
                 borderRadius: BorderRadius.only(
