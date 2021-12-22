@@ -43,7 +43,6 @@ class roleplay_masterlist extends StatelessWidget {
               ),
               Container(color: theme.splashColor, height: 4),
               Container(
-                height: 500,
                 color: theme.backgroundColor,
                 child: GridView.count(
                   padding: const EdgeInsets.all(20),
@@ -68,7 +67,7 @@ class roleplay_masterlist extends StatelessWidget {
                     ),
                     Container(
                       padding: const EdgeInsets.all(8),
-                      child: const Text('Who scream'),
+                      child: const Text('Who screaym'),
                       color: Colors.teal[400],
                     ),
                     Container(
