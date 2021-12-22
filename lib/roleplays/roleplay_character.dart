@@ -34,7 +34,8 @@ class roleplay_character extends StatelessWidget {
               'Park Jimin',
               style: TextStyle(
                 fontSize: 25,
-                color: theme.primaryColor, TextAlign.center,
+                color: theme.primaryColor,
+                textAlign: TextAlign.center,
               ),
             ),
             Container(height: 400, color: theme.backgroundColor),
