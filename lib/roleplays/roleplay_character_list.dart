@@ -65,14 +65,11 @@ class character_kimjaejoong extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: Text(
-                'Kim Jaejoong',
-                style: TextStyle(
-                  color: theme.primaryColor,
-                  fontSize: 15,
-                ),
+            Text(
+              'Kim Jaejoong',
+              style: TextStyle(
+                color: theme.primaryColor,
+                fontSize: 15,
               ),
             ),
           ],
