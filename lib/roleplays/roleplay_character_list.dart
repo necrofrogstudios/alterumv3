@@ -71,34 +71,31 @@ class character_johncena extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Card(
-      color: theme.backgroundColor,
-      child: Column(
-        children: <Widget>[
-          Container(
-            width: 100,
-            height: 80,
-            decoration: BoxDecoration(
-              color: theme.backgroundColor,
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(30),
-                topRight: Radius.circular(30),
-              ),
-              image: DecorationImage(
-                fit: BoxFit.fill,
-                image: NetworkImage("https://th.bing.com/th/id/OIP.Fpxai0ib6grULdkAVVkD-QHaHa?pid=ImgDet&rs=1"),
-              ),
+    return Column(
+      children: <Widget>[
+        Container(
+          width: 100,
+          height: 80,
+          decoration: BoxDecoration(
+            color: theme.backgroundColor,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
+            ),
+            image: DecorationImage(
+              fit: BoxFit.fill,
+              image: NetworkImage("https://th.bing.com/th/id/OIP.Fpxai0ib6grULdkAVVkD-QHaHa?pid=ImgDet&rs=1"),
             ),
           ),
-          Text(
-            'John Cena',
-            style: TextStyle(
-              color: theme.primaryColor,
-              fontSize: 15,
-            ),
+        ),
+        Text(
+          'John Cena',
+          style: TextStyle(
+            color: theme.primaryColor,
+            fontSize: 15,
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
