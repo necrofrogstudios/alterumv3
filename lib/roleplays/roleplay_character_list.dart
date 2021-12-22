@@ -51,7 +51,7 @@ class character_kimjaejoong extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              width: 80,
+              width: 100,
               height: 80,
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
