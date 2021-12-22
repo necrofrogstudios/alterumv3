@@ -54,26 +54,6 @@ class roleplay_masterlist extends StatelessWidget {
                     character_parkjimin(),
                     character_kimjaejoong(),
                     character_johncena(),
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      child: const Text('Sound of screams but the'),
-                      color: Colors.teal[300],
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      child: const Text('Who screaym'),
-                      color: Colors.teal[400],
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      child: const Text('Revolution is coming...'),
-                      color: Colors.teal[500],
-                    ),
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      child: const Text('Revolution, they...'),
-                      color: Colors.teal[600],
-                    ),
                   ],
                 ),
               ),
