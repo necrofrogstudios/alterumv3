@@ -61,7 +61,7 @@ class roleplay_masterlist extends StatelessWidget {
                           padding: const EdgeInsets.all(0),
                           crossAxisSpacing: 5,
                           mainAxisSpacing: 5,
-                          crossAxisCount: orientation == Orientation.portrait ? 3 : 3,
+                          crossAxisCount: orientation == Orientation.portrait ? 3 : 5,
                           children: <Widget>[
                             character_parkjimin(),
                             character_kimjaejoong(),
