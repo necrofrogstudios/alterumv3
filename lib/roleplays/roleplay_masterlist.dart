@@ -51,11 +51,7 @@ class roleplay_masterlist extends StatelessWidget {
                   mainAxisSpacing: 10,
                   crossAxisCount: 2,
                   children: <Widget>[
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      child: character_parkjimin(),
-                      color: Colors.teal[100],
-                    ),
+                    character_parkjimin(),
                     Container(
                       padding: const EdgeInsets.all(8),
                       child: const Text('Heed not the rabble'),
