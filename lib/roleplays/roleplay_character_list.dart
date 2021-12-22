@@ -41,36 +41,33 @@ class character_kimjaejoong extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Padding(
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-      child: Card(
-        color: theme.backgroundColor,
-        child: Column(
-          children: <Widget>[
-            Container(
-              width: 100,
-              height: 80,
-              decoration: BoxDecoration(
-                color: theme.backgroundColor,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(30),
-                ),
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: NetworkImage("https://th.bing.com/th/id/R.d15c046ebdaabab3c0bb7174dfe04b9e?rik=SQ4oPC0qaAWNow&pid=ImgRaw&r=0"),
-                ),
+    return Card(
+      color: theme.backgroundColor,
+      child: Column(
+        children: <Widget>[
+          Container(
+            width: 100,
+            height: 80,
+            decoration: BoxDecoration(
+              color: theme.backgroundColor,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(30),
+                topRight: Radius.circular(30),
+              ),
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: NetworkImage("https://th.bing.com/th/id/R.d15c046ebdaabab3c0bb7174dfe04b9e?rik=SQ4oPC0qaAWNow&pid=ImgRaw&r=0"),
               ),
             ),
-            Text(
-              'Kim Jaejoong',
-              style: TextStyle(
-                color: theme.primaryColor,
-                fontSize: 15,
-              ),
+          ),
+          Text(
+            'Kim Jaejoong',
+            style: TextStyle(
+              color: theme.primaryColor,
+              fontSize: 15,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
