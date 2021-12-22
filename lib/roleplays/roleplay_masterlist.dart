@@ -69,7 +69,6 @@ class roleplay_masterlist extends StatelessWidget {
                               },
                               child: character_parkjimin(),
                             ),
-                            character_parkjimin(),
                             character_kimjaejoong(),
                             character_johncena(),
                             character_tylerblackburn(),
