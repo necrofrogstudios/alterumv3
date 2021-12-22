@@ -47,8 +47,8 @@ class roleplay_masterlist extends StatelessWidget {
                 child: GridView.count(
                   shrinkWrap: true,
                   padding: const EdgeInsets.all(20),
-                  crossAxisSpacing: 10,
-                  mainAxisSpacing: 10,
+                  crossAxisSpacing: 5,
+                  mainAxisSpacing: 5,
                   crossAxisCount: 3,
                   children: <Widget>[
                     character_parkjimin(),
