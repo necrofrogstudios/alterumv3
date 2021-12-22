@@ -9,7 +9,7 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 
 class roleplay_character extends StatelessWidget {
-  final currentScreen = profile;
+  final currentScreen = roleplay_character;
   ScrollController controller = ScrollController();
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class roleplay_character extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
-            profile_pics_icons(),
+            Text('you already know'),
             Container(color: theme.splashColor, height: 4),
             NotificationListener<OverscrollNotification>(
               onNotification: (OverscrollNotification value) {
