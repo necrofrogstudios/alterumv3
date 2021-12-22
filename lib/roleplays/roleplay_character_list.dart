@@ -9,6 +9,7 @@ class character_parkjimin extends StatelessWidget {
       child: Card(
         color: theme.backgroundColor,
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Container(
               width: 100,
