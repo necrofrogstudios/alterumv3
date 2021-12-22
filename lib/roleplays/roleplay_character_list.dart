@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class character_parkjimin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
       child: Card(
