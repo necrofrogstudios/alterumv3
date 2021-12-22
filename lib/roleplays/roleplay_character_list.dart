@@ -27,11 +27,14 @@ class character_parkjimin extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: Text(
-                'Park Jimin',
-                style: TextStyle(
-                  color: theme.primaryColor,
-                  fontSize: 15,
+              child: Container(
+                height: 30,
+                child: Text(
+                  'Park Jimin',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 15,
+                  ),
                 ),
               ),
             ),
