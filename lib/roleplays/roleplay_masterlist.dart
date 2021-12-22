@@ -45,7 +45,6 @@ class roleplay_masterlist extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     color: theme.backgroundColor,
-                    height: 800,
                   ),
                   Column(
                     children: [
