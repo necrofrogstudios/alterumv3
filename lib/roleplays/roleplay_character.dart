@@ -41,6 +41,14 @@ class roleplay_character extends StatelessWidget {
             FittedBox(
               child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
               fit: BoxFit.fill,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30),
+                ),
+              ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 3, 10, 5),
@@ -53,10 +61,6 @@ class roleplay_character extends StatelessWidget {
                     topRight: Radius.circular(30),
                     bottomLeft: Radius.circular(30),
                     bottomRight: Radius.circular(30),
-                  ),
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage("https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1"),
                   ),
                 ),
               ),
