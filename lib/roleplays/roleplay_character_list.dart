@@ -7,6 +7,10 @@ class character_parkjimin extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
+        FittedBox(
+          child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+          fit: BoxFit.fill,
+        ),
         Container(
           width: 100,
           height: 80,
@@ -16,9 +20,9 @@ class character_parkjimin extends StatelessWidget {
               topLeft: Radius.circular(30),
               topRight: Radius.circular(30),
             ),
-            child: FittedBox(
-              child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+            image: DecorationImage(
               fit: BoxFit.fill,
+              image: NetworkImage("https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1"),
             ),
           ),
         ),
