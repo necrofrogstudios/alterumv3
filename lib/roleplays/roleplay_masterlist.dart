@@ -18,6 +18,8 @@ class roleplay_masterlist extends StatelessWidget {
   final currentScreen = roleplay_masterlist;
   @override
   Widget build(BuildContext context) {
+    double cardWidth = MediaQuery.of(context).size.width / 3.3;
+    double cardHeight = MediaQuery.of(context).size.height / 3.6;
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
@@ -54,6 +56,7 @@ class roleplay_masterlist extends StatelessWidget {
                       ),
                     ),
                     GridView.count(
+                      childAspectRatio: cardWidth / cardHeight,
                       shrinkWrap: true,
                       padding: const EdgeInsets.all(0),
                       crossAxisSpacing: 5,
