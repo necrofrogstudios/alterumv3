@@ -42,35 +42,32 @@ class roleplay_character extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 side: BorderSide(color: theme.splashColor, width: 4),
                 borderRadius: BorderRadius.circular(30),
-              ),ConstrainedBox(
-      constraints: BoxConstraints(maxHeight: maxHeight),
-      child: Hero(
-        tag: 'SettingsPic',
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
-              boxShadow: [BoxShadow(
-                  color: Colors.black.withOpacity(0.2),
-                  blurRadius: 10
-              )]
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
-            child: FittedBox(
-              fit: BoxFit.fitWidth,
-              alignment: Alignment.bottomCenter,
+              ),
               child: ConstrainedBox(
-                constraints: BoxConstraints(minWidth: 1, minHeight: 1), // here
-                child: Image.asset(
-                  'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1',
+                constraints: BoxConstraints(maxHeight: maxHeight),
+                child: Hero(
+                  tag: 'SettingsPic',
+                  child: Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)), boxShadow: [
+                      BoxShadow(color: Colors.black.withOpacity(0.2), blurRadius: 10)
+                    ]),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
+                      child: FittedBox(
+                        fit: BoxFit.fitWidth,
+                        alignment: Alignment.bottomCenter,
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(minWidth: 1, minHeight: 1), // here
+                          child: Image.asset(
+                            'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1',
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
               ),
-            ),
-          ),
-        ),
-      ),
-    ),
               child: FittedBox(
                 child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                 fit: BoxFit.fill,
