@@ -42,7 +42,7 @@ class roleplay_character extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(10, 3, 10, 5),
               child: Container(
                 width: MediaQuery.of(context).size.width,
-                height: 400,
+                height: 300,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
