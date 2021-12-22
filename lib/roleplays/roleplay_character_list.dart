@@ -86,39 +86,36 @@ class character_johncena extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Padding(
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-      child: Card(
-        color: theme.backgroundColor,
-        child: Column(
-          children: <Widget>[
-            Container(
-              width: 80,
-              height: 80,
-              decoration: BoxDecoration(
-                color: theme.backgroundColor,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(30),
-                ),
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: NetworkImage("https://th.bing.com/th/id/OIP.Fpxai0ib6grULdkAVVkD-QHaHa?pid=ImgDet&rs=1"),
-                ),
+    return Card(
+      color: theme.backgroundColor,
+      child: Column(
+        children: <Widget>[
+          Container(
+            width: 80,
+            height: 80,
+            decoration: BoxDecoration(
+              color: theme.backgroundColor,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(30),
+                topRight: Radius.circular(30),
+              ),
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: NetworkImage("https://th.bing.com/th/id/OIP.Fpxai0ib6grULdkAVVkD-QHaHa?pid=ImgDet&rs=1"),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: Text(
-                'John Cena',
-                style: TextStyle(
-                  color: theme.primaryColor,
-                  fontSize: 15,
-                ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+            child: Text(
+              'John Cena',
+              style: TextStyle(
+                color: theme.primaryColor,
+                fontSize: 15,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
