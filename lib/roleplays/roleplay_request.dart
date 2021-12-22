@@ -25,7 +25,7 @@ class roleplay_requestState extends State<roleplay_request> {
         height: 60.0,
         onPressed: () => showDialog<String>(
           context: context,
-          builder: (context) => AlertDialog(
+          builder: (BuildContext context) => AlertDialog(
             title: const Text('Application'),
             content: Column(
               children: <Widget>[

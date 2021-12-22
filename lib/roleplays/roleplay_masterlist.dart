@@ -65,7 +65,10 @@ class roleplay_masterlist extends StatelessWidget {
                           children: <Widget>[
                             GestureDetector(
                               onTap: () {
-                                print("Container clicked");
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => main_page()),
+                                );
                               },
                               child: character_parkjimin(),
                             ),
