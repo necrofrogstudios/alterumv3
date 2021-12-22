@@ -64,11 +64,11 @@ class roleplay_masterlist extends StatelessWidget {
                           crossAxisCount: orientation == Orientation.portrait ? 3 : 5,
                           children: <Widget>[
                             GestureDetector(
-        onTap: (){
-          print("Container clicked");
-        },
-        child: character_parkjimin(),
-    );
+                              onTap: () {
+                                print("Container clicked");
+                              },
+                              child: character_parkjimin(),
+                            ),
                             character_parkjimin(),
                             character_kimjaejoong(),
                             character_johncena(),
