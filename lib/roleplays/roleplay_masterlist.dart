@@ -52,7 +52,7 @@ class roleplay_masterlist extends StatelessWidget {
                   // Generate 100 widgets that display their index in the List.
                   children: [Container(height:100, width:100, color:theme.splashColor),],),
                 ),
-              ),
+              );
               Container(
                 color: theme.backgroundColor,
                 child: Column(
