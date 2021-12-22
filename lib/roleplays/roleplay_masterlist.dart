@@ -53,7 +53,7 @@ class roleplay_masterlist extends StatelessWidget {
                   children: <Widget>[
                     Container(
                       padding: const EdgeInsets.all(8),
-                      child: const Text("He'd have you all unravel at the"),
+                      child: character_parkjimin(),
                       color: Colors.teal[100],
                     ),
                     Container(
