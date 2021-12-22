@@ -52,38 +52,36 @@ class roleplay_masterlist extends StatelessWidget {
                         fontSize: 25,
                         color: theme.primaryColor,
                       ),
-                    ),OrientationBuilder(
-  builder: (context, orientation) {
-    return new GridView.count(
-                      physics: ScrollPhysics(),
-                      shrinkWrap: true,
-                      padding: const EdgeInsets.all(0),
-                      crossAxisSpacing: 5,
-                      mainAxisSpacing: 5,
-                      crossAxisCount: 3,
-                      children: <Widget>[
-                        character_parkjimin(),
-                        character_kimjaejoong(),
-                        character_johncena(),
-                        character_tylerblackburn(),
-                        character_calliopemori(),
-                        character_leetaemin(),
-                        character_parkjimin(),
-                        character_johncena(),
-                        character_bangyongguk(),
-                        character_chengjunya(),
-                        character_parkchanyeol(),
-                        character_parkjimin(),
-                        character_kimjaejoong(),
-                        character_johncena(),
-                      ],
-                    
-      
-      crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
-    );
-  },
-);
-                    
+                    ),
+                    OrientationBuilder(
+                      builder: (context, orientation) {
+                        return new GridView.count(
+                          physics: ScrollPhysics(),
+                          shrinkWrap: true,
+                          padding: const EdgeInsets.all(0),
+                          crossAxisSpacing: 5,
+                          mainAxisSpacing: 5,
+                          crossAxisCount: 3,
+                          children: <Widget>[
+                            character_parkjimin(),
+                            character_kimjaejoong(),
+                            character_johncena(),
+                            character_tylerblackburn(),
+                            character_calliopemori(),
+                            character_leetaemin(),
+                            character_parkjimin(),
+                            character_johncena(),
+                            character_bangyongguk(),
+                            character_chengjunya(),
+                            character_parkchanyeol(),
+                            character_parkjimin(),
+                            character_kimjaejoong(),
+                            character_johncena(),
+                          ],
+                          crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+                        );
+                      },
+                    ),
                   ],
                 ),
               ),
