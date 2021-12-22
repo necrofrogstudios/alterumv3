@@ -45,7 +45,8 @@ class roleplay_masterlist extends StatelessWidget {
                 children: <Widget>[
                   Container(
                     color: theme.backgroundColor,
-                  ),
+                    
+                  
                   Column(
                     children: [
                       Row(
@@ -380,7 +381,7 @@ class roleplay_masterlist extends StatelessWidget {
                       ),
                       roleplay_request(),
                     ],
-                  ),
+                  ),),
                 ],
               ),
               Container(color: theme.splashColor, height: 4),
