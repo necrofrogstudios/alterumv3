@@ -39,6 +39,10 @@ class roleplay_character extends StatelessWidget {
               ),
             ),
             Card(
+              shape: RoundedRectangleBorder(
+                side: BorderSide(color: Colors.white70, width: 1),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: FittedBox(
                 child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                 fit: BoxFit.fill,
