@@ -54,6 +54,7 @@ class roleplay_masterlist extends StatelessWidget {
                       ),
                     ),
                     GridView.count(
+                      physics: ScrollPhysics(),
                       shrinkWrap: true,
                       padding: const EdgeInsets.all(0),
                       crossAxisSpacing: 5,
