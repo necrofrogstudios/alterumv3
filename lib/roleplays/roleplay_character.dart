@@ -67,10 +67,6 @@ class roleplay_character extends StatelessWidget {
                   ),
                 ),
               ),
-              child: FittedBox(
-                child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
-                fit: BoxFit.fill,
-              ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 3, 10, 5),
