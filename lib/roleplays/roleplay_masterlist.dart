@@ -69,9 +69,12 @@ class roleplay_masterlist extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                child: roleplay_request(),
+              Container(
+                color: theme.backgroundColor,
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+                  child: roleplay_request(),
+                ),
               ),
               Container(
                 color: theme.backgroundColor,
