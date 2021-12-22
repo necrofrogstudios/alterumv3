@@ -44,7 +44,6 @@ class roleplay_character extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
               child: ConstrainedBox(
-                constraints: BoxConstraints(maxHeight: maxHeight),
                 child: Hero(
                   tag: 'SettingsPic',
                   child: Container(
