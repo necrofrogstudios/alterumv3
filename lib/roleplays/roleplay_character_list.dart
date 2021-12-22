@@ -12,8 +12,8 @@ class character_parkjimin extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Container(
-              width: 100,
-              height: 100,
+              width: 80,
+              height: 80,
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
                 borderRadius: BorderRadius.only(
@@ -26,14 +26,11 @@ class character_parkjimin extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-              child: Text(
-                'Park Jimin',
-                style: TextStyle(
-                  color: theme.primaryColor,
-                  fontSize: 15,
-                ),
+            Text(
+              'Park Jimin',
+              style: TextStyle(
+                color: theme.primaryColor,
+                fontSize: 15,
               ),
             ),
           ],
