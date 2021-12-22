@@ -44,6 +44,8 @@ class roleplay_masterlist extends StatelessWidget {
               Container(
                 color: theme.backgroundColor,
                 child: GridView.count(
+                  scrollDirection: Axis.vertical,
+                  shrinkWrap: true,
                   // Create a grid with 2 columns. If you change the scrollDirection to
                   // horizontal, this produces 2 rows.
                   crossAxisCount: 2,
