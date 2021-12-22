@@ -48,7 +48,7 @@ class character_kimjaejoong extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
       child: Card(
         color: theme.backgroundColor,
         child: Column(
@@ -90,7 +90,7 @@ class character_johncena extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
       child: Card(
         color: theme.backgroundColor,
         child: Column(

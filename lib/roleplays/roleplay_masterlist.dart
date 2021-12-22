@@ -52,11 +52,8 @@ class roleplay_masterlist extends StatelessWidget {
                   crossAxisCount: 2,
                   children: <Widget>[
                     character_parkjimin(),
-                    Container(
-                      padding: const EdgeInsets.all(8),
-                      child: const Text('Heed not the rabble'),
-                      color: Colors.teal[200],
-                    ),
+                    character_kimjaejoong(),
+                    character_johncena(),
                     Container(
                       padding: const EdgeInsets.all(8),
                       child: const Text('Sound of screams but the'),
