@@ -83,7 +83,7 @@ class character_johncena extends StatelessWidget {
         children: <Widget>[
           Container(
             width: 100,
-            height: 70,
+            height: 80,
             decoration: BoxDecoration(
               color: theme.backgroundColor,
               borderRadius: BorderRadius.only(
