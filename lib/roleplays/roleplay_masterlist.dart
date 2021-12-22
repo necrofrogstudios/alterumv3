@@ -18,8 +18,8 @@ class roleplay_masterlist extends StatelessWidget {
   final currentScreen = roleplay_masterlist;
   @override
   Widget build(BuildContext context) {
-    double cardWidth = MediaQuery.of(context).size.width / 1.5;
-    double cardHeight = MediaQuery.of(context).size.height / 1;
+    double cardWidth = MediaQuery.of(context).size.width / 1;
+    double cardHeight = MediaQuery.of(context).size.height / .2;
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
