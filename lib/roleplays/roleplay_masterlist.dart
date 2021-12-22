@@ -52,8 +52,9 @@ class roleplay_masterlist extends StatelessWidget {
                         fontSize: 25,
                         color: theme.primaryColor,
                       ),
-                    ),
-                    GridView.count(
+                    ),OrientationBuilder(
+  builder: (context, orientation) {
+    return new GridView.count(
                       physics: ScrollPhysics(),
                       shrinkWrap: true,
                       padding: const EdgeInsets.all(0),
@@ -76,7 +77,13 @@ class roleplay_masterlist extends StatelessWidget {
                         character_kimjaejoong(),
                         character_johncena(),
                       ],
-                    ),
+                    
+      
+      crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
+    );
+  },
+);
+                    
                   ],
                 ),
               ),
