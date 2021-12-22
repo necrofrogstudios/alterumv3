@@ -60,9 +60,18 @@ class roleplay_masterlist extends StatelessWidget {
                       height: 200,
                       child: character_johncena(),
                     ),
-                    character_johncena(),
-                    character_tylerblackburn(),
-                    character_calliopemori(),
+                    Container(
+                      height: 200,
+                      child: character_johncena(),
+                    ),
+                    Container(
+                      height: 200,
+                      child: character_tylerblackburn(),
+                    ),
+                    Container(
+                      height: 200,
+                      child: character_calliopemori(),
+                    ),
                   ],
                 ),
               ),
