@@ -44,7 +44,7 @@ class roleplay_character extends StatelessWidget {
                 borderRadius: BorderRadius.circular(30),
               ),
               child: FittedBox(
-                ClipRRect(
+                child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image(
                     image: NetworkImage('https://www.tutorialkart.com/img/hummingbird.png'),
