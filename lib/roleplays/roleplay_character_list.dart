@@ -96,13 +96,13 @@ class character_johncena extends StatelessWidget {
               ),
             ),
           ),
-           Text(
-              'John Cena',
-              style: TextStyle(
-                color: theme.primaryColor,
-                fontSize: 15,
-              ),
-            
+          Text(
+            'John Cena',
+            style: TextStyle(
+              color: theme.primaryColor,
+              fontSize: 15,
+            ),
+          ),
         ],
       ),
     );
