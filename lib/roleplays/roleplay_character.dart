@@ -55,10 +55,6 @@ class roleplay_character extends StatelessWidget {
                     image: NetworkImage("https://th.bing.com/th/id/R.d15c046ebdaabab3c0bb7174dfe04b9e?rik=SQ4oPC0qaAWNow&pid=ImgRaw&r=0"),
                   ),
                 ),
-                child: FittedBox(
-                  child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
-                  fit: BoxFit.fill,
-                ),
               ),
             ),
             Padding(
