@@ -43,14 +43,19 @@ class roleplay_character extends StatelessWidget {
                 side: BorderSide(color: theme.splashColor, width: 4),
                 borderRadius: BorderRadius.circular(30),
               ),
-              child: ClipRRect(
-    borderRadius: BorderRadius.circular(16.0),
-    child: Column(
-      children: <Widget>[
-        topContent,
-        //bottomContent,
-      ],
-    ),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: theme.backgroundColor,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                  ),
+                ),
+                child: FittedBox(
+                  child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+                  fit: BoxFit.fill,
+                ),
+              ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 3, 10, 5),
