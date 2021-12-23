@@ -51,10 +51,12 @@ class roleplay_character extends StatelessWidget {
                     topRight: Radius.circular(30),
                   ),
                 ),
-                child: FittedBox(
-                  child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
-                  fit: BoxFit.fill,
-                ),
+                ClipRRect(
+            borderRadius:
+            BorderRadius.circular(30),
+              child: Image.network('https://picsum.photos/250?image=9'),
+            ),
+                
               ),
             ),
             Padding(
