@@ -9,6 +9,7 @@ import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/roleplay_masterlist.dart';
+import 'package:testing/roleplays/roleplay_navigation.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
@@ -43,6 +44,7 @@ class roleplay_rules extends StatelessWidget {
               Container(
                 color: theme.backgroundColor,
                 child: Column(
+                  roleplay_navigation(),
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.network('https://centerforparentingeducation.org/wp-content/uploads/2014/04/rules.png'),
