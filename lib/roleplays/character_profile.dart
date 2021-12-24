@@ -89,7 +89,6 @@ class Card2 extends StatelessWidget {
                   height: 50,
                   constraints: BoxConstraints(
                     maxWidth: 1000.0,
-                    minWidth: 450.0,
                   ),
                   child: Builder(
                     builder: (context) {
