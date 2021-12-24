@@ -76,7 +76,7 @@ class Card2 extends StatelessWidget {
               collapsed: buildCollapsed3(),
               expanded: buildExpanded3(),
             ),
-            Container(color: theme.splashColor, height: 4),
+            Container(color: theme.splashColor, height: 2),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
