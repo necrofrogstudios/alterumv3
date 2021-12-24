@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 
 class roleplay_navigation_buttons extends StatelessWidget {
   final List<String> items = [
-    'action',
-    'adventure',
-    'first pov',
-    'rated m',
-    'all orientations',
+    'Home',
+    'Rules',
+    'Masterlist',
+    ,
   ];
   List<Widget> tags = [];
 
