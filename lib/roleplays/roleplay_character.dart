@@ -62,21 +62,19 @@ class roleplay_character extends StatelessWidget {
                 ),
               ),
             ),
+            Row(
+              children: [
+                IconButton(
+                  icon: Container(
+                    child: Text('get'),
+                  ),
+                  onPressed: () {},
+                ),
+              ],
+            ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 3, 10, 5),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
-                    bottomLeft: Radius.circular(30),
-                    bottomRight: Radius.circular(30),
-                  ),
-                ),
-                child: Text('test'),
-              ),
+              child: Text('test'),
             ),
             Container(height: 400, color: theme.backgroundColor),
             Container(color: theme.splashColor, height: 4),
