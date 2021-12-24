@@ -31,6 +31,7 @@ class roleplay_character extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
+            Container(color: theme.splashColor, height: 4),
             roleplay_navigation(),
             Text(
               'Park Jimin',
