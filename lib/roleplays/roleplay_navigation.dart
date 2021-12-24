@@ -47,7 +47,7 @@ class Card2 extends StatelessWidget {
       return Container(
         color: theme.accentColor,
         constraints: BoxConstraints(
-          maxWidth: 700.0,
+          maxWidth: 900.0,
           minWidth: 450.0,
         ),
         child: Padding(
