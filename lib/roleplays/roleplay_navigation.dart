@@ -49,12 +49,15 @@ class Card2 extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(10),
           child: FittedBox(
-            children: <Widget>[
-              Text(
-                'yep',
-                softWrap: true,
-              ),
-            ],
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  'yep',
+                  softWrap: true,
+                ),
+              ],
+            ),
           ),
         ),
       );
