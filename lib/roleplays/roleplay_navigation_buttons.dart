@@ -6,6 +6,11 @@ class roleplay_navigation_buttons extends StatelessWidget {
     'Rules',
     'Masterlist',
   ];
+  final List<Widget> navigation = [
+    main_page,
+    null,
+    null,
+  ];
   List<Widget> tags = [];
 
   Widget build(BuildContext context) {
@@ -28,7 +33,7 @@ class roleplay_navigation_buttons extends StatelessWidget {
                 items[i],
                 style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
-              onPressed: () {},
+              onPressed: () {MaterialPageRoute(builder: (context) => navigation[i]())},
             ),
           ),
         ),
