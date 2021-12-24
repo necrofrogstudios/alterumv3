@@ -45,7 +45,7 @@ class my_characters extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Popular',
+                    'My Characters',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 25,
@@ -55,7 +55,9 @@ class my_characters extends StatelessWidget {
                 ],
               ),
             ),
-            Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+            Card(
+              child: Text(bleh),
+            ),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
