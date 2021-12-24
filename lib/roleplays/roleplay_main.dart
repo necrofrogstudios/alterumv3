@@ -10,6 +10,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
 import 'package:testing/roleplays/roleplay_rules.dart';
+import 'package:testing/roleplays/roleplay_navigation.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class roleplay_main extends StatelessWidget {
@@ -45,6 +46,7 @@ class roleplay_main extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    roleplay_navigation(),
                     Text(
                       'The Haunted Hotel of Jefferson',
                       textAlign: TextAlign.center,
