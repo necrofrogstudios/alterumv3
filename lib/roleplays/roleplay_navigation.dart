@@ -2,6 +2,7 @@ import 'dart:math' as math;
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:expandable/expandable.dart';
 import 'package:testing/roleplays/roleplay_navigation_buttons.dart';
+import 'package:testing/popular/roleplay_tag_buttons.dart';
 import 'package:flutter/material.dart';
 
 class roleplay_navigation extends StatefulWidget {
@@ -56,7 +57,7 @@ class Card2 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              roleplay_navigation_buttons(),
+              tag_buttons(),
             ],
           ),
         ),
