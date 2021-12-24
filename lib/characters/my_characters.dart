@@ -56,7 +56,7 @@ class my_characters extends StatelessWidget {
               ),
             ),
             Card(
-              child: Text(bleh),
+              child: Text('bleh'),
             ),
             Container(color: theme.splashColor, height: 4),
             footer(),
