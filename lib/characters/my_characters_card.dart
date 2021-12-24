@@ -17,26 +17,26 @@ class my_characters_card extends StatelessWidget {
           fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
           front: Card(
-            shape: RoundedRectangleBorder(
-              side: BorderSide(color: theme.splashColor, width: 4),
-              borderRadius: BorderRadius.circular(30),
-            ),
-            child: Container(
-              decoration: BoxDecoration(
-                color: theme.backgroundColor,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30),
-                  topRight: Radius.circular(30),
-                ),
+              shape: RoundedRectangleBorder(
+                side: BorderSide(color: theme.splashColor, width: 4),
+                borderRadius: BorderRadius.circular(30),
               ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(30.0),
-                child: FittedBox(
-                  child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: theme.backgroundColor,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                  ),
                 ),
-              ),
-            ),
-          ), //back of card  V V V V //
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(30.0),
+                  child: FittedBox(
+                    child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+                  ),
+                
+             
+            ), //back of card  V V V V //
           back: Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Container(
