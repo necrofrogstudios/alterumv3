@@ -46,18 +46,17 @@ class Card2 extends StatelessWidget {
     buildExpanded3() {
       return Container(
         color: theme.accentColor,
+        constraints: BoxConstraints(maxHeight: 300.0, maxWidth: 200.0, minWidth: 150.0, minHeight: 150.0),
         child: Padding(
           padding: EdgeInsets.all(10),
-          child: IntrinsicWidth(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'yep',
-                  softWrap: true,
-                ),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'yep',
+                softWrap: true,
+              ),
+            ],
           ),
         ),
       );
