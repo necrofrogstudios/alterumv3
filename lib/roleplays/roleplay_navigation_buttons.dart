@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class profile_top_buttons extends StatelessWidget {
+class roleplay_navigation_buttons extends StatelessWidget {
   final List<String> items = [
     'Create Roleplay',
     'Popular',
