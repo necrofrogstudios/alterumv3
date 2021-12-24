@@ -75,6 +75,7 @@ class Card2 extends StatelessWidget {
             Expandable(
               collapsed: buildCollapsed3(),
               expanded: buildExpanded3(),
+              Container(color: theme.splashColor, height: 4),
             ),
             Divider(
               height: 1,
