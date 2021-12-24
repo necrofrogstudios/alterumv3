@@ -46,7 +46,10 @@ class Card2 extends StatelessWidget {
     buildExpanded3() {
       return Container(
         color: theme.accentColor,
-        constraints: BoxConstraints(maxHeight: 300.0, maxWidth: 200.0, minWidth: 150.0, minHeight: 150.0),
+        constraints: BoxConstraints(
+          maxWidth: 700.0,
+          minWidth: 450.0,
+        ),
         child: Padding(
           padding: EdgeInsets.all(10),
           child: Column(
