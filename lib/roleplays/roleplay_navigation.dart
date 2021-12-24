@@ -14,6 +14,7 @@ class roleplay_navigationState extends State<roleplay_navigation> {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      shrinkWrap: true,
       physics: const BouncingScrollPhysics(),
       children: <Widget>[
         Card2(),
