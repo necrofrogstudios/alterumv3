@@ -5,7 +5,6 @@ class roleplay_navigation_buttons extends StatelessWidget {
     'Home',
     'Rules',
     'Masterlist',
-    ,
   ];
   List<Widget> tags = [];
 
