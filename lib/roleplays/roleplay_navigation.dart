@@ -59,6 +59,7 @@ class Card2 extends StatelessWidget {
                 'yep',
                 softWrap: true,
               ),
+              Container(color: theme.splashColor, height: 4),
             ],
           ),
         ),
