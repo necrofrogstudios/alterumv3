@@ -85,12 +85,8 @@ class Card2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  color: theme.accentColor,
+                  color: theme.backgroundColor,
                   height: 50,
-                  constraints: BoxConstraints(
-                    maxWidth: 1000.0,
-                    minWidth: 450.0,
-                  ),
                   child: Builder(
                     builder: (context) {
                       var controller = ExpandableController.of(context, required: true);
