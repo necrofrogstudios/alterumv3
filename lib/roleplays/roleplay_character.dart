@@ -70,6 +70,16 @@ class roleplay_character extends StatelessWidget {
                   iconSize: 50,
                   onPressed: () {},
                 ),
+                IconButton(
+                  icon: Icon(Icons.close),
+                  iconSize: 50,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.close),
+                  iconSize: 50,
+                  onPressed: () {},
+                ),
               ],
             ),
             Padding(
