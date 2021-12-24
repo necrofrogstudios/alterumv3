@@ -76,7 +76,7 @@ class roleplay_character extends StatelessWidget {
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: Icon(Icons.report),
+                  icon: Icon(Icons.report_problem),
                   iconSize: 30,
                   onPressed: () {},
                 ),
