@@ -88,8 +88,8 @@ class Card2 extends StatelessWidget {
                   color: theme.accentColor,
                   height: 50,
                   constraints: BoxConstraints(
-                    maxWidth: 500.0,
-                    minWidth: 450.0,
+                    maxWidth: 1000.0,
+                    minWidth: 250.0,
                   ),
                   child: Builder(
                     builder: (context) {
