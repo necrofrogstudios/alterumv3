@@ -35,7 +35,7 @@ class roleplay_navigation_buttons extends StatelessWidget {
                 style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
               onPressed: () {
-                Navigator.pop(context, MaterialPageRoute(builder: (context) => navigation[i]));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => navigation[i]));
               },
             ),
           ),
