@@ -11,6 +11,7 @@ import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/roleplay_request.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
 import 'package:testing/roleplays/roleplay_character.dart';
+import 'package:testing/roleplays/roleplay_navigation.dart';
 import 'package:testing/roleplays/roleplay_character_list.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
@@ -46,6 +47,7 @@ class roleplay_masterlist extends StatelessWidget {
                 color: theme.backgroundColor,
                 child: Column(
                   children: [
+                    roleplay_navigation(),
                     Text(
                       'MASTERLIST',
                       style: TextStyle(
