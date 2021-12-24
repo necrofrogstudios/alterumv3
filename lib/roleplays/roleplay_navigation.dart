@@ -13,6 +13,7 @@ class roleplay_navigation extends StatefulWidget {
 class roleplay_navigationState extends State<roleplay_navigation> {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return ListView(
       shrinkWrap: true,
       physics: const BouncingScrollPhysics(),
@@ -26,12 +27,13 @@ class roleplay_navigationState extends State<roleplay_navigation> {
 class Card2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     buildImg(Color color, double height) {
       return SizedBox(
           height: height,
           child: Container(
             decoration: BoxDecoration(
-              color: color,
+              color: theme.backgroundColor,
               shape: BoxShape.rectangle,
             ),
           ));
