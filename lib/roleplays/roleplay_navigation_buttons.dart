@@ -37,7 +37,7 @@ class roleplay_navigation_buttons extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(
                   context,
-                  MaterialPageRoute(builder: (context) => navigation[i])),
+                  MaterialPageRoute(builder: (context) => navigation[i]));
                 )
               };
             ),
