@@ -57,7 +57,7 @@ class roleplay_rules extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'Favorite the rp '
+                      'LET\'S GET STRAIGHT TO THE POINT. THIS IS A PURGE ROLEPLAY. THERE WILL BE GORE, BLOOD, VIOLENCE IN THE TWISTED, SICKEST WAYS IMAGINABLE. THERE ARE ONLY TWO KINDS OF TRIGGERING CONTENT THAT WONT BE ALLOWED HERE: BEASTIALITY AND PEDOPHILIA. WE ARE STILL HUMAN, AND WE DO HAVE SOME STANDARDS. KEEP TRIGGERING CONTENT TO THE RATED M ROOMS.'
                       ' \n be kind '
                       ' \n please rewind '
                       ' \n inactivity set to 7 days',
