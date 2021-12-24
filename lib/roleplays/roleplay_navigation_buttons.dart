@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:testing/main_page/main_page.dart';
+import 'package:testing/roleplays/roleplay_main.dart';
 
 class roleplay_navigation_buttons extends StatelessWidget {
   final List<String> items = [
@@ -8,7 +8,7 @@ class roleplay_navigation_buttons extends StatelessWidget {
     'Masterlist',
   ];
   final List<Widget> navigation = [
-    main_page(),
+    roleplay_main(),
     null,
     null,
   ];
