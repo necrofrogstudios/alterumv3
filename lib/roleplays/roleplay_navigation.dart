@@ -77,9 +77,6 @@ class Card2 extends StatelessWidget {
               expanded: buildExpanded3(),
             ),
             Container(color: theme.splashColor, height: 4),
-            Divider(
-              height: 1,
-            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
