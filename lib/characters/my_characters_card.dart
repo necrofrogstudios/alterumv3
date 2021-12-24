@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:testing/roleplays/roleplay_main.dart';
 import 'package:testing/popular_widgets/roleplay_tag_buttons.dart';
+import 'package:testing/roleplays/roleplay_character.dart';
 
 class my_characters_card extends StatelessWidget {
   @override
@@ -90,7 +91,7 @@ class my_characters_card extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => roleplay_main()),
+                          MaterialPageRoute(builder: (context) => roleplay_character()),
                         );
                       },
                       child: Row(
