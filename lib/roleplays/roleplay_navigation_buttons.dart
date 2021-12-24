@@ -2,48 +2,42 @@ import 'package:flutter/material.dart';
 
 class roleplay_navigation_buttons extends StatelessWidget {
   final List<String> items = [
-    'Create Roleplay',
-    'Popular',
-    'Members',
-    'Blogs',
-    'Settings',
-    '1 on 1',
-    'Polls',
-    'Browse',
-    'Customer Support',
+    'action',
+    'adventure',
+    'first pov',
+    'rated m',
+    'all orientations',
   ];
+  List<Widget> tags = [];
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Container(
-      color: theme.accentColor,
-      height: 60,
-      child: ListView.builder(
-        shrinkWrap: true,
-        scrollDirection: Axis.horizontal,
-        itemCount: items.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Padding(
-            padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
+    for (int i = 0; i < items.length; i++) {
+      tags.add(
+        Container(
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(4, 5, 4, 5),
             child: OutlinedButton(
               style: OutlinedButton.styleFrom(
                 side: BorderSide(width: 3.0, color: theme.backgroundColor),
-                elevation: 6,
-                padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 backgroundColor: theme.accentColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
               child: Text(
-                items[index],
+                items[i],
                 style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
               onPressed: () {},
             ),
-          );
-        },
-      ),
+          ),
+        ),
+      );
+    }
+    return Wrap(
+      children: tags,
     );
   }
 }
