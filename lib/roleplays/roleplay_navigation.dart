@@ -44,16 +44,19 @@ class Card2 extends StatelessWidget {
     }
 
     buildExpanded3() {
-      return Padding(
-        padding: EdgeInsets.all(10),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'yep',
-              softWrap: true,
-            ),
-          ],
+      return Container(
+        color: theme.accentColor,
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'yep',
+                softWrap: true,
+              ),
+            ],
+          ),
         ),
       );
     }
