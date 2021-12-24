@@ -35,7 +35,7 @@ class my_characters_card extends StatelessWidget {
                     child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
                 
-             
+              ),
             ), //back of card  V V V V //
           back: Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
