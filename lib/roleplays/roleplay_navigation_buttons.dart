@@ -39,7 +39,7 @@ class roleplay_navigation_buttons extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => navigation[i])),
                 );
-              },
+              };
             ),
           ),
         ),
