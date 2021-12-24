@@ -67,17 +67,17 @@ class roleplay_character extends StatelessWidget {
               children: [
                 IconButton(
                   icon: Icon(Icons.add_alert),
-                  iconSize: 50,
+                  iconSize: 30,
                   onPressed: () {},
                 ),
                 IconButton(
                   icon: Icon(Icons.email),
-                  iconSize: 50,
+                  iconSize: 30,
                   onPressed: () {},
                 ),
                 IconButton(
                   icon: Icon(Icons.report),
-                  iconSize: 50,
+                  iconSize: 30,
                   onPressed: () {},
                 ),
               ],
