@@ -10,11 +10,11 @@ import 'package:flutter/material.dart';
 class character_profile extends StatefulWidget {
   @override
   State createState() {
-    return character_profile State();
+    return character_profileState();
   }
 }
 
-class character_profileState extends State<character_profile > {
+class character_profileState extends State<character_profile> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -59,7 +59,10 @@ class Card2 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Padding(padding:EdgeInsets.fromLTRB(10,10,10,10), child:Text('bleh'),),
+              Padding(
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                child: Text('bleh'),
+              ),
             ],
           ),
         ),
