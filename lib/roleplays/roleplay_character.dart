@@ -7,6 +7,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/roleplays/roleplay_navigation.dart';
+import 'package:testing/roleplays/character_profile.dart';
 
 class roleplay_character extends StatelessWidget {
   final currentScreen = roleplay_character;
