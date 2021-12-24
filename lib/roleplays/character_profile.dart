@@ -87,6 +87,7 @@ class Card2 extends StatelessWidget {
                 Container(
                   color: theme.backgroundColor,
                   height: 50,
+                  width: 100,
                   child: Builder(
                     builder: (context) {
                       var controller = ExpandableController.of(context, required: true);
