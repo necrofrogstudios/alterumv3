@@ -76,7 +76,7 @@ class Card2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  color: Colors.green,
+                  color: theme.backgroundColor,
                   height: 50,
                   width: 50,
                   child: Builder(
