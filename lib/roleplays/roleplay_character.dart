@@ -66,7 +66,7 @@ class roleplay_character extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
-                  icon: Icon(Icons.close),
+                  icon: Icon(Icons.add_alert),
                   iconSize: 50,
                   onPressed: () {},
                 ),
