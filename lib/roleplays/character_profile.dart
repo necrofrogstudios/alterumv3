@@ -49,7 +49,7 @@ class Card2 extends StatelessWidget {
 
     buildExpanded3() {
       return Container(
-        color: theme.accentColor,
+        color: theme.backgroundColor,
         constraints: BoxConstraints(
           maxWidth: 2500.0,
           minWidth: 1450.0,
