@@ -65,9 +65,7 @@ class roleplay_character extends StatelessWidget {
             Row(
               children: [
                 IconButton(
-                  icon: Container(
-                    child: Text('get'),
-                  ),
+                  icon: Icon(Icons.close),
                   onPressed: () {},
                 ),
               ],
