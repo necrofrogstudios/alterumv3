@@ -108,10 +108,7 @@ class character_kimjaejoong extends StatelessWidget {
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       onPressed: () {},
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [],
-                      ),
+                      child: 
                     ),
                   ),
                 ],
