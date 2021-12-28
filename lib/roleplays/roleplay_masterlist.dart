@@ -57,14 +57,15 @@ class roleplay_masterlist extends StatelessWidget {
                     ),
                     OrientationBuilder(
                       builder: (context, orientation) {
-                        return GridView.count(
+                        return new GridView.count(
                           physics: ScrollPhysics(),
                           shrinkWrap: true,
                           padding: const EdgeInsets.all(5),
                           crossAxisSpacing: 5,
                           mainAxisSpacing: 5,
-                          crossAxisCount: orientation == Orientation.portrait ? 3 : 2,
+                          crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
                           children: <Widget>[
+                            Text(orientation),
                             GestureDetector(
                               onTap: () {
                                 Navigator.push(
