@@ -16,7 +16,7 @@ class character_parkjimin extends StatelessWidget {
                 ),
               ),
             );
-    ],),}
+    ],);}
 }
 
 class character_kimjaejoong extends StatelessWidget {
