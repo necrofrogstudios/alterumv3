@@ -80,16 +80,15 @@ class character_kimjaejoong extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                     child: Text(
-                      ' The Haunted Hotel of Jefferson',
+                      ' Park Jimin',
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
                   ),
-                  Container(color: theme.splashColor, height: 4, width: 100),
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                     child: Text(
-                      '164 favorites, 37 active roleplayers',
+                      'activity points',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
@@ -97,33 +96,9 @@ class character_kimjaejoong extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                     child: Text(
-                      'Admins: Guarded, basketcase101, MrCarrot',
+                      'another thing',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                    ),
-                  ),
-                  Container(color: theme.splashColor, height: 4, width: 100),
-                  Container(color: theme.splashColor, height: 4, width: 100),
-                  Padding(
-                    padding: EdgeInsets.only(top: 10, bottom: 0),
-                    child: FlatButton(
-                      color: theme.backgroundColor,
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      height: 60.0,
-                      onPressed: () {},
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Join',
-                            style: TextStyle(
-                              fontSize: 30,
-                              color: theme.primaryColor,
-                            ),
-                          ),
-                        ],
-                      ),
                     ),
                   ),
                 ],
