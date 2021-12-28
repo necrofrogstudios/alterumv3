@@ -51,7 +51,7 @@ class character_kimjaejoong extends StatelessWidget {
                   Positioned.fill(
                     child: Align(
                       alignment: Alignment.bottomCenter,
-                      child: FittedBox(
+                      child: Expanded(
                         child: Container(
                           decoration: BoxDecoration(
                             color: theme.accentColor,
