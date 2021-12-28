@@ -107,7 +107,6 @@ class character_kimjaejoong extends StatelessWidget {
                       color: theme.backgroundColor,
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
-                      height: 60.0,
                       onPressed: () {},
                     ),
                   ),
