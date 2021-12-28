@@ -48,14 +48,6 @@ class character_kimjaejoong extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30.0),
                     child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(10, 60, 10, 10),
-                    child: Text(
-                      ' Park Jimin',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -124,6 +116,14 @@ class character_kimjaejoong extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(10, 60, 10, 10),
+          child: Text(
+            ' Park Jimin',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: theme.primaryColor, fontSize: 15),
           ),
         ), //cherry blossoms vvv//
         Padding(
