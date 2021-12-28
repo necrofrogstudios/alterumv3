@@ -101,6 +101,9 @@ class character_kimjaejoong extends StatelessWidget {
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
                   ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10, bottom: 0),
+                  ),
                 ],
               ),
             ),
