@@ -50,7 +50,7 @@ class character_kimjaejoong extends StatelessWidget {
                   ),
                   Positioned.fill(
                     child: Align(
-                      alignment: Alignment.center,
+                      alignment: Alignment.bottomCenter,
                       child: FractionallySizedBox(
                         widthFactor: 1,
                         heightFactor: 0.2,
@@ -66,7 +66,7 @@ class character_kimjaejoong extends StatelessWidget {
                               style: TextStyle(color: theme.primaryColor, fontSize: 15),
                             ),
                           ),
-                        ),),
+                        ),
                       ),
                     ),
                   ),
