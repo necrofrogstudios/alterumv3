@@ -101,8 +101,6 @@ class character_kimjaejoong extends StatelessWidget {
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
                   ),
-                  Container(color: theme.splashColor, height: 4, width: 100),
-                  Container(color: theme.splashColor, height: 4, width: 100),
                   Padding(
                     padding: EdgeInsets.only(top: 10, bottom: 0),
                     child: FlatButton(
