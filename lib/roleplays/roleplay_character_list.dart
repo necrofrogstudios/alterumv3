@@ -53,6 +53,13 @@ class character_kimjaejoong extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       child: FittedBox(
                         child: Container(
+                          decoration: BoxDecoration(
+                            color: theme.accentColor,
+                            border: Border.all(color: theme.splashColor, width: 3.0),
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(30),
+                            ),
+                          ),
                           color: theme.backgroundColor,
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
