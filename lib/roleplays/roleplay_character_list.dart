@@ -53,7 +53,7 @@ class character_kimjaejoong extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       child: FractionallySizedBox(
                         widthFactor: 1,
-                        heightFactor: 0.2,
+                        heightFactor: 0.8,
                         child: Container(
                           decoration: BoxDecoration(
                             color: theme.accentColor,
