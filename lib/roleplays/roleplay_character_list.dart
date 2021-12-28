@@ -48,26 +48,24 @@ class character_kimjaejoong extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30.0),
                     child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
-                  Positioned.fill(
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: FittedBox(
-                        child: Container(
-                          width: MediaQuery.of(context).size.width * .3,
-                          decoration: BoxDecoration(
-                            color: theme.accentColor,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(30),
-                              bottomRight: Radius.circular(30),
-                            ),
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: FittedBox(
+                      child: Container(
+                        width: MediaQuery.of(context).size.width * .3,
+                        decoration: BoxDecoration(
+                          color: theme.accentColor,
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(30),
+                            bottomRight: Radius.circular(30),
                           ),
-                          child: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            child: Text(
-                              ' Park Jimin',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                            ),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                          child: Text(
+                            ' Park Jimin',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
                           ),
                         ),
                       ),
