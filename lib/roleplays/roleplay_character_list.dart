@@ -50,7 +50,7 @@ class character_kimjaejoong extends StatelessWidget {
                   ),
                   Positioned.fill(
                     child: Align(
-                      alignment: Alignment.centerBottom,
+                      alignment: Alignment.bottomCenter,
                       child: Padding(
                         padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                         child: Text(
