@@ -60,7 +60,7 @@ class character_kimjaejoong extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: theme.accentColor,
                               borderRadius: BorderRadius.only(
-                                bottomRight: Radius.circular(20),
+                                bottomRight: Radius.circular(3),
                               ),
                             ),
                             child: Padding(
