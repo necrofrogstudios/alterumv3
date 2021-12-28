@@ -42,13 +42,10 @@ class character_kimjaejoong extends StatelessWidget {
                   Radius.circular(30),
                 ),
               ), //name, creator, tags, intro
-              child: Stack(
+              child: Column(
                 children: <Widget>[
                   ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30),
-                      topRight: Radius.circular(30),
-                    ),
+                    borderRadius: BorderRadius.circular(30.0),
                     child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
                   Padding(
