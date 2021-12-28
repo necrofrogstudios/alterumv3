@@ -44,17 +44,10 @@ class character_kimjaejoong extends StatelessWidget {
               ), //name, creator, tags, intro
               child: Column(
                 children: <Widget>[
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        topRight: Radius.circular(30),
-                      ),
-                      image: DecorationImage(
-                        fit: BoxFit.fill,
-                        image: NetworkImage("https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png"),
-                      ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: FittedBox(
+                      child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                     ),
                   ),
                   Padding(
