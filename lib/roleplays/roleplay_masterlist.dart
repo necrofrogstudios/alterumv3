@@ -65,7 +65,6 @@ class roleplay_masterlist extends StatelessWidget {
                           mainAxisSpacing: 5,
                           crossAxisCount: orientation == Orientation.portrait ? 2 : 3,
                           children: <Widget>[
-                            Text(orientation.toString()),
                             GestureDetector(
                               onTap: () {
                                 Navigator.push(
