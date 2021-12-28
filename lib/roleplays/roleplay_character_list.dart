@@ -86,9 +86,9 @@ class character_kimjaejoong extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                     child: Text(
-                      'activity points',
+                      'activity p',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
