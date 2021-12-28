@@ -119,13 +119,34 @@ class character_kimjaejoong extends StatelessWidget {
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                    child: Center(
-                      child: Text(
-                        ' Park Jimin',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                  Positioned.fill(
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: FractionallySizedBox(
+                          widthFactor: 1,
+                          heightFactor: 0.2,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: theme.accentColor,
+                              borderRadius: BorderRadius.only(
+                                bottomRight: Radius.circular(13),
+                                bottomLeft: Radius.circular(13),
+                              ),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              child: Center(
+                                child: Text(
+                                  ' Park Jimin',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       ),
                     ),
                   ),
