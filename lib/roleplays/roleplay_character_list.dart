@@ -48,14 +48,14 @@ class character_kimjaejoong extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30.0),
                     child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
-                  child: IntrinsicHeight(
-    child: Row(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        Container(
-          height: 20.0,
-          color: Colors.amber,
-          child: Padding(
+                  IntrinsicHeight(
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: <Widget>[
+                        Container(
+                          height: 20.0,
+                          color: Colors.amber,
+                          child: Padding(
                             padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                             child: Text(
                               ' Park Jimin',
@@ -63,12 +63,11 @@ class character_kimjaejoong extends StatelessWidget {
                               style: TextStyle(color: theme.primaryColor, fontSize: 15),
                             ),
                           ),
-        
-        // Expanded(...)
-      ],
-    ),
-  ),
-                  
+                        ),
+                        // Expanded(...)
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
