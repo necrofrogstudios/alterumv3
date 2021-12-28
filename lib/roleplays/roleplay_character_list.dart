@@ -51,27 +51,7 @@ class character_kimjaejoong extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                     child: Text(
-                      ' The Haunted Hotel of Jefferson',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: theme.primaryColor, fontSize: 20),
-                    ),
-                  ),
-                  Container(color: theme.splashColor, height: 4, width: 100),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                    child: Text(
-                      'Welcome to the Haunted hotel! Where our residence are the only '
-                      'ones that will give you a good scare before showing you around '
-                      ' and telling you about all the historical blah blah blahs',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                    ),
-                  ),
-                  Container(color: theme.splashColor, height: 4, width: 100),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                    child: Text(
-                      'Active 2 seconds ago',
+                      ' Park Jimin',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
