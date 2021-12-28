@@ -109,7 +109,7 @@ class character_kimjaejoong extends StatelessWidget {
                       highlightColor: Colors.transparent,
                       onPressed: () {},
                       child: 
-                    ),
+                    
                   ),
                 ],
               ),
