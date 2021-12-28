@@ -109,10 +109,6 @@ class character_kimjaejoong extends StatelessWidget {
                       highlightColor: Colors.transparent,
                       height: 60.0,
                       onPressed: () {},
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [],
-                      ),
                     ),
                   ),
                 ],
