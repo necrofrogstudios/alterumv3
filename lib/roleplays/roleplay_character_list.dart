@@ -101,6 +101,30 @@ class character_kimjaejoong extends StatelessWidget {
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
                   ),
+                  Container(color: theme.splashColor, height: 4, width: 100),
+                  Container(color: theme.splashColor, height: 4, width: 100),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10, bottom: 0),
+                    child: FlatButton(
+                      color: theme.backgroundColor,
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      height: 60.0,
+                      onPressed: () {},
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Join',
+                            style: TextStyle(
+                              fontSize: 30,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
