@@ -127,10 +127,6 @@ class character_kimjaejoong extends StatelessWidget {
                     ),
                   ),
                   Container(color: theme.splashColor, height: 4, width: 100),
-                  Padding(
-                    padding: EdgeInsets.only(top: 10, bottom: 10),
-                    child: tag_buttons(),
-                  ),
                   Container(color: theme.splashColor, height: 4, width: 100),
                   Padding(
                     padding: EdgeInsets.only(top: 10, bottom: 0),
@@ -139,12 +135,7 @@ class character_kimjaejoong extends StatelessWidget {
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       height: 60.0,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => roleplay_main()),
-                        );
-                      },
+                      onPressed: () {},
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
