@@ -52,7 +52,7 @@ class character_kimjaejoong extends StatelessWidget {
                     child: Align(
                       alignment: Alignment.centerRight,
                       child: Padding(
-                        padding: EdgeInsets.fromLTRB(10, 60, 10, 10),
+                        padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                         child: Text(
                           ' Park Jimin',
                           textAlign: TextAlign.center,
