@@ -54,22 +54,19 @@ class character_kimjaejoong extends StatelessWidget {
                       child: FractionallySizedBox(
                         widthFactor: 1,
                         heightFactor: 0.2,
-                        child: Padding(
-                          padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: theme.accentColor,
-                            ),
-                            child: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                              child: Text(
-                                ' Park Jimin',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                              ),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: theme.accentColor,
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                            child: Text(
+                              ' Park Jimin',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: theme.primaryColor, fontSize: 15),
                             ),
                           ),
-                        ),
+                        ),),
                       ),
                     ),
                   ),
