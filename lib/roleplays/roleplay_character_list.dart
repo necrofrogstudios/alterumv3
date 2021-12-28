@@ -53,7 +53,7 @@ class character_kimjaejoong extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Container(
-                          height: 20.0,
+                          height: 60.0,
                           color: Colors.amber,
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
