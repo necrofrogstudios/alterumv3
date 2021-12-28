@@ -33,7 +33,7 @@ class character_kimjaejoong extends StatelessWidget {
           fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
           front: Padding(
-            padding: EdgeInsets.only(bottom: 24),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 100),
             child: Container(
               decoration: BoxDecoration(
                 color: theme.accentColor,
