@@ -63,7 +63,7 @@ class character_kimjaejoong extends StatelessWidget {
                               style: TextStyle(color: theme.primaryColor, fontSize: 15),
                             ),
                           ),
-        ),
+        
         // Expanded(...)
       ],
     ),
