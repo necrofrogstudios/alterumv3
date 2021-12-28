@@ -53,7 +53,7 @@ class character_kimjaejoong extends StatelessWidget {
                       alignment: Alignment.bottomCenter,
                       child: FittedBox(
                         child: Container(
-                          width: MediaQuery.of(context).size.width * .2,
+                          width: MediaQuery.of(context).size.width * .25,
                           decoration: BoxDecoration(
                             color: theme.accentColor,
                             borderRadius: BorderRadius.only(
