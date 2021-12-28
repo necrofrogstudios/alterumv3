@@ -86,7 +86,7 @@ class character_kimjaejoong extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: Text(
                       'activity points',
                       textAlign: TextAlign.center,
@@ -111,15 +111,7 @@ class character_kimjaejoong extends StatelessWidget {
                       onPressed: () {},
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Join',
-                            style: TextStyle(
-                              fontSize: 30,
-                              color: theme.primaryColor,
-                            ),
-                          ),
-                        ],
+                        children: [],
                       ),
                     ),
                   ),
