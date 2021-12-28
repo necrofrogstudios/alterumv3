@@ -102,7 +102,7 @@ class character_kimjaejoong extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 10, bottom: 0),
+                    padding: EdgeInsets.only(top: 0, bottom: 0),
                     child: FlatButton(
                       color: theme.backgroundColor,
                       splashColor: Colors.transparent,
