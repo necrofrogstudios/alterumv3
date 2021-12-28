@@ -78,7 +78,7 @@ class character_kimjaejoong extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: Text(
                       ' Park Jimin',
                       textAlign: TextAlign.center,
