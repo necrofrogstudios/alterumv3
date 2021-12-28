@@ -61,7 +61,7 @@ class character_kimjaejoong extends StatelessWidget {
                               color: theme.accentColor,
                             ),
                             child: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 5, 0, 10),
+                              padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                               child: Text(
                                 ' Park Jimin',
                                 textAlign: TextAlign.center,
