@@ -55,9 +55,7 @@ class roleplay_masterlist extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    OrientationBuilder(
-                      builder: (context, orientation) {
-                        return new GridView.count(
+                     GridView.count(
                           physics: ScrollPhysics(),
                           shrinkWrap: true,
                           padding: const EdgeInsets.all(5),
@@ -89,8 +87,8 @@ class roleplay_masterlist extends StatelessWidget {
                             character_johncena(),
                           ],
                         );
-                      },
-                    ),
+                      
+                    
                   ],
                 ),
               ),
