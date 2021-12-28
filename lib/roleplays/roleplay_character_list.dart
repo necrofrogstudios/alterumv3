@@ -42,7 +42,7 @@ class character_kimjaejoong extends StatelessWidget {
                   Radius.circular(30),
                 ),
               ), //name, creator, tags, intro
-              child: Column(
+              child: Stack(
                 children: <Widget>[
                   ClipRRect(
                     borderRadius: BorderRadius.only(
