@@ -51,12 +51,15 @@ class character_kimjaejoong extends StatelessWidget {
                   Positioned.fill(
                     child: Align(
                       alignment: Alignment.bottomCenter,
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
-                        child: Text(
-                          ' Park Jimin',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      child: Container(
+                        color: theme.backgroundColor,
+                        child: Padding(
+                          padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                          child: Text(
+                            ' Park Jimin',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                          ),
                         ),
                       ),
                     ),
