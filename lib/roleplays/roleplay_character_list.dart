@@ -118,7 +118,7 @@ class character_kimjaejoong extends StatelessWidget {
               ),
             ),
           ),
-        ), //cherry blossoms vvv//
+        ),
       ],
     );
   }
