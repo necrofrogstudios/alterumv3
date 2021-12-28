@@ -4,29 +4,17 @@ class character_parkjimin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        Card(
-          shape: RoundedRectangleBorder(
-            side: BorderSide(color: theme.splashColor, width: 4),
-            borderRadius: BorderRadius.circular(30),
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(30.0),
-            child: FittedBox(
-              child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
-            ),
-          ),
+    return Card(
+      shape: RoundedRectangleBorder(
+        side: BorderSide(color: theme.splashColor, width: 4),
+        borderRadius: BorderRadius.circular(30),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(30.0),
+        child: FittedBox(
+          child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
         ),
-        Text(
-          'Park Jimin',
-          style: TextStyle(
-            color: theme.primaryColor,
-            fontSize: 15,
-          ),
-        ),
-      ],
+      ),
     );
   }
 }
