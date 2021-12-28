@@ -46,9 +46,7 @@ class character_kimjaejoong extends StatelessWidget {
                 children: <Widget>[
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
-                    child: FittedBox(
-                      child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
-                    ),
+                    child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
