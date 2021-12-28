@@ -63,7 +63,7 @@ class roleplay_masterlist extends StatelessWidget {
                           padding: const EdgeInsets.all(5),
                           crossAxisSpacing: 5,
                           mainAxisSpacing: 5,
-                          crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 2 : 3,
+                          crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
                           children: <Widget>[
                             GestureDetector(
                               onTap: () {
