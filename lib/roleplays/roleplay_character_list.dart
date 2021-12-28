@@ -27,7 +27,7 @@ class character_kimjaejoong extends StatelessWidget {
     return ListView(
       physics: NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(0),
       children: <Widget>[
         FlipCard(
           fill: Fill.fillBack,
