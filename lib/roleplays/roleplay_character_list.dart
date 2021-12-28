@@ -33,7 +33,7 @@ class character_kimjaejoong extends StatelessWidget {
           fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
           front: Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 100),
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: Container(
               decoration: BoxDecoration(
                 color: theme.accentColor,
@@ -49,21 +49,24 @@ class character_kimjaejoong extends StatelessWidget {
                     child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
                   Positioned.fill(
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: FractionallySizedBox(
-                        widthFactor: 1,
-                        heightFactor: 0.2,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: theme.accentColor,
-                          ),
-                          child: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            child: Text(
-                              ' Park Jimin',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 30),
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: FractionallySizedBox(
+                          widthFactor: 1,
+                          heightFactor: 0.2,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: theme.accentColor,
+                            ),
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              child: Text(
+                                ' Park Jimin',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                              ),
                             ),
                           ),
                         ),
