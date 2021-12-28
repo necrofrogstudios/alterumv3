@@ -57,10 +57,6 @@ class character_kimjaejoong extends StatelessWidget {
                         child: Container(
                           decoration: BoxDecoration(
                             color: theme.accentColor,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(60),
-                              bottomRight: Radius.circular(30),
-                            ),
                           ),
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
