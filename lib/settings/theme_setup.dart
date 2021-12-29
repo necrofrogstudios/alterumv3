@@ -59,10 +59,10 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //pink, pink, blue, white//
-    backgroundColor: Color(0xFFffc0cb),
+    backgroundColor: Color(0xFFba55d3),
     accentColor: Color(0xFFfe4164),
     splashColor: Color(0xFF0fc0fc),
-    primaryColor: Color(0xFFba55d3),
+    primaryColor: Colors.white,
   ),
   ThemeData(
     //pink, blue, black//
