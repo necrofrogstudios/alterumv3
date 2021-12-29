@@ -16,6 +16,13 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.black,
   ),
   ThemeData(
+    //yellow, white, green, black//
+    backgroundColor: Colors.white,
+    accentColor: Color(0xFFfbd509),
+    splashColor: Color(0xFF009400),
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
     //grey, grey, pink, black //
     backgroundColor: Color(0xFFD6D1CD),
     accentColor: Color(0xFF969A97),
@@ -83,13 +90,6 @@ List<ThemeData> getThemes = [
     backgroundColor: Color(0xFFa8c66c),
     accentColor: Color(0xFFe1dd72),
     splashColor: Color(0xFF1b6535),
-    primaryColor: Colors.black,
-  ),
-  ThemeData(
-    //green, yellow, dark green, black//
-    backgroundColor: Colors.white,
-    accentColor: Color(0xFFfbd509),
-    splashColor: Color(0xFF009400),
     primaryColor: Colors.black,
   ),
   ThemeData(
