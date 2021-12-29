@@ -55,11 +55,16 @@ class Card2 extends StatelessWidget {
         ),
         child: Padding(
           padding: EdgeInsets.all(10),
-          child: ListView(
-            shrinkWrap: true,
-            physics: const BouncingScrollPhysics(),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              MultipleThemesView(),
+              Container(
+                constraints: BoxConstraints(
+                  maxWidth: 2500.0,
+                  minWidth: 250.0,
+                ),
+                child: MultipleThemesView(),
+              ),
             ],
           ),
         ),
