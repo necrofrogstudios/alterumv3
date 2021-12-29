@@ -61,14 +61,6 @@ class _themesState extends State<themes> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
 
-    void changeColor(Color color) {
-      setState(() {
-        getThemes[12] = getThemes[12].copyWith(backgroundColor: color);
-        theme = getThemes[12];
-        getThemeManager(context).selectThemeAtIndex(12);
-      });
-    }
-
     return OutlinedButton(
       onPressed: () => showDialog<String>(
         context: context,
