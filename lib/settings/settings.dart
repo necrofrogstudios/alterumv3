@@ -67,7 +67,7 @@ class _themesState extends State<themes> {
         onPressed: () => showDialog<String>(
           context: context,
           builder: (BuildContext context) => AlertDialog(
-            backgroundColor: theme.backgroundColor,
+            backgroundColor: theme.accentColor,
             title: Text(
               'Themes',
               style: TextStyle(color: theme.primaryColor),
