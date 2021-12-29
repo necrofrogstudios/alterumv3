@@ -5,7 +5,7 @@ import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:testing/settings/themes_model.dart';
 import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
-import 'package:testing/settings/themes.dart';
+import 'package:testing/settings/themes_navigation.dart';
 
 class settings extends StatefulWidget {
   settings({Key key}) : super(key: key);
@@ -42,7 +42,7 @@ class _settingsState extends State<settings> {
           child: Column(
             children: <Widget>[
               Container(color: theme.splashColor, height: 4),
-              themes(),
+              themes_navigation(),
             ],
           ),
         ),
