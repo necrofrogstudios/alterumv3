@@ -233,28 +233,108 @@ class character_johncena extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Column(
+    return ListView(
+      physics: NeverScrollableScrollPhysics(),
+      shrinkWrap: true,
+      padding: const EdgeInsets.all(0),
       children: <Widget>[
-        Container(
-          width: 100,
-          height: 80,
-          decoration: BoxDecoration(
-            color: theme.backgroundColor,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30),
-              topRight: Radius.circular(30),
+        FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front: Padding(
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+            child: Container(
+              decoration: BoxDecoration(
+                color: theme.accentColor,
+                border: Border.all(color: theme.splashColor, width: 3.0),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ), //name, creator, tags, intro
+              child: Stack(
+                children: <Widget>[
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(30.0),
+                    child: Image.network('https://th.bing.com/th/id/R.62760de50a7208c2265b82c83a480539?rik=OnGQN7NsIe%2f64A&riu=http%3a%2f%2fwww.toledoblade.com%2fimage%2f2012%2f06%2f21%2fca5%2c16%2c1952%2c2357%2fPeople-John-Cena-1.JPG&ehk=9hYATmclKLte8hmG6cJIHl4bFkrsJd3nvAwYkRatL3c%3d&risl=&pid=ImgRaw&r=0'),
+                  ),
+                  Positioned.fill(
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                      child: Align(
+                        alignment: Alignment.bottomCenter,
+                        child: FractionallySizedBox(
+                          widthFactor: 1,
+                          heightFactor: 0.2,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: theme.accentColor,
+                              borderRadius: BorderRadius.only(
+                                bottomRight: Radius.circular(13),
+                                bottomLeft: Radius.circular(13),
+                              ),
+                            ),
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                padding: const EdgeInsets.all(0),
+                                primary: theme.primaryColor,
+                                textStyle: const TextStyle(fontSize: 15),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => roleplay_character()),
+                                );
+                              },
+                              child: const Text('John Cena'),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            image: DecorationImage(
-              fit: BoxFit.fill,
-              image: NetworkImage("https://th.bing.com/th/id/OIP.Fpxai0ib6grULdkAVVkD-QHaHa?pid=ImgDet&rs=1"),
+          ), //back of card  V V V V //
+          back: Padding(
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+            child: Container(
+              decoration: BoxDecoration(
+                color: theme.accentColor,
+                border: Border.all(color: theme.splashColor, width: 3.0),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ),
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    child: Text(
+                      ' John Cena',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                    child: Text(
+                      'activity p',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                    child: Text(
+                      'another',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ),
-        Text(
-          'John Cena',
-          style: TextStyle(
-            color: theme.primaryColor,
-            fontSize: 15,
           ),
         ),
       ],
