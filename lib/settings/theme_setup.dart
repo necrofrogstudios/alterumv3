@@ -65,6 +65,55 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.black,
   ),
   ThemeData(
+    //yellow,  black, white//
+    backgroundColor: Colors.black,
+    accentColor: Colors.yellow,
+    splashColor: Colors.black,
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
+    //green, black, white//
+    backgroundColor: Colors.black,
+    accentColor: Colors.green,
+    splashColor: Colors.black,
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
+    //blue,black, white//
+    backgroundColor: Colors.black,
+    accentColor: Colors.blue,
+    splashColor: Colors.black,
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
+    //purple, black, white//
+    backgroundColor: Colors.black,
+    accentColor: Colors.purple,
+    splashColor: Colors.black,
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
+    //pink,black, white//
+    backgroundColor: Colors.black,
+    accentColor: Colors.pink,
+    splashColor: Colors.black,
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
+    //red, black, white//
+    backgroundColor: Colors.black,
+    accentColor: Color(0xFFff0800),
+    splashColor: Colors.black,
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
+    //orange, black, white//
+    backgroundColor: Colors.black,
+    accentColor: Colors.orange,
+    splashColor: Colors.black,
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
     //grey, grey, pink, black //
     backgroundColor: Color(0xFFD6D1CD),
     accentColor: Color(0xFF969A97),
