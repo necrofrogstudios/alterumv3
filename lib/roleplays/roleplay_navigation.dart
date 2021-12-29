@@ -66,6 +66,7 @@ class Card2 extends StatelessWidget {
               Align(
                 alignment: Alignment.center,
                 child: Container(
+                  color: theme.backgroundColor,
                   width: 300,
                   height: 400,
                   child: MultipleThemesView(),
