@@ -96,7 +96,12 @@ class Card2 extends StatelessWidget {
                       var controller = ExpandableController.of(context, required: true);
                       return IconButton(
                         icon: Container(
-                          child: controller.expanded ? Icon(Icons.close) : Text('Profile'),
+                          child: controller.expanded
+                              ? Icon(Icons.close, color: theme.primaryColor)
+                              : Text(
+                                  'Profile',
+                                  style: TextStyle(color: theme.primaryColor),
+                                ),
                         ),
                         onPressed: () {
                           controller.toggle();
