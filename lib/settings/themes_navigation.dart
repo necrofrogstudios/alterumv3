@@ -32,7 +32,15 @@ class Card2 extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     buildImg(Color color, double height) {
-      return SizedBox(height: height, child: Container());
+      return SizedBox(
+        height: height,
+        child: Container(
+          decoration: BoxDecoration(
+            color: theme.backgroundColor,
+            shape: BoxShape.rectangle,
+          ),
+        ),
+      );
     }
 
     buildCollapsed3() {
@@ -50,7 +58,7 @@ class Card2 extends StatelessWidget {
               Container(
                 color: theme.backgroundColor,
                 constraints: BoxConstraints(
-                  maxHeight: 300.0,
+                  maxHeight: 200.0,
                   minHeight: 100.0,
                 ),
                 child: MultipleThemesView(),
