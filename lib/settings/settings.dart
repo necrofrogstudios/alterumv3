@@ -155,6 +155,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                               Stack(
                                 children: [
                                   Container(
+                                    color: theme.backgroundColor,
                                     decoration: BoxDecoration(
                                         color: getThemes[themeData.index].splashColor,
                                         border: Border.all(
