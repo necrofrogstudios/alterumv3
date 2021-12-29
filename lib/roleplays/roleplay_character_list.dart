@@ -70,7 +70,7 @@ class character_kimjaejoong extends StatelessWidget {
                                 primary: theme.primaryColor,
                                 textStyle: const TextStyle(fontSize: 15),
                               ),
-                              onPressed: () {},
+                              onPressed: () {print('you did it'),},
                               child: const Text('Park Jimin'),
                             ),
                           ),
