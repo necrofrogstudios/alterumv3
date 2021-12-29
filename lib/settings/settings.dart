@@ -61,59 +61,62 @@ class _themesState extends State<themes> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
 
-    return OutlinedButton(
-      onPressed: () => showDialog<String>(
-        context: context,
-        builder: (BuildContext context) => AlertDialog(
-          backgroundColor: theme.backgroundColor,
-          title: Text(
-            'Themes',
-            style: TextStyle(color: theme.primaryColor),
-          ),
-          content: Text(
-            'Pick a Theme',
-            style: TextStyle(color: theme.primaryColor),
-          ),
-          actions: <Widget>[
-            SingleChildScrollView(
-              physics: ScrollPhysics(),
-              child: Container(
-                color: theme.accentColor,
-                child: Column(
-                  children: [
-                    Align(
-                      alignment: Alignment.center,
-                      child: Container(
-                        width: 300,
-                        height: 400,
-                        child: MultipleThemesView(),
+    return Container(
+      color: theme.backgroundColor,
+      child: OutlinedButton(
+        onPressed: () => showDialog<String>(
+          context: context,
+          builder: (BuildContext context) => AlertDialog(
+            backgroundColor: theme.backgroundColor,
+            title: Text(
+              'Themes',
+              style: TextStyle(color: theme.primaryColor),
+            ),
+            content: Text(
+              'Pick a Theme',
+              style: TextStyle(color: theme.primaryColor),
+            ),
+            actions: <Widget>[
+              SingleChildScrollView(
+                physics: ScrollPhysics(),
+                child: Container(
+                  color: theme.accentColor,
+                  child: Column(
+                    children: [
+                      Align(
+                        alignment: Alignment.center,
+                        child: Container(
+                          width: 300,
+                          height: 400,
+                          child: MultipleThemesView(),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                OutlinedButton(
-                  onPressed: () => Navigator.pop(context, 'Cancel'),
-                  child: const Text('Cancel'),
-                ),
-                TextButton(
-                  onPressed: () => Navigator.pop(context, 'OK'),
-                  child: const Text('OK'),
-                ),
-              ],
-            ),
-          ],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  OutlinedButton(
+                    onPressed: () => Navigator.pop(context, 'Cancel'),
+                    child: const Text('Cancel'),
+                  ),
+                  TextButton(
+                    onPressed: () => Navigator.pop(context, 'OK'),
+                    child: const Text('OK'),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: const Text(
-          'Themesz',
-          style: TextStyle(fontSize: 40),
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: const Text(
+            'Themesz',
+            style: TextStyle(fontSize: 40),
+          ),
         ),
       ),
     );
