@@ -93,7 +93,6 @@ class Card2 extends StatelessWidget {
                       var controller = ExpandableController.of(context, required: true);
                       return IconButton(
                         icon: Container(
-                          color: Colors.red,
                           child: controller.expanded
                               ? Icon(Icons.close, color: theme.primaryColor)
                               : Text(
