@@ -48,7 +48,7 @@ class Card2 extends StatelessWidget {
 
     buildExpanded3() {
       return Container(
-        color: theme.accentColor,
+        color: theme.backgroundColor,
         child: Padding(
           padding: EdgeInsets.all(10),
           child: Column(
