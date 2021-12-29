@@ -129,6 +129,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
 
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return ViewModelBuilder<MultipleThemesViewModel>.reactive(
       builder: (context, model, child) => Scaffold(
         body: SingleChildScrollView(
