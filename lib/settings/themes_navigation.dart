@@ -60,8 +60,8 @@ class Card2 extends StatelessWidget {
             children: <Widget>[
               Container(
                 constraints: BoxConstraints(
-                  maxWidth: 2500.0,
-                  minWidth: 250.0,
+                  maxHeight: 250.0,
+                  minHeight: 250.0,
                 ),
                 child: MultipleThemesView(),
               ),
