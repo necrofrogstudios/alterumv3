@@ -95,20 +95,6 @@ class _themesState extends State<themes> {
                       child: MultipleThemesView(),
                     ),
                   ),
-                  OutlinedButton(
-                      onPressed: () => showDialog<String>(
-                            context: context,
-                            builder: (BuildContext context) => AlertDialog(
-                              title: const Text('Pick a color'),
-                              content: SingleChildScrollView(
-                                child: ColorPicker(
-                                  onColorChanged: changeColor,
-                                  pickerColor: theme.backgroundColor,
-                                ),
-                              ),
-                            ),
-                          ),
-                      child: Text('Custom theme'))
                 ],
               ),
             ),
