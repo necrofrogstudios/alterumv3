@@ -28,7 +28,7 @@ class character_parkjimin extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(29.0),
+                    borderRadius: BorderRadius.circular(27.0),
                     child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                   ),
                   Positioned.fill(
