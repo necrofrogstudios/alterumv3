@@ -58,7 +58,10 @@ class Card2 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              MultipleThemesView(),
+              Container(
+                height:400, 
+                width:300,
+              MultipleThemesView(),),
             ],
           ),
         ),
