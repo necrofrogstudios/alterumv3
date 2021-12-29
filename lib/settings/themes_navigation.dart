@@ -47,23 +47,29 @@ class Card2 extends StatelessWidget {
     }
 
     buildExpanded3() {
-      return Container(
-        color: theme.accentColor,
-        child: Padding(
-          padding: EdgeInsets.all(10),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                constraints: BoxConstraints(
-                  maxHeight: 400.0,
-                  minHeight: 200.0,
-                ),
-                child: MultipleThemesView(),
+      return ListView(
+        shrinkWrap: true,
+        physics: const BouncingScrollPhysics(),
+        children: <Widget>[
+          Container(
+            color: theme.accentColor,
+            child: Padding(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    constraints: BoxConstraints(
+                      maxHeight: 400.0,
+                      minHeight: 200.0,
+                    ),
+                    child: MultipleThemesView(),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
-        ),
+        ],
       );
     }
 
