@@ -61,7 +61,10 @@ class Card2 extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                child: Text('bleh'),
+                child: Text(
+                  'bleh',
+                  style: TextStyle(color: theme.primaryColor),
+                ),
               ),
             ],
           ),
