@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/settings/themes_model.dart';
+import 'package:testing/settings/theme_setup.dart';
 
 class themes extends StatefulWidget {
   const themes();
@@ -84,7 +85,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    final ViewModelBuilder<MultipleThemesViewModel>.reactive(
+    return ViewModelBuilder<MultipleThemesViewModel>.reactive(
       builder: (context, model, child) => Scaffold(
         body: SingleChildScrollView(
           physics: ScrollPhysics(),
