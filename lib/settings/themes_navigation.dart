@@ -94,7 +94,7 @@ class Card2 extends StatelessWidget {
                       return IconButton(
                         icon: Container(
                           height: 300,
-                          width: 100,
+                          width: 300,
                           child: controller.expanded
                               ? Icon(Icons.close, color: theme.primaryColor)
                               : Text(
