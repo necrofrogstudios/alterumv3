@@ -66,7 +66,7 @@ class _themesState extends State<themes> {
       child: OutlinedButton(
         onPressed: () => showDialog<String>(
           context: context,
-          builder: (BuildContext context) => AlertDialog(
+          builder: (BuildContext context) => AlertDialog(var theme = Theme.of(context);
             backgroundColor: theme.accentColor,
             title: Text(
               'Themes',
