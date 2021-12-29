@@ -85,7 +85,7 @@ class Card2 extends StatelessWidget {
               children: <Widget>[
                 Container(
                   color: theme.backgroundColor,
-                  height: 50,
+                  height: 10,
                   width: 200,
                   child: Builder(
                     builder: (context) {
