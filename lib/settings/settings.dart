@@ -198,7 +198,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                                     padding: EdgeInsets.fromLTRB(17, 4, 0, 0),
                                     child: Text(
                                       'T',
-                                      style: TextStyle(color: getThemes[themeData.index].primaryColor, fontSize: 30),
+                                      style: TextStyle(color: theme.primaryColor, fontSize: 30),
                                     ),
                                   ),
                                 ],
