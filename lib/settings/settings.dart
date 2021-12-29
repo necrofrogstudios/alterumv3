@@ -79,6 +79,7 @@ class _themesState extends State<themes> {
               SingleChildScrollView(
                 physics: ScrollPhysics(),
                 child: Container(
+                  color: theme.accentColor,
                   child: Column(
                     children: [
                       Align(
