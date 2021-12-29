@@ -5,12 +5,6 @@ import 'package:testing/roleplays/roleplay_navigation_buttons.dart';
 import 'package:testing/popular_widgets/roleplay_tag_buttons.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:testing/settings/themes_model.dart';
-import 'package:stacked_themes/stacked_themes.dart';
-import 'package:stacked/stacked.dart';
-import 'package:testing/settings/settings.dart';
-
 class roleplay_navigation extends StatefulWidget {
   @override
   State createState() {
@@ -63,12 +57,7 @@ class Card2 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Align(
-                alignment: Alignment.center,
-                child: FittedBox(
-                  child: MultipleThemesView(),
-                ),
-              ),
+              roleplay_navigation_buttons(),
             ],
           ),
         ),
@@ -99,12 +88,7 @@ class Card2 extends StatelessWidget {
                       var controller = ExpandableController.of(context, required: true);
                       return IconButton(
                         icon: Container(
-                          child: controller.expanded
-                              ? Icon(
-                                  Icons.close,
-                                  color: theme.primaryColor,
-                                )
-                              : Icon(FontAwesome5Solid.theater_masks, color: theme.primaryColor),
+                          child: controller.expanded ? Icon(Icons.close) : Icon(FontAwesome5Solid.theater_masks),
                         ),
                         onPressed: () {
                           controller.toggle();
