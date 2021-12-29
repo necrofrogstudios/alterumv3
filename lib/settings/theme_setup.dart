@@ -30,7 +30,7 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.white,
   ),
   ThemeData(
-    //tan, dark brown, blue//
+    //tan, dark brown, teal//
     backgroundColor: Color(0xFF65532F),
     accentColor: Color(0xFF312509),
     splashColor: Color(0xFF009b7d),
