@@ -53,7 +53,7 @@ List<ThemeData> getThemes = [
   ThemeData(
     //red, white, black//
     backgroundColor: Colors.white,
-    accentColor: Colors.red,
+    accentColor: Color(0xFFff0800),
     splashColor: Colors.white,
     primaryColor: Colors.black,
   ),
