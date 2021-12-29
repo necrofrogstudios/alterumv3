@@ -129,7 +129,6 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
 
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return ViewModelBuilder<MultipleThemesViewModel>.reactive(
       builder: (context, model, child) => Scaffold(
         body: SingleChildScrollView(
@@ -199,7 +198,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                                     padding: EdgeInsets.fromLTRB(17, 4, 0, 0),
                                     child: Text(
                                       'T',
-                                      style: TextStyle(color: theme.primaryColor, fontSize: 30),
+                                      style: TextStyle(color: getThemes[themeData.index].primaryColor, fontSize: 30),
                                     ),
                                   ),
                                 ],
