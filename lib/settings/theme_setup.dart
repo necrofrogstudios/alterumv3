@@ -40,7 +40,7 @@ List<ThemeData> getThemes = [
     //purplex2, white, black//
     backgroundColor: Colors.white,
     accentColor: Colors.purple,
-    splashColor: Colors.whitee,
+    splashColor: Colors.white,
     primaryColor: Colors.black,
   ),
   ThemeData(
