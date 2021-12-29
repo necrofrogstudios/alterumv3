@@ -64,15 +64,14 @@ class character_kimjaejoong extends StatelessWidget {
                                 bottomLeft: Radius.circular(13),
                               ),
                             ),
-                            child: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                              child: Center(
-                                child: Text(
-                                  ' Park Jimin',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                                ),
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                padding: const EdgeInsets.all(16.0),
+                                primary: Colors.white,
+                                textStyle: const TextStyle(fontSize: 20),
                               ),
+                              onPressed: () {},
+                              child: const Text('Gradient'),
                             ),
                           ),
                         ),
