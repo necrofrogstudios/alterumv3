@@ -255,7 +255,7 @@ class character_johncena extends StatelessWidget {
                 children: <Widget>[
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
-                    child: Image.network('https://th.bing.com/th/id/R.62760de50a7208c2265b82c83a480539?rik=OnGQN7NsIe%2f64A&riu=http%3a%2f%2fwww.toledoblade.com%2fimage%2f2012%2f06%2f21%2fca5%2c16%2c1952%2c2357%2fPeople-John-Cena-1.JPG&ehk=9hYATmclKLte8hmG6cJIHl4bFkrsJd3nvAwYkRatL3c%3d&risl=&pid=ImgRaw&r=0'),
+                    child: Image.network('https://th.bing.com/th/id/R.5b0123ddd50c4609439a85849ba13da0?rik=zYNUkND2rAAsOg&pid=ImgRaw&r=0'),
                   ),
                   Positioned.fill(
                     child: Padding(
