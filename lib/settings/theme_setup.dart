@@ -62,7 +62,7 @@ List<ThemeData> getThemes = [
     backgroundColor: Color(0xFFe75874),
     accentColor: Color(0xFFffc0cb),
     splashColor: Color(0xFF00bfff),
-    primaryColor: Colors.white,
+    primaryColor: Colors.black,
   ),
   ThemeData(
     //pink, blue, black//
