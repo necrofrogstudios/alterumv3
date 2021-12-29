@@ -33,12 +33,13 @@ class Card2 extends StatelessWidget {
     var theme = Theme.of(context);
     buildImg(Color color, double height) {
       return SizedBox(
+          height: height,
           child: Container(
-        decoration: BoxDecoration(
-          color: theme.backgroundColor,
-          shape: BoxShape.rectangle,
-        ),
-      ));
+            decoration: BoxDecoration(
+              color: theme.backgroundColor,
+              shape: BoxShape.rectangle,
+            ),
+          ));
     }
 
     buildCollapsed3() {
@@ -50,15 +51,11 @@ class Card2 extends StatelessWidget {
         color: theme.backgroundColor,
         child: Padding(
           padding: EdgeInsets.all(10),
-          child: Column(
+          child: Wrap(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
                 color: theme.backgroundColor,
-                constraints: BoxConstraints(
-                  maxHeight: 300.0,
-                  minHeight: 100.0,
-                ),
                 child: MultipleThemesView(),
               ),
             ],
