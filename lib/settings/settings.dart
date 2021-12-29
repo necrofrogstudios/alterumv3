@@ -62,7 +62,7 @@ class _themesState extends State<themes> {
     var theme = Theme.of(context);
 
     return Container(
-      color: theme.backgroundColor,
+      color: theme.accentColor,
       child: OutlinedButton(
         onPressed: () => showDialog<String>(
           context: context,
