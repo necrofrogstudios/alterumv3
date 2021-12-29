@@ -50,7 +50,7 @@ class Card2 extends StatelessWidget {
       return Container(
         color: theme.backgroundColor,
         child: Padding(
-          padding: EdgeInsets.all(0),
+          padding: EdgeInsets.all(10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
