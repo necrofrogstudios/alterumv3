@@ -40,7 +40,7 @@ class _settingsState extends State<settings> {
           physics: ScrollPhysics(),
           child: Column(
             children: <Widget>[
-              Container(color: theme.accentColor, height: 4),
+              Container(color: theme.splashColor, height: 4),
               themes(),
             ],
           ),
