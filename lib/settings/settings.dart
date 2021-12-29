@@ -109,7 +109,7 @@ class _themesState extends State<themes> {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: const Text(
-          'Themes',
+          'Themesz',
           style: TextStyle(fontSize: 40),
         ),
       ),
