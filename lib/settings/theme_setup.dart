@@ -26,7 +26,7 @@ List<ThemeData> getThemes = [
     //plum, purple, baby blue//
     backgroundColor: Color(0xFF2E0219),
     accentColor: Color(0xFF6A0F49),
-    splashColor: Color(0xFF97EFE9),
+    splashColor: Color(0xFFb3b300),
     primaryColor: Colors.white,
   ),
   ThemeData(
