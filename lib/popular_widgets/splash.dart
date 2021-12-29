@@ -1,6 +1,6 @@
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:testing/roleplays/roleplay_masterlist.dart';
+import 'package:testing/setting/settings.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -23,7 +23,7 @@ class _Splash extends State<Splash> {
             height: logicHeight,
             child: new SplashScreen(
                 seconds: 1,
-                navigateAfterSeconds: roleplay_masterlist(),
+                navigateAfterSeconds: settings(),
                 title: new Text(
                   'Alterum',
                   style: new TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Hind', fontSize: 85.0, color: Colors.white),
