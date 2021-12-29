@@ -99,7 +99,7 @@ class Card2 extends StatelessWidget {
                                   'Themes',
                                   style: TextStyle(
                                     color: theme.primaryColor,
-                                    FontSize: 15,
+                                    fontSize: 15,
                                   ),
                                 ),
                         ),
