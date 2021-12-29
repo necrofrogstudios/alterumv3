@@ -51,10 +51,15 @@ class Card2 extends StatelessWidget {
         color: theme.backgroundColor,
         child: Padding(
           padding: EdgeInsets.all(10),
-          child: Wrap(
+          child:  / (
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
                 color: theme.backgroundColor,
+                constraints: BoxConstraints(
+                  maxHeight: 300.0,
+                  minHeight: 100.0,
+                ),
                 child: MultipleThemesView(),
               ),
             ],
