@@ -5,6 +5,11 @@ import 'package:testing/roleplays/roleplay_navigation_buttons.dart';
 import 'package:testing/popular_widgets/roleplay_tag_buttons.dart';
 import 'package:flutter/material.dart';
 
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:testing/settings/themes_model.dart';
+import 'package:stacked_themes/stacked_themes.dart';
+import 'package:stacked/stacked.dart';
+
 class roleplay_navigation extends StatefulWidget {
   @override
   State createState() {
@@ -57,7 +62,7 @@ class Card2 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              roleplay_navigation_buttons(),
+              MultipleThemesView(),
             ],
           ),
         ),
