@@ -92,6 +92,8 @@ class Card2 extends StatelessWidget {
                     builder: (context) {
                       var controller = ExpandableController.of(context, required: true);
                       return IconButton(
+                        splashColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
                         icon: Container(
                           child: controller.expanded
                               ? Icon(Icons.close, color: theme.primaryColor)
