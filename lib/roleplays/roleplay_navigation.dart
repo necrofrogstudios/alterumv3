@@ -51,7 +51,6 @@ class Card2 extends StatelessWidget {
         constraints: BoxConstraints(
           maxWidth: 2500.0,
           minWidth: 1450.0,
-          shrinkWrap: true,
         ),
         child: Padding(
           padding: EdgeInsets.all(10),
