@@ -97,7 +97,10 @@ class Card2 extends StatelessWidget {
                               ? Icon(Icons.close, color: theme.primaryColor)
                               : Text(
                                   'Themes',
-                                  style: TextStyle(color: theme.primaryColor),
+                                  style: TextStyle(
+                                    color: theme.primaryColor,
+                                    FontSize: 15,
+                                  ),
                                 ),
                         ),
                         onPressed: () {
