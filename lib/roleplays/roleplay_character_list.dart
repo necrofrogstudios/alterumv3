@@ -71,7 +71,10 @@ class character_kimjaejoong extends StatelessWidget {
                                 textStyle: const TextStyle(fontSize: 15),
                               ),
                               onPressed: () {
-                                print('you did it');
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => roleplay_character()),
+                                );
                               },
                               child: const Text('Park Jimin'),
                             ),
