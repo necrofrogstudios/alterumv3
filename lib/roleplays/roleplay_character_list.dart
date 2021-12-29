@@ -141,7 +141,7 @@ class character_kimjaejoong extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(30.0),
+                    borderRadius: BorderRadius.circular(27.0),
                     child: Image.network('https://th.bing.com/th/id/R.dc996d3363f9d6c81a8e97a9161bdaf9?rik=j7CrUsFBdr6TJg&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f35800000%2fJaejoong-jyj-35825544-1000-1000.jpg&ehk=VEqPqR5vLUsqFOXEOwtpAzo8v89Lc6WjI10vLQgPnOI%3d&risl=&pid=ImgRaw&r=0'),
                   ),
                   Positioned.fill(
@@ -254,7 +254,7 @@ class character_johncena extends StatelessWidget {
               child: Stack(
                 children: <Widget>[
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(30.0),
+                    borderRadius: BorderRadius.circular(27.0),
                     child: Image.network('https://th.bing.com/th/id/R.5b0123ddd50c4609439a85849ba13da0?rik=zYNUkND2rAAsOg&pid=ImgRaw&r=0'),
                   ),
                   Positioned.fill(
