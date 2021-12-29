@@ -42,7 +42,7 @@ class roleplay_masterlist extends StatelessWidget {
                 color: theme.accentColor,
                 child: admin_marquee(),
               ),
-              Container(color: theme.splashColor, height: 4),
+              Container(color: theme.splashColor, height: 2),
               Container(
                 color: theme.backgroundColor,
                 child: Column(
