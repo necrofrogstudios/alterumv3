@@ -23,6 +23,20 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.black,
   ),
   ThemeData(
+    //green, white, green, black//
+    backgroundColor: Colors.white,
+    accentColor: Colors.green,
+    splashColor: Colors.green,
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
+    //blue, white, blue, black//
+    backgroundColor: Colors.white,
+    accentColor: Colors.blue,
+    splashColor: Colors.blue,
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
     //grey, grey, pink, black //
     backgroundColor: Color(0xFFD6D1CD),
     accentColor: Color(0xFF969A97),
