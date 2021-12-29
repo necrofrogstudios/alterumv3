@@ -63,15 +63,7 @@ class roleplay_masterlist extends StatelessWidget {
                       mainAxisSpacing: 5,
                       crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
                       children: <Widget>[
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(builder: (context) => roleplay_character()),
-                            );
-                          },
-                          child: character_parkjimin(),
-                        ),
+                        character_parkjimin(),
                         character_kimjaejoong(),
                         character_johncena(),
                         character_tylerblackburn(),
