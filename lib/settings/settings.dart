@@ -157,9 +157,9 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
-                                        color: getThemes[themeData.index].splashColor,
+                                        color: theme.splashColor,
                                         border: Border.all(
-                                          color: getThemes[themeData.index].splashColor,
+                                          color: theme.splashColor,
                                         ),
                                         borderRadius: BorderRadius.all(Radius.circular(50))),
                                     width: 50,
@@ -177,7 +177,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                                               topLeft: Radius.circular(100),
                                               bottomLeft: Radius.circular(100),
                                             ),
-                                            color: getThemes[themeData.index].accentColor,
+                                            color: theme.accentColor,
                                           ),
                                         ),
                                         Container(
@@ -189,7 +189,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                                               topRight: Radius.circular(100),
                                               bottomRight: Radius.circular(100),
                                             ),
-                                            color: getThemes[themeData.index].backgroundColor,
+                                            color: theme.backgroundColor,
                                           ),
                                         ),
                                       ],
