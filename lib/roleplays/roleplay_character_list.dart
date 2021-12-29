@@ -142,7 +142,7 @@ class character_kimjaejoong extends StatelessWidget {
                 children: <Widget>[
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
-                    child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+                    child: Image.network('https://th.bing.com/th/id/R.dc996d3363f9d6c81a8e97a9161bdaf9?rik=j7CrUsFBdr6TJg&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f35800000%2fJaejoong-jyj-35825544-1000-1000.jpg&ehk=VEqPqR5vLUsqFOXEOwtpAzo8v89Lc6WjI10vLQgPnOI%3d&risl=&pid=ImgRaw&r=0'),
                   ),
                   Positioned.fill(
                     child: Padding(
@@ -172,7 +172,7 @@ class character_kimjaejoong extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => roleplay_character()),
                                 );
                               },
-                              child: const Text('Park Jimin'),
+                              child: const Text('Kim Jaejoong'),
                             ),
                           ),
                         ),
@@ -198,7 +198,7 @@ class character_kimjaejoong extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: Text(
-                      ' Park Jimin',
+                      ' Kim Jaejoong',
                       textAlign: TextAlign.center,
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
