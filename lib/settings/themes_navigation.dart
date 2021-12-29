@@ -59,10 +59,6 @@ class Card2 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
-                constraints: BoxConstraints(
-                  maxHeight: 400.0,
-                  minHeight: 200.0,
-                ),
                 child: MultipleThemesView(),
               ),
             ],
