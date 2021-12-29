@@ -51,7 +51,7 @@ class Card2 extends StatelessWidget {
         color: theme.backgroundColor,
         child: Padding(
           padding: EdgeInsets.all(10),
-          child:  / (
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
