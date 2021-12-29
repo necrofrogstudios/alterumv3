@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:testing/settings/themes_model.dart';
 import 'package:testing/settings/theme_setup.dart';
+import 'package:testing/popular_widgets/drawer.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
+import 'package:testing/settings/themes_model.dart';
+import 'package:stacked_themes/stacked_themes.dart';
+import 'package:stacked/stacked.dart';
+import 'package:testing/settings/themes.dart';
 
 class themes extends StatefulWidget {
   const themes();
