@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 
+import 'package:testing/roleplays/roleplay_character.dart';
+
 class character_parkjimin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
