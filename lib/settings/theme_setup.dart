@@ -52,7 +52,7 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //orange, purple, green//
-    backgroundColor: Color(0xFF590a30),
+    backgroundColor: Color(0xFF000000),
     accentColor: Color(0xFFffa500),
     splashColor: Color(0xFF90aa3c),
     primaryColor: Colors.white,
