@@ -23,7 +23,7 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.black,
   ),
   ThemeData(
-    //plum, purple, baby blue//
+    //plum, purple, gold, white//
     backgroundColor: Color(0xFF2E0219),
     accentColor: Color(0xFF6A0F49),
     splashColor: Color(0xFFb3b300),
@@ -33,7 +33,7 @@ List<ThemeData> getThemes = [
     //tan, dark brown, blue//
     backgroundColor: Color(0xFF65532F),
     accentColor: Color(0xFF312509),
-    splashColor: Color(0xFF357266),
+    splashColor: Color(0xFF009b7d),
     primaryColor: Colors.white,
   ),
   ThemeData(
