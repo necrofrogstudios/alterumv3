@@ -77,17 +77,20 @@ class _themesState extends State<themes> {
           actions: <Widget>[
             SingleChildScrollView(
               physics: ScrollPhysics(),
-              child: Column(
-                children: [
-                  Align(
-                    alignment: Alignment.center,
-                    child: Container(
-                      width: 300,
-                      height: 400,
-                      child: MultipleThemesView(),
+              child: Container(
+                color: theme.accentColor,
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.center,
+                      child: Container(
+                        width: 300,
+                        height: 400,
+                        child: MultipleThemesView(),
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             Row(
