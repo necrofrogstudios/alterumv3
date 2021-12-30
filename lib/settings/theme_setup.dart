@@ -156,10 +156,17 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.black,
   ),
   ThemeData(
-    //blah//
+    //black, grey, white, white//
     backgroundColor: Colors.black,
     accentColor: Color(0xFF394d5f),
     splashColor: Colors.white,
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
+    //black, grey, white, white//
+    backgroundColor: Color(0xfffa8e44),
+    accentColor: Color(0xFF96577f),
+    splashColor: Color(0xFF1f3095),
     primaryColor: Colors.white,
   ),
   ThemeData(
