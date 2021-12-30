@@ -9,15 +9,13 @@ class Content {
   Content({this.text, this.color});
 }
 
-
-
 class solo_main extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  solo_main({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  solo_mainState createState() => solo_mainState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
