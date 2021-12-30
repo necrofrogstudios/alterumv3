@@ -102,7 +102,7 @@ class solo_mainState extends State<solo_main> {
                             ),
                           ),
                           back: Padding(
-                            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: theme.accentColor,
@@ -112,7 +112,7 @@ class solo_mainState extends State<solo_main> {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                                 child: Text('yay'),
                               ),
                             ),
