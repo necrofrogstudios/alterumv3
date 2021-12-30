@@ -95,7 +95,7 @@ class solo_mainState extends State<solo_main> {
                                   ),
                                   Text(
                                     _swipeItems[index].content.text,
-                                    style: TextStyle(fontSize: 20, color: them.primaryColor),
+                                    style: TextStyle(fontSize: 20, color: theme.primaryColor),
                                   ),
                                 ],
                               ),
