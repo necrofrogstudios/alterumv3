@@ -84,6 +84,7 @@ class solo_mainState extends State<solo_main> {
                             child: Text(
                               'sorry, there are no more characters available at this time. come back later or try resetting your filters',
                               style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                              textAlign: TextAlign.center,
                             ),
                           ),
                         ),
