@@ -52,11 +52,9 @@ class drawer extends StatelessWidget {
               color: theme.backgroundColor,
               child: Padding(
                 padding: EdgeInsets.only(top: 10),
-                child: CircleAvatar(
-                  radius: 100,
-                  backgroundImage: NetworkImage(
-                    'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg',
-                  ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(27.0),
+                  child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
                 ),
               ),
             ),
