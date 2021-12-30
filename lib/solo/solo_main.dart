@@ -78,9 +78,12 @@ class solo_mainState extends State<solo_main> {
                     height: 450,
                     child: Stack(
                       children: [
-                        Text(
-                          'sorry, no more users. come back later or try resetting your filters',
-                          style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
+                          child: Text(
+                            'sorry, no more users. come back later or try resetting your filters',
+                            style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                          ),
                         ),
                         SwipeCards(
                           matchEngine: _matchEngine,
