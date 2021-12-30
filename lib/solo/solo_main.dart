@@ -10,7 +10,7 @@ class Content {
   final String text;
   final Color color;
 
-  Content({this.text, this.color});
+  Content({this.text, this.color, this.images});
 }
 
 class solo_main extends StatefulWidget {
