@@ -18,7 +18,7 @@ class solo_main extends StatefulWidget {
   solo_mainState createState() => solo_mainState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class solo_mainState extends State<solo_main> {
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
