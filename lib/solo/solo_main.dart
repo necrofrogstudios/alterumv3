@@ -198,7 +198,7 @@ class solo_mainState extends State<solo_main> {
                           },
                           child: Text(
                             "Like",
-                            style: TextStyle(color: theme.primaryColor),
+                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
                           ),
                         ),
                       ],
