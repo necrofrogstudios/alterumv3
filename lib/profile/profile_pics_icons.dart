@@ -24,7 +24,7 @@ class profile_pics_icons extends StatelessWidget {
         ),
         Center(
           child: Padding(
-            padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
             child: Container(
               height: 200,
               child: ClipRRect(
