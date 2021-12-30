@@ -26,11 +26,11 @@ class solo_mainState extends State<solo_main> {
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
   List<String> _names = [
-    "Red",
-    "Blue",
-    "Green",
-    "Yellow",
-    "Orange"
+    "Park Jimin",
+    "Kim Jaejoong",
+    "John Cena",
+    "Kai",
+    "Tyler Blackburn"
   ];
   List<Color> _colors = [
     Colors.red,
