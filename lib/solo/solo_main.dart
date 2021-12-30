@@ -81,7 +81,7 @@ class solo_mainState extends State<solo_main> {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: width: double.infinity,
+      body: Container( width: double.infinity,
         child: ListView(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
