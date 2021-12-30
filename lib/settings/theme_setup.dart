@@ -173,7 +173,7 @@ List<ThemeData> getThemes = [
     //spiderman//
     backgroundColor: Color(0xFFd10000),
     accentColor: Color(0xFF050A30),
-    splashColor: Color(0xFF0fc0fc),
+    splashColor: Colors.black,
     primaryColor: Colors.white,
   ),
   ThemeData(
