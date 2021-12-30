@@ -74,6 +74,7 @@ class solo_mainState extends State<solo_main> {
           preferredSize: const Size.fromHeight(55),
           child: appbar_custom(),
         ),
+        drawer: drawer(currentScreen),
         body: Container(
             child: Column(children: [
           Container(
