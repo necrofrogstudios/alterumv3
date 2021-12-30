@@ -118,10 +118,11 @@ class solo_mainState extends State<solo_main> {
                     },
                     child: Text("Superlike")),
                 ElevatedButton(
-                    onPressed: () {
-                      _matchEngine.currentItem?.like();
-                    },
-                    child: Text("Like"))
+                  onPressed: () {
+                    _matchEngine.currentItem?.like();
+                  },
+                  child: Text("Like"),
+                ),
               ],
             )
           ],
