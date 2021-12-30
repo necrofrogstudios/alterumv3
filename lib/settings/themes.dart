@@ -25,7 +25,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
         body: SingleChildScrollView(
           physics: ScrollPhysics(),
           child: Container(
-            color: theme.backgroundColor,
+            color: theme.accentColor,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
