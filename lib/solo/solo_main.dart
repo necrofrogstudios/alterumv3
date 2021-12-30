@@ -113,7 +113,7 @@ class solo_mainState extends State<solo_main> {
                               ),Padding(
                             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
                             child:
-                              child: Text('yay'),),
+                               Text('yay'),),
                             ),
                           ),
                         );
