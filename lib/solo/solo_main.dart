@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swipe_cards/swipe_cards.dart';
+import 'package:flip_card/flip_card.dart';
+
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 
@@ -91,7 +93,7 @@ class solo_mainState extends State<solo_main> {
                   return FlipCard(
           fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
-          front:(
+          front:
                     alignment: Alignment.center,
                     color: _swipeItems[index].content.color,
                     child: Text(
