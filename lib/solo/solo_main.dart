@@ -9,9 +9,9 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 class Content {
   final String text;
   final Color color;
-  final Widget images;
+  final Widget child;
 
-  Content({this.text, this.color, this.images});
+  Content({this.text, this.color, this.child});
 }
 
 class solo_main extends StatefulWidget {
