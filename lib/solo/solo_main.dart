@@ -141,7 +141,7 @@ class solo_mainState extends State<solo_main> {
                           onPressed: () {
                             _matchEngine.currentItem?.superLike();
                           },
-                          child: Text("Superlike"),
+                          child: Text("Super Like"),
                         ),
                         ElevatedButton(
                           onPressed: () {
