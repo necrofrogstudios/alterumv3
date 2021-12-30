@@ -16,7 +16,6 @@ class profile_top_buttons extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
-      backgroundColor: Colors.transparent,
       bottomOpacity: 0.0,
       elevation: 0.0,
       color: theme.backgroundColor,
