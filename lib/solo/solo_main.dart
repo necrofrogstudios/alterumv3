@@ -126,29 +126,32 @@ class solo_mainState extends State<solo_main> {
                       },
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      ElevatedButton(
-                        onPressed: () {
-                          _matchEngine.currentItem?.nope();
-                        },
-                        child: Text("Nope"),
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          _matchEngine.currentItem?.superLike();
-                        },
-                        child: Text("Superlike"),
-                      ),
-                      ElevatedButton(
-                        onPressed: () {
-                          _matchEngine.currentItem?.like();
-                        },
-                        child: Text("Like"),
-                      ),
-                    ],
-                  )
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {
+                            _matchEngine.currentItem?.nope();
+                          },
+                          child: Text("Nope"),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            _matchEngine.currentItem?.superLike();
+                          },
+                          child: Text("Superlike"),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            _matchEngine.currentItem?.like();
+                          },
+                          child: Text("Like"),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
