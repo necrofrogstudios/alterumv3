@@ -81,7 +81,12 @@ class solo_mainState extends State<solo_main> {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: Container(
+      body: width: double.infinity,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[Container(
         color: theme.backgroundColor,
         child: Column(
           children: [
@@ -160,7 +165,7 @@ class solo_mainState extends State<solo_main> {
             )
           ],
         ),
-      ),
+      ),],),
     );
   }
 }
