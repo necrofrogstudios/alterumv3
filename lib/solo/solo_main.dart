@@ -97,10 +97,12 @@ class solo_mainState extends State<solo_main> {
                   );
                 },
                 onStackFinished: () {
-                  _scaffoldKey.currentState.showSnackBar(SnackBar(
-                    content: Text("Stack Finished"),
-                    duration: Duration(milliseconds: 500),
-                  ));
+                  _scaffoldKey.currentState.showSnackBar(
+                    SnackBar(
+                      content: Text("Stack Finished"),
+                      duration: Duration(milliseconds: 500),
+                    ),
+                  );
                 },
               ),
             ),
@@ -108,15 +110,17 @@ class solo_mainState extends State<solo_main> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(
-                    onPressed: () {
-                      _matchEngine.currentItem?.nope();
-                    },
-                    child: Text("Nope")),
+                  onPressed: () {
+                    _matchEngine.currentItem?.nope();
+                  },
+                  child: Text("Nope"),
+                ),
                 ElevatedButton(
-                    onPressed: () {
-                      _matchEngine.currentItem?.superLike();
-                    },
-                    child: Text("Superlike")),
+                  onPressed: () {
+                    _matchEngine.currentItem?.superLike();
+                  },
+                  child: Text("Superlike"),
+                ),
                 ElevatedButton(
                   onPressed: () {
                     _matchEngine.currentItem?.like();
