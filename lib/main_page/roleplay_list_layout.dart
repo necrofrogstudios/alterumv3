@@ -12,12 +12,7 @@ class roleplay_list_layout extends StatelessWidget {
       shrinkWrap: true,
       padding: const EdgeInsets.all(8),
       children: <Widget>[
-        FlipCard(
-          fill: Fill.fillBack,
-          direction: FlipDirection.HORIZONTAL,
-          front: Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-            child: Container(
+        Container(
               decoration: BoxDecoration(
                 color: theme.accentColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
