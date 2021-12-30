@@ -4,7 +4,7 @@ import 'package:flip_card/flip_card.dart';
 
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
-import 'package:testing/popular_widgets/profile_top_buttons.dart';
+import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 
 class Content {
   final String text;
