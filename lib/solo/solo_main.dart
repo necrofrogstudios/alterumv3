@@ -44,7 +44,7 @@ class solo_mainState extends State<solo_main> {
     Image.network('https://th.bing.com/th/id/OIP.5hmPeemCMT2wyhElgFqMogHaHa?pid=ImgDet&rs=1'),
   ];
   List<String> info = [
-    "Park Jimin",
+    "Park Jiminz",
     "Kim Jaejoong",
     "John Cena",
     "Kai",
@@ -119,7 +119,10 @@ class solo_mainState extends State<solo_main> {
                               ),
                               child: Padding(
                                 padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                                child: Text('yay'),
+                                child: Text(
+                                  _swipeItems[index].content.text2,
+                                  style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                                ),
                               ),
                             ),
                           ),
