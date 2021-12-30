@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swipe_cards/swipe_cards.dart';
 import 'package:flip_card/flip_card.dart';
-
+import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
@@ -152,6 +152,7 @@ class solo_mainState extends State<solo_main> {
                 ],
               ),
             ),
+            footer(),
           ],
         ),
       ),
