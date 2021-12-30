@@ -34,7 +34,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
                   Align(
                     alignment: Alignment.center,
                     child: Wrap(
-                      spacing: 12,
+                      spacing: 5,
                       runSpacing: 10,
                       alignment: WrapAlignment.center,
                       direction: Axis.horizontal,
