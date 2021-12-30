@@ -122,9 +122,9 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //bleh//
-    backgroundColor: Color(0xFF8B9A46),
+    backgroundColor: Color(0xFF0F0E0E),
     accentColor: Color(0xFF6A0F49),
-    splashColor: Color(0xFF0F0E0E),
+    splashColor: Color(0xFF8B9A46),
     primaryColor: Colors.white,
   ),
   ThemeData(
