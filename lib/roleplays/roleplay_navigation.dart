@@ -88,7 +88,7 @@ class Card2 extends StatelessWidget {
                       var controller = ExpandableController.of(context, required: true);
                       return IconButton(
                         icon: Container(
-                          child: controller.expanded ? Icon(Icons.close) : Icon(FontAwesome5Solid.theater_masks),
+                          child: controller.expanded ? Icon(Icons.close, color: theme.primaryColor) : Icon(FontAwesome5Solid.theater_masks, color: theme.primaryColor),
                         ),
                         onPressed: () {
                           controller.toggle();
