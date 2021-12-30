@@ -95,7 +95,7 @@ class solo_mainState extends State<solo_main> {
                                   ),
                                   Text(
                                     _swipeItems[index].content.text,
-                                    style: TextStyle(fontSize: 20),
+                                    style: TextStyle(fontSize: 20, color:them.primaryColor),
                                   ),
                                 ],
                               ),
@@ -110,8 +110,10 @@ class solo_mainState extends State<solo_main> {
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(30),
                                 ),
-                              ),
-                              child: Text('yay'),
+                              ),Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                            child:
+                              child: Text('yay'),),
                             ),
                           ),
                         );
