@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/main_page/main_page.dart';
+import 'package:testing/solo/solo_main/dart';
 
 class profile_top_buttons extends StatelessWidget {
   final List<String> items = [
@@ -16,7 +17,7 @@ class profile_top_buttons extends StatelessWidget {
   final List<Widget> navigation = [
     main_page(),
     main_page(),
-    main_page(),
+    solo_main(),
     main_page(),
     main_page(),
     main_page(),
