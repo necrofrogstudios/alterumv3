@@ -9,7 +9,7 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 class Content {
   final String text;
   final Color color;
-  final Widget child;
+  final NetworkImage child;
 
   Content({this.text, this.color, this.child});
 }
@@ -36,7 +36,7 @@ class solo_mainState extends State<solo_main> {
     "Kai",
     "Tyler Blackburn"
   ];
-  List<Widget> images = [
+  List<NetworkImage> images = [
     Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
     Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
     Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
