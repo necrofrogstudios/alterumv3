@@ -80,9 +80,11 @@ class solo_mainState extends State<solo_main> {
                       children: [
                         Padding(
                           padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
-                          child: Text(
-                            'sorry, there are no more characters available at this time. come back later or try resetting your filters',
-                            style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                          child: Center(
+                            Text(
+                              'sorry, there are no more characters available at this time. come back later or try resetting your filters',
+                              style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                            ),
                           ),
                         ),
                         SwipeCards(
