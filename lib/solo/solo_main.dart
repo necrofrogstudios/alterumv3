@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swipe_cards/swipe_cards.dart';
-import 'package:testing/popular_widgets/custom_appbar.dart';
+import 'package:testing/popular_widgets/appbar_custom.dart';
 
 class Content {
   final String text;
