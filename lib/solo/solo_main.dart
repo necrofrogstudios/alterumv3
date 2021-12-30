@@ -94,7 +94,7 @@ class solo_mainState extends State<solo_main> {
           fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
           front:
-                    alignment: Alignment.center,
+                    
                     color: _swipeItems[index].content.color,
                     child: Text(
                       _swipeItems[index].content.text,
