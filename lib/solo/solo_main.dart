@@ -46,26 +46,35 @@ class solo_mainState extends State<solo_main> {
   @override
   void initState() {
     for (int i = 0; i < _names.length; i++) {
-      _swipeItems.add(SwipeItem(
+      _swipeItems.add(
+        SwipeItem(
           content: Content(text: _names[i], color: _colors[i]),
           likeAction: () {
-            _scaffoldKey.currentState.showSnackBar(SnackBar(
-              content: Text("Liked ${_names[i]}"),
-              duration: Duration(milliseconds: 500),
-            ));
+            _scaffoldKey.currentState.showSnackBar(
+              SnackBar(
+                content: Text("Liked ${_names[i]}"),
+                duration: Duration(milliseconds: 500),
+              ),
+            );
           },
           nopeAction: () {
-            _scaffoldKey.currentState.showSnackBar(SnackBar(
-              content: Text("Nope ${_names[i]}"),
-              duration: Duration(milliseconds: 500),
-            ));
+            _scaffoldKey.currentState.showSnackBar(
+              SnackBar(
+                content: Text("Nope ${_names[i]}"),
+                duration: Duration(milliseconds: 500),
+              ),
+            );
           },
           superlikeAction: () {
-            _scaffoldKey.currentState.showSnackBar(SnackBar(
-              content: Text("Superliked ${_names[i]}"),
-              duration: Duration(milliseconds: 500),
-            ));
-          }));
+            _scaffoldKey.currentState.showSnackBar(
+              SnackBar(
+                content: Text("Superliked ${_names[i]}"),
+                duration: Duration(milliseconds: 500),
+              ),
+            );
+          },
+        ),
+      );
     }
 
     _matchEngine = MatchEngine(swipeItems: _swipeItems);
