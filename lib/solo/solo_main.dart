@@ -162,7 +162,7 @@ class solo_mainState extends State<solo_main> {
                           },
                           child: Text(
                             "Nope",
-                            style: TextStyle(color: theme.primaryColor),
+                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
                           ),
                         ),
                         OutlinedButton(
@@ -180,7 +180,7 @@ class solo_mainState extends State<solo_main> {
                           },
                           child: Text(
                             "Super Like",
-                            style: TextStyle(color: theme.primaryColor),
+                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
                           ),
                         ),
                         OutlinedButton(
