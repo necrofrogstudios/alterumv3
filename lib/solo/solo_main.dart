@@ -87,7 +87,7 @@ class solo_mainState extends State<solo_main> {
                             child: Container(
                               alignment: Alignment.center,
                               decoration: BoxDecoration(
-                                color: themes.accentColor,
+                                color: theme.accentColor,
                                 border: Border.all(color: theme.splashColor, width: 3.0),
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(30),
