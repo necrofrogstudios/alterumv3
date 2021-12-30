@@ -103,16 +103,20 @@ class solo_mainState extends State<solo_main> {
                           style: TextStyle(fontSize: 100),
                         ),
                       ),
-                    ),back: Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-            child: Container(
-              decoration: BoxDecoration(
-                color: theme.accentColor,
-                border: Border.all(color: theme.splashColor, width: 3.0),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(30),
-                ),
-              ), child: Text('yay'),
+                    ),
+                    back: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: theme.accentColor,
+                          border: Border.all(color: theme.splashColor, width: 3.0),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(30),
+                          ),
+                        ),
+                        child: Text('yay'),
+                      ),
+                    ),
                   );
                 },
                 onStackFinished: () {
