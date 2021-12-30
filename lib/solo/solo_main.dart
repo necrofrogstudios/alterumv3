@@ -160,7 +160,10 @@ class solo_mainState extends State<solo_main> {
                           onPressed: () {
                             _matchEngine.currentItem?.nope();
                           },
-                          child: Text("Nope"),
+                          child: Text(
+                            "Nope",
+                            style: TextStyle(color: theme.primaryColor),
+                          ),
                         ),
                         OutlinedButton(
                           onPressed: () {
