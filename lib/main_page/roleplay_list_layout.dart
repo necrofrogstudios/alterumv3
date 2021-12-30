@@ -13,6 +13,9 @@ class roleplay_list_layout extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       children: <Widget>[
         Container(
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+            child: Container(
               decoration: BoxDecoration(
                 color: theme.accentColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
