@@ -35,13 +35,13 @@ class solo_mainState extends State<solo_main> {
     "Kai",
     "Tyler Blackburn"
   ];
-  List<String> images = [
-    'https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1',
-    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
-    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
-    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
-    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
-  ];
+  List<Widget> images = [
+    Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
+    Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
+    Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
+    Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
+    Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
+    ];
   List<Color> colors = [
     Colors.red,
     Colors.blue,
@@ -98,7 +98,7 @@ class solo_mainState extends State<solo_main> {
                                     borderRadius: BorderRadius.circular(29.0),
                                     child: Image.network(
                                       _swipeItems[index].content.images,
-                                    ),
+                                    
                                   ),
                                   Text(
                                     _swipeItems[index].content.text,
