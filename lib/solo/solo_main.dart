@@ -166,16 +166,40 @@ class solo_mainState extends State<solo_main> {
                           ),
                         ),
                         OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(width: 3.0, color: theme.accentColor),
+                            elevation: 6,
+                            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                            backgroundColor: theme.backgroundColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
                           onPressed: () {
                             _matchEngine.currentItem?.superLike();
                           },
-                          child: Text("Super Like"),
+                          child: Text(
+                            "Super Like",
+                            style: TextStyle(color: theme.primaryColor),
+                          ),
                         ),
                         OutlinedButton(
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(width: 3.0, color: theme.accentColor),
+                            elevation: 6,
+                            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                            backgroundColor: theme.backgroundColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
                           onPressed: () {
                             _matchEngine.currentItem?.like();
                           },
-                          child: Text("Like"),
+                          child: Text(
+                            "Like",
+                            style: TextStyle(color: theme.primaryColor),
+                          ),
                         ),
                       ],
                     ),
