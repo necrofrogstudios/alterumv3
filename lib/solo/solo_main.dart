@@ -88,7 +88,10 @@ class solo_mainState extends State<solo_main> {
               child: SwipeCards(
                 matchEngine: _matchEngine,
                 itemBuilder: (BuildContext context, int index) {
-                  return Container(
+                  return FlipCard(
+          fill: Fill.fillBack,
+          direction: FlipDirection.HORIZONTAL,
+          front:(
                     alignment: Alignment.center,
                     color: _swipeItems[index].content.color,
                     child: Text(
