@@ -29,7 +29,7 @@ class profile_top_buttons extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
 
-    Container(
+    return Container(
       color: theme.backgroundColor,
       height: 60,
       child: ListView.builder(
