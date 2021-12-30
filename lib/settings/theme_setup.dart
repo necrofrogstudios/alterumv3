@@ -187,7 +187,7 @@ List<ThemeData> getThemes = [
     //vlue, pink, white, black//
     backgroundColor: Color(0xFFF9FBF2),
     accentColor: Color(0xFFFFE7D6),
-    splashColor: Color(0xFF85EDFF),
+    splashColor: Color(0xFFADF3FF),
     primaryColor: Colors.black,
   ),
   ThemeData(
