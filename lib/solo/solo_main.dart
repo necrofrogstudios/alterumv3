@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:swipe_cards/swipe_cards.dart';
+import 'package:flip_card/flip_card.dart';
+
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 
@@ -88,12 +90,19 @@ class solo_mainState extends State<solo_main> {
               child: SwipeCards(
                 matchEngine: _matchEngine,
                 itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    alignment: Alignment.center,
-                    color: _swipeItems[index].content.color,
-                    child: Text(
-                      _swipeItems[index].content.text,
-                      style: TextStyle(fontSize: 100),
+                  return FlipCard(
+                    fill: Fill.fillBack,
+                    direction: FlipDirection.HORIZONTAL,
+                    front: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                      child: Container(
+                        alignment: Alignment.center,
+                        color: _swipeItems[index].content.color,
+                        child: Text(
+                          _swipeItems[index].content.text,
+                          style: TextStyle(fontSize: 100),
+                        ),
+                      ),
                     ),
                   );
                 },
