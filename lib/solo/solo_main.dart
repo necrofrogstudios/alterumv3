@@ -97,7 +97,7 @@ class solo_mainState extends State<solo_main> {
                                 children: <Widget>[
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(29.0),
-                                    child: _swipeItems[index].content.images,
+                                    child: _swipeItems[index].content.child,
                                   ),
                                   Text(
                                     _swipeItems[index].content.text,
