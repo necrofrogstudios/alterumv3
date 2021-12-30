@@ -4,6 +4,7 @@ import 'package:flip_card/flip_card.dart';
 
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
+import 'package:testing/popular_widgets/profile_top_buttons.dart';
 
 class Content {
   final String text;
@@ -88,6 +89,9 @@ class solo_mainState extends State<solo_main> {
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
+            Container(color: theme.splashColor, height: 4),
+            profile_top_buttons(),
+            Container(color: theme.splashColor, height: 4),
             Container(
               color: theme.backgroundColor,
               child: Column(
