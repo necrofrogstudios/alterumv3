@@ -9,6 +9,7 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 class Content {
   final String text;
   final Color color;
+  final Wdiget images;
 
   Content({this.text, this.color, this.images});
 }
