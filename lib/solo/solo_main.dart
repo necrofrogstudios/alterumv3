@@ -106,7 +106,7 @@ class solo_mainState extends State<solo_main> {
                                 ],
                               ),
                             ),
-                          ),
+                          ), // BACK OF CARD //
                           back: Padding(
                             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
                             child: Container(
@@ -117,12 +117,16 @@ class solo_mainState extends State<solo_main> {
                                   Radius.circular(30),
                                 ),
                               ),
-                              child: Padding(
-                                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                                child: Text(
-                                  _swipeItems[index].content.text2,
-                                  style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                                ),
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                    child: Text(
+                                      _swipeItems[index].content.text2,
+                                      style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
