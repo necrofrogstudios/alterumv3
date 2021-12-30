@@ -14,6 +14,14 @@ class profile_top_buttons extends StatelessWidget {
   ];
   final List<Widget> navigation = [
     null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
   ];
   List<Widget> tags = [];
 
