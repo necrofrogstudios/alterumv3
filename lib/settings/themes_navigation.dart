@@ -36,7 +36,7 @@ class Card2 extends StatelessWidget {
         height: height,
         child: Container(
           decoration: BoxDecoration(
-            color: theme.backgroundColor,
+            color: theme.accentColor,
             shape: BoxShape.rectangle,
           ),
         ),
