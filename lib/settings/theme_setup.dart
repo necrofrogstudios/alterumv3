@@ -170,6 +170,13 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.white,
   ),
   ThemeData(
+    //spiderman//
+    backgroundColor: Color(0xFFd10000),
+    accentColor: Color(0xFFfe4164),
+    splashColor: Color(0xFF0fc0fc),
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
     //grey, grey, pink, black //
     backgroundColor: Color(0xFFD6D1CD),
     accentColor: Color(0xFF969A97),
