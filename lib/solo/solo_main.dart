@@ -80,6 +80,7 @@ class solo_mainState extends State<solo_main> {
       ),
       drawer: drawer(currentScreen),
       body: Container(
+        color: theme.backgroundColor,
         child: Column(
           children: [
             Container(
