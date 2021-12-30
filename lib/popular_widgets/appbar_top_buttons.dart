@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/main_page/main_page.dart';
-import 'package:testing/solo/solo_main/dart';
+import 'package:testing/solo/solo_main.dart';
 
 class profile_top_buttons extends StatelessWidget {
   final List<String> items = [
