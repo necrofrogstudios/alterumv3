@@ -36,7 +36,7 @@ class Card2 extends StatelessWidget {
         height: height,
         child: Container(
           decoration: BoxDecoration(
-            color: theme.accentColor,
+            color: theme.backgroundColor,
             shape: BoxShape.rectangle,
           ),
         ),
@@ -49,7 +49,7 @@ class Card2 extends StatelessWidget {
 
     buildExpanded3() {
       return Container(
-        color: theme.backgroundColor,
+        color: theme.accentColor,
         child: Padding(
           padding: EdgeInsets.all(10),
           child: Column(
