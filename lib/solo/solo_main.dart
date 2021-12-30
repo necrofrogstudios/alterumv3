@@ -112,7 +112,7 @@ class solo_mainState extends State<solo_main> {
                 borderRadius: BorderRadius.all(
                   Radius.circular(30),
                 ),
-              ), child: Text('yay'),),
+              ), child: Text('yay'),
                   );
                 },
                 onStackFinished: () {
