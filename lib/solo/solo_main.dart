@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swipe_cards/swipe_cards.dart';
+import 'package:testing/popular_widgets/custom_appbar.dart';
 
 class Content {
   final String text;
@@ -84,8 +85,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         key: _scaffoldKey,
-        appBar: AppBar(
-          title: Text(widget.title),
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(55),
+          child: appbar_custom(),
         ),
         body: Container(
             child: Column(children: [
