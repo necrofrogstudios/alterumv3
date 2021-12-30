@@ -176,7 +176,7 @@ class solo_mainState extends State<solo_main> {
     for (int i = 0; i < names.length; i++) {
       _swipeItems.add(
         SwipeItem(
-          content: Content(text: names[i], text: info[i], child: images[i]),
+          content: Content(text: names[i], text2: info[i], child: images[i]),
           likeAction: () {
             _scaffoldKey.currentState.showSnackBar(
               SnackBar(
