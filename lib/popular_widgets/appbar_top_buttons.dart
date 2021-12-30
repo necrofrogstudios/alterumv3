@@ -19,8 +19,6 @@ class profile_top_buttons extends StatelessWidget {
       color: theme.backgroundColor,
       height: 60,
       child: ListView.builder(
-        bottomOpacity: 0.0,
-        elevation: 0.0,
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemCount: items.length,

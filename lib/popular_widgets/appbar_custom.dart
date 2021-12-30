@@ -12,6 +12,9 @@ class appbar_custom extends StatelessWidget {
     var theme = Theme.of(context);
 
     return AppBar(
+      backgroundColor: Colors.transparent,
+      bottomOpacity: 0.0,
+      elevation: 0.0,
       iconTheme: IconThemeData(color: theme.primaryColor),
       centerTitle: true,
       title: FlatButton(
