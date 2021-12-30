@@ -69,7 +69,7 @@ class solo_mainState extends State<solo_main> {
               child: Column(
                 children: [
                   Container(
-                    height: 400,
+                    height: 500,
                     child: SwipeCards(
                       matchEngine: _matchEngine,
                       itemBuilder: (BuildContext context, int index) {
