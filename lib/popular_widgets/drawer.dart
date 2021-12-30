@@ -54,7 +54,7 @@ class drawer extends StatelessWidget {
                 padding: EdgeInsets.only(top: 10),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(27.0),
-                  child: Image.network('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+                  child: Image.network('https://64.media.tumblr.com/70109578b699549998dcc492d4526550/0c6b43653f9a31f3-f8/s540x810/306bc4c77bce4faa85028ab34bca10b2345e9780.jpg'),
                 ),
               ),
             ),
