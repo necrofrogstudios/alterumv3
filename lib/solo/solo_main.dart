@@ -134,19 +134,19 @@ class solo_mainState extends State<solo_main> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ElevatedButton(
+                        OutlinedButton(
                           onPressed: () {
                             _matchEngine.currentItem?.nope();
                           },
                           child: Text("Nope"),
                         ),
-                        ElevatedButton(
+                        OutlinedButton(
                           onPressed: () {
                             _matchEngine.currentItem?.superLike();
                           },
                           child: Text("Super Like"),
                         ),
-                        ElevatedButton(
+                        OutlinedButton(
                           onPressed: () {
                             _matchEngine.currentItem?.like();
                           },
