@@ -29,7 +29,7 @@ class solo_mainState extends State<solo_main> {
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
   List<String> names = [
-    "Park Jimin",
+    "Park JiminJiminJiminJiminJiminJiminJiminJiminJiminJimin",
     "Kim Jaejoong",
     "John Cena",
     "Kai",
