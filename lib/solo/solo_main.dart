@@ -41,7 +41,7 @@ class solo_mainState extends State<solo_main> {
     Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
     Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
     Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
-    ];
+  ];
   List<Color> colors = [
     Colors.red,
     Colors.blue,
@@ -96,9 +96,7 @@ class solo_mainState extends State<solo_main> {
                                 children: <Widget>[
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(29.0),
-                                    child: Image.network(
-                                      _swipeItems[index].content.images,
-                                    
+                                    child: _swipeItems[index].content.images,
                                   ),
                                   Text(
                                     _swipeItems[index].content.text,
