@@ -31,7 +31,7 @@ class main_page extends StatelessWidget {
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
-            Container(color: theme.splashColor, height: 4),
+            Container(color: theme.splashColor, height: 5),
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
             Container(
