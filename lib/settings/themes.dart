@@ -27,7 +27,7 @@ class _MultipleThemesViewState extends State<MultipleThemesView> {
           child: Container(
             color: theme.accentColor,
             child: Padding(
-              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
