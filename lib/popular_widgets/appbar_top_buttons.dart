@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testing/main_page/main_page.dart';
 
 class profile_top_buttons extends StatelessWidget {
   final List<String> items = [
@@ -13,15 +14,15 @@ class profile_top_buttons extends StatelessWidget {
     'Customer Support',
   ];
   final List<Widget> navigation = [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
+    main_page(),
+    main_page(),
+    main_page(),
+    main_page(),
+    main_page(),
+    main_page(),
+    main_page(),
+    main_page(),
+    main_page(),
   ];
   List<Widget> tags = [];
 
