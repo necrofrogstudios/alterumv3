@@ -71,7 +71,7 @@ class Card2 extends StatelessWidget {
 
     return ExpandableNotifier(
         child: Padding(
-      padding: const EdgeInsets.only(left: 0, right: 0, bottom: 10),
+      padding: const EdgeInsets.only(left: 0, top: 10, bottom: 10),
       child: ScrollOnExpand(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
