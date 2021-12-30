@@ -8,15 +8,19 @@ class profile_top_buttons extends StatelessWidget {
     'Members',
     'Blogs',
     'Settings',
-    '1 on 1',
     'Polls',
     'Browse',
     'Customer Support',
   ];
+  final List<Widget> navigation = [
+    null,
+  ];
+  List<Widget> tags = [];
 
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Container(
+
+    Container(
       color: theme.backgroundColor,
       height: 60,
       child: ListView.builder(
@@ -40,7 +44,9 @@ class profile_top_buttons extends StatelessWidget {
                 items[index],
                 style: TextStyle(fontSize: 12, color: theme.primaryColor),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => navigation[index]));
+              },
             ),
           );
         },
