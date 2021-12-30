@@ -25,9 +25,12 @@ class profile_pics_icons extends StatelessWidget {
         Center(
           child: Padding(
             padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(27.0),
-              child: Image.network('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+            child: Container(
+              height: 200,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(27.0),
+                child: Image.network('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+              ),
             ),
           ),
         ),
