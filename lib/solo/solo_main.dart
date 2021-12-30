@@ -28,14 +28,21 @@ class solo_mainState extends State<solo_main> {
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
-  List<String> _names = [
+  List<String> names = [
     "Park Jimin",
     "Kim Jaejoong",
     "John Cena",
     "Kai",
     "Tyler Blackburn"
   ];
-  List<Color> _colors = [
+  List<String> images = [
+    "Park Jimin",
+    "Kim Jaejoong",
+    "John Cena",
+    "Kai",
+    "Tyler Blackburn"
+  ];
+  List<Color> colors = [
     Colors.red,
     Colors.blue,
     Colors.green,
@@ -150,14 +157,14 @@ class solo_mainState extends State<solo_main> {
 
   @override
   void initState() {
-    for (int i = 0; i < _names.length; i++) {
+    for (int i = 0; i < names.length; i++) {
       _swipeItems.add(
         SwipeItem(
-          content: Content(text: _names[i], color: _colors[i]),
+          content: Content(text: names[i], color: colors[i]),
           likeAction: () {
             _scaffoldKey.currentState.showSnackBar(
               SnackBar(
-                content: Text("Liked ${_names[i]}"),
+                content: Text("Liked ${names[i]}"),
                 duration: Duration(milliseconds: 500),
               ),
             );
@@ -165,7 +172,7 @@ class solo_mainState extends State<solo_main> {
           nopeAction: () {
             _scaffoldKey.currentState.showSnackBar(
               SnackBar(
-                content: Text("Nope ${_names[i]}"),
+                content: Text("Nope ${names[i]}"),
                 duration: Duration(milliseconds: 500),
               ),
             );
@@ -173,7 +180,7 @@ class solo_mainState extends State<solo_main> {
           superlikeAction: () {
             _scaffoldKey.currentState.showSnackBar(
               SnackBar(
-                content: Text("Superliked ${_names[i]}"),
+                content: Text("Superliked ${names[i]}"),
                 duration: Duration(milliseconds: 500),
               ),
             );
