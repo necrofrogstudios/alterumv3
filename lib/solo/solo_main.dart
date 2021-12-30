@@ -20,6 +20,7 @@ class solo_main extends StatefulWidget {
 }
 
 class solo_mainState extends State<solo_main> {
+  final currentScreen = solo_main;
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
