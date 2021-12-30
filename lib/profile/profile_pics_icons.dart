@@ -11,9 +11,11 @@ class profile_pics_icons extends StatelessWidget {
             Container(
               width: MediaQuery.of(context).size.width,
               height: 180,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(27.0),
-                child: Image.network('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: NetworkImage("https://64.media.tumblr.com/f86ecff1d27a1dac6dddd7b508e2c3b4/f0a5ab12d64fb419-55/s640x960/acc14da759877dbe17b8bbb425251aade41b37a1.jpg"),
+                ),
               ),
             ),
             Container(height: 4, color: theme.splashColor),
@@ -23,9 +25,9 @@ class profile_pics_icons extends StatelessWidget {
         Center(
           child: Padding(
             padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
-            child: CircleAvatar(
-              radius: 120,
-              backgroundImage: NetworkImage('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(27.0),
+              child: Image.network('https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg'),
             ),
           ),
         ),
