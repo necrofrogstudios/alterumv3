@@ -114,6 +114,47 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.white,
   ),
   ThemeData(
+    //grey, grey, pink, black //
+    backgroundColor: Color(0xFFD6D1CD),
+    accentColor: Color(0xFF969A97),
+    splashColor: Color(0xFFC60F7B),
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
+    //red, white, black//
+    backgroundColor: Color(0xFFdde5e7),
+    accentColor: Color(0xFFd4674c),
+    splashColor: Color(0xFF67727e),
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
+    //pink, blue, black, black//
+    backgroundColor: Color(0xFFecc19c),
+    accentColor: Color(0xFF1e8475),
+    splashColor: Color(0xFF000000),
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
+    //blue, pinkx2, white//
+    backgroundColor: Color(0xFF7fe7dc),
+    accentColor: Color(0xFFf47a60),
+    splashColor: Color(0xFFf47a60),
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
+    //green, yellow, dark green//
+    backgroundColor: Color(0xFFa8c66c),
+    accentColor: Color(0xFFe1dd72),
+    splashColor: Color(0xFF1b6535),
+    primaryColor: Colors.black,
+  ),
+  ThemeData(
+    backgroundColor: Color(0xFF0C2C63),
+    accentColor: Color(0xFFfbd509),
+    splashColor: Colors.yellow,
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
     //red, black, green, white//
     backgroundColor: Color(0xFF0F0E0E),
     accentColor: Color(0xFF541212),
@@ -174,47 +215,6 @@ List<ThemeData> getThemes = [
     backgroundColor: Colors.black,
     accentColor: Color(0xFF050A30),
     splashColor: Color(0xFFFF0000),
-    primaryColor: Colors.white,
-  ),
-  ThemeData(
-    //grey, grey, pink, black //
-    backgroundColor: Color(0xFFD6D1CD),
-    accentColor: Color(0xFF969A97),
-    splashColor: Color(0xFFC60F7B),
-    primaryColor: Colors.black,
-  ),
-  ThemeData(
-    //red, white, black//
-    backgroundColor: Color(0xFFdde5e7),
-    accentColor: Color(0xFFd4674c),
-    splashColor: Color(0xFF67727e),
-    primaryColor: Colors.black,
-  ),
-  ThemeData(
-    //pink, blue, black, black//
-    backgroundColor: Color(0xFFecc19c),
-    accentColor: Color(0xFF1e8475),
-    splashColor: Color(0xFF000000),
-    primaryColor: Colors.black,
-  ),
-  ThemeData(
-    //blue, pinkx2, white//
-    backgroundColor: Color(0xFF7fe7dc),
-    accentColor: Color(0xFFf47a60),
-    splashColor: Color(0xFFf47a60),
-    primaryColor: Colors.black,
-  ),
-  ThemeData(
-    //green, yellow, dark green//
-    backgroundColor: Color(0xFFa8c66c),
-    accentColor: Color(0xFFe1dd72),
-    splashColor: Color(0xFF1b6535),
-    primaryColor: Colors.black,
-  ),
-  ThemeData(
-    backgroundColor: Color(0xFF0C2C63),
-    accentColor: Color(0xFFfbd509),
-    splashColor: Colors.yellow,
     primaryColor: Colors.white,
   ),
 ];
