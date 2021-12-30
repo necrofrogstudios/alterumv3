@@ -8,10 +8,10 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 
 class Content {
   final String text;
-
+  final String text;
   final Image child;
 
-  Content({this.text, this.child});
+  Content({this.text, this.child, this.text});
 }
 
 class solo_main extends StatefulWidget {
@@ -43,7 +43,13 @@ class solo_mainState extends State<solo_main> {
     Image.network('https://images.genius.com/55b1c5a277d7bd9b124027f96085e3f2.1000x1000x1.jpg'),
     Image.network('https://th.bing.com/th/id/OIP.5hmPeemCMT2wyhElgFqMogHaHa?pid=ImgDet&rs=1'),
   ];
-
+  List<String> info = [
+    "Park Jimin",
+    "Kim Jaejoong",
+    "John Cena",
+    "Kai",
+    "Tyler Blackburn"
+  ];
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -170,7 +176,7 @@ class solo_mainState extends State<solo_main> {
     for (int i = 0; i < names.length; i++) {
       _swipeItems.add(
         SwipeItem(
-          content: Content(text: names[i], child: images[i]),
+          content: Content(text: names[i], text: info[i], child: images[i]),
           likeAction: () {
             _scaffoldKey.currentState.showSnackBar(
               SnackBar(
