@@ -121,6 +121,13 @@ List<ThemeData> getThemes = [
     primaryColor: Colors.black,
   ),
   ThemeData(
+    //bleh//
+    backgroundColor: Color(0xFF8B9A46),
+    accentColor: Color(0xFF6A0F49),
+    splashColor: Color(0xFF0F0E0E),
+    primaryColor: Colors.white,
+  ),
+  ThemeData(
     //plum, purple, gold, white//
     backgroundColor: Color(0xFF2E0219),
     accentColor: Color(0xFF6A0F49),
