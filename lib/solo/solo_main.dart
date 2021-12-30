@@ -96,15 +96,14 @@ class solo_mainState extends State<solo_main> {
                     front: Padding(
                       padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
                       child: Container(
+                        alignment: Alignment.center,
                         decoration: BoxDecoration(
-                          color: theme.accentColor,
+                          color: _swipeItems[index].content.color,
                           border: Border.all(color: theme.splashColor, width: 3.0),
                           borderRadius: BorderRadius.all(
                             Radius.circular(30),
                           ),
                         ),
-                        alignment: Alignment.center,
-                        color: _swipeItems[index].content.color,
                         child: Text(
                           _swipeItems[index].content.text,
                           style: TextStyle(fontSize: 100),
