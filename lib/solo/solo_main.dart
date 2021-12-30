@@ -68,8 +68,9 @@ class solo_mainState extends State<solo_main> {
               color: theme.backgroundColor,
               child: Column(
                 children: [
-                  Container(
-                    height: 550,
+                  FractionallySizedBox(
+                    widthFactor: 0.5,
+                    heightFactor: 0.5,
                     child: SwipeCards(
                       matchEngine: _matchEngine,
                       itemBuilder: (BuildContext context, int index) {
