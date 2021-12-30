@@ -8,10 +8,10 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 
 class Content {
   final String text;
-  final String text;
+  final String text2;
   final Image child;
 
-  Content({this.text, this.child, this.text});
+  Content({this.text, this.child, this.text2});
 }
 
 class solo_main extends StatefulWidget {
