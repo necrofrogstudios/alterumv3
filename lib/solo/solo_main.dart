@@ -81,91 +81,96 @@ class solo_mainState extends State<solo_main> {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: Container( width: double.infinity,
+      body: Container(
+        width: double.infinity,
         child: ListView(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
-          children: <Widget>[Container(
-        color: theme.backgroundColor,
-        child: Column(
-          children: [
+          children: <Widget>[
             Container(
-              height: 550,
-              child: SwipeCards(
-                matchEngine: _matchEngine,
-                itemBuilder: (BuildContext context, int index) {
-                  return FlipCard(
-                    fill: Fill.fillBack,
-                    direction: FlipDirection.HORIZONTAL,
-                    front: Padding(
-                      padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                      child: Container(
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          color: _swipeItems[index].content.color,
-                          border: Border.all(color: theme.splashColor, width: 3.0),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(30),
+              color: theme.backgroundColor,
+              child: Column(
+                children: [
+                  Container(
+                    height: 550,
+                    child: SwipeCards(
+                      matchEngine: _matchEngine,
+                      itemBuilder: (BuildContext context, int index) {
+                        return FlipCard(
+                          fill: Fill.fillBack,
+                          direction: FlipDirection.HORIZONTAL,
+                          front: Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                            child: Container(
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                color: _swipeItems[index].content.color,
+                                border: Border.all(color: theme.splashColor, width: 3.0),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(30),
+                                ),
+                              ),
+                              child: Text(
+                                _swipeItems[index].content.text,
+                                style: TextStyle(fontSize: 100),
+                              ),
+                            ),
                           ),
-                        ),
-                        child: Text(
-                          _swipeItems[index].content.text,
-                          style: TextStyle(fontSize: 100),
-                        ),
-                      ),
-                    ),
-                    back: Padding(
-                      padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: theme.accentColor,
-                          border: Border.all(color: theme.splashColor, width: 3.0),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(30),
+                          back: Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: theme.accentColor,
+                                border: Border.all(color: theme.splashColor, width: 3.0),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(30),
+                                ),
+                              ),
+                              child: Text('yay'),
+                            ),
                           ),
-                        ),
-                        child: Text('yay'),
+                        );
+                      },
+                      onStackFinished: () {
+                        _scaffoldKey.currentState.showSnackBar(
+                          SnackBar(
+                            content: Text("Stack Finished"),
+                            duration: Duration(milliseconds: 500),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          _matchEngine.currentItem?.nope();
+                        },
+                        child: Text("Nope"),
                       ),
-                    ),
-                  );
-                },
-                onStackFinished: () {
-                  _scaffoldKey.currentState.showSnackBar(
-                    SnackBar(
-                      content: Text("Stack Finished"),
-                      duration: Duration(milliseconds: 500),
-                    ),
-                  );
-                },
+                      ElevatedButton(
+                        onPressed: () {
+                          _matchEngine.currentItem?.superLike();
+                        },
+                        child: Text("Superlike"),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          _matchEngine.currentItem?.like();
+                        },
+                        child: Text("Like"),
+                      ),
+                    ],
+                  )
+                ],
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    _matchEngine.currentItem?.nope();
-                  },
-                  child: Text("Nope"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    _matchEngine.currentItem?.superLike();
-                  },
-                  child: Text("Superlike"),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    _matchEngine.currentItem?.like();
-                  },
-                  child: Text("Like"),
-                ),
-              ],
-            )
           ],
         ),
-      ),],),
+      ),
     );
   }
 }
