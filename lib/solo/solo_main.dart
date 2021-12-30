@@ -92,9 +92,13 @@ class solo_mainState extends State<solo_main> {
                                   Radius.circular(30),
                                 ),
                               ),
-                              child: Text(
-                                _swipeItems[index].content.text,
-                                style: TextStyle(fontSize: 100),
+                              child: Column(
+                                children: <Widget>[
+                                  Text(
+                                    _swipeItems[index].content.text,
+                                    style: TextStyle(fontSize: 100),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
