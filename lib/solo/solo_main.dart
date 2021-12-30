@@ -9,22 +9,9 @@ class Content {
   Content({this.text, this.color});
 }
 
-class solo_main extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Swipe Cards Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(title: 'Swipe Cards Demo'),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
 
-class MyHomePage extends StatefulWidget {
+
+class solo_main extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
