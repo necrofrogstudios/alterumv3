@@ -94,6 +94,10 @@ class solo_mainState extends State<solo_main> {
                               ),
                               child: Column(
                                 children: <Widget>[
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(27.0),
+                                    child: Image.network('https://64.media.tumblr.com/70109578b699549998dcc492d4526550/0c6b43653f9a31f3-f8/s540x810/306bc4c77bce4faa85028ab34bca10b2345e9780.jpg'),
+                                  ),
                                   Text(
                                     _swipeItems[index].content.text,
                                     style: TextStyle(fontSize: 100),
