@@ -29,18 +29,18 @@ class solo_mainState extends State<solo_main> {
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
   List<String> names = [
-    "Park JiminJiminJiminJiminJiminJiminJiminJiminJiminJimin",
+    "Park Jimin",
     "Kim Jaejoong",
     "John Cena",
     "Kai",
     "Tyler Blackburn"
   ];
   List<String> images = [
-    "Park Jimin",
-    "Kim Jaejoong",
-    "John Cena",
-    "Kai",
-    "Tyler Blackburn"
+    'https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1',
+    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
+    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
+    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
+    'https://pm1.narvii.com/7488/cdb10ede622f3cb27eb73c779920148de1a55d0cr1-750-923v2_hq.jpg',
   ];
   List<Color> colors = [
     Colors.red,
@@ -96,7 +96,9 @@ class solo_mainState extends State<solo_main> {
                                 children: <Widget>[
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(29.0),
-                                    child: Image.network('https://64.media.tumblr.com/70109578b699549998dcc492d4526550/0c6b43653f9a31f3-f8/s540x810/306bc4c77bce4faa85028ab34bca10b2345e9780.jpg'),
+                                    child: Image.network(
+                                      _swipeItems[index].content.images,
+                                    ),
                                   ),
                                   Text(
                                     _swipeItems[index].content.text,
@@ -168,7 +170,7 @@ class solo_mainState extends State<solo_main> {
     for (int i = 0; i < names.length; i++) {
       _swipeItems.add(
         SwipeItem(
-          content: Content(text: names[i], color: colors[i]),
+          content: Content(text: names[i], color: colors[i], child: images[i]),
           likeAction: () {
             _scaffoldKey.currentState.showSnackBar(
               SnackBar(
