@@ -21,6 +21,7 @@ class solo_main extends StatefulWidget {
 
 class solo_mainState extends State<solo_main> {
   final currentScreen = solo_main;
+
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
@@ -70,57 +71,62 @@ class solo_mainState extends State<solo_main> {
 
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Scaffold(
-        key: _scaffoldKey,
-        appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(55),
-          child: appbar_custom(),
-        ),
-        drawer: drawer(currentScreen),
-        body: Container(
-            child: Column(children: [
-          Container(
-            height: 550,
-            child: SwipeCards(
-              matchEngine: _matchEngine,
-              itemBuilder: (BuildContext context, int index) {
-                return Container(
-                  alignment: Alignment.center,
-                  color: _swipeItems[index].content.color,
-                  child: Text(
-                    _swipeItems[index].content.text,
-                    style: TextStyle(fontSize: 100),
-                  ),
-                );
-              },
-              onStackFinished: () {
-                _scaffoldKey.currentState.showSnackBar(SnackBar(
-                  content: Text("Stack Finished"),
-                  duration: Duration(milliseconds: 500),
-                ));
-              },
+      key: _scaffoldKey,
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(55),
+        child: appbar_custom(),
+      ),
+      drawer: drawer(currentScreen),
+      body: Container(
+        child: Column(
+          children: [
+            Container(
+              height: 550,
+              child: SwipeCards(
+                matchEngine: _matchEngine,
+                itemBuilder: (BuildContext context, int index) {
+                  return Container(
+                    alignment: Alignment.center,
+                    color: _swipeItems[index].content.color,
+                    child: Text(
+                      _swipeItems[index].content.text,
+                      style: TextStyle(fontSize: 100),
+                    ),
+                  );
+                },
+                onStackFinished: () {
+                  _scaffoldKey.currentState.showSnackBar(SnackBar(
+                    content: Text("Stack Finished"),
+                    duration: Duration(milliseconds: 500),
+                  ));
+                },
+              ),
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ElevatedButton(
-                  onPressed: () {
-                    _matchEngine.currentItem?.nope();
-                  },
-                  child: Text("Nope")),
-              ElevatedButton(
-                  onPressed: () {
-                    _matchEngine.currentItem?.superLike();
-                  },
-                  child: Text("Superlike")),
-              ElevatedButton(
-                  onPressed: () {
-                    _matchEngine.currentItem?.like();
-                  },
-                  child: Text("Like"))
-            ],
-          )
-        ])));
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                    onPressed: () {
+                      _matchEngine.currentItem?.nope();
+                    },
+                    child: Text("Nope")),
+                ElevatedButton(
+                    onPressed: () {
+                      _matchEngine.currentItem?.superLike();
+                    },
+                    child: Text("Superlike")),
+                ElevatedButton(
+                    onPressed: () {
+                      _matchEngine.currentItem?.like();
+                    },
+                    child: Text("Like"))
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
