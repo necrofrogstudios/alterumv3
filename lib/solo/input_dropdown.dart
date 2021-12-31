@@ -46,7 +46,7 @@ class input_dropdownState extends State<input_dropdown> {
             hint: Text(
               "Select Age 18+",
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: theme.primaryColor.withOpacity(0.45), fontSize: 15),
             ),
             onChanged: (int value) {
               setState(() {
