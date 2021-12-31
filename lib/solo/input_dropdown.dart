@@ -10,8 +10,6 @@ class input_dropdown extends State<input_dropdown> {
 
   @override
   Widget build(BuildContext context) {
-  @override
-  Widget build(BuildContext context) {
     return Center(
       child: Container(
         padding: const EdgeInsets.all(0.0),
