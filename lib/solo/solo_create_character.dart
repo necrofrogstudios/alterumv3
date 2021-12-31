@@ -54,6 +54,7 @@ class solo_create_characterState extends State<solo_create_character> {
                           padding: const EdgeInsets.all(0),
                           children: <Widget>[
                             input_header(),
+                            input_header(),
                             solo_create_character_input(),
                             Container(
                               child: Padding(
