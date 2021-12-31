@@ -31,15 +31,24 @@ class solo_create_character_input extends StatelessWidget {
 }
 
 class input_header extends StatelessWidget {
+  final List<String> header = [
+    'Create Character',
+    'Messages'
+  ];
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Padding(
-      padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
-      child: Text(
-        'Character Name',
-        style: TextStyle(fontSize: 15, color: theme.primaryColor),
-      ),
+    for (int i = 0; i < header.length; i++) {
+      return Padding(
+        padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
+        child: Text(
+          'Character Name',
+          style: TextStyle(fontSize: 15, color: theme.primaryColor),
+        ),
+      );
+    }
+    return Wrap(
+      children: header,
     );
   }
 }
