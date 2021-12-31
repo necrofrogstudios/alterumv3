@@ -25,7 +25,7 @@ class input_dropdownState extends State<input_dropdown> {
             borderRadius: BorderRadius.all(Radius.circular(30)),
             border: Border.all(
               color: theme.splashColor,
-              width: 3.0,
+              width: 4.0,
             ),
           ),
           padding: const EdgeInsets.all(0.0),
