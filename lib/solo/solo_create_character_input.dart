@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
 class solo_create_character_input extends StatelessWidget {
+  final List<String> input_title = [
+    'Character Name',
+    'Messages'
+  ];
+  
+  
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Column(
+    for (int i = 0; i < items.length; i++) {
+      tags.add(Column(
       children: <Widget>[
         Padding(
           padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
@@ -41,6 +48,6 @@ class solo_create_character_input extends StatelessWidget {
           ),
         ),
       ],
-    );
+      ),),);
   }
 }
