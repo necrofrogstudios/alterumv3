@@ -30,11 +30,7 @@ class MyApp extends StatelessWidget {
       builder: (context, regularTheme, darkTheme, themeMode) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        theme: regularTheme,
-        ThemeData(
-       canvasColor: Colors.redAccent,
-
-      ),
+        theme: regularTheme,,
         darkTheme: darkTheme,
         themeMode: themeMode,
         home: new Splash(),
