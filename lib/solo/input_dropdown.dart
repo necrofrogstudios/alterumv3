@@ -6,6 +6,7 @@ class input_dropdown extends StatefulWidget {
 }
 
 class input_dropdownState extends State<input_dropdown> {
+  var theme = Theme.of(context);
   String _chosenValue;
 
   @override
