@@ -71,11 +71,11 @@ class solo_mainState extends State<solo_main> {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
-            solo_navigation(),
             Container(
               color: theme.backgroundColor,
               child: Column(
                 children: [
+                  solo_navigation(),
                   Container(
                     height: 450,
                     child: Stack(
