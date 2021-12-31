@@ -35,18 +35,18 @@ class input_header extends StatelessWidget {
     'Create Character',
     'Messages'
   ];
-  List<Widget> header = [];
+  
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     for (int i = 0; i < header.length; i++) {
-      return Padding(
+      tags.add(return Padding(
         padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
         child: Text(
           header[i],
           style: TextStyle(fontSize: 15, color: theme.primaryColor),
         ),
-      );
+      ),);
     }
     return Wrap(
       children: header,
