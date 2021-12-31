@@ -24,7 +24,7 @@ class input_dropdownState extends State<input_dropdown> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(30)),
             border: Border.all(
-              color: theme.splashColor,
+              color: theme.accentColor,
               width: 4.0,
             ),
           ),
