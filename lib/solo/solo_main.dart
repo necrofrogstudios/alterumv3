@@ -75,7 +75,10 @@ class solo_mainState extends State<solo_main> {
               color: theme.backgroundColor,
               child: Column(
                 children: [
-                  solo_navigation(),
+                  Padding(
+                    padding: EdgeInsets.only(top: 10),
+                    child: solo_navigation(),
+                  ),
                   Container(
                     height: 450,
                     child: Stack(
