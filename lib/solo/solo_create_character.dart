@@ -90,70 +90,9 @@ class solo_create_characterState extends State<solo_create_character> {
                             ),
                           ),
                         ),
-                        SwipeCards(
-                          matchEngine: _matchEngine,
-                          itemBuilder: (BuildContext context, int index) {
-                            return FlipCard(
-                              fill: Fill.fillBack,
-                              direction: FlipDirection.HORIZONTAL,
-                              front: Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                                child: Container(
-                                  alignment: Alignment.center,
-                                  decoration: BoxDecoration(
-                                    color: theme.accentColor,
-                                    border: Border.all(color: theme.splashColor, width: 3.0),
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(30),
-                                    ),
-                                  ),
-                                  child: Column(
-                                    children: <Widget>[
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(29.0),
-                                        child: _swipeItems[index].content.child,
-                                      ),
-                                      Text(
-                                        _swipeItems[index].content.text,
-                                        style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ), // BACK OF CARD //
-                              back: Padding(
-                                padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    color: theme.accentColor,
-                                    border: Border.all(color: theme.splashColor, width: 3.0),
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(30),
-                                    ),
-                                  ),
-                                  child: Column(
-                                    children: [
-                                      Padding(
-                                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                                        child: Text(
-                                          _swipeItems[index].content.text2,
-                                          style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            );
-                          },
-                          onStackFinished: () {
-                            _scaffoldKey.currentState.showSnackBar(
-                              SnackBar(
-                                content: Text("Stack Finished"),
-                                duration: Duration(milliseconds: 500),
-                              ),
-                            );
-                          },
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(29.0),
+                          child: _swipeItems[index].content.child,
                         ),
                       ],
                     ),
