@@ -8,7 +8,7 @@ class input_dropdown extends StatefulWidget {
 class input_dropdownState extends State<input_dropdown> {
   List<int> ages = [];
 
-  int _chosenValue = 18;
+  String _chosenValue = '18';
 
   @override
   Widget build(BuildContext context) {
