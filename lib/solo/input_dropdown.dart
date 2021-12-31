@@ -41,7 +41,7 @@ class input_dropdownState extends State<input_dropdown> {
                 return DropdownMenuItem<String>(
                   value: value,
                   child: Padding(
-                    padding: EdgeInsets.only(left: 20),
+                    padding: EdgeInsets.only(left: 10),
                     child: Text(
                       value.toString(),
                       textAlign: TextAlign.center,
