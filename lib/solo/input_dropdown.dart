@@ -39,7 +39,6 @@ class input_dropdownState extends State<input_dropdown> {
 
               items: ages.map<DropdownMenuItem<String>>((String value) {
                 return DropdownMenuItem<String>(
-                  padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                   value: value,
                   child: Padding(
                     padding: EdgeInsets.only(left: 20),
