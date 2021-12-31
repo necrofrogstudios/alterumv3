@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class solo_create_character_input extends StatelessWidget {
   final List<String> input_title = [
     'Character Name',
-    'Messages'
+    'Age'
   ];
   List<Widget> tags = [];
 
