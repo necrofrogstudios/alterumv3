@@ -42,7 +42,7 @@ class input_header extends StatelessWidget {
       return Padding(
         padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
         child: Text(
-          'Character Name',
+          header[i],
           style: TextStyle(fontSize: 15, color: theme.primaryColor),
         ),
       );
