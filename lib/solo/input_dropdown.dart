@@ -12,7 +12,7 @@ class input_dropdownState extends State<input_dropdown> {
 
   @override
   Widget build(BuildContext context) {
-    for (int i = 18; i < 10000; i++) {
+    for (int i = 18; i < 100; i++) {
       ages.add(i);
     }
     var theme = Theme.of(context);
