@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/solo/solo_main.dart';
-import 'package:testing/solo/solo_create_character';
+import 'package:testing/solo/solo_create_character.dart';
 
 class solo_navigation_buttons extends StatelessWidget {
   final List<String> items = [
