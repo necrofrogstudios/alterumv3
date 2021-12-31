@@ -17,40 +17,43 @@ class input_dropdownState extends State<input_dropdown> {
     }
     var theme = Theme.of(context);
     return Center(
-      child: Container(
-        width: MediaQuery.of(context).size.width * 1,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(30)),
-          border: Border.all(
-            color: theme.splashColor,
-            width: 3.0,
+      child: Padding(
+        Padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+        child: Container(
+          width: MediaQuery.of(context).size.width * 1,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(30)),
+            border: Border.all(
+              color: theme.splashColor,
+              width: 3.0,
+            ),
           ),
-        ),
-        padding: const EdgeInsets.all(0.0),
-        child: DropdownButton<int>(
-          value: _chosenValue,
-          //elevation: 5,
-          style: TextStyle(color: Colors.black),
+          padding: const EdgeInsets.all(0.0),
+          child: DropdownButton<int>(
+            value: _chosenValue,
+            //elevation: 5,
+            style: TextStyle(color: Colors.black),
 
-          items: ages.map<DropdownMenuItem<int>>((int value) {
-            return DropdownMenuItem<int>(
-              value: value,
-              child: Text(
-                value.toString(),
-                textAlign: TextAlign.center,
-              ),
-            );
-          }).toList(),
-          hint: Text(
-            "Select Age 18+",
-            textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.black, fontSize: 15),
+            items: ages.map<DropdownMenuItem<int>>((int value) {
+              return DropdownMenuItem<int>(
+                value: value,
+                child: Text(
+                  value.toString(),
+                  textAlign: TextAlign.center,
+                ),
+              );
+            }).toList(),
+            hint: Text(
+              "Select Age 18+",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.black, fontSize: 15),
+            ),
+            onChanged: (int value) {
+              setState(() {
+                _chosenValue = value;
+              });
+            },
           ),
-          onChanged: (int value) {
-            setState(() {
-              _chosenValue = value;
-            });
-          },
         ),
       ),
     );
