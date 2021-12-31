@@ -44,6 +44,7 @@ class solo_create_character_input extends StatelessWidget {
 class input_box extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
       child: TextFormField(
