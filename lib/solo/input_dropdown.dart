@@ -6,14 +6,14 @@ class input_dropdown extends StatefulWidget {
 }
 
 class input_dropdownState extends State<input_dropdown> {
-  List<int> ages = [];
+  List<String> ages = [];
 
-  int _chosenValue = 18;
+  String _chosenValue = 18;
 
   @override
   Widget build(BuildContext context) {
     for (int i = 18; i < 100; i++) {
-      ages.add(i);
+      ages.add(i.toString());
     }
     var theme = Theme.of(context);
     return Center(
@@ -33,13 +33,13 @@ class input_dropdownState extends State<input_dropdown> {
             right: 10,
           ),
           child: DropdownButtonHideUnderline(
-            child: DropdownButton<int>(
+            child: DropdownButton<String>(
               value: _chosenValue,
               //elevation: 5,
               style: TextStyle(color: Colors.black),
 
-              items: ages.map<DropdownMenuItem<int>>((int value) {
-                return DropdownMenuItem<int>(
+              items: ages.map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
                   value: value,
                   child: Text(
                     value.toString(),
@@ -53,7 +53,7 @@ class input_dropdownState extends State<input_dropdown> {
                 textAlign: TextAlign.center,
                 style: TextStyle(color: theme.primaryColor.withOpacity(0.45), fontSize: 15),
               ),
-              onChanged: (int value) {
+              onChanged: (String value) {
                 setState(() {
                   print(value);
                   print(_chosenValue);
