@@ -23,7 +23,6 @@ class solo_create_characterState extends State<solo_create_character> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Scaffold(
-      key: _scaffoldKey,
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(55),
         child: appbar_custom(),
