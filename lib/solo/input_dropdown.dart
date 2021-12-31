@@ -5,14 +5,8 @@ class input_dropdown extends StatefulWidget {
   input_dropdownState createState() => input_dropdownState();
 }
 
-
-
 class input_dropdownState extends State<input_dropdown> {
   int _chosenValue;
-  List<int> items = [];
-  /*for(int i = 18; i <= 9999; i++){
-    items.add(i);
-  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +26,12 @@ class input_dropdownState extends State<input_dropdown> {
           //elevation: 5,
           style: TextStyle(color: Colors.black),
 
-          items.map<DropdownMenuItem<int>>((int value) {
+          items: <int>[
+            1,
+            2,
+            3,
+            3,
+          ].map<DropdownMenuItem<int>>((int value) {
             return DropdownMenuItem<int>(
               value: value,
               child: Text(value.toString()),
