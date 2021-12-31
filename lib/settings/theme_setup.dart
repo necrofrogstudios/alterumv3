@@ -6,7 +6,7 @@ List<ThemeData> getThemes = [
     backgroundColor: Colors.black,
     accentColor: Color(0xFF0C2C63),
     splashColor: Colors.yellow,
-    canvasColor: Color(0xFF0C2C63),
+    canvasColor: Colors.black,
     primaryColor: Colors.white,
   ),
   ThemeData(
