@@ -88,7 +88,6 @@ class solo_create_characterState extends State<solo_create_character> {
                             Padding(
                               padding: EdgeInsets.fromLTRB(10, 20, 10, 0),
                               child: TextFormField(
-                                controller: textController,
                                 style: TextStyle(color: theme.primaryColor),
                                 keyboardType: TextInputType.multiline,
                                 maxLines: null,
