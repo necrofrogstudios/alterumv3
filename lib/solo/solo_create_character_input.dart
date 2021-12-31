@@ -7,6 +7,13 @@ class solo_create_character_input extends StatelessWidget {
     return Column(
       children: <Widget>[
         Padding(
+          padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
+          child: Text(
+            header[i],
+            style: TextStyle(fontSize: 15, color: theme.primaryColor),
+          ),
+        ),
+        Padding(
           padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
           child: TextFormField(
             style: TextStyle(color: theme.primaryColor),
