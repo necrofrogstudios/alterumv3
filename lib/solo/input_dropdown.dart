@@ -57,10 +57,7 @@ class input_dropdownState extends State<input_dropdown> {
               ),
               onChanged: (String value) {
                 setState(() {
-                  print(value);
-                  print(_chosenValue);
                   _chosenValue = value;
-                  print(_chosenValue);
                 });
               },
             ),
