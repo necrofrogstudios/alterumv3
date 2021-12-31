@@ -3,26 +3,12 @@ import 'package:testing/solo/solo_main.dart';
 
 class solo_navigation_buttons extends StatelessWidget {
   final List<String> items = [
-    'Home',
-    'Rules',
-    'Masterlist',
-    'Home',
-    'Rules',
-    'Masterlist',
-    'Home',
-    'Rules',
-    'Masterlist',
+    'Create Character',
+    'Messages'
   ];
   final List<Widget> navigation = [
-    roleplay_main(),
-    roleplay_rules(),
-    roleplay_masterlist(),
-    roleplay_main(),
-    roleplay_rules(),
-    roleplay_masterlist(),
-    roleplay_main(),
-    roleplay_rules(),
-    roleplay_masterlist(),
+    null,
+    null,
   ];
   List<Widget> tags = [];
 
