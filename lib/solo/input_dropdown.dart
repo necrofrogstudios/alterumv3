@@ -41,6 +41,7 @@ class input_dropdownState extends State<input_dropdown> {
           hint: Center(
             child: Text(
               "Select Age 18+",
+              TextAlign.center,
               style: TextStyle(color: Colors.black, fontSize: 15),
             ),
           ),
