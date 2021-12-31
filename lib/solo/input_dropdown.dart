@@ -18,7 +18,7 @@ class input_dropdownState extends State<input_dropdown> {
     var theme = Theme.of(context);
     return Center(
       child: Padding(
-        Padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+        padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
         child: Container(
           width: MediaQuery.of(context).size.width * 1,
           decoration: BoxDecoration(
