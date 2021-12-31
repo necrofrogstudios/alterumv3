@@ -36,17 +36,22 @@ class input_header extends StatelessWidget {
     'Messages'
   ];
 
+  final List<Widget> widgets = [];
+
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     for (int i = 0; i < header.length; i++) {
-      Padding(
-        padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
-        child: Text(
-          header[i],
-          style: TextStyle(fontSize: 15, color: theme.primaryColor),
+      widgets.add(
+        Padding(
+          padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
+          child: Text(
+            header[i],
+            style: TextStyle(fontSize: 15, color: theme.primaryColor),
+          ),
         ),
       );
     }
+    return widgets;
   }
 }
