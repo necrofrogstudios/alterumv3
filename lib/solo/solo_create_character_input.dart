@@ -9,7 +9,7 @@ class solo_create_character_input extends StatelessWidget {
         Padding(
           padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
           child: Text(
-            header[i],
+            'test',
             style: TextStyle(fontSize: 15, color: theme.primaryColor),
           ),
         ),
