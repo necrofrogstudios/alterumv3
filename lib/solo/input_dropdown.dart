@@ -38,9 +38,11 @@ class input_dropdownState extends State<input_dropdown> {
               child: Text(value.toString()),
             );
           }).toList(),
-          hint: Text(
-            "Select Age 18+",
-            style: TextStyle(color: Colors.black, fontSize: 15),
+          hint: Center(
+            child: Text(
+              "Select Age 18+",
+              style: TextStyle(color: Colors.black, fontSize: 15),
+            ),
           ),
           onChanged: (int value) {
             setState(() {
