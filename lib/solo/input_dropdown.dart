@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 
-class input_dropdown extends StatelessWidget {
+class input_dropdown extends StatefulWidget {
+  @override
+  input_dropdownState createState() => input_dropdownState();
+}
+
+class input_dropdown extends State<input_dropdown> {
+  String _chosenValue;
+
+  @override
+  Widget build(BuildContext context) {
   @override
   Widget build(BuildContext context) {
     return Center(
