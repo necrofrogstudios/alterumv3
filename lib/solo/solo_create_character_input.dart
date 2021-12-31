@@ -10,7 +10,7 @@ class solo_create_character_input extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    for (int i = 0; i < input_title.length;) {
+    for (int i = 0; i < input_title.length;i+=) {
       tags.add(
         Column(
           children: <Widget>[
