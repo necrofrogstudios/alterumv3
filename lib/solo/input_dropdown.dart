@@ -13,6 +13,13 @@ class input_dropdownState extends State<input_dropdown> {
     var theme = Theme.of(context);
     return Center(
       child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+          border: Border.all(
+            color: Colors.red, //                   <--- border color
+            width: 5.0,
+          ),
+        ),
         padding: const EdgeInsets.all(0.0),
         child: DropdownButton<String>(
           value: _chosenValue,
