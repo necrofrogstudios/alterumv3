@@ -29,3 +29,17 @@ class solo_create_character_input_box extends StatelessWidget {
     );
   }
 }
+
+class solo_create_character_input_box extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    returnPadding(
+      padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
+      child: Text(
+        'Character Name',
+        style: TextStyle(fontSize: 15, color: theme.primaryColor),
+      ),
+    );
+  }
+}
