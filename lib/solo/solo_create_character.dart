@@ -90,7 +90,6 @@ class solo_create_characterState extends State<solo_create_character> {
                             ),
                           ),
                         ),
-                        Text('bleh'),
                       ],
                     ),
                   ),
