@@ -10,9 +10,9 @@ class input_dropdown extends StatefulWidget {
 class input_dropdownState extends State<input_dropdown> {
   int _chosenValue;
   List<int> items = [];
-  for(int i = 18; i <= 9999; i++){
+  /*for(int i = 18; i <= 9999; i++){
     items.add(i);
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
