@@ -35,10 +35,10 @@ class input_dropdownState extends State<input_dropdown> {
             style: TextStyle(color: Colors.black),
 
             items: ages.map<DropdownMenuItem<int>>((int value) {
-              return DropdownMenuItem<int>(
-                value: value,
-                child: Container(
-                  color: theme.backgroundColor,
+              return Container(
+                color: theme.backgroundColor,
+                child: DropdownMenuItem<int>(
+                  value: value,
                   child: Text(
                     value.toString(),
                     textAlign: TextAlign.center,
