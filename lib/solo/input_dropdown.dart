@@ -40,6 +40,7 @@ class input_dropdownState extends State<input_dropdown> {
                 child: Text(
                   value.toString(),
                   textAlign: TextAlign.center,
+                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
                 ),
               );
             }).toList(),
