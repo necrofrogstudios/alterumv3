@@ -90,10 +90,7 @@ class solo_create_characterState extends State<solo_create_character> {
                             ),
                           ),
                         ),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(29.0),
-                          child: _swipeItems[index].content.child,
-                        ),
+                        Text('bleh'),
                       ],
                     ),
                   ),
