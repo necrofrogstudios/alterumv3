@@ -6,12 +6,13 @@ class input_dropdown extends StatefulWidget {
 }
 
 class input_dropdownState extends State<input_dropdown> {
-  List<int> ages =[];
-  for (int i = 18; i < 10000; i++){}
+  List<int> ages = [];
+
   int _chosenValue;
 
   @override
   Widget build(BuildContext context) {
+    for (int i = 18; i < 10000; i++) {}
     var theme = Theme.of(context);
     return Center(
       child: Container(
