@@ -40,7 +40,7 @@ class input_header extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     for (int i = 0; i < header.length; i++) {
-      return Padding(
+      Padding(
         padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
         child: Text(
           header[i],
