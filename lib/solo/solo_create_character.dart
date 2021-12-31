@@ -127,20 +127,10 @@ class solo_create_characterState extends State<solo_create_character> {
                                       'Post',
                                       style: TextStyle(fontSize: 15, color: theme.primaryColor),
                                     ),
-                                    onPressed: () {
-                                      addComment(textController.text);
-                                    },
+                                    onPressed: () {},
                                   ),
                                 ),
                               ),
-                            ),
-                            ListView.builder(
-                              itemCount: commentList.length,
-                              itemBuilder: (context, index) {
-                                return comments(commentList[commentListIndexChecker(commentList, index)], removeComment);
-                              },
-                              shrinkWrap: true,
-                              physics: ClampingScrollPhysics(),
                             ),
                           ],
                         ),
