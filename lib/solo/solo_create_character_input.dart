@@ -5,12 +5,12 @@ class solo_create_character_input extends StatelessWidget {
     'Character Name',
     'Messages'
   ];
-  
+  List<Widget> tags = [];
   
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    for (int i = 0; i < items.length; i++) {
+    for (int i = 0; i < input_title.length; i++) {
       tags.add(Column(
       children: <Widget>[
         Padding(
