@@ -28,7 +28,7 @@ class input_dropdownState extends State<input_dropdown> {
               width: 4.0,
             ),
           ),
-          padding: const EdgeInsets.all(0.0),
+          padding: const EdgeInsets.all(10.0),
           child: DropdownButton<int>(
             value: _chosenValue,
             //elevation: 5,
@@ -48,7 +48,6 @@ class input_dropdownState extends State<input_dropdown> {
               textAlign: TextAlign.center,
               style: TextStyle(color: theme.primaryColor.withOpacity(0.45), fontSize: 15),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
             onChanged: (int value) {
               setState(() {
                 _chosenValue = value;
