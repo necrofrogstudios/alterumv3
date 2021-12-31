@@ -12,7 +12,9 @@ class input_dropdownState extends State<input_dropdown> {
 
   @override
   Widget build(BuildContext context) {
-    for (int i = 18; i < 10000; i++) {}
+    for (int i = 18; i < 10000; i++) {
+      ages.add(i);
+    }
     var theme = Theme.of(context);
     return Center(
       child: Container(
@@ -29,12 +31,7 @@ class input_dropdownState extends State<input_dropdown> {
           //elevation: 5,
           style: TextStyle(color: Colors.black),
 
-          items: <int>[
-            1,
-            2,
-            3,
-            3,
-          ].map<DropdownMenuItem<int>>((int value) {
+          items: ages.map<DropdownMenuItem<int>>((int value) {
             return DropdownMenuItem<int>(
               value: value,
               child: Text(value.toString()),
