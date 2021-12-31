@@ -34,7 +34,7 @@ class input_dropdownState extends State<input_dropdown> {
           ].map<DropdownMenuItem<int>>((int value) {
             return DropdownMenuItem<int>(
               value: value,
-              child: Text(value),
+              child: Text(value.toString()),
             );
           }).toList(),
           hint: Text(
