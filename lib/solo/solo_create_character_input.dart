@@ -26,6 +26,17 @@ class solo_create_character_input extends StatelessWidget {
             ),
           ),
           input_box(),
+          Padding(
+            padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                input_title[1],
+                textAlign: TextAlign.left,
+                style: TextStyle(fontSize: 15, color: theme.primaryColor),
+              ),
+            ),
+          ),
         ],
       ),
     );
