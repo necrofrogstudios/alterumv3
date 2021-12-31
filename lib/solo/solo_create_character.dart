@@ -76,22 +76,19 @@ class solo_create_characterState extends State<solo_create_character> {
               child: Column(
                 children: [
                   solo_navigation(),
-                  Container(
-                    height: 450,
-                    child: Stack(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
-                          child: Center(
-                            child: Text(
-                              'sorry, there are no more characters available at this time. come back later or try resetting your filters',
-                              style: TextStyle(color: theme.primaryColor, fontSize: 20),
-                              textAlign: TextAlign.center,
-                            ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
+                        child: Center(
+                          child: Text(
+                            'sorry, there are no more characters available at this time. come back later or try resetting your filters',
+                            style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                            textAlign: TextAlign.center,
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ],
               ),
