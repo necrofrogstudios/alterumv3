@@ -31,7 +31,7 @@ class solo_create_character_input extends StatelessWidget {
 }
 
 class input_header extends StatelessWidget {
-  final List<Widget> header = [
+  final List<String> header = [
     'Create Character',
     'Messages'
   ];
