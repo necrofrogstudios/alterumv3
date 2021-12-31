@@ -48,6 +48,7 @@ class input_dropdownState extends State<input_dropdown> {
               textAlign: TextAlign.center,
               style: TextStyle(color: theme.primaryColor.withOpacity(0.45), fontSize: 15),
             ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
             onChanged: (int value) {
               setState(() {
                 _chosenValue = value;
