@@ -38,12 +38,15 @@ class input_dropdownState extends State<input_dropdown> {
               style: TextStyle(color: Colors.black),
 
               items: ages.map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(
-                    value.toString(),
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                return Padding(
+                  padding: EdgeInsets.only(left: 20),
+                  child: DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(
+                      value.toString(),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    ),
                   ),
                 );
               }).toList(),
