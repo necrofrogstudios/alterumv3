@@ -35,6 +35,7 @@ class input_header extends StatelessWidget {
     'Create Character',
     'Messages'
   ];
+  List<Widget> header = [];
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
