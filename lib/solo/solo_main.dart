@@ -5,6 +5,7 @@ import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
+import 'package:testing/solo/solo_navigation.dart';
 
 class Content {
   final String text;
@@ -70,6 +71,7 @@ class solo_mainState extends State<solo_main> {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
+            solo_navigation(),
             Container(
               color: theme.backgroundColor,
               child: Column(
