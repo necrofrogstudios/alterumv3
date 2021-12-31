@@ -6,7 +6,7 @@ class input_dropdown extends StatefulWidget {
 }
 
 class input_dropdownState extends State<input_dropdown> {
-  String _chosenValue;
+  int _chosenValue;
 
   @override
   Widget build(BuildContext context) {
@@ -21,49 +21,18 @@ class input_dropdownState extends State<input_dropdown> {
           ),
         ),
         padding: const EdgeInsets.all(0.0),
-        child: DropdownButton<String>(
+        child: DropdownButton<int>(
           value: _chosenValue,
           //elevation: 5,
           style: TextStyle(color: Colors.black),
 
-          items: <String>[
-            'Android',
-            'IOS',
-            'Flutter',
-            'Node',
-            'Java',
-            'Python',
-            'PHP',
-            'Android',
-            'IOS',
-            'Flutter',
-            'Node',
-            'Java',
-            'Python',
-            'PHP',
-            'Android',
-            'IOS',
-            'Flutter',
-            'Node',
-            'Java',
-            'Python',
-            'PHP',
-            'Android',
-            'IOS',
-            'Flutter',
-            'Node',
-            'Java',
-            'Python',
-            'PHP',
-            'Android',
-            'IOS',
-            'Flutter',
-            'Node',
-            'Java',
-            'Python',
-            'PHP',
-          ].map<DropdownMenuItem<String>>((String value) {
-            return DropdownMenuItem<String>(
+          items: <int>[
+            1,
+            2,
+            3,
+            3,
+          ].map<DropdownMenuItem<int>>((int value) {
+            return DropdownMenuItem<int>(
               value: value,
               child: Text(value),
             );
@@ -72,7 +41,7 @@ class input_dropdownState extends State<input_dropdown> {
             "Select Age 18+",
             style: TextStyle(color: Colors.black, fontSize: 15),
           ),
-          onChanged: (String value) {
+          onChanged: (int value) {
             setState(() {
               _chosenValue = value;
             });
