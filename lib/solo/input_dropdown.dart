@@ -29,31 +29,33 @@ class input_dropdownState extends State<input_dropdown> {
             ),
           ),
           padding: const EdgeInsets.only(left: 10.0),
-          child: DropdownButton<int>(
-            value: _chosenValue,
-            //elevation: 5,
-            style: TextStyle(color: Colors.black),
+          child: DropdownButtonHideUnderline(
+            child: DropdownButton<int>(
+              value: _chosenValue,
+              //elevation: 5,
+              style: TextStyle(color: Colors.black),
 
-            items: ages.map<DropdownMenuItem<int>>((int value) {
-              return DropdownMenuItem<int>(
-                value: value,
-                child: Text(
-                  value.toString(),
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                ),
-              );
-            }).toList(),
-            hint: Text(
-              "Select Age 18+",
-              textAlign: TextAlign.center,
-              style: TextStyle(color: theme.primaryColor.withOpacity(0.45), fontSize: 15),
+              items: ages.map<DropdownMenuItem<int>>((int value) {
+                return DropdownMenuItem<int>(
+                  value: value,
+                  child: Text(
+                    value.toString(),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                  ),
+                );
+              }).toList(),
+              hint: Text(
+                "Select Age 18+",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: theme.primaryColor.withOpacity(0.45), fontSize: 15),
+              ),
+              onChanged: (int value) {
+                setState(() {
+                  _chosenValue = value;
+                });
+              },
             ),
-            onChanged: (int value) {
-              setState(() {
-                _chosenValue = value;
-              });
-            },
           ),
         ),
       ),
