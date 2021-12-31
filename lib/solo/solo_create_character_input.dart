@@ -19,7 +19,7 @@ class solo_create_character_input extends StatelessWidget {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  input_title[i],
+                  input_title[1],
                   textAlign: TextAlign.left,
                   style: TextStyle(fontSize: 15, color: theme.primaryColor),
                 ),
