@@ -6,6 +6,7 @@ import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/solo/solo_navigation.dart';
+import 'package:testing/solo/solo_create_character_input_box.dart';
 
 class solo_create_character extends StatefulWidget {
   solo_create_character({Key key, this.title}) : super(key: key);
@@ -59,29 +60,7 @@ class solo_create_characterState extends State<solo_create_character> {
                                 style: TextStyle(fontSize: 15, color: theme.primaryColor),
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                              child: TextFormField(
-                                style: TextStyle(color: theme.primaryColor),
-                                keyboardType: TextInputType.multiline,
-                                maxLines: null,
-                                decoration: InputDecoration(
-                                  focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                                    borderSide: BorderSide(color: theme.accentColor, width: 4.0),
-                                  ),
-                                  enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                                    borderSide: BorderSide(color: theme.accentColor, width: 4.0),
-                                  ),
-                                  hintText: 'Type a Message Here',
-                                  hintStyle: TextStyle(
-                                    color: theme.primaryColor.withOpacity(0.45),
-                                  ),
-                                  contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
-                                ),
-                              ),
-                            ),
+                            solo_create_character_input_box(),
                             Container(
                               child: Padding(
                                 padding: EdgeInsets.fromLTRB(0, 15, 20, 10),
