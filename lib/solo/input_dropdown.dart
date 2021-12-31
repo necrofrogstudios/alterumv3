@@ -69,7 +69,7 @@ class input_dropdownState extends State<input_dropdown> {
             );
           }).toList(),
           hint: Text(
-            "Please choose a langauage",
+            "Select Age 18+",
             style: TextStyle(color: Colors.black, fontSize: 15),
           ),
           onChanged: (String value) {
