@@ -33,13 +33,18 @@ class input_dropdownState extends State<input_dropdown> {
           style: TextStyle(color: Colors.black),
 
           items: ages.map<DropdownMenuItem<int>>((int value) {
-            return DropdownMenuItem<int>(textAlign: TextAlign.center,
+            return DropdownMenuItem<int>(
+              textAlign: TextAlign.center,
               value: value,
-              child: Text(value.toString(),textAlign: TextAlign.center,),
+              child: Text(
+                value.toString(),
+                textAlign: TextAlign.center,
+              ),
             );
           }).toList(),
-          hint: Text(textAlign: TextAlign.center,
+          hint: Text(
             "Select Age 18+",
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.black, fontSize: 15),
           ),
           onChanged: (int value) {
