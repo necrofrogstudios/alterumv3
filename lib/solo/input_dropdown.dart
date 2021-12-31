@@ -41,10 +41,13 @@ class input_dropdownState extends State<input_dropdown> {
                 return DropdownMenuItem<String>(
                   padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                   value: value,
-                  child: Text(
-                    value.toString(),
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                  child: Padding(
+                    padding: EdgeInsets.only(left: 20),
+                    child: Text(
+                      value.toString(),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    ),
                   ),
                 );
               }).toList(),
