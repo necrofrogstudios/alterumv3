@@ -48,6 +48,6 @@ class solo_create_character_input extends StatelessWidget {
           ),
         ),
       ],
-      ),),);
+      ),),);}
   }
 }
