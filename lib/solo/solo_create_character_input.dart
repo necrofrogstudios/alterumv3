@@ -14,6 +14,11 @@ class solo_create_character_input extends StatelessWidget {
       tags.add(
         Column(
           children: <Widget>[
+            Text(
+              input_title[0],
+              textAlign: TextAlign.left,
+              style: TextStyle(fontSize: 15, color: theme.primaryColor),
+            ),
             Padding(
               padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
               child: Align(
