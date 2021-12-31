@@ -30,7 +30,7 @@ class solo_create_character_input_box extends StatelessWidget {
   }
 }
 
-class solo_create_character_input_box extends StatelessWidget {
+class input_header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
