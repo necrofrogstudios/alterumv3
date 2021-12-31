@@ -48,8 +48,5 @@ class input_header extends StatelessWidget {
         ),
       );
     }
-    return Wrap(
-      children: header,
-    );
   }
 }
