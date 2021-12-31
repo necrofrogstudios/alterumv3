@@ -6,7 +6,7 @@ import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/solo/solo_navigation.dart';
-import 'package:testing/solo/solo_create_character_input_box.dart';
+import 'package:testing/solo/solo_create_character_input.dart';
 
 class solo_create_character extends StatefulWidget {
   solo_create_character({Key key, this.title}) : super(key: key);
@@ -54,7 +54,7 @@ class solo_create_characterState extends State<solo_create_character> {
                           padding: const EdgeInsets.all(0),
                           children: <Widget>[
                             input_header(),
-                            solo_create_character_input_box(),
+                            solo_create_character_input(),
                             Container(
                               child: Padding(
                                 padding: EdgeInsets.fromLTRB(0, 15, 20, 10),
