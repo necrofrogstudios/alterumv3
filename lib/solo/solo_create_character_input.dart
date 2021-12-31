@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testing/solo/input_dropdown.dart';
 
 class solo_create_character_input extends StatelessWidget {
   final List<String> input_title = [
@@ -37,6 +38,7 @@ class solo_create_character_input extends StatelessWidget {
               ),
             ),
           ),
+          input_dropdown(),
         ],
       ),
     );
