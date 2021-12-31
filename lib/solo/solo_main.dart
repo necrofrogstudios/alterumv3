@@ -261,7 +261,7 @@ class solo_mainState extends State<solo_main> {
         ),
       );
     }
-
+    _swipeItems.shuffle();
     _matchEngine = MatchEngine(swipeItems: _swipeItems);
     super.initState();
   }
