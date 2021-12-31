@@ -19,7 +19,7 @@ class solo_create_character_input_box extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
             borderSide: BorderSide(color: theme.accentColor, width: 4.0),
           ),
-          hintText: 'Type a Message Here',
+          hintText: 'Type Here',
           hintStyle: TextStyle(
             color: theme.primaryColor.withOpacity(0.45),
           ),
