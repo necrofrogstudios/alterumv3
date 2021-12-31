@@ -28,7 +28,10 @@ class input_dropdownState extends State<input_dropdown> {
               width: 4.0,
             ),
           ),
-          padding: const EdgeInsets.only(left: 10.0),
+          padding: const EdgeInsets.only(
+            left: 10.0,
+            right: 10,
+          ),
           child: DropdownButtonHideUnderline(
             child: DropdownButton<int>(
               value: _chosenValue,
