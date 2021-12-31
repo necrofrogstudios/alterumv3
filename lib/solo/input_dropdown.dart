@@ -36,7 +36,6 @@ class input_dropdownState extends State<input_dropdown> {
 
             items: ages.map<DropdownMenuItem<int>>((int value) {
               return DropdownMenuItem<int>(
-                canvasColor: green,
                 value: value,
                 child: Text(
                   value.toString(),
