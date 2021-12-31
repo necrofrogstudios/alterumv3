@@ -53,13 +53,7 @@ class solo_create_characterState extends State<solo_create_character> {
                           shrinkWrap: true,
                           padding: const EdgeInsets.all(0),
                           children: <Widget>[
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(20, 10, 10, 5),
-                              child: Text(
-                                'Character Name',
-                                style: TextStyle(fontSize: 15, color: theme.primaryColor),
-                              ),
-                            ),
+                            input_header(),
                             solo_create_character_input_box(),
                             Container(
                               child: Padding(
