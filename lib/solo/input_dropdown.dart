@@ -5,7 +5,7 @@ class input_dropdown extends StatefulWidget {
   input_dropdownState createState() => input_dropdownState();
 }
 
-class input_dropdown extends State<input_dropdown> {
+class input_dropdownState extends State<input_dropdown> {
   String _chosenValue;
 
   @override
