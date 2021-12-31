@@ -6,6 +6,8 @@ class input_dropdown extends StatefulWidget {
 }
 
 class input_dropdownState extends State<input_dropdown> {
+  List<int> ages =[];
+  for (int i = 18; i < 10000; i++){}
   int _chosenValue;
 
   @override
