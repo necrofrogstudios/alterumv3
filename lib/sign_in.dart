@@ -9,6 +9,7 @@ class sign_in extends StatelessWidget {
         color: theme.backgroundColor,
         height: 500,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               'Sign In',
