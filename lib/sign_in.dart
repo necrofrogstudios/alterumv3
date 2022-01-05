@@ -15,6 +15,7 @@ class sign_in extends StatelessWidget {
               'Sign In',
               style: TextStyle(color: theme.primaryColor, fontSize: 20),
             ),
+            Container(height: 100, color: theme.accentColor),
           ],
         ),
       ),
