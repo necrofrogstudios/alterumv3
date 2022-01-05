@@ -34,21 +34,7 @@ class MyApp extends StatelessWidget {
         theme: regularTheme,
         darkTheme: darkTheme,
         themeMode: themeMode,
-        home: RefreshConfiguration(
-          headerBuilder: () => WaterDropMaterialHeader(), // Configure the default header indicator. If you have the same header indicator for each page, you need to set this
-          footerBuilder: () => ClassicFooter(), // Configure default bottom indicator
-          headerTriggerDistance: 80.0, // header trigger refresh trigger distance
-          // custom spring back animate,the props meaning see the flutter api
-          maxOverScrollExtent: 200, //The maximum dragging range of the head. Set this property if a rush out of the view area occurs
-          maxUnderScrollExtent: 0, // Maximum dragging range at the bottom
-          enableScrollWhenRefreshCompleted: true, //This property is incompatible with PageView and TabBarView. If you need TabBarView to slide left and right, you need to set it to true.
-          enableLoadingWhenFailed: true, //In the case of load failure, users can still trigger more loads by gesture pull-up.
-          hideFooterWhenNotFull: false, // Disable pull-up to load more functionality when Viewport is less than one screen
-          enableBallisticLoad: true, // trigger load more by BallisticScrollActivity
-          child: MaterialApp(
-            home: new Splash(),
-          ),
-        ),
+        home: new Splash(),
       ),
     );
   }
