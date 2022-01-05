@@ -78,43 +78,39 @@ class main_pageState extends State<main_page> {
         controller: _refreshController,
         onRefresh: _onRefresh,
         onLoading: _onLoading,
-        child: ListView.builder(
-          itemBuilder: (c, i) => Column(
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.accentColor,
-                child: marquee(),
-              ),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.backgroundColor,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      items[0],
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
-          ),
-          itemExtent: 100.0,
-          itemCount: items.length,
+        child: ListView(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
+          children: <Widget>[
+            Container(color: theme.splashColor, height: 4),
+            profile_top_buttons(),
+            Container(color: theme.splashColor, height: 4),
+            Container(
+              color: theme.accentColor,
+              child: marquee(),
+            ),
+            Container(color: theme.splashColor, height: 4),
+            Container(
+              color: theme.backgroundColor,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    items[0],
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+            Container(color: theme.splashColor, height: 4),
+            footer(),
+          ],
         ),
       ),
     );
