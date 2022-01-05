@@ -13,9 +13,10 @@ class sign_in extends StatelessWidget {
           children: <Widget>[
             Text(
               'Sign In',
+              textAlign: TextAlign.center,
               style: TextStyle(color: theme.primaryColor, fontSize: 20),
             ),
-            Container(height: 100, color: theme.accentColor),
+            Container(height: 100, width: 100, color: theme.accentColor),
           ],
         ),
       ),
