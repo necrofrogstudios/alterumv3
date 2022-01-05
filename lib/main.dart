@@ -1,4 +1,4 @@
-Firebase-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_launcher_icons/android.dart';
 import 'package:flutter_launcher_icons/constants.dart';
 import 'package:flutter_launcher_icons/custom_exceptions.dart';
@@ -22,6 +22,7 @@ Future main() async {
   setupLocator();
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,8 +39,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
 
 final GetIt locator = GetIt.instance;
 
