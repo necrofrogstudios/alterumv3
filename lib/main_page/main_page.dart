@@ -56,7 +56,7 @@ class main_pageState extends State<main_page> {
       body: SmartRefresher(
         enablePullDown: true,
         enablePullUp: true,
-        header: WaterDropMaterialHeader(backgroundColor: theme.accentColor, color: theme.primaryColor),
+        header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
         footer: CustomFooter(
           builder: (BuildContext context, LoadStatus mode) {
             Widget body;

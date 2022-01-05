@@ -3,6 +3,7 @@ import 'package:testing/settings/settings.dart';
 import 'package:testing/profile/profile.dart';
 import 'package:testing/main_page/main_page.dart';
 import 'package:testing/characters/my_characters.dart';
+import 'package:testing/sign_out.dart';
 
 class drawer extends StatelessWidget {
   final back;
@@ -215,6 +216,37 @@ class drawer extends StatelessWidget {
                 children: [
                   Text(
                     'Settings',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            FlatButton(
+              color: theme.accentColor,
+              splashColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              height: 60.0,
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => sign_out()),
+                );
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Sign Out',
                     style: TextStyle(
                       fontSize: 20,
                       color: theme.primaryColor,
