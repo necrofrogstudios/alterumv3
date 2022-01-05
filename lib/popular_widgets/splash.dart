@@ -1,6 +1,6 @@
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:testing/solo/solo_create_character.dart';
+import 'package:testing/main_page/main_page.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -23,7 +23,7 @@ class _Splash extends State<Splash> {
             height: logicHeight,
             child: new SplashScreen(
                 seconds: 1,
-                navigateAfterSeconds: solo_create_character(),
+                navigateAfterSeconds: main_page(),
                 title: new Text(
                   'Alterum',
                   style: new TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Hind', fontSize: 85.0, color: Colors.white),
