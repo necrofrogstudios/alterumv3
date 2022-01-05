@@ -18,6 +18,24 @@ class main_page extends StatefulWidget {
 
 class main_pageState extends State<main_page> {
   final currentScreen = main_page;
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
+
+  void _onRefresh() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use refreshFailed()
+    _refreshController.refreshCompleted();
+  }
+
+  void _onLoading() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use loadFailed(),if no data return,use LoadNodata()
+    items.add((items.length + 1).toString());
+    if (mounted) setState(() {});
+    _refreshController.loadComplete();
+  }
+
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -29,41 +47,67 @@ class main_pageState extends State<main_page> {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: Container(
-        width: double.infinity,
-        child: ListView(
-          scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(0),
-          children: <Widget>[
-            Container(color: theme.splashColor, height: 4),
-            profile_top_buttons(),
-            Container(color: theme.splashColor, height: 4),
-            Container(
-              color: theme.accentColor,
-              child: marquee(),
-            ),
-            Container(color: theme.splashColor, height: 4),
-            Container(
-              color: theme.backgroundColor,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Popular',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
+      body: SmartRefresher(
+        enablePullDown: true,
+        enablePullUp: true,
+        header: WaterDropMaterialHeader(color: Colors.green),
+        footer: CustomFooter(
+          builder: (BuildContext context, LoadStatus mode) {
+            Widget body;
+            if (mode == LoadStatus.idle) {
+              body = Text("pull up load");
+            } else if (mode == LoadStatus.failed) {
+              body = Text("Load Failed!Click retry!");
+            } else if (mode == LoadStatus.canLoading) {
+              body = Text("release to load more");
+            } else {
+              body = Text("No more Data");
+            }
+            return Container(
+              height: 55.0,
+              child: Center(child: body),
+            );
+          },
+        ),
+        controller: _refreshController,
+        onRefresh: _onRefresh,
+        onLoading: _onLoading,
+        child: Container(
+          width: double.infinity,
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            padding: const EdgeInsets.all(0),
+            children: <Widget>[
+              Container(color: theme.splashColor, height: 4),
+              profile_top_buttons(),
+              Container(color: theme.splashColor, height: 4),
+              Container(
+                color: theme.accentColor,
+                child: marquee(),
               ),
-            ),
-            Container(color: theme.backgroundColor, child: roleplay_list_layout()),
-            Container(color: theme.splashColor, height: 4),
-            footer(),
-          ],
+              Container(color: theme.splashColor, height: 4),
+              Container(
+                color: theme.backgroundColor,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Popular',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+              Container(color: theme.splashColor, height: 4),
+              footer(),
+            ],
+          ),
         ),
       ),
     );
