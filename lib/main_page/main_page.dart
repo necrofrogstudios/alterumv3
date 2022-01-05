@@ -54,7 +54,7 @@ class main_pageState extends State<main_page> {
       ),
       drawer: drawer(currentScreen),
       body: SmartRefresher(
-        backgroundColor: theme.accentColor,
+        color: theme.accentColor,
         enablePullDown: true,
         enablePullUp: true,
         header: WaterDropMaterialHeader(color: Colors.green),
