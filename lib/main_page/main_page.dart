@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
@@ -32,7 +31,7 @@ class main_pageState extends State<main_page> {
     // monitor network fetch
     await Future.delayed(Duration(milliseconds: 1000));
     // if failed,use loadFailed(),if no data return,use LoadNodata()
-
+    items.add((items.length + 1).toString());
     if (mounted) setState(() {});
     _refreshController.loadComplete();
   }
@@ -73,41 +72,46 @@ class main_pageState extends State<main_page> {
         controller: _refreshController,
         onRefresh: _onRefresh,
         onLoading: _onLoading,
-        child: Container(
-          width: double.infinity,
-          child: ListView(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(0),
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.accentColor,
-                child: marquee(),
-              ),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.backgroundColor,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Popular',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
-                      ),
-                    ),
-                  ],
+        child: ListView.builder(
+          itemBuilder: (c, i) => Card(),
+          itemExtent: 100.0,
+          itemCount: items.length,
+          child: Container(
+            width: double.infinity,
+            child: ListView(
+              scrollDirection: Axis.vertical,
+              shrinkWrap: true,
+              padding: const EdgeInsets.all(0),
+              children: <Widget>[
+                Container(color: theme.splashColor, height: 4),
+                profile_top_buttons(),
+                Container(color: theme.splashColor, height: 4),
+                Container(
+                  color: theme.accentColor,
+                  child: marquee(),
                 ),
-              ),
-              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
+                Container(color: theme.splashColor, height: 4),
+                Container(
+                  color: theme.backgroundColor,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Popular',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: theme.primaryColor,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+                Container(color: theme.splashColor, height: 4),
+                footer(),
+              ],
+            ),
           ),
         ),
       ),
