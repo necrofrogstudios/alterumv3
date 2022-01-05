@@ -11,7 +11,12 @@ import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/main_page/marquee.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
-class main_page extends StatelessWidget {
+class main_page extends StatefulWidget {
+  @override
+  main_pageState createState() => main_pageState();
+}
+
+class main_pageState extends State<main_page> {
   final currentScreen = main_page;
   @override
   Widget build(BuildContext context) {
