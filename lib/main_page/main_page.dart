@@ -35,6 +35,7 @@ class main_pageState extends State<main_page> {
     if (mounted) setState(() {});
     _refreshController.loadComplete();
   }
+
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -49,7 +50,7 @@ class main_pageState extends State<main_page> {
       body: SmartRefresher(
         enablePullDown: true,
         enablePullUp: true,
-        header: WaterDropMaterialHeader(color:Colors.green),
+        header: WaterDropMaterialHeader(color: Colors.green),
         footer: CustomFooter(
           builder: (BuildContext context, LoadStatus mode) {
             Widget body;
@@ -73,45 +74,44 @@ class main_pageState extends State<main_page> {
         onLoading: _onLoading,
         child: ListView.builder(
           itemBuilder: (c, i) => ListView(
-          scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(0),
-          children: <Widget>[
-            Container(color: theme.splashColor, height: 4),
-            profile_top_buttons(),
-            Container(color: theme.splashColor, height: 4),
-            Container(
-              color: theme.accentColor,
-              child: marquee(),
-            ),
-            Container(color: theme.splashColor, height: 4),
-            Container(
-              color: theme.backgroundColor,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Popular',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            padding: const EdgeInsets.all(0),
+            children: <Widget>[
+              Container(color: theme.splashColor, height: 4),
+              profile_top_buttons(),
+              Container(color: theme.splashColor, height: 4),
+              Container(
+                color: theme.accentColor,
+                child: marquee(),
               ),
-            ),
-            Container(color: theme.backgroundColor, child: roleplay_list_layout()),
-            Container(color: theme.splashColor, height: 4),
-            footer(),
-          ],
-        ),,
+              Container(color: theme.splashColor, height: 4),
+              Container(
+                color: theme.backgroundColor,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Popular',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+              Container(color: theme.splashColor, height: 4),
+              footer(),
+            ],
+          ),
           itemExtent: 100.0,
           itemCount: items.length,
-          child:Container(
-        width: double.infinity,
-        
-      ),
+          child: Container(
+            width: double.infinity,
+          ),
         ),
       ),
     );
