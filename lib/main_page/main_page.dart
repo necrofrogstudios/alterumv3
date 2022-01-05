@@ -22,6 +22,10 @@ class main_pageState extends State<main_page> {
   final currentScreen = main_page;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
+  List<String> items = [
+    "Popular",
+  ];
+
   void _onRefresh() async {
     // monitor network fetch
     await Future.delayed(Duration(milliseconds: 1000));
