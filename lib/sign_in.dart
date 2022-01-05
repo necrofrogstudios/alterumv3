@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/testing/profile/profile.dart';
+import 'package:testing/profile/profile.dart';
 
 class sign_in extends StatelessWidget {
   @override
