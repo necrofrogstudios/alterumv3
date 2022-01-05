@@ -18,7 +18,7 @@ class main_page extends StatefulWidget {
 
 class main_pageState extends State<main_page> {
   final currentScreen = main_page;
-  RefreshController _refreshController = RefreshController(initialRefresh: true);
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
 
   void _onRefresh() async {
     // monitor network fetch
@@ -72,46 +72,39 @@ class main_pageState extends State<main_page> {
         controller: _refreshController,
         onRefresh: _onRefresh,
         onLoading: _onLoading,
-        child: ListView.builder(
-          itemBuilder: (c, i) => ListView(
-            scrollDirection: Axis.vertical,
-            shrinkWrap: true,
-            padding: const EdgeInsets.all(0),
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.accentColor,
-                child: marquee(),
-              ),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.backgroundColor,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Popular',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
-                      ),
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
+            Container(color: theme.splashColor, height: 4),
+            profile_top_buttons(),
+            Container(color: theme.splashColor, height: 4),
+            Container(
+              color: theme.accentColor,
+              child: marquee(),
+            ),
+            Container(color: theme.splashColor, height: 4),
+            Container(
+              color: theme.backgroundColor,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Popular',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: theme.primaryColor,
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              Container(color: theme.backgroundColor, child: roleplay_list_layout()),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
-          ),
-          itemExtent: 100.0,
-          itemCount: items.length,
-          child: Container(
-            width: double.infinity,
-          ),
+            ),
+            Container(color: theme.backgroundColor, child: roleplay_list_layout()),
+            Container(color: theme.splashColor, height: 4),
+            footer(),
+          ],
         ),
       ),
     );
