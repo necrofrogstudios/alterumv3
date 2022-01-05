@@ -18,7 +18,7 @@ class main_page extends StatefulWidget {
 
 class main_pageState extends State<main_page> {
   final currentScreen = main_page;
-  RefreshController _refreshController = RefreshController(initialRefresh: false);
+  RefreshController _refreshController = RefreshController(initialRefresh: true);
 
   void _onRefresh() async {
     // monitor network fetch
