@@ -93,7 +93,7 @@ class main_pageState extends State<main_page> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Popular',
+                    items[0],
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 25,
