@@ -3,7 +3,7 @@ import 'package:testing/settings/settings.dart';
 import 'package:testing/profile/profile.dart';
 import 'package:testing/main_page/main_page.dart';
 import 'package:testing/characters/my_characters.dart';
-import 'package:testing/sign_out.dart';
+import 'package:testing/sign_in.dart';
 
 class drawer extends StatelessWidget {
   final back;
@@ -239,7 +239,7 @@ class drawer extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => sign_out()),
+                  MaterialPageRoute(builder: (context) => sign_in()),
                 );
               },
               child: Row(
