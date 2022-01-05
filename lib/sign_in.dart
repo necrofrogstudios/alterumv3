@@ -10,8 +10,8 @@ class sign_in extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Text(
-            'blah',
-            style: TextStyle(color: theme.primaryColor),
+            'Sign In',
+            style: TextStyle(color: theme.primaryColor, fontSize: 20),
           ),
         ],
       ),
