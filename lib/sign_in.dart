@@ -82,6 +82,11 @@ class sign_inState extends State<sign_in> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.red[500],
+                        ),
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
                     height: 100,
                     width: 100,
                     child: SignInButton(
