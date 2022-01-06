@@ -171,7 +171,7 @@ class sign_up_button extends StatelessWidget {
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
           backgroundColor: theme.backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
