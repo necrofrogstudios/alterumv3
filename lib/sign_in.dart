@@ -79,9 +79,11 @@ class sign_inState extends State<sign_in> {
                 ],
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
+                    height: 40,
+                    width: 40,
                     decoration: BoxDecoration(shape: BoxShape.circle),
                     child: Image.network("https://freepngimg.com/save/62487-bluetie-icons-computer-facebook-login-icon-email/1024x1024"),
                   ),
