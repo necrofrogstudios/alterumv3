@@ -55,13 +55,7 @@ class sign_inState extends State<sign_in> {
                       activeColor: Colors.deepOrange,
                       // Color of your check mark
                       checkColor: Colors.black,
-                      
-                          // diplay checkbox with circle shape
-                          ? CircleBorder()
-                          // or make the border slightly rounded
-                          : RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5),
-                            ),
+
                       side: BorderSide(
                         // ======> CHANGE THE BORDER COLOR HERE <======
                         color: Colors.grey,
