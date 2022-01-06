@@ -9,6 +9,7 @@ class sign_in extends StatefulWidget {
 class sign_inState extends State<sign_in> {
   @override
   Widget build(BuildContext context) {
+    bool value = false;
     var theme = Theme.of(context);
     return Scaffold(
       body: Container(
