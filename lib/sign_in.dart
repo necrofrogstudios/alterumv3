@@ -37,7 +37,11 @@ class sign_in extends StatelessWidget {
               ),
               input_username(),
               input_password(),
-              Text('Remember Me'),
+              Row(
+                children: [
+                  Text('Remember Me'),
+                ],
+              ),
               Row(
                 children: [
                   sign_in_button(),
