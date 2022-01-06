@@ -77,6 +77,7 @@ class input_username extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
+      decoration(BoxDecoration: borderRadius: BorderRadius.all(Radius.circular(50.0)),),
       color: Colors.white,
       child: Padding(
         padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
