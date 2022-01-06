@@ -37,6 +37,11 @@ class sign_in extends StatelessWidget {
               ),
               input_username(),
               input_password(),
+              Row(
+                children: [
+                  Text('test'),
+                ],
+              ),
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
                   side: BorderSide(width: 4.0, color: theme.accentColor),
