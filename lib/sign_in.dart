@@ -87,7 +87,6 @@ class input_username extends StatelessWidget {
           style: BorderStyle.solid,
         ),
       ),
-      color: Colors.white,
       child: Padding(
         padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
         child: TextFormField(
