@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:testing/profile/profile.dart';
 
-class sign_in extends StatelessWidget {
+class sign_in extends StatefulWidget {
+  @override
+  sign_inState createState() => sign_inState();
+}
+
+class sign_inState extends State<sign_in> {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
