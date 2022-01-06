@@ -82,9 +82,10 @@ class sign_inState extends State<sign_in> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ClipRect(
+                    borderRadius: BorderRadius.circular(8.0),
                     child: Align(
                       alignment: Alignment.topCenter,
-                      heightFactor: 0.5,
+                      heightFactor: 1,
                       child: SignInButton(
                         Buttons.Facebook,
                         mini: true,
