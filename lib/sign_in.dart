@@ -39,7 +39,10 @@ class sign_in extends StatelessWidget {
               input_password(),
               Row(
                 children: [
-                  Text('Remember Me'),
+                  Text(
+                    'Remember Me',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ],
               ),
               Row(
