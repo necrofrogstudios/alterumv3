@@ -173,7 +173,10 @@ class input_password extends StatelessWidget {
           ),
         ),
         child: TextFormField(
-          obscureText: true,
+          keyboardType: TextInputType.text,
+   controller: _userPasswordController,
+   obscureText: !_passwordVisible,
+          
           style: TextStyle(color: Colors.black),
           keyboardType: TextInputType.multiline,
           maxLines: 1,
@@ -190,14 +193,19 @@ class input_password extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
-            suffixIcon: Padding(
-              padding: EdgeInsets.only(right: 10),
-              child: IconButton(
-                ? Icons.visibility
+            suffixIcon: IconButton(
+            icon: Icon(
+              // Based on passwordVisible state choose the icon
+               _passwordVisible
+               ? Icons.visibility
                : Icons.visibility_off,
                color: Theme.of(context).primaryColorDark,
-              ),
-            ),
+               ),
+            onPressed: () {
+               // Update the state i.e. toogle the state of passwordVisible variable
+               setState(() {
+                   _passwordVisible = !_passwordVisible;
+               });
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
           ),
         ),
