@@ -166,7 +166,7 @@ class sign_up_button extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+      padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: Colors.yellow),
@@ -197,12 +197,12 @@ class sign_in_button extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+      padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
           backgroundColor: theme.backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
