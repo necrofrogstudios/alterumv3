@@ -106,7 +106,7 @@ class sign_inState extends State<sign_in> {
                       shape: BoxShape.circle,
                       border: Border.all(color: Colors.yellow, width: 4),
                     ),
-                    child: Image.network("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1724px-Apple_logo_grey.svg.png"),
+                    child: Image.network("https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"),
                   ),
                 ],
               ),
