@@ -7,6 +7,7 @@ class sign_in extends StatelessWidget {
     var theme = Theme.of(context);
     return Scaffold(
       body: SingleChildScrollView(
+        shrinkWrap: true,
         child: Container(
           height: 500,
           width: double.infinity,
