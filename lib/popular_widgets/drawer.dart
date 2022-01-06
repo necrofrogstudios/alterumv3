@@ -50,6 +50,8 @@ class drawer extends StatelessWidget {
             ),
             Container(color: theme.splashColor, height: 4),
             Container(
+              height: 200,
+              width: 200,
               color: theme.backgroundColor,
               child: Padding(
                 padding: EdgeInsets.only(top: 10),
