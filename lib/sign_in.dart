@@ -173,6 +173,7 @@ class input_password extends StatelessWidget {
           ),
         ),
         child: TextFormField(
+          obscureText: true,
           style: TextStyle(color: Colors.black),
           keyboardType: TextInputType.multiline,
           maxLines: null,
