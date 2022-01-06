@@ -50,7 +50,7 @@ class sign_inState extends State<sign_in> {
                   children: [
                     Checkbox(
                       value: false,
-                      onChanged: (_) {},
+                      onChanged: () {},
                       // Background color of your checkbox if selected
                       activeColor: Colors.deepOrange,
                       // Color of your check mark
@@ -64,7 +64,7 @@ class sign_inState extends State<sign_in> {
                       ),
                     ),
                     Text(
-                      'Remembers Me',
+                      'Remember Me',
                       textAlign: TextAlign.end,
                       style: TextStyle(color: Colors.white),
                     ),
