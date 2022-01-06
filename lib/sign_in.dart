@@ -123,7 +123,7 @@ class input_password extends StatelessWidget {
           ),
           hintText: 'Password',
           hintStyle: TextStyle(
-            color: theme.primaryColor.withOpacity(0.45),
+            color: theme.primaryColor.withOpacity(0.75),
           ),
           contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
         ),
