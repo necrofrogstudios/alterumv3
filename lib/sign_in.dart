@@ -77,32 +77,34 @@ class input_username extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
-          topRight: Radius.circular(40),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+            topRight: Radius.circular(40),
+          ),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: theme.primaryColor),
+          keyboardType: TextInputType.multiline,
+          maxLines: null,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            hintText: 'Username',
+            hintStyle: TextStyle(
+              color: theme.primaryColor.withOpacity(0.75),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+          ),
         ),
       ),
-      child: TextFormField(
-        style: TextStyle(color: theme.primaryColor),
-        keyboardType: TextInputType.multiline,
-        maxLines: null,
-        decoration: InputDecoration(
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(50.0)),
-            borderSide: BorderSide(color: Colors.yellow, width: 4.0),
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(50.0)),
-            borderSide: BorderSide(color: Colors.yellow, width: 4.0),
-          ),
-          hintText: 'Username',
-          hintStyle: TextStyle(
-            color: theme.primaryColor.withOpacity(0.75),
-          ),
-          contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
-        ),
-      ),),
     );
   }
 }
