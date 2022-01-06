@@ -193,7 +193,9 @@ class input_password extends StatelessWidget {
             suffixIcon: Padding(
               padding: EdgeInsets.only(right: 10),
               child: IconButton(
-                icon: Icon(Icons.visibility),
+                Icons.visibility
+               : Icons.visibility_off,
+               color: Theme.of(context).primaryColorDark,
               ),
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
