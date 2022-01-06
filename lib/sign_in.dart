@@ -79,7 +79,7 @@ class input_username extends StatelessWidget {
     return Container(
       color: Colors.white,
       child: Padding(
-        padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+        padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
         child: TextFormField(
           style: TextStyle(color: theme.primaryColor),
           keyboardType: TextInputType.multiline,
