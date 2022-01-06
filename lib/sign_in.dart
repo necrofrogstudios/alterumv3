@@ -6,18 +6,18 @@ class sign_in extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsets.only(top: 40),
-        child: Container(
-          height: 500,
-          width: double.infinity,
-          constraints: BoxConstraints.expand(),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage("https://wallpaperaccess.com/full/1465993.jpg"),
-              fit: BoxFit.cover,
-            ),
+      body: Container(
+        height: 500,
+        width: double.infinity,
+        constraints: BoxConstraints.expand(),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage("https://wallpaperaccess.com/full/1465993.jpg"),
+            fit: BoxFit.cover,
           ),
+        ),
+        child: Padding(
+          padding: EdgeInsets.only(top: 40),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
