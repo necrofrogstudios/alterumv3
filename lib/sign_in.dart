@@ -6,6 +6,7 @@ class sign_in extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Scaffold(
+      appBar: AppBar(title: "yep")
       body: Container(
         color: theme.backgroundColor,
         height: 500,
