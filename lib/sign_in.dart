@@ -183,7 +183,6 @@ class input_passwordState extends State<input_password> {
           controller: _userPasswordController,
           obscureText: !_passwordVisible,
           style: TextStyle(color: Colors.black),
-          keyboardType: TextInputType.multiline,
           maxLines: 1,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
