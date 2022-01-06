@@ -46,7 +46,6 @@ class sign_upState extends State<sign_up> {
               input_username(),
               input_email(),
               input_password(),
-              verify_password(),
               Padding(
                 padding: EdgeInsets.fromLTRB(10, 5, 20, 10),
                 child: Row(
