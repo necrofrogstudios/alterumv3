@@ -90,6 +90,15 @@ class sign_inState extends State<sign_in> {
                     ),
                     child: Image.network("https://freepngimg.com/save/62487-bluetie-icons-computer-facebook-login-icon-email/1024x1024"),
                   ),
+                  Container(
+                    height: 55,
+                    width: 55,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.yellow, width: 4),
+                    ),
+                    child: Image.network("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png"),
+                  ),
                 ],
               ),
             ],
