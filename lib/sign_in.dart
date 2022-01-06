@@ -173,7 +173,7 @@ class sign_in_button extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
-          side: BorderSide(width: 4.0, color: theme.accentColor),
+          side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
           backgroundColor: theme.backgroundColor,
