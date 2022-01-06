@@ -30,7 +30,7 @@ class sign_in extends StatelessWidget {
               ),
               Container(
                 height: 200,
-                child: Image.network("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
+                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
               Container(
                 child: Text(
