@@ -14,7 +14,6 @@ class sign_in extends StatelessWidget {
         ),
       ),
       body: Container(
-        color: theme.backgroundColor,
         height: 500,
         width: double.infinity,
         constraints: BoxConstraints.expand(),
