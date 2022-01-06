@@ -20,6 +20,15 @@ class sign_in extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: Image.network("https://wallpaperaccess.com/full/1465993.jpg"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: null /* add child content here */,
+            ),
             Text(
               'Sign In',
               textAlign: TextAlign.center,
