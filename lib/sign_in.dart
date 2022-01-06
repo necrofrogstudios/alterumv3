@@ -176,7 +176,7 @@ class input_password extends StatelessWidget {
           obscureText: true,
           style: TextStyle(color: Colors.black),
           keyboardType: TextInputType.multiline,
-          maxLines: null,
+          maxLines: 1,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
