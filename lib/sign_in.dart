@@ -51,6 +51,7 @@ class sign_in extends StatelessWidget {
                 ),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   sign_in_button(),
                 ],
