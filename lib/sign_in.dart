@@ -76,7 +76,8 @@ class input_username extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Container(
+    return Padding(
+        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(40),
@@ -101,7 +102,7 @@ class input_username extends StatelessWidget {
           ),
           contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
         ),
-      ),
+      ),),
     );
   }
 }
