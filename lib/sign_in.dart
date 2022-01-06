@@ -130,26 +130,29 @@ class sign_in_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return OutlinedButton(
-      style: OutlinedButton.styleFrom(
-        side: BorderSide(width: 4.0, color: theme.accentColor),
-        elevation: 6,
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
-        backgroundColor: theme.backgroundColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(50),
+    return Padding(
+      padding: EdgeInsets.from(10, 10, 10, 0),
+      child: OutlinedButton(
+        style: OutlinedButton.styleFrom(
+          side: BorderSide(width: 4.0, color: theme.accentColor),
+          elevation: 6,
+          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+          backgroundColor: theme.backgroundColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
         ),
+        child: Text(
+          'Sign In',
+          style: TextStyle(fontSize: 15, color: theme.primaryColor),
+        ),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => profile()),
+          );
+        },
       ),
-      child: Text(
-        'Sign In',
-        style: TextStyle(fontSize: 15, color: theme.primaryColor),
-      ),
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => profile()),
-        );
-      },
     );
   }
 }
