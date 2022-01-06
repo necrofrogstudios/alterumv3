@@ -12,7 +12,7 @@ class sign_in extends StatelessWidget {
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage("https://wallpaperaccess.com/full/1465993.jpg"),
+            image: NetworkImage("https://wallpaperbat.com/img/424579-phone-wallpaper-technology-wallpaper-tron-legacy-cellphone.jpg"),
             fit: BoxFit.cover,
           ),
         ),
