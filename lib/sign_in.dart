@@ -203,7 +203,7 @@ class input_passwordState extends State<input_password> {
               child: IconButton(
                 icon: Icon(
                   _passwordVisible ? Icons.visibility : Icons.visibility_off,
-                  color: Colors.black,
+                  color: Colors.grey,
                 ),
                 onPressed: () {
                   setState(() {
