@@ -81,11 +81,12 @@ class sign_inState extends State<sign_in> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Container:( height:100, width:100, child:
                   SignInButton(
                     Buttons.Facebook,
                     mini: true,
                     onPressed: () {},
-                  ),
+                  ),),
                 ],
               ),
             ],
