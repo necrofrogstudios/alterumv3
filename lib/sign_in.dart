@@ -37,6 +37,24 @@ class sign_in extends StatelessWidget {
               ),
               input_username(),
               input_password(),
+              OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  side: BorderSide(width: 4.0, color: theme.accentColor),
+                  elevation: 6,
+                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+                  backgroundColor: theme.backgroundColor,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                ),
+                child: Text(
+                  'Post',
+                  style: TextStyle(fontSize: 15, color: theme.primaryColor),
+                ),
+                onPressed: () {
+                  addComment(textController.text);
+                },
+              ),
               OutlineButton(
                 color: Colors.yellow,
                 splashColor: Colors.transparent,
