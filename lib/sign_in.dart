@@ -25,7 +25,10 @@ class sign_in extends StatelessWidget {
                 child: Text(
                   'Alterum',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 40,
+                  ),
                 ),
               ),
               Container(
