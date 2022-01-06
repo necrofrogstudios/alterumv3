@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/profile/profile.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class sign_in extends StatefulWidget {
   @override
@@ -75,6 +76,18 @@ class sign_inState extends State<sign_in> {
                 children: [
                   sign_up_button(),
                   sign_in_button(),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SignInButton(
+                    Buttons.Facebook,
+                    mini: true,
+                    onPressed: () {
+                      _showButtonPressDialog(context, 'Facebook (mini)');
+                    },
+                  ),
                 ],
               ),
             ],
