@@ -9,7 +9,7 @@ class sign_in extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: theme.backgroundColor,
         title: Container(
-          height: 50,
+          height: 40,
           color: theme.backgroundColor,
         ),
       ),
