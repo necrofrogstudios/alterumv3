@@ -200,12 +200,10 @@ class input_passwordState extends State<input_password> {
             ),
             suffixIcon: IconButton(
               icon: Icon(
-                // Based on passwordVisible state choose the icon
                 _passwordVisible ? Icons.visibility : Icons.visibility_off,
-                color: Theme.of(context).primaryColorDark,
+                color: Colors.black,
               ),
               onPressed: () {
-                // Update the state i.e. toogle the state of passwordVisible variable
                 setState(() {
                   _passwordVisible = !_passwordVisible;
                 });
