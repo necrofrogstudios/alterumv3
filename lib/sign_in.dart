@@ -49,8 +49,12 @@ class sign_inState extends State<sign_in> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Checkbox(
-                      value: false,
-                      onChanged: () {},
+                      value: this.value,
+                      onChanged: (bool value) {
+                        setState(() {
+                          this.value = value;
+                        });
+                      },
                       // Background color of your checkbox if selected
                       activeColor: Colors.deepOrange,
                       // Color of your check mark
