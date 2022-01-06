@@ -84,9 +84,7 @@ class sign_inState extends State<sign_in> {
                   SignInButton(
                     Buttons.Facebook,
                     mini: true,
-                    onPressed: () {
-                      _showButtonPressDialog(context, 'Facebook (mini)');
-                    },
+                    onPressed: () {},
                   ),
                 ],
               ),
