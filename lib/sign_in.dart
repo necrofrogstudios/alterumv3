@@ -81,11 +81,6 @@ class input_username extends StatelessWidget {
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(40),
         ),
-        border: Border.all(
-          width: 3,
-          color: Colors.green,
-          style: BorderStyle.solid,
-        ),
       ),
       child: Padding(
         padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
