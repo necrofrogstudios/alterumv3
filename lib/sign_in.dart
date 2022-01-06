@@ -39,6 +39,8 @@ class sign_in extends StatelessWidget {
                   style: TextStyle(color: theme.primaryColor, fontSize: 20),
                 ),
               ),
+              input_username(),
+              input_password(),
               OutlineButton(
                 color: theme.accentColor,
                 splashColor: Colors.transparent,
@@ -71,6 +73,66 @@ class sign_in extends StatelessWidget {
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class input_username extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+      child: TextFormField(
+        style: TextStyle(color: theme.primaryColor),
+        keyboardType: TextInputType.multiline,
+        maxLines: null,
+        decoration: InputDecoration(
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(50.0)),
+            borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(50.0)),
+            borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+          ),
+          hintText: 'Type Here',
+          hintStyle: TextStyle(
+            color: theme.primaryColor.withOpacity(0.45),
+          ),
+          contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+        ),
+      ),
+    );
+  }
+}
+
+class input_password extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+      child: TextFormField(
+        style: TextStyle(color: theme.primaryColor),
+        keyboardType: TextInputType.multiline,
+        maxLines: null,
+        decoration: InputDecoration(
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(50.0)),
+            borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(50.0)),
+            borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+          ),
+          hintText: 'Type Here',
+          hintStyle: TextStyle(
+            color: theme.primaryColor.withOpacity(0.45),
+          ),
+          contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
         ),
       ),
     );
