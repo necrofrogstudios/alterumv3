@@ -91,6 +91,10 @@ class sign_inState extends State<sign_in> {
                     width: 100,
                     child: SignInButton(
                       Buttons.Facebook,
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                        borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+                      ),
                       mini: true,
                       onPressed: () {},
                     ),
