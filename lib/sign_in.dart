@@ -160,7 +160,6 @@ class input_username extends StatelessWidget {
 }
 
 class input_password extends StatelessWidget {
-  var _passwordVisible = false;
   @override
   Widget build(BuildContext context) {
     _passwordVisible = false;
