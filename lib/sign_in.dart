@@ -48,7 +48,7 @@ class sign_in extends StatelessWidget {
                   ),
                 ),
                 child: Text(
-                  'Post',
+                  'Sign In',
                   style: TextStyle(fontSize: 15, color: theme.primaryColor),
                 ),
                 onPressed: () {},
