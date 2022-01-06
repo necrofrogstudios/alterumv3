@@ -89,7 +89,14 @@ class sign_inState extends State<sign_in> {
                         borderRadius: BorderRadius.all(Radius.circular(100))),
                     height: 100,
                     width: 100,
-                    child: SignInButton(
+                    child: SignInButton(style: ButtonStyle(
+  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+    RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(18.0),
+      side: BorderSide(color: Colors.red)
+    )
+  )
+)
                       Buttons.Facebook,
                       mini: true,
                       onPressed: () {},
