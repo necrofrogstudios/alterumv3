@@ -23,7 +23,6 @@ class sign_in extends StatelessWidget {
               color: theme.accentColor,
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent,
-              height: 60.0,
               onPressed: () {
                 Navigator.push(
                   context,
