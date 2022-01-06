@@ -84,7 +84,10 @@ class sign_inState extends State<sign_in> {
                   Container(
                     height: 50,
                     width: 50,
-                    decoration: BoxDecoration(shape: BoxShape.circle),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.blueAccent),
+                    ),
                     child: Image.network("https://freepngimg.com/save/62487-bluetie-icons-computer-facebook-login-icon-email/1024x1024"),
                   ),
                 ],
