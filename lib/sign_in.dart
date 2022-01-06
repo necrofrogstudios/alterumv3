@@ -131,7 +131,7 @@ class sign_in_button extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.from(10, 10, 10, 0),
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: theme.accentColor),
