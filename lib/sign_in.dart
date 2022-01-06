@@ -205,7 +205,7 @@ class input_password extends StatelessWidget {
                // Update the state i.e. toogle the state of passwordVisible variable
                setState(() {
                    _passwordVisible = !_passwordVisible;
-               });
+               }),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
           ),
         ),
