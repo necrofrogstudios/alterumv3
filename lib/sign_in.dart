@@ -198,16 +198,19 @@ class input_passwordState extends State<input_password> {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
-            suffixIcon: IconButton(
-              icon: Icon(
-                _passwordVisible ? Icons.visibility : Icons.visibility_off,
-                color: Colors.black,
+            suffixIcon: Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+              child: IconButton(
+                icon: Icon(
+                  _passwordVisible ? Icons.visibility : Icons.visibility_off,
+                  color: Colors.black,
+                ),
+                onPressed: () {
+                  setState(() {
+                    _passwordVisible = !_passwordVisible;
+                  });
+                },
               ),
-              onPressed: () {
-                setState(() {
-                  _passwordVisible = !_passwordVisible;
-                });
-              },
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
           ),
