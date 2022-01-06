@@ -27,7 +27,7 @@ class sign_in extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 40,
+                    fontSize: 50,
                   ),
                 ),
               ),
