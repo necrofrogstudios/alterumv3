@@ -25,7 +25,7 @@ class sign_in extends StatelessWidget {
                 child: Text(
                   'Alterum',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
                 ),
               ),
               Image.network("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
