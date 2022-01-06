@@ -46,6 +46,7 @@ class sign_upState extends State<sign_up> {
               input_username(),
               input_email(),
               input_password(),
+              verify_password(),
               Padding(
                 padding: EdgeInsets.fromLTRB(10, 5, 20, 10),
                 child: Row(
@@ -169,12 +170,68 @@ class input_password extends StatefulWidget {
   input_passwordState createState() => input_passwordState();
 }
 
-class verify_password extends StatefulWidget {
+class input_passwordState extends State<input_password> {
+  var _passwordVisible = false;
+  TextEditingController _userPasswordController = TextEditingController();
   @override
-  input_passwordState createState() => input_passwordState();
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.all(
+            Radius.circular(50),
+          ),
+        ),
+        child: TextFormField(
+          keyboardType: TextInputType.text,
+          controller: _userPasswordController,
+          obscureText: !_passwordVisible,
+          style: TextStyle(color: Colors.black),
+          maxLines: 1,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            hintText: 'Password',
+            hintStyle: TextStyle(
+              color: Colors.black.withOpacity(0.75),
+            ),
+            suffixIcon: Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+              child: IconButton(
+                icon: Icon(
+                  _passwordVisible ? Icons.visibility : Icons.visibility_off,
+                  color: Colors.grey,
+                ),
+                onPressed: () {
+                  setState(() {
+                    _passwordVisible = !_passwordVisible;
+                  });
+                },
+              ),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
+          ),
+        ),
+      ),
+    );
+  }
 }
 
-class input_passwordState extends State<input_password> {
+class verify_password extends StatefulWidget {
+  @override
+  verify_passwordState createState() => verify_passwordState();
+}
+
+class verify_passwordState extends State<verify_password> {
   var _passwordVisible = false;
   TextEditingController _userPasswordController = TextEditingController();
   @override
