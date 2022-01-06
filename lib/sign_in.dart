@@ -210,7 +210,7 @@ class sign_in_button extends StatelessWidget {
         ),
         child: Text(
           'Sign In',
-          style: TextStyle(fontSize: 20, color: theme.primaryColor),
+          style: TextStyle(fontSize: 17, color: theme.primaryColor),
         ),
         onPressed: () {
           Navigator.push(
