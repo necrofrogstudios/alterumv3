@@ -27,12 +27,11 @@ class sign_in extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              child: null /* add child content here */,
-            ),
-            Text(
-              'Sign In',
-              textAlign: TextAlign.center,
-              style: TextStyle(color: theme.primaryColor, fontSize: 20),
+              child: Text(
+                'Sign In',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: theme.primaryColor, fontSize: 20),
+              ),
             ),
             Image.network("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
             OutlineButton(
