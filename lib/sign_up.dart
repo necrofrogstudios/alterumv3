@@ -40,7 +40,7 @@ class sign_upState extends State<sign_up> {
                 ),
               ),
               Container(
-                height: 200,
+                height: 100,
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
               input_username(),
