@@ -81,10 +81,12 @@ class sign_inState extends State<sign_in> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Image(
-                      image: NetworkImage('https://www.tutorialkart.com/img/hummingbird.png'),
+                  Container(
+                    decoration: BoxDecoration(shape: BoxShape.circle),
+                    child: SignInButton(
+                      Buttons.Facebook,
+                      mini: true,
+                      onPressed: () {},
                     ),
                   ),
                 ],
