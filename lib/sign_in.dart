@@ -123,6 +123,10 @@ class sign_inState extends State<sign_in> {
 
 class input_username extends StatelessWidget {
   @override
+  void initState() {
+    _passwordVisible = false;
+  }
+
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
