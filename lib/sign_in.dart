@@ -19,7 +19,7 @@ class sign_in extends StatelessWidget {
               style: TextStyle(color: theme.primaryColor, fontSize: 20),
             ),
             Container(height: 100, width: 100, color: theme.accentColor),
-            FlatButton(
+            OutlineButton(
               color: theme.accentColor,
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent,
