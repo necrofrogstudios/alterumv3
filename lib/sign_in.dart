@@ -77,6 +77,7 @@ class input_username extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
+      color: Colors.white,
       child: Padding(
         padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
         child: TextFormField(
