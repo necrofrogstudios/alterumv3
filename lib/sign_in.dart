@@ -82,7 +82,7 @@ class input_username extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.all(
-            Radius.circular(40),
+            Radius.circular(50),
           ),
         ),
         child: TextFormField(
