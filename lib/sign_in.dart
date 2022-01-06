@@ -126,7 +126,7 @@ class input_password extends StatelessWidget {
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
-            borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            borderSide: BorderSide(color: theme.accentColor, width: 4.0),
           ),
           hintText: 'Password',
           hintStyle: TextStyle(
