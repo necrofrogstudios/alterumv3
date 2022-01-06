@@ -84,7 +84,7 @@ class input_username extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: TextFormField(
         style: TextStyle(color: theme.primaryColor),
         keyboardType: TextInputType.multiline,
@@ -114,7 +114,7 @@ class input_password extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: TextFormField(
         style: TextStyle(color: theme.primaryColor),
         keyboardType: TextInputType.multiline,
