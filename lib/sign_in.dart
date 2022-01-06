@@ -123,6 +123,7 @@ class sign_inState extends State<sign_in> {
 
 class input_username extends StatelessWidget {
   @override
+  
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
@@ -160,12 +161,10 @@ class input_username extends StatelessWidget {
 }
 
 class input_password extends StatelessWidget {
-  void initState() {
-    _passwordVisible = false;
-  }
-
+  _passwordVisible = false;
   @override
   Widget build(BuildContext context) {
+    _passwordVisible = false;
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
