@@ -166,6 +166,7 @@ class input_password extends StatefulWidget {
 
 class input_passwordState extends State<input_password> {
   var _passwordVisible = false;
+  TextEditingController _userPasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
