@@ -86,10 +86,8 @@ class sign_inState extends State<sign_in> {
                     child: Align(
                       alignment: Alignment.topCenter,
                       heightFactor: 1,
-                      child: SignInButton(
-                        Buttons.Facebook,
-                        mini: true,
-                        onPressed: () {},
+                      child: Container(
+                        height: 30,
                       ),
                     ),
                   )
