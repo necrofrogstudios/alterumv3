@@ -68,7 +68,7 @@ class sign_inState extends State<sign_in> {
                       ),
                     ),
                     Text(
-                      'Remember Me',
+                      'Keep me Logged in',
                       textAlign: TextAlign.end,
                       style: TextStyle(color: Colors.white),
                     ),
