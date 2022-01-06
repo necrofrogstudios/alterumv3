@@ -86,7 +86,7 @@ class input_username extends StatelessWidget {
           ),
         ),
         child: TextFormField(
-          style: TextStyle(color: theme.primaryColor),
+          style: TextStyle(color: Colors.black),
           keyboardType: TextInputType.multiline,
           maxLines: null,
           decoration: InputDecoration(
