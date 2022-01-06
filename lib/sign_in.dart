@@ -38,6 +38,7 @@ class sign_in extends StatelessWidget {
               input_username(),
               input_password(),
               Row(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
                     'Remember Me',
