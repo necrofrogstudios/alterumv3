@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:testing/profile/profile.dart';
-import 'package:testing/sign_up.dart';
+
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
-class sign_in extends StatefulWidget {
+class sign_up extends StatefulWidget {
   @override
-  sign_inState createState() => sign_inState();
+  sign_upState createState() => sign_upState();
 }
 
-class sign_inState extends State<sign_in> {
+class sign_upState extends State<sign_up> {
   bool value = false;
   @override
   Widget build(BuildContext context) {
@@ -244,7 +244,7 @@ class sign_up_button extends StatelessWidget {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => sign_up()),
+            MaterialPageRoute(builder: (context) => profile()),
           );
         },
       ),
