@@ -98,7 +98,7 @@ class input_username extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
             borderSide: BorderSide(color: theme.accentColor, width: 4.0),
           ),
-          hintText: 'Type Here',
+          hintText: 'Username',
           hintStyle: TextStyle(
             color: theme.primaryColor.withOpacity(0.45),
           ),
@@ -128,7 +128,7 @@ class input_password extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
             borderSide: BorderSide(color: theme.accentColor, width: 4.0),
           ),
-          hintText: 'Type Here',
+          hintText: 'Password',
           hintStyle: TextStyle(
             color: theme.primaryColor.withOpacity(0.45),
           ),
