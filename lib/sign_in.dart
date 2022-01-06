@@ -159,7 +159,12 @@ class input_username extends StatelessWidget {
   }
 }
 
-class input_password extends ChangeNotifier {
+class input_password extends StatefulWidget {
+  @override
+  input_passwordState createState() => input_passwordState();
+}
+
+class input_passwordState extends State<input_password> {
   var _passwordVisible = false;
   @override
   Widget build(BuildContext context) {
