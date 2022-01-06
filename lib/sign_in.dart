@@ -81,27 +81,17 @@ class sign_inState extends State<sign_in> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                        border: Border.all(
-                          color: Colors.red[500],
-                        ),
-                        borderRadius: BorderRadius.all(Radius.circular(100))),
-                    height: 100,
-                    width: 100,
-                    child: SignInButton(style: ButtonStyle(
-  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-    RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(18.0),
-      side: BorderSide(color: Colors.red)
-    )
-  )
-)
-                      child:Buttons.Facebook,
-                      mini: true,
-                      onPressed: () {},
+                  ClipRect(
+                    child: Align(
+                      alignment: Alignment.topCenter,
+                      heightFactor: 0.5,
+                      child: SignInButton(
+                        Buttons.Facebook,
+                        mini: true,
+                        onPressed: () {},
+                      ),
                     ),
-                  ),
+                  )
                 ],
               ),
             ],
