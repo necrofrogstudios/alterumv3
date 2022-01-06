@@ -84,7 +84,7 @@ class sign_inState extends State<sign_in> {
                   ClipRect(
                     child: Align(
                       alignment: Alignment.topCenter,
-                      heightFactor: 0.5,
+                      heightFactor: 1,
                       child: SignInButton(
                         Buttons.Facebook,
                         mini: true,
