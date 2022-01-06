@@ -151,6 +151,9 @@ class input_username extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
+            suffixIcon: IconButton(
+              icon: Icon(Icons.visibility),
+            ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
         ),
