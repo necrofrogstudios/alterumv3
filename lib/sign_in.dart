@@ -83,11 +83,7 @@ class sign_inState extends State<sign_in> {
                 children: [
                   Container(
                     decoration: BoxDecoration(shape: BoxShape.circle),
-                    child: SignInButton(
-                      Buttons.Facebook,
-                      mini: true,
-                      onPressed: () {},
-                    ),
+                    child: Image.network("https://freepngimg.com/save/62487-bluetie-icons-computer-facebook-login-icon-email/1024x1024"),
                   ),
                 ],
               ),
