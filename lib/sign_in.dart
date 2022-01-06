@@ -190,8 +190,11 @@ class input_password extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
-            suffixIcon: IconButton(
-              icon: Icon(Icons.visibility),
+            suffixIcon: Padding(
+              padding: EdgeInsets.only(right: 10),
+              child: IconButton(
+                icon: Icon(Icons.visibility),
+              ),
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
           ),
