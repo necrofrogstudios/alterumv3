@@ -25,7 +25,7 @@ class sign_in extends StatelessWidget {
               textAlign: TextAlign.center,
               style: TextStyle(color: theme.primaryColor, fontSize: 20),
             ),
-            Container(height: 100, width: 100, color: theme.accentColor),
+            Network.Image("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
             OutlineButton(
               color: theme.accentColor,
               splashColor: Colors.transparent,
