@@ -23,12 +23,19 @@ class sign_in extends StatelessWidget {
             children: <Widget>[
               Container(
                 child: Text(
+                  'Alterum',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 30),
+                ),
+              ),
+              Image.network("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
+              Container(
+                child: Text(
                   'Sign In',
                   textAlign: TextAlign.center,
                   style: TextStyle(color: theme.primaryColor, fontSize: 20),
                 ),
               ),
-              Image.network("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
               OutlineButton(
                 color: theme.accentColor,
                 splashColor: Colors.transparent,
