@@ -23,7 +23,7 @@ class sign_in extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: Image.network("https://wallpaperaccess.com/full/1465993.jpg"),
+                  image: NetworkImage("https://wallpaperaccess.com/full/1465993.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
