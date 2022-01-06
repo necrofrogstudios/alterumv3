@@ -79,8 +79,8 @@ class input_username extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
-        color: Colors.white,
         decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(40),
           ),
