@@ -32,13 +32,6 @@ class sign_in extends StatelessWidget {
                 height: 200,
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
-              Container(
-                child: Text(
-                  'Sign In',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: theme.primaryColor, fontSize: 20),
-                ),
-              ),
               input_username(),
               input_password(),
               OutlineButton(
