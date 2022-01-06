@@ -44,7 +44,9 @@ class sign_upState extends State<sign_up> {
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
               input_username(),
+              input_email(),
               input_password(),
+              verify_password(),
               Padding(
                 padding: EdgeInsets.fromLTRB(10, 5, 20, 10),
                 child: Row(
@@ -125,7 +127,50 @@ class input_username extends StatelessWidget {
   }
 }
 
+class input_email extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.all(
+            Radius.circular(50),
+          ),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: Colors.black),
+          keyboardType: TextInputType.multiline,
+          maxLines: 1,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            hintText: 'Email',
+            hintStyle: TextStyle(
+              color: Colors.black.withOpacity(0.75),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class input_password extends StatefulWidget {
+  @override
+  input_passwordState createState() => input_passwordState();
+}
+
+class verify_password extends StatefulWidget {
   @override
   input_passwordState createState() => input_passwordState();
 }
