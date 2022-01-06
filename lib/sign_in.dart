@@ -160,9 +160,9 @@ class input_username extends StatelessWidget {
 }
 
 class input_password extends StatelessWidget {
+  var _passwordVisible = false;
   @override
   Widget build(BuildContext context) {
-    _passwordVisible = false;
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
