@@ -41,6 +41,7 @@ class sign_in extends StatelessWidget {
                 children: [
                   Text(
                     'Remember Me',
+                    TextAlign.end,
                     style: TextStyle(color: Colors.white),
                   ),
                 ],
