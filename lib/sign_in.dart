@@ -86,7 +86,7 @@ class sign_inState extends State<sign_in> {
                     width: 55,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(color: Colors.yellow, width: 3),
+                      border: Border.all(color: Colors.yellow, width: 4),
                     ),
                     child: Image.network("https://freepngimg.com/save/62487-bluetie-icons-computer-facebook-login-icon-email/1024x1024"),
                   ),
