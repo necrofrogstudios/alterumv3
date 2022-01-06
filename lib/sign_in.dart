@@ -20,7 +20,8 @@ class sign_in extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Container(constraints: BoxConstraints.expand()
+            Container(
+              constraints: BoxConstraints.expand(),
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage("https://wallpaperaccess.com/full/1465993.jpg"),
