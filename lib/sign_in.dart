@@ -47,6 +47,14 @@ class sign_inState extends State<sign_in> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+                    Checkbox(
+                      value: this.value,
+                      onChanged: (bool value) {
+                        setState(() {
+                          this.value = value;
+                        });
+                      },
+                    ),
                     Text(
                       'Remember Me',
                       textAlign: TextAlign.end,
