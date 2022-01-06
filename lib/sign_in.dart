@@ -37,15 +37,18 @@ class sign_in extends StatelessWidget {
               ),
               input_username(),
               input_password(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text(
-                    'Remember Me',
-                    textAlign: TextAlign.end,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
+              Padding(
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      'Remember Me',
+                      textAlign: TextAlign.end,
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ],
+                ),
               ),
               Row(
                 children: [
