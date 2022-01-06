@@ -38,7 +38,7 @@ class sign_in extends StatelessWidget {
               input_username(),
               input_password(),
               Padding(
-                padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                padding: EdgeInsets.fromLTRB(10, 10, 20, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
