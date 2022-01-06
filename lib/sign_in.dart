@@ -28,7 +28,10 @@ class sign_in extends StatelessWidget {
                   style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
                 ),
               ),
-              Image.network("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
+              Container(
+                height: 200,
+                child: Image.network("https://cdn.iconscout.com/icon/free/png-256/theater-mask-33-1184374.png"),
+              ),
               Container(
                 child: Text(
                   'Sign In',
