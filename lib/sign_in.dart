@@ -92,7 +92,7 @@ class input_username extends StatelessWidget {
         decoration: InputDecoration(
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
-            borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+            borderSide: BorderSide(color: Colors.yellow, width: 4.0),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(50.0)),
