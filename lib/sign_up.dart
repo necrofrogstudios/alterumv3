@@ -15,7 +15,7 @@ class sign_upState extends State<sign_up> {
     var theme = Theme.of(context);
     return Scaffold(
       body: Container(
-        height: 500,
+        height: 800,
         width: double.infinity,
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
