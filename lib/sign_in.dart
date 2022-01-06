@@ -93,7 +93,7 @@ class input_username extends StatelessWidget {
           ),
           hintText: 'Username',
           hintStyle: TextStyle(
-            color: theme.primaryColor.withOpacity(0.45),
+            color: theme.primaryColor,
           ),
           contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
         ),
