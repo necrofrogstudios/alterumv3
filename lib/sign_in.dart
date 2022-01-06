@@ -56,37 +56,12 @@ class sign_in extends StatelessWidget {
                   'Sign In',
                   style: TextStyle(fontSize: 15, color: theme.primaryColor),
                 ),
-                onPressed: () {},
-              ),
-              OutlineButton(
-                color: Colors.yellow,
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => profile()),
                   );
                 },
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Profile',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: theme.primaryColor,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(
-                        Icons.arrow_forward,
-                        color: theme.primaryColor,
-                      ),
-                    ),
-                  ],
-                ),
               ),
             ],
           ),
