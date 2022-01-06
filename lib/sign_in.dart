@@ -49,15 +49,28 @@ class sign_inState extends State<sign_in> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Checkbox(
-                      value: this.value,
-                      onChanged: (bool value) {
-                        setState(() {
-                          this.value = value;
-                        });
-                      },
+                      value: true,
+                      onChanged: (_) {},
+                      // Background color of your checkbox if selected
+                      activeColor: Colors.deepOrange,
+                      // Color of your check mark
+                      checkColor: Colors.black,
+                      shape: hasCircleShape
+                          // diplay checkbox with circle shape
+                          ? CircleBorder()
+                          // or make the border slightly rounded
+                          : RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                      side: BorderSide(
+                        // ======> CHANGE THE BORDER COLOR HERE <======
+                        color: Colors.grey,
+                        // Give your checkbox border a custom width
+                        width: 1.5,
+                      ),
                     ),
                     Text(
-                      'Remember Me',
+                      'Remembers Me',
                       textAlign: TextAlign.end,
                       style: TextStyle(color: Colors.white),
                     ),
