@@ -51,9 +51,7 @@ class sign_in extends StatelessWidget {
                   'Post',
                   style: TextStyle(fontSize: 15, color: theme.primaryColor),
                 ),
-                onPressed: () {
-                  addComment(textController.text);
-                },
+                onPressed: () {},
               ),
               OutlineButton(
                 color: Colors.yellow,
