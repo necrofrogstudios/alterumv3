@@ -17,17 +17,17 @@ class sign_in extends StatelessWidget {
         color: theme.backgroundColor,
         height: 500,
         width: double.infinity,
+        constraints: BoxConstraints.expand(),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: NetworkImage("https://wallpaperaccess.com/full/1465993.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              constraints: BoxConstraints.expand(),
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage("https://wallpaperaccess.com/full/1465993.jpg"),
-                  fit: BoxFit.cover,
-                ),
-              ),
               child: Text(
                 'Sign In',
                 textAlign: TextAlign.center,
