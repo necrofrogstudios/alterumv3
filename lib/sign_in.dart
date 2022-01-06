@@ -42,7 +42,7 @@ class sign_in extends StatelessWidget {
               input_username(),
               input_password(),
               OutlineButton(
-                color: theme.accentColor,
+                color: Colors.yellow,
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onPressed: () {
