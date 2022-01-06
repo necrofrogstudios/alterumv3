@@ -73,6 +73,7 @@ class sign_inState extends State<sign_in> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  sign_up_button(),
                   sign_in_button(),
                 ],
               ),
