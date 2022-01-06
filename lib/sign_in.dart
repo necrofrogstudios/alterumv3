@@ -99,6 +99,15 @@ class sign_inState extends State<sign_in> {
                     ),
                     child: Image.network("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png"),
                   ),
+                  Container(
+                    height: 55,
+                    width: 55,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.yellow, width: 4),
+                    ),
+                    child: Image.network("https://www.transparentpng.com/thumb/apple-logo/d9RxbG-apple-logo-free-png.png"),
+                  ),
                 ],
               ),
             ],
