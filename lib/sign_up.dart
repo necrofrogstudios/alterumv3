@@ -39,10 +39,6 @@ class sign_upState extends State<sign_up> {
                   ),
                 ),
               ),
-              Container(
-                height: 100,
-                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
-              ),
               input_username(),
               input_email(),
               input_password(),
@@ -81,7 +77,7 @@ class sign_upState extends State<sign_up> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
