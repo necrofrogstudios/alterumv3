@@ -114,6 +114,7 @@ class input_title extends StatelessWidget {
 class input_complaint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    maxLines = 25;
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
@@ -125,7 +126,6 @@ class input_complaint extends StatelessWidget {
           ),
         ),
         child: TextFormField(
-           maxLines = 5;
           style: TextStyle(color: theme.primaryColor),
           keyboardType: TextInputType.multiline,
           maxLines: maxLines,
