@@ -75,7 +75,7 @@ class sign_inState extends State<sign_in> {
                       style: TextButton.styleFrom(
                         padding: const EdgeInsets.all(16.0),
                         primary: Colors.white,
-                        textStyle: const TextStyle(fontSize: 20),
+                        textStyle: const TextStyle(fontSize: 15),
                       ),
                       onPressed: () {},
                       child: const Text('Forgot Username || Password'),
