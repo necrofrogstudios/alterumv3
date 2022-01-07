@@ -161,7 +161,7 @@ class sign_in_button extends StatelessWidget {
           side: BorderSide(width: 4.0, color: theme.splashColor),
           elevation: 6,
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-          backgroundColor: Colors.black,
+          backgroundColor: theme.accentColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
