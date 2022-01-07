@@ -75,11 +75,11 @@ class roleplay_name extends StatelessWidget {
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
-              borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
-              borderSide: BorderSide(color: theme.accentColor, width: 4.0),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
             hintText: 'Enter Roleplay Name',
             hintStyle: TextStyle(
@@ -122,7 +122,7 @@ class about extends StatelessWidget {
             ),
             hintText: 'Enter Text Here...',
             hintStyle: TextStyle(
-              color: theme.primaryColor.withOpacity(0.55),
+              color: Colors.black.withOpacity(0.75),
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
