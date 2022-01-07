@@ -21,15 +21,10 @@ class contact_supportState extends State<contact_support> {
     var theme = Theme.of(context);
     return Scaffold(
       body: Container(
+        color: theme.backgroundColor,
         height: 500,
         width: double.infinity,
         constraints: BoxConstraints.expand(),
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: NetworkImage("https://thumbs.dreamstime.com/z/abstract-geometric-background-modern-marble-mosaic-inlay-blue-gold-triangles-black-white-stone-textures-fashion-marbling-abstract-196404787.jpg"),
-            fit: BoxFit.cover,
-          ),
-        ),
         child: Padding(
           padding: EdgeInsets.only(top: 40),
           child: ListView(
