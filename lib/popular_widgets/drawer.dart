@@ -53,7 +53,7 @@ class drawer extends StatelessWidget {
               color: theme.backgroundColor,
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                  padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
