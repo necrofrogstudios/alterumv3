@@ -44,6 +44,7 @@ class profile_flip_card extends StatelessWidget {
                   ),
                 ),
                 height: 200,
+                width: 200,
                 child: Column(
                   children: [
                     Row(
