@@ -61,6 +61,7 @@ class sign_upState extends State<sign_up> {
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
