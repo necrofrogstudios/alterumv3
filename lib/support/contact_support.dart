@@ -166,7 +166,7 @@ class submit extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
+      padding: EdgeInsets.fromLTRB(10, 0, 10, 15),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: theme.splashColor),
