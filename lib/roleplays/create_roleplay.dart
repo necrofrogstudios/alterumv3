@@ -30,25 +30,7 @@ class create_roleplay extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
-            profile_pics_icons(),
-            Container(color: theme.splashColor, height: 4),
-            NotificationListener<OverscrollNotification>(
-              onNotification: (OverscrollNotification value) {
-                if (value.overscroll < 0 && controller.offset + value.overscroll <= 0) {
-                  if (controller.offset != 0) controller.jumpTo(0);
-                  return true;
-                }
-                if (controller.offset + value.overscroll >= controller.position.maxScrollExtent) {
-                  if (controller.offset != controller.position.maxScrollExtent) {
-                    controller.jumpTo(controller.position.maxScrollExtent);
-                  }
-                  return true;
-                }
-                controller.jumpTo(controller.offset + value.overscroll);
-                return true;
-              },
-              child: profile_tabbar(),
-            ),
+            Container(height: 300),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
