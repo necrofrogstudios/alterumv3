@@ -55,6 +55,7 @@ class drawer extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
+                    color: theme.backgroundColor,
                     border: Border.all(
                       color: theme.splashColor,
                       width: 4,
