@@ -69,7 +69,7 @@ class sign_inState extends State<sign_in> {
               Padding(
                 padding: EdgeInsets.fromLTRB(20, 5, 20, 10),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Checkbox(
                       value: this.value,
