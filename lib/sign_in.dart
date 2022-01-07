@@ -100,14 +100,17 @@ class sign_inState extends State<sign_in> {
                   sign_in_button(),
                 ],
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                  padding: const EdgeInsets.only(left: 5),
-                  primary: Colors.white,
-                  textStyle: const TextStyle(fontSize: 15),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.only(left: 5),
+                    primary: Colors.white,
+                    textStyle: const TextStyle(fontSize: 15),
+                  ),
+                  onPressed: () {},
+                  child: const Text('Forgot Username/Password'),
                 ),
-                onPressed: () {},
-                child: const Text('Forgot Username/Password'),
               ),
               Padding(
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
