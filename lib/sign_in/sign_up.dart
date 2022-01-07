@@ -36,7 +36,7 @@ class sign_upState extends State<sign_up> {
                     child: IconButton(
                       icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30),
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pop(
                           context,
                           MaterialPageRoute(builder: (context) => sign_in()),
                         );

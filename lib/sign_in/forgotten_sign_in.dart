@@ -36,7 +36,7 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                     child: IconButton(
                       icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30),
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pop(
                           context,
                           MaterialPageRoute(builder: (context) => sign_in()),
                         );
