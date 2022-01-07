@@ -47,6 +47,10 @@ class contact_supportState extends State<contact_support> {
                 ],
               ),
               Card(
+                color: theme.accentColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(50),
+                ),
                 child: Column(
                   children: [
                     Container(
