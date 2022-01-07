@@ -67,7 +67,7 @@ class roleplay_name extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
               borderSide: BorderSide(color: theme.accentColor, width: 4.0),
             ),
-            hintText: 'Username',
+            hintText: 'Enter Roleplay Name',
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
