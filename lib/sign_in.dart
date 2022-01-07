@@ -32,7 +32,10 @@ class sign_inState extends State<sign_in> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Icon(Icons.headset_mic, size: 30, color: Colors.white),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+                    child: Icon(Icons.headset_mic, size: 30, color: Colors.white),
+                  ),
                 ],
               ),
               Container(
