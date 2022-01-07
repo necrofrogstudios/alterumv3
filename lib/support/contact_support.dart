@@ -49,7 +49,7 @@ class contact_supportState extends State<contact_support> {
               Card(
                 color: theme.accentColor,
                 shape: RoundedRectangleBorder(
-                  side: BorderSide(color: Colors.white70, width: 1),
+                  side: BorderSide(color: theme.splashColor, width: 4),
                   borderRadius: BorderRadius.circular(50),
                 ),
                 child: Column(
