@@ -56,19 +56,8 @@ class contact_supportState extends State<contact_support> {
                   ),
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
-                    child: Text(
-                      '',
-                      style: TextStyle(fontSize: 25, color: Colors.white),
-                    ),
-                  ),
-                ],
-              ),
-              input_username(),
+              input_summary(),
+              input_complaint(),
               SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -84,34 +73,73 @@ class contact_supportState extends State<contact_support> {
   }
 }
 
-class input_username extends StatelessWidget {
+class input_complaint extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: theme.accentColor,
           borderRadius: BorderRadius.all(
             Radius.circular(50),
           ),
         ),
         child: TextFormField(
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: theme.primaryColor),
           keyboardType: TextInputType.multiline,
           maxLines: 1,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
-              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
-              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
             hintText: 'Enter Email Address',
             hintStyle: TextStyle(
-              color: Colors.black.withOpacity(0.75),
+              color: theme.primaryColor.withOpacity(0.75),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class input_title extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: theme.accentColor,
+          borderRadius: BorderRadius.all(
+            Radius.circular(50),
+          ),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: theme.primaryColor),
+          keyboardType: TextInputType.multiline,
+          maxLines: 1,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            hintText: 'Enter Email Address',
+            hintStyle: TextStyle(
+              color: theme.primaryColor.withOpacity(0.75),
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
@@ -124,6 +152,7 @@ class input_username extends StatelessWidget {
 class sign_in_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
       child: OutlinedButton(
@@ -137,7 +166,7 @@ class sign_in_button extends StatelessWidget {
           ),
         ),
         child: Text(
-          'Send Password Reset',
+          'Submit',
           style: TextStyle(fontSize: 15, color: Colors.white),
         ),
         onPressed: () {},
