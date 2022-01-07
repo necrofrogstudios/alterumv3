@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:testing/profile/profile.dart';
 import 'package:testing/sign_in/sign_up.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:testing/sign_in/forgotten_sign_in/dart';
 
 class sign_in extends StatefulWidget {
   @override
