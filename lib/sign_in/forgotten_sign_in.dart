@@ -46,15 +46,6 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                   ),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
-                    child: Icon(Icons.headset_mic, size: 30, color: Colors.white),
-                  ),
-                ],
-              ),
               Container(
                 child: Text(
                   'Alterum',
