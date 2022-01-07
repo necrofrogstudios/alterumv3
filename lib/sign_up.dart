@@ -60,6 +60,10 @@ class sign_upState extends State<sign_up> {
                 height: 100,
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(10, 5, 20, 10),
+                child:Text('Sign Up', style: TextStyle(fontSize:30, color: Colors.white),),),
+              Padding
               input_username(),
               input_email(),
               input_password(),
