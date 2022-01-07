@@ -27,7 +27,12 @@ class footer extends StatelessWidget {
               'Contact Support',
               style: TextStyle(color: theme.primaryColor),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => contact_support(currentScreen)),
+              );
+            },
           )
         ],
       ),
