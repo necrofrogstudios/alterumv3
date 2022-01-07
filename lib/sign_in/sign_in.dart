@@ -33,7 +33,7 @@ class sign_inState extends State<sign_in> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+                    padding: EdgeInsets.fromLTRB(0, 0, 25, 0),
                     child: IconButton(
                       icon: Icon(Icons.headset_mic, size: 30, color: Colors.white),
                       tooltip: 'Increase volume by 10',
