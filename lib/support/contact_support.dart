@@ -155,7 +155,7 @@ class input_complaint extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(30.0)),
               borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
-            hintText: 'Complaint',
+            hintText: 'Enter Text Here...',
             hintStyle: TextStyle(
               color: theme.primaryColor.withOpacity(0.55),
             ),
