@@ -63,14 +63,14 @@ class profile_flip_card extends StatelessWidget {
                         ),
                       ],
                     ),
-                     Row(
+                    Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Icon(
-              Icons.group_add,
-              size: 37,
-              color: theme.primaryColor,
-            )
+                          Icons.group_add,
+                          size: 37,
+                          color: theme.primaryColor,
+                        ),
                         Icon(
                           Icons.block,
                           size: 30,
