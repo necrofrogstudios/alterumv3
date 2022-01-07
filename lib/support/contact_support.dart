@@ -56,7 +56,7 @@ class contact_supportState extends State<contact_support> {
                   ),
                 ),
               ),
-              input_summary(),
+              input_title(),
               input_complaint(),
               SizedBox(height: 20),
               Row(
