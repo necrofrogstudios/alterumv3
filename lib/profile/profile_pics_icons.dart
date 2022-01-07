@@ -14,7 +14,7 @@ class profile_pics_icons extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: NetworkImage("https://media.istockphoto.com/vectors/mountains-silhouettes-mountains-vector-mountains-vector-of-outdoor-vector-id1159465230?k=6&m=1159465230&s=612x612&w=0&h=frXPbVE36wKFV3W8Zo2MSs-PhLPf_bECxl65voDGXLw="),
+                  image: NetworkImage("https://cdn.pixabay.com/photo/2019/08/30/04/32/nature-4440363_1280.png"),
                 ),
               ),
             ),
