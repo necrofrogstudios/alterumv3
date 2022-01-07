@@ -127,7 +127,7 @@ class input_complaint extends StatelessWidget {
         child: TextFormField(
           style: TextStyle(color: theme.primaryColor),
           keyboardType: TextInputType.multiline,
-          maxLines: null,
+          maxLines: 50,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
@@ -141,7 +141,7 @@ class input_complaint extends StatelessWidget {
             hintStyle: TextStyle(
               color: theme.primaryColor.withOpacity(0.55),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 40.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
         ),
       ),
