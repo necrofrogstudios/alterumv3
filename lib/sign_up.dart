@@ -29,6 +29,19 @@ class sign_upState extends State<sign_up> {
           child: ListView(
             shrinkWrap: true,
             children: <Widget>[
+              Row(
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.volume_up),
+                    tooltip: 'Increase volume by 10',
+                    onPressed: () {
+                      setState(() {
+                        _volume += 10;
+                      });
+                    },
+                  ),
+                ],
+              ),
               Container(
                 child: Text(
                   'Alterum',
