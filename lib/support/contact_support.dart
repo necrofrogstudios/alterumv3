@@ -35,7 +35,7 @@ class contact_supportState extends State<contact_support> {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                     child: IconButton(
-                      icon: const Icon(Icons.arrow_back, color: theme.primaryColor, size: 30),
+                      icon: Icon(Icons.arrow_back, color: theme.primaryColor, size: 30),
                       onPressed: () {
                         Navigator.pop(
                           context,
