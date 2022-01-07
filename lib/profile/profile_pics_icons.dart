@@ -27,11 +27,12 @@ class profile_pics_icons extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
             child: Container(
               decoration: BoxDecoration(
-                  color: Colors.yellow[100],
-                  border: Border.all(
-                    color: Colors.red,
-                    width: 5,
-                  )),
+                color: Colors.yellow[100],
+                border: Border.all(
+                  color: Colors.red,
+                  width: 5,
+                ),
+              ),
               height: 200,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(27.0),
