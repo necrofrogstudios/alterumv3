@@ -34,7 +34,7 @@ class profile_pics_icons extends StatelessWidget {
                   style: TextStyle(fontSize: 40, color: theme.primaryColor),
                 ),
                 Text(
-                  'Points: 240',
+                  'Activity Points: 240',
                   style: TextStyle(fontSize: 15, color: theme.primaryColor),
                 ),
               ],
