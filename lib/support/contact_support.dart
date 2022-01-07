@@ -101,7 +101,7 @@ class input_complaint extends StatelessWidget {
             ),
             hintText: 'Enter Email Address',
             hintStyle: TextStyle(
-              color: theme.primaryColor.withOpacity(0.75),
+              color: theme.primaryColor.withOpacity(0.55),
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
