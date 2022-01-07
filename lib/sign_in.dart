@@ -101,18 +101,6 @@ class sign_inState extends State<sign_in> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                child: TextButton(
-                  style: TextButton.styleFrom(
-                    padding: const EdgeInsets.only(left: 5),
-                    primary: Colors.white,
-                    textStyle: const TextStyle(fontSize: 15),
-                  ),
-                  onPressed: () {},
-                  child: const Text('Forgot Username/Password'),
-                ),
-              ),
-              Padding(
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -145,6 +133,18 @@ class sign_inState extends State<sign_in> {
                       child: Image.network("https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"),
                     ),
                   ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.only(left: 5),
+                    primary: Colors.white,
+                    textStyle: const TextStyle(fontSize: 15),
+                  ),
+                  onPressed: () {},
+                  child: const Text('Forgot Username/Password'),
                 ),
               ),
             ],
