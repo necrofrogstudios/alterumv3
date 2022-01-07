@@ -47,6 +47,7 @@ class contact_supportState extends State<contact_support> {
                 ],
               ),
               Card(
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                 color: theme.accentColor,
                 shape: RoundedRectangleBorder(
                   side: BorderSide(color: theme.splashColor, width: 4),
