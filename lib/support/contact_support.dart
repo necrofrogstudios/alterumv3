@@ -54,28 +54,31 @@ class contact_supportState extends State<contact_support> {
                     side: BorderSide(color: theme.splashColor, width: 4),
                     borderRadius: BorderRadius.circular(50),
                   ),
-                  child: Column(
-                    children: [
-                      Container(
-                        child: Text(
-                          'Support',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: theme.primaryColor,
-                            fontSize: 50,
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                    child: Column(
+                      children: [
+                        Container(
+                          child: Text(
+                            'Support',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: theme.primaryColor,
+                              fontSize: 50,
+                            ),
                           ),
                         ),
-                      ),
-                      input_title(),
-                      input_complaint(),
-                      SizedBox(height: 20),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          submit(),
-                        ],
-                      ),
-                    ],
+                        input_title(),
+                        input_complaint(),
+                        SizedBox(height: 20),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            submit(),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
