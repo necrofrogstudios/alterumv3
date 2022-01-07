@@ -303,7 +303,7 @@ class register_button extends StatelessWidget {
           ),
         ),
         child: Text(
-          'Sign Up',
+          'Register',
           style: TextStyle(fontSize: 15, color: theme.primaryColor),
         ),
         onPressed: () {
