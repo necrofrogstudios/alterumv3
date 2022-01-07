@@ -200,7 +200,7 @@ class input_passwordState extends State<input_password> {
               color: Colors.black.withOpacity(0.75),
             ),
             suffixIcon: Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+              padding: EdgeInsets.fromLTRB(0, 0, 15, 0),
               child: IconButton(
                 icon: Icon(
                   _passwordVisible ? Icons.visibility : Icons.visibility_off,
