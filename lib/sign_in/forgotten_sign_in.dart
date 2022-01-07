@@ -138,12 +138,7 @@ class sign_in_button extends StatelessWidget {
           'Send Password Reset',
           style: TextStyle(fontSize: 15, color: theme.primaryColor),
         ),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => profile()),
-          );
-        },
+        onPressed: () {},
       ),
     );
   }
