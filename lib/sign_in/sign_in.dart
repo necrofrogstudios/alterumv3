@@ -11,6 +11,7 @@ class sign_in extends StatefulWidget {
 }
 
 class sign_inState extends State<sign_in> {
+  final currentScreen = sign_in;
   bool value = false;
   @override
   Widget build(BuildContext context) {
@@ -40,7 +41,7 @@ class sign_inState extends State<sign_in> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => contact_support()),
+                          MaterialPageRoute(builder: (context) => contact_support(currentScreeen)),
                         );
                       },
                     ),

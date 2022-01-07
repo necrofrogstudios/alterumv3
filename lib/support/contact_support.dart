@@ -11,6 +11,8 @@ class contact_support extends StatefulWidget {
 }
 
 class contact_supportState extends State<contact_support> {
+  final back;
+  contact_supportState(this.back);
   bool value = false;
   @override
   Widget build(BuildContext context) {
