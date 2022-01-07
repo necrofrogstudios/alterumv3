@@ -141,7 +141,7 @@ class input_complaint extends StatelessWidget {
             hintStyle: TextStyle(
               color: theme.primaryColor.withOpacity(0.55),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 30.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 40.0, horizontal: 20),
           ),
         ),
       ),
