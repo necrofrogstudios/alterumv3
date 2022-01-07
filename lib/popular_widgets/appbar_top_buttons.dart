@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testing/main_page/main_page.dart';
 import 'package:testing/solo/solo_main.dart';
+import 'package:testing/roleplays/create_roleplay.dart';
 
 class profile_top_buttons extends StatelessWidget {
   final List<String> items = [
@@ -15,7 +16,7 @@ class profile_top_buttons extends StatelessWidget {
     'Customer Support',
   ];
   final List<Widget> navigation = [
-    main_page(),
+    create_roleplay(),
     main_page(),
     solo_main(),
     main_page(),
