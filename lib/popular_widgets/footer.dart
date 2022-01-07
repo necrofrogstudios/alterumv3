@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:testing/support/contact_support.dart';
 
 class footer extends StatelessWidget {
-  currentScreen = footer;
+  final currentScreen = footer;
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
