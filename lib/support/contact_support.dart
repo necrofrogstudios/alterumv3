@@ -45,7 +45,7 @@ class contact_supportState extends State<contact_support> {
                     ),
                   ),
                 ],
-              ),
+              ),Card( child: Column( children:[
               Container(
                 child: Text(
                   'Support',
@@ -64,7 +64,7 @@ class contact_supportState extends State<contact_support> {
                 children: [
                   sign_in_button(),
                 ],
-              ),
+              ),),],),
             ],
           ),
         ),
@@ -116,35 +116,33 @@ class input_complaint extends StatelessWidget {
   Widget build(BuildContext context) {
     final maxLines = 12;
     var theme = Theme.of(context);
-    return Card(
-      child: Padding(
-        padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-        child: Container(
-          decoration: BoxDecoration(
-            color: theme.accentColor,
-            borderRadius: BorderRadius.all(
-              Radius.circular(30),
-            ),
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: theme.accentColor,
+          borderRadius: BorderRadius.all(
+            Radius.circular(30),
           ),
-          child: TextFormField(
-            style: TextStyle(color: theme.primaryColor),
-            keyboardType: TextInputType.multiline,
-            maxLines: maxLines,
-            decoration: InputDecoration(
-              focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                borderSide: BorderSide(color: theme.splashColor, width: 4.0),
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                borderSide: BorderSide(color: theme.splashColor, width: 4.0),
-              ),
-              hintText: 'Complaint',
-              hintStyle: TextStyle(
-                color: theme.primaryColor.withOpacity(0.55),
-              ),
-              contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: theme.primaryColor),
+          keyboardType: TextInputType.multiline,
+          maxLines: maxLines,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            hintText: 'Complaint',
+            hintStyle: TextStyle(
+              color: theme.primaryColor.withOpacity(0.55),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
         ),
       ),
