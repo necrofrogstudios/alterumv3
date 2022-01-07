@@ -35,6 +35,7 @@ class sign_inState extends State<sign_in> {
                   Icon(Icons.headset_mic, size: 30, color: Colors.white),
                 ],
               ),
+              Icon(Icons.headset_mic, size: 30, color: Colors.white),
               Container(
                 child: Text(
                   'Alterum',
