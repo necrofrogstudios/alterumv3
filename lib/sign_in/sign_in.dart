@@ -3,6 +3,7 @@ import 'package:testing/profile/profile.dart';
 import 'package:testing/sign_in/sign_up.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:testing/sign_in/forgotten_sign_in.dart';
+import 'package:testing/support/contact_support.dart';
 
 class sign_in extends StatefulWidget {
   @override
@@ -39,7 +40,7 @@ class sign_inState extends State<sign_in> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => forgotten_sign_in()),
+                          MaterialPageRoute(builder: (context) => contact_support()),
                         );
                       },
                     ),
