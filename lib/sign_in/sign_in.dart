@@ -152,7 +152,12 @@ class sign_inState extends State<sign_in> {
                             primary: Colors.white,
                             textStyle: const TextStyle(fontSize: 15),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => forgotten_sign_in()),
+                            );
+                          },
                           child: const Text('Forgot Username/Password'),
                         ),
                       ),
