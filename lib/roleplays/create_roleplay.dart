@@ -30,6 +30,7 @@ class create_roleplay extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
+            roleplay_name(),
             Container(height: 300),
             Container(color: theme.splashColor, height: 4),
             footer(),
@@ -40,6 +41,42 @@ class create_roleplay extends StatelessWidget {
   }
 }
 
+class roleplay_name extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.all(
+            Radius.circular(50),
+          ),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: Colors.black),
+          keyboardType: TextInputType.multiline,
+          maxLines: 1,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: Colors.yellow, width: 4.0),
+            ),
+            hintText: 'Username',
+            hintStyle: TextStyle(
+              color: Colors.black.withOpacity(0.75),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+          ),
+        ),
+      ),
+    );
+  }
+}
 /*class profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
