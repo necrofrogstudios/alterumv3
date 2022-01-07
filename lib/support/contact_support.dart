@@ -131,11 +131,11 @@ class input_complaint extends StatelessWidget {
           maxLines: maxLines,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
               borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
             enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
               borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
             hintText: 'Complaint',
