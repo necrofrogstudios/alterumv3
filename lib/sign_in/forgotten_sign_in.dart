@@ -66,7 +66,7 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                     child: Text(
-                      'Sign In',
+                      'Reset Password',
                       style: TextStyle(fontSize: 25, color: Colors.white),
                     ),
                   ),
