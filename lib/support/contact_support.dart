@@ -48,7 +48,7 @@ class contact_supportState extends State<contact_support> {
               ),
               Container(
                 child: Text(
-                  'Alterum',
+                  'Support',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
@@ -56,17 +56,13 @@ class contact_supportState extends State<contact_support> {
                   ),
                 ),
               ),
-              Container(
-                height: 200,
-                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                     child: Text(
-                      'Reset Password',
+                      '',
                       style: TextStyle(fontSize: 25, color: Colors.white),
                     ),
                   ),
