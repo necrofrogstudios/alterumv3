@@ -49,6 +49,7 @@ class profile_flip_card extends StatelessWidget {
                 child: Column(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Icon(
                           Icons.person_add,
