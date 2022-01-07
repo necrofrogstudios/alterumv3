@@ -14,6 +14,7 @@ class contact_supportState extends State<contact_support> {
   bool value = false;
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return Scaffold(
       body: Container(
         height: 500,
