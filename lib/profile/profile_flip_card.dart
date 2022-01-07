@@ -54,12 +54,12 @@ class profile_flip_card extends StatelessWidget {
                       children: [
                         Icon(
                           Icons.person_add,
-                          size: 30,
+                          size: 40,
                           color: theme.primaryColor,
                         ),
                         Icon(
                           Icons.email,
-                          size: 30,
+                          size: 40,
                           color: theme.primaryColor,
                         ),
                       ],
@@ -69,12 +69,12 @@ class profile_flip_card extends StatelessWidget {
                       children: [
                         Icon(
                           Icons.group_add,
-                          size: 37,
+                          size: 47,
                           color: theme.primaryColor,
                         ),
                         Icon(
                           Icons.block,
-                          size: 30,
+                          size: 40,
                           color: theme.primaryColor,
                         ),
                       ],
