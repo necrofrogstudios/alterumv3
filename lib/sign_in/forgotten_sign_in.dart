@@ -106,7 +106,7 @@ class input_username extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
               borderSide: BorderSide(color: Colors.yellow, width: 4.0),
             ),
-            hintText: 'Username',
+            hintText: 'Enter Email Address',
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
@@ -135,7 +135,7 @@ class sign_in_button extends StatelessWidget {
           ),
         ),
         child: Text(
-          'Sign In',
+          'Send Password Reset',
           style: TextStyle(fontSize: 15, color: theme.primaryColor),
         ),
         onPressed: () {
