@@ -13,58 +13,22 @@ class profile_flip_card extends StatelessWidget {
         FlipCard(
           fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
-          front: Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: theme.accentColor,
-                border: Border.all(color: theme.splashColor, width: 3.0),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(30),
+          front: Center(
+            child: Padding(
+              padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  border: Border.all(
+                    color: theme.splashColor,
+                    width: 4,
+                  ),
                 ),
-              ), //name, creator, tags, intro
-              child: Stack(
-                children: <Widget>[
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(27.0),
-                    child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
-                  ),
-                  Positioned.fill(
-                    child: Padding(
-                      padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                      child: Align(
-                        alignment: Alignment.bottomCenter,
-                        child: FractionallySizedBox(
-                          widthFactor: 1,
-                          heightFactor: 0.2,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: theme.accentColor,
-                              borderRadius: BorderRadius.only(
-                                bottomRight: Radius.circular(13),
-                                bottomLeft: Radius.circular(13),
-                              ),
-                            ),
-                            child: TextButton(
-                              style: TextButton.styleFrom(
-                                padding: const EdgeInsets.all(0),
-                                primary: theme.primaryColor,
-                                textStyle: const TextStyle(fontSize: 15),
-                              ),
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => roleplay_character()),
-                                );
-                              },
-                              child: const Text('Park Jimin'),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                height: 200,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(27.0),
+                  child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                ),
               ),
             ),
           ), //back of card  V V V V //

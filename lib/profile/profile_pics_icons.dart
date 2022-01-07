@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testing/profile/profile_flip_card.dart';
 
 class profile_pics_icons extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -22,25 +23,7 @@ class profile_pics_icons extends StatelessWidget {
             Container(height: 210, color: theme.backgroundColor),
           ],
         ),
-        Center(
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                border: Border.all(
-                  color: theme.splashColor,
-                  width: 4,
-                ),
-              ),
-              height: 200,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(27.0),
-                child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
-              ),
-            ),
-          ),
-        ),
+        profile_flip_card(),
         Center(
             child: Padding(
           padding: EdgeInsets.fromLTRB(0, 290, 0, 0),
