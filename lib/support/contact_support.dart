@@ -158,7 +158,7 @@ class sign_in_button extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
-          side: BorderSide(width: 4.0, color: Colors.yellow),
+          side: BorderSide(width: 4.0, color: theme.splashColor),
           elevation: 6,
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
           backgroundColor: Colors.black,
@@ -168,7 +168,7 @@ class sign_in_button extends StatelessWidget {
         ),
         child: Text(
           'Submit',
-          style: TextStyle(fontSize: 15, color: Colors.white),
+          style: TextStyle(fontSize: 15, color: theme.primaryColor),
         ),
         onPressed: () {},
       ),
