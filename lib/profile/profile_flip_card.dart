@@ -50,7 +50,16 @@ class profile_flip_card extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Text('test'),
+                        Icon(
+                          Icons.person_add,
+                          size: 30,
+                          color: theme.primaryColor,
+                        ),
+                        Icon(
+                          Icons.email,
+                          size: 30,
+                          color: theme.primaryColor,
+                        ),
                       ],
                     ),
                   ],
