@@ -25,7 +25,7 @@ class sign_upState extends State<sign_up> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.only(top: 40),
+          padding: EdgeInsets.only(top: 30),
           child: ListView(
             shrinkWrap: true,
             children: <Widget>[
