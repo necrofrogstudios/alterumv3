@@ -9,7 +9,7 @@ class contact_support extends StatefulWidget {
   final back;
   contact_support(this.back);
   @override
-  contact_supportState createState() => contact_supportState();
+  contact_supportState createState() => contact_supportState(back);
 }
 
 class contact_supportState extends State<contact_support> {
