@@ -52,7 +52,7 @@ class roleplay_name extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+      padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
