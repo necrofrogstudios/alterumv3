@@ -118,7 +118,6 @@ class input_complaint extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
-        height: 100,
         decoration: BoxDecoration(
           color: theme.accentColor,
           borderRadius: BorderRadius.all(
