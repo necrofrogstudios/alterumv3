@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/profile/profile.dart';
+import 'package:testing/sign_in.dart';
 
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
@@ -35,7 +36,12 @@ class sign_upState extends State<sign_up> {
                     padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                     child: IconButton(
                       icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => sign_in()),
+                        );
+                      },
                     ),
                   ),
                 ],
