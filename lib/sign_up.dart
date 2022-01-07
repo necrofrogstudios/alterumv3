@@ -266,7 +266,7 @@ class verify_passwordState extends State<verify_password> {
               color: Colors.black.withOpacity(0.75),
             ),
             suffixIcon: Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+              padding: EdgeInsets.fromLTRB(0, 0, 15, 0),
               child: IconButton(
                 icon: Icon(
                   _passwordVisible ? Icons.visibility : Icons.visibility_off,
@@ -279,7 +279,7 @@ class verify_passwordState extends State<verify_password> {
                 },
               ),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
         ),
       ),
