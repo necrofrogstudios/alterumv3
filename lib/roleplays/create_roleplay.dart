@@ -38,6 +38,13 @@ class create_roleplay extends StatelessWidget {
               ),
             ),
             roleplay_name(),
+            Padding(
+              padding: EdgeInsets.fromLTRB(20, 10, 0, 0),
+              child: Text(
+                'About',
+                style: TextStyle(color: theme.primaryColor, fontSize: 15),
+              ),
+            ),
             about(),
             Container(color: theme.splashColor, height: 4),
             footer(),
