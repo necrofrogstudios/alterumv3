@@ -102,7 +102,7 @@ class about extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
       child: Container(
         decoration: BoxDecoration(
-          color: theme.backgroundColor,
+          color: Colors.white,
           borderRadius: BorderRadius.all(
             Radius.circular(30),
           ),
