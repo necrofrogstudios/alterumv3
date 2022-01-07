@@ -55,7 +55,7 @@ class contact_supportState extends State<contact_support> {
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Padding(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: Column(
                       children: [
                         Container(
