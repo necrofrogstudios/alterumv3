@@ -122,7 +122,7 @@ class input_complaint extends StatelessWidget {
         decoration: BoxDecoration(
           color: theme.accentColor,
           borderRadius: BorderRadius.all(
-            Radius.circular(50),
+            Radius.circular(30),
           ),
         ),
         child: TextFormField(
