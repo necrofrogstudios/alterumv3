@@ -13,7 +13,6 @@ class sign_upState extends State<sign_up> {
   bool value = false;
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Scaffold(
       body: Container(
         height: 800,
@@ -155,7 +154,6 @@ class sign_upState extends State<sign_up> {
 class input_username extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
@@ -193,7 +191,6 @@ class input_username extends StatelessWidget {
 class input_email extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
@@ -238,7 +235,6 @@ class input_passwordState extends State<input_password> {
   TextEditingController _userPasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
@@ -299,7 +295,6 @@ class verify_passwordState extends State<verify_password> {
   TextEditingController _userPasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
@@ -353,7 +348,6 @@ class verify_passwordState extends State<verify_password> {
 class register_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
       child: OutlinedButton(
@@ -361,14 +355,14 @@ class register_button extends StatelessWidget {
           side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
           padding: EdgeInsets.symmetric(horizontal: 80, vertical: 20),
-          backgroundColor: theme.backgroundColor,
+          backgroundColor: Colors.black,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
         ),
         child: Text(
           'Register',
-          style: TextStyle(fontSize: 15, color: theme.primaryColor),
+          style: TextStyle(fontSize: 15, color: Colors.white),
         ),
         onPressed: () {
           Navigator.push(
