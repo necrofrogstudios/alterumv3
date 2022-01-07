@@ -26,8 +26,7 @@ class contact_supportState extends State<contact_support> {
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage("https://thumbs.dreamstime.com/z/abstract-geometric-background-modern-marble-mosaic-inlay-blue-gold-triangles-black-white-stone-textures-fashion-marbling-abstract-196404787.jpg
-            "),
+            image: NetworkImage("https://thumbs.dreamstime.com/z/abstract-geometric-background-modern-marble-mosaic-inlay-blue-gold-triangles-black-white-stone-textures-fashion-marbling-abstract-196404787.jpg"),
             fit: BoxFit.cover,
           ),
         ),
