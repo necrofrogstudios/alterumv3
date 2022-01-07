@@ -32,13 +32,8 @@ class sign_upState extends State<sign_up> {
               Row(
                 children: [
                   IconButton(
-                    icon: const Icon(Icons.volume_up),
-                    tooltip: 'Increase volume by 10',
-                    onPressed: () {
-                      setState(() {
-                        _volume += 10;
-                      });
-                    },
+                    icon: const Icon(Icons.back),
+                    onPressed: () {},
                   ),
                 ],
               ),
