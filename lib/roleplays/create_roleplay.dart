@@ -31,17 +31,17 @@ class create_roleplay extends StatelessWidget {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             Padding(
-              padding: EdgeInsets.fromLTRB(20, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
-                'Roleplay Name',
+                'Roleplay Name *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
               ),
             ),
             roleplay_name(),
             Padding(
-              padding: EdgeInsets.fromLTRB(20, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
-                'About',
+                'About *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
               ),
             ),
