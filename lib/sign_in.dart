@@ -78,7 +78,7 @@ class sign_inState extends State<sign_in> {
                         textStyle: const TextStyle(fontSize: 15),
                       ),
                       onPressed: () {},
-                      child: const Text('Forgot Username || Password'),
+                      child: const Text('Forgot Username/Password'),
                     ),
                     Checkbox(
                       value: this.value,
