@@ -71,6 +71,15 @@ class sign_inState extends State<sign_in> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+                    TextButton(
+                      style: TextButton.styleFrom(
+                        padding: const EdgeInsets.all(16.0),
+                        primary: Colors.white,
+                        textStyle: const TextStyle(fontSize: 20),
+                      ),
+                      onPressed: () {},
+                      child: const Text('Forgot Username || Password'),
+                    ),
                     Checkbox(
                       value: this.value,
                       onChanged: (bool value) {
