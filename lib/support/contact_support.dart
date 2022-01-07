@@ -6,6 +6,8 @@ import 'package:testing/sign_in/sign_in.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class contact_support extends StatefulWidget {
+  final back;
+  contact_support(this.back);
   @override
   contact_supportState createState() => contact_supportState();
 }
