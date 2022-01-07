@@ -331,7 +331,7 @@ class register_button extends StatelessWidget {
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+          padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
           backgroundColor: theme.backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
