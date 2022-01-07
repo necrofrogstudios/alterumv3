@@ -64,7 +64,7 @@ class sign_upState extends State<sign_up> {
                 padding: EdgeInsets.fromLTRB(10, 5, 20, 10),
                 child: Text(
                   'Sign Up',
-                  style: TextStyle(fontSize: 30, color: Colors.white),
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
               input_username(),
