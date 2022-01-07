@@ -77,8 +77,7 @@ class sign_upState extends State<sign_up> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  sign_up_button(),
-                  sign_in_button(),
+                  register_button(),
                 ],
               ),
             ],
@@ -287,7 +286,7 @@ class verify_passwordState extends State<verify_password> {
   }
 }
 
-class sign_up_button extends StatelessWidget {
+class register_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -305,37 +304,6 @@ class sign_up_button extends StatelessWidget {
         ),
         child: Text(
           'Sign Up',
-          style: TextStyle(fontSize: 15, color: theme.primaryColor),
-        ),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => profile()),
-          );
-        },
-      ),
-    );
-  }
-}
-
-class sign_in_button extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    var theme = Theme.of(context);
-    return Padding(
-      padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
-      child: OutlinedButton(
-        style: OutlinedButton.styleFrom(
-          side: BorderSide(width: 4.0, color: Colors.yellow),
-          elevation: 6,
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-          backgroundColor: theme.backgroundColor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50),
-          ),
-        ),
-        child: Text(
-          'Sign In',
           style: TextStyle(fontSize: 15, color: theme.primaryColor),
         ),
         onPressed: () {
