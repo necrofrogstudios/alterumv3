@@ -92,7 +92,7 @@ class input_title extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
         decoration: BoxDecoration(
-          color: theme.accentColor,
+          color: theme.backgroundColor,
           borderRadius: BorderRadius.all(
             Radius.circular(50),
           ),
@@ -131,7 +131,7 @@ class input_complaint extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
         decoration: BoxDecoration(
-          color: theme.accentColor,
+          color: theme.backgroundColor,
           borderRadius: BorderRadius.all(
             Radius.circular(30),
           ),
@@ -172,7 +172,7 @@ class submit extends StatelessWidget {
           side: BorderSide(width: 4.0, color: theme.splashColor),
           elevation: 6,
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-          backgroundColor: theme.accentColor,
+          backgroundColor: theme.backgroundColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
