@@ -30,6 +30,7 @@ class sign_inState extends State<sign_in> {
             shrinkWrap: true,
             children: <Widget>[
               Row(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Icon(Icons.headset_mic, size: 30, color: Colors.white),
                 ],
