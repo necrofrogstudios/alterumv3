@@ -101,7 +101,7 @@ class sign_inState extends State<sign_in> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 10, 10),
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                 child: TextButton(
                   style: TextButton.styleFrom(
                     padding: const EdgeInsets.only(left: 5),
