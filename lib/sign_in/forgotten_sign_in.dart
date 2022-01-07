@@ -63,7 +63,7 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                    padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                     child: Text(
                       'Reset Password',
                       style: TextStyle(fontSize: 25, color: Colors.white),
