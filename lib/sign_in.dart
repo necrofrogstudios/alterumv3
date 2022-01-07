@@ -52,6 +52,18 @@ class sign_inState extends State<sign_in> {
                 height: 200,
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                    child: Text(
+                      'Sign In',
+                      style: TextStyle(fontSize: 25, color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
               input_username(),
               input_password(),
               Padding(
