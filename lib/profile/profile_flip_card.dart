@@ -47,6 +47,7 @@ class profile_flip_card extends StatelessWidget {
                 height: 200,
                 width: 200,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
