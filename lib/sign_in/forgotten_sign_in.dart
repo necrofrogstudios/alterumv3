@@ -25,7 +25,7 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.only(top: 40),
+          padding: EdgeInsets.only(top: 30),
           child: ListView(
             shrinkWrap: true,
             children: <Widget>[
