@@ -32,7 +32,7 @@ class sign_upState extends State<sign_up> {
               Row(
                 children: [
                   IconButton(
-                    icon: const Icon(Icons.arrow_back),
+                    icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30),
                     onPressed: () {},
                   ),
                 ],
