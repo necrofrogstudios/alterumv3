@@ -29,7 +29,7 @@ class sign_inState extends State<sign_in> {
           child: ListView(
             shrinkWrap: true,
             children: <Widget>[
-              Icon(Icons.headset_mic, iconSize: 30),
+              Icon(Icons.headset_mic, size: 30),
               Container(
                 child: Text(
                   'Alterum',
