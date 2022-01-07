@@ -47,9 +47,9 @@ class contact_supportState extends State<contact_support> {
                 ],
               ),
               Card(
-                side: BorderSide(width: 4.0, color: theme.splashColor),
                 color: theme.accentColor,
                 shape: RoundedRectangleBorder(
+                  side: BorderSide(color: Colors.white70, width: 1),
                   borderRadius: BorderRadius.circular(50),
                 ),
                 child: Column(
