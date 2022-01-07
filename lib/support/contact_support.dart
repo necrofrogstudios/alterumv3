@@ -51,7 +51,7 @@ class contact_supportState extends State<contact_support> {
                   'Support',
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: theme.primaryColor,
                     fontSize: 50,
                   ),
                 ),
