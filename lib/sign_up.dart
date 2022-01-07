@@ -218,7 +218,7 @@ class input_passwordState extends State<input_password> {
                 },
               ),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
         ),
       ),
