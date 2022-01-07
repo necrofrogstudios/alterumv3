@@ -73,7 +73,7 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                 ],
               ),
               input_username(),
-              SizedBox(height: 10),
+              SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
