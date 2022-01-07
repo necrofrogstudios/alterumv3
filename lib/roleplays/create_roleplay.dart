@@ -38,6 +38,7 @@ class create_roleplay extends StatelessWidget {
               ),
             ),
             roleplay_name(),
+            about(),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
@@ -76,6 +77,45 @@ class roleplay_name extends StatelessWidget {
             hintText: 'Enter Roleplay Name',
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class about extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final maxLines = 12;
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: theme.backgroundColor,
+          borderRadius: BorderRadius.all(
+            Radius.circular(30),
+          ),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: theme.primaryColor),
+          keyboardType: TextInputType.multiline,
+          maxLines: maxLines,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            hintText: 'Enter Text Here...',
+            hintStyle: TextStyle(
+              color: theme.primaryColor.withOpacity(0.55),
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
           ),
