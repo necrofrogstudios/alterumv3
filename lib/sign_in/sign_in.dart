@@ -34,7 +34,11 @@ class sign_inState extends State<sign_in> {
                 children: [
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
-                    child: Icon(Icons.headset_mic, size: 30, color: Colors.white),
+                    child: IconButton(
+                      icon: Icon(Icons.headset_mic, size: 30, color: Colors.white),
+                      tooltip: 'Increase volume by 10',
+                      onPressed: () {},
+                    ),
                   ),
                 ],
               ),
