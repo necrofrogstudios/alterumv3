@@ -125,7 +125,7 @@ class input_complaint extends StatelessWidget {
           ),
         ),
         child: TextFormField(
-           final maxLines = 25;
+           maxLines = 5;
           style: TextStyle(color: theme.primaryColor),
           keyboardType: TextInputType.multiline,
           maxLines: maxLines,
