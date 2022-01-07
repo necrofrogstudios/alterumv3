@@ -25,30 +25,14 @@ class profile_pics_icons extends StatelessWidget {
         ),
         profile_flip_card(),
         Center(
-            child: Padding(
-          padding: EdgeInsets.fromLTRB(0, 290, 0, 0),
-          child: Text('Guarded', style: TextStyle(fontSize: 35, color: theme.primaryColor)),
-        )),
-        Padding(
-          padding: EdgeInsets.fromLTRB(0, 340, 0, 0),
-          child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-            Icon(
-              Icons.person_add,
-              size: 30,
-              color: theme.primaryColor,
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(0, 290, 0, 0),
+            child: Text(
+              'Guarded',
+              style: TextStyle(fontSize: 35, color: theme.primaryColor),
             ),
-            Icon(
-              Icons.email,
-              size: 30,
-              color: theme.primaryColor,
-            ),
-            Icon(
-              Icons.group_add,
-              size: 37,
-              color: theme.primaryColor,
-            )
-          ]),
-        )
+          ),
+        ),
       ],
     );
   }
