@@ -97,7 +97,6 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   sign_up_button(),
-                  sign_in_button(),
                 ],
               ),
             ],
