@@ -125,10 +125,10 @@ class input_complaint extends StatelessWidget {
           ),
         ),
         child: TextFormField(
-          height: 400,
+           final maxLines = 25;
           style: TextStyle(color: theme.primaryColor),
           keyboardType: TextInputType.multiline,
-          maxLines: null,
+          maxLines: maxLines,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
