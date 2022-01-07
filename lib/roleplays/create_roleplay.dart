@@ -30,8 +30,11 @@ class create_roleplay extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+              child: Text('Roleplay Name'),
+            ),
             roleplay_name(),
-            Container(height: 300),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
