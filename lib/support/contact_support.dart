@@ -118,6 +118,7 @@ class input_complaint extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
+        height: 100,
         decoration: BoxDecoration(
           color: theme.accentColor,
           borderRadius: BorderRadius.all(
@@ -127,7 +128,7 @@ class input_complaint extends StatelessWidget {
         child: TextFormField(
           style: TextStyle(color: theme.primaryColor),
           keyboardType: TextInputType.multiline,
-          maxLines: maxLines,
+          maxLines: null,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
