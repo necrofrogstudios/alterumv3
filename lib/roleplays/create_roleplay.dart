@@ -31,7 +31,7 @@ class create_roleplay extends StatelessWidget {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             Padding(
-              padding: EdgeInsets.fromLTRB(10, 10, 0, 5),
+              padding: EdgeInsets.fromLTRB(10, 10, 0, 0),
               child: Text(
                 'Roleplay Name',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
@@ -52,7 +52,7 @@ class roleplay_name extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
