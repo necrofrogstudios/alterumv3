@@ -26,7 +26,7 @@ class profile_pics_icons extends StatelessWidget {
         profile_flip_card(),
         Center(
           child: Padding(
-            padding: EdgeInsets.fromLTRB(0, 320, 0, 0),
+            padding: EdgeInsets.fromLTRB(0, 310, 0, 0),
             child: Text(
               'Guarded',
               style: TextStyle(fontSize: 40, color: theme.primaryColor),
