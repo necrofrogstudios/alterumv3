@@ -96,7 +96,7 @@ class roleplay_name extends StatelessWidget {
 class about extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final maxLines = 12;
+    final maxLines = 10;
     var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
