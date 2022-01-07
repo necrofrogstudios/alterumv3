@@ -70,7 +70,7 @@ class contact_supportState extends State<contact_support> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        sign_in_button(),
+                        submit(),
                       ],
                     ),
                   ],
@@ -161,7 +161,7 @@ class input_complaint extends StatelessWidget {
   }
 }
 
-class sign_in_button extends StatelessWidget {
+class submit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
