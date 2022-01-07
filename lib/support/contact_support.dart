@@ -45,26 +45,32 @@ class contact_supportState extends State<contact_support> {
                     ),
                   ),
                 ],
-              ),Card( child: Column( children:[
-              Container(
-                child: Text(
-                  'Support',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: theme.primaryColor,
-                    fontSize: 50,
-                  ),
+              ),
+              Card(
+                child: Column(
+                  children: [
+                    Container(
+                      child: Text(
+                        'Support',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: theme.primaryColor,
+                          fontSize: 50,
+                        ),
+                      ),
+                    ),
+                    input_title(),
+                    input_complaint(),
+                    SizedBox(height: 20),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        sign_in_button(),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-              input_title(),
-              input_complaint(),
-              SizedBox(height: 20),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  sign_in_button(),
-                ],
-              ),,],),),
             ],
           ),
         ),
