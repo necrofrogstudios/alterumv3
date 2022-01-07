@@ -101,7 +101,7 @@ class sign_inState extends State<sign_in> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
+                padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
