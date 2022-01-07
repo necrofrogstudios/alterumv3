@@ -14,7 +14,7 @@ class profile_pics_icons extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: NetworkImage("https://cdn.pixabay.com/photo/2019/08/30/04/32/nature-4440363_1280.png"),
+                  image: NetworkImage("https://previews.123rf.com/images/nosyrevy/nosyrevy1802/nosyrevy180200058/95258853-coniferous-forest-trees-set-silhouette-background-of-nature-.jpg"),
                 ),
               ),
             ),
