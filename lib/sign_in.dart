@@ -137,6 +137,7 @@ class sign_inState extends State<sign_in> {
               ),
               Container(
                 color: Colors.black,
+                height: 30,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
