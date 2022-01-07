@@ -13,7 +13,6 @@ class sign_inState extends State<sign_in> {
   bool value = false;
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Scaffold(
       body: Container(
         height: 500,
@@ -176,7 +175,6 @@ class sign_inState extends State<sign_in> {
 class input_username extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
@@ -221,7 +219,6 @@ class input_passwordState extends State<input_password> {
   TextEditingController _userPasswordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
       child: Container(
@@ -275,7 +272,6 @@ class input_passwordState extends State<input_password> {
 class sign_up_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
       child: OutlinedButton(
@@ -283,14 +279,14 @@ class sign_up_button extends StatelessWidget {
           side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-          backgroundColor: theme.backgroundColor,
+          backgroundColor: Colors.black,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
         ),
         child: Text(
           'Sign Up',
-          style: TextStyle(fontSize: 15, color: theme.primaryColor),
+          style: TextStyle(fontSize: 15, color: Colors.white),
         ),
         onPressed: () {
           Navigator.push(
@@ -306,7 +302,6 @@ class sign_up_button extends StatelessWidget {
 class sign_in_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
       child: OutlinedButton(
@@ -314,14 +309,14 @@ class sign_in_button extends StatelessWidget {
           side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-          backgroundColor: theme.backgroundColor,
+          backgroundColor: Colors.black,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
         ),
         child: Text(
           'Sign In',
-          style: TextStyle(fontSize: 15, color: theme.primaryColor),
+          style: TextStyle(fontSize: 15, color: Colors.white),
         ),
         onPressed: () {
           Navigator.push(
