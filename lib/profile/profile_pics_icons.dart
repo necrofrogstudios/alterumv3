@@ -27,7 +27,7 @@ class profile_pics_icons extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(30),
                 color: Colors.yellow[100],
                 border: Border.all(
                   color: Colors.red,
