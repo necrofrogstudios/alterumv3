@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:testing/support/contact_support.dart';
 
 class footer extends StatelessWidget {
-  final back;
-  footer(this.back);
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
