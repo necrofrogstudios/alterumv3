@@ -17,7 +17,7 @@ class contact_supportState extends State<contact_support> {
     var theme = Theme.of(context);
     return Scaffold(
       body: Container(
-        color: Colors.backgroundColor,
+        color: theme.backgroundColor,
         height: 500,
         width: double.infinity,
         constraints: BoxConstraints.expand(),
