@@ -28,10 +28,9 @@ class profile_pics_icons extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
-                color: Colors.yellow[100],
                 border: Border.all(
-                  color: Colors.red,
-                  width: 5,
+                  color: theme.splashColor,
+                  width: 4,
                 ),
               ),
               height: 200,
