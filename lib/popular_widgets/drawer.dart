@@ -78,7 +78,7 @@ class drawer extends StatelessWidget {
                 alignment: Alignment.center,
                 child: Padding(
                   padding: EdgeInsets.only(
-                    top: 10,
+                    top: 5,
                     bottom: 10,
                   ),
                   child: Row(
