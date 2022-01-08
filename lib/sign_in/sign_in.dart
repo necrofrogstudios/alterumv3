@@ -97,7 +97,7 @@ class sign_inState extends State<sign_in> {
                             padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
                             child: TextButton(
                               style: TextButton.styleFrom(
-                                padding: const EdgeInsets.only(left: 5),
+                                padding: const EdgeInsets.only(left: 0),
                                 primary: Colors.white,
                                 textStyle: const TextStyle(fontSize: 13),
                               ),
