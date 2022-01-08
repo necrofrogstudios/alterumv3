@@ -44,6 +44,11 @@ class appbar_custom extends StatelessWidget {
                     context,
                     MaterialPageRoute(builder: (context) => messages_main()),
                   );
+
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => messages_main()),
+                  );
                 },
               ),
               Icon(Icons.group),
