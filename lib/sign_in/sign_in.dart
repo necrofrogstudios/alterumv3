@@ -84,7 +84,7 @@ class sign_inState extends State<sign_in> {
               input_username(),
               input_password(),
               Padding(
-                padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                padding: EdgeInsets.fromLTRB(20, 0, 20, 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -116,20 +116,24 @@ class sign_inState extends State<sign_in> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Container(
-                          height: 20,
-                          width: 40,
-                          child: CheckboxListTile(
-                            title: Text("title text"),
-                            value: this.value,
-                            onChanged: (bool value) {
-                              setState(() {
-                                this.value = value;
-                              });
-                            },
-                            activeColor: Colors.yellow,
-                            checkColor: Colors.black,
+                        Checkbox(
+                          value: this.value,
+                          onChanged: (bool value) {
+                            setState(() {
+                              this.value = value;
+                            });
+                          },
+                          activeColor: Colors.yellow,
+                          checkColor: Colors.black,
+                          side: BorderSide(
+                            color: Colors.yellow,
+                            width: 1.5,
                           ),
+                        ),
+                        Text(
+                          'Remember Me',
+                          textAlign: TextAlign.end,
+                          style: TextStyle(color: Colors.white, fontSize: 13),
                         ),
                       ],
                     ),
