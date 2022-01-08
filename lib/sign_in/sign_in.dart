@@ -66,7 +66,7 @@ class sign_inState extends State<sign_in> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                    padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: Text(
                       'Login or Signup',
                       style: TextStyle(
