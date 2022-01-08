@@ -81,7 +81,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         highlightColor: Colors.transparent,
         hoverColor: Colors.transparent,
         iconSize: 25,
-        icon: Padding(padding: EdgeInsets.fromLTRB(0, 0, 0, 0), child: pressed == true ? Icon(Icons.close) : Icon(Icons.close)),
+        icon: Padding(padding: EdgeInsets.fromLTRB(0, 0, 0, 0), child: pressed == true ? Icon(Icons.notifications) : Icon(Icons.close)),
         color: theme.primaryColor,
         onPressed: () {
           setState(() {
@@ -103,15 +103,12 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         var theme = Theme.of(context);
         return Stack(
           children: [
-            Positioned.fill(
-                child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        pressed = !pressed;
-                      });
-                      closeMenu();
-                    },
-                    child: Container(color: Colors.transparent))),
+            Positioned.fill(child: GestureDetector(onTap: () {
+              setState(() {
+                pressed = !pressed;
+              });
+              closeMenu();
+            })),
             Positioned(
               top: buttonPosition.dy + buttonSize.height,
               left: buttonPosition.dx,
