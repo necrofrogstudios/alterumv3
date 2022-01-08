@@ -1,6 +1,6 @@
 import 'package:splashscreen/splashscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:testing/sign_in/sign_in.dart';
+import 'package:testing/profile/profile.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -23,7 +23,7 @@ class _Splash extends State<Splash> {
             height: logicHeight,
             child: new SplashScreen(
                 seconds: 1,
-                navigateAfterSeconds: sign_in(),
+                navigateAfterSeconds: profile(),
                 title: new Text(
                   'Alterum',
                   style: new TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Hind', fontSize: 85.0, color: Colors.white),
