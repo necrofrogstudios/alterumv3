@@ -49,7 +49,7 @@ class sign_inState extends State<sign_in> {
                 ],
               ),
               Container(
-                height: 150,
+                height: 170,
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
               Container(
