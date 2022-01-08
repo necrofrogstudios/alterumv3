@@ -45,7 +45,7 @@ class appbar_custom extends StatelessWidget {
             onChange: (index) {
               print(index);
 
-              Navigator.push(context, MaterialPageRoute(builder: (context) => main_page()));
+              messages_main(),
             },
           ),
         ),
