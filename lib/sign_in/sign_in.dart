@@ -116,7 +116,7 @@ class sign_inState extends State<sign_in> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        CheckboxListTile(
+                       Container(height:20, child: CheckboxListTile(
                           title: Text("title text"),
                           value: this.value,
                           onChanged: (bool value) {
@@ -132,7 +132,7 @@ class sign_inState extends State<sign_in> {
                           textAlign: TextAlign.end,
                           style: TextStyle(color: Colors.white, fontSize: 13),
                         ),
-                      ],
+                       ),],
                     ),
                   ],
                 ),
