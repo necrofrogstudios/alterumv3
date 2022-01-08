@@ -109,26 +109,31 @@ class sign_inState extends State<sign_in> {
                           ),
                         ],
                       ),
-                    ),Row(children:[mainAxisAlignment: MainAxisAlignment.end, 
-                    Checkbox(
-                      value: this.value,
-                      onChanged: (bool value) {
-                        setState(() {
-                          this.value = value;
-                        });
-                      },
-                      activeColor: Colors.yellow,
-                      checkColor: Colors.black,
-                      side: BorderSide(
-                        color: Colors.yellow,
-                        width: 1.5,
-                      ),
                     ),
-                    Text(
-                      'Remember Me',
-                      textAlign: TextAlign.end,
-                      style: TextStyle(color: Colors.white, fontSize: 15),
-                    ),],),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Checkbox(
+                          value: this.value,
+                          onChanged: (bool value) {
+                            setState(() {
+                              this.value = value;
+                            });
+                          },
+                          activeColor: Colors.yellow,
+                          checkColor: Colors.black,
+                          side: BorderSide(
+                            color: Colors.yellow,
+                            width: 1.5,
+                          ),
+                        ),
+                        Text(
+                          'Remember Me',
+                          textAlign: TextAlign.end,
+                          style: TextStyle(color: Colors.white, fontSize: 15),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
