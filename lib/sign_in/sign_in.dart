@@ -11,6 +11,7 @@ class sign_in extends StatefulWidget {
 }
 
 class sign_inState extends State<sign_in> {
+  bool isChecked = false;
   final currentScreen = sign_in;
   bool value = false;
   @override
@@ -87,7 +88,16 @@ class sign_inState extends State<sign_in> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    MyStatefulWidget(),
+                    Checkbox(
+                      checkColor: Colors.white,
+                      fillColor: MaterialStateProperty.resolveWith(getColor),
+                      value: isChecked,
+                      onChanged: (bool? value) {
+                        setState(() {
+                          isChecked = value!;
+                        });
+                      },
+                    ),
                     Padding(
                       padding: EdgeInsets.only(right: 53.0),
                       child: Text(
