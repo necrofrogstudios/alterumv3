@@ -49,6 +49,10 @@ class sign_inState extends State<sign_in> {
                 ],
               ),
               Container(
+                height: 200,
+                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
+              ),
+              Container(
                 child: Text(
                   'Alterum',
                   textAlign: TextAlign.center,
@@ -58,10 +62,6 @@ class sign_inState extends State<sign_in> {
                   ),
                 ),
               ),
-              Container(
-                height: 200,
-                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -69,7 +69,7 @@ class sign_inState extends State<sign_in> {
                     padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                     child: Text(
                       'Sign In',
-                      style: TextStyle(fontSize: 25, color: Colors.white),
+                      style: TextStyle(fontSize: 10, color: Colors.white),
                     ),
                   ),
                 ],
