@@ -6,6 +6,7 @@ import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/main_page/marquee.dart';
+import 'package:testing/messages/messages_main.dart';
 
 class appbar_custom extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -33,7 +34,19 @@ class appbar_custom extends StatelessWidget {
           child: SimpleAccountMenu(
             icons: [
               Icon(Icons.menu_book),
-              Icon(Icons.email),
+              IconButton(
+                icon: Icon(
+                  Icons.email,
+                ),
+                iconSize: 40,
+                color: theme.primaryColor,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => messages_main()),
+                  );
+                },
+              ),
               Icon(Icons.group),
               Icon(Icons.person_add),
             ],
