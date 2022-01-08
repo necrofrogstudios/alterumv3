@@ -10,6 +10,12 @@ import 'package:testing/messages/messages_main.dart';
 import 'package:testing/main_page/main_page.dart';
 
 class appbar_custom extends StatelessWidget {
+  final List<Widget> navigation = [
+    main_page(),
+    messages_main(),
+    main_page(),
+    messages_main(),
+  ];
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
 
@@ -44,8 +50,8 @@ class appbar_custom extends StatelessWidget {
             iconColor: theme.primaryColor,
             onChange: (index) {
               print(index);
-              Navigator.push(context, MaterialPageRoute(builder: (index) => main_page()));
-              Navigator.push(context, MaterialPageRoute(builder: (index) => messages_main()));
+
+              Navigator.push(context, MaterialPageRoute(builder: (index) => navigation()));
             },
           ),
         ),
