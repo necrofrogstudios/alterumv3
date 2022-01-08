@@ -215,7 +215,7 @@ class input_username extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           ),
         ),
       ),
@@ -275,7 +275,7 @@ class input_passwordState extends State<input_password> {
                 },
               ),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           ),
         ),
       ),
