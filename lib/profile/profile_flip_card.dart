@@ -38,7 +38,7 @@ class profile_flip_card extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   color: theme.accentColor,
-                  borderRadius: BorderRadius.circular(27),
+                  borderRadius: BorderRadius.circular(28),
                   border: Border.all(
                     color: theme.splashColor,
                     width: 4,
