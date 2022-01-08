@@ -101,61 +101,71 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
     return OverlayEntry(
       builder: (context) {
         var theme = Theme.of(context);
-        return Positioned(
-          top: buttonPosition.dy + buttonSize.height,
-          left: buttonPosition.dx,
-          width: buttonSize.width,
-          child: Material(
-            color: Colors.transparent,
-            child: Stack(
-              children: <Widget>[
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: ClipPath(
-                    clipper: ArrowClipper(),
-                    child: Container(
-                      width: 17,
-                      height: 17,
-                      color: theme.accentColor,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 15.0),
-                  child: Container(
-                    height: widget.icons.length * buttonSize.height,
-                    decoration: BoxDecoration(
-                      color: theme.accentColor,
-                      borderRadius: _borderRadius,
-                    ),
-                    child: Theme(
-                      data: ThemeData(
-                        iconTheme: IconThemeData(
-                          color: theme.primaryColor,
+        return Stack(
+          children: [
+            Positioned.fill(child: GestureDetector(onTap: () {
+              setState(() {
+                pressed = !pressed;
+              });
+              closeMenu();
+            })),
+            Positioned(
+              top: buttonPosition.dy + buttonSize.height,
+              left: buttonPosition.dx,
+              width: buttonSize.width,
+              child: Material(
+                color: Colors.transparent,
+                child: Stack(
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.topCenter,
+                      child: ClipPath(
+                        clipper: ArrowClipper(),
+                        child: Container(
+                          width: 17,
+                          height: 17,
+                          color: theme.accentColor,
                         ),
                       ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: List.generate(widget.icons.length, (index) {
-                          return GestureDetector(
-                            onTap: () {
-                              widget.onChange(index);
-                              closeMenu();
-                            },
-                            child: Container(
-                              width: buttonSize.width,
-                              height: buttonSize.height,
-                              child: widget.icons[index],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15.0),
+                      child: Container(
+                        height: widget.icons.length * buttonSize.height,
+                        decoration: BoxDecoration(
+                          color: theme.accentColor,
+                          borderRadius: _borderRadius,
+                        ),
+                        child: Theme(
+                          data: ThemeData(
+                            iconTheme: IconThemeData(
+                              color: theme.primaryColor,
                             ),
-                          );
-                        }),
+                          ),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: List.generate(widget.icons.length, (index) {
+                              return GestureDetector(
+                                onTap: () {
+                                  widget.onChange(index);
+                                  closeMenu();
+                                },
+                                child: Container(
+                                  width: buttonSize.width,
+                                  height: buttonSize.height,
+                                  child: widget.icons[index],
+                                ),
+                              );
+                            }),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
-              ],
+              ),
             ),
-          ),
+          ],
         );
       },
     );
