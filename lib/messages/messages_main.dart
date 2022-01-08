@@ -10,7 +10,7 @@ import 'package:testing/popular_widgets/appbar_custom.dart';
 
 class messages_main extends StatelessWidget {
   final currentScreen = messages_main;
-  
+
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -30,7 +30,9 @@ class messages_main extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
-            Text('bleh',)
+            Text(
+              'bleh',
+            ),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
