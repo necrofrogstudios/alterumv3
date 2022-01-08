@@ -87,30 +87,27 @@ class sign_inState extends State<sign_in> {
                   children: [
                     Padding(
                       padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                      child: Container(
-                        height: 30,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(0, 10, 0, 5),
-                              child: TextButton(
-                                style: TextButton.styleFrom(
-                                  padding: const EdgeInsets.only(left: 5),
-                                  primary: Colors.white,
-                                  textStyle: const TextStyle(fontSize: 13),
-                                ),
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => forgotten_sign_in()),
-                                  );
-                                },
-                                child: const Text('Forgot Username/Password'),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 10, 0, 5),
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                padding: const EdgeInsets.only(left: 5),
+                                primary: Colors.white,
+                                textStyle: const TextStyle(fontSize: 13),
                               ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => forgotten_sign_in()),
+                                );
+                              },
+                              child: const Text('Forgot Username/Password'),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                     Checkbox(
