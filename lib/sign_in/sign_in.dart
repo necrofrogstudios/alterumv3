@@ -88,31 +88,6 @@ class sign_inState extends State<sign_in> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(0, 15, 0, 5),
-                            child: TextButton(
-                              style: TextButton.styleFrom(
-                                padding: const EdgeInsets.only(left: 5),
-                                primary: Colors.white,
-                                textStyle: const TextStyle(fontSize: 13),
-                              ),
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => forgotten_sign_in()),
-                                );
-                              },
-                              child: const Text('Forgot Username/Password'),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
@@ -129,6 +104,11 @@ class sign_inState extends State<sign_in> {
                             color: Colors.yellow,
                             width: 1.5,
                           ),
+                        ),
+                        Text(
+                          'Remember Me',
+                          textAlign: TextAlign.end,
+                          style: TextStyle(color: Colors.white, fontSize: 13),
                         ),
                       ],
                     ),
