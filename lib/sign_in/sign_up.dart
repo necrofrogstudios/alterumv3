@@ -46,14 +46,14 @@ class sign_upState extends State<sign_up> {
                 ],
               ),
               Container(
-                height: 130,
+                height: 120,
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                    padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                     child: Text(
                       'Sign Up',
                       style: TextStyle(fontSize: 30, color: Colors.white),
@@ -66,7 +66,7 @@ class sign_upState extends State<sign_up> {
               input_password(),
               verify_password(),
               Padding(
-                padding: EdgeInsets.fromLTRB(10, 5, 20, 10),
+                padding: EdgeInsets.fromLTRB(10, 0, 20, 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -339,7 +339,7 @@ class register_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
+      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
       child: OutlinedButton(
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: Colors.yellow),

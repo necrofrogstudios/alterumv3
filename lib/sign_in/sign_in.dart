@@ -27,7 +27,7 @@ class sign_inState extends State<sign_in> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.only(top: 5),
+          padding: EdgeInsets.only(top: 0),
           child: ListView(
             shrinkWrap: true,
             children: <Widget>[
@@ -148,7 +148,7 @@ class sign_inState extends State<sign_in> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 25, 0, 20),
+                padding: EdgeInsets.fromLTRB(0, 25, 0, 17),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
