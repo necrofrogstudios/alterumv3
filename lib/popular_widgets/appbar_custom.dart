@@ -40,7 +40,20 @@ class appbar_custom extends StatelessWidget {
                 ),
                 color: theme.primaryColor,
                 onPressed: () {
-                  Navigator.pop(
+                  IconButton(
+                          icon: Icon(
+                            Icons.email,
+                          ),
+                          iconSize: 40,
+                          color: theme.primaryColor,
+                          onPressed: () {
+                            Navigator.pop(
+                              context,
+                              MaterialPageRoute(builder: (context) => closeMenu()),
+                            );
+                          },
+                        ),
+                  Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => messages_main()),
                   );
