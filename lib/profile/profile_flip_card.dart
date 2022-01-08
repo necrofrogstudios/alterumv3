@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
+import 'package:testing/messages/messages_main';
 
 class profile_flip_card extends StatelessWidget {
   @override
@@ -63,7 +64,12 @@ class profile_flip_card extends StatelessWidget {
                           ),
                           iconSize: 40,
                           color: theme.primaryColor,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => messages_main()),
+                            );
+                          },
                         ),
                       ],
                     ),
