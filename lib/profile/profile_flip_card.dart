@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
-import 'package:testing/messages/messages_main';
+import 'package:testing/messages/messages_main.dart';
 
 class profile_flip_card extends StatelessWidget {
   @override
