@@ -103,12 +103,15 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         var theme = Theme.of(context);
         return Stack(
           children: [
-            Positioned.fill(child: GestureDetector(onTap: () {
-              setState(() {
-                pressed = !pressed;
-              });
-              closeMenu();
-            })),
+            Positioned.fill(
+                child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        pressed = !pressed;
+                      });
+                      closeMenu();
+                    },
+                    child: Container(color: Colors.red))),
             Positioned(
               top: buttonPosition.dy + buttonSize.height,
               left: buttonPosition.dx,
