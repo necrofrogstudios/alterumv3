@@ -111,7 +111,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
                       });
                       closeMenu();
                     },
-                    child: Container(color: Colors.red))),
+                    child: Container(color: Colors.transparent))),
             Positioned(
               top: buttonPosition.dy + buttonSize.height,
               left: buttonPosition.dx,
