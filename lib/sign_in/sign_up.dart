@@ -180,7 +180,7 @@ class input_username extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           ),
         ),
       ),
@@ -217,7 +217,7 @@ class input_email extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           ),
         ),
       ),
@@ -277,7 +277,7 @@ class input_passwordState extends State<input_password> {
                 },
               ),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           ),
         ),
       ),
@@ -337,7 +337,7 @@ class verify_passwordState extends State<verify_password> {
                 },
               ),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           ),
         ),
       ),
@@ -354,7 +354,7 @@ class register_button extends StatelessWidget {
         style: OutlinedButton.styleFrom(
           side: BorderSide(width: 4.0, color: Colors.yellow),
           elevation: 6,
-          padding: EdgeInsets.symmetric(horizontal: 80, vertical: 20),
+          padding: EdgeInsets.symmetric(horizontal: 80, vertical: 17),
           backgroundColor: Colors.black,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
