@@ -94,8 +94,7 @@ class sign_inState extends State<sign_in> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
-                            child: TextButton(
+                             TextButton(
                               style: TextButton.styleFrom(
                                 padding: const EdgeInsets.only(left: 5),
                                 primary: Colors.white,
@@ -108,7 +107,7 @@ class sign_inState extends State<sign_in> {
                                 );
                               },
                               child: const Text('Forgot Username/Password'),
-                            ),
+                            
                           ),
                         ],
                       ),
