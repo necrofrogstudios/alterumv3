@@ -130,11 +130,6 @@ class sign_inState extends State<sign_in> {
                             width: 1.5,
                           ),
                         ),
-                        Text(
-                          'Remember Me',
-                          textAlign: TextAlign.end,
-                          style: TextStyle(color: Colors.white, fontSize: 13),
-                        ),
                       ],
                     ),
                   ],
