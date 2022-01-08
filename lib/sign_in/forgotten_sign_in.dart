@@ -46,6 +46,10 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                 ],
               ),
               Container(
+                height: 200,
+                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
+              ),
+              Container(
                 child: Text(
                   'Alterum',
                   textAlign: TextAlign.center,
@@ -55,10 +59,6 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                   ),
                 ),
               ),
-              Container(
-                height: 200,
-                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -66,7 +66,7 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
                     padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                     child: Text(
                       'Reset Password',
-                      style: TextStyle(fontSize: 25, color: Colors.white),
+                      style: TextStyle(fontSize: 15, color: Colors.white),
                     ),
                   ),
                 ],
@@ -116,7 +116,7 @@ class input_username extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
-            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+            contentPadding: EdgeInsets.symmetric(vertical: 18.0, horizontal: 20),
           ),
         ),
       ),
