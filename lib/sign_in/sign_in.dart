@@ -108,7 +108,7 @@ class sign_inState extends State<sign_in> {
                                 );
                               },
                               child: const Text('Forgot Username/Password'),
-                            
+                            ),
                           ),
                         ],
                       ),
