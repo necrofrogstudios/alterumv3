@@ -24,7 +24,6 @@ class messages_main extends StatelessWidget {
       drawer: drawer(currentScreen),
       body: Container(
         child: ListView(
-          controller: controller,
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
