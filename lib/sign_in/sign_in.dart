@@ -91,7 +91,7 @@ class sign_inState extends State<sign_in> {
                       checkColor: Colors.white,
                       fillColor: MaterialStateProperty.resolveWith(getColor),
                       value: this.value,
-                      onChanged: (bool? value) {
+                      onChanged: (bool value) {
                         setState(() {
                           this.value = value;
                         });
