@@ -109,7 +109,7 @@ class sign_inState extends State<sign_in> {
                           ),
                         ],
                       ),
-                    ),
+                    ),Row(children:[mainAxisAlignment: MainAxisAlignment.end, 
                     Checkbox(
                       value: this.value,
                       onChanged: (bool value) {
@@ -128,7 +128,7 @@ class sign_inState extends State<sign_in> {
                       'Remember Me',
                       textAlign: TextAlign.end,
                       style: TextStyle(color: Colors.white, fontSize: 15),
-                    ),
+                    ),],),
                   ],
                 ),
               ),
