@@ -117,7 +117,7 @@ class sign_inState extends State<sign_in> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Checkbox(
-                          title: Text('try'),
+                          title: const Text('GeeksforGeeks'),
                           value: this.value,
                           onChanged: (bool value) {
                             setState(() {
