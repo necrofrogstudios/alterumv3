@@ -83,6 +83,35 @@ class sign_inState extends State<sign_in> {
               ),
               input_username(),
               input_password(),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    MyStatefulWidget(),
+                    Padding(
+                      padding: EdgeInsets.only(right: 53.0),
+                      child: Text(
+                        'Remember Me',
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(right: 15.0),
+                      child: Text(
+                        'Forgot Password?',
+                        style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.black,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ), //text
+                    ),
+                  ],
+                ),
+              ),
               Padding(
                 padding: EdgeInsets.fromLTRB(20, 0, 20, 10),
                 child: Row(
