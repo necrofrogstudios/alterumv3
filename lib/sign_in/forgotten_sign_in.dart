@@ -32,7 +32,7 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 0, 0, 40),
+                    padding: EdgeInsets.fromLTRB(10, 0, 0, 50),
                     child: IconButton(
                       icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30),
                       onPressed: () {
