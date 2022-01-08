@@ -39,12 +39,7 @@ class appbar_custom extends StatelessWidget {
                   Icons.email,
                 ),
                 color: theme.primaryColor,
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => messages_main()),
-                  );
-                },
+                onPressed: () {},
               ),
               Icon(Icons.group),
               Icon(Icons.person_add),
@@ -52,6 +47,7 @@ class appbar_custom extends StatelessWidget {
             iconColor: theme.primaryColor,
             onChange: (index) {
               print(index);
+              Navigator.pop(context);
             },
           ),
         ),
