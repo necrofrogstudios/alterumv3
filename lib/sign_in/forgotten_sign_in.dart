@@ -141,7 +141,11 @@ class sign_in_button extends StatelessWidget {
         ),
         child: Text(
           'Send Password Reset',
-          style: TextStyle(fontSize: 15, color: Colors.white),
+          style: TextStyle(
+            fontSize: 15,
+            color: Colors.white,
+            fontStyle: FontStyle.italic,
+          ),
         ),
         onPressed: () {},
       ),
