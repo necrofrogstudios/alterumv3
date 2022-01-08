@@ -46,16 +46,6 @@ class sign_upState extends State<sign_up> {
                 ],
               ),
               Container(
-                child: Text(
-                  'Alterum',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 50,
-                  ),
-                ),
-              ),
-              Container(
                 height: 100,
                 child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
