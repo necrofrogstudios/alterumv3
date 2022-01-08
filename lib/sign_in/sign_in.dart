@@ -83,84 +83,54 @@ class sign_inState extends State<sign_in> {
               ),
               input_username(),
               input_password(),
-              Container(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Checkbox(
-                      checkColor: Colors.white,
-                      fillColor: MaterialStateProperty.resolveWith(getColor),
-                      value: this.value,
-                      onChanged: (bool value) {
-                        setState(() {
-                          this.value = value;
-                        });
-                      },
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(right: 53.0),
-                      child: Text(
-                        'Remember Me',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(right: 15.0),
-                      child: Text(
-                        'Forgot Password?',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black,
-                          fontStyle: FontStyle.italic,
-                        ),
-                      ), //text
-                    ),
-                  ],
-                ),
-              ),
               Padding(
-                padding: EdgeInsets.fromLTRB(20, 0, 20, 10),
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
-                      child: TextButton(
-                        style: TextButton.styleFrom(
-                          padding: const EdgeInsets.only(left: 0),
-                          primary: Colors.white,
-                          textStyle: const TextStyle(fontSize: 13),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => forgotten_sign_in()),
-                          );
-                        },
-                        child: const Text('Forgot Username/Password        '),
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                padding: const EdgeInsets.only(left: 0),
+                                primary: Colors.white,
+                                textStyle: const TextStyle(fontSize: 13),
+                              ),
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => forgotten_sign_in()),
+                                );
+                              },
+                              child: const Text('Forgot Username/Password   '),
+                            ),
+                          ),
+                          Checkbox(
+                            value: this.value,
+                            onChanged: (bool value) {
+                              setState(() {
+                                this.value = value;
+                              });
+                            },
+                            activeColor: Colors.yellow,
+                            checkColor: Colors.black,
+                            side: BorderSide(
+                              color: Colors.yellow,
+                              width: 1.5,
+                            ),
+                          ),
+                          Text(
+                            'Remember Me',
+                            textAlign: TextAlign.end,
+                            style: TextStyle(color: Colors.white, fontSize: 13),
+                          ),
+                        ],
                       ),
-                    ),
-                    Checkbox(
-                      value: this.value,
-                      onChanged: (bool value) {
-                        setState(() {
-                          this.value = value;
-                        });
-                      },
-                      activeColor: Colors.yellow,
-                      checkColor: Colors.black,
-                      side: BorderSide(
-                        color: Colors.yellow,
-                        width: 1.5,
-                      ),
-                    ),
-                    Text(
-                      'Remember Me',
-                      textAlign: TextAlign.end,
-                      style: TextStyle(color: Colors.white, fontSize: 13),
                     ),
                   ],
                 ),
