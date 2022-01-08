@@ -38,7 +38,6 @@ class appbar_custom extends StatelessWidget {
                 icon: Icon(
                   Icons.email,
                 ),
-                iconSize: 40,
                 color: theme.primaryColor,
                 onPressed: () {
                   Navigator.push(
