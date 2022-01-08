@@ -57,10 +57,17 @@ class profile_flip_card extends StatelessWidget {
                           size: 40,
                           color: theme.primaryColor,
                         ),
-                        Icon(
-                          Icons.email,
-                          size: 40,
+                        IconButton(
+                          icon: Icon(
+                            Icon(
+                              Icons.email,
+                              size: 40,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                          iconSize: 50,
                           color: theme.primaryColor,
+                          onPressed: () {},
                         ),
                       ],
                     ),
