@@ -42,7 +42,7 @@ class appbar_custom extends StatelessWidget {
                 onPressed: () {
                   Navigator.pop(
                     context,
-                    MaterialPageRoute(builder: (context) => messages_main()),
+                    MaterialPageRoute(builder: (context) => closeMenu()),
                   );
 
                   Navigator.push(
