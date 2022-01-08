@@ -50,14 +50,14 @@ class appbar_custom extends StatelessWidget {
                             Navigator.pop(
                               context,
                               MaterialPageRoute(builder: (context) => closeMenu()),
-                            );
-                          },
-                        ),
-                  Navigator.push(
+                            );Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => messages_main()),
                   );
                 },
+                          },
+                        ),
+                  
               ),
               Icon(Icons.group),
               Icon(Icons.person_add),
