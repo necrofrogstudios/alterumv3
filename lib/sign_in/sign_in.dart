@@ -118,7 +118,7 @@ class sign_inState extends State<sign_in> {
                       children: [
                         Container(
                           height: 20,
-                          width: 20,
+                          width: 40,
                           child: CheckboxListTile(
                             title: Text("title text"),
                             value: this.value,
