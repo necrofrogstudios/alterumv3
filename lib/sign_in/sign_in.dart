@@ -110,32 +110,27 @@ class sign_inState extends State<sign_in> {
                               child: const Text('Forgot Username/Password'),
                             ),
                           ),
+                          Checkbox(
+                            value: this.value,
+                            onChanged: (bool value) {
+                              setState(() {
+                                this.value = value;
+                              });
+                            },
+                            activeColor: Colors.yellow,
+                            checkColor: Colors.black,
+                            side: BorderSide(
+                              color: Colors.yellow,
+                              width: 1.5,
+                            ),
+                          ),
+                          Text(
+                            'Remember Me',
+                            textAlign: TextAlign.end,
+                            style: TextStyle(color: Colors.white, fontSize: 13),
+                          ),
                         ],
                       ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Checkbox(
-                          value: this.value,
-                          onChanged: (bool value) {
-                            setState(() {
-                              this.value = value;
-                            });
-                          },
-                          activeColor: Colors.yellow,
-                          checkColor: Colors.black,
-                          side: BorderSide(
-                            color: Colors.yellow,
-                            width: 1.5,
-                          ),
-                        ),
-                        Text(
-                          'Remember Me',
-                          textAlign: TextAlign.end,
-                          style: TextStyle(color: Colors.white, fontSize: 13),
-                        ),
-                      ],
                     ),
                   ],
                 ),
