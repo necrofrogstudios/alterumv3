@@ -32,7 +32,7 @@ class appbar_custom extends StatelessWidget {
         Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
           child: SimpleAccountMenu(
-            Column(
+            child: Column(
               children: [
                 Icon(Icons.menu_book),
                 IconButton(
