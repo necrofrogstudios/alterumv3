@@ -43,7 +43,10 @@ class appbar_custom extends StatelessWidget {
             ],
             iconColor: theme.primaryColor,
             onChange: (index) {
+              print(index);
               main_page(index);
+
+              Navigator.push(context, MaterialPageRoute(builder: (index) => main_page()));
             },
           ),
         ),
