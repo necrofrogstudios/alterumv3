@@ -116,23 +116,21 @@ class sign_inState extends State<sign_in> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                       Container(height:20, child: CheckboxListTile(
-                          title: Text("title text"),
-                          value: this.value,
-                          onChanged: (bool value) {
-                            setState(() {
-                              this.value = value;
-                            });
-                          },
-                          activeColor: Colors.yellow,
-                          checkColor: Colors.black,
+                        Container(
+                          height: 20,
+                          child: CheckboxListTile(
+                            title: Text("title text"),
+                            value: this.value,
+                            onChanged: (bool value) {
+                              setState(() {
+                                this.value = value;
+                              });
+                            },
+                            activeColor: Colors.yellow,
+                            checkColor: Colors.black,
+                          ),
                         ),
-                        Text(
-                          'Remember Me',
-                          textAlign: TextAlign.end,
-                          style: TextStyle(color: Colors.white, fontSize: 13),
-                        ),
-                       ),],
+                      ],
                     ),
                   ],
                 ),
