@@ -44,8 +44,7 @@ class appbar_custom extends StatelessWidget {
             iconColor: theme.primaryColor,
             onChange: (index) {
               print(index);
-
-              messages_main(index);
+              main_page(index);
             },
           ),
         ),
