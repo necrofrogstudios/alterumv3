@@ -30,7 +30,7 @@ class profile_pics_icons extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'Guarded',
+                  'Guarded@@',
                   style: TextStyle(fontSize: 40, color: theme.primaryColor),
                 ),
                 Text(
