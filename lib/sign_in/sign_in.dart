@@ -68,7 +68,7 @@ class sign_inState extends State<sign_in> {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: Text(
-                      'Login or Signup',
+                      'Login or Signup for an Account',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.white,
