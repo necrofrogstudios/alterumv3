@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SimpleAccountMenu extends StatefulWidget {
-  final List<Icon> icons;
+  final List<Widget> icons;
   final BorderRadius borderRadius;
   final Color backgroundColor;
   final Color iconColor;
