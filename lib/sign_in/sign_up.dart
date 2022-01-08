@@ -25,7 +25,7 @@ class sign_upState extends State<sign_up> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.only(top: 5),
+          padding: EdgeInsets.only(top: 0),
           child: ListView(
             shrinkWrap: true,
             children: <Widget>[
@@ -66,7 +66,7 @@ class sign_upState extends State<sign_up> {
               input_password(),
               verify_password(),
               Padding(
-                padding: EdgeInsets.fromLTRB(10, 0, 20, 10),
+                padding: EdgeInsets.fromLTRB(10, 0, 20, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
