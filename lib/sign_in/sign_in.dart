@@ -11,7 +11,6 @@ class sign_in extends StatefulWidget {
 }
 
 class sign_inState extends State<sign_in> {
-  bool isChecked = false;
   final currentScreen = sign_in;
   bool value = false;
   @override
@@ -91,10 +90,10 @@ class sign_inState extends State<sign_in> {
                     Checkbox(
                       checkColor: Colors.white,
                       fillColor: MaterialStateProperty.resolveWith(getColor),
-                      value: isChecked,
+                      value: this.value,
                       onChanged: (bool? value) {
                         setState(() {
-                          isChecked = value!;
+                          this.value = value;
                         });
                       },
                     ),
