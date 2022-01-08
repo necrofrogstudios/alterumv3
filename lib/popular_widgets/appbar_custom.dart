@@ -32,24 +32,26 @@ class appbar_custom extends StatelessWidget {
         Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
           child: SimpleAccountMenu(
-            children: [
-              Icon(Icons.menu_book),
-              IconButton(
-                icon: Icon(
-                  Icons.email,
+            Column(
+              children: [
+                Icon(Icons.menu_book),
+                IconButton(
+                  icon: Icon(
+                    Icons.email,
+                  ),
+                  iconSize: 40,
+                  color: theme.primaryColor,
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => messages_main()),
+                    );
+                  },
                 ),
-                iconSize: 40,
-                color: theme.primaryColor,
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => messages_main()),
-                  );
-                },
-              ),
-              Icon(Icons.group),
-              Icon(Icons.person_add),
-            ],
+                Icon(Icons.group),
+                Icon(Icons.person_add),
+              ],
+            ),
             iconColor: theme.primaryColor,
             onChange: (index) {
               print(index);
