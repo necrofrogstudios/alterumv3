@@ -34,18 +34,18 @@ class appbar_custom extends StatelessWidget {
           child: SimpleAccountMenu(
             icons: [
               Icon(Icons.menu_book),
-              IconButton(
-                icon: Icon(
-                  Icons.email,
+              GestureDetector(
+                // When the child is tapped, show a snackbar.
+                onTap: () {},
+                // The custom button
+                child: Container(
+                  padding: const EdgeInsets.all(12.0),
+                  decoration: BoxDecoration(
+                    color: Colors.lightBlue,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: const Text('My Button'),
                 ),
-                iconSize: 40,
-                color: theme.primaryColor,
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => messages_main()),
-                  );
-                },
               ),
               Icon(Icons.group),
               Icon(Icons.person_add),
