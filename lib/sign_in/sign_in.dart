@@ -107,7 +107,7 @@ class sign_inState extends State<sign_in> {
                                   MaterialPageRoute(builder: (context) => forgotten_sign_in()),
                                 );
                               },
-                              child: const Text('Forgot Username/Password'),
+                              child: const Text('Forgot Username/Password   '),
                             ),
                           ),
                           Checkbox(
