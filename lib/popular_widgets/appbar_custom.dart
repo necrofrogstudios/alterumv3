@@ -32,20 +32,20 @@ class appbar_custom extends StatelessWidget {
         Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 8, 0),
           child: SimpleAccountMenu(
-            icons: [
+            children: [
               Icon(Icons.menu_book),
-              GestureDetector(
-                // When the child is tapped, show a snackbar.
-                onTap: () {},
-                // The custom button
-                child: Container(
-                  padding: const EdgeInsets.all(12.0),
-                  decoration: BoxDecoration(
-                    color: Colors.lightBlue,
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  child: const Text('My Button'),
+              IconButton(
+                icon: Icon(
+                  Icons.email,
                 ),
+                iconSize: 40,
+                color: theme.primaryColor,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => messages_main()),
+                  );
+                },
               ),
               Icon(Icons.group),
               Icon(Icons.person_add),
