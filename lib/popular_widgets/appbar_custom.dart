@@ -40,6 +40,7 @@ class appbar_custom extends StatelessWidget {
                 ),
                 color: theme.primaryColor,
                 onPressed: () {
+                  closeMenu();
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => messages_main()),
