@@ -126,10 +126,6 @@ class sign_inState extends State<sign_in> {
                           },
                           activeColor: Colors.yellow,
                           checkColor: Colors.black,
-                          side: BorderSide(
-                            color: Colors.yellow,
-                            width: 1.5,
-                          ),
                         ),
                         Text(
                           'Remember Me',
