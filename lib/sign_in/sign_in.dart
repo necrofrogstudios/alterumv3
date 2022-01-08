@@ -98,7 +98,7 @@ class sign_inState extends State<sign_in> {
                                 style: TextButton.styleFrom(
                                   padding: const EdgeInsets.only(left: 5),
                                   primary: Colors.white,
-                                  textStyle: const TextStyle(fontSize: 10),
+                                  textStyle: const TextStyle(fontSize: 12),
                                 ),
                                 onPressed: () {
                                   Navigator.push(
