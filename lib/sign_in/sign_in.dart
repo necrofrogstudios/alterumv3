@@ -83,46 +83,49 @@ class sign_inState extends State<sign_in> {
               ),
               input_username(),
               input_password(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        padding: const EdgeInsets.only(left: 0),
-                        primary: Colors.white,
-                        textStyle: const TextStyle(fontSize: 13),
+              Padding(
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 5, 0, 5),
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          padding: const EdgeInsets.only(left: 0),
+                          primary: Colors.white,
+                          textStyle: const TextStyle(fontSize: 13),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => forgotten_sign_in()),
+                          );
+                        },
+                        child: const Text('Forgot Username/Password'),
                       ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => forgotten_sign_in()),
-                        );
+                    ),
+                    Checkbox(
+                      value: this.value,
+                      onChanged: (bool value) {
+                        setState(() {
+                          this.value = value;
+                        });
                       },
-                      child: const Text('Forgot Username/Password'),
+                      activeColor: Colors.yellow,
+                      checkColor: Colors.black,
+                      side: BorderSide(
+                        color: Colors.yellow,
+                        width: 1.5,
+                      ),
                     ),
-                  ),
-                  Checkbox(
-                    value: this.value,
-                    onChanged: (bool value) {
-                      setState(() {
-                        this.value = value;
-                      });
-                    },
-                    activeColor: Colors.yellow,
-                    checkColor: Colors.black,
-                    side: BorderSide(
-                      color: Colors.yellow,
-                      width: 1.5,
+                    Text(
+                      'Remember Me',
+                      textAlign: TextAlign.end,
+                      style: TextStyle(color: Colors.white, fontSize: 13),
                     ),
-                  ),
-                  Text(
-                    'Remember Me',
-                    textAlign: TextAlign.end,
-                    style: TextStyle(color: Colors.white, fontSize: 13),
-                  ),
-                ],
+                  ],
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
