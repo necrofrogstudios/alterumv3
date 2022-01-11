@@ -42,6 +42,7 @@ class create_roleplay extends StatelessWidget {
               ),
             ),
             pov_toggle(),
+            mature_toggle(),
             Padding(
               padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
