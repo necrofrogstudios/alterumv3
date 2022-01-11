@@ -28,40 +28,38 @@ class slideshow extends StatelessWidget {
           alignment: Alignment.center,
           children: <Widget>[
             Container(
+              height: 200,
+              width: double.infinity,
               decoration: BoxDecoration(
+                image: DecorationImage(image: NetworkImage("https://nexter.org/wp-content/uploads/2018/10/REAL-American-Haunted-Houses-pic10-e1538380539961.jpg"), fit: BoxFit.cover),
                 color: theme.backgroundColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
                 borderRadius: BorderRadius.all(
                   Radius.circular(30),
                 ),
               ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(27.0),
-                child: Image.network(
-                  'https://nexter.org/wp-content/uploads/2018/10/REAL-American-Haunted-Houses-pic10-e1538380539961.jpg',
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
-              child: FlatButton(
-                color: theme.accentColor,
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                height: 20.0, // foreground
-                onPressed: () {},
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Bucky\'s Play House',
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: theme.primaryColor,
-                      ),
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(3, 150, 3, 20),
+                child: Container(
+                  child: FlatButton(
+                    color: theme.accentColor,
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    height: 20.0, // foreground
+                    onPressed: () {},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Abducted',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: theme.primaryColor,
+                          ),
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
               ),
             ),
