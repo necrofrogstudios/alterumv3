@@ -14,7 +14,6 @@ class my_characters_card extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       children: <Widget>[
         FlipCard(
-          fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
           front: Center(
             child: Padding(
@@ -39,7 +38,7 @@ class my_characters_card extends StatelessWidget {
           back: Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Container(
-              height: 200,
+              height: 100,
               decoration: BoxDecoration(
                 color: theme.accentColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
