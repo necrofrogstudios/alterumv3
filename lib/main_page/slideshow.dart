@@ -39,7 +39,7 @@ class slideshow extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(3, 150, 3, 20),
+                padding: EdgeInsets.fromLTRB(0, 150, 0, 20),
                 child: Container(
                   child: FlatButton(
                     color: theme.accentColor,
@@ -80,7 +80,7 @@ class slideshow extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(3, 150, 3, 20),
+                padding: EdgeInsets.fromLTRB(0, 150, 0, 20),
                 child: Container(
                   child: FlatButton(
                     color: theme.accentColor,
@@ -121,7 +121,7 @@ class slideshow extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(3, 150, 3, 20),
+                padding: EdgeInsets.fromLTRB(0, 150, 0, 20),
                 child: Container(
                   child: FlatButton(
                     color: theme.accentColor,
