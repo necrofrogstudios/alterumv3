@@ -178,12 +178,12 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ToggleButtons(
-              color: Colors.greenAccent,
+              color: theme.primaryColor,
               selectedColor: Colors.amberAccent,
               fillColor: Colors.purple,
               splashColor: Colors.lightBlue,
               highlightColor: Colors.lightBlue,
-              borderColor: Colors.white,
+              borderColor: theme.accentColor,
               borderWidth: 4,
               selectedBorderColor: Colors.greenAccent,
               renderBorder: true,
