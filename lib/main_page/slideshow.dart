@@ -74,6 +74,47 @@ class slideshow extends StatelessWidget {
               height: 200,
               width: double.infinity,
               decoration: BoxDecoration(
+                image: DecorationImage(image: NetworkImage("https://nexter.org/wp-content/uploads/2018/10/REAL-American-Haunted-Houses-pic10-e1538380539961.jpg"), fit: BoxFit.cover),
+                color: theme.backgroundColor,
+                border: Border.all(color: theme.splashColor, width: 3.0),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ),
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(3, 150, 3, 20),
+                child: Container(
+                  child: FlatButton(
+                    color: theme.accentColor,
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    height: 20.0, // foreground
+                    onPressed: () {},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Bucky\'s Play House',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: theme.primaryColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
+            Container(
+              height: 200,
+              width: double.infinity,
+              decoration: BoxDecoration(
                 image: DecorationImage(image: NetworkImage("https://million-wallpapers.com/wallpapers/5/10/17359700775032063254.jpg"), fit: BoxFit.cover),
                 color: theme.backgroundColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
