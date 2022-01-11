@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/support/contact_support.dart';
+import 'package:testing/popular_widgets/rules.dart';
 
 class footer extends StatelessWidget {
   final currentScreen = footer;
@@ -22,7 +23,12 @@ class footer extends StatelessWidget {
               'Rules',
               style: TextStyle(color: theme.primaryColor),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => rules(currentScreen)),
+              );
+            },
           ),
           FlatButton(
             child: Text(
