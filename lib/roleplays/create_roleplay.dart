@@ -42,7 +42,7 @@ class create_roleplay extends StatelessWidget {
               ),
             ),
             mature_toggle(),
-            SizedBoxe(height: 20),
+            SizedBox(height: 20),
             pov_toggle(),
             Padding(
               padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
