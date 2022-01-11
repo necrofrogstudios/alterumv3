@@ -277,7 +277,7 @@ class drawer_flip_card extends StatelessWidget {
           direction: FlipDirection.HORIZONTAL,
           front: Center(
             child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(0, 40, 0, 0),
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
