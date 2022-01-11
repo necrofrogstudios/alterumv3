@@ -98,7 +98,7 @@ class slideshow extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Bucky\'s Play Housesssss',
+                      'Mountain Madness',
                       style: TextStyle(
                         fontSize: 10,
                         color: theme.primaryColor,
