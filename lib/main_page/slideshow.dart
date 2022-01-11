@@ -133,7 +133,7 @@ class slideshow extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Mountain Madness',
+                          'Mountain MadnessE',
                           style: TextStyle(
                             fontSize: 12,
                             color: theme.primaryColor,
@@ -156,7 +156,7 @@ class slideshow extends StatelessWidget {
 
       /// Auto scroll interval.
       /// Do not auto scroll with null or 0.
-      autoPlayInterval: 500,
+      autoPlayInterval: 1000,
 
       isLoop: false,
     );
