@@ -24,6 +24,8 @@ class _settingsState extends State<settings> {
     return Scaffold(
       backgroundColor: theme.backgroundColor,
       appBar: AppBar(
+        bottomOpacity: 0.0,
+        elevation: 0.0,
         iconTheme: IconThemeData(color: theme.primaryColor),
         backgroundColor: theme.accentColor,
         title: Text(
