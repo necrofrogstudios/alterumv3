@@ -123,7 +123,7 @@ class slideshow extends StatelessWidget {
 
       /// Auto scroll interval.
       /// Do not auto scroll with null or 0.
-      autoPlayInterval: Duration(seconds: 3),
+      autoPlayInterval: 3000,
 
       isLoop: true,
     );
