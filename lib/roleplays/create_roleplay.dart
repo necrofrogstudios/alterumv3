@@ -32,11 +32,13 @@ class create_roleplay extends StatelessWidget {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
-            Padding(
-              padding: EdgeInsets.fromLTRB(30, 0, 0, 10),
-              child: Text(
-                'Create Roleplay',
-                style: TextStyle(color: theme.primaryColor, fontSize: 25),
+            Center(
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(30, 0, 0, 10),
+                child: Text(
+                  'Create Roleplay',
+                  style: TextStyle(color: theme.primaryColor, fontSize: 25),
+                ),
               ),
             ),
             pov_toggle(),
