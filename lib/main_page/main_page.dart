@@ -80,12 +80,15 @@ class main_pageState extends State<main_page> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    items[0],
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: theme.primaryColor,
+                  Padding(
+                    padding: EdgeInsets.only(top: 5),
+                    child: Text(
+                      items[0],
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
                     ),
                   ),
                 ],
