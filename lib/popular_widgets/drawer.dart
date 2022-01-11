@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testing/settings/settings.dart';
 import 'package:testing/profile/profile.dart';
+import 'package:testing/profile/profile_flip_card.dart';
 import 'package:testing/main_page/main_page.dart';
 import 'package:testing/characters/my_characters.dart';
 import 'package:testing/sign_in/sign_in.dart';
@@ -49,29 +50,7 @@ class drawer extends StatelessWidget {
               ),
             ),
             Container(color: theme.splashColor, height: 4),
-            Container(
-              color: theme.backgroundColor,
-              child: Center(
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: theme.backgroundColor,
-                      border: Border.all(
-                        color: theme.splashColor,
-                        width: 4,
-                      ),
-                    ),
-                    height: 200,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(26.0),
-                      child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+            profile_flip_card(),
             Container(
               color: theme.backgroundColor,
               child: Align(
