@@ -67,11 +67,11 @@ class _pov_toggleState extends State<pov_toggle> {
                   child: Text('First Pov'),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                   child: Text('Third Pov'),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                   child: Text('Both Pov'),
                 ),
               ],
