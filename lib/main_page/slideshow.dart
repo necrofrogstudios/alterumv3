@@ -88,7 +88,7 @@ class slideshow extends StatelessWidget {
                     color: theme.accentColor,
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent,
-                    height: 15.0, // foreground
+                    height: 20.0, // foreground
                     onPressed: () {},
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -96,7 +96,7 @@ class slideshow extends StatelessWidget {
                         Text(
                           'Mountain Madness',
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 15,
                             color: theme.primaryColor,
                           ),
                         ),
