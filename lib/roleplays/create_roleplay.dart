@@ -191,9 +191,9 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
             focusColor: Colors.red,
             focusNodes: focusToggle,
             children: <Widget>[
-              Text('yap'),
-              Text('yap'),
-              Text('yap'),
+              Text('First Pov'),
+              Text('Third Pov'),
+              Text('Both'),
             ],
             isSelected: isSelected,
             onPressed: (int index) {
