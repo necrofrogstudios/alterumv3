@@ -74,7 +74,7 @@ class slideshow extends StatelessWidget {
               height: 200,
               width: double.infinity,
               decoration: BoxDecoration(
-                image: DecorationImage(image: NetworkImage("https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"), fit: BoxFit.cover),
+                image: DecorationImage(image: NetworkImage("https://million-wallpapers.com/wallpapers/5/10/17359700775032063254.jpg"), fit: BoxFit.cover),
                 color: theme.backgroundColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
                 borderRadius: BorderRadius.all(
