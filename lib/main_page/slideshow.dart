@@ -29,19 +29,14 @@ class slideshow extends StatelessWidget {
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
+                image: DecorationImage(image: NetworkImage("https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"), fit: BoxFit.cover),
                 color: theme.backgroundColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
                 borderRadius: BorderRadius.all(
                   Radius.circular(30),
                 ),
               ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(27.0),
-                child: Image.network(
-                  'https://nexter.org/wp-content/uploads/2018/10/REAL-American-Haunted-Houses-pic10-e1538380539961.jpg',
-                  fit: BoxFit.cover,
-                ),
-              ),
+              child: Text('t'),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
