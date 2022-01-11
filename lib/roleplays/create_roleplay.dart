@@ -30,6 +30,7 @@ class create_roleplay extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
+            DemoToggleButtons(),
             Padding(
               padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
@@ -45,7 +46,6 @@ class create_roleplay extends StatelessWidget {
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
               ),
             ),
-            DemoToggleButtons(),
             about(),
             Container(color: theme.splashColor, height: 4),
             footer(),
