@@ -31,7 +31,7 @@ class rules extends StatelessWidget {
             profile_pics_icons(),
             Container(color: theme.splashColor, height: 4),
             Container(
-              Text(
+              child: Text(
                 'blep',
               ),
             ),
