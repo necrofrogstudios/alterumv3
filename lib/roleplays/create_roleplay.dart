@@ -185,7 +185,9 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
             borderWidth: 5,
             selectedBorderColor: Colors.greenAccent,
             renderBorder: true,
-            borderRadius: BorderRadius.only(topLeft: Radius.circular(25), bottomRight: Radius.circular(25)),
+            borderRadius: borderRadius: BorderRadius.all(
+            Radius.circular(50),
+          ),
             disabledColor: Colors.blueGrey,
             disabledBorderColor: Colors.blueGrey,
             focusColor: Colors.red,
