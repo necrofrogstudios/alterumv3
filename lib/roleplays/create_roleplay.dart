@@ -221,14 +221,6 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
                 });
               },
             ),
-            SizedBox(
-              height: 50,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.black,
-              ),
-            )
           ],
         ),
       ),
