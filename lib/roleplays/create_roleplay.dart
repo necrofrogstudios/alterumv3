@@ -99,7 +99,7 @@ class about extends StatelessWidget {
     final maxLines = 10;
     var theme = Theme.of(context);
     return Padding(
-      padding: EdgeInsets.fromLTRB(10, 10, 10, 5),
+      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
