@@ -32,7 +32,7 @@ class create_roleplay extends StatelessWidget {
             profile_top_buttons(),
             DemoToggleButtons(),
             Padding(
-              padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
                 'Roleplay Name *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
