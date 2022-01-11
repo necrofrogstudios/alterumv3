@@ -202,7 +202,7 @@ class comments extends StatelessWidget {
                 ],
               ),
               Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 10, 20),
+                  padding: const EdgeInsets.fromLTRB(20, 5, 10, 20),
                   child: Column(
                     children: <Widget>[
                       Align(
