@@ -7,7 +7,7 @@ class profile_top_buttons extends StatelessWidget {
   final List<String> items = [
     'Create Roleplay',
     'Popular',
-    'Solo',
+    'Duo',
     'Members',
     'Blogs',
     'Settings',
