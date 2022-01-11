@@ -30,7 +30,7 @@ class slideshow extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
-                border: Border.all(color: Colors.yellow, width: 3.0),
+                border: Border.all(color: theme.accentColor, width: 3.0),
                 borderRadius: BorderRadius.all(
                   Radius.circular(30),
                 ),
@@ -55,7 +55,7 @@ class slideshow extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Bucky\'s Play asdfasdfHouse',
+                      'Bucky\'s Play House',
                       style: TextStyle(
                         fontSize: 10,
                         color: theme.primaryColor,
