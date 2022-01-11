@@ -85,7 +85,7 @@ class my_characters_card extends StatelessWidget {
                       color: theme.backgroundColor,
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
-                      height: 60.0,
+                      height: 20.0,
                       onPressed: () {
                         Navigator.push(
                           context,
