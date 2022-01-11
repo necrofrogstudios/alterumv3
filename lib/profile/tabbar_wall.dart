@@ -104,7 +104,7 @@ class _wall_tabState extends State<wall_tab> {
   void addComment(String postText) async {
     final newComment = WallComment(
         id: numberOfComments.toString(), //ID begins at zero and goes up by one every new comment
-        profilePhoto: 'https://bestprofilepictures.com/wp-content/uploads/2021/04/Cool-Picture.jpg', //filler photo for now
+        profilePhoto: 'https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png', //filler photo for now
         bodyText: postText,
         date: DateFormat('MM/dd/yyyy - hh:mm a').format(
           DateTime.now(), //takes the date and formats it to something readable
@@ -205,6 +205,7 @@ class comments extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(20, 0, 10, 20),
                 child: SelectableText(
                   comment.bodyText,
+                  textAlign: TextAlign.left,
                   style: TextStyle(color: theme.primaryColor, fontSize: 15),
                 ),
               )
