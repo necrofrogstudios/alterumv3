@@ -16,10 +16,10 @@ class slideshow extends StatelessWidget {
       initialPage: 0,
 
       /// The color to paint the indicator.
-      indicatorColor: Colors.blue,
+      indicatorColor: theme.accentColor,
 
       /// The color to paint behind th indicator.
-      indicatorBackgroundColor: Colors.grey,
+      indicatorBackgroundColor: theme.backgroundColor,
 
       /// The widgets to display in the [ImageSlideshow].
       /// Add the sample image file into the images folder
