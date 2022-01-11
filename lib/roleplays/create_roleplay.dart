@@ -198,7 +198,13 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
             isSelected: isSelected,
             onPressed: (int index) {
               setState(() {
-                isSelected[index] = !isSelected[index];
+                for (int indexBtn = 0; indexBtn < isSelected.length; indexBtn++) {
+                  if (indexBtn == index) {
+                    isSelected[indexBtn] = true;
+                  } else {
+                    isSelected[indexBtn] = false;
+                  }
+                }
               });
             },
           ),
