@@ -67,6 +67,49 @@ class slideshow extends StatelessWidget {
             ),
           ],
         ),
+        Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                color: theme.backgroundColor,
+                border: Border.all(color: theme.accentColor, width: 3.0),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
+                ),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(27.0),
+                child: Image.network(
+                  'https://nexter.org/wp-content/uploads/2018/10/REAL-American-Haunted-Houses-pic10-e1538380539961.jpg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
+              child: FlatButton(
+                color: theme.accentColor,
+                splashColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                height: 20.0, // foreground
+                onPressed: () {},
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Bucky\'s Play House',
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
         Image.network(
           'https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png',
           fit: BoxFit.cover,
