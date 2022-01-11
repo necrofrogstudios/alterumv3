@@ -7,6 +7,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
+import 'package:testing/roleplays/create_roleplay_toggles.dart';
 
 class create_roleplay extends StatelessWidget {
   final currentScreen = create_roleplay;
@@ -30,7 +31,7 @@ class create_roleplay extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
-            DemoToggleButtons(),
+            pov_toggle(),
             Padding(
               padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
@@ -133,100 +134,6 @@ class about extends StatelessWidget {
   }
 }
 
-class DemoToggleButtons extends StatefulWidget {
-  @override
-  _DemoToggleButtonsState createState() => _DemoToggleButtonsState();
-}
-
-class _DemoToggleButtonsState extends State<DemoToggleButtons> {
-  List<bool> isSelected = [
-    false,
-    false,
-    true,
-  ];
-  FocusNode focusNodeButton1 = FocusNode();
-  FocusNode focusNodeButton2 = FocusNode();
-  FocusNode focusNodeButton3 = FocusNode();
-  List<FocusNode> focusToggle;
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    focusToggle = [
-      focusNodeButton1,
-      focusNodeButton2,
-      focusNodeButton3
-    ];
-  }
-
-  @override
-  void dispose() {
-    // Clean up the focus node when the Form is disposed.
-    focusNodeButton1.dispose();
-    focusNodeButton2.dispose();
-    focusNodeButton3.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    var theme = Theme.of(context);
-    return Container(
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ToggleButtons(
-              color: theme.primaryColor,
-              selectedColor: theme.primaryColor,
-              fillColor: theme.accentColor,
-              splashColor: theme.accentColor,
-              highlightColor: theme.accentColor,
-              borderColor: theme.splashColor,
-              borderWidth: 3,
-              selectedBorderColor: theme.splashColor,
-              renderBorder: true,
-              borderRadius: BorderRadius.all(
-                Radius.circular(50),
-              ),
-              disabledColor: Colors.blueGrey,
-              disabledBorderColor: Colors.blueGrey,
-              focusColor: Colors.red,
-              focusNodes: focusToggle,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Text('First Pov'),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Text('Third Pov'),
-                ),
-                Padding(
-                  padding: EdgeInsets.all(10),
-                  child: Text('Both Pov'),
-                ),
-              ],
-              isSelected: isSelected,
-              onPressed: (int index) {
-                setState(() {
-                  for (int indexBtn = 0; indexBtn < isSelected.length; indexBtn++) {
-                    if (indexBtn == index) {
-                      isSelected[indexBtn] = true;
-                    } else {
-                      isSelected[indexBtn] = false;
-                    }
-                  }
-                });
-              },
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
 /*class profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
