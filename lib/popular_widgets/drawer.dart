@@ -295,7 +295,7 @@ class drawer_flip_card extends StatelessWidget {
           ), //back of card  V V V V //
           back: Center(
             child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
+              padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
               child: Container(
                 decoration: BoxDecoration(
                   color: theme.accentColor,
