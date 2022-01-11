@@ -47,7 +47,6 @@ class my_characters extends StatelessWidget {
                 color: theme.backgroundColor,
                 child: Column(
                   children: [
-                    roleplay_navigation(),
                     Text(
                       'My Characters',
                       style: TextStyle(
