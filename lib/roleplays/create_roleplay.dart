@@ -173,7 +173,7 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
-      color: Colors.black,
+      color: Colors.white,
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
