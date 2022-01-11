@@ -179,13 +179,13 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
           children: <Widget>[
             ToggleButtons(
               color: theme.primaryColor,
-              selectedColor: Colors.amberAccent,
-              fillColor: Colors.purple,
+              selectedColor: theme.primaryColor,
+              fillColor: theme.accentColor,
               splashColor: theme.accentColor,
               highlightColor: theme.accentColor,
               borderColor: theme.splashColor,
               borderWidth: 4,
-              selectedBorderColor: Colors.greenAccent,
+              selectedBorderColor: theme.accentColor,
               renderBorder: true,
               borderRadius: BorderRadius.all(
                 Radius.circular(50),
