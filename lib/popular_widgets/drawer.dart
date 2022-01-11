@@ -83,14 +83,14 @@ class drawer extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => main_page()),
+                  MaterialPageRoute(builder: (context) => profile()),
                 );
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Home',
+                    'Profile',
                     style: TextStyle(
                       fontSize: 20,
                       color: theme.primaryColor,
@@ -114,14 +114,14 @@ class drawer extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => profile()),
+                  MaterialPageRoute(builder: (context) => main_page()),
                 );
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'Profile',
+                    'Roleplays',
                     style: TextStyle(
                       fontSize: 20,
                       color: theme.primaryColor,
