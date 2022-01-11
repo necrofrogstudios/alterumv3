@@ -141,8 +141,8 @@ class DemoToggleButtons extends StatefulWidget {
 class _DemoToggleButtonsState extends State<DemoToggleButtons> {
   List<bool> isSelected = [
     false,
+    false,
     true,
-    false
   ];
   FocusNode focusNodeButton1 = FocusNode();
   FocusNode focusNodeButton2 = FocusNode();
@@ -226,7 +226,7 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
             ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Colors.white,
               ),
             )
           ],
