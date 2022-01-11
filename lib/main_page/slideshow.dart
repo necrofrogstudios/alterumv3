@@ -88,7 +88,7 @@ class slideshow extends StatelessWidget {
                     color: theme.accentColor,
                     splashColor: Colors.transparent,
                     highlightColor: Colors.transparent,
-                    height: 20.0, // foreground
+                    height: 15.0, // foreground
                     onPressed: () {},
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
