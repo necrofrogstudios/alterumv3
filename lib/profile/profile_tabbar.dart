@@ -25,7 +25,7 @@ class profile_tabbar extends StatelessWidget {
                 tabs: [
                   Text('Wall', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
                   Text('Profile', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
-                  Text('Roleplays', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
+                  Text('Blogs', style: TextStyle(fontSize: 16, color: theme.primaryColor)),
                 ],
               ),
             ),
@@ -35,7 +35,7 @@ class profile_tabbar extends StatelessWidget {
                 children: <Widget>[
                   wall_tab(),
                   profile_tab(),
-                  roleplays_tab(),
+                  blogs_tab(),
                 ],
               ),
             ),
@@ -145,7 +145,7 @@ class profile_tab extends StatelessWidget {
   }
 }
 
-class roleplays_tab extends StatelessWidget {
+class blogs_tab extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Container(
