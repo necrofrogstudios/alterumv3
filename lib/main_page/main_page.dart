@@ -128,13 +128,22 @@ class slideshow extends StatelessWidget {
       /// The widgets to display in the [ImageSlideshow].
       /// Add the sample image file into the images folder
       children: [
-        Stack(alignment: Alignment.center, children: <Widget>[
-          Image.network(
-            'https://149369349.v2.pressablecdn.com/wp-content/uploads/2013/01/Mar-cover-photo-3769.jpg',
-            fit: BoxFit.cover,
-          ),
-          Text("someText"),
-        ]),
+        Container(
+          decoration: BoxDecoration(
+            color: theme.accentColor,
+            border: Border.all(color: theme.splashColor, width: 3.0),
+            borderRadius: BorderRadius.all(
+              Radius.circular(30),
+            ),
+          ), //name, creator, tags, intro
+          child: Stack(alignment: Alignment.center, children: <Widget>[
+            Image.network(
+              'https://149369349.v2.pressablecdn.com/wp-content/uploads/2013/01/Mar-cover-photo-3769.jpg',
+              fit: BoxFit.cover,
+            ),
+            Text("someText"),
+          ]),
+        ),
         Image.network(
           'https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png',
           fit: BoxFit.cover,
