@@ -171,63 +171,67 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          ToggleButtons(
-            color: Colors.greenAccent,
-            selectedColor: Colors.amberAccent,
-            fillColor: Colors.purple,
-            splashColor: Colors.lightBlue,
-            highlightColor: Colors.lightBlue,
-            borderColor: Colors.white,
-            borderWidth: 5,
-            selectedBorderColor: Colors.greenAccent,
-            renderBorder: true,
-            borderRadius: BorderRadius.all(
-              Radius.circular(50),
-            ),
-            disabledColor: Colors.blueGrey,
-            disabledBorderColor: Colors.blueGrey,
-            focusColor: Colors.red,
-            focusNodes: focusToggle,
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.all(10),
-                child: Text('First Pov'),
+    var theme = Theme.of(context);
+    return Container(
+      color: Colors.black,
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ToggleButtons(
+              color: Colors.greenAccent,
+              selectedColor: Colors.amberAccent,
+              fillColor: Colors.purple,
+              splashColor: Colors.lightBlue,
+              highlightColor: Colors.lightBlue,
+              borderColor: Colors.white,
+              borderWidth: 4,
+              selectedBorderColor: Colors.greenAccent,
+              renderBorder: true,
+              borderRadius: BorderRadius.all(
+                Radius.circular(50),
               ),
-              Padding(
-                padding: EdgeInsets.all(10),
-                child: Text('Third Pov'),
-              ),
-              Padding(
-                padding: EdgeInsets.all(10),
-                child: Text('Both Pov'),
-              ),
-            ],
-            isSelected: isSelected,
-            onPressed: (int index) {
-              setState(() {
-                for (int indexBtn = 0; indexBtn < isSelected.length; indexBtn++) {
-                  if (indexBtn == index) {
-                    isSelected[indexBtn] = true;
-                  } else {
-                    isSelected[indexBtn] = false;
+              disabledColor: Colors.blueGrey,
+              disabledBorderColor: Colors.blueGrey,
+              focusColor: Colors.red,
+              focusNodes: focusToggle,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text('First Pov'),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text('Third Pov'),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text('Both Pov'),
+                ),
+              ],
+              isSelected: isSelected,
+              onPressed: (int index) {
+                setState(() {
+                  for (int indexBtn = 0; indexBtn < isSelected.length; indexBtn++) {
+                    if (indexBtn == index) {
+                      isSelected[indexBtn] = true;
+                    } else {
+                      isSelected[indexBtn] = false;
+                    }
                   }
-                }
-              });
-            },
-          ),
-          SizedBox(
-            height: 50,
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: Colors.black,
+                });
+              },
             ),
-          )
-        ],
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
