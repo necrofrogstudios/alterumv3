@@ -156,11 +156,11 @@ class _mature_toggleState extends State<mature_toggle> {
               focusNodes: focusToggle,
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text('Everyone 13+'),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(10),
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text('Mature 18+'),
                 ),
               ],
