@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flip_card/flip_card.dart';
 import 'package:testing/settings/settings.dart';
 import 'package:testing/profile/profile.dart';
 import 'package:testing/profile/profile_flip_card.dart';
