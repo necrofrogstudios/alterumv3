@@ -63,15 +63,15 @@ class _pov_toggleState extends State<pov_toggle> {
               focusNodes: focusToggle,
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text('First Pov'),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text('Third Pov'),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text('Both Pov'),
                 ),
               ],
