@@ -88,23 +88,25 @@ class slideshow extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
-              child: FlatButton(
-                color: theme.accentColor,
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                height: 20.0, // foreground
-                onPressed: () {},
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Mountain Madness',
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: theme.primaryColor,
+              child: Container(
+                child: FlatButton(
+                  color: theme.accentColor,
+                  splashColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  height: 20.0, // foreground
+                  onPressed: () {},
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Mountain Madness',
+                        style: TextStyle(
+                          fontSize: 10,
+                          color: theme.primaryColor,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
