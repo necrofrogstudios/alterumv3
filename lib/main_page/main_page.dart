@@ -139,9 +139,19 @@ class slideshow extends StatelessWidget {
           child: Stack(
             alignment: Alignment.center,
             children: <Widget>[
-              Image.network(
-                'https://149369349.v2.pressablecdn.com/wp-content/uploads/2013/01/Mar-cover-photo-3769.jpg',
-                fit: BoxFit.cover,
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.brown,
+                  border: Border.all(color: Colors.green, width: 3.0),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+                height: 200,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(27.0),
+                  child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                ),
               ),
               Text("someText"),
             ],
