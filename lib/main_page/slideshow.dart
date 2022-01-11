@@ -82,7 +82,7 @@ class slideshow extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
+                padding: EdgeInsets.fromLTRB(3, 30, 3, 0),
                 child: Container(
                   child: FlatButton(
                     color: theme.accentColor,
