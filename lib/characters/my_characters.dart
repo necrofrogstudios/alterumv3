@@ -84,13 +84,6 @@ class my_characters extends StatelessWidget {
               ),
               Container(
                 color: theme.backgroundColor,
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                  child: roleplay_request(),
-                ),
-              ),
-              Container(
-                color: theme.backgroundColor,
               ),
               Container(color: theme.splashColor, height: 4),
               footer(),
