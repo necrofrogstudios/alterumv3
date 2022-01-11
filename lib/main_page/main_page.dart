@@ -142,7 +142,7 @@ class slideshow extends StatelessWidget {
               height: 200,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(27.0),
-                child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                child: Image.network('https://th.bing.com/th/id/R.2b9a43b7bbf38f2ef7cba6023abc72b2?rik=3I%2bG61iipzPj2g&riu=http%3a%2f%2fcdn.onlyinyourstate.com%2fwp-content%2fuploads%2f2017%2f10%2fFacebook_HellsGate-Haunted-House.jpg&ehk=QGfQ0getQecD8BXxKssyyFIOTbY7pJWubYRFMaJqN7I%3d&risl=&pid=ImgRaw&r=0'),
               ),
             ),
             Text("someText"),
