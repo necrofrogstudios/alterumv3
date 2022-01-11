@@ -1,57 +1,109 @@
 import 'package:flutter/material.dart';
-import 'package:flip_card/flip_card.dart';
-import 'package:testing/roleplays/roleplay_main.dart';
-import 'package:testing/popular_widgets/roleplay_tag_buttons.dart';
-import 'package:testing/roleplays/roleplay_character.dart';
+import 'package:marquee/marquee.dart';
 
-class my_characters_card extends StatelessWidget {
+import 'package:testing/popular_widgets/drawer.dart';
+import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
+import 'package:testing/popular_widgets/appbar_custom.dart';
+import 'package:testing/popular_widgets/appbar_top_buttons.dart';
+import 'package:testing/popular_widgets/footer.dart';
+import 'package:testing/profile/profile_tabbar.dart';
+import 'package:testing/roleplays/roleplay_request.dart';
+import 'package:testing/roleplays/admin_marquee.dart';
+import 'package:testing/roleplays/roleplay_character.dart';
+import 'package:testing/roleplays/roleplay_navigation.dart';
+import 'package:testing/roleplays/roleplay_character_list.dart';
+import 'package:testing/main_page/roleplay_list_layout.dart';
+
+class roleplay_masterlist extends StatelessWidget {
+  final currentScreen = roleplay_masterlist;
+  const roleplay_masterlist();
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return ListView(
-      physics: NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      padding: const EdgeInsets.all(8),
-      children: <Widget>[
-        FlipCard(
-          fill: Fill.fillBack,
-          direction: FlipDirection.HORIZONTAL,
-          front: Center(
-            child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  border: Border.all(
-                    color: theme.splashColor,
-                    width: 4,
-                  ),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(27.0),
-                  child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
-                ),
-              ),
-            ),
-          ),
+    Color myColor = Theme.of(context).accentColor;
 
-          //back of card  V V V V //
-          back: Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-            child: Container(
-              height: 100,
-              decoration: BoxDecoration(
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(55),
+        child: appbar_custom(),
+      ),
+      drawer: drawer(currentScreen),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: SingleChildScrollView(
+          physics: ScrollPhysics(),
+          child: Column(
+            children: <Widget>[
+              Container(color: theme.splashColor, height: 4),
+              profile_top_buttons(),
+              Container(color: theme.splashColor, height: 4),
+              Container(
                 color: theme.accentColor,
-                border: Border.all(color: theme.splashColor, width: 3.0),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(30),
+                child: admin_marquee(),
+              ),
+              Container(color: theme.splashColor, height: 2),
+              Container(
+                color: theme.backgroundColor,
+                child: Column(
+                  children: [
+                    roleplay_navigation(),
+                    Text(
+                      'MASTERLIST',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                    GridView.count(
+                      physics: ScrollPhysics(),
+                      shrinkWrap: true,
+                      padding: const EdgeInsets.all(5),
+                      crossAxisSpacing: 5,
+                      mainAxisSpacing: 5,
+                      crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 1 : 2,
+                      children: <Widget>[
+                        character_parkjimin(),
+                        character_kimjaejoong(),
+                        character_johncena(),
+                        character_tylerblackburn(),
+                        character_calliopemori(),
+                        character_leetaemin(),
+                        character_parkjimin(),
+                        character_johncena(),
+                        character_bangyongguk(),
+                        character_chengjunya(),
+                        character_parkchanyeol(),
+                        character_parkjimin(),
+                        character_kimjaejoong(),
+                        character_johncena(),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-              child: Text('test'),
-            ),
+              Container(
+                color: theme.backgroundColor,
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+                  child: roleplay_request(),
+                ),
+              ),
+              Container(
+                color: theme.backgroundColor,
+              ),
+              Container(color: theme.splashColor, height: 4),
+              footer(),
+            ],
           ),
         ),
-      ],
+      ),
     );
   }
 }
+/*class profile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+
+  }
+  }*/
