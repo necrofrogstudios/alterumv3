@@ -39,6 +39,7 @@ class my_characters_card extends StatelessWidget {
           back: Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Container(
+              height: 200,
               decoration: BoxDecoration(
                 color: theme.accentColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
