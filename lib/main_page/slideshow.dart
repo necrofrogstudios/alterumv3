@@ -72,7 +72,7 @@ class slideshow extends StatelessWidget {
             ],
           ),
           Stack(
-            alignment: Alignment.center,
+            alignment: Alignment.topLeft,
             children: <Widget>[
               Container(
                 height: 200,
@@ -110,10 +110,14 @@ class slideshow extends StatelessWidget {
                   ),
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(15, 15, 0, 0),
+                child: Icon(Icons.star_outline, color: theme.splashColor, size: 40),
+              ),
             ],
           ),
           Stack(
-            alignment: Alignment.center,
+            alignment: Alignment.topLeft,
             children: <Widget>[
               Container(
                 height: 200,
@@ -150,6 +154,10 @@ class slideshow extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              Padding(
+                padding: EdgeInsets.fromLTRB(15, 15, 0, 0),
+                child: Icon(Icons.star_outline, color: theme.splashColor, size: 40),
               ),
             ],
           ),
