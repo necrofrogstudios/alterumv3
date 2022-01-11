@@ -7,7 +7,6 @@ import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
 import 'package:testing/settings/themes_navigation.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
-import 'package:testing/popular_widgets/appbar_custom.dart';
 
 class settings extends StatefulWidget {
   settings({Key key}) : super(key: key);
@@ -24,9 +23,16 @@ class _settingsState extends State<settings> {
     var theme = Theme.of(context);
     return Scaffold(
       backgroundColor: theme.backgroundColor,
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(55),
-        child: appbar_custom(),
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: theme.primaryColor),
+        backgroundColor: theme.accentColor,
+        title: Text(
+          'Settings',
+          style: TextStyle(
+            color: theme.primaryColor,
+            fontSize: 30,
+          ),
+        ),
       ),
       drawer: drawer(currentScreen),
       body: Container(
