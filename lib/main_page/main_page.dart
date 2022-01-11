@@ -128,34 +128,25 @@ class slideshow extends StatelessWidget {
       /// The widgets to display in the [ImageSlideshow].
       /// Add the sample image file into the images folder
       children: [
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.brown,
-            border: Border.all(color: Colors.green, width: 3.0),
-            borderRadius: BorderRadius.all(
-              Radius.circular(30),
-            ),
-          ), //name, creator, tags, intro
-          child: Stack(
-            alignment: Alignment.center,
-            children: <Widget>[
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.brown,
-                  border: Border.all(color: Colors.green, width: 3.0),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(30),
-                  ),
-                ),
-                height: 200,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(27.0),
-                  child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+        Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.brown,
+                border: Border.all(color: Colors.green, width: 3.0),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(30),
                 ),
               ),
-              Text("someText"),
-            ],
-          ),
+              height: 200,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(27.0),
+                child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+              ),
+            ),
+            Text("someText"),
+          ],
         ),
         Image.network(
           'https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png',
