@@ -10,7 +10,7 @@ class slideshow extends StatelessWidget {
       width: double.infinity,
 
       /// Height of the [ImageSlideshow].
-      height: 200,
+      height: double.infinity,
 
       /// The page to show when first creating the [ImageSlideshow].
       initialPage: 0,
