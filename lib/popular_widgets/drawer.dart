@@ -273,7 +273,6 @@ class drawer_flip_card extends StatelessWidget {
       padding: const EdgeInsets.all(0),
       children: <Widget>[
         FlipCard(
-          fill: Fill.fillBack,
           direction: FlipDirection.HORIZONTAL,
           front: Center(
             child: Padding(
