@@ -53,7 +53,7 @@ class Card2 extends StatelessWidget {
           minWidth: 1450.0,
         ),
         child: Padding(
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
