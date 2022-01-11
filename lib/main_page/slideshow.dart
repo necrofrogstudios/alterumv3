@@ -27,7 +27,7 @@ class slideshow extends StatelessWidget {
         /// Add the sample image file into the images folder
         children: [
           Stack(
-            alignment: Alignment.center,
+            alignment: Alignment.centerTop,
             children: <Widget>[
               Container(
                 height: 200,
