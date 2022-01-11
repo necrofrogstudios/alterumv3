@@ -41,6 +41,7 @@ class _settingsState extends State<settings> {
           physics: ScrollPhysics(),
           child: Column(
             children: <Widget>[
+              profile_top_buttons(),
               Container(color: theme.splashColor, height: 4),
               themes_navigation(),
             ],
