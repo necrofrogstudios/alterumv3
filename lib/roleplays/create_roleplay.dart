@@ -184,7 +184,7 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
               splashColor: theme.accentColor,
               highlightColor: theme.accentColor,
               borderColor: theme.splashColor,
-              borderWidth: 4,
+              borderWidth: 3,
               selectedBorderColor: theme.splashColor,
               renderBorder: true,
               borderRadius: BorderRadius.all(
