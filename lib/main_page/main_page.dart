@@ -128,8 +128,8 @@ class slideshow extends StatelessWidget {
       /// The widgets to display in the [ImageSlideshow].
       /// Add the sample image file into the images folder
       children: [
-        Image.asset(
-          'images/sample_image_1.jpg',
+        Image.network(
+          'https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png',
           fit: BoxFit.cover,
         ),
         Image.asset(
