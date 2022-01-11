@@ -28,7 +28,6 @@ class rules extends StatelessWidget {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
-            profile_pics_icons(),
             Container(color: theme.splashColor, height: 4),
             Container(
               child: Text(
