@@ -32,7 +32,12 @@ class appbar_custom extends StatelessWidget {
           'Alterum',
           style: TextStyle(color: theme.primaryColor, fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => main_page()),
+          );
+        },
       ),
       backgroundColor: theme.accentColor,
       actions: <Widget>[
