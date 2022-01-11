@@ -23,16 +23,9 @@ class _settingsState extends State<settings> {
     var theme = Theme.of(context);
     return Scaffold(
       backgroundColor: theme.backgroundColor,
-      appBar: AppBar(
-        iconTheme: IconThemeData(color: theme.primaryColor),
-        backgroundColor: theme.accentColor,
-        title: Text(
-          'Settings',
-          style: TextStyle(
-            color: theme.primaryColor,
-            fontSize: 30,
-          ),
-        ),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(55),
+        child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
       body: Container(
