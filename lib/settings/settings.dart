@@ -28,6 +28,12 @@ class settings extends StatefulWidget {
 
 class _settingsState extends State<settings> {
   final currentScreen = settings;
+  final List<Widget> navigation = [
+    main_page(),
+    messages_main(),
+    main_page(),
+    messages_main(),
+  ];
 
   @override
   Widget build(BuildContext context) {
