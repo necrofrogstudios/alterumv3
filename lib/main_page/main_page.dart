@@ -76,12 +76,12 @@ class main_pageState extends State<main_page> {
               child: marquee(),
             ),
             Container(color: theme.splashColor, height: 4),
+            slideshow(),
             Container(
               color: theme.backgroundColor,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  slideshow(),
                   Padding(
                     padding: EdgeInsets.only(top: 5),
                     child: Text(
