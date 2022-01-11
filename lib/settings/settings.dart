@@ -7,6 +7,7 @@ import 'package:stacked_themes/stacked_themes.dart';
 import 'package:stacked/stacked.dart';
 import 'package:testing/settings/themes_navigation.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
+import 'package:testing/popular_widgets/appbar_custom.dart';
 
 class settings extends StatefulWidget {
   settings({Key key}) : super(key: key);
