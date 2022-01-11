@@ -109,6 +109,7 @@ class main_pageState extends State<main_page> {
 class slideshow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     return ImageSlideshow(
       /// Width of the [ImageSlideshow].
       width: double.infinity,
