@@ -31,7 +31,7 @@ class profile extends StatelessWidget {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             profile_pics_icons(),
-            Container(color: theme.splashColor, height: 4),
+            Container(color: theme.splashColor, height: 2),
             NotificationListener<OverscrollNotification>(
               onNotification: (OverscrollNotification value) {
                 if (value.overscroll < 0 && controller.offset + value.overscroll <= 0) {
