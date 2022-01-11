@@ -81,28 +81,27 @@ class slideshow extends StatelessWidget {
                   Radius.circular(30),
                 ),
               ),
-              child: Text('yeet'),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
-              child: Container(
-                child: FlatButton(
-                  color: theme.accentColor,
-                  splashColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  height: 20.0, // foreground
-                  onPressed: () {},
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Mountain Madness',
-                        style: TextStyle(
-                          fontSize: 10,
-                          color: theme.primaryColor,
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
+                child: Container(
+                  child: FlatButton(
+                    color: theme.accentColor,
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    height: 20.0, // foreground
+                    onPressed: () {},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Mountain Madness',
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: theme.primaryColor,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
