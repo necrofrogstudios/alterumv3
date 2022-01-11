@@ -131,7 +131,7 @@ class slideshow extends StatelessWidget {
         Container(
           decoration: BoxDecoration(
             color: theme.accentColor,
-            border: Border.all(color: theme.splashColor, width: 3.0),
+            border: Border.all(color: Colors.green, width: 3.0),
             borderRadius: BorderRadius.all(
               Radius.circular(30),
             ),
