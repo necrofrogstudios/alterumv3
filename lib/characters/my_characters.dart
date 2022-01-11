@@ -6,14 +6,17 @@ import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/footer.dart';
-import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
-import 'package:testing/main_page/marquee.dart';
+import 'package:testing/roleplays/roleplay_request.dart';
+import 'package:testing/roleplays/admin_marquee.dart';
+import 'package:testing/roleplays/roleplay_character.dart';
+import 'package:testing/roleplays/roleplay_navigation.dart';
+import 'package:testing/roleplays/roleplay_character_list.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
-import 'package:testing/characters/my_characters_card.dart';
 
 class my_characters extends StatelessWidget {
   final currentScreen = my_characters;
+  const roleplay_masterlist();
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -27,37 +30,72 @@ class my_characters extends StatelessWidget {
       drawer: drawer(currentScreen),
       body: Container(
         width: double.infinity,
-        child: ListView(
-          scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(0),
-          children: <Widget>[
-            Container(color: theme.splashColor, height: 4),
-            profile_top_buttons(),
-            Container(color: theme.splashColor, height: 4),
-            Container(
-              color: theme.backgroundColor,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'My Characters',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 25,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
+        height: double.infinity,
+        child: SingleChildScrollView(
+          physics: ScrollPhysics(),
+          child: Column(
+            children: <Widget>[
+              Container(color: theme.splashColor, height: 4),
+              profile_top_buttons(),
+              Container(color: theme.splashColor, height: 4),
+              Container(
+                color: theme.accentColor,
+                child: admin_marquee(),
               ),
-            ),
-            Container(
-              color: theme.backgroundColor,
-              child: my_characters_card(),
-            ),
-            Container(color: theme.splashColor, height: 4),
-            footer(),
-          ],
+              Container(color: theme.splashColor, height: 2),
+              Container(
+                color: theme.backgroundColor,
+                child: Column(
+                  children: [
+                    roleplay_navigation(),
+                    Text(
+                      'MASTERLIST',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: theme.primaryColor,
+                      ),
+                    ),
+                    GridView.count(
+                      physics: ScrollPhysics(),
+                      shrinkWrap: true,
+                      padding: const EdgeInsets.all(5),
+                      crossAxisSpacing: 5,
+                      mainAxisSpacing: 5,
+                      crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
+                      children: <Widget>[
+                        character_parkjimin(),
+                        character_kimjaejoong(),
+                        character_johncena(),
+                        character_tylerblackburn(),
+                        character_calliopemori(),
+                        character_leetaemin(),
+                        character_parkjimin(),
+                        character_johncena(),
+                        character_bangyongguk(),
+                        character_chengjunya(),
+                        character_parkchanyeol(),
+                        character_parkjimin(),
+                        character_kimjaejoong(),
+                        character_johncena(),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: theme.backgroundColor,
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+                  child: roleplay_request(),
+                ),
+              ),
+              Container(
+                color: theme.backgroundColor,
+              ),
+              Container(color: theme.splashColor, height: 4),
+              footer(),
+            ],
+          ),
         ),
       ),
     );
