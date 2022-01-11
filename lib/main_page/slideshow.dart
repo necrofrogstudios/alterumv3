@@ -81,7 +81,7 @@ class slideshow extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(27.0),
                 child: Image.network(
-                  'https://nexter.org/wp-content/uploads/2018/10/REAL-American-Haunted-Houses-pic10-e1538380539961.jpg',
+                  'https://blackbearboards.com/wp-content/uploads/2019/07/5.png',
                   fit: BoxFit.cover,
                 ),
               ),
