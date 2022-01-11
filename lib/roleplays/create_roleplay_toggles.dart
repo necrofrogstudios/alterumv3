@@ -157,11 +157,11 @@ class _mature_toggleState extends State<mature_toggle> {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.all(10),
-                  child: Text('13+'),
+                  child: Text('Everyone 13+'),
                 ),
                 Padding(
                   padding: EdgeInsets.all(10),
-                  child: Text('M 18+'),
+                  child: Text('Mature 18+'),
                 ),
               ],
               isSelected: isSelected,
