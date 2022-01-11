@@ -78,34 +78,38 @@ class slideshow extends StatelessWidget {
                   Radius.circular(30),
                 ),
               ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(27.0),
-                child: Image.network(
-                  'https://million-wallpapers.com/wallpapers/5/10/17359700775032063254.jpg',
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
-              child: FlatButton(
-                color: theme.accentColor,
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                height: 20.0, // foreground
-                onPressed: () {},
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Mountain Madness',
-                      style: TextStyle(
-                        fontSize: 10,
-                        color: theme.primaryColor,
+              child: Column(
+                children: <Widget>[
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(27.0),
+                    child: Image.network(
+                      'https://million-wallpapers.com/wallpapers/5/10/17359700775032063254.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
+                    child: FlatButton(
+                      color: theme.accentColor,
+                      splashColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      height: 20.0, // foreground
+                      onPressed: () {},
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Mountain Madness',
+                            style: TextStyle(
+                              fontSize: 10,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ],
