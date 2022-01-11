@@ -77,7 +77,7 @@ class main_pageState extends State<main_page> {
               child: marquee(),
             ),
             Container(color: theme.splashColor, height: 4),
-            Icon(Icon.close, color: theme.accentColor),
+            Icon(Icon.exit, color: theme.accentColor),
             slideshow(),
             Container(
               color: theme.backgroundColor,
