@@ -26,7 +26,7 @@ class footer extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => rules(currentScreen)),
+                MaterialPageRoute(builder: (context) => rules(),
               );
             },
           ),
