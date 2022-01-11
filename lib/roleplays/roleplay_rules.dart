@@ -12,6 +12,7 @@ import 'package:testing/roleplays/roleplay_masterlist.dart';
 import 'package:testing/roleplays/roleplay_navigation.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
+import 'package:testing/main_page/slideshow.dart';
 
 class roleplay_rules extends StatelessWidget {
   final currentScreen = roleplay_rules;
