@@ -197,8 +197,14 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
                 padding: EdgeInsets.all(10),
                 child: Text('First Pov'),
               ),
-              Text('Third Pov'),
-              Text('Both'),
+              Padding(
+                padding: EdgeInsets.all(10),
+                child: Text('Third Pov'),
+              ),
+              Padding(
+                padding: EdgeInsets.all(10),
+                child: Text('Both Pov'),
+              ),
             ],
             isSelected: isSelected,
             onPressed: (int index) {
