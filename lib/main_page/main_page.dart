@@ -147,7 +147,10 @@ class slideshow extends StatelessWidget {
                 ),
               ),
             ),
-            Text("someText"),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
+              child: Text("someText"),
+            ),
           ],
         ),
         Image.network(
