@@ -148,23 +148,26 @@ class slideshow extends StatelessWidget {
                 ),
               ),
             ),
-            FlatButton(
-              color: theme.accentColor,
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              height: 20.0, // foreground
-              onPressed: () {},
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Bucky\'s Play House',
-                    style: TextStyle(
-                      fontSize: 10,
-                      color: theme.primaryColor,
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
+              child: FlatButton(
+                color: theme.accentColor,
+                splashColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                height: 20.0, // foreground
+                onPressed: () {},
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Bucky\'s Play House',
+                      style: TextStyle(
+                        fontSize: 10,
+                        color: theme.primaryColor,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],
