@@ -66,8 +66,8 @@ class slideshow extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(30, 30, 0, 0),
-                child: Icon(Icons.star_outline, color: Colors.yellow, size: 30),
+                padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+                child: Icon(Icons.star_outline, color: Colors.yellow, size: 40),
               ),
             ],
           ),
