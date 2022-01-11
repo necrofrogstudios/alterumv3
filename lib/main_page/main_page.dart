@@ -79,7 +79,7 @@ class main_pageState extends State<main_page> {
             Container(color: theme.splashColor, height: 4),
             SizedBox(height: 10),
             slideshow(),
-            Icon(Icons.close, color: theme.primaryColor),
+            //Icon(Icons.close, color: theme.primaryColor),//
             Container(
               color: theme.backgroundColor,
               child: Row(
