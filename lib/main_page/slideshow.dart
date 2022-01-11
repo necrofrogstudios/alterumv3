@@ -27,7 +27,7 @@ class slideshow extends StatelessWidget {
         /// Add the sample image file into the images folder
         children: [
           Stack(
-            alignment: Alignment.topCenter,
+            alignment: Alignment.topLeft,
             children: <Widget>[
               Container(
                 height: 200,
@@ -64,7 +64,7 @@ class slideshow extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ), Padding(
               Icon(Icons.star_outline, color: Colors.yellow, size: 30),
             ],
           ),
