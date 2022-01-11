@@ -111,7 +111,7 @@ class slideshow extends StatelessWidget {
   Widget build(BuildContext context) {
     return ImageSlideshow(
       /// Width of the [ImageSlideshow].
-      width: double.infinity,
+      width: 200,
 
       /// Height of the [ImageSlideshow].
       height: 200,
