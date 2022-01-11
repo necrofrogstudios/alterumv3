@@ -226,7 +226,7 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
             ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.black,
               ),
             )
           ],
