@@ -193,7 +193,10 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
             focusColor: Colors.red,
             focusNodes: focusToggle,
             children: <Widget>[
-              Text('First Pov'),
+              Padding(
+                padding: EdgeInsets.all(10),
+                child: Text('First Pov'),
+              ),
               Text('Third Pov'),
               Text('Both'),
             ],
