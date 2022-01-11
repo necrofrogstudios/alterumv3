@@ -191,9 +191,9 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
             focusColor: Colors.red,
             focusNodes: focusToggle,
             children: <Widget>[
-              Icon(Icons.format_bold),
-              Icon(Icons.format_italic),
-              Icon(Icons.link),
+              Text('yap'),
+              Text('yap'),
+              Text('yap'),
             ],
             isSelected: isSelected,
             onPressed: (int index) {
@@ -208,31 +208,6 @@ class _DemoToggleButtonsState extends State<DemoToggleButtons> {
           Container(
             decoration: BoxDecoration(
               color: Colors.black,
-            ),
-            child: Column(
-              children: <Widget>[
-                Text('TV remote'),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    RaisedButton(
-                      child: Text('Previous'),
-                      onPressed: () {
-                        FocusScope.of(context).requestFocus(focusNodeButton1);
-                      },
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    RaisedButton(
-                      child: Text('Next'),
-                      onPressed: () {
-                        FocusScope.of(context).requestFocus(focusNodeButton2);
-                      },
-                    ),
-                  ],
-                ),
-              ],
             ),
           )
         ],
