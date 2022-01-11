@@ -44,7 +44,7 @@ class _settingsState extends State<settings> {
             children: <Widget>[
               Container(color: theme.splashColor, height: 4),
               profile_top_buttons(),
-              Container(color: theme.splashColor, height: 4),
+              Container(color: theme.splashColor, height: 2),
               themes_navigation(),
             ],
           ),
