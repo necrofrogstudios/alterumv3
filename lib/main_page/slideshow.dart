@@ -80,7 +80,7 @@ class slideshow extends StatelessWidget {
                   Radius.circular(30),
                 ),
               ),
-              child: Text(yeet),
+              child: Text('yeet'),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(3, 100, 3, 0),
