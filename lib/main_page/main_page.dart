@@ -55,25 +55,9 @@ class main_pageState extends State<main_page> {
       drawer: drawer(currentScreen),
       body: SmartRefresher(
         enablePullDown: true,
-        enablePullUp: true,
         header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
         footer: CustomFooter(
-          builder: (BuildContext context, LoadStatus mode) {
-            Widget body;
-            if (mode == LoadStatus.idle) {
-              body = Text("pull up load");
-            } else if (mode == LoadStatus.failed) {
-              body = Text("Load Failed!Click retry!");
-            } else if (mode == LoadStatus.canLoading) {
-              body = Text("release to load more");
-            } else {
-              body = Text("No more Data");
-            }
-            return Container(
-              height: 55.0,
-              child: Center(child: body),
-            );
-          },
+          builder: (BuildContext context, LoadStatus mode) {},
         ),
         controller: _refreshController,
         onRefresh: _onRefresh,
