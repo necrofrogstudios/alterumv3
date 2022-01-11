@@ -30,7 +30,7 @@ class slideshow extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
-                border: Border.all(color: theme.accentColor, width: 3.0),
+                border: Border.all(color: theme.splashColor, width: 3.0),
                 borderRadius: BorderRadius.all(
                   Radius.circular(30),
                 ),
@@ -73,7 +73,7 @@ class slideshow extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 color: theme.backgroundColor,
-                border: Border.all(color: theme.accentColor, width: 3.0),
+                border: Border.all(color: theme.splashColor, width: 3.0),
                 borderRadius: BorderRadius.all(
                   Radius.circular(30),
                 ),
