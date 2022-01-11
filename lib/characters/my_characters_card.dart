@@ -39,6 +39,7 @@ class my_characters_card extends StatelessWidget {
           back: Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
             child: Container(
+              height: 300,
               decoration: BoxDecoration(
                 color: theme.accentColor,
                 border: Border.all(color: theme.splashColor, width: 3.0),
@@ -85,7 +86,7 @@ class my_characters_card extends StatelessWidget {
                       color: theme.backgroundColor,
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
-                      height: 20.0,
+                      height: 30.0,
                       onPressed: () {
                         Navigator.push(
                           context,
