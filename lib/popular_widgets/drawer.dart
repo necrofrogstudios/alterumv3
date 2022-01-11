@@ -6,6 +6,7 @@ import 'package:testing/profile/profile_flip_card.dart';
 import 'package:testing/main_page/main_page.dart';
 import 'package:testing/characters/my_characters.dart';
 import 'package:testing/sign_in/sign_in.dart';
+import 'package:testing/messages/messages_main.dart';
 
 class drawer extends StatelessWidget {
   final back;
