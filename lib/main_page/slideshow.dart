@@ -96,7 +96,7 @@ class slideshow extends StatelessWidget {
                         Text(
                           'Mountain Madness',
                           style: TextStyle(
-                            fontSize: 10,
+                            fontSize: 20,
                             color: theme.primaryColor,
                           ),
                         ),
