@@ -65,7 +65,7 @@ class slideshow extends StatelessWidget {
                   ),
                 ),
               ),
-              Icon(Icons.star, color: Colors.yellow, size: 30),
+              Icon(Icons.star_outline, color: Colors.yellow, size: 30),
             ],
           ),
           Stack(
