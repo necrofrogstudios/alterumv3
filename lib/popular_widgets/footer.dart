@@ -11,12 +11,17 @@ class footer extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text(
-            '\u00a9 2022 Alterum',
-            style: TextStyle(
-              color: theme.primaryColor.withOpacity(0.45),
-              fontSize: 15,
+          FlatButton(
+            child: Text(
+              'Tutorial',
+              style: TextStyle(color: theme.primaryColor),
             ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => contact_support(currentScreen)),
+              );
+            },
           ),
           FlatButton(
             child: Text(
