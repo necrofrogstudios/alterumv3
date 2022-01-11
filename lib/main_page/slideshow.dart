@@ -81,7 +81,7 @@ class slideshow extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(27.0),
                 child: Image.network(
-                  'https://blackbearboards.com/wp-content/uploads/2019/07/5.png',
+                  'https://million-wallpapers.com/wallpapers/5/10/17359700775032063254.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
