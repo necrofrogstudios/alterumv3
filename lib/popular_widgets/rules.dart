@@ -9,8 +9,6 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 
 class rules extends StatelessWidget {
-  final currentScreen = rules;
-
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
