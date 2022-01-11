@@ -61,7 +61,7 @@ class my_characters extends StatelessWidget {
                       padding: const EdgeInsets.all(5),
                       crossAxisSpacing: 5,
                       mainAxisSpacing: 5,
-                      crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 1 : 2,
+                      crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 2 : 3,
                       children: <Widget>[
                         character_parkjimin(),
                         character_kimjaejoong(),
