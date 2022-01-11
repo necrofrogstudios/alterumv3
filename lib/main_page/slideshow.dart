@@ -72,6 +72,7 @@ class slideshow extends StatelessWidget {
           children: <Widget>[
             Container(
               height: 200,
+              width: double.infinity,
               decoration: BoxDecoration(
                 image: DecorationImage(image: NetworkImage("https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"), fit: BoxFit.cover),
                 color: theme.backgroundColor,
