@@ -16,7 +16,7 @@ import 'package:testing/main_page/roleplay_list_layout.dart';
 
 class my_characters extends StatelessWidget {
   final currentScreen = my_characters;
-  const roleplay_masterlist();
+  const my_characters();
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
