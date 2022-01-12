@@ -71,7 +71,7 @@ class create_roleplay extends StatelessWidget {
             ),
             about(),
             Padding(
-              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 5, 0, 0),
               child: Text(
                 'Rules *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
@@ -79,7 +79,7 @@ class create_roleplay extends StatelessWidget {
             ),
             rules(),
             Padding(
-              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 5, 0, 0),
               child: Text(
                 'Co-Admins *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
