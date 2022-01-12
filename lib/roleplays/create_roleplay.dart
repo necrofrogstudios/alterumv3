@@ -316,23 +316,33 @@ class post_button extends StatelessWidget {
             ),
             onPressed: () => showDialog<String>(
               context: context,
-              builder: (BuildContext context) => AlertDialog(
-                title: const Text('Head Admin Agreement'),
-                content: const Text('All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? '),
-                actions: <Widget>[
-                  TextButton(
-                    onPressed: () => Navigator.pop(context, 'Cancel'),
-                    child: const Text('No'),
-                  ),
-                  TextButton(
-                    onPressed: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => roleplay_main()),
-                    ),
-                    child: const Text('Yes'),
-                  ),
-                ],
-              ),
+              builder: (BuildContext context) => Dialog errorDialog = Dialog(
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)), //this right here
+  child: Container(
+    height: 300.0,
+    width: 300.0,
+   
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Padding(
+          padding:  EdgeInsets.all(15.0),
+          child: Text('Cool', style: TextStyle(color: Colors.red),),
+        ),
+        Padding(
+          padding: EdgeInsets.all(15.0),
+          child: Text('Awesome', style: TextStyle(color: Colors.red),),
+        ),
+        Padding(padding: EdgeInsets.only(top: 50.0)),
+        TextButton(onPressed: () {
+          Navigator.of(context).pop();
+        },
+            child: Text('Got It!', style: TextStyle(color: Colors.purple, fontSize: 18.0),))
+      ],
+    ),
+  ),
+);
+showDialog(context: context, builder: (BuildContext context) => errorDialog);}
             ),
           ),
         ),
