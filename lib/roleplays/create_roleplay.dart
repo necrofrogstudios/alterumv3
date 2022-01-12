@@ -47,7 +47,7 @@ class create_roleplay extends StatelessWidget {
             SizedBox(height: 15),
             pov_toggle(),
             Padding(
-              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 5, 0, 0),
               child: Text(
                 'Roleplay Name *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
@@ -55,7 +55,7 @@ class create_roleplay extends StatelessWidget {
             ),
             roleplay_name(),
             Padding(
-              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 5, 0, 0),
               child: Text(
                 'Background Image *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
@@ -63,7 +63,7 @@ class create_roleplay extends StatelessWidget {
             ),
             background_image_url(),
             Padding(
-              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+              padding: EdgeInsets.fromLTRB(30, 5, 0, 0),
               child: Text(
                 'About *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
