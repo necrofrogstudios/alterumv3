@@ -58,8 +58,8 @@ class create_roleplay extends StatelessWidget {
                 'Background Image *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
               ),
-              background_image_url(),
             ),
+            background_image_url(),
             Padding(
               padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
@@ -114,6 +114,7 @@ class roleplay_name extends StatelessWidget {
     );
   }
 }
+
 class background_image_url extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
