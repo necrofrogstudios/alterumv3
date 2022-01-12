@@ -319,8 +319,9 @@ class post_button extends StatelessWidget {
               builder: (BuildContext context) => AlertDialog(
                 backgroundColor: theme.accentColor,
                 shape: RoundedRectangleBorder(
-                  borderRadius: Radius.circular(50),
-                ),
+                    borderRadius: BorderRadius.all(
+                  Radius.circular(50),
+                )),
                 title: const Text('Head Admin Agreement'),
                 content: const Text('All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? '),
                 actions: <Widget>[
