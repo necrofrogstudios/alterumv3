@@ -48,7 +48,21 @@ class roleplay_rules extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     roleplay_navigation(),
-                    Image.network('https://centerforparentingeducation.org/wp-content/uploads/2014/04/rules.png'),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                      child: Container(
+                        height: 200,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(image: NetworkImage("https://centerforparentingeducation.org/wp-content/uploads/2014/04/rules.png"), fit: BoxFit.cover),
+                          color: theme.backgroundColor,
+                          border: Border.all(color: theme.splashColor, width: 3.0),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(30),
+                          ),
+                        ),
+                      ),
+                    ),
                     Text(
                       'Rules',
                       textAlign: TextAlign.center,
