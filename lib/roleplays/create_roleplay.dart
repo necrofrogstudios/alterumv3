@@ -341,7 +341,7 @@ class post_button extends StatelessWidget {
       ],
     ),
   ),
-),
+);
 showDialog(context: context, builder: (BuildContext context) => errorDialog);}
             ),
           ),
