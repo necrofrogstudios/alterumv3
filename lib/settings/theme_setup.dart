@@ -35,7 +35,7 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //blue, white, blue, black//
-    backgroundColor: Colors.white, 
+    backgroundColor: Colors.white,
     canvasColor: Colors.white,
     accentColor: Colors.blue,
     splashColor: Color(0xFF000C58),
@@ -43,9 +43,10 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //purplex2, white, black//
-    backgroundColor: Colors.white, canvasColor: Colors.white,
+    backgroundColor: Colors.white,
+    canvasColor: Colors.white,
     accentColor: Colors.purple,
-    splashColor: Color(0xFFA9006F)
+    splashColor: Color(0xFFA9006F),
     primaryColor: Colors.black,
   ),
   ThemeData(
@@ -95,9 +96,10 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //purple, black, white//
-    backgroundColor: Colors.black, canvasColor: Colors.black,
+    backgroundColor: Colors.black,
+    canvasColor: Colors.black,
     accentColor: Colors.purple,
-    splashColor: Colors.black,
+    splashColor: Color(0xFFA9006F),
     primaryColor: Colors.white,
   ),
   ThemeData(
