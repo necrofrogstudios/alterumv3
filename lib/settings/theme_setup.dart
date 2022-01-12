@@ -28,7 +28,7 @@ List<ThemeData> getThemes = [
     //green, white, black//
     backgroundColor: Colors.white, canvasColor: Colors.white,
     accentColor: Colors.green,
-    splashColor: Colors.white,
+    splashColor: Color(0xFF00854E),
     primaryColor: Colors.black,
   ),
   ThemeData(
