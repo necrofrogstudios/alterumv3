@@ -8,6 +8,7 @@ import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/roleplays/create_roleplay_toggles.dart';
+import 'package:testing/roleplays/roleplay_main.dart';
 
 // draft status, m checkbox?, friends only, inactivity, tags, post warning pop up? //
 
@@ -324,7 +325,10 @@ class post_button extends StatelessWidget {
                     child: const Text('No'),
                   ),
                   TextButton(
-                    onPressed: () => Navigator.pop(context, 'OK'),
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => roleplay_main()),
+                    ),
                     child: const Text('Yes'),
                   ),
                 ],
