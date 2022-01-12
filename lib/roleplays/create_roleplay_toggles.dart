@@ -248,11 +248,11 @@ class _gender_toggleState extends State<gender_toggle> {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                  child: Text('Males'),
+                  child: Text('Males Only'),
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                  child: Text('Females'),
+                  child: Text('Females Only'),
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
