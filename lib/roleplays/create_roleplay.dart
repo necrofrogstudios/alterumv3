@@ -326,18 +326,30 @@ class post_button extends StatelessWidget {
                   'Head Admin Agreement',
                   style: TextStyle(color: theme.primaryColor, fontSize: 15),
                 ),
-                content: const Text('All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? '),
+                content: const Text(
+                  'All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? ',
+                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                ),
                 actions: <Widget>[
                   TextButton(
-                    onPressed: () => Navigator.pop(context, 'Cancel'),
-                    child: const Text('No'),
+                    onPressed: () => Navigator.pop(
+                      context,
+                      'Cancel',
+                    ),
+                    child: const Text(
+                      'No',
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    ),
                   ),
                   TextButton(
                     onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => roleplay_main()),
                     ),
-                    child: const Text('Yes'),
+                    child: const Text(
+                      'Yes',
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    ),
                   ),
                 ],
               ),
