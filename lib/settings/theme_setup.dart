@@ -19,14 +19,16 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //yellow, white,  black//
-    backgroundColor: Colors.white, canvasColor: Colors.white,
+    backgroundColor: Colors.white,
+    canvasColor: Colors.white,
     accentColor: Colors.yellow,
     splashColor: Color(0xFFFFDE2B),
     primaryColor: Colors.black,
   ),
   ThemeData(
     //green, white, black//
-    backgroundColor: Colors.white, canvasColor: Colors.white,
+    backgroundColor: Colors.white,
+    canvasColor: Colors.white,
     accentColor: Colors.green,
     splashColor: Color(0xFF00854E),
     primaryColor: Colors.black,
@@ -68,16 +70,18 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //yellow,  black, white//
-    backgroundColor: Colors.black, canvasColor: Colors.black,
+    backgroundColor: Colors.black,
+    canvasColor: Colors.black,
     accentColor: Colors.yellow,
     splashColor: Color(0xFFFFDE2B),
     primaryColor: Colors.white,
   ),
   ThemeData(
     //green, black, white//
-    backgroundColor: Colors.black, canvasColor: Colors.black,
+    backgroundColor: Colors.black,
+    canvasColor: Colors.black,
     accentColor: Colors.green,
-    splashColor: Colors.black,
+    splashColor: Color(0xFF00854E),
     primaryColor: Colors.white,
   ),
   ThemeData(
