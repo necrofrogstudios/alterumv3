@@ -107,7 +107,6 @@ class _settingsState extends State<settings> {
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
-            Container(color: theme.splashColor, height: 4),
             Column(
               children: <Widget>[
                 Container(color: theme.splashColor, height: 4),
