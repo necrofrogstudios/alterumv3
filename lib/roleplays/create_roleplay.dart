@@ -322,7 +322,7 @@ class post_button extends StatelessWidget {
                     borderRadius: BorderRadius.all(
                   Radius.circular(30),
                 )),
-                title: const Text(
+                title: Text(
                   'Head Admin Agreement',
                   style(
                     TextStyle(color: theme.primaryColor),
