@@ -141,7 +141,7 @@ class background_image_url extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(50.0)),
               borderSide: BorderSide(color: theme.splashColor, width: 4.0),
             ),
-            hintText: 'https:tumblr.com/',
+            hintText: 'https:www.tumblr.com/',
             hintStyle: TextStyle(
               color: Colors.black.withOpacity(0.75),
             ),
