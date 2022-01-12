@@ -70,6 +70,14 @@ class create_roleplay extends StatelessWidget {
               ),
             ),
             about(),
+            Padding(
+              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+              child: Text(
+                'Rules *',
+                style: TextStyle(color: theme.primaryColor, fontSize: 15),
+              ),
+            ),
+            rules(),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
@@ -194,6 +202,44 @@ class about extends StatelessWidget {
   }
 }
 
+class rules extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final maxLines = 10;
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.all(
+            Radius.circular(30),
+          ),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: theme.primaryColor),
+          keyboardType: TextInputType.multiline,
+          maxLines: maxLines,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(30.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            hintText: 'Enter Rules Here...',
+            hintStyle: TextStyle(
+              color: Colors.black.withOpacity(0.75),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+          ),
+        ),
+      ),
+    );
+  }
+}
 /*class profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
