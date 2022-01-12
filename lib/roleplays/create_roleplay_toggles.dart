@@ -248,15 +248,15 @@ class _gender_toggleState extends State<gender_toggle> {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                  child: Text('First Pov'),
+                  child: Text('Male Only'),
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                  child: Text('Third Pov'),
+                  child: Text('Female Only'),
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                  child: Text('Both Pov'),
+                  child: Text('Both'),
                 ),
               ],
               isSelected: isSelected,
