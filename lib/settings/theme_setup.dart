@@ -51,16 +51,18 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //pinkx2, white, black//
-    backgroundColor: Colors.white, canvasColor: Colors.white,
+    backgroundColor: Colors.white,
+    canvasColor: Colors.white,
     accentColor: Colors.pink,
-    splashColor: Colors.white,
+    splashColor: Color(0xFFFF8DA1),
     primaryColor: Colors.black,
   ),
   ThemeData(
     //red, white, black//
-    backgroundColor: Colors.white, canvasColor: Colors.white,
+    backgroundColor: Colors.white,
+    canvasColor: Colors.white,
     accentColor: Color(0xFFff0800),
-    splashColor: Colors.white,
+    splashColor: Color(0xFF4288282624),
     primaryColor: Colors.black,
   ),
   ThemeData(
