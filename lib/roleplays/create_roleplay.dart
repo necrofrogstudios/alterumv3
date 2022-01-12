@@ -316,16 +316,16 @@ class post_button extends StatelessWidget {
             onPressed: () => showDialog<String>(
               context: context,
               builder: (BuildContext context) => AlertDialog(
-                title: const Text('AlertDialog Title'),
-                content: const Text('AlertDialog description'),
+                title: const Text('Alert'),
+                content: const Text('All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? '),
                 actions: <Widget>[
                   TextButton(
                     onPressed: () => Navigator.pop(context, 'Cancel'),
-                    child: const Text('Cancel'),
+                    child: const Text('No'),
                   ),
                   TextButton(
                     onPressed: () => Navigator.pop(context, 'OK'),
-                    child: const Text('OK'),
+                    child: const Text('Yes'),
                   ),
                 ],
               ),
