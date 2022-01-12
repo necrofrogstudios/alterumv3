@@ -125,7 +125,7 @@ List<ThemeData> getThemes = [
     backgroundColor: Colors.black,
     canvasColor: Colors.black,
     accentColor: Colors.orange,
-    splashColor: Color(0xFFA15800),
+    splashColor: Color(0xFFBDBF00),
     primaryColor: Colors.white,
   ),
   ThemeData(
