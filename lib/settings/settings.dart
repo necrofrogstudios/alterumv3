@@ -108,8 +108,6 @@ class _settingsState extends State<settings> {
           padding: const EdgeInsets.all(0),
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
-            profile_top_buttons(),
-            Container(color: theme.splashColor, height: 4),
             Column(
               children: <Widget>[
                 Container(color: theme.splashColor, height: 4),
