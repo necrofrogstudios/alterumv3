@@ -316,7 +316,7 @@ class post_button extends StatelessWidget {
             ),
             onPressed: () => showDialog<String>(
               context: context,
-              builder: (BuildContext context) => Dialog errorDialog = Dialog(
+              builder: (BuildContext context) => Dialog(
   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)), //this right here
   child: Container(
     height: 300.0,
