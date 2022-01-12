@@ -33,6 +33,7 @@ class profile extends StatefulWidget {
 }
 
 class profileState extends State<profile> {
+  ScrollController controller = ScrollController();
   final currentScreen = profile;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
