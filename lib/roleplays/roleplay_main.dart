@@ -55,19 +55,21 @@ class roleplay_main extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    Container(
-                      height: 200,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(image: NetworkImage("https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png"), fit: BoxFit.cover),
-                        color: theme.backgroundColor,
-                        border: Border.all(color: theme.splashColor, width: 3.0),
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(30),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+                      child: Container(
+                        height: 200,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(image: NetworkImage("https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png"), fit: BoxFit.cover),
+                          color: theme.backgroundColor,
+                          border: Border.all(color: theme.splashColor, width: 3.0),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(30),
+                          ),
                         ),
                       ),
                     ),
-                    Image.network('https://sportshub.cbsistatic.com/i/r/2018/09/05/da806911-77eb-42d0-896c-0ce1495392ef/thumbnail/1200x675/1c8b00bf06837191aa6a350fa2389a2b/hauntedhotel-cover.png'),
                     Padding(
                       padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
                       child: Text(
