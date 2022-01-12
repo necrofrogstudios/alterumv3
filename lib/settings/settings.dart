@@ -13,6 +13,7 @@ import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
+import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/messages/messages_main.dart';
 import 'package:testing/main_page/main_page.dart';
 
