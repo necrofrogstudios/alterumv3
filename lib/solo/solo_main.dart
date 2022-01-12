@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:swipe_cards/swipe_cards.dart';
 import 'package:flip_card/flip_card.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
+
 import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/popular_widgets/drawer.dart';
@@ -26,6 +28,7 @@ class solo_main extends StatefulWidget {
 
 class solo_mainState extends State<solo_main> {
   final currentScreen = solo_main;
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
 
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
@@ -51,18 +54,46 @@ class solo_mainState extends State<solo_main> {
     "Kai",
     "Tyler Blackburn"
   ];
+  List<String> items = [
+    "Popular",
+  ];
+
+  void _onRefresh() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use refreshFailed()
+    _refreshController.refreshCompleted();
+  }
+
+  void _onLoading() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use loadFailed(),if no data return,use LoadNodata()
+    items.add((items.length + 1).toString());
+    if (mounted) setState(() {});
+    _refreshController.loadComplete();
+  }
+
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
+    Color myColor = Theme.of(context).accentColor;
+
     return Scaffold(
-      key: _scaffoldKey,
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(55),
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: Container(
-        width: double.infinity,
+      body: SmartRefresher(
+        enablePullDown: true,
+        header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
+        footer: CustomFooter(
+          builder: (BuildContext context, LoadStatus mode) {},
+        ),
+        controller: _refreshController,
+        onRefresh: _onRefresh,
+        onLoading: _onLoading,
         child: ListView(
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
