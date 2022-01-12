@@ -104,9 +104,10 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //pink,black, white//
-    backgroundColor: Colors.black, canvasColor: Colors.black,
+    backgroundColor: Colors.black,
+    canvasColor: Colors.black,
     accentColor: Colors.pink,
-    splashColor: Color(0xFFA8DCBE),
+    splashColor: Color(0xFFFF8DA1),
     primaryColor: Colors.white,
   ),
   ThemeData(
