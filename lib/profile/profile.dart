@@ -7,18 +7,9 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
-
-import 'package:flutter/material.dart';
-import 'package:marquee/marquee.dart';
-import 'package:testing/main.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
-import 'package:testing/popular_widgets/drawer.dart';
-import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
-import 'package:testing/popular_widgets/appbar_top_buttons.dart';
-import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/main_page/marquee.dart';
