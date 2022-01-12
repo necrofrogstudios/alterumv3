@@ -35,7 +35,8 @@ List<ThemeData> getThemes = [
   ),
   ThemeData(
     //blue, white, blue, black//
-    backgroundColor: Colors.white, canvasColor: Colors.white,
+    backgroundColor: Colors.white, 
+    canvasColor: Colors.white,
     accentColor: Colors.blue,
     splashColor: Color(0xFF000C58),
     primaryColor: Colors.black,
@@ -44,7 +45,7 @@ List<ThemeData> getThemes = [
     //purplex2, white, black//
     backgroundColor: Colors.white, canvasColor: Colors.white,
     accentColor: Colors.purple,
-    splashColor: Colors.white,
+    splashColor: Color(0xFFA9006F)
     primaryColor: Colors.black,
   ),
   ThemeData(
