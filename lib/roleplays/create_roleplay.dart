@@ -88,6 +88,32 @@ class create_roleplay extends StatelessWidget {
               ),
             ),
             admins(),
+            Container(
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 15, 20, 10),
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(width: 4.0, color: theme.accentColor),
+                      elevation: 6,
+                      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 17),
+                      backgroundColor: theme.backgroundColor,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),
+                    child: Text(
+                      'Create',
+                      style: TextStyle(fontSize: 15, color: theme.primaryColor),
+                    ),
+                    onPressed: () {
+                      addComment(textController.text);
+                    },
+                  ),
+                ),
+              ),
+            ),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
