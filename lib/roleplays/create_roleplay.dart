@@ -9,6 +9,8 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/roleplays/create_roleplay_toggles.dart';
 
+// draft status, m checkbox?, friends only, inactivity, tags, post warning pop up? //
+
 class create_roleplay extends StatelessWidget {
   final currentScreen = create_roleplay;
   ScrollController controller = ScrollController();
