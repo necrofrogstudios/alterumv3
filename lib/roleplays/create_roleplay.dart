@@ -55,6 +55,14 @@ class create_roleplay extends StatelessWidget {
             Padding(
               padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
               child: Text(
+                'Background Image *',
+                style: TextStyle(color: theme.primaryColor, fontSize: 15),
+              ),
+              background_image_url(),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(30, 10, 0, 0),
+              child: Text(
                 'About *',
                 style: TextStyle(color: theme.primaryColor, fontSize: 15),
               ),
@@ -70,6 +78,43 @@ class create_roleplay extends StatelessWidget {
 }
 
 class roleplay_name extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Padding(
+      padding: EdgeInsets.fromLTRB(10, 5, 10, 5),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.all(
+            Radius.circular(50),
+          ),
+        ),
+        child: TextFormField(
+          style: TextStyle(color: Colors.black),
+          keyboardType: TextInputType.multiline,
+          maxLines: 1,
+          decoration: InputDecoration(
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+            ),
+            hintText: 'Enter Roleplay Name',
+            hintStyle: TextStyle(
+              color: Colors.black.withOpacity(0.75),
+            ),
+            contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+          ),
+        ),
+      ),
+    );
+  }
+}
+class background_image_url extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
