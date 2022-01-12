@@ -107,9 +107,7 @@ class create_roleplay extends StatelessWidget {
                       'Create',
                       style: TextStyle(fontSize: 15, color: theme.primaryColor),
                     ),
-                    onPressed: () {
-                      addComment(textController.text);
-                    },
+                    onPressed: () {},
                   ),
                 ),
               ),
