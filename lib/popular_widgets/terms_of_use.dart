@@ -147,7 +147,7 @@ class terms_of_useState extends State<terms_of_use> {
                     '001; Use or distribution of tools designed for compromising security of the Mobile Application and Services.  \n \n'
                     '002; Intentionally or negligently transmitting files containing a computer virus or corrupted data. \n \n'
                     '003; Accessing another network without permission, including to probe or scan for vulnerabilities or breach security or authentication measures. \n \n'
-                    '004; Unauthorized scanning or monitoring of data on any network or system without proper authorization of the owner of the system or network. \n \n',
+                    '004; Unauthorized scanning or monitoring of data on any network or system without proper authorization of the owner of the system or network.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -325,7 +325,7 @@ class terms_of_useState extends State<terms_of_use> {
                   'Changes and Amendments',
                   style: TextStyle(
                     color: theme.primaryColor,
-                    fontSize: 30,
+                    fontSize: 25,
                   ),
                 ),
                 Padding(
