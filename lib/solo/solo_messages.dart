@@ -21,7 +21,6 @@ class ExampleHomePage extends StatefulWidget {
 class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderStateMixin {
   List<String> welcomeImages = [
     "https://img.freepik.com/free-vector/cute-rabbit-with-duck-working-laptop-cartoon-illustration_56104-471.jpg?size=626&ext=jpg",
-    "https://wallpapercave.com/wp/wp5732639.jpg",
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8xLT6Bgx5vAKcPDLGdd2nrhHMWpJ02tOrQ&usqp=CAU",
     "https://swall.teahub.io/photos/small/138-1388931_kawaii-cute-stitch.jpg"
   ];
