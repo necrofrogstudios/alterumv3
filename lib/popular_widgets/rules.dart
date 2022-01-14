@@ -77,7 +77,9 @@ class rulesState extends State<rules> {
                 ),
                 Text(
                   '001; We do not blah blah blah. \n'
-                  '002; we also do not do blah blah blh mkay?',
+                  '002; we also do not do blah blah blh mkay? \n'
+                  '003; and also another thing bleh bleh heh he neh neh \n'
+                  '004; if you dont get it by now then you never will sorry not sorry \n',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 15,
