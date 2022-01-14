@@ -69,7 +69,7 @@ class terms_of_useState extends State<terms_of_use> {
             Column(
               children: <Widget>[
                 Text(
-                  'Rules',
+                  'Terms of Use',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
