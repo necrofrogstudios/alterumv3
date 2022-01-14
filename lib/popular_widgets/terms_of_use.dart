@@ -100,8 +100,8 @@ class terms_of_useState extends State<terms_of_use> {
                         color: Colors.black,
                       ),
                       children: <TextSpan>[
-                        new TextSpan(text: 'Hello'),
-                        new TextSpan(text: 'World', style: new TextStyle(fontWeight: FontWeight.bold)),
+                        new TextSpan(text: 'Hello', style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: theme.primaryColor)),
+                        new TextSpan(text: 'World', style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: theme.primaryColor)),
                       ],
                     ),
                   ),
