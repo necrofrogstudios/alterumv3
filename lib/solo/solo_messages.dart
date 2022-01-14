@@ -61,6 +61,8 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
                     front: Padding(
                       padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
                       child: Container(
+                        height: 300,
+                        width: 300,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                           color: theme.accentColor,
