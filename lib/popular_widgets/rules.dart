@@ -75,6 +75,14 @@ class rulesState extends State<rules> {
                     fontSize: 30,
                   ),
                 ),
+                Text(
+                  '001; We do not blah blah blah. /n'
+                  '002; we also do not do blah blah blh mkay?',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 15,
+                  ),
+                ),
               ],
             ),
             Container(color: theme.splashColor, height: 4),
