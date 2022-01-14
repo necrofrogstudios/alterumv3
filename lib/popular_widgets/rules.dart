@@ -68,7 +68,7 @@ class rulesState extends State<rules> {
             Container(color: theme.splashColor, height: 4),
             Text(
               'Rules',
-              style: Textstyle(
+              style: TextStyle(
                 color: theme.primaryColor,
                 fontSize: 30,
               ),
