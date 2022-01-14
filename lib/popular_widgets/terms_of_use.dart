@@ -92,7 +92,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 20),
                   child: RichText(
-                    text: new TextSpan(
+                    text: TextSpan(
                       // Note: Styles for TextSpans must be explicitly defined.
                       // Child text spans will inherit styles from parent
                       textAlign: TextAlign.center,
