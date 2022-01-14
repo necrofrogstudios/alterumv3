@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
 
+import 'package:flutter/material.dart';
+import 'package:swipe_cards/swipe_cards.dart';
+import 'package:flip_card/flip_card.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
+
+import 'package:testing/popular_widgets/footer.dart';
+import 'package:testing/popular_widgets/appbar_custom.dart';
+import 'package:testing/popular_widgets/drawer.dart';
+import 'package:testing/popular_widgets/appbar_top_buttons.dart';
+import 'package:testing/solo/solo_navigation.dart';
+
 class ExampleHomePage extends StatefulWidget {
   @override
   _ExampleHomePageState createState() => _ExampleHomePageState();
@@ -16,6 +27,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     CardController controller; //Use this to trigger swap.
 
     return Scaffold(
@@ -34,7 +46,58 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
             minWidth: MediaQuery.of(context).size.width * 0.8,
             minHeight: MediaQuery.of(context).size.width * 0.8,
             cardBuilder: (context, index) => Card(
-              child: Image.network('${welcomeImages[index]}'),
+              child: FlipCard(
+                              fill: Fill.fillBack,
+                              direction: FlipDirection.HORIZONTAL,
+                              front: Padding(
+                                padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                                child: Container(
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    color: theme.accentColor,
+                                    border: Border.all(color: theme.splashColor, width: 3.0),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(30),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    children: <Widget>[
+                                      ClipRRect(
+                                        borderRadius: BorderRadius.circular(29.0),
+                                        child:Image.network('${welcomeImages[index]}'),
+                                      ),
+                                      Text(
+                                        'yaper'
+                                        style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ), // BACK OF CARD //
+                              back: Padding(
+                                padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: theme.accentColor,
+                                    border: Border.all(color: theme.splashColor, width: 3.0),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(30),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                                        child: Text(
+                                          'yap'
+                                          style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
             ),
             cardController: controller = CardController(),
             swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
