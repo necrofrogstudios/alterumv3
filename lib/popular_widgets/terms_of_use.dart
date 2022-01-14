@@ -175,9 +175,24 @@ class terms_of_useState extends State<terms_of_use> {
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                   child: Text(
                     '001; Deliberate attempts to overload the Mobile Application and Services and broadcast attacks (i.e. denial of service attacks).  \n \n'
-                    '002; Engaging in any other activities that degrade the usability and performance of the Mobile Application and Services. \n \n'
-                    '003; No spam policy. \n \n'
-                    '004; You may not use the Mobile Application and Services to send spam or bulk unsolicited messages. We maintain a zero tolerance policy for use of the Mobile Application and Services in any manner associated with the transmission, distribution or delivery of any bulk e-mail, including unsolicited bulk or unsolicited commercial e-mail, or the sending, assisting, or commissioning the transmission of commercial e-mail that does not comply with the U.S. CAN-SPAM Act of 2003 (“SPAM”). \n \n',
+                    '002; Engaging in any other activities that degrade the usability and performance of the Mobile Application and Services. \n \n',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  'No spam policy.',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    'You may not use the Mobile Application and Services to send spam or bulk unsolicited messages. We maintain a zero tolerance policy for use of the Mobile Application and Services in any manner associated with the transmission, distribution or delivery of any bulk e-mail, including unsolicited bulk or unsolicited commercial e-mail, or the sending, assisting, or commissioning the transmission of commercial e-mail that does not comply with the U.S. CAN-SPAM Act of 2003 (“SPAM”).',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
