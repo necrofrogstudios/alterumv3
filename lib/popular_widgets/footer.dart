@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing/support/contact_support.dart';
-import 'package:testing/popular_widgets/rules.dart';
+import 'package:testing/popular_widgets/terms_of_use.dart';
 
 class footer extends StatelessWidget {
   final currentScreen = footer;
@@ -32,7 +32,7 @@ class footer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => rules(),
+                  builder: (context) => terms_of_use(),
                 ),
               );
             },

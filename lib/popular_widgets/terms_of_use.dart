@@ -9,13 +9,13 @@ import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 
-class rules extends StatefulWidget {
+class terms_of_use extends StatefulWidget {
   @override
-  rulesState createState() => rulesState();
+  terms_of_useState createState() => terms_of_useState();
 }
 
-class rulesState extends State<rules> {
-  final currentScreen = rules;
+class terms_of_useState extends State<terms_of_use> {
+  final currentScreen = terms_of_use;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
   List<String> items = [
