@@ -155,7 +155,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'Service Resources',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -164,7 +164,30 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'You may not consume excessive amounts of the resources of the Mobile Application and Services or use the Mobile Application and Services in any way which results in performance issues or which interrupts the Services for other Users. Prohibited activities that contribute to excessive use, include without limitation:',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                  child: Text(
+                    '001; Deliberate attempts to overload the Mobile Application and Services and broadcast attacks (i.e. denial of service attacks).  \n \n'
+                    '002; Engaging in any other activities that degrade the usability and performance of the Mobile Application and Services. \n \n'
+                    '003; No spam policy. \n \n'
+                    '004; You may not use the Mobile Application and Services to send spam or bulk unsolicited messages. We maintain a zero tolerance policy for use of the Mobile Application and Services in any manner associated with the transmission, distribution or delivery of any bulk e-mail, including unsolicited bulk or unsolicited commercial e-mail, or the sending, assisting, or commissioning the transmission of commercial e-mail that does not comply with the U.S. CAN-SPAM Act of 2003 (“SPAM”). \n \n',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    'Your products or services advertised via SPAM (i.e. Spamvertised) may not be used in conjunction with the Mobile Application and Services. This provision includes, but is not limited to, SPAM sent via fax, phone, postal mail, email, instant messaging, or newsgroups.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -172,7 +195,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'Defamation and Objectionable Content',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -181,7 +204,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'We value the freedom of expression and encourage Users to be respectful with the content they post. We are not a publisher of User content and are not in a position to investigate the veracity of individual defamation claims or to determine whether certain material, which we may find objectionable, should be censored. However, we reserve the right to moderate, disable or remove any content to prevent harm to others or to us or the Mobile Application and Services, as determined in our sole discretion.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -189,7 +212,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'Copyrighted Content',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -198,7 +221,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'Copyrighted material must not be published via the Mobile Application and Services without the explicit permission of the copyright owner or a person explicitly authorized to give such permission by the copyright owner. Upon receipt of a claim for copyright infringement, or a notice of such violation, we may, at our discretion, run an investigation and, upon confirmation, may remove the infringing material from the Mobile Application and Services. We may terminate the Service of Users with repeated copyright infringements. Further procedures may be carried out if necessary. We will assume no liability to any User of the Mobile Application and Services for the removal of any such material. If you believe your copyright is being infringed by a person or persons using the Mobile Application and Services, please get in touch with us to report copyright infringement.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -206,7 +229,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'Security',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -215,7 +238,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'You take full responsibility for maintaining reasonable security precautions for your account. You are responsible for protecting and updating any login account provided to you for the Mobile Application and Services. You must protect the confidentiality of your login details, and you should change your password periodically.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -223,7 +246,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'Enforcement',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -232,7 +255,21 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'We reserve our right to be the sole arbiter in determining the seriousness of each infringement and to immediately take corrective actions, including but not limited to:',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                  child: Text(
+                    '001; Suspending or terminating your Service with or without notice upon any violation of this Policy. Any violations may also result in the immediate suspension or termination of your account.  \n \n'
+                    '002; Disabling or removing any content which is prohibited by this Policy, including to prevent harm to others or to us or the Mobile Application and Services, as determined by us in our sole discretion. \n \n'
+                    '003; Reporting violations to law enforcement as determined by us in our sole discretion. \n \n'
+                    '004; A failure to respond to an email from our abuse team within 2 days, or as otherwise specified in the communication to you, may result in the suspension or termination of your account. \n \n'
+                    '005; Suspended and terminated User accounts due to violations will not be re-activated.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
