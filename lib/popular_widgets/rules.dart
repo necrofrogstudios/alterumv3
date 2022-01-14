@@ -4,14 +4,18 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/footer.dart';
-import 'package:testing/profile/profile_pics_icons.dart';
-import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
+import 'package:testing/profile/profile_pics_icons.dart';
+import 'package:testing/profile/profile_tabbar.dart';
 
-class rules extends StatelessWidget {
+class rules extends StatefulWidget {
+  @override
+  rulesState createState() => rulesState();
+}
+
+class rulesState extends State<rules> {
   final currentScreen = rules;
-
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
   List<String> items = [
