@@ -71,10 +71,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
                         ),
                         child: Column(
                           children: <Widget>[
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(29.0),
-                              child: Image.network('${welcomeImages[index]}'),
-                            ),
+                            Image.network('${welcomeImages[index]}'),
                             Text('name'),
                           ],
                         ),
