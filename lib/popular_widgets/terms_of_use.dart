@@ -125,7 +125,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'System Abuse',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -134,7 +134,20 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'Any User in violation of the Mobile Application and Services security is subject to criminal and civil liability, as well as immediate account termination. Examples include, but are not limited to the following:',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                  child: Text(
+                    '001; Use or distribution of tools designed for compromising security of the Mobile Application and Services.  \n \n'
+                    '002; Intentionally or negligently transmitting files containing a computer virus or corrupted data. \n \n'
+                    '003; Accessing another network without permission, including to probe or scan for vulnerabilities or breach security or authentication measures. \n \n'
+                    '004; Unauthorized scanning or monitoring of data on any network or system without proper authorization of the owner of the system or network. \n \n',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
