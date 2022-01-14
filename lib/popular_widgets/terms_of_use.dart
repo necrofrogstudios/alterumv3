@@ -85,6 +85,23 @@ class terms_of_useState extends State<terms_of_use> {
                     ),
                   ),
                 ),
+                Text(
+                  'Prohibited Activities and Uses',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 25,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    'You may not use the Mobile Application and Services to publish content or engage in activity that is illegal under applicable law, that is harmful to others, or that would subject us to liability, including, without limitation, in connection with any of the following, each of which is prohibited under this Policy:',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                   child: Text(
