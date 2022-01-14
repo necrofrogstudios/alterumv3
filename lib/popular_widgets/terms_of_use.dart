@@ -141,7 +141,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  'T ',
+                  'Adult content',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -150,7 +150,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    'v',
+                    'Please be aware that there may be certain adult or mature content available in the Mobile Application. A warning will be shown to the User prior to adult content being displayed. Where there is mature or adult content, individuals who are less than 18 years of age or are not permitted to access such content under the laws of any applicable jurisdiction may not access such content. If we learn that anyone under the age of 18 seeks to conduct a transaction through the Services, we will require verified parental consent, in accordance with the Children’s Online Privacy Protection Act of 1998 (“COPPA”). Certain areas of the Mobile Application and Services may not be available to children under 18 under any circumstances.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -158,7 +158,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  'T ',
+                  'Backups',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -167,7 +167,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    'v',
+                    'We are not responsible for the Content residing in the Mobile Application. In no event shall we be held liable for any loss of any Content. It is your sole responsibility to maintain appropriate backup of your Content. Notwithstanding the foregoing, on some occasions and in certain circumstances, with absolutely no obligation, we may be able to restore some or all of your data that has been deleted as of a certain date and time when we may have backed up data for our own purposes. We make no guarantee that the data you need will be available.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -175,7 +175,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  'T ',
+                  'Links to Other Resources',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -184,7 +184,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    'v',
+                    'Although the Mobile Application and Services may link to other resources (such as websites, mobile applications, etc.), we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked resource, unless specifically stated herein. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any businesses or individuals or the content of their resources. We do not assume any responsibility or liability for the actions, products, services, and content of any other third parties. You should carefully review the legal statements and other conditions of use of any resource which you access through a link in the Mobile Application. Your linking to any other off-site resources is at your own risk.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -192,7 +192,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  'T ',
+                  'Prohibited Uses ',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -201,7 +201,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    'v',
+                    'In addition to other terms as set forth in the Agreement, you are prohibited from using the Mobile Application and Services or Content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Mobile Application and Services, third party products and services, or the Internet; (h) to spam, phish, pharm, pretext, spider, crawl, or scrape; (i) for any obscene or immoral purpose; or (j) to interfere with or circumvent the security features of the Mobile Application and Services, third party products and services, or the Internet. We reserve the right to terminate your use of the Mobile Application and Services for violating any of the prohibited uses.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -209,7 +209,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  'T ',
+                  'Intellectual Property Rights ',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -218,7 +218,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                   child: Text(
-                    'v',
+                    '“Intellectual Property Rights” means all present and future rights conferred by statute, common law or equity in or in relation to any copyright and related rights, trademarks, designs, patents, inventions, goodwill and the right to sue for passing off, rights to inventions, rights to use, and all other intellectual property rights, in each case whether registered or unregistered and including all applications and rights to apply for and be granted, rights to claim priority from, such rights and all similar or equivalent rights or forms of protection and any other results of intellectual activity which subsist or will subsist now or in the future in any part of the world. This Agreement does not transfer to you any intellectual property owned by the Operator or third parties, and all rights, titles, and interests in and to such property will remain (as between the parties) solely with the Operator. All trademarks, service marks, graphics and logos used in connection with the Mobile Application and Services, are trademarks or registered trademarks of the Operator or its licensors. Other trademarks, service marks, graphics and logos used in connection with the Mobile Application and Services may be the trademarks of other third parties. Your use of the Mobile Application and Services grants you no right or license to reproduce or otherwise use any of the Operator or third party trademarks.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
