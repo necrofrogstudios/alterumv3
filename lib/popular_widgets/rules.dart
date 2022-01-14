@@ -78,10 +78,10 @@ class rulesState extends State<rules> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                   child: Text(
-                    '001; You must be 13 years old to use this app and 18 or older to access Mature content.  \n'
-                    '002; No harrassment or bullying is allowed among roleplayers. Should you or someone you know are faced with harrassment of any form, contact a moderator immediately \n'
-                    '003; At the bottom of every page, there is a contact support button if help is ever needed. \n'
-                    '004; if you dont get it by now then you never will sorry not sorry \n',
+                    '001; You must be 13 years old to use this app and 18 or older to access Mature content.  \n \n'
+                    '002; No harrassment or bullying is allowed among roleplayers. Should you or someone you know are faced with harrassment of any form, contact a moderator immediately \n \n'
+                    '003; At the bottom of every page, there is a contact support button if help is ever needed. \n \n'
+                    '004; if you dont get it by now then you never will sorry not sorry \n \n',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
