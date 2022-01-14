@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testing/solo/solo_main.dart';
 import 'package:testing/solo/solo_create_character.dart';
+import 'package:testing/solo/solo_messages.dart';
 
 class solo_navigation_buttons extends StatelessWidget {
   final List<String> items = [
@@ -9,7 +10,7 @@ class solo_navigation_buttons extends StatelessWidget {
   ];
   final List<Widget> navigation = [
     solo_create_character(),
-    null,
+    ExampleHomePage(),
   ];
   List<Widget> tags = [];
 
