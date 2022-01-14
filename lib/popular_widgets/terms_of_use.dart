@@ -117,7 +117,7 @@ class terms_of_useState extends State<terms_of_use> {
                     '010; Facilitating pyramid schemes or other models intended to seek payments from public actors. \n \n'
                     '012; Threatening harm to persons or property or otherwise harassing behavior. \n \n'
                     '013; Infringing the intellectual property or other proprietary rights of others. \n \n'
-                    '014; Facilitating, aiding, or encouraging any of the above activities through the Mobile Application and Services. \n \n',
+                    '014; Facilitating, aiding, or encouraging any of the above activities through the Mobile Application and Services.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -175,7 +175,7 @@ class terms_of_useState extends State<terms_of_use> {
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                   child: Text(
                     '001; Deliberate attempts to overload the Mobile Application and Services and broadcast attacks (i.e. denial of service attacks).  \n \n'
-                    '002; Engaging in any other activities that degrade the usability and performance of the Mobile Application and Services. \n \n',
+                    '002; Engaging in any other activities that degrade the usability and performance of the Mobile Application and Services.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
