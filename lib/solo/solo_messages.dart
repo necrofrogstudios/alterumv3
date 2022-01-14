@@ -17,6 +17,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     CardController controller; //Use this to trigger swap.
 
     return Scaffold(
