@@ -209,10 +209,10 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  'Intellectual Property Rights ',
+                  'Intellectual Property Rights',
                   style: TextStyle(
                     color: theme.primaryColor,
-                    fontSize: 30,
+                    fontSize: 25,
                   ),
                 ),
                 Padding(
@@ -287,23 +287,6 @@ class terms_of_useState extends State<terms_of_use> {
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
                     'The formation, interpretation, and performance of this Agreement and any disputes arising out of it shall be governed by the substantive and procedural laws of Texas, United States without regard to its rules on conflicts or choice of law and, to the extent applicable, the laws of United States. The exclusive jurisdiction and venue for actions related to the subject matter hereof shall be the courts located in Texas, United States, and you hereby submit to the personal jurisdiction of such courts. You hereby waive any right to a jury trial in any proceeding arising out of or related to this Agreement. The United Nations Convention on Contracts for the International Sale of Goods does not apply to this Agreement.',
-                    style: TextStyle(
-                      color: theme.primaryColor,
-                      fontSize: 15,
-                    ),
-                  ),
-                ),
-                Text(
-                  'T ',
-                  style: TextStyle(
-                    color: theme.primaryColor,
-                    fontSize: 30,
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
-                  child: Text(
-                    'v',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
