@@ -91,11 +91,18 @@ class terms_of_useState extends State<terms_of_use> {
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 20),
-                  child: Text(
-                    'you already know',
-                    style: TextStyle(
-                      color: theme.primaryColor,
-                      fontSize: 15,
+                  child: RichText(
+                    text: new TextSpan(
+                      // Note: Styles for TextSpans must be explicitly defined.
+                      // Child text spans will inherit styles from parent
+                      style: new TextStyle(
+                        fontSize: 14.0,
+                        color: Colors.black,
+                      ),
+                      children: <TextSpan>[
+                        new TextSpan(text: 'Hello'),
+                        new TextSpan(text: 'World', style: new TextStyle(fontWeight: FontWeight.bold)),
+                      ],
                     ),
                   ),
                 ),
