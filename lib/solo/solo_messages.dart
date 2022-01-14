@@ -46,7 +46,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
                 children: [
                   solo_navigation(),
                   Container(
-                    height: 850,
+                    height: 950,
                     child: Stack(
                       children: [
                         Container(
