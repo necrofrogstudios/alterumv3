@@ -209,11 +209,14 @@ class terms_of_useState extends State<terms_of_use> {
                     ),
                   ),
                 ),
-                Text(
-                  'Defamation and Objectionable Content',
-                  style: TextStyle(
-                    color: theme.primaryColor,
-                    fontSize: 30,
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                  child: Text(
+                    'Defamation and Objectionable Content',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 25,
+                    ),
                   ),
                 ),
                 Padding(
