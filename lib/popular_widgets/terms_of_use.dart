@@ -95,13 +95,13 @@ class terms_of_useState extends State<terms_of_use> {
                     text: new TextSpan(
                       // Note: Styles for TextSpans must be explicitly defined.
                       // Child text spans will inherit styles from parent
-                      style: new TextStyle(
+                      style: TextStyle(
                         fontSize: 14.0,
                         color: Colors.black,
                       ),
                       children: <TextSpan>[
-                        new TextSpan(text: 'Hello', style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: theme.primaryColor)),
-                        new TextSpan(text: 'World', style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: theme.primaryColor)),
+                        TextSpan(text: 'Hello', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30, color: theme.primaryColor)),
+                        TextSpan(text: 'World', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: theme.primaryColor)),
                       ],
                     ),
                   ),
