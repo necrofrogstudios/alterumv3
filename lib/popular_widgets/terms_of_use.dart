@@ -276,17 +276,10 @@ class terms_of_useState extends State<terms_of_use> {
                     ),
                   ),
                 ),
-                Text(
-                  '',
-                  style: TextStyle(
-                    color: theme.primaryColor,
-                    fontSize: 30,
-                  ),
-                ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'Nothing contained in this Policy shall be construed to limit our actions or remedies in any way with respect to any of the prohibited activities. In addition, we reserve at all times all rights and remedies available to us with respect to such activities at law or in equity.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -294,7 +287,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'Reporting Violations',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -303,7 +296,7 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'If you have discovered and would like to report a violation of this Policy, please contact us immediately. We will investigate the situation and provide you with full assistance.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
@@ -311,7 +304,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  '',
+                  'Changes and Amendments',
                   style: TextStyle(
                     color: theme.primaryColor,
                     fontSize: 30,
@@ -320,7 +313,17 @@ class terms_of_useState extends State<terms_of_use> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
-                    '',
+                    'We reserve the right to modify this Policy or its terms related to the Mobile Application and Services at any time at our discretion. When we do, we will revise the updated date at the bottom of this page, post a notification in the Mobile Application, send you an email to notify you. We may also provide notice to you in other ways at our discretion, such as through the contact information you have provided.',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 40),
+                  child: Text(
+                    'An updated version of this Policy will be effective immediately upon the posting of the revised Policy unless otherwise specified. Your continued use of the Mobile Application and Services after the effective date of the revised Policy (or such other act specified at that time) will constitute your consent to those changes.',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
