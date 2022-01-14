@@ -66,12 +66,16 @@ class rulesState extends State<rules> {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
-            Text(
-              'Rules',
-              style: TextStyle(
-                color: theme.primaryColor,
-                fontSize: 30,
-              ),
+            Column(
+              childnren: <Widgets>[
+                Text(
+                  'Rules',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+              ],
             ),
             Container(color: theme.splashColor, height: 4),
             footer(),
