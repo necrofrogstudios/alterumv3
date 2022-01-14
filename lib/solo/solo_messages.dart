@@ -1,119 +1,56 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tindercard/flutter_tindercard.dart';
+import 'package:swiping_card_deck/swiping_card_deck.dart';
+import 'dart:math' as math;
 
-import 'package:flutter/material.dart';
-import 'package:swipe_cards/swipe_cards.dart';
-import 'package:flip_card/flip_card.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
-
-import 'package:testing/popular_widgets/footer.dart';
-import 'package:testing/popular_widgets/appbar_custom.dart';
-import 'package:testing/popular_widgets/drawer.dart';
-import 'package:testing/popular_widgets/appbar_top_buttons.dart';
-import 'package:testing/solo/solo_navigation.dart';
-
-class ExampleHomePage extends StatefulWidget {
-  @override
-  _ExampleHomePageState createState() => _ExampleHomePageState();
-}
-
-class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderStateMixin {
-  List<String> welcomeImages = [
-    "https://img.freepik.com/free-vector/cute-rabbit-with-duck-working-laptop-cartoon-illustration_56104-471.jpg?size=626&ext=jpg",
-    "https://swall.teahub.io/photos/small/138-1388931_kawaii-cute-stitch.jpg"
-  ];
+class ExamplePage extends StatelessWidget {
+  const ExamplePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var theme = Theme.of(context);
-    CardController controller; //Use this to trigger swap.
-
-    return Scaffold(
-      body: new Center(
-        child: Container(
-          height: MediaQuery.of(context).size.height * 0.9,
-          child: new TinderSwapCard(
-            swipeUp: true,
-            swipeDown: true,
-            orientation: AmassOrientation.BOTTOM,
-            totalNum: welcomeImages.length,
-            stackNum: 3,
-            swipeEdge: 4.0,
-            maxWidth: MediaQuery.of(context).size.width * 0.9,
-            maxHeight: MediaQuery.of(context).size.width * 0.9,
-            minWidth: MediaQuery.of(context).size.width * 0.8,
-            minHeight: MediaQuery.of(context).size.width * 0.8,
-            cardBuilder: (context, index) => Card(
-              child: FlipCard(
-                fill: Fill.fillBack,
-                direction: FlipDirection.HORIZONTAL,
-                front: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                  child: Container(
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: theme.accentColor,
-                      border: Border.all(color: theme.splashColor, width: 3.0),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(30),
-                      ),
-                    ),
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: <Widget>[
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(29.0),
-                            child: Image.network('${welcomeImages[index]}'),
-                          ),
-                          Text(
-                            'yaper',
-                            style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ), // BACK OF CARD //
-                back: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: theme.accentColor,
-                      border: Border.all(color: theme.splashColor, width: 3.0),
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(30),
-                      ),
-                    ),
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                          child: Text(
-                            'yap',
-                            style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            cardController: controller = CardController(),
-            swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-              /// Get swiping card's alignment
-              if (align.x < 0) {
-                //Card is LEFT swiping
-              } else if (align.x > 0) {
-                //Card is RIGHT swiping
-              }
-            },
-            swipeCompleteCallback: (CardSwipeOrientation orientation, int index) {
-              /// Get orientation & index of swiped card!
-            },
-          ),
-        ),
-      ),
+    final SwipingCardDeck deck = SwipingCardDeck(
+      cardDeck: getCardDeck(),
+      onDeckEmpty: () => debugPrint("Card deck empty"),
+      onLeftSwipe: (Card card) => debugPrint("Swiped left!"),
+      onRightSwipe: (Card card) => debugPrint("Swiped right!"),
+      cardWidth: 200,
+      swipeThreshold: MediaQuery.of(context).size.width / 3,
+      minimumVelocity: 1000,
     );
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        deck,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            IconButton(
+              icon: const Icon(Icons.clear),
+              iconSize: 30,
+              color: Colors.red,
+              onPressed: deck.animationActive ? null : () => deck.swipeLeft(),
+            ),
+            const SizedBox(width: 40),
+            IconButton(
+              icon: const Icon(Icons.check),
+              iconSize: 30,
+              color: Colors.green,
+              onPressed: deck.animationActive ? null : () => deck.swipeRight(),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  List<Card> getCardDeck() {
+    List<Card> cardDeck = [];
+    for (int i = 0; i < 500; ++i) {
+      cardDeck.add(
+        Card(color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0), child: const SizedBox(height: 300, width: 200)),
+      );
+    }
+    return cardDeck;
   }
 }

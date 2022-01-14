@@ -10,7 +10,7 @@ class solo_navigation_buttons extends StatelessWidget {
   ];
   final List<Widget> navigation = [
     solo_create_character(),
-    ExampleHomePage(),
+    ExamplePage(),
   ];
   List<Widget> tags = [];
 

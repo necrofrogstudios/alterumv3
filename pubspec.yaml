@@ -41,6 +41,7 @@ dependencies:
   flutter_signin_button: ^2.0.0
   flutter_image_slideshow: ^0.1.2
   flutter_tindercard: ^0.2.0
+  swiping_card_deck: ^1.0.0
     
 
 dev_dependencies:
