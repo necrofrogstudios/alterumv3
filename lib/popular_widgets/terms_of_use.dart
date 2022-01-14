@@ -89,6 +89,16 @@ class terms_of_useState extends State<terms_of_use> {
                     ),
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                  child: Text(
+                    'you already know',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
               ],
             ),
             Container(color: theme.splashColor, height: 4),
