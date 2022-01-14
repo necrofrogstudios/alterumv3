@@ -18,10 +18,6 @@ class rulesState extends State<rules> {
   final currentScreen = rules;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
-  List<String> items = [
-    "blep",
-  ];
-
   void _onRefresh() async {
     // monitor network fetch
     await Future.delayed(Duration(milliseconds: 1000));
