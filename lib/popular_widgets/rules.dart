@@ -76,12 +76,7 @@ class rulesState extends State<rules> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(
-                    10,
-                    5,
-                    10,
-                    0,
-                  ),
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                   child: Text(
                     '001; We do not blah blah blah. \n'
                     '002; we also do not do blah blah blh mkay? \n'
