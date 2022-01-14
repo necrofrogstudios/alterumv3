@@ -95,6 +95,7 @@ class terms_of_useState extends State<terms_of_use> {
                     text: new TextSpan(
                       // Note: Styles for TextSpans must be explicitly defined.
                       // Child text spans will inherit styles from parent
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 15.0,
                         color: theme.primaryColor,
