@@ -58,17 +58,19 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
                         Radius.circular(30),
                       ),
                     ),
-                    child: Column(
-                      children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(29.0),
-                          child: Image.network('${welcomeImages[index]}'),
-                        ),
-                        Text(
-                          'yaper',
-                          style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                        ),
-                      ],
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: <Widget>[
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(29.0),
+                            child: Image.network('${welcomeImages[index]}'),
+                          ),
+                          Text(
+                            'yaper',
+                            style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ), // BACK OF CARD //
