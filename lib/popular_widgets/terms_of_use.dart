@@ -373,6 +373,16 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
+                  child: Text(
+                    'or',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
                   child: Text(
                     'Contact support button here',
