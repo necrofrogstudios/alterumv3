@@ -117,8 +117,160 @@ class terms_of_useState extends State<terms_of_use> {
                     '010; Facilitating pyramid schemes or other models intended to seek payments from public actors. \n \n'
                     '012; Threatening harm to persons or property or otherwise harassing behavior. \n \n'
                     '013; Infringing the intellectual property or other proprietary rights of others. \n \n'
-                    '014; Facilitating, aiding, or encouraging any of the above activities through the Mobile Application and Services. \n \n'
-                    '015;  \n \n',
+                    '014; Facilitating, aiding, or encouraging any of the above activities through the Mobile Application and Services. \n \n',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
+                    style: TextStyle(
+                      color: theme.primaryColor,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+                Text(
+                  '',
+                  style: TextStyle(
+                    color: theme.primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                  child: Text(
+                    '',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
