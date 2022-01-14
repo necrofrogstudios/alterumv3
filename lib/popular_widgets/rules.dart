@@ -67,7 +67,7 @@ class rulesState extends State<rules> {
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
             Column(
-              childnren: <Widgets>[
+              children: <Widgets>[
                 Text(
                   'Rules',
                   style: TextStyle(
