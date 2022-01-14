@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_tindercard/flutter_tindercard.dart';
+
 class ExampleHomePage extends StatefulWidget {
   @override
   _ExampleHomePageState createState() => _ExampleHomePageState();
@@ -17,7 +20,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
   Widget build(BuildContext context) {
     CardController controller; //Use this to trigger swap.
 
-    return new Scaffold(
+    return Scaffold(
       body: new Center(
         child: Container(
           height: MediaQuery.of(context).size.height * 0.6,
