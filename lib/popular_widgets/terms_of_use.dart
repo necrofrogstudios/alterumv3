@@ -90,7 +90,7 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+                  padding: EdgeInsets.fromLTRB(10, 5, 10, 20),
                   child: Text(
                     'you already know',
                     style: TextStyle(
