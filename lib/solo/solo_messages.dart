@@ -3,7 +3,7 @@ import 'package:swiping_card_deck/swiping_card_deck.dart';
 import 'dart:math' as math;
 
 class ExamplePage extends StatelessWidget {
-  const ExamplePage({Key? key}) : super(key: key);
+  const ExamplePage();
 
   @override
   Widget build(BuildContext context) {
