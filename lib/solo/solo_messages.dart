@@ -44,7 +44,9 @@ class ExamplePageState extends State<ExamplePage> {
   @override
   Widget build(BuildContext context) {
     final SwipingCardDeck deck = SwipingCardDeck(
-      cardDeck: getCardDeck(),
+      cardDeck: Card(
+        child: Text('test'),
+      ),
       onDeckEmpty: () => debugPrint("Card deck empty"),
       onLeftSwipe: (Card card) => debugPrint("Swiped left!"),
       onRightSwipe: (Card card) => debugPrint("Swiped right!"),
@@ -110,16 +112,6 @@ class ExamplePageState extends State<ExamplePage> {
         ),
       ),
     );
-  }
-
-  List<Card> getCardDeck() {
-    List<Card> cardDeck = [];
-    for (int i = 0; i < 500; ++i) {
-      cardDeck.add(
-        Card(color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0), child: const SizedBox(height: 300, width: 200)),
-      );
-    }
-    return cardDeck;
   }
 }
 
