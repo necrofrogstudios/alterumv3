@@ -107,27 +107,10 @@ class terms_of_useState extends State<terms_of_use> {
                   ),
                 ),
                 Text(
-                  'T ',
-                  style: TextStyle(
-                    color: theme.primaryColor,
-                    fontSize: 30,
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
-                  child: Text(
-                    'v',
-                    style: TextStyle(
-                      color: theme.primaryColor,
-                      fontSize: 15,
-                    ),
-                  ),
-                ),
-                Text(
                   'Accounts and Membership',
                   style: TextStyle(
                     color: theme.primaryColor,
-                    fontSize: 30,
+                    fontSize: 25,
                   ),
                 ),
                 Padding(
