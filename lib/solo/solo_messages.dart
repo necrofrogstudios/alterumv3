@@ -8,6 +8,7 @@ class ExampleHomePage extends StatefulWidget {
 }
 
 class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderStateMixin {
+  List<SwipeItem> _swipeItems = <SwipeItem>[];
   List<String> welcomeImages = [
     "https://img.freepik.com/free-vector/cute-rabbit-with-duck-working-laptop-cartoon-illustration_56104-471.jpg?size=626&ext=jpg",
     "https://wallpapercave.com/wp/wp5732639.jpg",
@@ -128,5 +129,43 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
         ),
       ),
     );
+  }
+
+  @override
+  void initState() {
+    for (int i = 0; i < names.length; i++) {
+      _swipeItems.add(
+        SwipeItem(
+          content: Content(text: names[i], text2: info[i], child: images[i]),
+          likeAction: () {
+            _scaffoldKey.currentState.showSnackBar(
+              SnackBar(
+                content: Text("Liked ${names[i]}"),
+                duration: Duration(milliseconds: 500),
+              ),
+            );
+          },
+          nopeAction: () {
+            _scaffoldKey.currentState.showSnackBar(
+              SnackBar(
+                content: Text("Nope ${names[i]}"),
+                duration: Duration(milliseconds: 500),
+              ),
+            );
+          },
+          superlikeAction: () {
+            _scaffoldKey.currentState.showSnackBar(
+              SnackBar(
+                content: Text("Superliked ${names[i]}"),
+                duration: Duration(milliseconds: 500),
+              ),
+            );
+          },
+        ),
+      );
+    }
+    _swipeItems.shuffle();
+    _matchEngine = MatchEngine(swipeItems: _swipeItems);
+    super.initState();
   }
 }
