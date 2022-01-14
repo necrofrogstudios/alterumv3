@@ -67,7 +67,11 @@ class rulesState extends State<rules> {
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
             Text(
-              'blep',
+              'Rules',
+              style: Textstyle(
+                color: theme.primaryColor,
+                fontSize: 30,
+              ),
             ),
             Container(color: theme.splashColor, height: 4),
             footer(),
