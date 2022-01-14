@@ -388,7 +388,7 @@ class terms_of_useState extends State<terms_of_use> {
                     'This document was last updated on January 14, 2022',
                     style: TextStyle(
                       color: theme.primaryColor,
-                      fontSize: 15,
+                      fontSize: 12,
                     ),
                   ),
                 ),
