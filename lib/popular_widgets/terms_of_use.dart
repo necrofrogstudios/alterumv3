@@ -106,19 +106,19 @@ class terms_of_useState extends State<terms_of_use> {
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
                   child: Text(
                     '001; Distributing malware or other malicious code.  \n \n'
-                        '002; Disclosing sensitive personal information about others. \n \n'
-                        '003; Collecting, or attempting to collect, personal information about third parties without their knowledge or consent. \n \n'
-                        '004; Distributing pornography or adult related content. \n \n',
-                    '005; Promoting or facilitating prostitution or any escort services. \n \n',
-                    '006; Hosting, distributing or linking to child pornography or content that is harmful to minors. \n \n',
-                    '007; Promoting or facilitating gambling, violence, terrorist activities or selling weapons or ammunition. \n \n',
-                    '008; Engaging in the unlawful distribution of controlled substances, drug contraband or prescription medications. \n \n',
-                    '009; Managing payment aggregators or facilitators such as processing payments on behalf of other businesses or charities. \n \n',
-                    '010; Facilitating pyramid schemes or other models intended to seek payments from public actors. \n \n',
-                    '012; Threatening harm to persons or property or otherwise harassing behavior. \n \n',
-                    '013; Infringing the intellectual property or other proprietary rights of others. \n \n',
+                    '002; Disclosing sensitive personal information about others. \n \n'
+                    '003; Collecting, or attempting to collect, personal information about third parties without their knowledge or consent. \n \n'
+                    '004; Distributing pornography or adult related content. \n \n'
+                    '005; Promoting or facilitating prostitution or any escort services. \n \n'
+                    '006; Hosting, distributing or linking to child pornography or content that is harmful to minors. \n \n'
+                    '007; Promoting or facilitating gambling, violence, terrorist activities or selling weapons or ammunition. \n \n'
+                    '008; Engaging in the unlawful distribution of controlled substances, drug contraband or prescription medications. \n \n'
+                    '009; Managing payment aggregators or facilitators such as processing payments on behalf of other businesses or charities. \n \n'
+                    '010; Facilitating pyramid schemes or other models intended to seek payments from public actors. \n \n'
+                    '012; Threatening harm to persons or property or otherwise harassing behavior. \n \n'
+                    '013; Infringing the intellectual property or other proprietary rights of others. \n \n'
                     '014; Facilitating, aiding, or encouraging any of the above activities through the Mobile Application and Services. \n \n'
-                        '015;  \n \n',
+                    '015;  \n \n',
                     style: TextStyle(
                       color: theme.primaryColor,
                       fontSize: 15,
