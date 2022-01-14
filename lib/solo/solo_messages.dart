@@ -31,7 +31,7 @@ class _ExampleHomePageState extends State<ExampleHomePage> with TickerProviderSt
     return Scaffold(
       body: new Center(
         child: Container(
-          height: MediaQuery.of(context).size.height * 0.6,
+          height: MediaQuery.of(context).size.height * 0.9,
           child: new TinderSwapCard(
             swipeUp: true,
             swipeDown: true,
