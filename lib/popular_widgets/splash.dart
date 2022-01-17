@@ -23,7 +23,7 @@ class _Splash extends State<Splash> {
             width: logicWidth,
             height: logicHeight,
             child: new SplashScreen(
-                seconds: 1,
+                seconds: 4,
                 navigateAfterSeconds: profile(),
                 title: new Text(
                   'Alterum',
