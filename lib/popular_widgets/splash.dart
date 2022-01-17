@@ -29,7 +29,7 @@ class _Splash extends State<Splash> {
                   'Alterum',
                   style: new TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Hind', fontSize: 85.0, color: Colors.white),
                 ),
-                image: new Image.network('https://64.media.tumblr.com/790a083707bfdebd13c1402d379819e5/a1f1573f7a82fb7a-60/s400x600/515120468323d5a588bdd23196db9085072cf3cd.jpg'),
+                image: new Image(image:assetImage('images/masks.png'))
                 photoSize: 200.0,
                 backgroundColor: Colors.black,
                 styleTextUnderTheLoader: new TextStyle(
