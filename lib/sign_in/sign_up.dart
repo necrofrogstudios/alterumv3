@@ -427,7 +427,10 @@ class register_button extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(right: 10),
+                padding: EdgeInsets.only(
+                  right: 10,
+                  left: 10,
+                ),
                 child: TextButton(
                   onPressed: () => Navigator.push(
                     context,
