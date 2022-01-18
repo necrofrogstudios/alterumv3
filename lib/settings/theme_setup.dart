@@ -21,7 +21,7 @@ List<ThemeData> getThemes = [
     //black scale//
     backgroundColor: Colors.black,
     canvasColor: Colors.black,
-    accentColor: Colors.grey,
+    accentColor: Colors.grey[700],
     splashColor: Colors.white,
     primaryColor: Colors.white,
   ),
