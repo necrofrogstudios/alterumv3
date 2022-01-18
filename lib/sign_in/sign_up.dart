@@ -380,6 +380,7 @@ class register_button extends StatelessWidget {
                   TextSpan(
                     text: 'Terms of Service',
                     style: const TextStyle(
+                      color: Colors.blue,
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                     ),
