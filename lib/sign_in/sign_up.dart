@@ -364,7 +364,7 @@ class register_button extends StatelessWidget {
             )),
             title: Text(
               'User Terms & Conditions',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+              style: TextStyle(color: Colors.black, fontSize: 20),
             ),
             content: RichText(
               text: TextSpan(
