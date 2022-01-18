@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:testing/popular_widgets/on_boarding_page.dart';
 
 import 'package:testing/profile/profile.dart';
 import 'package:testing/sign_in/sign_in.dart';
@@ -434,7 +435,7 @@ class register_button extends StatelessWidget {
                 child: TextButton(
                   onPressed: () => Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => profile()),
+                    MaterialPageRoute(builder: (context) => OnBoardingPage()),
                   ),
                   child: Text(
                     'I Agree',
