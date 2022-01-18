@@ -414,9 +414,9 @@ class register_button extends StatelessWidget {
             ),
             actions: <Widget>[
               TextButton(
-                onPressed: () => Navigator.pop(
+                onPressed: () => Navigator.push(
                   context,
-                  'Cancel',
+                  MaterialPageRoute(builder: (context) => sign_in()),
                 ),
                 child: Text(
                   'Cancel',
