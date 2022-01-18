@@ -6,6 +6,7 @@ import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
+import 'package:testing/support/contact_support.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 
@@ -626,12 +627,17 @@ class terms_of_useState extends State<terms_of_use> {
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
-                  child: Text(
-                    'Contact support button here',
-                    style: TextStyle(
-                      color: theme.primaryColor,
-                      fontSize: 15,
+                  child: TextButton(
+                    child: Text(
+                      'Contact Support',
+                      style: TextStyle(color: theme.primaryColor),
                     ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => contact_support(currentScreen)),
+                      );
+                    },
                   ),
                 ),
                 Padding(
