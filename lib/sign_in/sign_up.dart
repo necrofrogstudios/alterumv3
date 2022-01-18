@@ -20,8 +20,8 @@ class sign_upState extends State<sign_up> {
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
           image: DecorationImage(
-            Image(
-              image: AssetImage('images/maskspic.png'),
+            image: new Image(
+              image: AssetImage('images/masks.png'),
             ),
             fit: BoxFit.cover,
           ),
