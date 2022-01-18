@@ -396,7 +396,7 @@ class register_button extends StatelessWidget {
                   ),
                   TextSpan(text: ', and '),
                   TextSpan(
-                    text: 'Privacy Policy',
+                    text: 'Privacy Policy.',
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
