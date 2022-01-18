@@ -426,14 +426,17 @@ class register_button extends StatelessWidget {
                   ),
                 ),
               ),
-              TextButton(
-                onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => profile()),
-                ),
-                child: Text(
-                  'I Agree',
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+              Padding(
+                padding: EdgeInsets.only(right: 10),
+                child: TextButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => profile()),
+                  ),
+                  child: Text(
+                    'I Agree',
+                    style: TextStyle(color: Colors.black, fontSize: 15),
+                  ),
                 ),
               ),
             ],
