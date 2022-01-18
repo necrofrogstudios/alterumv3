@@ -382,6 +382,18 @@ class register_button extends StatelessWidget {
                     style: const TextStyle(fontWeight: FontWeight.bold),
                     recognizer: TapGestureRecognizer()..onTap = () => print('click'),
                   ),
+                  TextSpan(text: ', '),
+                  TextSpan(
+                    text: 'User Content Agreement',
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    recognizer: TapGestureRecognizer()..onTap = () => print('click'),
+                  ),
+                  TextSpan(text: ', and '),
+                  TextSpan(
+                    text: 'Privacy Policy',
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    recognizer: TapGestureRecognizer()..onTap = () => print('click'),
+                  ),
                 ],
               ),
             ),
