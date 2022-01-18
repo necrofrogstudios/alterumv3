@@ -20,7 +20,7 @@ class sign_upState extends State<sign_up> {
         constraints: BoxConstraints.expand(),
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/maskspic.png'),
+            image: NetworkImage("https://64.media.tumblr.com/9b7ac6e7d24cf994c538d166ff330f53/e05d144f651b2db4-a6/s400x600/50ed90a10be694dfd4203ec45627f5c1f355c69e.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -47,8 +47,7 @@ class sign_upState extends State<sign_up> {
               ),
               Container(
                 height: 120,
-                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
-              ),
+                child: AssetImage('images/maskspic.png'),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
