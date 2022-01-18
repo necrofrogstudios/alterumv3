@@ -366,9 +366,19 @@ class register_button extends StatelessWidget {
               'User Terms & Conditions',
               style: TextStyle(color: Colors.black, fontSize: 15),
             ),
-            content: Text(
-              'All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? ',
-              style: TextStyle(color: Colors.black, fontSize: 15),
+            content: RichText(
+              text: TextSpan(
+                // Note: Styles for TextSpans must be explicitly defined.
+                // Child text spans will inherit styles from parent
+                style: const TextStyle(
+                  fontSize: 15.0,
+                  color: Colors.black,
+                ),
+                children: <TextSpan>[
+                  TextSpan(text: 'Hello'),
+                  TextSpan(text: 'World', style: const TextStyle(fontWeight: FontWeight.bold)),
+                ],
+              ),
             ),
             actions: <Widget>[
               TextButton(
