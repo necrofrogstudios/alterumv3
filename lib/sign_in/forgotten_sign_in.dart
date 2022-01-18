@@ -47,7 +47,9 @@ class forgotten_sign_inState extends State<forgotten_sign_in> {
               ),
               Container(
                 height: 200,
-                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
+                child: Image(
+                  image: AssetImage('images/maskspic.png'),
+                ),
               ),
               Container(
                 child: Text(
