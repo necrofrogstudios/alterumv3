@@ -48,7 +48,7 @@ class footer extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => contact_support(currentScreen)),
               );
             },
-          )
+          ),
         ],
       ),
     );
