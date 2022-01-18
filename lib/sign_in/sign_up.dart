@@ -390,6 +390,7 @@ class register_button extends StatelessWidget {
                   TextSpan(
                     text: 'User Content Agreement',
                     style: const TextStyle(
+                      color: Colors.blue,
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                     ),
@@ -399,6 +400,7 @@ class register_button extends StatelessWidget {
                   TextSpan(
                     text: 'Privacy Policy.',
                     style: const TextStyle(
+                      color: Colors.blue,
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                     ),
