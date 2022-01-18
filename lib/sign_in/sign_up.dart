@@ -38,18 +38,18 @@ class sign_upState extends State<sign_up> {
                       onPressed: () => showDialog<String>(
                         context: context,
                         builder: (BuildContext context) => AlertDialog(
-                          backgroundColor: theme.accentColor,
+                          backgroundColor: Colors.white,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.all(
                             Radius.circular(30),
                           )),
                           title: Text(
-                            'Head Admin Agreement',
-                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                            'User Terms & Conditions',
+                            style: TextStyle(color: Colors.black, fontSize: 15),
                           ),
                           content: Text(
                             'All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? ',
-                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                            style: TextStyle(color: Colors.black, fontSize: 15),
                           ),
                           actions: <Widget>[
                             TextButton(
@@ -59,7 +59,7 @@ class sign_upState extends State<sign_up> {
                               ),
                               child: Text(
                                 'No',
-                                style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                                style: TextStyle(color: Colors.black, fontSize: 15),
                               ),
                             ),
                             TextButton(
@@ -69,7 +69,7 @@ class sign_upState extends State<sign_up> {
                               ),
                               child: Text(
                                 'Yes',
-                                style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                                style: TextStyle(color: Colors.black, fontSize: 15),
                               ),
                             ),
                           ],
