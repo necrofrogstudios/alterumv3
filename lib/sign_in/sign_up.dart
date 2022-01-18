@@ -379,19 +379,28 @@ class register_button extends StatelessWidget {
                   TextSpan(text: 'By creating an account, you agree to Alterum\s'),
                   TextSpan(
                     text: 'Terms of Service',
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                    ),
                     recognizer: TapGestureRecognizer()..onTap = () => print('click'),
                   ),
                   TextSpan(text: ', '),
                   TextSpan(
                     text: 'User Content Agreement',
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                    ),
                     recognizer: TapGestureRecognizer()..onTap = () => print('click'),
                   ),
                   TextSpan(text: ', and '),
                   TextSpan(
                     text: 'Privacy Policy',
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline,
+                    ),
                     recognizer: TapGestureRecognizer()..onTap = () => print('click'),
                   ),
                 ],
@@ -404,8 +413,11 @@ class register_button extends StatelessWidget {
                   'Cancel',
                 ),
                 child: Text(
-                  'No',
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  'Cancel',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                  ),
                 ),
               ),
               TextButton(
@@ -414,7 +426,7 @@ class register_button extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => profile()),
                 ),
                 child: Text(
-                  'Yes',
+                  'I Agree',
                   style: TextStyle(color: Colors.black, fontSize: 15),
                 ),
               ),
