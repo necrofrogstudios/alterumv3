@@ -27,7 +27,7 @@ class profile_flip_card extends StatelessWidget {
                 ),
                 height: 200,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(27.0),
+                  borderRadius: BorderRadius.circular(26.0),
                   child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
                 ),
               ),
