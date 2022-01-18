@@ -366,7 +366,7 @@ class register_button extends StatelessWidget {
               Radius.circular(30),
             )),
             title: Text(
-              'Terms of Service',
+              'Terms & Conditions',
               style: TextStyle(color: Colors.black, fontSize: 20),
             ),
             content: RichText(
