@@ -47,7 +47,9 @@ class sign_upState extends State<sign_up> {
               ),
               Container(
                 height: 120,
-                child: AssetImage('images/masks.png'),
+                child: Image(
+                  image: AssetImage('images/maskspic.png'),
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
