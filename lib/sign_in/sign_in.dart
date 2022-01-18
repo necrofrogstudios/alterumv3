@@ -52,7 +52,9 @@ class sign_inState extends State<sign_in> {
                 padding: EdgeInsets.only(top: 10),
                 child: Container(
                   height: 170,
-                  child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
+                  child: Image(
+                    image: AssetImage('images/maskspic.png'),
+                  ),
                 ),
               ),
               Container(
