@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
+
 import 'package:testing/profile/profile.dart';
 import 'package:testing/sign_in/sign_in.dart';
-
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class sign_up extends StatefulWidget {
