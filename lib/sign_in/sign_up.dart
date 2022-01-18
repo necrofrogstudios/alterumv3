@@ -414,7 +414,7 @@ class register_button extends StatelessWidget {
             ),
             actions: <Widget>[
               TextButton(
-                onPressed: () => Navigator.push(
+                onPressed: () => Navigator.pop(
                   context,
                   'Cancel',
                 ),
