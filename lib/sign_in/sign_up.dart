@@ -35,55 +35,19 @@ class sign_upState extends State<sign_up> {
                     padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                     child: IconButton(
                       icon: const Icon(Icons.arrow_back, color: Colors.white, size: 30),
-                      onPressed: () => showDialog<String>(
-                        context: context,
-                        builder: (BuildContext context) => AlertDialog(
-                          backgroundColor: Colors.white,
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.all(
-                            Radius.circular(30),
-                          )),
-                          title: Text(
-                            'User Terms & Conditions',
-                            style: TextStyle(color: Colors.black, fontSize: 15),
-                          ),
-                          content: Text(
-                            'All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? ',
-                            style: TextStyle(color: Colors.black, fontSize: 15),
-                          ),
-                          actions: <Widget>[
-                            TextButton(
-                              onPressed: () => Navigator.pop(
-                                context,
-                                'Cancel',
-                              ),
-                              child: Text(
-                                'No',
-                                style: TextStyle(color: Colors.black, fontSize: 15),
-                              ),
-                            ),
-                            TextButton(
-                              onPressed: () => Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => profile()),
-                              ),
-                              child: Text(
-                                'Yes',
-                                style: TextStyle(color: Colors.black, fontSize: 15),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                      onPressed: () {
+                        Navigator.pop(
+                          context,
+                          MaterialPageRoute(builder: (context) => sign_in()),
+                        );
+                      },
                     ),
                   ),
                 ],
               ),
               Container(
                 height: 120,
-                child: Image(
-                  image: AssetImage('images/maskspic.png'),
-                ),
+                child: Image.network("https://icons.iconarchive.com/icons/icons8/windows-8/512/Cinema-Theatre-Masks-icon.png"),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -390,12 +354,46 @@ class register_button extends StatelessWidget {
           'Register',
           style: TextStyle(fontSize: 15, color: Colors.white),
         ),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => profile()),
-          );
-        },
+        onPressed: () => showDialog<String>(
+          context: context,
+          builder: (BuildContext context) => AlertDialog(
+            backgroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+              Radius.circular(30),
+            )),
+            title: Text(
+              'User Terms & Conditions',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+            ),
+            content: Text(
+              'All user generated content must abide by the rules. Upon creating this Roleplay, you are now responsible for correcting and reporting any inapporiate behavior such as bullying, harrassment, and inappropriate photos. Failure to do so will cause the roleplay to be terminated with or without warning. Do you accept these terms? ',
+              style: TextStyle(color: Colors.black, fontSize: 15),
+            ),
+            actions: <Widget>[
+              TextButton(
+                onPressed: () => Navigator.pop(
+                  context,
+                  'Cancel',
+                ),
+                child: Text(
+                  'No',
+                  style: TextStyle(color: Colors.black, fontSize: 15),
+                ),
+              ),
+              TextButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => profile()),
+                ),
+                child: Text(
+                  'Yes',
+                  style: TextStyle(color: Colors.black, fontSize: 15),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
