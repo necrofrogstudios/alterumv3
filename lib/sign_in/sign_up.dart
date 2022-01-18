@@ -375,8 +375,11 @@ class register_button extends StatelessWidget {
                   color: Colors.black,
                 ),
                 children: <TextSpan>[
-                  TextSpan(text: 'Hello'),
-                  TextSpan(text: 'World', style: const TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(text: 'By creating an account, you agree to Alterum\s ),
+                  TextSpan(text: 'Terms of Service',recognizer: TapGestureRecognizer()
+                ..onTap = () {
+                  print('Privacy Policy"');
+                }), style: const TextStyle(fontWeight: FontWeight.bold)),
                 ],
               ),
             ),
