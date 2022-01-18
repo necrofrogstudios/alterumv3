@@ -630,7 +630,7 @@ class terms_of_useState extends State<terms_of_use> {
                   child: TextButton(
                     child: Text(
                       'Contact Support',
-                      style: TextStyle(color: theme.accentColor),
+                      style: TextStyle(color: theme.accentColor, fontSize: 15),
                     ),
                     onPressed: () {
                       Navigator.push(
