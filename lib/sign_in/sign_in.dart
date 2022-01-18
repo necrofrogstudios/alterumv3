@@ -51,7 +51,7 @@ class sign_inState extends State<sign_in> {
               Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: Container(
-                  height: 170,
+                  height: 200,
                   child: Image(
                     image: AssetImage('images/maskspic.png'),
                   ),
