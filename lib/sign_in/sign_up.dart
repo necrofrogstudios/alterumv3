@@ -398,7 +398,7 @@ class register_button extends StatelessWidget {
                   ),
                   TextSpan(text: ', and '),
                   TextSpan(
-                    text: 'Privacy Policy.',
+                    text: 'Privacy Policy',
                     style: const TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,
@@ -406,6 +406,7 @@ class register_button extends StatelessWidget {
                     ),
                     recognizer: TapGestureRecognizer()..onTap = () => print('click'),
                   ),
+                  TextSpan(text: '.'),
                 ],
               ),
             ),
