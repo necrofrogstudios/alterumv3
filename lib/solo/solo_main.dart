@@ -149,7 +149,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                     /// Get orientation & index of swiped card!
                   },
             
-                ],
+                ],),
               ),
             ),
             footer(),
