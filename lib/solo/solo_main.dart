@@ -130,26 +130,23 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                           fill: Fill.fillBack,
                           direction: FlipDirection.HORIZONTAL,
                           front: Center(
-                            child: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(30),
-                                  border: Border.all(
-                                    color: theme.splashColor,
-                                    width: 4,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                border: Border.all(
+                                  color: theme.splashColor,
+                                  width: 4,
+                                ),
+                              ),
+                              height: 800,
+                              child: Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(26.0),
+                                    child: Image.network('${images[index]}'),
                                   ),
-                                ),
-                                height: 800,
-                                child: Stack(
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(26.0),
-                                      child: Image.network('${images[index]}'),
-                                    ),
-                                    Text('test'),
-                                  ],
-                                ),
+                                  Text('test'),
+                                ],
                               ),
                             ),
                           ), //back of card  V V V V //
