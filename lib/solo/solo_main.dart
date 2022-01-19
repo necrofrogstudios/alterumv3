@@ -112,7 +112,6 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                 children: [
                   solo_navigation(),
                   Container(
-                    backgroundColor: theme.backgroundColor,
                     height: MediaQuery.of(context).size.height * 0.4,
                     child: TinderSwapCard(
                       color: theme.backgroundColor,
@@ -127,6 +126,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                       minWidth: MediaQuery.of(context).size.width * 0.8,
                       minHeight: MediaQuery.of(context).size.width * 0.8,
                       cardBuilder: (context, index) => Card(
+                        color: theme.backgroundColor,
                         child: FlipCard(
                           fill: Fill.fillBack,
                           direction: FlipDirection.HORIZONTAL,
