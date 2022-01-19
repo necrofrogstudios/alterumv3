@@ -34,6 +34,14 @@ class solo_mainState extends State<solo_main> {
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
+  List<String> welcomeImages = [
+    "assets/welcome0.png",
+    "assets/welcome1.png",
+    "assets/welcome2.png",
+    "assets/welcome2.png",
+    "assets/welcome1.png",
+    "assets/welcome1.png"
+  ];
   List<String> names = [
     "Park Jimin",
     "Kim Jaejoong",
@@ -64,15 +72,6 @@ class solo_mainState extends State<solo_main> {
     await Future.delayed(Duration(milliseconds: 1000));
     // if failed,use refreshFailed()
     _refreshController.refreshCompleted();
-  }
-
-  void _onLoading() async {
-    // monitor network fetch
-    await Future.delayed(Duration(milliseconds: 1000));
-    // if failed,use loadFailed(),if no data return,use LoadNodata()
-    items.add((items.length + 1).toString());
-    if (mounted) setState(() {});
-    _refreshController.loadComplete();
   }
 
   void _onLoading() async {
