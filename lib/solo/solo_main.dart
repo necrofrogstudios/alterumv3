@@ -141,8 +141,6 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                     width: 4,
                                   ),
                                 ),
-                                height: 400,
-                                width: 400,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
