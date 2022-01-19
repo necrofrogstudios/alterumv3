@@ -113,111 +113,114 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                   solo_navigation(),
                   Container(
                     height: MediaQuery.of(context).size.height * 0.4,
-                    child: TinderSwapCard(
-                      swipeUp: true,
-                      swipeDown: true,
-                      orientation: AmassOrientation.TOP,
-                      totalNum: images.length,
-                      stackNum: 2,
-                      swipeEdge: 4.0,
-                      maxWidth: MediaQuery.of(context).size.width * 0.9,
-                      maxHeight: MediaQuery.of(context).size.width * 0.9,
-                      minWidth: MediaQuery.of(context).size.width * 0.8,
-                      minHeight: MediaQuery.of(context).size.width * 0.8,
-                      cardBuilder: (context, index) => FlipCard(
-                        fill: Fill.fillBack,
-                        direction: FlipDirection.HORIZONTAL,
-                        front: Center(
-                          child: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(30),
-                                border: Border.all(
-                                  color: theme.splashColor,
-                                  width: 4,
-                                ),
-                              ),
-                              height: 400,
-                              child: Column(
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(26.0),
-                                    child: Image.network('${images[index]}'),
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 100),
+                      child: TinderSwapCard(
+                        swipeUp: true,
+                        swipeDown: true,
+                        orientation: AmassOrientation.TOP,
+                        totalNum: images.length,
+                        stackNum: 2,
+                        swipeEdge: 4.0,
+                        maxWidth: MediaQuery.of(context).size.width * 0.9,
+                        maxHeight: MediaQuery.of(context).size.width * 0.9,
+                        minWidth: MediaQuery.of(context).size.width * 0.8,
+                        minHeight: MediaQuery.of(context).size.width * 0.8,
+                        cardBuilder: (context, index) => FlipCard(
+                          fill: Fill.fillBack,
+                          direction: FlipDirection.HORIZONTAL,
+                          front: Center(
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(30),
+                                  border: Border.all(
+                                    color: theme.splashColor,
+                                    width: 4,
                                   ),
-                                ],
+                                ),
+                                height: 400,
+                                child: Column(
+                                  children: <Widget>[
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.circular(26.0),
+                                      child: Image.network('${images[index]}'),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        ), //back of card  V V V V //
-                        back: Center(
-                          child: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: theme.accentColor,
-                                borderRadius: BorderRadius.circular(26),
-                                border: Border.all(
-                                  color: theme.splashColor,
-                                  width: 4,
+                          ), //back of card  V V V V //
+                          back: Center(
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: theme.accentColor,
+                                  borderRadius: BorderRadius.circular(26),
+                                  border: Border.all(
+                                    color: theme.splashColor,
+                                    width: 4,
+                                  ),
                                 ),
-                              ),
-                              height: 400,
-                              width: 400,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                    children: [
-                                      Icon(
-                                        Icons.person_add,
-                                        size: 40,
-                                        color: theme.primaryColor,
-                                      ),
-                                      IconButton(
-                                        icon: Icon(
-                                          Icons.email,
+                                height: 400,
+                                width: 400,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Icon(
+                                          Icons.person_add,
+                                          size: 40,
+                                          color: theme.primaryColor,
                                         ),
-                                        iconSize: 40,
-                                        color: theme.primaryColor,
-                                        onPressed: () {},
-                                      ),
-                                    ],
-                                  ),
-                                  Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                    children: [
-                                      Icon(
-                                        Icons.group_add,
-                                        size: 47,
-                                        color: theme.primaryColor,
-                                      ),
-                                      Icon(
-                                        Icons.block,
-                                        size: 40,
-                                        color: theme.primaryColor,
-                                      ),
-                                    ],
-                                  ),
-                                ],
+                                        IconButton(
+                                          icon: Icon(
+                                            Icons.email,
+                                          ),
+                                          iconSize: 40,
+                                          color: theme.primaryColor,
+                                          onPressed: () {},
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Icon(
+                                          Icons.group_add,
+                                          size: 47,
+                                          color: theme.primaryColor,
+                                        ),
+                                        Icon(
+                                          Icons.block,
+                                          size: 40,
+                                          color: theme.primaryColor,
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
                         ),
+                        cardController: controller = CardController(),
+                        swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
+                          /// Get swiping card's alignment
+                          if (align.x < 0) {
+                            //Card is LEFT swiping
+                          } else if (align.x > 0) {
+                            //Card is RIGHT swiping
+                          }
+                        },
+                        swipeCompleteCallback: (CardSwipeOrientation orientation, int index) {
+                          /// Get orientation & index of swiped card!
+                        },
                       ),
-                      cardController: controller = CardController(),
-                      swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-                        /// Get swiping card's alignment
-                        if (align.x < 0) {
-                          //Card is LEFT swiping
-                        } else if (align.x > 0) {
-                          //Card is RIGHT swiping
-                        }
-                      },
-                      swipeCompleteCallback: (CardSwipeOrientation orientation, int index) {
-                        /// Get orientation & index of swiped card!
-                      },
                     ),
                   ),
                 ],
