@@ -146,9 +146,6 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                 ),
                                 height: 400,
                                 width: 400,
-                                child: Column(
-                                  children: <Widget>[],
-                                ),
                               ),
                             ),
                           ), //back of card  V V V V //
