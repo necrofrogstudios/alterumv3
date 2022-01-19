@@ -35,7 +35,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
   List<String> welcomeImages = [
-    "assets/welcome0.png",
+    "https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1",
     "assets/welcome1.png",
     "assets/welcome2.png",
     "assets/welcome2.png",
@@ -132,7 +132,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                       minWidth: MediaQuery.of(context).size.width * 0.8,
                       minHeight: MediaQuery.of(context).size.width * 0.8,
                       cardBuilder: (context, index) => Card(
-                        child: Image.asset('${welcomeImages[index]}'),
+                        child: Image.network('${welcomeImages[index]}'),
                       ),
                       cardController: controller = CardController(),
                       swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
