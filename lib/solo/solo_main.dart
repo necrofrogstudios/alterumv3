@@ -34,14 +34,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
-  List<String> welcomeImages = [
-    "assets/welcome0.png",
-    "assets/welcome1.png",
-    "assets/welcome2.png",
-    "assets/welcome2.png",
-    "assets/welcome1.png",
-    "assets/welcome1.png"
-  ];
+
   List<String> names = [
     "Park Jimin",
     "Kim Jaejoong",
