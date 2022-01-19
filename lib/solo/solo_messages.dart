@@ -14,6 +14,7 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 
 class ExamplePage extends StatefulWidget {
+  var theme = Theme.of(context);
   @override
   ExamplePageState createState() => ExamplePageState();
 }
