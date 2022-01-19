@@ -139,10 +139,14 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                 ),
                               ),
                               height: 400,
-                              child: Stack(children[ClipRRect(
-                                borderRadius: BorderRadius.circular(26.0),
-                                child: Image.network('${images[index]}'),
-                              ),],),
+                              child: Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(26.0),
+                                    child: Image.network('${images[index]}'),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ), //back of card  V V V V //
