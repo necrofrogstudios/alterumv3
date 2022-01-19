@@ -71,7 +71,6 @@ class ExamplePageState extends State<ExamplePage> {
         onRefresh: _onRefresh,
         onLoading: _onLoading,
         child: ListView(
-          scrollDirection: Axis.vertical,
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
