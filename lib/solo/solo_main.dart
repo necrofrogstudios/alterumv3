@@ -120,9 +120,9 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                       totalNum: images.length,
                       stackNum: 2,
                       swipeEdge: 4.0,
-                      maxWidth: MediaQuery.of(context).size.width * 0.9,
+                      maxWidth: MediaQuery.of(context).size.width * 0.4,
                       maxHeight: MediaQuery.of(context).size.width * 0.9,
-                      minWidth: MediaQuery.of(context).size.width * 0.8,
+                      minWidth: MediaQuery.of(context).size.width * 0.4,
                       minHeight: MediaQuery.of(context).size.width * 0.8,
                       cardBuilder: (context, index) => Card(
                         child: FlipCard(
