@@ -116,7 +116,61 @@ class ExamplePageState extends State<ExamplePage> {
     List<Card> cardDeck = [];
     for (int i = 0; i < 500; ++i) {
       cardDeck.add(
-        Card(color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0), child: const SizedBox(height: 300, width: 200)),
+        Card(
+          color: Color((math.Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0),
+          child: FlipCard(
+            fill: Fill.fillBack,
+            direction: FlipDirection.HORIZONTAL,
+            front: Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+              child: Container(
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: theme.accentColor,
+                  border: Border.all(color: theme.splashColor, width: 3.0),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+                child: Column(
+                  children: <Widget>[
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(29.0),
+                      child: _swipeItems[index].content.child,
+                    ),
+                    Text(
+                      _swipeItems[index].content.text,
+                      style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                    ),
+                  ],
+                ),
+              ),
+            ), // BACK OF CARD //
+            back: Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: theme.accentColor,
+                  border: Border.all(color: theme.splashColor, width: 3.0),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                      child: Text(
+                        _swipeItems[index].content.text2,
+                        style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
       );
     }
     return cardDeck;
