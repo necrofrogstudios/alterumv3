@@ -27,7 +27,7 @@ class solo_main extends StatefulWidget {
   solo_mainState createState() => solo_mainState();
 }
 
-class solo_mainState extends State<solo_main> {
+class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
   final currentScreen = solo_main;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
@@ -119,7 +119,7 @@ class solo_mainState extends State<solo_main> {
                   solo_navigation(),
                   Container(
                     height: MediaQuery.of(context).size.height * 0.6,
-                    child: new TinderSwapCard(
+                    child: TinderSwapCard(
                       swipeUp: true,
                       swipeDown: true,
                       orientation: AmassOrientation.BOTTOM,
