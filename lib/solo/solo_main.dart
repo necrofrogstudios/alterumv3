@@ -113,20 +113,21 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                 children: [
                   solo_navigation(),
                   Padding(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 50),
-                      child: Stack(
-                        children: <Widget>[
-                          SwipeableWidget(
-                            child: CardExample(text: "This is card"),
-                            nextCards: [
-                              CardExample(text: "This is the card"),
-                              CardExample(text: "This is third card"),
-                            ],
-                            onLeftSwipe: () => print("Card swiped!"),
-                            onRightSwipe: () => print("Card swiped!"),
-                          )
-                        ],
-                      )),
+                    padding: EdgeInsets.fromLTRB(10, 10, 10, 50),
+                    child: Stack(
+                      children: <Widget>[
+                        SwipeableWidget(
+                          child: Card(text: "This is card"),
+                          nextCards: [
+                            Card(text: "This is the card"),
+                            Card(text: "This is third card"),
+                          ],
+                          onLeftSwipe: () => print("Card swiped!"),
+                          onRightSwipe: () => print("Card swiped!"),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
