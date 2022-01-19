@@ -119,7 +119,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                       orientation: AmassOrientation.BOTTOM,
                       totalNum: images.length,
                       stackNum: 2,
-                      swipeEdge: 4.0,
+                      swipeEdge: 1.0,
                       maxWidth: MediaQuery.of(context).size.width * 0.9,
                       maxHeight: MediaQuery.of(context).size.width * 0.9,
                       minWidth: MediaQuery.of(context).size.width * 0.8,
