@@ -34,13 +34,12 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
-  List<String> welcomeImages = [
+  List<String> images = [
     "https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1",
-    "assets/welcome1.png",
-    "assets/welcome2.png",
-    "assets/welcome2.png",
-    "assets/welcome1.png",
-    "assets/welcome1.png"
+    "https://th.bing.com/th/id/OIP.6Nepn0j46UEPZAI1S-n7cAHaHa?pid=ImgDet&rs=1",
+    "https://www.thefamouspeople.com/profiles/images/john-cena-8.jpg",
+    "https://images.genius.com/55b1c5a277d7bd9b124027f96085e3f2.1000x1000x1.jpg",
+    "https://th.bing.com/th/id/OIP.5hmPeemCMT2wyhElgFqMogHaHa?pid=ImgDet&rs=1",
   ];
   List<String> names = [
     "Park Jimin",
@@ -50,13 +49,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
     "Tyler Blackburn"
   ];
   //_swipeItems[index].content.text2,//
-  List<Image> images = [
-    Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
-    Image.network('https://th.bing.com/th/id/OIP.6Nepn0j46UEPZAI1S-n7cAHaHa?pid=ImgDet&rs=1'),
-    Image.network('https://www.thefamouspeople.com/profiles/images/john-cena-8.jpg'),
-    Image.network('https://images.genius.com/55b1c5a277d7bd9b124027f96085e3f2.1000x1000x1.jpg'),
-    Image.network('https://th.bing.com/th/id/OIP.5hmPeemCMT2wyhElgFqMogHaHa?pid=ImgDet&rs=1'),
-  ];
+
   List<String> info = [
     "Park Jiminz",
     "Kim Jaejoong",
@@ -149,7 +142,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                 height: 200,
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(26.0),
-                                  child: Image.network('${welcomeImages[index]}'),
+                                  child: Image.network('${images[index]}'),
                                 ),
                               ),
                             ),
