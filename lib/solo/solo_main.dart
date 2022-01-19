@@ -135,7 +135,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                               child: Container(
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                    image: Image.network('${images[index]}'),
+                                    image: networkImage('${images[index]}'),
                                     fit: BoxFit.fill,
                                   ),
                                   color: theme.accentColor,
