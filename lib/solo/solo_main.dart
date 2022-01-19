@@ -34,7 +34,14 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
   List<SwipeItem> _swipeItems = <SwipeItem>[];
   MatchEngine _matchEngine;
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
-
+  List<String> welcomeImages = [
+    "assets/welcome0.png",
+    "assets/welcome1.png",
+    "assets/welcome2.png",
+    "assets/welcome2.png",
+    "assets/welcome1.png",
+    "assets/welcome1.png"
+  ];
   List<String> names = [
     "Park Jimin",
     "Kim Jaejoong",
@@ -42,6 +49,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
     "Kai",
     "Tyler Blackburn"
   ];
+  //_swipeItems[index].content.text2,//
   List<Image> images = [
     Image.network('https://th.bing.com/th/id/OIP._qHh64G9n7v_I4ThR3dEngHaHa?pid=ImgDet&rs=1'),
     Image.network('https://th.bing.com/th/id/OIP.6Nepn0j46UEPZAI1S-n7cAHaHa?pid=ImgDet&rs=1'),
@@ -113,84 +121,35 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                   Container(
                     height: MediaQuery.of(context).size.height * 0.6,
                     child: TinderSwapCard(
-                      swipeUp: true,
-                      swipeDown: true,
-                      orientation: AmassOrientation.BOTTOM,
-                      totalNum: images.length,
-                      stackNum: 3,
-                      swipeEdge: 4.0,
-                      maxWidth: MediaQuery.of(context).size.width * 0.9,
-                      maxHeight: MediaQuery.of(context).size.width * 0.9,
-                      minWidth: MediaQuery.of(context).size.width * 0.8,
-                      minHeight: MediaQuery.of(context).size.width * 0.8,
-                      cardBuilder: (context, index) => Card(
-                        child: FlipCard(
-                          fill: Fill.fillBack,
-                          direction: FlipDirection.HORIZONTAL,
-                          front: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                            child: Container(
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                color: theme.accentColor,
-                                border: Border.all(color: theme.splashColor, width: 3.0),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(30),
-                                ),
-                              ),
-                              child: Column(
-                                children: <Widget>[
-                                  Container(
-                                    height: 300,
-                                    width: 300,
-                                    child: _swipeItems[index].content.child,
-                                  ),
-                                  Text(
-                                    _swipeItems[index].content.text,
-                                    style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ), // BACK OF CARD //
-                          back: Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: theme.accentColor,
-                                border: Border.all(color: theme.splashColor, width: 3.0),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(30),
-                                ),
-                              ),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                                    child: Text(
-                                      _swipeItems[index].content.text2,
-                                      style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ), //Image.asset('${welcomeImages[index]}'),//
-                      cardController: controller = CardController(),
-                      swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-                        /// Get swiping card's alignment
-                        if (align.x < 0) {
-                          //Card is LEFT swiping
-                        } else if (align.x > 0) {
-                          //Card is RIGHT swiping
-                        }
-                      },
-                      swipeCompleteCallback: (CardSwipeOrientation orientation, int index) {
-                        /// Get orientation & index of swiped card!
-                      },
-                    ),
+                  swipeUp: true,
+                  swipeDown: true,
+                  orientation: AmassOrientation.BOTTOM,
+                  totalNum: welcomeImages.length,
+                  stackNum: 3,
+                  swipeEdge: 4.0,
+                  maxWidth: MediaQuery.of(context).size.width * 0.9,
+                  maxHeight: MediaQuery.of(context).size.width * 0.9,
+                  minWidth: MediaQuery.of(context).size.width * 0.8,
+                  minHeight: MediaQuery.of(context).size.width * 0.8,
+                  cardBuilder: (context, index) => Card(
+                        child: Image.asset('${welcomeImages[index]}'),
+                      ),
+                  cardController: controller = CardController(),
+                  swipeUpdateCallback:
+                      (DragUpdateDetails details, Alignment align) {
+                    /// Get swiping card's alignment
+                    if (align.x < 0) {
+                      //Card is LEFT swiping
+                    } else if (align.x > 0) {
+                      //Card is RIGHT swiping
+                    }
+                  },
+                  swipeCompleteCallback:
+                      (CardSwipeOrientation orientation, int index) {
+                    /// Get orientation & index of swiped card!
+                  },
+              ),
+          ),
                   ),
                 ],
               ),
