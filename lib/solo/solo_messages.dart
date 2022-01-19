@@ -92,8 +92,59 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 minWidth: MediaQuery.of(context).size.width * 0.8,
                 minHeight: MediaQuery.of(context).size.width * 0.8,
                 cardBuilder: (context, index) => Card(
-                  child: Image.asset('${welcomeImages[index]}'),
-                ),
+                  child: FlipCard(
+                    fill: Fill.fillBack,
+                    direction: FlipDirection.HORIZONTAL,
+                    front: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                      child: Container(
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: theme.accentColor,
+                          border: Border.all(color: theme.splashColor, width: 3.0),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(30),
+                          ),
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(29.0),
+                              child: _swipeItems[index].content.child,
+                            ),
+                            Text(
+                              _swipeItems[index].content.text,
+                              style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ), // BACK OF CARD //
+                    back: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: theme.accentColor,
+                          border: Border.all(color: theme.splashColor, width: 3.0),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(30),
+                          ),
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                              child: Text(
+                                _swipeItems[index].content.text2,
+                                style: TextStyle(fontSize: 20, color: theme.primaryColor),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ), //Image.asset('${welcomeImages[index]}'),//
                 cardController: controller = CardController(),
                 swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
                   /// Get swiping card's alignment
