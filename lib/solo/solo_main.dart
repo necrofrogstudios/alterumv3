@@ -145,6 +145,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                     borderRadius: BorderRadius.circular(26.0),
                                     child: Image.network('${images[index]}'),
                                   ),
+                                  Text('test'),
                                 ],
                               ),
                             ),
