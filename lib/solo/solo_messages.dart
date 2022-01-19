@@ -109,12 +109,12 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                         ),
                         child: Column(
                           children: <Widget>[
-                            ClipRRect(
+                            /*ClipRRect(
                               borderRadius: BorderRadius.circular(29.0),
                               child: _swipeItems[index].content.child,
-                            ),
+                            ),*/
                             Text(
-                              _swipeItems[index].content.text,
+                              '_swipeItems[index].content.text,',
                               style: TextStyle(fontSize: 20, color: theme.primaryColor),
                             ),
                           ],
@@ -136,7 +136,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                             Padding(
                               padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                               child: Text(
-                                _swipeItems[index].content.text2,
+                                '_swipeItems[index].content.text2,',
                                 style: TextStyle(fontSize: 20, color: theme.primaryColor),
                               ),
                             ),
