@@ -138,7 +138,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                   width: 4,
                                 ),
                               ),
-                              height: 400,
+                              height: 500,
                               child: Stack(
                                 children: [
                                   ClipRRect(
