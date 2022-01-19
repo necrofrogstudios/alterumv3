@@ -130,23 +130,61 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                           fill: Fill.fillBack,
                           direction: FlipDirection.HORIZONTAL,
                           front: Center(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(30),
-                                border: Border.all(
-                                  color: theme.splashColor,
-                                  width: 4,
-                                ),
-                              ),
-                              height: 800,
-                              child: Stack(
-                                children: [
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(26.0),
-                                    child: Image.network('${images[index]}'),
+                            child: Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: theme.accentColor,
+                                  borderRadius: BorderRadius.circular(26),
+                                  border: Border.all(
+                                    color: theme.splashColor,
+                                    width: 4,
                                   ),
-                                  Text('test'),
-                                ],
+                                ),
+                                height: 400,
+                                width: 400,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    ClipRRect(
+                                      borderRadius: BorderRadius.circular(26.0),
+                                      child: Image.network('${images[index]}'),
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Icon(
+                                          Icons.person_add,
+                                          size: 40,
+                                          color: theme.primaryColor,
+                                        ),
+                                        IconButton(
+                                          icon: Icon(
+                                            Icons.email,
+                                          ),
+                                          iconSize: 40,
+                                          color: theme.primaryColor,
+                                          onPressed: () {},
+                                        ),
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Icon(
+                                          Icons.group_add,
+                                          size: 47,
+                                          color: theme.primaryColor,
+                                        ),
+                                        Icon(
+                                          Icons.block,
+                                          size: 40,
+                                          color: theme.primaryColor,
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ), //back of card  V V V V //
