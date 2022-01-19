@@ -140,7 +140,15 @@ class ExamplePageState extends State<ExamplePage> {
                       child: _swipeItems[index].content.child,
                     ),*/
                     Text(
-                      'yep',
+                      'yep \n'
+                      'yep \n'
+                      'yep \n'
+                      'yep \n'
+                      'yep \n'
+                      'yep \n',
+                      'yep \n'
+                      'yep \n'
+                      'yep \n'
                       style: TextStyle(fontSize: 20, color: theme.primaryColor),
                     ),
                   ],
