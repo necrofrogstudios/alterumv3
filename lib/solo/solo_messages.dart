@@ -71,6 +71,7 @@ class ExamplePageState extends State<ExamplePage> {
         onRefresh: _onRefresh,
         onLoading: _onLoading,
         child: ListView(
+          scrollDirection: Axis.vertical,
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
@@ -155,17 +156,6 @@ class ExamplePageState extends State<ExamplePage> {
                   borderRadius: BorderRadius.all(
                     Radius.circular(30),
                   ),
-                ),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                      child: Text(
-                        '_swipeItems[index].content.text2,',
-                        style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                      ),
-                    ),
-                  ],
                 ),
               ),
             ),
