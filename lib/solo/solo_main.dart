@@ -149,7 +149,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                 height: 200,
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(26.0),
-                                  child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                                  child: $images,
                                 ),
                               ),
                             ),
