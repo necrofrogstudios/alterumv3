@@ -80,7 +80,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
             Container(
-              height: MediaQuery.of(context).size.height * 0.9,
+              height: MediaQuery.of(context).size.height * 0.6,
               child: new TinderSwapCard(
                 swipeUp: true,
                 swipeDown: true,
