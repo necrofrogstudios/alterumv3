@@ -44,6 +44,7 @@ class ExamplePageState extends State<ExamplePage> {
 
   @override
   Widget build(BuildContext context) {
+    var theme = Theme.of(context);
     final SwipingCardDeck deck = SwipingCardDeck(
       cardDeck: getCardDeck(),
       onDeckEmpty: () => debugPrint("Card deck empty"),
