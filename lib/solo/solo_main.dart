@@ -117,10 +117,16 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                     child: Stack(
                       children: <Widget>[
                         SwipeableWidget(
-                          child: Card(text: "This is card"),
+                          child: Card(
+                            child: Text("This is card"),
+                          ),
                           nextCards: [
-                            Card(text: "This is the card"),
-                            Card(text: "This is third card"),
+                            Card(
+                              child: Text("This is card"),
+                            ),
+                            Card(
+                              child: Text("This is card"),
+                            ),
                           ],
                           onLeftSwipe: () => print("Card swiped!"),
                           onRightSwipe: () => print("Card swiped!"),
