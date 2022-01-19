@@ -52,6 +52,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
 
   @override
   Widget build(BuildContext context) {
+    CardController controller;
     var theme = Theme.of(context);
 
     return Scaffold(
