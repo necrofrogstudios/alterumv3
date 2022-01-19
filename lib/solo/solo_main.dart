@@ -147,7 +147,7 @@ class solo_mainState extends State<solo_main> {
                               ),
                               child: Column(
                                 children: <Widget>[
-                                  _swipeItems[index].content.images,
+                                  _swipeItems[index].content.child,
                                   Text(
                                     _swipeItems[index].content.text,
                                     style: TextStyle(fontSize: 20, color: theme.primaryColor),
