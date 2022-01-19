@@ -130,23 +130,19 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                         front: Center(
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(30),
-                                    border: Border.all(
-                                      color: theme.splashColor,
-                                      width: 4,
-                                    ),
-                                  ),
-                                  height: 400,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(26.0),
-                                    child: Image.network('${images[index]}'),
-                                  ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(30),
+                                border: Border.all(
+                                  color: theme.splashColor,
+                                  width: 4,
                                 ),
-                              ],
+                              ),
+                              height: 400,
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(26.0),
+                                child: Image.network('${images[index]}'),
+                              ),
                             ),
                           ),
                         ), //back of card  V V V V //
