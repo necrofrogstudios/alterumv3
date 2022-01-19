@@ -134,6 +134,10 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                               padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                               child: Container(
                                 decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage('${images[index]}'),
+                                    fit: BoxFit.fill,
+                                  ),
                                   borderRadius: BorderRadius.circular(30),
                                   border: Border.all(
                                     color: theme.splashColor,
@@ -142,12 +146,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                 ),
                                 height: 400,
                                 child: Column(
-                                  children: <Widget>[
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(26.0),
-                                      child: Image.network('${images[index]}'),
-                                    ),
-                                  ],
+                                  children: <Widget>[],
                                 ),
                               ),
                             ),
