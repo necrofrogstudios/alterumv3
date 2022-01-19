@@ -77,6 +77,7 @@ class solo_mainState extends State<solo_main> {
 
   @override
   Widget build(BuildContext context) {
+    CardController controller;
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
