@@ -139,7 +139,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                     width: 4,
                                   ),
                                 ),
-                                height: 200,
+                                height: 400,
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(26.0),
                                   child: Image.network('${images[index]}'),
