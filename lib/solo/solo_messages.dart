@@ -54,8 +54,6 @@ class ExamplePageState extends State<ExamplePage> {
       swipeThreshold: MediaQuery.of(context).size.width / 3,
       minimumVelocity: 1000,
     );
-    var theme = Theme.of(context);
-    Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
       appBar: PreferredSize(
