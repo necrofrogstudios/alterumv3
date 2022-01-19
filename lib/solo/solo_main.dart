@@ -112,14 +112,14 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                 children: [
                   solo_navigation(),
                   Container(
-                    height: MediaQuery.of(context).size.height * 0.6,
+                    height: MediaQuery.of(context).size.height * 0.2,
                     child: TinderSwapCard(
                       swipeUp: true,
                       swipeDown: true,
                       orientation: AmassOrientation.BOTTOM,
                       totalNum: images.length,
                       stackNum: 2,
-                      swipeEdge: 1.0,
+                      swipeEdge: 4.0,
                       maxWidth: MediaQuery.of(context).size.width * 0.9,
                       maxHeight: MediaQuery.of(context).size.width * 0.9,
                       minWidth: MediaQuery.of(context).size.width * 0.8,
