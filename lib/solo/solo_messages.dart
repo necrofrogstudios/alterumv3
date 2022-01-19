@@ -53,15 +53,6 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    final SwipingCardDeck deck = SwipingCardDeck(
-      cardDeck: getCardDeck(),
-      onDeckEmpty: () => debugPrint("Card deck empty"),
-      onLeftSwipe: (Card card) => debugPrint("Swiped left!"),
-      onRightSwipe: (Card card) => debugPrint("Swiped right!"),
-      cardWidth: 200,
-      swipeThreshold: MediaQuery.of(context).size.width / 3,
-      minimumVelocity: 1000,
-    );
 
     return Scaffold(
       appBar: PreferredSize(
