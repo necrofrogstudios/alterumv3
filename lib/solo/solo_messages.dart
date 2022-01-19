@@ -14,7 +14,6 @@ import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 
 class ExamplePage extends StatefulWidget {
-  var theme = Theme.of(context);
   @override
   ExamplePageState createState() => ExamplePageState();
 }
@@ -113,6 +112,7 @@ class ExamplePageState extends State<ExamplePage> {
     );
   }
 
+  var theme = Theme.of(context);
   List<Card> getCardDeck() {
     List<Card> cardDeck = [];
     for (int i = 0; i < 500; ++i) {
