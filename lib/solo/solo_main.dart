@@ -112,6 +112,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                 children: [
                   solo_navigation(),
                   Container(
+                    color: theme.backgroundColor,
                     height: MediaQuery.of(context).size.height * 0.4,
                     child: TinderSwapCard(
                       swipeUp: true,
@@ -149,7 +150,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                           ), //back of card  V V V V //
                           back: Center(
                             child: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 90, 0, 0),
+                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: theme.accentColor,
