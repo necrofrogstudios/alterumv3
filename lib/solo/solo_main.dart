@@ -134,6 +134,10 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                               padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                               child: Container(
                                 decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: Image.network('${images[index]}'),
+                                    fit: BoxFit.fill,
+                                  ),
                                   color: theme.accentColor,
                                   borderRadius: BorderRadius.circular(26),
                                   border: Border.all(
@@ -141,47 +145,11 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                     width: 4,
                                   ),
                                 ),
+                                height: 400,
+                                width: 400,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(26.0),
-                                      child: Image.network('${images[index]}'),
-                                    ),
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        Icon(
-                                          Icons.person_add,
-                                          size: 40,
-                                          color: theme.primaryColor,
-                                        ),
-                                        IconButton(
-                                          icon: Icon(
-                                            Icons.email,
-                                          ),
-                                          iconSize: 40,
-                                          color: theme.primaryColor,
-                                          onPressed: () {},
-                                        ),
-                                      ],
-                                    ),
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                      children: [
-                                        Icon(
-                                          Icons.group_add,
-                                          size: 47,
-                                          color: theme.primaryColor,
-                                        ),
-                                        Icon(
-                                          Icons.block,
-                                          size: 40,
-                                          color: theme.primaryColor,
-                                        ),
-                                      ],
-                                    ),
-                                  ],
+                                  children: [],
                                 ),
                               ),
                             ),
