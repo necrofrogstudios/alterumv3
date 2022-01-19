@@ -112,8 +112,8 @@ class ExamplePageState extends State<ExamplePage> {
     );
   }
 
-  var theme = Theme.of(context);
   List<Card> getCardDeck() {
+    var theme = Theme.of(context);
     List<Card> cardDeck = [];
     for (int i = 0; i < 500; ++i) {
       cardDeck.add(
