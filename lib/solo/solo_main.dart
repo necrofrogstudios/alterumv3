@@ -124,7 +124,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                       swipeUp: true,
                       swipeDown: true,
                       orientation: AmassOrientation.BOTTOM,
-                      totalNum: welcomeImages.length,
+                      totalNum: images.length,
                       stackNum: 3,
                       swipeEdge: 4.0,
                       maxWidth: MediaQuery.of(context).size.width * 0.9,
@@ -132,7 +132,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                       minWidth: MediaQuery.of(context).size.width * 0.8,
                       minHeight: MediaQuery.of(context).size.width * 0.8,
                       cardBuilder: (context, index) => Card(
-                        child: Image.asset('${welcomeImages[index]}'),
+                        child: Image.asset('${images[index]}'),
                       ),
                       cardController: controller = CardController(),
                       swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
