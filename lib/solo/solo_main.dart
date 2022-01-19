@@ -3,6 +3,7 @@ import 'package:swipe_cards/swipe_cards.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
+import 'package:swipeable_card/swipeable_card.dart';
 
 import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
@@ -113,26 +114,40 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                   solo_navigation(),
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 10, 10, 50),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height * 0.4,
-                      child: TinderSwapCard(
-                        swipeUp: true,
-                        swipeDown: true,
-                        orientation: AmassOrientation.TOP,
-                        totalNum: images.length,
-                        stackNum: 2,
-                        swipeEdge: 4.0,
-                        maxWidth: MediaQuery.of(context).size.width * 0.9,
-                        maxHeight: MediaQuery.of(context).size.width * 0.9,
-                        minWidth: MediaQuery.of(context).size.width * 0.8,
-                        minHeight: MediaQuery.of(context).size.width * 0.8,
-                        cardBuilder: (context, index) => FlipCard(
+                    child: Stack(
+  children: <Widget>[
+    SwipeableWidget(
+
+  child: CardExample(text: "This is card"),
+  nextCards: [
+    CardExample(text: "This is the card"),
+    CardExample(text: "This is third card"),
+  ]
+  onLeftSwipe: () => print("Card swiped!"),
+  onRightSwipe: () => print("Card swiped!"),
+)
+  ],
+)
+                  ),
+                ],
+              ),
+            ),
+            footer(),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+
+/*FlipCard(
                           fill: Fill.fillBack,
                           direction: FlipDirection.HORIZONTAL,
                           front: Center(
                             child: Padding(
                               padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                              child: Container(
+                              child: Stack( Container(
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     image: NetworkImage('${images[index]}'),
@@ -151,7 +166,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [],
                                 ),
-                              ),
+                              ),),
                             ),
                           ), //back of card  V V V V //
                           back: Center(
@@ -210,28 +225,4 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                             ),
                           ),
                         ),
-                        cardController: controller = CardController(),
-                        swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-                          /// Get swiping card's alignment
-                          if (align.x < 0) {
-                            //Card is LEFT swiping
-                          } else if (align.x > 0) {
-                            //Card is RIGHT swiping
-                          }
-                        },
-                        swipeCompleteCallback: (CardSwipeOrientation orientation, int index) {
-                          /// Get orientation & index of swiped card!
-                        },
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            footer(),
-          ],
-        ),
-      ),
-    );
-  }
-}
+                        */

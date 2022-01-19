@@ -44,6 +44,7 @@ dependencies:
   swiping_card_deck: ^1.0.0
   gestures: ^1.0.0
   introduction_screen: ^2.1.0
+  swipeable_card: ^1.0.2
     
 
 dev_dependencies:
