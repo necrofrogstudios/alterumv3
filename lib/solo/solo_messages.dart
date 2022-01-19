@@ -141,14 +141,14 @@ class ExamplePageState extends State<ExamplePage> {
                     ),*/
                     Text(
                       'yep \n'
+                          'yep \n'
+                          'yep \n'
+                          'yep \n'
+                          'yep \n'
+                          'yep \n',
                       'yep \n'
-                      'yep \n'
-                      'yep \n'
-                      'yep \n'
-                      'yep \n',
-                      'yep \n'
-                      'yep \n'
-                      'yep \n'
+                          'yep \n'
+                          'yep \n',
                       style: TextStyle(fontSize: 20, color: theme.primaryColor),
                     ),
                   ],
