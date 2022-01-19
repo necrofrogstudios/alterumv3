@@ -147,10 +147,6 @@ class solo_mainState extends State<solo_main> {
                               ),
                               child: Column(
                                 children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(29.0),
-                                    child: _swipeItems[index].content.child,
-                                  ),
                                   Text(
                                     _swipeItems[index].content.text,
                                     style: TextStyle(fontSize: 20, color: theme.primaryColor),
