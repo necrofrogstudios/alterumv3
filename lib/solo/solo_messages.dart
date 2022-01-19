@@ -3,6 +3,7 @@ import 'package:swiping_card_deck/swiping_card_deck.dart';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:flip_card/flip_card.dart';
 
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
