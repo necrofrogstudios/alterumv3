@@ -116,7 +116,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                     child: TinderSwapCard(
                       swipeUp: true,
                       swipeDown: true,
-                      orientation: AmassOrientation.BOTTOM,
+                      orientation: AmassOrientation.TOP,
                       totalNum: images.length,
                       stackNum: 2,
                       swipeEdge: 4.0,
