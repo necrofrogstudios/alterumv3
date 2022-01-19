@@ -185,12 +185,7 @@ class solo_mainState extends State<solo_main> with TickerProviderStateMixin {
                                           ),
                                           iconSize: 40,
                                           color: theme.primaryColor,
-                                          onPressed: () {
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(builder: (context) => messages_main()),
-                                            );
-                                          },
+                                          onPressed: () {},
                                         ),
                                       ],
                                     ),
