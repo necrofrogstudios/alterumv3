@@ -148,8 +148,8 @@ class solo_mainState extends State<solo_main> {
                               child: Column(
                                 children: <Widget>[
                                   Container(
-                                    height: 100,
-                                    width: 100,
+                                    height: 300,
+                                    width: 300,
                                     child: _swipeItems[index].content.child,
                                   ),
                                   Text(
