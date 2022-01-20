@@ -133,9 +133,16 @@ class drawer2 extends StatelessWidget {
             Row(
               children: [
                 drawer_flip_card(),
+                Column(
+                  children: [
+                    Text(
+                      'Guarded',
+                      style: TextStyle(color: theme.primaryColor),
+                    ),
+                  ],
+                ),
               ],
             ),
-            drawer_flip_card(),
             Container(
               color: theme.backgroundColor,
               child: Align(
