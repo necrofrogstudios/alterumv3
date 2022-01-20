@@ -133,8 +133,8 @@ class drawer2 extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  height: 50,
-                  width: 50,
+                  height: 100,
+                  width: 100,
                   child: drawer_flip_card(),
                 ),
                 Text('test'),
