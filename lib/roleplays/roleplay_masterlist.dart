@@ -29,6 +29,10 @@ class roleplay_masterlist extends StatelessWidget {
     List<String> masterlist_points = [
       '100'
     ];
+    List<Widget> masterlist_characters = [];
+    for (int i = 0; i < masterlist_name.length; i++) {
+      masterlist_characters.add(masterlist_flipcard(masterlist_name[i], masterlist_image[i], masterlist_points[i]));
+    }
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
@@ -73,20 +77,7 @@ class roleplay_masterlist extends StatelessWidget {
                       mainAxisSpacing: 5,
                       crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
                       children: <Widget>[
-                        character_parkjimin(),
-                        character_kimjaejoong(),
-                        character_johncena(),
-                        character_tylerblackburn(),
-                        character_calliopemori(),
-                        character_leetaemin(),
-                        character_parkjimin(),
-                        character_johncena(),
-                        character_bangyongguk(),
-                        character_chengjunya(),
-                        character_parkchanyeol(),
-                        character_parkjimin(),
-                        character_kimjaejoong(),
-                        character_johncena(),
+                        ...masterlist_characters,
                       ],
                     ),
                   ],

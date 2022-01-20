@@ -3,7 +3,11 @@ import 'package:flip_card/flip_card.dart';
 
 import 'package:testing/roleplays/roleplay_character.dart';
 
-class character_parkjimin extends StatelessWidget {
+class masterlist_flipcard extends StatelessWidget {
+  String name;
+  String image;
+  String points;
+  masterlist_flipcard(this.name, this.image, this.points)
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -29,7 +33,7 @@ class character_parkjimin extends StatelessWidget {
                 children: <Widget>[
                   ClipRRect(
                     borderRadius: BorderRadius.circular(27.0),
-                    child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+                    child: Image.network(image),
                   ),
                   Positioned.fill(
                     child: Padding(
@@ -59,7 +63,7 @@ class character_parkjimin extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => roleplay_character()),
                                 );
                               },
-                              child: const Text('Park Jimin'),
+                              child: const Text(name),
                             ),
                           ),
                         ),
@@ -85,7 +89,7 @@ class character_parkjimin extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                     child: Text(
-                      ' Park Jimin',
+                      name,
                       textAlign: TextAlign.center,
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
@@ -93,7 +97,7 @@ class character_parkjimin extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                     child: Text(
-                      'activity p',
+                      points,
                       textAlign: TextAlign.center,
                       style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
