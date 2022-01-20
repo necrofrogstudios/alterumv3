@@ -139,7 +139,7 @@ class drawer2 extends StatelessWidget {
                   Column(
                     children: [
                       Text(
-                        'basketcase101fa',
+                        'ABCDEFICLSKJHFI',
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
                     ],
