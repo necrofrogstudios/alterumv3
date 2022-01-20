@@ -137,7 +137,7 @@ class drawer2 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                       child: Container(
-                        height: 54,
+                        height: 48,
                         width: 54,
                         decoration: BoxDecoration(
                           color: theme.splashColor,
