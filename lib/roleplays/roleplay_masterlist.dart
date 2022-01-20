@@ -70,7 +70,7 @@ class roleplay_masterlist extends StatelessWidget {
                         shrinkWrap: true,
                         padding: const EdgeInsets.all(5),
                         //crossAxisSpacing: 5,
-                        mainAxisSpacing: 5,
+                        //mainAxisSpacing: 5,
                         crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
                         itemCount: masterlist_name.length,
                         itemBuilder: (BuildContext ctx, index) {
