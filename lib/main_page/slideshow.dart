@@ -172,7 +172,7 @@ class slideshow extends StatelessWidget {
         /// Do not auto scroll with null or 0.
         autoPlayInterval: 3000,
 
-        isLoop: true,
+        isLoop: false,
       ),
     );
   }
