@@ -4,11 +4,12 @@ import 'package:flip_card/flip_card.dart';
 import 'package:testing/roleplays/roleplay_character.dart';
 
 class masterlist_flipcard extends StatelessWidget {
+  @override
   const String name;
   const String image;
   const String points;
-  masterlist_flipcard(this.name, this.image, this.points)
-  @override
+  masterlist_flipcard(this.name, this.image, this.points);
+
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return ListView(
