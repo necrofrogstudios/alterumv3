@@ -152,12 +152,12 @@ class drawer2 extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+                            padding: EdgeInsets.fromLTRB(50, 20, 0, 0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                  padding: EdgeInsets.fromLTRB(0, 0, 50, 0),
                                   child: Icon(
                                     Icons.arrow_back,
                                     color: theme.primaryColor,
