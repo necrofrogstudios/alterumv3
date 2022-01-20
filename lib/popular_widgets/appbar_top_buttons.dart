@@ -13,7 +13,7 @@ class profile_top_buttons extends StatelessWidget {
     'Settings',
     'Polls',
     'Browse',
-    'Customer Support',
+    'Shop',
   ];
   final List<Widget> navigation = [
     create_roleplay(),
