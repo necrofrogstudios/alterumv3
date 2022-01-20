@@ -121,7 +121,7 @@ class roleplay_masterlist extends StatelessWidget {
                                                     MaterialPageRoute(builder: (context) => roleplay_character()),
                                                   );
                                                 },
-                                                child: const Text(masterlist_name[index]),
+                                                child: Text(masterlist_name[index]),
                                               ),
                                             ),
                                           ),
