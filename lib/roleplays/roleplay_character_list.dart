@@ -64,7 +64,7 @@ class masterlist_flipcard extends StatelessWidget {
                                   MaterialPageRoute(builder: (context) => roleplay_character()),
                                 );
                               },
-                              child: const Text(name),
+                              child: Text(name),
                             ),
                           ),
                         ),
