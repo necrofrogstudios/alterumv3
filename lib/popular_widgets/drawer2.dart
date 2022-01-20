@@ -103,6 +103,14 @@ class drawer2 extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
+                Expanded(
+                  child: Center(
+                    child: Text(
+                      '',
+                      style: TextStyle(color: theme.primaryColor, fontSize: 30),
+                    ),
+                  ),
+                ),
                 GestureDetector(
                   onTap: () {
                     Navigator.pop(
