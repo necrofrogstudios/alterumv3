@@ -65,7 +65,7 @@ class roleplay_masterlist extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    GridView(
+                    GridView.count(
                       physics: ScrollPhysics(),
                       shrinkWrap: true,
                       padding: const EdgeInsets.all(5),
