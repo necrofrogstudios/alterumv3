@@ -91,7 +91,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 maxHeight: MediaQuery.of(context).size.width * 0.9,
                 minWidth: MediaQuery.of(context).size.width * 0.8,
                 minHeight: MediaQuery.of(context).size.width * 0.8,
-                cardBuilder: Card(
+                cardBuilder: (context) => Card(
                   child: Image.asset('${welcomeImages[index]}'),
                 ),
                 cardController: controller = CardController(),
