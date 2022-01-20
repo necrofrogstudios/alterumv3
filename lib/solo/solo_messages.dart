@@ -22,10 +22,6 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
   List<String> welcomeImages = [
     "assets/welcome0.png",
     "assets/welcome1.png",
-    "assets/welcome2.png",
-    "assets/welcome2.png",
-    "assets/welcome1.png",
-    "assets/welcome1.png"
   ];
   final currentScreen = ExamplePage;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
