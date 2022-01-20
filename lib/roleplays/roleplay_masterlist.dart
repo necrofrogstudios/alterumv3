@@ -17,14 +17,35 @@ import 'package:testing/main_page/roleplay_list_layout.dart';
 final List<String> masterlist_name = const [
   'Park Jimin',
   'Kim Jaejoong',
+  'John Cena',
+  'Tyler Blackburn',
+  'Calliope Mori',
+  'Lee Taemin',
+  'Bang Yongguk',
+  'Cheng Junya',
+  'Park Chanyeol',
 ];
 final List<String> masterlist_image = const [
   'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1',
   'https://th.bing.com/th/id/R.dc996d3363f9d6c81a8e97a9161bdaf9?rik=j7CrUsFBdr6TJg&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f35800000%2fJaejoong-jyj-35825544-1000-1000.jpg&ehk=VEqPqR5vLUsqFOXEOwtpAzo8v89Lc6WjI10vLQgPnOI%3d&risl=&pid=ImgRaw&r=0',
+  'https://th.bing.com/th/id/R.5b0123ddd50c4609439a85849ba13da0?rik=zYNUkND2rAAsOg&pid=ImgRaw&r=0',
+  'https://th.bing.com/th/id/OIP.zwI_5szHy5ChTmwJhgzIaAHaHa?pid=ImgDet&rs=1',
+  'https://th.bing.com/th/id/OIP.e32kH9Lro6MOvhZW_NiiogHaHa?pid=ImgDet&rs=1',
+  'https://th.bing.com/th/id/R.1daa4f1db1545cc864e8733273834ed3?rik=4RIbD%2bf0MyHAdg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-LqRvElpvWqM%2fUCH-NbQtGFI%2fAAAAAAAAGBI%2f-UpYJoCU6L0%2fs1600%2flee-taemin-lee-taemin-23578754-888-789.jpg&ehk=A%2brUdHBOGXIHbHyaCMLTzXjWiwpRBFykrSGYx8WLHAc%3d&risl=&pid=ImgRaw&r=0',
+  'https://i.pinimg.com/originals/1d/8b/f3/1d8bf3d9a45062caa29c2fc90cbc63ed.jpg',
+  'https://th.bing.com/th/id/OIP.iTFq_YGToQRgvfVbQgPeGgHaHb?pid=ImgDet&rs=1',
+  'https://th.bing.com/th/id/OIP.n8a7INyHyCa99P1lI3BhggHaHa?pid=ImgDet&rs=1',
 ];
 final List<String> masterlist_points = const [
   '100',
   '100',
+  '100',
+  '100',
+  '200',
+  '200',
+  '100',
+  '600',
+  '300',
 ];
 
 class roleplay_masterlist extends StatelessWidget {
