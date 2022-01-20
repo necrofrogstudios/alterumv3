@@ -151,9 +151,15 @@ class drawer2 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.fromLTRB(2, 12, 0, 10),
                       child: Container(
-                        height: 50,
+                        height: 44,
                         width: 50,
-                        decoration: BoxDecoration(color: theme.accentColor, shape: BoxShape.circle),
+                        decoration: BoxDecoration(
+                          color: theme.accentColor,
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(40.0),
+                            topLeft: Radius.circular(40.0),
+                          ),
+                        ),
                       ),
                     ),
                   ],
