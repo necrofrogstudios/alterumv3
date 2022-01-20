@@ -8,7 +8,7 @@ import 'package:testing/characters/my_characters.dart';
 import 'package:testing/sign_in/sign_in.dart';
 import 'package:testing/messages/messages_main.dart';
 
-class drawer2 extends StatelessWidget {
+class drawer extends StatelessWidget {
   final back;
   final List<String> items = [
     'Profile',
@@ -24,7 +24,7 @@ class drawer2 extends StatelessWidget {
     messages_main(),
     settings(),
   ];
-  drawer2(this.back);
+  drawer(this.back);
 
   @override
   Widget build(BuildContext context) {
