@@ -4,9 +4,9 @@ import 'package:flip_card/flip_card.dart';
 import 'package:testing/roleplays/roleplay_character.dart';
 
 class masterlist_flipcard extends StatelessWidget {
-  String name;
-  String image;
-  String points;
+  const String name;
+  const String image;
+  const String points;
   masterlist_flipcard(this.name, this.image, this.points)
   @override
   Widget build(BuildContext context) {
