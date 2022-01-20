@@ -157,21 +157,23 @@ class drawer2 extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Padding(
-                                  padding: EdgeInsets.fromLTRB(20, 0, 50, 0),
+                                  padding: EdgeInsets.fromLTRB(20, 0, 150, 0),
                                   child: Icon(
                                     Icons.arrow_back,
                                     color: theme.primaryColor,
                                   ),
                                 ),
-                                Text(
-                                  'Sign Out',
+                                Padding(
+                            padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                            child:Text(
+                                  'Back',
                                   style: TextStyle(
                                     fontSize: 20,
                                     color: theme.primaryColor,
                                   ),
                                 ),
                               ],
-                            ),
+                            ),),
                           ),
                         ],
                       ),
