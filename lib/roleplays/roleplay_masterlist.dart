@@ -18,17 +18,17 @@ class roleplay_masterlist extends StatelessWidget {
   final currentScreen = roleplay_masterlist;
   const roleplay_masterlist();
 
-  List<String> masterlist_name = [
-    'Park Jimin'
-  ];
-  List<String> masterlist_image = [
-    'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'
-  ];
-  List<String> masterlist_points = [
-    '100'
-  ];
   @override
   Widget build(BuildContext context) {
+    List<String> masterlist_name = [
+      'Park Jimin'
+    ];
+    List<String> masterlist_image = [
+      'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'
+    ];
+    List<String> masterlist_points = [
+      '100'
+    ];
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
