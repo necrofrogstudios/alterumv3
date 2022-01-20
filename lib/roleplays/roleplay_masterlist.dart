@@ -14,18 +14,19 @@ import 'package:testing/roleplays/roleplay_navigation.dart';
 import 'package:testing/roleplays/roleplay_character_list.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
+final List<String> masterlist_name = const [
+  'Park Jimin'
+];
+final List<String> masterlist_image = const [
+  'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'
+];
+final List<String> masterlist_points = const [
+  '100'
+];
+
 class roleplay_masterlist extends StatelessWidget {
   final currentScreen = roleplay_masterlist;
   const roleplay_masterlist();
-  final List<String> masterlist_name = [
-    'Park Jimin'
-  ];
-  final List<String> masterlist_image = [
-    'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'
-  ];
-  final List<String> masterlist_points = [
-    '100'
-  ];
 
   @override
   Widget build(BuildContext context) {
