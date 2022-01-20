@@ -88,11 +88,10 @@ class drawer2 extends StatelessWidget {
                         topRight: Radius.circular(40.0),
                       ),
                     ),
-                    child: Text('test'),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 10, 54, 10),
+                  padding: EdgeInsets.fromLTRB(0, 12, 54, 10),
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(
@@ -102,7 +101,6 @@ class drawer2 extends StatelessWidget {
                         topRight: Radius.circular(40.0),
                       ),
                     ),
-                    child: Text('test'),
                   ),
                 ),
               ],
