@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
-import 'package:flip_card/flip_card.dart';
 
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
@@ -19,13 +18,13 @@ class roleplay_masterlist extends StatelessWidget {
   final currentScreen = roleplay_masterlist;
   const roleplay_masterlist();
 
-  final List<String> masterlist_name = const [
+  List<String> masterlist_name = [
     'Park Jimin'
   ];
-  final List<String> masterlist_image = const [
+  List<String> masterlist_image = [
     'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'
   ];
-  final List<String> masterlist_points = const [
+  List<String> masterlist_points = [
     '100'
   ];
   @override
@@ -66,123 +65,14 @@ class roleplay_masterlist extends StatelessWidget {
                         color: theme.primaryColor,
                       ),
                     ),
-                    GridView.builder(
-                        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                          maxCrossAxisExtent: 200,
-                          childAspectRatio: 3 / 2,
-                          crossAxisSpacing: 5,
-                          mainAxisSpacing: 5,
-                          // crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
-                        ),
-                        physics: ScrollPhysics(),
-                        shrinkWrap: true,
-                        padding: const EdgeInsets.all(5),
-                        //crossAxisSpacing: 5,
-                        //mainAxisSpacing: 5,
-                        //crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
-                        itemCount: masterlist_name.length,
-                        itemBuilder: (BuildContext ctx, index) {
-                          FlipCard(
-                            fill: Fill.fillBack,
-                            direction: FlipDirection.HORIZONTAL,
-                            front: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: theme.accentColor,
-                                  border: Border.all(color: theme.splashColor, width: 3.0),
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(30),
-                                  ),
-                                ), //name, creator, tags, intro
-                                child: Stack(
-                                  children: <Widget>[
-                                    ClipRRect(
-                                      borderRadius: BorderRadius.circular(27.0),
-                                      child: Image.network(masterlist_image[index]),
-                                    ),
-                                    Positioned.fill(
-                                      child: Padding(
-                                        padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                                        child: Align(
-                                          alignment: Alignment.bottomCenter,
-                                          child: FractionallySizedBox(
-                                            widthFactor: 1,
-                                            heightFactor: 0.2,
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: theme.accentColor,
-                                                borderRadius: BorderRadius.only(
-                                                  bottomRight: Radius.circular(13),
-                                                  bottomLeft: Radius.circular(13),
-                                                ),
-                                              ),
-                                              child: TextButton(
-                                                style: TextButton.styleFrom(
-                                                  padding: const EdgeInsets.all(0),
-                                                  primary: theme.primaryColor,
-                                                  textStyle: const TextStyle(fontSize: 15),
-                                                ),
-                                                onPressed: () {
-                                                  Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(builder: (context) => roleplay_character()),
-                                                  );
-                                                },
-                                                child: Text(masterlist_name[index]),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ), //back of card  V V V V //
-                            back: Padding(
-                              padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: theme.accentColor,
-                                  border: Border.all(color: theme.splashColor, width: 3.0),
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(30),
-                                  ),
-                                ),
-                                child: Column(
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                                      child: Text(
-                                        masterlist_name[index],
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                      child: Text(
-                                        masterlist_points[index],
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                      child: Text(
-                                        'another',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          );
-                        }
-                        /*children: <Widget>[
+                    GridView(
+                      physics: ScrollPhysics(),
+                      shrinkWrap: true,
+                      padding: const EdgeInsets.all(5),
+                      crossAxisSpacing: 5,
+                      mainAxisSpacing: 5,
+                      crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
+                      children: <Widget>[
                         character_parkjimin(),
                         character_kimjaejoong(),
                         character_johncena(),
@@ -197,8 +87,8 @@ class roleplay_masterlist extends StatelessWidget {
                         character_parkjimin(),
                         character_kimjaejoong(),
                         character_johncena(),
-                      ],*/
-                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
