@@ -44,11 +44,6 @@ class my_characters extends StatelessWidget {
               profile_top_buttons(),
               Container(color: theme.splashColor, height: 4),
               Container(
-                color: theme.accentColor,
-                child: admin_marquee(),
-              ),
-              Container(color: theme.splashColor, height: 2),
-              Container(
                 color: theme.backgroundColor,
                 child: Column(
                   children: [
