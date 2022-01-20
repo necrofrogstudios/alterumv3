@@ -102,6 +102,12 @@ class drawer2 extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Row(
+              children: <Widget>[
+                Expanded(child: Center(child: Text('Center'))),
+                Text("#"),
+              ],
+            ),
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
