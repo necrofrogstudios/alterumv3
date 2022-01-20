@@ -164,12 +164,13 @@ class drawer2 extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                            padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
-                            child:Text(
-                                  'Back',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: theme.primaryColor,
+                                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                                  child: Text(
+                                    'Back',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: theme.primaryColor,
+                                    ),
                                   ),
                                 ),
                               ],
