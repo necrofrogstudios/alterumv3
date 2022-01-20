@@ -124,9 +124,10 @@ class drawer2 extends StatelessWidget {
                       Stack(
                         children: [
                           Padding(
-                            padding: EdgeInsets.fromLTRB(54, 10, 0, 10),
+                            padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                             child: Container(
                               height: 48,
+                              width: 164,
                               decoration: BoxDecoration(
                                 color: theme.splashColor,
                                 borderRadius: BorderRadius.only(
@@ -137,9 +138,10 @@ class drawer2 extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(50, 14, 0, 10),
+                            padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
                             child: Container(
                               height: 40,
+                              width: 160,
                               decoration: BoxDecoration(
                                 color: theme.accentColor,
                                 borderRadius: BorderRadius.only(
