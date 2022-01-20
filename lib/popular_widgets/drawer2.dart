@@ -109,27 +109,27 @@ class drawer2 extends StatelessWidget {
                   child: Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
+                        padding: EdgeInsets.fromLTRB(50, 10, 0, 0),
                         child: Container(
                           height: 48,
                           decoration: BoxDecoration(
                             color: theme.splashColor,
                             borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(40.0),
-                              topRight: Radius.circular(40.0),
+                              bottomLeft: Radius.circular(40.0),
+                              topLeft: Radius.circular(40.0),
                             ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
+                        padding: EdgeInsets.fromLTRB(54, 14, 0, 0),
                         child: Container(
                           height: 40,
                           decoration: BoxDecoration(
                             color: theme.accentColor,
                             borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(40.0),
-                              topRight: Radius.circular(40.0),
+                              bottomLeft: Radius.circular(40.0),
+                              topLeft: Radius.circular(40.0),
                             ),
                           ),
                         ),
