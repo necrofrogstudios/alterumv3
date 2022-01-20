@@ -17,10 +17,7 @@ import 'package:testing/main_page/roleplay_list_layout.dart';
 class roleplay_masterlist extends StatelessWidget {
   final currentScreen = roleplay_masterlist;
   const roleplay_masterlist();
-
-  @override
-  Widget build(BuildContext context) {
-    List<String> masterlist_name = [
+  List<String> masterlist_name = [
       'Park Jimin'
     ];
     List<String> masterlist_image = [
@@ -33,6 +30,10 @@ class roleplay_masterlist extends StatelessWidget {
     for (int i = 0; i < masterlist_name.length; i++) {
       masterlist_characters.add(masterlist_flipcard(masterlist_name[i], masterlist_image[i], masterlist_points[i]));
     }
+
+  @override
+  Widget build(BuildContext context) {
+    
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
