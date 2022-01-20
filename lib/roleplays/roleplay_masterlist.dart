@@ -72,7 +72,7 @@ class roleplay_masterlist extends StatelessWidget {
                           childAspectRatio: 3 / 2,
                           crossAxisSpacing: 5,
                           mainAxisSpacing: 5,
-                          crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
+                          // crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
                         ),
                         physics: ScrollPhysics(),
                         shrinkWrap: true,
