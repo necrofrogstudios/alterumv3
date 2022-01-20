@@ -107,7 +107,7 @@ class drawer2 extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
                   child: Text(
                     'Profile',
-                    style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                    style: TextStyle(color: theme.primaryColor, fontSize: 20),
                   ),
                 ),
               ],
