@@ -44,7 +44,7 @@ class drawer extends StatelessWidget {
           child: Stack(
             children: [
               Padding(
-                padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
+                padding: EdgeInsets.fromLTRB(0, 10, 50, 5),
                 child: Container(
                   height: 48,
                   decoration: BoxDecoration(
