@@ -105,7 +105,7 @@ class drawer2 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Padding(
-                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                   child: Text(
                     'Guarded',
                     style: TextStyle(color: theme.primaryColor, fontSize: 30),
