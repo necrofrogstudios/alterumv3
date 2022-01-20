@@ -32,11 +32,6 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
 
   List<String> items = [
     "blep",
-    "blep",
-    "blep",
-    "blep",
-    "blep",
-    "blep",
   ];
 
   void _onRefresh() async {
@@ -97,7 +92,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 minWidth: MediaQuery.of(context).size.width * 0.8,
                 minHeight: MediaQuery.of(context).size.width * 0.8,
                 cardBuilder: (context, index) => Card(
-                  child: Image.asset(welcomeImages[index]),
+                  child: Image.asset("assets/welcome1.png"),
                 ),
                 cardController: controller = CardController(),
                 swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
