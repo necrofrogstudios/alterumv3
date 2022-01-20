@@ -9,9 +9,9 @@ class profile_top_buttons extends StatelessWidget {
     'Popular',
     'Duo',
     'Members',
+    'Browse Roleplays',
     'Blogs',
     'Polls',
-    'Browse',
     'Shop',
   ];
   final List<Widget> navigation = [
