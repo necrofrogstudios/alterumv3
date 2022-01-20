@@ -108,7 +108,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 },
               ),
             ),
-            Container(color: theme.splashColor, height: 4, child: Text('${welcomeImages[1]}')),
+            Container(color: theme.splashColor, height: 4, child: Text('${items[1]}')),
             footer(),
           ],
         ),
