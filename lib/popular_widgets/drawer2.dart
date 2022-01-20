@@ -121,65 +121,42 @@ class drawer2 extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => navigation[i]),
-                          );
-                        },
-                        child: Stack(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
-                              child: Container(
-                                height: 48,
-                                decoration: BoxDecoration(
-                                  color: theme.splashColor,
-                                  borderRadius: BorderRadius.only(
-                                    bottomRight: Radius.circular(40.0),
-                                    topRight: Radius.circular(40.0),
-                                  ),
+                      Stack(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                            child: Container(
+                              height: 48,
+                              decoration: BoxDecoration(
+                                color: theme.splashColor,
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(40.0),
+                                  topLeft: Radius.circular(40.0),
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
-                              child: Container(
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: theme.accentColor,
-                                  borderRadius: BorderRadius.only(
-                                    bottomRight: Radius.circular(40.0),
-                                    topRight: Radius.circular(40.0),
-                                  ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
+                            child: Container(
+                              height: 40,
+                              decoration: BoxDecoration(
+                                color: theme.accentColor,
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(40.0),
+                                  topLeft: Radius.circular(40.0),
                                 ),
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'b',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      color: theme.primaryColor,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Icon(
-                                      Icons.arrow_back,
-                                      color: theme.primaryColor,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
+                            child: Icon(
+                              Icons.arrow_back,
+                              color: theme.primaryColor,
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
