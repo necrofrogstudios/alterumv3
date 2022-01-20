@@ -103,9 +103,6 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                     //Card is RIGHT swiping
                   }
                 },
-                swipeCompleteCallback: (CardSwipeOrientation orientation, int index) {
-                  /// Get orientation & index of swiped card!
-                },
               ),
             ),
             Container(color: theme.splashColor, height: 4),
