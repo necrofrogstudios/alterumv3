@@ -170,57 +170,65 @@ class drawer2 extends StatelessWidget {
               child: drawer_flip_card(),
             ),
             ...drawerButtons,
-            Stack(
-              children: [
-                Padding(
-                  padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
-                  child: Container(
-                    height: 48,
-                    decoration: BoxDecoration(
-                      color: theme.splashColor,
-                      borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(40.0),
-                        topRight: Radius.circular(40.0),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => sign_in()),
+                );
+              },
+              child: Stack(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
+                    child: Container(
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: theme.splashColor,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(40.0),
+                          topRight: Radius.circular(40.0),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
-                  child: Container(
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: theme.accentColor,
-                      borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(40.0),
-                        topRight: Radius.circular(40.0),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
+                    child: Container(
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: theme.accentColor,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(40.0),
+                          topRight: Radius.circular(40.0),
+                        ),
                       ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Sign Out',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: theme.primaryColor,
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Sign Out',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: theme.primaryColor,
+                          ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Icon(
-                          Icons.logout,
-                          color: theme.primaryColor,
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Icon(
+                            Icons.logout,
+                            color: theme.primaryColor,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
