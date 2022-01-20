@@ -31,8 +31,8 @@ final List<String> masterlist_image = const [
   'https://th.bing.com/th/id/R.5b0123ddd50c4609439a85849ba13da0?rik=zYNUkND2rAAsOg&pid=ImgRaw&r=0',
   'https://th.bing.com/th/id/OIP.zwI_5szHy5ChTmwJhgzIaAHaHa?pid=ImgDet&rs=1',
   'https://th.bing.com/th/id/OIP.e32kH9Lro6MOvhZW_NiiogHaHa?pid=ImgDet&rs=1',
-  'https://th.bing.com/th/id/R.1daa4f1db1545cc864e8733273834ed3?rik=4RIbD%2bf0MyHAdg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-LqRvElpvWqM%2fUCH-NbQtGFI%2fAAAAAAAAGBI%2f-UpYJoCU6L0%2fs1600%2flee-taemin-lee-taemin-23578754-888-789.jpg&ehk=A%2brUdHBOGXIHbHyaCMLTzXjWiwpRBFykrSGYx8WLHAc%3d&risl=&pid=ImgRaw&r=0',
-  'https://i.pinimg.com/originals/1d/8b/f3/1d8bf3d9a45062caa29c2fc90cbc63ed.jpg',
+  'https://www.hellokpop.com/wp-content/uploads/2017/12/20171226_SHINee%E2%80%99s_Taemin_To_Not_-Attend_2017_-KBS_Gayo_-Daejun_In_-Respect_Of_-Jonghyun%E2%80%99s_-Passing.jpg',
+  'https://www.koreaboo.com/wp-content/uploads/2017/07/yongguk-bap4-e1499043199972.jpg',
   'https://th.bing.com/th/id/OIP.iTFq_YGToQRgvfVbQgPeGgHaHb?pid=ImgDet&rs=1',
   'https://th.bing.com/th/id/OIP.n8a7INyHyCa99P1lI3BhggHaHa?pid=ImgDet&rs=1',
 ];
