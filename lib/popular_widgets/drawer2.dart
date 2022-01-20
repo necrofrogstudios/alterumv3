@@ -104,9 +104,12 @@ class drawer2 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  'Guarded',
-                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                  child: Text(
+                    'Guarded',
+                    style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                  ),
                 ),
                 GestureDetector(
                   onTap: () {
