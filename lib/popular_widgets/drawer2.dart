@@ -130,6 +130,7 @@ class drawer2 extends StatelessWidget {
               ),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Stack(
                   children: [
