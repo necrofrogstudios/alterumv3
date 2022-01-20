@@ -131,6 +131,7 @@ class drawer2 extends StatelessWidget {
             ),
             Stack(children: [
               Container(
+                margin: EdgeInsets.all(100.0),
                 decoration: BoxDecoration(color: Colors.orange, shape: BoxShape.circle),
               )
             ]),
