@@ -16,7 +16,12 @@ class drawer2 extends StatelessWidget {
     'Characters',
     'Messages',
   ];
-
+  final List<Widget> navigation = [
+    profile(),
+    main_page(),
+    my_characters(),
+    messages_main(),
+  ];
   drawer2(this.back);
 
   @override
