@@ -30,10 +30,6 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
   final currentScreen = ExamplePage;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
-  List<String> items = [
-    "blep",
-  ];
-
   void _onRefresh() async {
     // monitor network fetch
     await Future.delayed(Duration(milliseconds: 1000));
@@ -92,7 +88,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 minWidth: MediaQuery.of(context).size.width * 0.8,
                 minHeight: MediaQuery.of(context).size.width * 0.8,
                 cardBuilder: (context, index) => Card(
-                  child: Image.asset('${welcomeImages[0]}'),
+                  child: Image.asset('${welcomeImages[1]}'),
                 ),
                 cardController: controller = CardController(),
                 swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
