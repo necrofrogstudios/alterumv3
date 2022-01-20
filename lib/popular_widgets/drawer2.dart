@@ -173,7 +173,7 @@ class drawer2 extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ),),
+                            ),
                           ),
                         ],
                       ),
