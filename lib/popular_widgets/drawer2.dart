@@ -17,8 +17,6 @@ class drawer2 extends StatelessWidget {
     'Messages',
   ];
 
-  List<Widget> drawerButtons = [];
-
   drawer2(this.back);
 
   @override
@@ -26,6 +24,7 @@ class drawer2 extends StatelessWidget {
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
     //backgroundColor: theme.backgroundColor;//
+    List<Widget> drawerButtons = [];
     for (int i = 0; i < items.length; i++) {
       drawerButtons.add(
         Stack(
