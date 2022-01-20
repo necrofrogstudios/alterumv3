@@ -137,6 +137,7 @@ class drawer2 extends StatelessWidget {
                 children: [
                   drawer_flip_card(),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         'Guarded',
