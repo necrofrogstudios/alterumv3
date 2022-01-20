@@ -76,9 +76,11 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
             Container(color: theme.splashColor, height: 4),
             Container(
               height: MediaQuery.of(context).size.height * 0.6,
-              child: 
             ),
-            Container(color: theme.splashColor, height: 4, ),
+            Container(
+              color: theme.splashColor,
+              height: 4,
+            ),
             footer(),
           ],
         ),
