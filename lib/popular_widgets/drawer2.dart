@@ -130,6 +130,11 @@ class drawer2 extends StatelessWidget {
               ),
             ),
             Container(color: theme.splashColor, height: 4),
+            Row(
+              children: [
+                Text('test'),
+              ],
+            ),
             drawer_flip_card(),
             Container(
               color: theme.backgroundColor,
