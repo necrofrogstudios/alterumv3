@@ -102,12 +102,7 @@ class drawer2 extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => navigation[i]),
-                );
-              },
+              onTap: () {},
               child: Stack(
                 children: [
                   Padding(
@@ -142,7 +137,7 @@ class drawer2 extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          items[i],
+                          'back',
                           style: TextStyle(
                             fontSize: 20,
                             color: theme.primaryColor,
