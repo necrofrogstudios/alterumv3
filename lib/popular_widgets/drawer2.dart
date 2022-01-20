@@ -103,14 +103,6 @@ class drawer2 extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      '',
-                      style: TextStyle(color: theme.primaryColor, fontSize: 30),
-                    ),
-                  ),
-                ),
                 GestureDetector(
                   onTap: () {
                     Navigator.pop(
@@ -118,7 +110,7 @@ class drawer2 extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => back()),
                     );
                   },
-                  child: Column(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Stack(
@@ -127,6 +119,7 @@ class drawer2 extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                             child: Container(
                               height: 48,
+                              width: 164,
                               decoration: BoxDecoration(
                                 color: theme.splashColor,
                                 borderRadius: BorderRadius.only(
@@ -140,6 +133,7 @@ class drawer2 extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
                             child: Container(
                               height: 40,
+                              width: 160,
                               decoration: BoxDecoration(
                                 color: theme.accentColor,
                                 borderRadius: BorderRadius.only(
@@ -150,10 +144,25 @@ class drawer2 extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
-                            child: Icon(
-                              Icons.arrow_back,
-                              color: theme.primaryColor,
+                            padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  items[i],
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    color: theme.primaryColor,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
+                                  child: Icon(
+                                    Icons.arrow_back,
+                                    color: theme.primaryColor,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],
