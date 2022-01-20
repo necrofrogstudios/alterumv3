@@ -101,32 +101,16 @@ class drawer2 extends StatelessWidget {
         color: theme.backgroundColor,
         child: ListView(
           children: <Widget>[
-            Row(
-              children: <Widget>[
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      '',
-                      style: TextStyle(color: theme.primaryColor, fontSize: 30),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pop(
-                      context,
-                      MaterialPageRoute(builder: (context) => back()),
-                    );
-                  },
+            
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => navigation[i]),
-                          );
+                          Navigator.pop(
+                      context,
+                      MaterialPageRoute(builder: (context) => back()),
+                    );
                         },
                         child: Stack(
                           children: [
@@ -183,9 +167,8 @@ class drawer2 extends StatelessWidget {
                       ),
                     ],
                   ),
-                ),
-              ],
-            ),
+                
+              
             Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
               child: drawer_flip_card(),
