@@ -82,8 +82,8 @@ class drawer2 extends StatelessWidget {
                   bottomRight: Radius.circular(40.0),
                   topRight: Radius.circular(40.0),
                 ),
-                child: Text('test'),
               ),
+              child: Text('test'),
             ),
             FlatButton(
               color: theme.accentColor,
