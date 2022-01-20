@@ -167,33 +167,7 @@ class drawer2 extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  drawer_flip_card(),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Guarded',
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                      ),
-                      Text(
-                        'Standard User',
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                      ),
-                      Text(
-                        'Points: 3125',
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                      ),
-                      Text(
-                        'Pearls: 3',
-                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
+              child: drawer_flip_card(),
             ),
             ...drawerButtons,
             Stack(
