@@ -169,6 +169,13 @@ class drawer2 extends StatelessWidget {
                           ),
                         ),
                       ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: theme.primaryColor,
+                        ),
+                      ),
                     ],
                   ),
                 ],
