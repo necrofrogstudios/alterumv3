@@ -129,42 +129,50 @@ class drawer2 extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Stack(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                      child: Container(
-                        height: 48,
-                        width: 54,
-                        decoration: BoxDecoration(
-                          color: theme.splashColor,
-                          borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(40.0),
-                            topLeft: Radius.circular(40.0),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => navigation[i]),
+                );
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Stack(
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                        child: Container(
+                          height: 48,
+                          width: 54,
+                          decoration: BoxDecoration(
+                            color: theme.splashColor,
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(40.0),
+                              topLeft: Radius.circular(40.0),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
-                      child: Container(
-                        height: 40,
-                        width: 50,
-                        decoration: BoxDecoration(
-                          color: theme.accentColor,
-                          borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(40.0),
-                            topLeft: Radius.circular(40.0),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
+                        child: Container(
+                          height: 40,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            color: theme.accentColor,
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(40.0),
+                              topLeft: Radius.circular(40.0),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                ],
+              ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
