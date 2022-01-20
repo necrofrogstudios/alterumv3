@@ -18,13 +18,13 @@ class roleplay_masterlist extends StatelessWidget {
   final currentScreen = roleplay_masterlist;
   const roleplay_masterlist();
 
-  final List<String> masterlist_name = [
+  final List<String> masterlist_name = const [
     'Park Jimin'
   ];
-  final List<String> masterlist_image = [
+  final List<String> masterlist_image = const [
     'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'
   ];
-  final List<String> masterlist_points = [
+  final List<String> masterlist_points = const [
     '100'
   ];
   @override
