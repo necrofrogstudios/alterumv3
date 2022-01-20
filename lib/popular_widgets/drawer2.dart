@@ -33,7 +33,12 @@ class drawer2 extends StatelessWidget {
     for (int i = 0; i < items.length; i++) {
       drawerButtons.add(
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => navigation[i]),
+            );
+          },
           child: Stack(
             children: [
               Padding(
