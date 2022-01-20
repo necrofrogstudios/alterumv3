@@ -9,6 +9,7 @@ import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 import 'package:testing/roleplays/roleplay_request.dart';
 import 'package:testing/roleplays/admin_marquee.dart';
+import 'package:testing/roleplays/roleplay_masterlist.dart';
 import 'package:testing/roleplays/roleplay_character.dart';
 import 'package:testing/roleplays/roleplay_navigation.dart';
 import 'package:testing/roleplays/roleplay_character_list.dart';
