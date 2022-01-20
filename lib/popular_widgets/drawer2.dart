@@ -131,9 +131,9 @@ class drawer2 extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.push(
+                Navigator.pop(
                   context,
-                  MaterialPageRoute(builder: (context) => navigation[i]),
+                  MaterialPageRoute(builder: (context) => back()),
                 );
               },
               child: Row(
