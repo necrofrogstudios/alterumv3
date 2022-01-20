@@ -30,6 +30,10 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
   final currentScreen = ExamplePage;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
+  List<String> items = [
+    "Messages",
+  ];
+
   void _onRefresh() async {
     // monitor network fetch
     await Future.delayed(Duration(milliseconds: 1000));
