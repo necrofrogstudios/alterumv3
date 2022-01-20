@@ -118,7 +118,7 @@ class drawer2 extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => back()),
                     );
                   },
-                  child: Row(
+                  child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Stack(
