@@ -20,7 +20,7 @@ class drawer2 extends StatelessWidget {
     //backgroundColor: theme.backgroundColor;//
     return Drawer(
       child: Container(
-        color: theme.accentColor,
+        color: theme.backgroundColor,
         child: ListView(
           children: <Widget>[
             FlatButton(
@@ -82,7 +82,7 @@ class drawer2 extends StatelessWidget {
                   child: Container(
                     height: 48,
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      color: theme.splashColor,
                       borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(40.0),
                         topRight: Radius.circular(40.0),
@@ -95,7 +95,7 @@ class drawer2 extends StatelessWidget {
                   child: Container(
                     height: 40,
                     decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: theme.accentColor,
                       borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(40.0),
                         topRight: Radius.circular(40.0),
