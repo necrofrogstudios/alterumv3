@@ -75,35 +75,13 @@ class drawer2 extends StatelessWidget {
               ),
             ),
             Container(color: theme.splashColor, height: 4),
-            FlatButton(
-              color: theme.accentColor,
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              height: 60.0,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => profile()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Profile',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.green,
+                borderRadius: BorderRadius.only(
+                  bottomRight: Radius.circular(40.0),
+                  topRight: Radius.circular(40.0),
+                ),
               ),
             ),
             FlatButton(
