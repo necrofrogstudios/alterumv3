@@ -76,35 +76,9 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
             Container(color: theme.splashColor, height: 4),
             Container(
               height: MediaQuery.of(context).size.height * 0.6,
-              child: new TinderSwapCard(
-                swipeUp: true,
-                swipeDown: true,
-                orientation: AmassOrientation.BOTTOM,
-                totalNum: welcomeImages.length,
-                stackNum: 3,
-                swipeEdge: 4.0,
-                maxWidth: MediaQuery.of(context).size.width * 0.9,
-                maxHeight: MediaQuery.of(context).size.width * 0.9,
-                minWidth: MediaQuery.of(context).size.width * 0.8,
-                minHeight: MediaQuery.of(context).size.width * 0.8,
-                cardBuilder: (context, index) => Card(
-                  child: Image.asset('${welcomeImages[1]}'),
-                ),
-                cardController: controller = CardController(),
-                swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
-                  /// Get swiping card's alignment
-                  if (align.x < 0) {
-                    //Card is LEFT swiping
-                  } else if (align.x > 0) {
-                    //Card is RIGHT swiping
-                  }
-                },
-                swipeCompleteCallback: (CardSwipeOrientation orientation, int index) {
-                  /// Get orientation & index of swiped card!
-                },
-              ),
+              child: 
             ),
-            Container(color: theme.splashColor, height: 4, child: Text('${items[0]}')),
+            Container(color: theme.splashColor, height: 4, ),
             footer(),
           ],
         ),
