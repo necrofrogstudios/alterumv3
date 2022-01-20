@@ -11,7 +11,7 @@ import 'package:testing/messages/messages_main.dart';
 class drawer2 extends StatelessWidget {
   final back;
 
-  drawer(this.back);
+  drawer2(this.back);
 
   @override
   Widget build(BuildContext context) {
