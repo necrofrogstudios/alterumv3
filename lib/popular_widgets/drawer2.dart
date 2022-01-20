@@ -137,7 +137,7 @@ class drawer2 extends StatelessWidget {
                   children: [
                     Text(
                       'Guarded',
-                      style: TextStyle(color: theme.primaryColor),
+                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
                     ),
                   ],
                 ),
