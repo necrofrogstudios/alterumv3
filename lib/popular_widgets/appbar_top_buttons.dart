@@ -6,9 +6,8 @@ import 'package:testing/roleplays/create_roleplay.dart';
 class profile_top_buttons extends StatelessWidget {
   final List<String> items = [
     'Create Roleplay',
-    'Popular',
-    'Duo',
     'Browse Roleplays',
+    'Duo',
     'Members',
     'Blogs',
     'Polls',
