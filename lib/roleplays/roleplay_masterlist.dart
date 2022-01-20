@@ -67,7 +67,7 @@ class roleplay_masterlist extends StatelessWidget {
                       ),
                     ),
                     GridView.builder(
-                        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                           maxCrossAxisExtent: 200,
                           childAspectRatio: 3 / 2,
                           crossAxisSpacing: 5,
