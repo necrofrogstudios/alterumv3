@@ -15,13 +15,16 @@ import 'package:testing/roleplays/roleplay_character_list.dart';
 import 'package:testing/main_page/roleplay_list_layout.dart';
 
 final List<String> masterlist_name = const [
-  'Park Jimin'
+  'Park Jimin',
+  'Kim Jaejoong',
 ];
 final List<String> masterlist_image = const [
-  'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'
+  'https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1',
+  'https://th.bing.com/th/id/R.dc996d3363f9d6c81a8e97a9161bdaf9?rik=j7CrUsFBdr6TJg&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f35800000%2fJaejoong-jyj-35825544-1000-1000.jpg&ehk=VEqPqR5vLUsqFOXEOwtpAzo8v89Lc6WjI10vLQgPnOI%3d&risl=&pid=ImgRaw&r=0',
 ];
 final List<String> masterlist_points = const [
-  '100'
+  '100',
+  '100',
 ];
 
 class roleplay_masterlist extends StatelessWidget {
