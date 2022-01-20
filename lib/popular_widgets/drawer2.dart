@@ -151,6 +151,10 @@ class drawer2 extends StatelessWidget {
                         'Points: 3125',
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
+                      Text(
+                        'Pearls: 3',
+                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      ),
                     ],
                   ),
                 ],
