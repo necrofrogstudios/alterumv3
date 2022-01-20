@@ -131,6 +131,7 @@ class drawer2 extends StatelessWidget {
             ),
             Container(color: theme.splashColor, height: 4),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 drawer_flip_card(),
                 Column(
