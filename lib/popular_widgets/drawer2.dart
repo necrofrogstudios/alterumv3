@@ -75,15 +75,23 @@ class drawer2 extends StatelessWidget {
               ),
             ),
             Container(color: theme.splashColor, height: 4),
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.green,
-                borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular(40.0),
-                  topRight: Radius.circular(40.0),
-                ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(
+                0,
+                10,
+                50,
+                10,
               ),
-              child: Text('test'),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(40.0),
+                    topRight: Radius.circular(40.0),
+                  ),
+                ),
+                child: Text('test'),
+              ),
             ),
             FlatButton(
               color: theme.accentColor,
