@@ -101,34 +101,6 @@ class drawer2 extends StatelessWidget {
         color: theme.backgroundColor,
         child: ListView(
           children: <Widget>[
-            FlatButton(
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              color: myColor,
-              height: 60.0,
-              onPressed: () {
-                Navigator.pop(
-                  context,
-                  MaterialPageRoute(builder: (context) => back()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Back',
-                    style: TextStyle(fontSize: 20, color: theme.primaryColor),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(
-                      Icons.arrow_back,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
             GestureDetector(
               onTap: () {
                 Navigator.pop(
