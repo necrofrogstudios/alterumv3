@@ -10,7 +10,6 @@ class profile_top_buttons extends StatelessWidget {
     'Duo',
     'Members',
     'Blogs',
-    'Settings',
     'Polls',
     'Browse',
     'Shop',
