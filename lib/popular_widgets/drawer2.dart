@@ -129,7 +129,11 @@ class drawer2 extends StatelessWidget {
                 ],
               ),
             ),
-            Container(color: theme.splashColor, height: 4),
+            Stack(children: [
+              Container(
+                decoration: BoxDecoration(color: Colors.orange, shape: BoxShape.circle),
+              )
+            ]),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
               child: Row(
