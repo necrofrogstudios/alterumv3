@@ -239,6 +239,7 @@ class drawer_flip_card extends StatelessWidget {
                   ),
                 ),
                 height: 150,
+                width: 150,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(27.0),
                   child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
