@@ -143,7 +143,7 @@ class drawer2 extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                      padding: EdgeInsets.fromLTRB(2, 12, 0, 10),
                       child: Container(
                         height: 50,
                         width: 50,
