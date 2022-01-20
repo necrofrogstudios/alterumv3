@@ -140,7 +140,7 @@ class drawer2 extends StatelessWidget {
                         height: 54,
                         width: 54,
                         decoration: BoxDecoration(
-                          color: theme.accentColor,
+                          color: theme.splashColor,
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(40.0),
                             topLeft: Radius.circular(40.0),
