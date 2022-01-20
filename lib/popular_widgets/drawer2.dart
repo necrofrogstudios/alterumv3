@@ -166,7 +166,7 @@ class drawer2 extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
+              padding: EdgeInsets.fromLTRB(0, 17, 0, 17),
               child: drawer_flip_card(),
             ),
             ...drawerButtons,
