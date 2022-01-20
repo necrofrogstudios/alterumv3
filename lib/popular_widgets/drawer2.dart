@@ -58,9 +58,24 @@ class drawer2 extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
-              child: Text(
-                items[i],
-                style: TextStyle(color: theme.primaryColor, fontSize: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'items[i]',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.arrow_forward,
+                      color: theme.primaryColor,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
@@ -123,7 +138,6 @@ class drawer2 extends StatelessWidget {
                 ),
               ),
             ),
-            Container(color: theme.splashColor, height: 4),
             ...drawerButtons,
             FlatButton(
               color: theme.accentColor,
