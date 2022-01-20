@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:testing/popular_widgets/drawer.dart';
+import 'package:testing/popular_widgets/drawer2.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
 import 'package:testing/popular_widgets/footer.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
@@ -51,7 +51,7 @@ class profileState extends State<profile> {
         preferredSize: const Size.fromHeight(55),
         child: appbar_custom(),
       ),
-      drawer: drawer(currentScreen),
+      drawer: drawer2(currentScreen),
       body: SmartRefresher(
         enablePullDown: true,
         header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
