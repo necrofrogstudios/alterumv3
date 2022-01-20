@@ -163,6 +163,13 @@ class drawer2 extends StatelessWidget {
                                     color: theme.primaryColor,
                                   ),
                                 ),
+                                Text(
+                                  'Sign Out',
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    color: theme.primaryColor,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
