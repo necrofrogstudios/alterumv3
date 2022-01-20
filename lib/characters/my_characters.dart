@@ -19,6 +19,10 @@ class my_characters extends StatelessWidget {
   const my_characters();
   @override
   Widget build(BuildContext context) {
+    List<Widget> masterlist_characters = [];
+    for (int i = 0; i < masterlist_name.length; i++) {
+      masterlist_characters.add(masterlist_flipcard(masterlist_name[i], masterlist_image[i], masterlist_points[i]));
+    }
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
