@@ -123,10 +123,10 @@ class drawer2 extends StatelessWidget {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.pop(
-                      context,
-                      MaterialPageRoute(builder: (context) => back()),
-                    );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => navigation[i]),
+                          );
                         },
                         child: Stack(
                           children: [
@@ -162,7 +162,7 @@ class drawer2 extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    'Back',
+                                    '',
                                     style: TextStyle(
                                       fontSize: 20,
                                       color: theme.primaryColor,
@@ -183,7 +183,7 @@ class drawer2 extends StatelessWidget {
                       ),
                     ],
                   ),
-                
+                ),
               ],
             ),
             Padding(
