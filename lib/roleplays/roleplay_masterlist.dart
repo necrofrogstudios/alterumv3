@@ -27,7 +27,7 @@ class roleplay_masterlist extends StatelessWidget {
       '100'
     ];
     List<Widget> masterlist_characters = [];
-    for (int i = 0; i < masterlist_name.length; i++) {
+    for(int i = 0; i < masterlist_name.length; i++) {
       masterlist_characters.add(masterlist_flipcard(masterlist_name[i], masterlist_image[i], masterlist_points[i]));
     }
 
