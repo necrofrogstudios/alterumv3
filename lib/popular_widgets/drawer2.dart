@@ -119,6 +119,7 @@ class drawer2 extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                             child: Container(
                               height: 48,
+                              width: 164,
                               decoration: BoxDecoration(
                                 color: theme.splashColor,
                                 borderRadius: BorderRadius.only(
@@ -132,6 +133,7 @@ class drawer2 extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
                             child: Container(
                               height: 40,
+                              width: 160,
                               decoration: BoxDecoration(
                                 color: theme.accentColor,
                                 borderRadius: BorderRadius.only(
@@ -142,25 +144,10 @@ class drawer2 extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(10, 14, 0, 0),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                  child: Icon(
-                                    Icons.arrow_back,
-                                    color: theme.primaryColor,
-                                  ),
-                                ),
-                                Text(
-                                  'Back',
-                                  style: TextStyle(
-                                    fontSize: 20,
-                                    color: theme.primaryColor,
-                                  ),
-                                ),
-                              ],
+                            padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
+                            child: Icon(
+                              Icons.arrow_back,
+                              color: theme.primaryColor,
                             ),
                           ),
                         ],
