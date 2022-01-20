@@ -85,7 +85,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 swipeDown: true,
                 orientation: AmassOrientation.BOTTOM,
                 totalNum: welcomeImages.length,
-                stackNum: 3,
+                stackNum: 6,
                 swipeEdge: 4.0,
                 maxWidth: MediaQuery.of(context).size.width * 0.9,
                 maxHeight: MediaQuery.of(context).size.width * 0.9,
@@ -93,9 +93,7 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 minHeight: MediaQuery.of(context).size.width * 0.8,
                 cardBuilder: (context, index) => Card(
                   child: Image.asset('${welcomeImages[index]}'),
-                  
                 ),
-                print(index),
                 cardController: controller = CardController(),
                 swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
                   /// Get swiping card's alignment
