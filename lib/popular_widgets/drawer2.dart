@@ -81,8 +81,11 @@ class drawer2 extends StatelessWidget {
                 height: 40,
                 decoration: BoxDecoration(
                   color: Colors.green,
-                  border: Border.all(
-                    color: Colors.red[500],
+                  border: Border(
+                    top: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    left: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
+                    right: BorderSide(width: 1.0, color: Color(0xFF000000)),
+                    bottom: BorderSide(width: 1.0, color: Color(0xFF000000)),
                   ),
                   borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(40.0),
