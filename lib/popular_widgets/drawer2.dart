@@ -101,57 +101,65 @@ class drawer2 extends StatelessWidget {
         color: theme.backgroundColor,
         child: ListView(
           children: <Widget>[
-            GestureDetector(
-              onTap: () {
-                Navigator.pop(
-                  context,
-                  MaterialPageRoute(builder: (context) => back()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Stack(
+            Row(
+              children: [
+                Text(
+                  'Guarded',
+                  style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(
+                      context,
+                      MaterialPageRoute(builder: (context) => back()),
+                    );
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        child: Container(
-                          height: 48,
-                          width: 64,
-                          decoration: BoxDecoration(
-                            color: theme.splashColor,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(40.0),
-                              topLeft: Radius.circular(40.0),
+                      Stack(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                            child: Container(
+                              height: 48,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: theme.splashColor,
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(40.0),
+                                  topLeft: Radius.circular(40.0),
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
-                        child: Container(
-                          height: 40,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            color: theme.accentColor,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(40.0),
-                              topLeft: Radius.circular(40.0),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
+                            child: Container(
+                              height: 40,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                color: theme.accentColor,
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(40.0),
+                                  topLeft: Radius.circular(40.0),
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
-                        child: Icon(
-                          Icons.arrow_back,
-                          color: theme.primaryColor,
-                        ),
+                          Padding(
+                            padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
+                            child: Icon(
+                              Icons.arrow_back,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
