@@ -144,27 +144,6 @@ class drawer2 extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              color: theme.backgroundColor,
-              child: Align(
-                alignment: Alignment.center,
-                child: Padding(
-                  padding: EdgeInsets.only(
-                    top: 5,
-                    bottom: 10,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        'Guarded',
-                        style: TextStyle(fontSize: 25, color: theme.primaryColor),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
             ...drawerButtons,
             Stack(
               children: [
