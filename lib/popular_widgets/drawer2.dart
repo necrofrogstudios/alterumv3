@@ -142,6 +142,14 @@ class drawer2 extends StatelessWidget {
                         'Guarded',
                         style: TextStyle(color: theme.primaryColor, fontSize: 15),
                       ),
+                      Text(
+                        'Standard User',
+                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      ),
+                      Text(
+                        'Points: 3125',
+                        style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                      ),
                     ],
                   ),
                 ],
