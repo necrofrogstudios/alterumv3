@@ -102,119 +102,74 @@ class drawer2 extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Row(
-              children: [
-                GestureDetector(
-                  onTap: () {},
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(50, 10, 0, 0),
-                        child: Container(
-                          height: 48,
-                          decoration: BoxDecoration(
-                            color: theme.splashColor,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(40.0),
-                              topLeft: Radius.circular(40.0),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(54, 14, 0, 0),
-                        child: Container(
-                          height: 40,
-                          decoration: BoxDecoration(
-                            color: theme.accentColor,
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(40.0),
-                              topLeft: Radius.circular(40.0),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'back',
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: theme.primaryColor,
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Icon(
-                                Icons.arrow_forward,
-                                color: theme.primaryColor,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+              children: <Widget>[
+                Expanded(
+                  child: Center(
+                    child: Text(
+                      '',
+                      style: TextStyle(color: theme.primaryColor, fontSize: 30),
+                    ),
                   ),
                 ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pop(
+                
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(
                       context,
                       MaterialPageRoute(builder: (context) => back()),
                     );
-                  },
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
-                        child: Container(
-                          height: 48,
-                          decoration: BoxDecoration(
-                            color: theme.splashColor,
-                            borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(40.0),
-                              topRight: Radius.circular(40.0),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
-                        child: Container(
-                          height: 40,
-                          decoration: BoxDecoration(
-                            color: theme.accentColor,
-                            borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(40.0),
-                              topRight: Radius.circular(40.0),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        },
+                        child: Stack(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Icon(
-                                Icons.arrow_back,
-                                color: theme.primaryColor,
+                              padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
+                              child: Container(
+                                height: 48,
+                                decoration: BoxDecoration(
+                                  color: theme.splashColor,
+                                  borderRadius: BorderRadius.only(
+                                    bottomRight: Radius.circular(40.0),
+                                    topRight: Radius.circular(40.0),
+                                  ),
+                                ),
                               ),
                             ),
-                            Text(
-                              'Back',
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: theme.primaryColor,
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
+                              child: Container(
+                                height: 40,
+                                decoration: BoxDecoration(
+                                  color: theme.accentColor,
+                                  borderRadius: BorderRadius.only(
+                                    bottomRight: Radius.circular(40.0),
+                                    topRight: Radius.circular(40.0),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Back',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      color: theme.primaryColor,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Icon(
+                                      Icons.arrow_back,
+                                      color: theme.primaryColor,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
@@ -222,7 +177,7 @@ class drawer2 extends StatelessWidget {
                       ),
                     ],
                   ),
-                ),
+                
               ],
             ),
             Padding(
