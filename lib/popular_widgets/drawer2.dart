@@ -14,12 +14,14 @@ class drawer2 extends StatelessWidget {
     'Profile',
     'Roleplays',
     'Characters',
+    'Settings',
     'Messages',
   ];
   final List<Widget> navigation = [
     profile(),
     main_page(),
     my_characters(),
+    settings(),
     messages_main(),
   ];
   drawer2(this.back);
