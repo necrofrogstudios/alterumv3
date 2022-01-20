@@ -61,7 +61,9 @@ class my_characters extends StatelessWidget {
                       crossAxisSpacing: 5,
                       mainAxisSpacing: 5,
                       crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 2 : 3,
-                      children: <Widget>[],
+                      children: <Widget>[
+                        masterlist_flipcard()
+                      ],
                     ),
                   ],
                 ),
