@@ -102,7 +102,6 @@ class drawer2 extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Row(
-              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 GestureDetector(
                   onTap: () {},
