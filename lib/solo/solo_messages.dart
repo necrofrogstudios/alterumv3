@@ -93,7 +93,9 @@ class ExamplePageState extends State<ExamplePage> with TickerProviderStateMixin 
                 minHeight: MediaQuery.of(context).size.width * 0.8,
                 cardBuilder: (context, index) => Card(
                   child: Image.asset('${welcomeImages[index]}'),
+                  
                 ),
+                print(index),
                 cardController: controller = CardController(),
                 swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
                   /// Get swiping card's alignment
