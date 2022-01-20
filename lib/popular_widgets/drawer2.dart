@@ -62,7 +62,7 @@ class drawer2 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    'items[i]',
+                    items[i],
                     style: TextStyle(
                       fontSize: 20,
                       color: theme.primaryColor,
