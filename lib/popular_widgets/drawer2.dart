@@ -108,7 +108,7 @@ class drawer2 extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                   child: Text(
                     'Guarded',
-                    style: TextStyle(color: theme.primaryColor, fontSize: 20),
+                    style: TextStyle(color: theme.primaryColor, fontSize: 30),
                   ),
                 ),
                 GestureDetector(
