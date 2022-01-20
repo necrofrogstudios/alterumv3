@@ -75,25 +75,37 @@ class drawer2 extends StatelessWidget {
               ),
             ),
             Container(color: theme.splashColor, height: 4),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 10, 50, 10),
-              child: Container(
-                height: 40,
-                decoration: BoxDecoration(
-                  color: Colors.green,
-                  border: Border(
-                    top: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    left: BorderSide(width: 1.0, color: Color(0xFFFFFFFF)),
-                    right: BorderSide(width: 1.0, color: Color(0xFF000000)),
-                    bottom: BorderSide(width: 1.0, color: Color(0xFF000000)),
-                  ),
-                  borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(40.0),
-                    topRight: Radius.circular(40.0),
+            Stack(
+              children: [
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0, 10, 50, 10),
+                  child: Container(
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(40.0),
+                        topRight: Radius.circular(40.0),
+                      ),
+                    ),
+                    child: Text('test'),
                   ),
                 ),
-                child: Text('test'),
-              ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0, 10, 50, 10),
+                  child: Container(
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.only(
+                        bottomRight: Radius.circular(40.0),
+                        topRight: Radius.circular(40.0),
+                      ),
+                    ),
+                    child: Text('test'),
+                  ),
+                ),
+              ],
             ),
             FlatButton(
               color: theme.accentColor,
