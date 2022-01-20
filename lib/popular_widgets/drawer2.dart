@@ -10,6 +10,14 @@ import 'package:testing/messages/messages_main.dart';
 
 class drawer2 extends StatelessWidget {
   final back;
+  final List<String> items = [
+    'Profile',
+    'Roleplays',
+    'Characters',
+    'Messages',
+  ];
+
+  List<Widget> drawerButtons = [];
 
   drawer2(this.back);
 
@@ -18,6 +26,47 @@ class drawer2 extends StatelessWidget {
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
     //backgroundColor: theme.backgroundColor;//
+    for (int i = 0; i < items.length; i++) {
+      drawerButtons.add(
+        Stack(
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 10, 50, 10),
+              child: Container(
+                height: 48,
+                decoration: BoxDecoration(
+                  color: theme.splashColor,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(40.0),
+                    topRight: Radius.circular(40.0),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 14, 54, 10),
+              child: Container(
+                height: 40,
+                decoration: BoxDecoration(
+                  color: theme.accentColor,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(40.0),
+                    topRight: Radius.circular(40.0),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
+              child: Text(
+                items[i],
+                style: TextStyle(color: theme.primaryColor, fontSize: 20),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
     return Drawer(
       child: Container(
         color: theme.backgroundColor,
@@ -75,162 +124,7 @@ class drawer2 extends StatelessWidget {
               ),
             ),
             Container(color: theme.splashColor, height: 4),
-            Stack(
-              children: [
-                Padding(
-                  padding: EdgeInsets.fromLTRB(0, 10, 50, 10),
-                  child: Container(
-                    height: 48,
-                    decoration: BoxDecoration(
-                      color: theme.splashColor,
-                      borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(40.0),
-                        topRight: Radius.circular(40.0),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(0, 14, 54, 10),
-                  child: Container(
-                    height: 40,
-                    decoration: BoxDecoration(
-                      color: theme.accentColor,
-                      borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(40.0),
-                        topRight: Radius.circular(40.0),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
-                  child: Text(
-                    'Profile',
-                    style: TextStyle(color: theme.primaryColor, fontSize: 20),
-                  ),
-                ),
-              ],
-            ),
-            FlatButton(
-              color: theme.accentColor,
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              height: 60.0,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => main_page()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Roleplays',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            FlatButton(
-              color: theme.accentColor,
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              height: 60.0,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => my_characters()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Characters',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            FlatButton(
-              color: theme.accentColor,
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              height: 60.0,
-              onPressed: () {},
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Messages',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            FlatButton(
-              color: theme.accentColor,
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              height: 60.0,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => settings()),
-                );
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Settings',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Icon(
-                      Icons.arrow_forward,
-                      color: theme.primaryColor,
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            ...drawerButtons,
             FlatButton(
               color: theme.accentColor,
               splashColor: Colors.transparent,
