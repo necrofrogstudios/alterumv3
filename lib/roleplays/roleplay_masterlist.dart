@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 import 'package:testing/popular_widgets/drawer.dart';
 import 'package:testing/popular_widgets/appbar_dropdown_button.dart';
@@ -48,9 +49,34 @@ final List<String> masterlist_points = const [
   '300',
 ];
 
-class roleplay_masterlist extends StatelessWidget {
+class roleplay_masterlist extends StatefulWidget {
+  @override
+  roleplay_masterlistState createState() => roleplay_masterlistState();
+}
+
+class roleplay_masterlistState extends State<roleplay_masterlist> {
   final currentScreen = roleplay_masterlist;
-  const roleplay_masterlist();
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
+
+  List<String> items = [
+    "blep",
+  ];
+
+  void _onRefresh() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use refreshFailed()
+    _refreshController.refreshCompleted();
+  }
+
+  void _onLoading() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use loadFailed(),if no data return,use LoadNodata()
+    items.add((items.length + 1).toString());
+    if (mounted) setState(() {});
+    _refreshController.loadComplete();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +84,6 @@ class roleplay_masterlist extends StatelessWidget {
     for (int i = 0; i < masterlist_name.length; i++) {
       masterlist_characters.add(masterlist_flipcard(masterlist_name[i], masterlist_image[i], masterlist_points[i]));
     }
-
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
@@ -68,69 +93,64 @@ class roleplay_masterlist extends StatelessWidget {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        child: SingleChildScrollView(
-          physics: ScrollPhysics(),
-          child: Column(
-            children: <Widget>[
-              Container(color: theme.splashColor, height: 4),
-              profile_top_buttons(),
-              Container(color: theme.splashColor, height: 4),
-              Container(
-                color: theme.accentColor,
-                child: admin_marquee(),
-              ),
-              Container(color: theme.splashColor, height: 2),
-              Container(
-                color: theme.backgroundColor,
-                child: Column(
-                  children: [
-                    roleplay_navigation(),
-                    Text(
-                      'MASTERLIST',
-                      style: TextStyle(
-                        fontSize: 25,
-                        color: theme.primaryColor,
-                      ),
+      body: SmartRefresher(
+        enablePullDown: true,
+        header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
+        footer: CustomFooter(
+          builder: (BuildContext context, LoadStatus mode) {},
+        ),
+        controller: _refreshController,
+        onRefresh: _onRefresh,
+        onLoading: _onLoading,
+        child: ListView(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          padding: const EdgeInsets.all(0),
+          children: <Widget>[
+            Container(color: theme.splashColor, height: 4),
+            profile_top_buttons(),
+            Container(color: theme.splashColor, height: 4),
+            Container(
+              color: theme.backgroundColor,
+              child: Column(
+                children: [
+                  roleplay_navigation(),
+                  Text(
+                    'MASTERLIST',
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: theme.primaryColor,
                     ),
-                    GridView.count(
-                      physics: ScrollPhysics(),
-                      shrinkWrap: true,
-                      padding: const EdgeInsets.all(5),
-                      crossAxisSpacing: 5,
-                      mainAxisSpacing: 5,
-                      crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
-                      children: <Widget>[
-                        ...masterlist_characters,
-                      ],
-                    ),
-                  ],
-                ),
+                  ),
+                  GridView.count(
+                    physics: ScrollPhysics(),
+                    shrinkWrap: true,
+                    padding: const EdgeInsets.all(5),
+                    crossAxisSpacing: 5,
+                    mainAxisSpacing: 5,
+                    crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait ? 3 : 5,
+                    children: <Widget>[
+                      ...masterlist_characters,
+                    ],
+                  ),
+                ],
               ),
-              Container(
-                color: theme.backgroundColor,
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
-                  child: roleplay_request(),
-                ),
+            ),
+            Container(
+              color: theme.backgroundColor,
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
+                child: roleplay_request(),
               ),
-              Container(
-                color: theme.backgroundColor,
-              ),
-              Container(color: theme.splashColor, height: 4),
-              footer(),
-            ],
-          ),
+            ),
+            Container(
+              color: theme.backgroundColor,
+            ),
+            Container(color: theme.splashColor, height: 4),
+            footer(),
+          ],
         ),
       ),
     );
   }
 }
-/*class profile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-
-  }
-  }*/
