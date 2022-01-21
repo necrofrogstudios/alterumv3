@@ -76,7 +76,7 @@ class roleplay_rulesState extends State<roleplay_rules> {
               color: theme.accentColor,
               child: admin_marquee(),
             ),
-            Container(color: theme.splashColor, height: 4),
+            Container(color: theme.splashColor, height: 2),
             Container(
               color: theme.backgroundColor,
               child: Column(
