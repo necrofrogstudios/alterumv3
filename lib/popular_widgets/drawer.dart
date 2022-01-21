@@ -281,7 +281,7 @@ class drawer_flip_card extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  child: Text('points'),
+                  child: Text('Credits'),
                 ),
               ],
             ),
