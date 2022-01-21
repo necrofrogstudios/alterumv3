@@ -279,43 +279,9 @@ class drawer_flip_card extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.person_add,
-                      size: 40,
-                      color: theme.primaryColor,
-                    ),
-                    IconButton(
-                      icon: Icon(
-                        Icons.email,
-                      ),
-                      iconSize: 40,
-                      color: theme.primaryColor,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => messages_main()),
-                        );
-                      },
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(
-                      Icons.group_add,
-                      size: 47,
-                      color: theme.primaryColor,
-                    ),
-                    Icon(
-                      Icons.block,
-                      size: 40,
-                      color: theme.primaryColor,
-                    ),
-                  ],
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Text('points'),
                 ),
               ],
             ),
