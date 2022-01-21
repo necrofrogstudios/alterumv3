@@ -109,7 +109,7 @@ class roleplay_masterlistState extends State<roleplay_masterlist> {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
-            Container(color: theme.splashColor, height: 4),
+            Container(color: theme.splashColor, height: 2),
             Container(
               color: theme.backgroundColor,
               child: Column(
