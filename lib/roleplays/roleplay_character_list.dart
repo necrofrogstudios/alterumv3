@@ -43,7 +43,7 @@ class masterlist_flipcard extends StatelessWidget {
                         alignment: Alignment.bottomCenter,
                         child: FractionallySizedBox(
                           widthFactor: 1,
-                          heightFactor: 0.1,
+                          heightFactor: 0.15,
                           child: Container(
                             decoration: BoxDecoration(
                               color: theme.accentColor,
