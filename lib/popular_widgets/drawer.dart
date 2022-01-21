@@ -98,8 +98,8 @@ class drawer extends StatelessWidget {
     }
     return ClipRRect(
       borderRadius: BorderRadius.only(
-        topRight: Radius.circular(280),
-        bottomRight: Radius.circular(280),
+        topRight: Radius.circular(250),
+        bottomRight: Radius.circular(250),
       ),
       child: Drawer(
         child: Container(
