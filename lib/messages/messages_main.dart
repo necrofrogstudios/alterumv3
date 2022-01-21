@@ -65,10 +65,53 @@ class messages_mainState extends State<messages_main> {
           children: <Widget>[
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
-            Container(color: theme.splashColor, height: 4),
+            Container(color: theme.splashColor, height: 2),
+            roleplay_navigation(),
             Text(
-              'blep',
+              'Park Jimin',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 25,
+                color: theme.primaryColor,
+              ),
             ),
+            Card(
+              shape: RoundedRectangleBorder(
+                side: BorderSide(color: theme.splashColor, width: 4),
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(30.0),
+                child: FittedBox(
+                  child: Image.network('https://th.bing.com/th/id/OIP.-o2GCLO_A2unfT5yubh7HwHaHa?pid=ImgDet&rs=1'),
+                ),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                IconButton(
+                  icon: Icon(Icons.add_alert, color: theme.primaryColor),
+                  iconSize: 30,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.email, color: theme.primaryColor),
+                  iconSize: 30,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.report_problem, color: theme.primaryColor),
+                  iconSize: 30,
+                  onPressed: () {},
+                ),
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(10, 3, 10, 5),
+              child: character_profile(),
+            ),
+            Container(height: 400, color: theme.backgroundColor),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],

@@ -10,9 +10,35 @@ import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/roleplays/roleplay_navigation.dart';
 import 'package:testing/roleplays/character_profile.dart';
 
-class roleplay_character extends StatelessWidget {
+class roleplay_character extends StatefulWidget {
+  @override
+  roleplay_characterState createState() => roleplay_characterState();
+}
+
+class roleplay_characterState extends State<roleplay_character> {
   final currentScreen = roleplay_character;
-  ScrollController controller = ScrollController();
+  RefreshController _refreshController = RefreshController(initialRefresh: false);
+
+  List<String> items = [
+    "blep",
+  ];
+
+  void _onRefresh() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use refreshFailed()
+    _refreshController.refreshCompleted();
+  }
+
+  void _onLoading() async {
+    // monitor network fetch
+    await Future.delayed(Duration(milliseconds: 1000));
+    // if failed,use loadFailed(),if no data return,use LoadNodata()
+    items.add((items.length + 1).toString());
+    if (mounted) setState(() {});
+    _refreshController.loadComplete();
+  }
+
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
@@ -24,10 +50,17 @@ class roleplay_character extends StatelessWidget {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: Container(
-        color: theme.backgroundColor,
+      body: SmartRefresher(
+        enablePullDown: true,
+        header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
+        footer: CustomFooter(
+          builder: (BuildContext context, LoadStatus mode) {},
+        ),
+        controller: _refreshController,
+        onRefresh: _onRefresh,
+        onLoading: _onLoading,
         child: ListView(
-          controller: controller,
+          scrollDirection: Axis.vertical,
           shrinkWrap: true,
           padding: const EdgeInsets.all(0),
           children: <Widget>[
@@ -80,7 +113,6 @@ class roleplay_character extends StatelessWidget {
               child: character_profile(),
             ),
             Container(height: 400, color: theme.backgroundColor),
-            Container(color: theme.splashColor, height: 4),
             Container(color: theme.splashColor, height: 4),
             footer(),
           ],
