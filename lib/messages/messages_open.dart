@@ -160,7 +160,7 @@ class partner_messages extends StatelessWidget {
                   color: theme.accentColor,
                   borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(35.0),
-                    topRight: Radius.circular(38.0),
+                    topRight: Radius.circular(35.0),
                   ),
                 ),
                 child: Padding(
