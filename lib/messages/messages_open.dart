@@ -81,6 +81,7 @@ class messages_openState extends State<messages_open> {
                 ),
                 partner_messages(),
                 my_messages(),
+                partner_messages(),
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
                   child: Container(),
@@ -170,8 +171,7 @@ class partner_messages extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width / 1.2,
                         child: SelectableText(
-                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep \n'
-                          'test blep',
+                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
                           style: TextStyle(
                             fontSize: 20,
                             color: theme.primaryColor,
@@ -219,15 +219,14 @@ class my_messages extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(20, 10, 0, 10),
+                  padding: EdgeInsets.fromLTRB(20, 10, 5, 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         width: MediaQuery.of(context).size.width / 1.2,
                         child: SelectableText(
-                          'listen i am try ing to t e s t t hi is dfa df f df as dfa sdf as df fd fasdi fadsf \n'
-                          'test blep',
+                          'listen i am trying to make sure this works so blep. get blept. you already know. periodt',
                           style: TextStyle(
                             fontSize: 20,
                             color: theme.primaryColor,
