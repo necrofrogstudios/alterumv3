@@ -104,7 +104,7 @@ class messages_mainState extends State<messages_main> {
                                           padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
                                           child: CircleAvatar(
                                             radius: 20,
-                                            backgroundImage: NetworkImage(comment.profilePhoto),
+                                            backgroundImage: NetworkImage('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
                                           ),
                                         ),
                                         Column(
