@@ -153,7 +153,7 @@ class messages_mainState extends State<messages_main> {
                     ),
                   ),
                   background_test(),
-                  Container(height: constraints.maxHeight),
+                  Container(height: constraints.maxHeight)
                 ],
               ),
             ),
