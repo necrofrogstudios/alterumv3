@@ -198,7 +198,7 @@ class my_messages extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Padding(
-          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
           child: Container(
             width: MediaQuery.of(context).size.width / 1.1,
             decoration: BoxDecoration(
@@ -219,7 +219,7 @@ class my_messages extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
+                  padding: EdgeInsets.fromLTRB(20, 10, 0, 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
