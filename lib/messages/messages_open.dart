@@ -169,12 +169,15 @@ class partner_messages extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SelectableText(
-                'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
-                'test blep',
-                style: TextStyle(
-                  fontSize: 20,
-                  color: theme.primaryColor,
+              Container(
+                width: MediaQuery.of(context).size.width / 1.5,
+                child: SelectableText(
+                  'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
+                  'test blep',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: theme.primaryColor,
+                  ),
                 ),
               ),
             ],
