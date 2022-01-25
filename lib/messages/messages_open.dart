@@ -170,16 +170,10 @@ class partner_messages extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'blep',
+                'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
+                'test blep',
                 style: TextStyle(
                   fontSize: 20,
-                  color: theme.primaryColor,
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Icon(
-                  Icons.arrow_forward,
                   color: theme.primaryColor,
                 ),
               ),
