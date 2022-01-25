@@ -169,10 +169,9 @@ class partner_messages extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                '''blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
-                'test blep''',
-                maxLines: 20,
+              SelectableText(
+                'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
+                'test blep',
                 style: TextStyle(
                   fontSize: 20,
                   color: theme.primaryColor,
