@@ -163,23 +163,7 @@ class messages_openState extends State<messages_open> {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 2, // this will be set when a new tab is tapped
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.send),
-            title: TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: 'Enter a search term',
-              ),
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.send),
-          ),
-        ],
-      ),
+      bottomNavigationBar: Container(height: 30, color: theme.splashColor),
     );
   }
 }
