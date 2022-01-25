@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:testing/sign_in/sign_in.dart';
 import 'package:testing/popular_widgets/on_boarding_page.dart';
+import 'package:testing/messages/messages_main.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -25,7 +26,7 @@ class _Splash extends State<Splash> {
             height: logicHeight,
             child: new SplashScreen(
                 seconds: 1,
-                navigateAfterSeconds: sign_in(),
+                navigateAfterSeconds: messages_main(),
                 title: new Text(
                   'Alterum',
                   style: new TextStyle(fontWeight: FontWeight.bold, fontFamily: 'Hind', fontSize: 85.0, color: Colors.white),
