@@ -173,17 +173,17 @@ class partner_messages extends StatelessWidget {
                           child: Row(
                             children: [
                               SelectableText(
-                                'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
+                                'basketcase101',
                                 style: TextStyle(
                                   fontSize: 15,
                                   color: theme.primaryColor,
                                 ),
                               ),
                               SelectableText(
-                                'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
+                                '01/25/2022 - 12:40 AM',
                                 style: TextStyle(
                                   fontSize: 15,
-                                  color: theme.primaryColor,
+                                  color: theme.primaryColor.withOpacity(0.45),
                                 ),
                               ),
                             ],
