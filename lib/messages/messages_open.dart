@@ -170,7 +170,7 @@ class partner_messages extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
                         child: Container(
-                          child: Row(
+                          child: Column(
                             children: [
                               SelectableText(
                                 'basketcase101',
