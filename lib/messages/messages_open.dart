@@ -169,13 +169,6 @@ class partner_messages extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      SelectableText(
-                        'basketcase101',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: theme.primaryColor,
-                        ),
-                      ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
                         child: Container(
