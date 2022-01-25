@@ -70,96 +70,88 @@ class messages_mainState extends State<messages_main> {
               padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
               child: Column(
                 children: <Widget>[
-                  Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
-                        border: Border.all(
-                          color: theme.splashColor,
-                          width: 4,
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
+                    child: Container(
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                          side: BorderSide(
+                            color: theme.splashColor,
+                            width: 4.0,
+                          ),
+                          borderRadius: BorderRadius.circular(
+                            30.0,
+                          ),
                         ),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
-                        child: Container(
-                          child: Card(
-                            shape: RoundedRectangleBorder(
-                              side: BorderSide(
-                                color: theme.splashColor,
-                                width: 4.0,
-                              ),
-                              borderRadius: BorderRadius.circular(
-                                30.0,
-                              ),
-                            ),
-                            color: theme.accentColor,
-                            child: Column(
+                        color: theme.accentColor,
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.start,
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+                                      child: CircleAvatar(
+                                        radius: 5,
+                                        backgroundImage: NetworkImage('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                                      ),
+                                    ),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Padding(
-                                          padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
-                                          child: CircleAvatar(
-                                            radius: 20,
-                                            backgroundImage: NetworkImage('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                                          padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
+                                          child: Text(
+                                            'Guarded',
+                                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
                                           ),
                                         ),
-                                        Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
-                                              child: Text(
-                                                'Guarded',
-                                                style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                                              ),
-                                            ),
-                                            Padding(
-                                              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
-                                              child: Text(
-                                                'blep',
-                                                style: TextStyle(fontSize: 15, color: theme.primaryColor.withOpacity(0.45)),
-                                              ),
-                                            ),
-                                          ],
+                                        Padding(
+                                          padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                          child: Text(
+                                            'blep',
+                                            style: TextStyle(fontSize: 15, color: theme.primaryColor.withOpacity(0.45)),
+                                          ),
                                         ),
                                       ],
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
-                                      child: IconButton(
-                                        splashColor: Colors.transparent,
-                                        highlightColor: Colors.transparent,
-                                        hoverColor: Colors.transparent,
-                                        iconSize: 15,
-                                        icon: Icon(Icons.close, color: theme.primaryColor),
-                                      ),
                                     ),
                                   ],
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.fromLTRB(20, 5, 10, 20),
-                                  child: Column(
-                                    children: <Widget>[
-                                      Align(
-                                        alignment: Alignment.centerLeft,
-                                        child: SelectableText(
-                                          'bleh',
-                                          textAlign: TextAlign.left,
-                                          style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                                        ),
-                                      ),
-                                    ],
+                                  padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                  child: IconButton(
+                                    splashColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    iconSize: 15,
+                                    icon: Icon(Icons.close, color: theme.primaryColor),
                                   ),
                                 ),
                               ],
                             ),
-                          ),
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(20, 5, 10, 20),
+                              child: Column(
+                                children: <Widget>[
+                                  Align(
+                                    alignment: Alignment.centerLeft,
+                                    child: SelectableText(
+                                      'bleh',
+                                      textAlign: TextAlign.left,
+                                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
-                      )),
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
