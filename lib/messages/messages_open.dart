@@ -169,6 +169,7 @@ class messages_openState extends State<messages_open> {
         child: Padding(
           padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
                 width: MediaQuery.of(context).size.width / 1.3,
@@ -193,7 +194,10 @@ class messages_openState extends State<messages_open> {
                   ),
                 ),
               ),
-              Icon(Icons.send),
+              Icon(
+                Icons.send,
+                size: 30,
+              ),
             ],
           ),
         ),
