@@ -173,9 +173,23 @@ class messages_openState extends State<messages_open> {
               Container(
                 width: MediaQuery.of(context).size.width / 1.3,
                 child: TextField(
+                  style: TextStyle(color: Colors.black),
+                  keyboardType: TextInputType.multiline,
+                  maxLines: 1,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    hintText: 'Enter a search term',
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                      borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                      borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+                    ),
+                    hintText: 'Enter Roleplay Name',
+                    hintStyle: TextStyle(
+                      color: Colors.black.withOpacity(0.75),
+                    ),
+                    contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
                   ),
                 ),
               ),
