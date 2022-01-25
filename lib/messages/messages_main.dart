@@ -67,15 +67,16 @@ class messages_mainState extends State<messages_main> {
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
               child: Column(
                 children: <Widget>[
                   Container(
-                    decoration: const BoxDecoration(
-                      border: Border(
-                        side: BorderSide(width: 1.0, color: Color(0xFFDFDFDF)),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(
+                        color: theme.splashColor,
+                        width: 4,
                       ),
-                      color: Color(0xFFBFBFBF),
                     ),
                     child: Text('test'),
                   ),
