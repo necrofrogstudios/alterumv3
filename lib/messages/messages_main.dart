@@ -120,7 +120,7 @@ class messages_mainState extends State<messages_main> {
                                             Padding(
                                               padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                                               child: Text(
-                                                comment.date,
+                                                'blep',
                                                 style: TextStyle(fontSize: 15, color: theme.primaryColor.withOpacity(0.45)),
                                               ),
                                             ),
