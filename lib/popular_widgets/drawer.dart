@@ -102,7 +102,12 @@ class drawer extends StatelessWidget {
       clipper: OvalRightBorderClipper(),
       child: Drawer(
         child: Container(
-          color: theme.backgroundColor,
+          decoration: BoxDecoration(
+            border: Border(
+              right: BorderSide(width: 16.0, color: Colors.lightBlue.shade600),
+            ),
+            color: theme.backgroundColor,
+          ),
           child: ListView(
             children: <Widget>[
               Row(
