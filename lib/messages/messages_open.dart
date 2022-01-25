@@ -255,7 +255,7 @@ class my_messages extends StatelessWidget {
                         padding: EdgeInsets.fromLTRB(10, 3, 10, 0),
                         child: Container(
                           child: SelectableText(
-                            'basketcase101',
+                            'Guarded',
                             style: TextStyle(
                               fontSize: 20,
                               color: theme.primaryColor,
