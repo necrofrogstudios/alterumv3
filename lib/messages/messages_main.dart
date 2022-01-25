@@ -176,14 +176,14 @@ class background_test extends StatelessWidget {
         child: Card(
           shape: RoundedRectangleBorder(
             side: BorderSide(
-              color: theme.backgroundColor,
+              color: theme.splashColor,
               width: 4.0,
             ),
             borderRadius: BorderRadius.circular(
               20.0,
             ),
           ),
-          color: theme.accentColor,
+          color: theme.backgroundColor,
           child: Column(
             children: [
               Row(
