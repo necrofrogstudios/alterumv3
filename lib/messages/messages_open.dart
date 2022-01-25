@@ -164,7 +164,7 @@ class messages_openState extends State<messages_open> {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 60,
+        height: 70,
         color: theme.accentColor,
         child: Padding(
           padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
