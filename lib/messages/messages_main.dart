@@ -39,7 +39,7 @@ class messages_mainState extends State<messages_main> {
   }
 
   @override
-  Widget build(BuildContext context, BoxConstraints constraint) {
+  Widget build(BuildContext context) {
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
@@ -153,7 +153,9 @@ class messages_mainState extends State<messages_main> {
                     ),
                   ),
                   background_test(),
-                  Container(height: constraints.maxHeight)
+                  Container(
+                    height: MediaQuery.of(context).size.height / 1,
+                  )
                 ],
               ),
             ),
