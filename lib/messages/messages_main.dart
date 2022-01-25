@@ -152,7 +152,7 @@ class messages_mainState extends State<messages_main> {
                       ),
                     ),
                   ),
-                  background_test(),
+                  //background_test(),
                   Container(
                     height: MediaQuery.of(context).size.height / 2,
                   )
