@@ -226,7 +226,7 @@ class my_messages extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width / 1.2,
                         child: SelectableText(
-                          'listen i am try ing to t e s t t hi is dfa df f df as dfa sdf as df fd fasd fadsf \n'
+                          'listen i am try ing to t e s t t hi is dfa df f df as dfa sdf as df fd fasdi fadsf \n'
                           'test blep',
                           style: TextStyle(
                             fontSize: 20,
