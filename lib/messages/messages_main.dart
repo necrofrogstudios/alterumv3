@@ -127,7 +127,7 @@ class messages_mainState extends State<messages_main> {
                                         Padding(
                                           padding: EdgeInsets.fromLTRB(10, 5, 0, 10),
                                           child: Text(
-                                            'blep',
+                                            '01/25/2022 - 12:40 AM',
                                             style: TextStyle(fontSize: 15, color: theme.primaryColor.withOpacity(0.45)),
                                           ),
                                         ),
@@ -218,7 +218,7 @@ class background_test extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.fromLTRB(10, 5, 0, 10),
                             child: Text(
-                              'blep',
+                              '01/25/2022 - 12:40 AM',
                               style: TextStyle(fontSize: 15, color: theme.primaryColor.withOpacity(0.45)),
                             ),
                           ),
