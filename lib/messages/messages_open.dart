@@ -169,7 +169,63 @@ class partner_messages extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width / 1.2,
                         child: SelectableText(
-                          'i thought we was testing but omg look t t t t t t t t t t t t tt t   t t t t t \n'
+                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep \n'
+                          'test blep',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: theme.primaryColor,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class my_messages extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var theme = Theme.of(context);
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        Padding(
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          child: Container(
+            width: MediaQuery.of(context).size.width / 1.1,
+            decoration: BoxDecoration(
+              color: theme.splashColor,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(40.0),
+                topLeft: Radius.circular(40.0),
+              ),
+            ),
+            child: Padding(
+              padding: EdgeInsets.fromLTRB(4, 4, 0, 4),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: theme.accentColor,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(40.0),
+                    topLeft: Radius.circular(40.0),
+                  ),
+                ),
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context).size.width / 1.2,
+                        child: SelectableText(
+                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep \n'
                           'test blep',
                           style: TextStyle(
                             fontSize: 20,
