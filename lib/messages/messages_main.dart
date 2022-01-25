@@ -136,21 +136,6 @@ class messages_mainState extends State<messages_main> {
                                 ),
                               ],
                             ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(20, 5, 10, 20),
-                              child: Column(
-                                children: <Widget>[
-                                  Align(
-                                    alignment: Alignment.centerLeft,
-                                    child: SelectableText(
-                                      'bleh',
-                                      textAlign: TextAlign.left,
-                                      style: TextStyle(color: theme.primaryColor, fontSize: 15),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
                           ],
                         ),
                       ),
