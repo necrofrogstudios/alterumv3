@@ -98,7 +98,7 @@ class messages_mainState extends State<messages_main> {
                                         height: 50,
                                         width: 50,
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(26.0),
+                                          borderRadius: BorderRadius.circular(2.0),
                                           child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
                                         ),
                                       ),
