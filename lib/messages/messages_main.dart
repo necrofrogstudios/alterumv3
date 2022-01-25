@@ -72,6 +72,16 @@ class messages_mainState extends State<messages_main> {
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
+                    child: Text(
+                      'Messages',
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: them.primaryColor,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
                     child: Container(
                       child: Card(
                         shape: RoundedRectangleBorder(
