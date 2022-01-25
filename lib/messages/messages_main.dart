@@ -39,7 +39,7 @@ class messages_mainState extends State<messages_main> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, BoxConstraints constraint) {
     var theme = Theme.of(context);
     Color myColor = Theme.of(context).accentColor;
 
