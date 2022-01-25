@@ -241,22 +241,49 @@ class my_messages extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: theme.accentColor,
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(40.0),
-                    topLeft: Radius.circular(40.0),
+                    bottomLeft: Radius.circular(35.0),
+                    topLeft: Radius.circular(35.0),
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(20, 10, 3, 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width / 1.2,
-                        child: SelectableText(
-                          'listen i am trying to make sure this works so blep. get blept. you already know. periodt',
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: theme.primaryColor,
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(10, 3, 10, 0),
+                        child: Container(
+                          child: SelectableText(
+                            'basketcase101',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(10, 0, 10, 3),
+                        child: Container(
+                          child: SelectableText(
+                            '01/25/2022 - 12:40 AM',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: theme.primaryColor.withOpacity(0.45),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+                        child: Container(
+                          child: SelectableText(
+                            'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: theme.primaryColor,
+                            ),
                           ),
                         ),
                       ),
