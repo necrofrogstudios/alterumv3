@@ -125,7 +125,7 @@ class messages_mainState extends State<messages_main> {
                                   ],
                                 ),
                                 Padding(
-                                  padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                  padding: EdgeInsets.fromLTRB(0, 5, 10, 0),
                                   child: IconButton(
                                     splashColor: Colors.transparent,
                                     highlightColor: Colors.transparent,
