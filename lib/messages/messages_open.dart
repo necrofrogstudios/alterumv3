@@ -193,6 +193,7 @@ class messages_openState extends State<messages_open> {
                   ),
                 ),
               ),
+              Icon(Icons.send),
             ],
           ),
         ),
