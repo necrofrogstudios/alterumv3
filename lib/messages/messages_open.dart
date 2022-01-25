@@ -248,8 +248,8 @@ class my_messages extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
                         padding: EdgeInsets.fromLTRB(10, 3, 10, 0),
