@@ -187,7 +187,7 @@ class messages_openState extends State<messages_open> {
                     ),
                     hintText: 'Enter Roleplay Name',
                     hintStyle: TextStyle(
-                      color: Colors.black.withOpacity(0.75),
+                      color: Colors.black.withOpacity(0.55),
                     ),
                     contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
                   ),
