@@ -45,6 +45,7 @@ dependencies:
   gestures: ^1.0.0
   introduction_screen: ^2.1.0
   swipeable_card: ^1.0.2
+  flutter_custom_clippers: ^2.0.0
     
 
 dev_dependencies:
