@@ -167,7 +167,7 @@ class messages_openState extends State<messages_open> {
         currentIndex: 2, // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
-            icon: null,
+            icon: Icon(Icons.send),
             title: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
