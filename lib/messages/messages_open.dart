@@ -166,7 +166,7 @@ class partner_messages extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width / 1.3,
+                        width: MediaQuery.of(context).size.width / 1.2,
                         child: SelectableText(
                           'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
                           'test blep',
