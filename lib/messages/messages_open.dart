@@ -152,14 +152,9 @@ class messages_openState extends State<messages_open> {
                       ),
                     ),
                   ),
-                  Container(
-                    height: MediaQuery.of(context).size.height / 1.5,
-                  )
                 ],
               ),
             ),
-            Container(color: theme.splashColor, height: 4),
-            footer(),
           ],
         ),
       ),
