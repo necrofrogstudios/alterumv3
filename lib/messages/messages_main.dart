@@ -80,7 +80,7 @@ class messages_mainState extends State<messages_main> {
                             width: 4.0,
                           ),
                           borderRadius: BorderRadius.circular(
-                            30.0,
+                            20.0,
                           ),
                         ),
                         color: theme.accentColor,
@@ -93,7 +93,7 @@ class messages_mainState extends State<messages_main> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.fromLTRB(20, 20, 0, 20),
+                                      padding: const EdgeInsets.fromLTRB(20, 10, 0, 10),
                                       child: Container(
                                         height: 50,
                                         width: 50,
