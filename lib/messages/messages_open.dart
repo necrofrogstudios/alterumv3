@@ -149,35 +149,35 @@ class partner_messages extends StatelessWidget {
                 topRight: Radius.circular(40.0),
               ),
             ),
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
-          child: Container(
-            decoration: BoxDecoration(
-              color: theme.accentColor,
-              borderRadius: BorderRadius.only(
-                bottomRight: Radius.circular(40.0),
-                topRight: Radius.circular(40.0),
-              ),
-            ),
             child: Padding(
-              padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width / 1.5,
-                    child: SelectableText(
-                      'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
-                      'test blep',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: theme.primaryColor,
-                      ),
-                    ),
+              padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: theme.accentColor,
+                  borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(40.0),
+                    topRight: Radius.circular(40.0),
                   ),
-                ],
+                ),
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context).size.width / 1.5,
+                        child: SelectableText(
+                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
+                          'test blep',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: theme.primaryColor,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
