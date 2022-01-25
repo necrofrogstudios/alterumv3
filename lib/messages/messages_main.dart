@@ -93,7 +93,7 @@ class messages_mainState extends State<messages_main> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+                                      padding: const EdgeInsets.fromLTRB(20, 20, 0, 20),
                                       child: Container(
                                         height: 50,
                                         width: 50,
