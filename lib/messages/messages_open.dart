@@ -280,6 +280,7 @@ class my_messages extends StatelessWidget {
                         child: Container(
                           child: SelectableText(
                             'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
+                            textAlign: TextAlign.right,
                             style: TextStyle(
                               fontSize: 15,
                               color: theme.primaryColor,
