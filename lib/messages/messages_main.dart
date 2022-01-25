@@ -66,8 +66,11 @@ class messages_mainState extends State<messages_main> {
             Container(color: theme.splashColor, height: 4),
             profile_top_buttons(),
             Container(color: theme.splashColor, height: 4),
-            Text(
-              'blep',
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+              child: Column(
+                children: <Widget>[],
+              ),
             ),
             Container(color: theme.splashColor, height: 4),
             footer(),
