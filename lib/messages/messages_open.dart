@@ -150,7 +150,7 @@ class partner_messages extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
+              padding: EdgeInsets.fromLTRB(0, 4, 54, 4),
               child: Container(
                 decoration: BoxDecoration(
                   color: theme.accentColor,
