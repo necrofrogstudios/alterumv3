@@ -71,17 +71,17 @@ class messages_mainState extends State<messages_main> {
               child: Column(
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
+                    padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
                     child: Text(
                       'Messages',
                       style: TextStyle(
                         fontSize: 30,
-                        color: them.primaryColor,
+                        color: theme.primaryColor,
                       ),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                     child: Container(
                       child: Card(
                         shape: RoundedRectangleBorder(
