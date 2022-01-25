@@ -151,7 +151,8 @@ class messages_mainState extends State<messages_main> {
                         ),
                       ),
                     ),
-                  )
+                  ),
+                  SizedBox(height: 300),
                 ],
               ),
             ),
