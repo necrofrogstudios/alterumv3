@@ -71,15 +71,95 @@ class messages_mainState extends State<messages_main> {
               child: Column(
                 children: <Widget>[
                   Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      border: Border.all(
-                        color: theme.splashColor,
-                        width: 4,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        border: Border.all(
+                          color: theme.splashColor,
+                          width: 4,
+                        ),
                       ),
-                    ),
-                    child: Text('test'),
-                  ),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(0, 0, 0, 1),
+                        child: Container(
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                color: theme.splashColor,
+                                width: 4.0,
+                              ),
+                              borderRadius: BorderRadius.circular(
+                                30.0,
+                              ),
+                            ),
+                            color: theme.accentColor,
+                            child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
+                                          child: CircleAvatar(
+                                            radius: 20,
+                                            backgroundImage: NetworkImage(comment.profilePhoto),
+                                          ),
+                                        ),
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Padding(
+                                              padding: EdgeInsets.fromLTRB(10, 20, 0, 0),
+                                              child: Text(
+                                                'Guarded',
+                                                style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                              child: Text(
+                                                comment.date,
+                                                style: TextStyle(fontSize: 15, color: theme.primaryColor.withOpacity(0.45)),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.fromLTRB(0, 10, 10, 0),
+                                      child: IconButton(
+                                        splashColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        iconSize: 15,
+                                        icon: Icon(Icons.close, color: theme.primaryColor),
+                                        onPressed: () => removeComment(commentList.indexOf(comment), comment),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Padding(
+                                    padding: const EdgeInsets.fromLTRB(20, 5, 10, 20),
+                                    child: Column(
+                                      children: <Widget>[
+                                        Align(
+                                          alignment: Alignment.centerLeft,
+                                          child: SelectableText(
+                                            comment.bodyText,
+                                            textAlign: TextAlign.left,
+                                            style: TextStyle(color: theme.primaryColor, fontSize: 15),
+                                          ),
+                                        ),
+                                      ],
+                                    ))
+                              ],
+                            ),
+                          ),
+                        ),
+                      )),
                 ],
               ),
             ),
