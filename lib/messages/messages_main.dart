@@ -136,7 +136,6 @@ class messages_mainState extends State<messages_main> {
                                         hoverColor: Colors.transparent,
                                         iconSize: 15,
                                         icon: Icon(Icons.close, color: theme.primaryColor),
-                                        onPressed: () => removeComment(commentList.indexOf(comment), comment),
                                       ),
                                     ),
                                   ],
