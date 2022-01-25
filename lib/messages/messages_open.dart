@@ -168,7 +168,6 @@ class partner_messages extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width / 1.2,
                         child: SelectableText(
                           'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
                           style: TextStyle(
