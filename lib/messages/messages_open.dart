@@ -170,27 +170,26 @@ class partner_messages extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsets.fromLTRB(10, 5, 0, 10),
+                        padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                         child: Container(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              SelectableText(
-                                'basketcase101',
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  color: theme.primaryColor,
-                                ),
-                              ),
-                              SelectableText(
-                                '01/25/2022 - 12:40 AM',
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  color: theme.primaryColor.withOpacity(0.45),
-                                ),
-                              ),
-                            ],
+                          child: SelectableText(
+                            'basketcase101',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                        child: Container(
+                          child: SelectableText(
+                            '01/25/2022 - 12:40 AM',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: theme.primaryColor.withOpacity(0.45),
+                            ),
                           ),
                         ),
                       ),
