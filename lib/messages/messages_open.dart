@@ -170,10 +170,13 @@ class messages_openState extends State<messages_open> {
           padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
           child: Row(
             children: <Widget>[
-              TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: 'Enter a search term',
+              Container(
+                width: MediaQuery.of(context).size.width / 1,
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Enter a search term',
+                  ),
                 ),
               ),
             ],
