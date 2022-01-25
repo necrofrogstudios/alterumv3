@@ -71,7 +71,7 @@ class messages_mainState extends State<messages_main> {
               child: Column(
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
                     child: Text(
                       'Messages',
                       style: TextStyle(
