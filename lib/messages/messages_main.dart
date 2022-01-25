@@ -94,9 +94,13 @@ class messages_mainState extends State<messages_main> {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.fromLTRB(20, 20, 0, 0),
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(26.0),
-                                        child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                                      child: Container(
+                                        height: 50,
+                                        width: 50,
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(26.0),
+                                          child: Image.network('https://simg.nicepng.com/png/small/8-87422_alien-comments-alien-avatar-red.png'),
+                                        ),
                                       ),
                                     ),
                                     Column(
