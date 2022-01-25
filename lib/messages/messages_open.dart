@@ -172,6 +172,7 @@ class partner_messages extends StatelessWidget {
                         child: Container(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               SelectableText(
                                 'basketcase101',
