@@ -69,7 +69,7 @@ class messages_mainState extends State<messages_main> {
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
               child: Column(
-                mainAxisSize: MainAxisSize.max,
+                mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
