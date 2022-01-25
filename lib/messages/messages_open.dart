@@ -137,6 +137,7 @@ class partner_messages extends StatelessWidget {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
