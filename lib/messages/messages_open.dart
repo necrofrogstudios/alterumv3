@@ -159,8 +159,8 @@ class partner_messages extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: theme.accentColor,
                   borderRadius: BorderRadius.only(
-                    bottomRight: Radius.circular(40.0),
-                    topRight: Radius.circular(40.0),
+                    bottomRight: Radius.circular(35.0),
+                    topRight: Radius.circular(38.0),
                   ),
                 ),
                 child: Padding(
