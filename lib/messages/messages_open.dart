@@ -169,7 +169,7 @@ class partner_messages extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width / 1.2,
                         child: SelectableText(
-                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep \n'
+                          'i thought we was testing but omg look t t t t t t t t t t t t tt t   t t t t t \n'
                           'test blep',
                           style: TextStyle(
                             fontSize: 20,
