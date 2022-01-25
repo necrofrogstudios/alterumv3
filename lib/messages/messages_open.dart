@@ -195,7 +195,7 @@ class partner_messages extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+                        padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                         child: Container(
                           child: SelectableText(
                             'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
