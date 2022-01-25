@@ -171,7 +171,7 @@ class messages_openState extends State<messages_open> {
           child: Row(
             children: <Widget>[
               Container(
-                width: MediaQuery.of(context).size.width / 1.5,
+                width: MediaQuery.of(context).size.width / 1.3,
                 child: TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
