@@ -236,7 +236,7 @@ class partner_messages extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                items[i],
+                'blep',
                 style: TextStyle(
                   fontSize: 20,
                   color: theme.primaryColor,
