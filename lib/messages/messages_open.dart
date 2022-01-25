@@ -164,15 +164,18 @@ class partner_messages extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
+                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Column(
                     children: [
-                      Container(
-                        child: SelectableText(
-                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: theme.primaryColor,
+                      Padding(
+                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                        child: Container(
+                          child: SelectableText(
+                            'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: theme.primaryColor,
+                            ),
                           ),
                         ),
                       ),
