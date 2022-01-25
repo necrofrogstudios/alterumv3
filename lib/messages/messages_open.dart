@@ -139,7 +139,7 @@ class partner_messages extends StatelessWidget {
     return Stack(
       children: [
         Padding(
-          padding: EdgeInsets.fromLTRB(0, 10, 50, 5),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: Container(
             height: MediaQuery.of(context).size.height / 4.5,
             decoration: BoxDecoration(
@@ -150,7 +150,7 @@ class partner_messages extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: EdgeInsets.fromLTRB(0, 4, 54, 4),
+              padding: EdgeInsets.fromLTRB(0, 4, 4, 4),
               child: Container(
                 decoration: BoxDecoration(
                   color: theme.accentColor,
