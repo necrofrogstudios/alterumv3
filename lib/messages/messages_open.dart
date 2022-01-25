@@ -185,7 +185,7 @@ class messages_openState extends State<messages_open> {
                       borderRadius: BorderRadius.all(Radius.circular(50.0)),
                       borderSide: BorderSide(color: theme.splashColor, width: 4.0),
                     ),
-                    hintText: 'Enter Roleplay Name',
+                    hintText: 'Type Message Here',
                     hintStyle: TextStyle(
                       color: Colors.black.withOpacity(0.55),
                     ),
