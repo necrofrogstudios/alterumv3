@@ -164,7 +164,7 @@ class messages_openState extends State<messages_open> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 0, // this will be set when a new tab is tapped
+        currentIndex: 2, // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
             icon: null,
