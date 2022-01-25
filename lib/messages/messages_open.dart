@@ -136,7 +136,7 @@ class partner_messages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
-    return Stack(
+    return Column(
       children: [
         Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
