@@ -167,6 +167,13 @@ class partner_messages extends StatelessWidget {
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: Column(
                     children: [
+                      SelectableText(
+                        'basketcase101',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: theme.primaryColor,
+                        ),
+                      ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
                         child: Container(
