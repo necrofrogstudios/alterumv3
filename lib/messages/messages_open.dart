@@ -9,13 +9,13 @@ import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
 
-class messages_main extends StatefulWidget {
+class messages_open extends StatefulWidget {
   @override
-  messages_mainState createState() => messages_mainState();
+  messages_openState createState() => messages_openState();
 }
 
-class messages_mainState extends State<messages_main> {
-  final currentScreen = messages_main;
+class messages_openState extends State<messages_open> {
+  final currentScreen = messages_open;
   RefreshController _refreshController = RefreshController(initialRefresh: false);
 
   List<String> items = [
