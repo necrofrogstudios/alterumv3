@@ -74,7 +74,7 @@ class messages_openState extends State<messages_open> {
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
                     child: Text(
-                      'Messages',
+                      'Guarded',
                       style: TextStyle(
                         fontSize: 30,
                         color: theme.primaryColor,
@@ -162,6 +162,20 @@ class messages_openState extends State<messages_open> {
             footer(),
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0, // this will be set when a new tab is tapped
+        items: [
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.home),
+            title: new Text('Home'),
+          ),
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.mail),
+            title: new Text('Messages'),
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('Profile'))
+        ],
       ),
     );
   }
