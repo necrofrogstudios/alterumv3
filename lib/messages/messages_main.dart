@@ -153,7 +153,7 @@ class messages_mainState extends State<messages_main> {
                     ),
                   ),
                   background_test(),
-                  SizedBox(height: 300),
+                  SizedBox(height: 350),
                 ],
               ),
             ),
