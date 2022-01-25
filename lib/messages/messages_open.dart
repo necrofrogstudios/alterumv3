@@ -162,14 +162,14 @@ class partner_messages extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(10, 14, 4, 0),
+                  padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        width: MediaQuery.of(context).size.width / 1.2,
+                        width: MediaQuery.of(context).size.width / 1.1,
                         child: SelectableText(
-                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
+                          'blep blep blep blep blep blep blep blep blep blep blep blep blep blep \n'
                           'test blep',
                           style: TextStyle(
                             fontSize: 20,
