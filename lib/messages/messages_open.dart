@@ -163,7 +163,7 @@ class messages_openState extends State<messages_open> {
           ],
         ),
       ),
-      bottomNavigationBar: Container(height: 50, color: accent.splashColor),
+      bottomNavigationBar: Container(height: 50, color: theme.accentColor),
     );
   }
 }
