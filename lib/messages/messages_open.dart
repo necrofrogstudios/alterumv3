@@ -168,7 +168,7 @@ class partner_messages extends StatelessWidget {
                   child: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+                        padding: EdgeInsets.fromLTRB(10, 10, 0, 10),
                         child: Container(
                           child: Row(
                             children: [
