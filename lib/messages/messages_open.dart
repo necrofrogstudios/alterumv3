@@ -141,6 +141,7 @@ class partner_messages extends StatelessWidget {
         Padding(
           padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           child: Container(
+            width: MediaQuery.of(context).size.width / 1.2,
             decoration: BoxDecoration(
               color: theme.splashColor,
               borderRadius: BorderRadius.only(
