@@ -163,7 +163,23 @@ class messages_openState extends State<messages_open> {
           ],
         ),
       ),
-      bottomNavigationBar: Container(height: 50, color: theme.accentColor),
+      bottomNavigationBar: Container(
+        height: 50,
+        color: theme.accentColor,
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: Row(
+            children: <Widget>[
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: 'Enter a search term',
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
