@@ -80,6 +80,7 @@ class messages_openState extends State<messages_open> {
                   ),
                 ),
                 partner_messages(),
+                my_messages(),
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
                   child: Container(),
