@@ -174,7 +174,9 @@ class messages_openState extends State<messages_open> {
               ),
             ),
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.send)),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.send),
+          ),
         ],
       ),
     );
