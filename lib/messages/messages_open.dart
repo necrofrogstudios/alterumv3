@@ -141,7 +141,7 @@ class partner_messages extends StatelessWidget {
         Padding(
           padding: EdgeInsets.fromLTRB(0, 10, 50, 5),
           child: Container(
-            height: MediaQuery.of(context).size.height / 1.5,
+            height: MediaQuery.of(context).size.height / 4.5,
             decoration: BoxDecoration(
               color: theme.splashColor,
               borderRadius: BorderRadius.only(
@@ -154,7 +154,7 @@ class partner_messages extends StatelessWidget {
         Padding(
           padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
           child: Container(
-            height: MediaQuery.of(context).size.height / 1.5,
+            height: MediaQuery.of(context).size.height / 4.5,
             decoration: BoxDecoration(
               color: theme.accentColor,
               borderRadius: BorderRadius.only(
@@ -170,8 +170,9 @@ class partner_messages extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
-                'test blep',
+                '''blep blep blep blep blep blep blep blep blep blep blep blep blep blep /n'
+                'test blep''',
+                maxLines: 20,
                 style: TextStyle(
                   fontSize: 20,
                   color: theme.primaryColor,
