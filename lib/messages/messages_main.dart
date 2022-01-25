@@ -69,7 +69,7 @@ class messages_mainState extends State<messages_main> {
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
               child: Column(
-                mainAxisSize: MainAxisSize.min,
+                mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
@@ -153,12 +153,7 @@ class messages_mainState extends State<messages_main> {
                     ),
                   ),
                   background_test(),
-                  Expanded(
-                    child: Container(
-                      color: Colors.amber,
-                      width: 100,
-                    ),
-                  ),
+                  Container(height: constraints.maxHeight),
                 ],
               ),
             ),
