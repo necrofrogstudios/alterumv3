@@ -97,160 +97,162 @@ class drawer extends StatelessWidget {
       );
     }
     return ClipPath(
-      clipper:OvalRightBorderClipper(),
-      child:Drawer(
-      child: Container(
-        color: theme.backgroundColor,
-        child: ListView(
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      '',
-                      style: TextStyle(color: theme.primaryColor, fontSize: 30),
-                    ),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.pop(
-                      context,
-                      MaterialPageRoute(builder: (context) => back()),
-                    );
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Stack(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                            child: Container(
-                              height: 48,
-                              width: 254,
-                              decoration: BoxDecoration(
-                                color: theme.splashColor,
-                                borderRadius: BorderRadius.only(
-                                  bottomLeft: Radius.circular(40.0),
-                                  topLeft: Radius.circular(40.0),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
-                            child: Container(
-                              height: 40,
-                              width: 250,
-                              decoration: BoxDecoration(
-                                color: theme.accentColor,
-                                borderRadius: BorderRadius.only(
-                                  bottomLeft: Radius.circular(40.0),
-                                  topLeft: Radius.circular(40.0),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
-                            child: Icon(
-                              Icons.arrow_back,
-                              color: theme.primaryColor,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(0, 17, 0, 17),
-              child: drawer_flip_card(),
-            ),
-            ...drawerButtons,
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => sign_in()),
-                );
-              },
-              child: Stack(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
-                    child: Container(
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: theme.splashColor,
-                        borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(40.0),
-                          topRight: Radius.circular(40.0),
-                        ),
+      clipper: OvalRightBorderClipper(),
+      child: Drawer(
+        child: Container(
+          color: theme.backgroundColor,
+          child: ListView(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        '',
+                        style: TextStyle(color: theme.primaryColor, fontSize: 30),
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
-                    child: Container(
-                      height: 40,
-                      decoration: BoxDecoration(
-                        color: theme.accentColor,
-                        borderRadius: BorderRadius.only(
-                          bottomRight: Radius.circular(40.0),
-                          topRight: Radius.circular(40.0),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pop(
+                        context,
+                        MaterialPageRoute(builder: (context) => back()),
+                      );
+                    },
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
-                          'Sign Out',
-                          style: TextStyle(
-                            fontSize: 20,
-                            color: theme.primaryColor,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Icon(
-                            Icons.logout,
-                            color: theme.primaryColor,
-                          ),
+                        Stack(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                              child: Container(
+                                height: 48,
+                                width: 254,
+                                decoration: BoxDecoration(
+                                  color: theme.splashColor,
+                                  borderRadius: BorderRadius.only(
+                                    bottomLeft: Radius.circular(40.0),
+                                    topLeft: Radius.circular(40.0),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(4, 14, 0, 10),
+                              child: Container(
+                                height: 40,
+                                width: 250,
+                                decoration: BoxDecoration(
+                                  color: theme.accentColor,
+                                  borderRadius: BorderRadius.only(
+                                    bottomLeft: Radius.circular(40.0),
+                                    topLeft: Radius.circular(40.0),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(20, 22, 0, 0),
+                              child: Icon(
+                                Icons.arrow_back,
+                                color: theme.primaryColor,
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
                   ),
                 ],
               ),
-            ),
-          ],
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 17, 0, 17),
+                child: drawer_flip_card(),
+              ),
+              ...drawerButtons,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => sign_in()),
+                  );
+                },
+                child: Stack(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 10, 50, 0),
+                      child: Container(
+                        height: 48,
+                        decoration: BoxDecoration(
+                          color: theme.splashColor,
+                          borderRadius: BorderRadius.only(
+                            bottomRight: Radius.circular(40.0),
+                            topRight: Radius.circular(40.0),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 14, 54, 0),
+                      child: Container(
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: theme.accentColor,
+                          borderRadius: BorderRadius.only(
+                            bottomRight: Radius.circular(40.0),
+                            topRight: Radius.circular(40.0),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(10, 14, 60, 0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Sign Out',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Icon(
+                              Icons.logout,
+                              color: theme.primaryColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
-    ),);
+    );
   }
 }
+
 class OvalRightBorderClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     var path = Path();
     path.lineTo(0, 0);
     path.lineTo(size.width - 40, 0);
-    path.quadraticBezierTo(
-        size.width, size.height / 4, size.width, size.height / 2);
-    path.quadraticBezierTo(size.width, size.height - (size.height / 4),
-        size.width - 40, size.height);
+    path.quadraticBezierTo(size.width, size.height / 4, size.width, size.height / 2);
+    path.quadraticBezierTo(size.width, size.height - (size.height / 4), size.width - 40, size.height);
     path.lineTo(0, size.height);
     return path;
   }
+}
+
 class drawer_flip_card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
