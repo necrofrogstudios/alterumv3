@@ -219,7 +219,7 @@ class my_messages extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(20, 10, 5, 10),
+                  padding: EdgeInsets.fromLTRB(20, 10, 10, 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
