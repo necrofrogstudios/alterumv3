@@ -148,7 +148,7 @@ class messages_mainState extends State<messages_main> {
                                       Align(
                                         alignment: Alignment.centerLeft,
                                         child: SelectableText(
-                                          comment.bodyText,
+                                          'bleh',
                                           textAlign: TextAlign.left,
                                           style: TextStyle(color: theme.primaryColor, fontSize: 15),
                                         ),
