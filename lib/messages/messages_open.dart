@@ -50,46 +50,48 @@ class messages_openState extends State<messages_open> {
         child: appbar_custom(),
       ),
       drawer: drawer(currentScreen),
-      body: SmartRefresher(
-        enablePullDown: true,
-        header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
-        footer: CustomFooter(
-          builder: (BuildContext context, LoadStatus mode) {},
-        ),
-        controller: _refreshController,
-        onRefresh: _onRefresh,
-        onLoading: _onLoading,
-        child: ListView(
-          scrollDirection: Axis.vertical,
-          shrinkWrap: true,
-          padding: const EdgeInsets.all(0),
-          children: <Widget>[
-            Container(color: theme.splashColor, height: 4),
-            profile_top_buttons(),
-            Container(color: theme.splashColor, height: 4),
-            Column(
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                  child: Text(
-                    'Guarded',
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: theme.primaryColor,
+      body: Scaffold(
+        body: SmartRefresher(
+          enablePullDown: true,
+          header: WaterDropMaterialHeader(backgroundColor: theme.splashColor, color: theme.primaryColor),
+          footer: CustomFooter(
+            builder: (BuildContext context, LoadStatus mode) {},
+          ),
+          controller: _refreshController,
+          onRefresh: _onRefresh,
+          onLoading: _onLoading,
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            padding: const EdgeInsets.all(0),
+            children: <Widget>[
+              Container(color: theme.splashColor, height: 4),
+              profile_top_buttons(),
+              Container(color: theme.splashColor, height: 4),
+              Column(
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                    child: Text(
+                      'Guarded',
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: theme.primaryColor,
+                      ),
                     ),
                   ),
-                ),
-                partner_messages(),
-                my_messages(),
-                partner_messages(),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
-                  child: Container(),
-                ),
-              ],
-            ),
-          ],
+                  partner_messages(),
+                  my_messages(),
+                  partner_messages(),
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
+                    child: Container(),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: Container(
