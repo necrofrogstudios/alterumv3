@@ -87,7 +87,7 @@ class messages_openState extends State<messages_open> {
                           child: Align(
                             alignment: Alignment.center,
                             child: Text(
-                              'Guarded',
+                              'basketcase101',
                               style: TextStyle(
                                 fontSize: 30,
                                 color: theme.primaryColor,
