@@ -74,7 +74,7 @@ class messages_openState extends State<messages_open> {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 10, 20, 10),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         IconButton(
                           icon: const Icon(
