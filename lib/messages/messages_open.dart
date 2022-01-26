@@ -126,6 +126,7 @@ class messages_openState extends State<messages_open> {
               Icon(
                 Icons.send,
                 size: 30,
+                color: theme.primaryColor,
               ),
             ],
           ),
