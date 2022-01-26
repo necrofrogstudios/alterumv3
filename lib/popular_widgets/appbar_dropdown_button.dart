@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:badges/badges.dart';
 
 class SimpleAccountMenu extends StatefulWidget {
   final List<Widget> icons;
@@ -81,7 +82,14 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         highlightColor: Colors.transparent,
         hoverColor: Colors.transparent,
         iconSize: 25,
-        icon: Padding(padding: EdgeInsets.fromLTRB(0, 0, 0, 0), child: pressed == true ? Icon(Icons.notifications) : Icon(Icons.close)),
+        icon: Padding(padding: EdgeInsets.fromLTRB(0, 0, 0, 0), child: pressed == true ? Badge(
+            position: BadgePosition.topEnd(top: 10, end: 10),
+            badgeContent: null,
+            child: IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {},
+            ),
+          ), : Icon(Icons.close)),
         color: theme.primaryColor,
         onPressed: () {
           setState(() {
