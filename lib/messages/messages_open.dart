@@ -81,6 +81,7 @@ class messages_openState extends State<messages_open> {
                           child: Icon(
                             Icons.arrow_back,
                             color: theme.primaryColor,
+                            size: 30,
                           ),
                         ),
                         Expanded(
