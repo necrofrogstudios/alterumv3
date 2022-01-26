@@ -262,7 +262,7 @@ class my_messages extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Padding(
-                            padding: EdgeInsets.fromLTRB(10, 0, 5, 0),
+                            padding: EdgeInsets.fromLTRB(10, 0, 5, 3),
                             child: Container(
                               child: SelectableText(
                                 'Guarded',
