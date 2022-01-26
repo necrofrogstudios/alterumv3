@@ -179,11 +179,7 @@ class partner_messages extends StatelessWidget {
                             child: Container(
                               child: SelectableText(
                                 'basketcase101',
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  color: theme.primaryColor,
-                                  decoration: TextDecoration.bold,
-                                ),
+                                style: TextStyle(fontSize: 15, color: theme.primaryColor, fontWeight: FontWeight.bold),
                               ),
                             ),
                           ),
