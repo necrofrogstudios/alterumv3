@@ -265,10 +265,10 @@ class my_messages extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(10, 0, 5, 3),
                             child: Container(
                               child: SelectableText(
-                                'Guarded',
+                                '01/25/2022 - 12:40 AM',
                                 style: TextStyle(
                                   fontSize: 15,
-                                  color: theme.primaryColor,
+                                  color: theme.primaryColor.withOpacity(0.45),
                                 ),
                               ),
                             ),
@@ -277,10 +277,10 @@ class my_messages extends StatelessWidget {
                             padding: EdgeInsets.fromLTRB(10, 0, 10, 3),
                             child: Container(
                               child: SelectableText(
-                                '01/25/2022 - 12:40 AM',
+                                'Guarded',
                                 style: TextStyle(
                                   fontSize: 15,
-                                  color: theme.primaryColor.withOpacity(0.45),
+                                  color: theme.primaryColor,
                                 ),
                               ),
                             ),
