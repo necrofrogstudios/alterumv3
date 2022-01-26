@@ -89,7 +89,9 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
                     position: BadgePosition.topEnd(top: 10, end: 10),
                     badgeContent: null,
                     child: IconButton(
-                      icon: Icon(Icons.notifications),
+                      icon: splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        hoverColor: Colors.transparent,Icon(Icons.notifications),
                       onPressed: () {
                         setState(() {
                           pressed = !pressed;
