@@ -145,7 +145,7 @@ class partner_messages extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
           child: Container(
             width: MediaQuery.of(context).size.width / 1.1,
             decoration: BoxDecoration(
