@@ -89,6 +89,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
                     position: BadgePosition.topEnd(top: 10, end: 5),
                     badgeContent: null,
                     child: IconButton(
+                      padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
                       splashColor: Colors.transparent,
                       highlightColor: Colors.transparent,
                       hoverColor: Colors.transparent,
@@ -105,10 +106,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
                       },
                     ),
                   )
-                : Icon(
-                    Icons.close,
-                    padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
-                  )),
+                : Icon(Icons.close)),
         color: theme.primaryColor,
         onPressed: () {
           setState(() {
