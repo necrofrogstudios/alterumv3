@@ -72,14 +72,14 @@ class messages_openState extends State<messages_open> {
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.fromLTRB(10, 0, 0, 10),
+                    padding: EdgeInsets.fromLTRB(10, 0, 0, 20),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          'G',
-                          style: TextStyle(
-                            fontSize: 30,
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                          child: Icon(
+                            Icons.arrow_back,
                             color: theme.primaryColor,
                           ),
                         ),
