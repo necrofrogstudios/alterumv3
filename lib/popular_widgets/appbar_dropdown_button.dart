@@ -81,7 +81,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         hoverColor: Colors.transparent,
-        iconSize: 25,
+        iconSize: 30,
         icon: Padding(
             padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: pressed == true
@@ -93,7 +93,6 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
                       highlightColor: Colors.transparent,
                       hoverColor: Colors.transparent,
                       icon: Icon(Icons.notifications),
-                      iconSize: 20,
                       onPressed: () {
                         setState(() {
                           pressed = !pressed;
