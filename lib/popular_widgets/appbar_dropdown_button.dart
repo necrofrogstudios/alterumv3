@@ -90,7 +90,16 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
                     badgeContent: null,
                     child: IconButton(
                       icon: Icon(Icons.notifications),
-                      onPressed: () {},
+                      onPressed: () {
+                        setState(() {
+                          pressed = !pressed;
+                        });
+                        if (isMenuOpen) {
+                          closeMenu();
+                        } else {
+                          openMenu();
+                        }
+                      },
                     ),
                   )
                 : Icon(Icons.close)),
