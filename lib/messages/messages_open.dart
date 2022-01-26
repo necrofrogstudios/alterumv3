@@ -74,6 +74,7 @@ class messages_openState extends State<messages_open> {
                   Padding(
                     padding: EdgeInsets.fromLTRB(10, 0, 0, 10),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           'G',
