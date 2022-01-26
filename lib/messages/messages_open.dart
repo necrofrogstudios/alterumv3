@@ -76,13 +76,10 @@ class messages_openState extends State<messages_open> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                          child: IconButton(
-                            icon: const Icon(
-                              Icons.arrow_back,
-                              size: 30,
-                            ),
+                        IconButton(
+                          icon: const Icon(
+                            Icons.arrow_back,
+                            size: 30,
                           ),
                           onPressed: () {},
                         ),
