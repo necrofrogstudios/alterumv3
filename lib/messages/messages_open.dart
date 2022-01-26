@@ -44,7 +44,7 @@ class messages_openState extends State<messages_open> {
     Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
-      resizeToAvoidBottomInset: false
+      resizeToAvoidBottomInset: false,
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(55),
         child: appbar_custom(),
