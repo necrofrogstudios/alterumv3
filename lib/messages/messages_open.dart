@@ -8,6 +8,7 @@ import 'package:testing/popular_widgets/appbar_top_buttons.dart';
 import 'package:testing/popular_widgets/appbar_custom.dart';
 import 'package:testing/profile/profile_pics_icons.dart';
 import 'package:testing/profile/profile_tabbar.dart';
+import 'package:testing/messages/messages_main.dart';
 
 class messages_open extends StatefulWidget {
   @override
@@ -82,7 +83,12 @@ class messages_openState extends State<messages_open> {
                             size: 30,
                           ),
                           color: theme.primaryColor,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => messages_main()),
+                            );
+                          },
                         ),
                         Expanded(
                           child: Align(
