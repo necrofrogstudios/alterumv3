@@ -188,7 +188,9 @@ class partner_messages extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Spacer(),
+                      Spacer(
+                        height: 10,
+                      ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
                         child: Container(
