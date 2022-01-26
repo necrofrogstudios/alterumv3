@@ -72,7 +72,7 @@ class messages_openState extends State<messages_open> {
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
+                    padding: EdgeInsets.fromLTRB(10, 0, 0, 10),
                     child: Row(
                       children: [
                         Text(
@@ -80,6 +80,15 @@ class messages_openState extends State<messages_open> {
                           style: TextStyle(
                             fontSize: 30,
                             color: theme.primaryColor,
+                          ),
+                        ),
+                        Expanded(
+                          child: Text(
+                            'Guarded',
+                            style: TextStyle(
+                              fontSize: 30,
+                              color: theme.primaryColor,
+                            ),
                           ),
                         ),
                       ],
