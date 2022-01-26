@@ -103,7 +103,7 @@ class messages_openState extends State<messages_open> {
               Container(
                 width: MediaQuery.of(context).size.width / 1.3,
                 child: TextField(
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: theme.primaryColor),
                   keyboardType: TextInputType.multiline,
                   maxLines: 1,
                   decoration: InputDecoration(
@@ -117,7 +117,7 @@ class messages_openState extends State<messages_open> {
                     ),
                     hintText: 'Type Message Here',
                     hintStyle: TextStyle(
-                      color: Colors.black.withOpacity(0.55),
+                      color: theme.primaryColor.withOpacity(0.55),
                     ),
                     contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
                   ),
