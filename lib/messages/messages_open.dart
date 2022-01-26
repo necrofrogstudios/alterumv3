@@ -265,19 +265,6 @@ class my_messages extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Padding(
-                            padding: EdgeInsets.fromLTRB(10, 0, 10, 3),
-                            child: Container(
-                              child: SelectableText(
-                                'Guarded',
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  color: theme.primaryColor,
-                                  decoration: TextDecoration.underline,
-                                ),
-                              ),
-                            ),
-                          ),
                         ],
                       ),
                       Padding(
