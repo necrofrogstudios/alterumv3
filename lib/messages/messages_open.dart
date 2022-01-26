@@ -182,6 +182,7 @@ class partner_messages extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 15,
                                   color: theme.primaryColor,
+                                  decoration: TextDecoration.underline,
                                 ),
                               ),
                             ),
