@@ -76,7 +76,7 @@ class messages_openState extends State<messages_open> {
                     child: Row(
                       children: [
                         Text(
-                          'Guarded',
+                          'G',
                           style: TextStyle(
                             fontSize: 30,
                             color: theme.primaryColor,
