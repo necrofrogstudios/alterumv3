@@ -83,12 +83,16 @@ class messages_openState extends State<messages_open> {
                             color: theme.primaryColor,
                           ),
                         ),
-                        Text(
-                          'Guarded',
-                          style: TextStyle(
-                            fontSize: 30,
-                            color: theme.primaryColor,
-                          ),
+                        Expanded(
+                          child: Align(
+              alignment: Alignment.center,
+              child:Text(
+                            'Guarded',
+                            style: TextStyle(
+                              fontSize: 30,
+                              color: theme.primaryColor,
+                            
+                          ),),
                         ),
                       ],
                     ),
