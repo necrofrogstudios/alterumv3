@@ -73,12 +73,16 @@ class messages_openState extends State<messages_open> {
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 0, 0, 10),
-                    child: Text(
-                      'Guarded',
-                      style: TextStyle(
-                        fontSize: 30,
-                        color: theme.primaryColor,
-                      ),
+                    child: Row(
+                      children: [
+                        Text(
+                          'Guarded',
+                          style: TextStyle(
+                            fontSize: 30,
+                            color: theme.primaryColor,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   partner_messages(),
