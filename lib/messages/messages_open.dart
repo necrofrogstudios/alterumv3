@@ -262,7 +262,7 @@ class my_messages extends StatelessWidget {
                               child: SelectableText(
                                 'Guarded',
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 15,
                                   color: theme.primaryColor,
                                 ),
                               ),
