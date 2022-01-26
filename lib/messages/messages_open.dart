@@ -81,6 +81,7 @@ class messages_openState extends State<messages_open> {
                             Icons.arrow_back,
                             size: 30,
                           ),
+                          color: theme.primaryColor,
                           onPressed: () {},
                         ),
                         Expanded(
