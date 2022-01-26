@@ -87,6 +87,8 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
             child: pressed == true
                 ? Badge(
                     position: BadgePosition.topEnd(top: 10, end: -8),
+                    badgeColor: Colors.red,
+                    borderSide: BorderSide(color: Colors.black),
                     badgeContent: null,
                     child: IconButton(
                       icon: Icon(Icons.notifications),
