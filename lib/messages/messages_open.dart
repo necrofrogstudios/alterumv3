@@ -166,7 +166,7 @@ class partner_messages extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
+                  padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -187,7 +187,7 @@ class partner_messages extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(10, 0, 10, 3),
+                            padding: EdgeInsets.fromLTRB(5, 0, 10, 3),
                             child: Container(
                               child: SelectableText(
                                 '01/25/2022 - 12:40 AM',
