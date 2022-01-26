@@ -281,7 +281,7 @@ class my_messages extends StatelessWidget {
                         padding: EdgeInsets.fromLTRB(20, 0, 10, 10),
                         child: Container(
                           child: SelectableText(
-                            'blep blep blep blep blep blep blep blep blep blep blep blep blep blep',
+                            'yeah',
                             textAlign: TextAlign.right,
                             style: TextStyle(
                               fontSize: 15,
