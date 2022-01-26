@@ -166,7 +166,7 @@ class partner_messages extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
