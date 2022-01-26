@@ -83,30 +83,31 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
         hoverColor: Colors.transparent,
         iconSize: 30,
         icon: Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-            child: pressed == true
-                ? Badge(
-                    position: BadgePosition.topEnd(top: 10, end: 5),
-                    badgeContent: null,
-                    child: IconButton(
-                      padding: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                      splashColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      icon: Icon(Icons.notifications),
-                      onPressed: () {
-                        setState(() {
-                          pressed = !pressed;
-                        });
-                        if (isMenuOpen) {
-                          closeMenu();
-                        } else {
-                          openMenu();
-                        }
-                      },
-                    ),
-                  )
-                : Icon(Icons.close)),
+          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+          child: pressed == true
+              ? Badge(
+                  position: BadgePosition.topEnd(top: 10, end: 5),
+                  badgeContent: null,
+                  child: IconButton(
+                    splashColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    icon: Icon(Icons.notifications),
+                    onPressed: () {
+                      setState(() {
+                        pressed = !pressed;
+                      });
+                      if (isMenuOpen) {
+                        closeMenu();
+                      } else {
+                        openMenu();
+                      }
+                    },
+                  ),
+                )
+              : Icon(Icons.close),
+          padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+        ),
         color: theme.primaryColor,
         onPressed: () {
           setState(() {
