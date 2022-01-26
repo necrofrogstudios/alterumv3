@@ -175,10 +175,10 @@ class partner_messages extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsets.fromLTRB(10, 0, 5, 0),
+                            padding: EdgeInsets.fromLTRB(10, 0, 5, 3),
                             child: Container(
                               child: SelectableText(
-                                'Guarded',
+                                'basketcase101',
                                 style: TextStyle(
                                   fontSize: 15,
                                   color: theme.primaryColor,
