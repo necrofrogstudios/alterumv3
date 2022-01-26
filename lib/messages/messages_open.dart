@@ -92,7 +92,7 @@ class messages_openState extends State<messages_open> {
         ),
       ),
       bottomNavigationBar: Scaffold(
-        body: Container(
+        bottomNavigationBar: Container(
           height: 70,
           color: theme.accentColor,
           child: Padding(
