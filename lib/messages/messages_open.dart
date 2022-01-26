@@ -44,6 +44,7 @@ class messages_openState extends State<messages_open> {
     Color myColor = Theme.of(context).accentColor;
 
     return Scaffold(
+      resizeToAvoidBottomInset: false
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(55),
         child: appbar_custom(),
@@ -91,44 +92,42 @@ class messages_openState extends State<messages_open> {
           ],
         ),
       ),
-      bottomNavigationBar: Scaffold(
-        bottomNavigationBar: Container(
-          height: 70,
-          color: theme.accentColor,
-          child: Padding(
-            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                Container(
-                  width: MediaQuery.of(context).size.width / 1.3,
-                  child: TextField(
-                    style: TextStyle(color: Colors.black),
-                    keyboardType: TextInputType.multiline,
-                    maxLines: 1,
-                    decoration: InputDecoration(
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                        borderSide: BorderSide(color: theme.splashColor, width: 4.0),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                        borderSide: BorderSide(color: theme.splashColor, width: 4.0),
-                      ),
-                      hintText: 'Type Message Here',
-                      hintStyle: TextStyle(
-                        color: Colors.black.withOpacity(0.55),
-                      ),
-                      contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
+      bottomNavigationBar: Container(
+        height: 70,
+        color: theme.accentColor,
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              Container(
+                width: MediaQuery.of(context).size.width / 1.3,
+                child: TextField(
+                  style: TextStyle(color: Colors.black),
+                  keyboardType: TextInputType.multiline,
+                  maxLines: 1,
+                  decoration: InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                      borderSide: BorderSide(color: theme.splashColor, width: 4.0),
                     ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                      borderSide: BorderSide(color: theme.splashColor, width: 4.0),
+                    ),
+                    hintText: 'Type Message Here',
+                    hintStyle: TextStyle(
+                      color: Colors.black.withOpacity(0.55),
+                    ),
+                    contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20),
                   ),
                 ),
-                Icon(
-                  Icons.send,
-                  size: 30,
-                ),
-              ],
-            ),
+              ),
+              Icon(
+                Icons.send,
+                size: 30,
+              ),
+            ],
           ),
         ),
       ),
