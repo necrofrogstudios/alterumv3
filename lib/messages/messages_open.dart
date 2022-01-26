@@ -81,10 +81,10 @@ class messages_openState extends State<messages_open> {
                           child: IconButton(
                             icon: const Icon(
                               Icons.arrow_back,
+                              color: theme.primaryColor,
                               size: 30,
                             ),
                           ),
-                          color: theme.primaryColor,
                           onPressed: () {},
                         ),
                         Expanded(
