@@ -86,7 +86,7 @@ class _SimpleAccountMenuState extends State<SimpleAccountMenu> with SingleTicker
             padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
             child: pressed == true
                 ? Badge(
-                    position: BadgePosition.topEnd(top: 15, end: 10),
+                    position: BadgePosition.topEnd(top: 14, end: 10),
                     badgeColor: Colors.red,
                     borderSide: BorderSide(color: Colors.black, width: 2),
                     badgeContent: null,
